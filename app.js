@@ -696,8 +696,8 @@ function parsePanelStateScriptText(text, globalName) {
 
 async function fetchPanelStatePayload(src, globalName) {
   const separator = src.includes("?") ? "&" : "?";
-  const url = `${src}${separator}v=${Date.now()}`;
-  const response = await fetch(url, { cache: "no-store" });
+  const url = `${src}${separator}v=${encodeURIComponent(DERIVED_DATA_VERSION)}`;
+  const response = await fetch(url, { cache: "no-cache" });
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
   }
@@ -713,7 +713,6 @@ function scheduleSecondaryDerivedDataReload() {
   secondaryDerivedDataLoadPromise = Promise.all(
     SECONDARY_DERIVED_DATA_SCRIPTS.map((src) => loadOptionalScript(src, {
       timeoutMs: PANEL_STATE_SCRIPT_TIMEOUT_MS,
-      cacheKey: String(now),
       removeAfterLoad: true,
     })),
   ).then(() => {
