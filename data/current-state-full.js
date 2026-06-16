@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-16T22:50:37+08:00",
+  "generated_at": "2026-06-17T07:20:52+08:00",
   "currentDate": "2026-06-16",
   "current_date": "2026-06-16",
   "panel_payload_mode": "full",
@@ -28896,9 +28896,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-16\\web-panel-state.json",
-              "modified_at": "2026-06-16T22:44:13+08:00",
+              "modified_at": "2026-06-17T07:18:38+08:00",
               "size": 1726667,
-              "sha256": "54f7776b05b0bc3fc965e2ce2f692ceff4d4ffa09c7132f252f8f62e6bf93c77"
+              "sha256": "e27f8c4be1235925b90d1232b9b10ffaccf7ca385bc27c9117461c3f99342985"
             }
           ],
           "key_conclusion_provenance": [
@@ -28922,9 +28922,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-16\\web-panel-state.json",
-                  "modified_at": "2026-06-16T22:44:13+08:00",
+                  "modified_at": "2026-06-17T07:18:38+08:00",
                   "size": 1726667,
-                  "sha256": "54f7776b05b0bc3fc965e2ce2f692ceff4d4ffa09c7132f252f8f62e6bf93c77"
+                  "sha256": "e27f8c4be1235925b90d1232b9b10ffaccf7ca385bc27c9117461c3f99342985"
                 }
               ]
             }
@@ -37439,9 +37439,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-16T22:50:37+08:00",
-    "web_current_state_exported_at": "2026-06-16T22:50:37+08:00",
-    "web_visible_at": "2026-06-16T22:50:37+08:00",
+    "web_panel_state_exported_at": "2026-06-17T07:20:52+08:00",
+    "web_current_state_exported_at": "2026-06-17T07:20:52+08:00",
+    "web_visible_at": "2026-06-17T07:20:52+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -37465,16 +37465,16 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-16/web-panel-state.json",
       "exists": true,
       "size": 1726667,
-      "modified_at": "2026-06-16T22:44:13+08:00",
-      "sha256": "54f7776b05b0bc3fc965e2ce2f692ceff4d4ffa09c7132f252f8f62e6bf93c77"
+      "modified_at": "2026-06-17T07:18:38+08:00",
+      "sha256": "e27f8c4be1235925b90d1232b9b10ffaccf7ca385bc27c9117461c3f99342985"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
       "size": 423765,
-      "modified_at": "2026-06-16T22:39:50+08:00",
-      "sha256": "38a4989575359f49fb3f293e90ab5099beb68732d84891d349be91499bd0186c"
+      "modified_at": "2026-06-17T07:18:38+08:00",
+      "sha256": "fa3c7ea8b079c0e679fdf9fada74d90e4182f869e42c1deb15abe55a82d14a2b"
     }
   },
   "artifacts": [

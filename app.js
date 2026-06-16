@@ -400,6 +400,8 @@ const HISTORY_DETAIL_SCRIPT = "./data/history-detail.js";
 const DERIVED_DATA_VERSION = "20260616-public-panel-lite-v1";
 const PANEL_STATE_SCRIPT_TIMEOUT_MS = 4500;
 const PANEL_FULL_STATE_SCRIPT_TIMEOUT_MS = 12000;
+const PANEL_LIVE_REFRESH_INTERVAL_MS = 10000;
+const PANEL_SECONDARY_REFRESH_INTERVAL_MS = 60000;
 const READY_REPORT_STATUSES = new Set(["ok", "success", "complete", "complete_empty", "pass", "ready", "done"]);
 const STRATEGY_ANALYTICS_START_DATE = "2026-05-15";
 const STRATEGY_DASHBOARD_DISPLAY_LIMIT = 9;
@@ -408,9 +410,52 @@ let historyDetailLoadPromise = null;
 let secondaryDerivedDataLoadPromise = null;
 let fullPanelStateLoadPromise = null;
 let autoBootPanelStateEnabled = true;
+let livePanelRefreshTimer = null;
+let livePanelRefreshInFlight = false;
+let livePanelSecondaryRefreshAt = 0;
 
 function clone(value) {
   return JSON.parse(JSON.stringify(value));
+}
+
+function panelPayloadGeneratedAt(payload) {
+  return String(
+    payload?.generated_at
+    || payload?.generatedAt
+    || payload?.run?.generated_at
+    || payload?.run?.generatedAt
+    || "",
+  );
+}
+
+function panelPayloadMode(payload) {
+  return String(payload?.panel_payload_mode || payload?.panelPayloadMode || "");
+}
+
+function panelPayloadSignature(payload) {
+  return [
+    panelPayloadGeneratedAt(payload),
+    panelPayloadMode(payload),
+    String(payload?.current_date || payload?.currentDate || payload?.run?.date || ""),
+    String(payload?.run?.period || ""),
+    String(payload?.run?.status || ""),
+  ].join("|");
+}
+
+function panelViewLockedToHistory() {
+  return Boolean(
+    selectedPanelState
+    && selectedPanelDate
+    && state?.run?.date
+    && selectedPanelDate !== state.run.date,
+  );
+}
+
+function shouldAutoRefreshLiveState() {
+  if (!autoBootPanelStateEnabled) return false;
+  if (panelViewLockedToHistory()) return false;
+  if (window.location.protocol === "file:") return false;
+  return true;
 }
 
 function isReadyStatus(value) {
@@ -421,6 +466,8 @@ function loadOptionalScript(src, options = {}) {
   const timeoutMs = Number(options.timeoutMs || 0);
   const onLoad = typeof options.onLoad === "function" ? options.onLoad : null;
   const removeOnTimeout = options.removeOnTimeout === true;
+  const removeAfterLoad = options.removeAfterLoad === true;
+  const cacheKey = String(options.cacheKey || DERIVED_DATA_VERSION);
   return new Promise((resolve) => {
     const script = document.createElement("script");
     const separator = src.includes("?") ? "&" : "?";
@@ -432,10 +479,11 @@ function loadOptionalScript(src, options = {}) {
       if (timeoutId) clearTimeout(timeoutId);
       resolve(value);
     };
-    script.src = `${src}${separator}v=${encodeURIComponent(DERIVED_DATA_VERSION)}`;
+    script.src = `${src}${separator}v=${encodeURIComponent(cacheKey)}`;
     script.async = false;
     script.onload = () => {
       onLoad?.();
+      if (removeAfterLoad) script.remove();
       finish(true);
     };
     script.onerror = () => {
@@ -599,6 +647,16 @@ function buildBootState(status, warningText) {
 
 function applyPanelStatePayload(payload, options = {}) {
   if (!payload || typeof payload !== "object") return false;
+  if (options.force !== true) {
+    const incomingSignature = panelPayloadSignature(payload);
+    const currentSignature = panelPayloadSignature(state);
+    if (incomingSignature && incomingSignature === currentSignature) {
+      if (options.promoteToPrimary === true) {
+        window.THREE_PERIOD_PANEL_STATE = payload;
+      }
+      return false;
+    }
+  }
   state = payload;
   if (options.promoteToPrimary === true) {
     window.THREE_PERIOD_PANEL_STATE = payload;
@@ -619,6 +677,103 @@ function syncPanelStateFromGlobals(options = {}) {
   if (!payload || typeof payload !== "object") return false;
   return applyPanelStatePayload(payload, {
     promoteToPrimary: payload === fullPayload,
+  });
+}
+
+function parsePanelStateScriptText(text, globalName) {
+  const prefix = `window.${globalName}`;
+  const index = String(text || "").indexOf(prefix);
+  if (index < 0) {
+    throw new Error(`未找到 ${globalName} 全局变量`);
+  }
+  const jsonText = String(text || "")
+    .slice(index + prefix.length)
+    .replace(/^\s*=\s*/, "")
+    .replace(/;\s*$/, "")
+    .trim();
+  return JSON.parse(jsonText);
+}
+
+async function fetchPanelStatePayload(src, globalName) {
+  const separator = src.includes("?") ? "&" : "?";
+  const url = `${src}${separator}v=${Date.now()}`;
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+  const text = await response.text();
+  return parsePanelStateScriptText(text, globalName);
+}
+
+function scheduleSecondaryDerivedDataReload() {
+  if (!shouldAutoRefreshLiveState()) return;
+  const now = Date.now();
+  if (livePanelSecondaryRefreshAt && now < livePanelSecondaryRefreshAt) return;
+  livePanelSecondaryRefreshAt = now + PANEL_SECONDARY_REFRESH_INTERVAL_MS;
+  secondaryDerivedDataLoadPromise = Promise.all(
+    SECONDARY_DERIVED_DATA_SCRIPTS.map((src) => loadOptionalScript(src, {
+      timeoutMs: PANEL_STATE_SCRIPT_TIMEOUT_MS,
+      cacheKey: String(now),
+      removeAfterLoad: true,
+    })),
+  ).then(() => {
+    renderAll();
+    return true;
+  });
+}
+
+async function refreshLivePanelState(options = {}) {
+  if (!shouldAutoRefreshLiveState() || livePanelRefreshInFlight) return false;
+  livePanelRefreshInFlight = true;
+  const previousSignature = panelPayloadSignature(state);
+  const previousGeneratedAt = panelPayloadGeneratedAt(state);
+  const previousMode = panelPayloadMode(state);
+  try {
+    const primaryPayload = await fetchPanelStatePayload(PRIMARY_DERIVED_DATA_SCRIPT, "THREE_PERIOD_PANEL_STATE");
+    window.THREE_PERIOD_PANEL_STATE = primaryPayload;
+    const primarySignature = panelPayloadSignature(primaryPayload);
+    const primaryChanged = Boolean(primarySignature && primarySignature !== previousSignature);
+    if (options.force === true || primaryChanged || previousMode === "bootstrap" || previousMode === "sample") {
+      applyPanelStatePayload(primaryPayload, { force: true });
+    }
+
+    const primaryGeneratedAt = panelPayloadGeneratedAt(primaryPayload);
+    const needFullRefresh = options.forceFull === true
+      || previousMode !== "full"
+      || primaryGeneratedAt !== previousGeneratedAt;
+    if (needFullRefresh) {
+      const fullPayload = await fetchPanelStatePayload(FULL_DERIVED_DATA_SCRIPT, "THREE_PERIOD_PANEL_STATE_FULL");
+      window.THREE_PERIOD_PANEL_STATE_FULL = fullPayload;
+      const fullSignature = panelPayloadSignature(fullPayload);
+      if (options.force === true || fullSignature !== panelPayloadSignature(state) || panelPayloadMode(state) !== "full") {
+        applyPanelStatePayload(fullPayload, {
+          force: true,
+          promoteToPrimary: true,
+        });
+      }
+    }
+
+    if (primaryChanged || options.force === true) {
+      scheduleSecondaryDerivedDataReload();
+    }
+    return true;
+  } catch (error) {
+    console.warn("live panel refresh skipped:", error);
+    return false;
+  } finally {
+    livePanelRefreshInFlight = false;
+  }
+}
+
+function startLivePanelRefreshLoop() {
+  if (livePanelRefreshTimer || window.location.protocol === "file:") return;
+  livePanelRefreshTimer = window.setInterval(() => {
+    refreshLivePanelState();
+  }, PANEL_LIVE_REFRESH_INTERVAL_MS);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      refreshLivePanelState({ forceFull: true });
+    }
   });
 }
 
@@ -6030,4 +6185,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   loadFullPanelState().then(() => {
     syncPanelStateFromGlobals({ preferFull: true });
   });
+  startLivePanelRefreshLoop();
 });
