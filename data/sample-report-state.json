@@ -1,0 +1,220 @@
+{
+  "schema_version": "web-panel-state/v1",
+  "generated_at": "2026-04-30T20:30:00+08:00",
+  "project": {
+    "name": "tdx-ag-three-period-split",
+    "base_dir": ""
+  },
+  "run": {
+    "date": "2026-04-30",
+    "run_id": "sample-panel-state",
+    "period": "review",
+    "status": "success"
+  },
+  "beginner": {
+    "today_title": "观察为主，不追高",
+    "today_judgement": "三闸门只提示环境偏谨慎；今天没有候选级证据支持买入 Top3，候选只做观察和次日验证。"
+  },
+  "reports": [
+    {
+      "key": "close",
+      "label": "收盘报",
+      "json_status": "ok",
+      "markdown_status": "ok",
+      "report_type": "close-report",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30T15:30:00+08:00",
+      "recommendation_mode": "observe",
+      "candidate_count": 3,
+      "handoff_count": 1,
+      "markdown": {
+        "exists": true,
+        "headings": ["【今日总判断】", "【三闸门】", "【候选结论】"],
+        "excerpt": "## 【今日总判断】\n结论：观察为主，不追高，不输出买入 Top3。"
+      }
+    },
+    {
+      "key": "morning",
+      "label": "早报",
+      "json_status": "ok",
+      "markdown_status": "ok",
+      "report_type": "morning-report",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30T09:00:00+08:00",
+      "recommendation_mode": "ask_for_more",
+      "candidate_count": 2,
+      "handoff_count": 2,
+      "markdown": {
+        "exists": true,
+        "headings": ["【结论】", "【三闸门】", "【候选结论】"],
+        "excerpt": "【结论】\n早报只验证上一收盘报传下来的观察对象，不新增买入。"
+      }
+    },
+    {
+      "key": "noon",
+      "label": "午报",
+      "json_status": "ok",
+      "markdown_status": "ok",
+      "report_type": "noon-report",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30T11:45:00+08:00",
+      "recommendation_mode": "observe",
+      "candidate_count": 1,
+      "handoff_count": 0,
+      "markdown": {
+        "exists": true,
+        "headings": ["【上午验证结论】", "【午后继续盯盘名单】"],
+        "excerpt": "【上午验证结论】\n上午承接不足，午后继续只观察。"
+      }
+    },
+    {
+      "key": "review",
+      "label": "复盘报",
+      "json_status": "ok",
+      "markdown_status": "ok",
+      "report_type": "review-report",
+      "date": "2026-04-30",
+      "generated_at": "2026-04-30T20:00:00+08:00",
+      "recommendation_mode": "review_only",
+      "candidate_count": 0,
+      "handoff_count": 0,
+      "markdown": {
+        "exists": true,
+        "headings": ["【复盘对象】", "【错因归类】", "【规则升级建议】"],
+        "excerpt": "【复盘对象】\n复盘只做归因，不传递新票。"
+      }
+    }
+  ],
+  "gates": [
+    {
+      "key": "outer",
+      "label": "外围闸门",
+      "status": "headwind",
+      "score": -2,
+      "evidence_count": 16,
+      "missing_count": 0,
+      "limitations_count": 1,
+      "top_evidence": ["A50 走弱", "海外波动偏高"],
+      "reason": "外围偏谨慎，不适合放大进攻。"
+    },
+    {
+      "key": "domestic",
+      "label": "国内闸门",
+      "status": "missing",
+      "score": "",
+      "evidence_count": 4,
+      "missing_count": 1,
+      "limitations_count": 1,
+      "top_evidence": ["公告排雷覆盖不足"],
+      "reason": "公告风险排除不完整，先当作未通过处理。"
+    },
+    {
+      "key": "emotion_trend",
+      "label": "情绪/趋势闸门",
+      "status": "headwind",
+      "score": -1,
+      "evidence_count": 8,
+      "missing_count": 0,
+      "limitations_count": 1,
+      "top_evidence": ["高位反馈偏弱", "跌停数量偏多"],
+      "reason": "情绪偏弱，等待回踩承接确认。"
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "symbol": "000014",
+      "name": "沙河股份",
+      "tag": "A",
+      "channel": "题材观察",
+      "score": 0.71,
+      "decision": "observe",
+      "entry_style": "pullback_confirm",
+      "handoff_allowed": true,
+      "top3_allowed": false,
+      "theme": "地产链",
+      "business_match": "medium",
+      "technical_reasons": ["只能观察", "等待回踩承接"],
+      "validation": {}
+    },
+    {
+      "rank": 2,
+      "symbol": "605007",
+      "name": "五洲特纸",
+      "tag": "B",
+      "channel": "消息/题材驱动",
+      "score": 0.63,
+      "decision": "downgrade",
+      "entry_style": "observe",
+      "handoff_allowed": false,
+      "top3_allowed": false,
+      "theme": "造纸涨价",
+      "business_match": "medium",
+      "technical_reasons": ["量比不足，活跃度未确认"],
+      "validation": {}
+    }
+  ],
+  "data_sources": [],
+  "artifacts": [],
+  "summary": {
+    "reports_present": 4,
+    "json_invalid": 0,
+    "candidates_visible": 2,
+    "data_sources_ok": 0,
+    "warnings": 1,
+    "lineage_nodes": 0
+  },
+  "warnings": [
+    "样例数据只用于面板预览，不能替代正式四报 Markdown。"
+  ],
+  "workflow_chain": {
+    "close": {
+      "label": "收盘报",
+      "nodes": [
+        {
+          "id": "watchlist_export",
+          "order": 1,
+          "title_cn": "导出最新自选股",
+          "plain_goal_cn": "重新导出当前通达信自选股，确保收盘报从全自选股池重新扫描。",
+          "data_used_cn": ["通达信当前自选股表", "54 个正式字段", "涨幅", "换手", "量比"],
+          "source_method_cn": "通过 tdx-auto-export-zxg / 通达信 UI 导出，再由 parse_watchlist.py 标准化。",
+          "read_files": ["raw-watchlist/*"],
+          "write_files": ["raw-watchlist.json", "filtered-pool.json"],
+          "status": "ok",
+          "result_cn": "收盘报必须全自选股重扫，不能沿用旧两只票。",
+          "missing_or_risk_cn": ["样例数据，仅用于展示链路展开样式"]
+        },
+        {
+          "id": "outer_gate",
+          "order": 2,
+          "title_cn": "外围闸门",
+          "plain_goal_cn": "判断隔夜外围环境是否支持 A 股进攻。",
+          "data_used_cn": ["A50", "美股三大指数", "VIX", "离岸人民币", "黄金", "白银", "布伦特原油", "搜索归因"],
+          "source_method_cn": "通过 A50、美股、VIX、汇率、黄金、原油等外围行情组件和 build_outer_gate.py 获取，新闻归因组件只做归因。",
+          "read_files": ["outer-skill-output.txt"],
+          "write_files": ["outer-gate.json"],
+          "status": "headwind",
+          "result_cn": "外围偏谨慎，不支持主动进攻。",
+          "missing_or_risk_cn": ["VIX 或原油归因偏逆风时不能强攻"]
+        }
+      ]
+    },
+    "morning": {"label": "早报", "nodes": []},
+    "noon": {"label": "午报", "nodes": []},
+    "review": {"label": "复盘报", "nodes": []}
+  },
+  "history_index": [
+    {"date": "2026-04-30", "report_type": "close", "label": "收盘报"},
+    {"date": "2026-04-30", "report_type": "morning", "label": "早报"},
+    {"date": "2026-04-30", "report_type": "noon", "label": "午报"},
+    {"date": "2026-04-30", "report_type": "review", "label": "复盘报"}
+  ],
+  "history_detail": {
+    "2026-04-30": {
+      "close": "# 2026-04-30 收盘报\n\n## 【今日总判断】\n结论：观察为主，不追高，不输出买入 Top3。\n\n## 【三闸门】\n- 外围：谨慎\n- 国内：缺少完整公告排雷\n- 情绪/趋势：谨慎\n\n## 【候选结论】\n沙河股份进入观察名单，只等待回踩承接确认。",
+      "morning": "# 2026-04-30 早报\n\n## 【结论】\n早报只验证上一收盘报传下来的对象，不新增买入。\n\n## 【三闸门】\n三闸门只说明环境顺逆和仓位语气，不直接决定候选升降级。\n\n## 【候选结论】\n五洲特纸、沙河股份因公告、技术或承接证据不足，只做观察。",
+      "noon": "# 2026-04-30 午报\n\n## 【上午验证结论】\n上午承接不足，午后继续只观察。\n\n## 【午后继续盯盘名单】\n保留沙河股份观察，不追高。",
+      "review": "# 2026-04-30 复盘报\n\n## 【复盘对象】\n复盘收盘报、早报、午报完整链路。\n\n## 【错因归类】\n主要问题是公告排雷、技术承接或数据质量证据不足，候选不应升级为买入。\n\n## 【规则升级建议】\n缺少公告排雷或承接确认时，继续禁止输出买入 Top3；三闸门只记录环境参考。"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070b0a" />
+    <title>三时段交易中枢</title>
+    <link rel="stylesheet" href="./styles.css?v=20260616-public-panel-boot-v3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#topStatusBar">跳到面板内容</a>
+    <header class="app-header">
+      <div>
+        <h1>三时段交易中枢</h1>
+      </div>
+      <nav class="panel-top-nav" aria-label="模块快速跳转">
+        <a href="#topStatusBar" data-panel-jump="topStatusBar">总览</a>
+        <a href="#traderReviewWorkbenchBand" data-panel-jump="traderReviewWorkbenchBand">小白复盘</a>
+        <a href="#strategyDashboardBand" data-panel-jump="strategyDashboardBand">策略看板</a>
+        <a href="#reportProgressBand" data-panel-jump="reportProgressBand">四报进度</a>
+        <a href="#historyCalendarBand" data-panel-jump="historyCalendarBand">历史日历</a>
+        <a href="#workflowBand" data-panel-jump="workflowBand">报告链路</a>
+        <a href="#warningBand" data-panel-jump="warningBand">提醒</a>
+      </nav>
+      <div class="header-actions">
+        <label class="file-button">
+          <input id="stateFile" type="file" accept="application/json,.json" />
+          加载状态文件
+        </label>
+        <button id="sampleButton" type="button">样例状态</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="content">
+        <section id="topStatusBar" class="top-status-bar" aria-label="四报状态条"></section>
+
+        <section class="hero-summary">
+          <div class="hero-copy">
+            <div id="heroPicks" class="hero-picks"></div>
+          </div>
+          <div id="quickStats" class="quick-stats"></div>
+        </section>
+
+        <section id="traderReviewWorkbenchBand" class="section-band trader-review-workbench-band">
+          <!-- contract: 交易员复盘工作台 / 双复盘合议 / trader_review_workbench.v1；用户可见标题用小白复盘口径。 -->
+          <div class="section-title">
+            <div>
+              <span class="section-label">小白复盘</span>
+              <h2>今天到底哪里做对、哪里要改</h2>
+            </div>
+            <span id="traderReviewWorkbenchHint">只做展示和审计，不改正式 Top3</span>
+          </div>
+          <div id="traderReviewWorkbench" class="trader-review-workbench"></div>
+        </section>
+
+        <section id="strategyDashboardBand" class="section-band strategy-dashboard-band">
+          <div class="section-title">
+            <div>
+              <span class="section-label">策略复盘看板</span>
+              <h2>哪套逻辑赚钱，哪套要降权</h2>
+            </div>
+            <span id="strategyDashboardHint">只做统计和展示，不改选股逻辑</span>
+          </div>
+          <div id="strategyUpgradeDashboard" class="strategy-dashboard"></div>
+        </section>
+
+        <section id="reportProgressBand" class="section-band">
+          <div class="section-title">
+            <div>
+              <span class="section-label">四报进度</span>
+              <h2>今天走到哪一步</h2>
+            </div>
+            <span id="reportProgressHint">--</span>
+          </div>
+          <div id="reportProgress" class="progress-grid"></div>
+        </section>
+
+        <section id="historyCalendarBand" class="section-band history-calendar-band">
+          <div class="section-title">
+            <div>
+              <span class="section-label">历史报告日历</span>
+              <h2>哪天完整、哪天缺口，一眼看出来</h2>
+            </div>
+            <div id="historyCalendarFilters" class="history-filter-list"></div>
+          </div>
+          <div class="history-calendar-shell">
+            <div>
+              <div id="historyCalendarHeader" class="history-calendar-header"></div>
+              <div id="historyCalendarGrid" class="history-calendar-grid"></div>
+            </div>
+            <aside id="historyCalendarDetail" class="history-calendar-detail"></aside>
+          </div>
+          <div id="historyTimeline" class="history-timeline"></div>
+        </section>
+
+        <section id="workflowBand" class="section-band workflow-band">
+          <div class="section-title workflow-title">
+            <div>
+              <span class="section-label">报告链路展开</span>
+              <h2>点击每一步，看它取了什么数据</h2>
+            </div>
+            <p id="workflowActiveHint" class="workflow-active-hint">点击上方四报卡片切换链路。</p>
+          </div>
+          <div class="workflow-shell">
+            <div id="workflowNodeList" class="workflow-node-list"></div>
+            <article id="workflowDetail" class="workflow-detail"></article>
+          </div>
+        </section>
+
+        <section id="ruleApprovalBand" class="section-band rule-approval-band" hidden>
+          <div class="section-title">
+            <div>
+              <span class="section-label">算法建议</span>
+              <h2 id="ruleApprovalTitle">待确认改动</h2>
+            </div>
+            <span id="ruleApprovalHint">--</span>
+          </div>
+          <div id="ruleApprovalList" class="rule-approval-list"></div>
+        </section>
+
+        <section id="warningBand" class="section-band warning-band">
+          <div class="section-title">
+            <div>
+              <span class="section-label">提醒</span>
+              <h2>需要留意的边界</h2>
+            </div>
+            <span id="warningCount">0 条</span>
+          </div>
+          <div id="warningList" class="warning-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <div id="workflowLogicModal" class="workflow-modal" hidden>
+      <div class="workflow-modal-backdrop" data-workflow-modal-close></div>
+      <article class="workflow-modal-card" role="dialog" aria-modal="true" aria-labelledby="workflowLogicTitle">
+        <header class="workflow-modal-header">
+          <div>
+            <span id="workflowLogicReport" class="section-label">报告链路</span>
+            <h3 id="workflowLogicTitle">步骤逻辑</h3>
+          </div>
+          <button id="workflowLogicClose" class="workflow-modal-close" type="button" aria-label="关闭步骤逻辑弹窗">关闭</button>
+        </header>
+        <div id="workflowLogicBody" class="workflow-modal-body"></div>
+      </article>
+    </div>
+
+    <div id="completeReportModal" class="workflow-modal" hidden>
+      <div class="workflow-modal-backdrop" data-complete-report-close></div>
+      <article class="workflow-modal-card complete-report-card" role="dialog" aria-modal="true" aria-labelledby="completeReportTitle">
+        <header class="workflow-modal-header">
+          <div>
+            <span id="completeReportMeta" class="section-label">完整报告</span>
+            <h3 id="completeReportTitle">完整报告</h3>
+          </div>
+          <button id="completeReportClose" class="workflow-modal-close" type="button" aria-label="关闭完整报告弹窗">关闭</button>
+        </header>
+        <pre id="completeReportBody" class="complete-report-body" tabindex="0"></pre>
+      </article>
+    </div>
+
+    <script async src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./app.js?v=20260616-public-panel-boot-v3"></script>
+  </body>
+</html>
