@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-16T22:44:12+08:00",
+  "generated_at": "2026-06-16T22:54:30+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -4147,11 +4147,11 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
     "complete_dates": 26,
     "partial_dates": 10,
     "empty_dates": 2,
-    "excluded_dirs": 3,
+    "excluded_dirs": 4,
     "warnings": 0
   },
   "excluded_dir_counts": {
-    "test_year": 1,
+    "test_year": 2,
     "test_marker": 2
   },
   "warnings": []
