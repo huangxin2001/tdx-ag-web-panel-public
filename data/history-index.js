@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-17T11:57:16+08:00",
+  "generated_at": "2026-06-17T14:57:45+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -13,29 +13,31 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
     {
       "date": "2026-06-17",
       "status": "partial",
-      "reports_present": 2,
+      "reports_present": 3,
       "reports_missing": [
-        "close",
         "review"
       ],
       "reports": {
         "close": {
-          "exists": false,
-          "status": "missing",
-          "char_count": 0,
+          "exists": true,
+          "status": "ok",
+          "char_count": 2507,
           "file": {
-            "relative_path": "close-report.md",
-            "exists": false
+            "relative_path": "runs/2026-06-17/close-report.md",
+            "exists": true,
+            "size": 6186,
+            "modified_at": "2026-06-17T14:52:52+08:00",
+            "sha256": "97d6e6084c2ad3ba716987dd5cc00cd6f8e11a4d1e52f199cbae0922580944c4"
           },
           "schedule": {
             "scheduled_time": "14:50",
             "scheduled_at": "2026-06-17T14:50+08:00",
-            "due": false,
-            "automation_status": "not_due",
-            "automation_status_label": "未到计划时间",
-            "diagnosis_cn": "未到计划时间",
-            "manifest_status": "missing",
-            "manifest_json_status": "missing",
+            "due": true,
+            "automation_status": "complete",
+            "automation_status_label": "已按计划生成",
+            "diagnosis_cn": "已按计划生成",
+            "manifest_status": "success",
+            "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.close.json",
             "precondition_gaps_cn": [],
             "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -109,9 +111,7 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
             "manifest_status": "missing",
             "manifest_json_status": "missing",
             "manifest_path": "workflow-manifest.review.json",
-            "precondition_gaps_cn": [
-              "复盘缺少成功前三报：收盘报"
-            ],
+            "precondition_gaps_cn": [],
             "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
           }
         }
