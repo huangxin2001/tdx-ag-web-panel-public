@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-17T15:01:36+08:00",
+  "generated_at": "2026-06-17T15:02:52+08:00",
   "currentDate": "2026-06-17",
   "current_date": "2026-06-17",
   "panel_payload_mode": "lite",
@@ -1327,13 +1327,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "主线不清",
         "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603610",
+          "name": "麒盛科技",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4294,13 +4302,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600703",
+          "name": "三安光电",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4464,13 +4480,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002290",
+          "name": "禾盛新材",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4634,13 +4658,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002929",
+          "name": "润建股份",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4808,13 +4840,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "001359",
+          "name": "平安电工",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4980,13 +5020,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603163",
+          "name": "圣晖集成",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5152,13 +5200,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002222",
+          "name": "福晶科技",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5323,13 +5379,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603328",
+          "name": "依顿电子",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5497,13 +5561,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002213",
+          "name": "大为股份",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5668,13 +5740,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600130",
+          "name": "波导股份",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       }
     ],
@@ -5835,20 +5915,99 @@ window.THREE_PERIOD_PANEL_STATE = {
     }
   },
   "overnight_report_brief": {
-    "status": "missing",
+    "status": "bridge_failed",
     "covered_count": 0,
-    "failed_count": 0,
-    "query_symbol_count": 0,
-    "source_groups": [],
+    "failed_count": 10,
+    "query_symbol_count": 10,
+    "source_groups": [
+      "formal_top3",
+      "open_drive_watch",
+      "overnight_limit_watch",
+      "theme_rotation_watch"
+    ],
     "source_run_date": "2026-06-17",
     "final_ranking": {
-      "items": [],
+      "items": [
+        {
+          "rank": 1,
+          "symbol": "603610",
+          "name": "麒盛科技",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 2,
+          "symbol": "002290",
+          "name": "禾盛新材",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 3,
+          "symbol": "002929",
+          "name": "润建股份",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 4,
+          "symbol": "600703",
+          "name": "三安光电",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 5,
+          "symbol": "001359",
+          "name": "平安电工",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 6,
+          "symbol": "002222",
+          "name": "福晶科技",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 7,
+          "symbol": "603163",
+          "name": "圣晖集成",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 8,
+          "symbol": "002213",
+          "name": "大为股份",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 9,
+          "symbol": "600130",
+          "name": "波导股份",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 10,
+          "symbol": "603328",
+          "name": "依顿电子",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        }
+      ],
       "summary": ""
     },
     "file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-17\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-06-17/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 7736,
+      "modified_at": "2026-06-17T15:02:51+08:00",
+      "sha256": "47dfffb292d079bb3dcf0553a9a01db20a62a846807f3af9b29724af4d95459a"
     }
   },
   "rule_upgrade_proposals": {
@@ -6142,7 +6301,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 3,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6199,7 +6358,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 3,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6307,9 +6466,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-17T15:01:36+08:00",
-    "web_current_state_exported_at": "2026-06-17T15:01:36+08:00",
-    "web_visible_at": "2026-06-17T15:01:36+08:00",
+    "web_panel_state_exported_at": "2026-06-17T15:02:52+08:00",
+    "web_current_state_exported_at": "2026-06-17T15:02:52+08:00",
+    "web_visible_at": "2026-06-17T15:02:52+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -6332,17 +6491,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-17\\web-panel-state.json",
       "relative_path": "runs/2026-06-17/web-panel-state.json",
       "exists": true,
-      "size": 1428839,
-      "modified_at": "2026-06-17T14:57:46+08:00",
-      "sha256": "a3885fbd8a460c61a70f2e00eb50ff59f0fdde92e8c5b4f680146ac2044ce364"
+      "size": 1431412,
+      "modified_at": "2026-06-17T15:01:41+08:00",
+      "sha256": "c8e1377cac49805e446ce0d385f2f43fdc83494877d97e79dad7ae6be3c4bbae"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 278218,
-      "modified_at": "2026-06-17T14:53:00+08:00",
-      "sha256": "1a8dbdf2a92b115a5c2fbed476f4969aad7712ecc9e09e8ea98f3136b7f9502e"
+      "size": 279266,
+      "modified_at": "2026-06-17T15:01:41+08:00",
+      "sha256": "4543552d060c8c8913a47f12010f653dae3acfe724f867854b00e62636edec98"
     }
   },
   "summary": {
@@ -6352,7 +6511,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 19,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 44,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
