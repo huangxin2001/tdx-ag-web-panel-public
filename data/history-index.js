@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-17T16:26:46+08:00",
+  "generated_at": "2026-06-17T20:05:30+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -12,11 +12,9 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "dates": [
     {
       "date": "2026-06-17",
-      "status": "partial",
-      "reports_present": 3,
-      "reports_missing": [
-        "review"
-      ],
+      "status": "complete",
+      "reports_present": 4,
+      "reports_missing": [],
       "reports": {
         "close": {
           "exists": true,
@@ -94,22 +92,25 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
           }
         },
         "review": {
-          "exists": false,
-          "status": "missing",
-          "char_count": 0,
+          "exists": true,
+          "status": "ok",
+          "char_count": 5606,
           "file": {
-            "relative_path": "review-report.md",
-            "exists": false
+            "relative_path": "runs/2026-06-17/review-report.md",
+            "exists": true,
+            "size": 14007,
+            "modified_at": "2026-06-17T20:01:38+08:00",
+            "sha256": "8d525a8bb077e85150798d743c163d2ec4c4816af2ead092e4c36a80393b525c"
           },
           "schedule": {
             "scheduled_time": "20:00",
             "scheduled_at": "2026-06-17T20:00+08:00",
-            "due": false,
-            "automation_status": "not_due",
-            "automation_status_label": "未到计划时间",
-            "diagnosis_cn": "未到计划时间",
-            "manifest_status": "missing",
-            "manifest_json_status": "missing",
+            "due": true,
+            "automation_status": "complete",
+            "automation_status_label": "已按计划生成",
+            "diagnosis_cn": "已按计划生成",
+            "manifest_status": "success",
+            "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.review.json",
             "precondition_gaps_cn": [],
             "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
@@ -4251,8 +4252,8 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   ],
   "summary": {
     "dates": 39,
-    "complete_dates": 26,
-    "partial_dates": 11,
+    "complete_dates": 27,
+    "partial_dates": 10,
     "empty_dates": 2,
     "excluded_dirs": 4,
     "warnings": 0
