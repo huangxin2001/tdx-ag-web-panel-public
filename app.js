@@ -3630,12 +3630,20 @@ function overnightLayerReportForSymbol(symbol) {
   const normalized = normalizeSymbolText(symbol);
   if (!normalized) return null;
   const panelState = panelStateForView?.() || state;
-  const pools = [
-    panelState?.four_layer_tracking?.records,
-    panelState?.four_layer_tracking_by_period?.close?.records,
-    state?.four_layer_tracking?.records,
-    state?.four_layer_tracking_by_period?.close?.records,
-  ].filter(Array.isArray);
+  const activeKey = activeWorkflowReportKey();
+  const pools = [];
+  const appendPool = (records) => {
+    if (Array.isArray(records) && !pools.includes(records)) pools.push(records);
+  };
+  appendPool(fourLayerTrackingPayload()?.records);
+  appendPool(panelState?.four_layer_tracking_by_period?.[activeKey]?.records);
+  appendPool(state?.four_layer_tracking_by_period?.[activeKey]?.records);
+  REPORT_ORDER.forEach((key) => {
+    appendPool(panelState?.four_layer_tracking_by_period?.[key]?.records);
+    appendPool(state?.four_layer_tracking_by_period?.[key]?.records);
+  });
+  appendPool(panelState?.four_layer_tracking?.records);
+  appendPool(state?.four_layer_tracking?.records);
   for (const records of pools) {
     const found = records.find((record) => {
       if (normalizeSymbolText(record?.symbol || record?.code || record?.stock_code) !== normalized) return false;
@@ -3956,8 +3964,10 @@ function nextActionStepTitle(text, index) {
     return "平开不参与";
   }
   if (/低开|跌破|止损|放弃|不参与/.test(clause)) {
-    const breakPrice = firstMatchedPrice(clause, /跌破\s*(\d+(?:\.\d+)?)/) || prices.find((price) => !price.includes("-")) || prices[0];
-    if (/不破/.test(clause) && breakPrice) return `守 ${breakPrice}，破位走`;
+    const supportPrice = firstMatchedPrice(clause, /不破\s*(\d+(?:\.\d+)?)/) || prices.find((price) => !price.includes("-")) || prices[0];
+    const breakPrice = firstMatchedPrice(clause, /跌破\s*(\d+(?:\.\d+)?)/) || prices.find((price) => price !== supportPrice && !price.includes("-")) || prices[1] || supportPrice;
+    if (/不破/.test(clause) && supportPrice && breakPrice && supportPrice !== breakPrice) return `守 ${supportPrice}，破 ${breakPrice}`;
+    if (/不破/.test(clause) && supportPrice) return `守 ${supportPrice}，破位走`;
     if (/放弃|不参与/.test(clause) && breakPrice) return `跌破 ${breakPrice} 放弃`;
     return breakPrice ? `跌破 ${breakPrice} 止损` : "跌破止损";
   }
@@ -3981,9 +3991,11 @@ function nextActionStepTitle(text, index) {
 
 function nextActionStepTone(text, index) {
   const clause = sanitizeBeginnerText(text || "");
-  if (/平开/.test(clause) && /放弃|不参与/.test(clause)) return "risk";
+  if (/平开/.test(clause) && /放弃|不参与/.test(clause)) return "neutral";
+  if (/低开/.test(clause) && /不破|反抽/.test(clause)) return "neutral";
   if (/跌破|止损|放弃|不参与|风险|低开/.test(clause)) return "risk";
-  if (index === 0 || /高开|冲高|优先|兑现|守住|目标|承接|突破/.test(clause)) return "good";
+  if (/守住|平开|承接|站稳|站回/.test(clause)) return "neutral";
+  if (index === 0 || /高开|冲高|优先|兑现|目标|突破/.test(clause)) return "good";
   return "neutral";
 }
 
@@ -4017,6 +4029,56 @@ function nextActionStepDescription(text, title) {
   return cleaned || "按盘面确认";
 }
 
+function nextActionMarkerDescription(clause, token, tokenIndex, step) {
+  const text = sanitizeBeginnerText(clause || "");
+  if (/高开|冲高|优先兑现|止盈/.test(text)) {
+    if (/不放量|无量|不能|不过/.test(text)) return "冲高先观察，不追高";
+    if (/缩量|落袋/.test(text)) return "冲高缩量，分批落袋";
+    if (/封板|再留/.test(text)) return "先兑现，强封再留";
+    return "高开直接强，优先兑现";
+  }
+  if (/守住|平开|承接|站稳|站回/.test(text)) {
+    if (tokenIndex === 0) return "守住不破，偏强延续";
+    return "上看目标位，择机兑现";
+  }
+  if (/跌破|止损|放弃|不参与|低开/.test(text)) {
+    if (/不破/.test(text) && /反抽/.test(text)) return tokenIndex === 0 ? "不破可等反抽" : "破位走弱，止损离场";
+    if (/不参与/.test(text)) return "没有主动承接，不参与";
+    if (/避免|飞刀/.test(text)) return "风险扩大，不接下杀";
+    return "有效跌破，止损离场";
+  }
+  return step?.desc || "按盘面确认";
+}
+
+function nextActionMarkerTone(clause, tokenIndex, step) {
+  const text = sanitizeBeginnerText(clause || "");
+  if (/高开|冲高|优先兑现|止盈/.test(text)) return "good";
+  if (/守住|平开|承接|站稳|站回/.test(text)) {
+    return tokenIndex === 0 ? "neutral" : "good";
+  }
+  if (/跌破|止损|放弃|不参与|低开|风险/.test(text)) {
+    if (/不破/.test(text) && tokenIndex === 0) return "neutral";
+    return "risk";
+  }
+  return step?.tone || "neutral";
+}
+
+function nextActionMarkersForStep(clause, step) {
+  const tokens = priceTokens(clause);
+  if (!tokens.length) {
+    return [{
+      price: "",
+      desc: step.desc,
+      tone: step.tone,
+    }];
+  }
+  return tokens.map((token, tokenIndex) => ({
+    price: token,
+    desc: nextActionMarkerDescription(clause, token, tokenIndex, step),
+    tone: nextActionMarkerTone(clause, tokenIndex, step),
+  }));
+}
+
 function renderNextActionFlowHtml(value) {
   const plan = nextActionPlanParts(value);
   const forecast = percentRangeToken(plan.intro);
@@ -4028,26 +4090,32 @@ function renderNextActionFlowHtml(value) {
       title,
       desc: nextActionStepDescription(clause, title),
       tone: nextActionStepTone(clause, index),
+      clause,
     };
   });
+  const markers = steps.flatMap((step) => nextActionMarkersForStep(step.clause, step)).slice(0, 5);
   if (!steps.length) {
     return `<strong>${escapeHtml(sanitizeBeginnerText(value || "待补明确动作"))}</strong>`;
   }
   return `
-    <div class="four-layer-action-route${forecast ? " has-forecast" : ""}" style="--step-count:${escapeHtml(String(steps.length))}">
-      ${forecast ? `
-        <div class="four-layer-action-route-forecast">
-          <span>冲高预估</span>
-          <strong>${escapeHtml(forecast)}</strong>
-          <em>按场景执行</em>
-        </div>
-      ` : ""}
-      <div class="four-layer-action-route-steps">
+    <div class="four-layer-action-route${forecast ? " has-forecast" : ""}" style="--step-count:${escapeHtml(String(steps.length))}; --mark-count:${escapeHtml(String(markers.length || steps.length))}">
+      <div class="four-layer-action-route-top">
         ${steps.map((step) => `
           <div class="four-layer-action-route-step ${escapeHtml(step.tone)}">
-            <i>${escapeHtml(step.label)}</i>
+            <i>${escapeHtml(String(step.index + 1))}</i>
             <strong>${escapeHtml(step.title)}</strong>
-            <em>${escapeHtml(step.desc)}</em>
+          </div>
+        `).join("")}
+        ${forecast ? `<em class="four-layer-action-route-forecast">预估 ${escapeHtml(forecast)}</em>` : ""}
+      </div>
+      <div class="four-layer-action-route-line">
+        ${(markers.length ? markers : steps).map((item) => `<i class="${escapeHtml(item.tone || "neutral")}"></i>`).join("")}
+      </div>
+      <div class="four-layer-action-route-bottom">
+        ${(markers.length ? markers : steps).map((item) => `
+          <div class="four-layer-action-route-detail ${escapeHtml(item.tone || "neutral")}">
+            ${item.price ? `<strong>${escapeHtml(item.price)}</strong>` : ""}
+            <em>${escapeHtml(item.desc || "按盘面确认")}</em>
           </div>
         `).join("")}
       </div>
