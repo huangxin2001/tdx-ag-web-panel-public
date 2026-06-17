@@ -3814,11 +3814,145 @@ function renderOvernightProbabilityHtml(highlight) {
 }
 
 function renderOvernightNextActionHtml(highlight) {
-  if (!highlight?.value) return "";
+  if (!highlight?.value) {
+    return `
+      <div class="four-layer-next-action-card is-empty">
+        <span>次日操作</span>
+        <strong>待补明确动作</strong>
+      </div>
+    `;
+  }
   return `
-    <div class="four-layer-next-action-card">
+    <div class="four-layer-next-action-card four-layer-next-action-flow">
       <span>${escapeHtml(highlight.label || "次日操作")}</span>
-      <strong>${escapeHtml(highlight.value)}</strong>
+      ${renderNextActionFlowHtml(highlight.value)}
+    </div>
+  `;
+}
+
+function nextActionClauses(value) {
+  const text = sanitizeBeginnerText(value || "")
+    .replace(/^次日操作[：:]\s*/, "")
+    .replace(/^明日操作[：:]\s*/, "");
+  const parts = text
+    .split(/[；;。]/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const intro = parts.find((part) => /预估|预计|冲高/.test(part) && /%/.test(part)) || "";
+  const candidates = parts.filter((part) => part !== intro);
+  const pick = (patterns) => candidates.find((part) => patterns.some((pattern) => pattern.test(part)));
+  const selected = [
+    pick([/高开/, /冲高/, /优先兑现/, /高于/]),
+    pick([/平开/, /守住/, /看\s*\d/, /承接/, /站稳/]),
+    pick([/低开/, /跌破/, /止损/, /放弃/, /减仓/, /不参与/]),
+  ].filter(Boolean);
+  const seen = new Set();
+  const unique = selected.filter((part) => {
+    if (seen.has(part)) return false;
+    seen.add(part);
+    return true;
+  });
+  if (unique.length) return unique.slice(0, 3);
+  return (candidates.length ? candidates : parts).slice(0, 3);
+}
+
+function priceTokens(text) {
+  const value = String(text || "");
+  const matches = Array.from(value.matchAll(/\d+(?:\.\d+)?/g));
+  return matches
+    .filter((match) => value.slice(match.index + match[0].length).trimStart()[0] !== "%")
+    .map((match) => match[0])
+    .slice(0, 3);
+}
+
+function nextActionStepTitle(text, index) {
+  const clause = sanitizeBeginnerText(text || "");
+  const prices = priceTokens(clause);
+  if (/跌破|止损|放弃|不参与|低开/.test(clause)) {
+    return prices[0] ? `跌破 ${prices[0]} 止损` : "跌破止损";
+  }
+  if (/守住|平开|承接/.test(clause)) {
+    if (prices.length >= 2) return `守住 ${prices[0]} 看 ${prices[1]}`;
+    if (prices[0]) return `守住 ${prices[0]}`;
+    return "守住承接";
+  }
+  if (/高开|冲高|优先兑现/.test(clause)) {
+    return "高开优先兑现";
+  }
+  return clause.replace(/[，,].*$/, "").slice(0, 12) || `步骤 ${index + 1}`;
+}
+
+function nextActionStepTone(text, index) {
+  const clause = sanitizeBeginnerText(text || "");
+  if (/跌破|止损|放弃|不参与|风险|低开/.test(clause)) return "risk";
+  if (index === 0 || /高开|冲高|优先|兑现|守住|目标|承接|突破/.test(clause)) return "good";
+  return "neutral";
+}
+
+function nextActionStepDescription(text, title) {
+  const clause = sanitizeBeginnerText(text || "");
+  const cleaned = clause
+    .replace(/^次日[^；;，,。]*?[，,]/, "")
+    .replace(title, "")
+    .replace(/[；;。]+$/, "")
+    .trim();
+  if (/高开|冲高|优先兑现/.test(clause)) return "高开直接强，优先兑现";
+  if (/守住|平开|承接/.test(clause)) return "守住不破，偏强延续";
+  if (/跌破|止损|放弃|低开/.test(clause)) return "有效跌破，止损离场";
+  return cleaned || "按盘面确认";
+}
+
+function renderNextActionFlowHtml(value) {
+  const steps = nextActionClauses(value).map((clause, index) => {
+    const title = nextActionStepTitle(clause, index);
+    const tokens = priceTokens(clause);
+    const price = tokens.length ? tokens.join(tokens.length === 2 ? " - " : " / ") : "";
+    return {
+      index,
+      title,
+      price,
+      desc: nextActionStepDescription(clause, title),
+      tone: nextActionStepTone(clause, index),
+    };
+  });
+  if (!steps.length) {
+    return `<strong>${escapeHtml(sanitizeBeginnerText(value || "待补明确动作"))}</strong>`;
+  }
+  return `
+    <div class="four-layer-action-route" style="--step-count:${escapeHtml(String(steps.length))}">
+      <div class="four-layer-action-route-top">
+        ${steps.map((step) => `
+          <div class="four-layer-action-route-step ${escapeHtml(step.tone)}">
+            <i>${escapeHtml(String(step.index + 1))}</i>
+            <strong>${escapeHtml(step.title)}</strong>
+          </div>
+        `).join("")}
+      </div>
+      <div class="four-layer-action-route-line">
+        ${steps.map((step) => `<i class="${escapeHtml(step.tone)}"></i>`).join("")}
+      </div>
+      <div class="four-layer-action-route-bottom">
+        ${steps.map((step) => `
+          <div class="four-layer-action-route-detail ${escapeHtml(step.tone)}">
+            ${step.price ? `<strong>${escapeHtml(step.price)}</strong>` : ""}
+            <em>${escapeHtml(step.desc)}</em>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderBoardMetaHtml(boardMeta) {
+  const text = sanitizeBeginnerText(boardMeta || "");
+  if (!text) return "";
+  const match = text.match(/^([^：:]{1,8})[：:]\s*(.*)$/);
+  const label = match ? match[1] : "板块";
+  const value = match ? match[2] : text;
+  return `
+    <div class="four-layer-board-card">
+      <span>${escapeHtml(label)}</span>
+      <strong>${escapeHtml(value || "--")}</strong>
     </div>
   `;
 }
@@ -3892,20 +4026,6 @@ function renderLayerItem(item, card) {
   const overnightSummary = showOvernight
     ? (rankingConclusion || overnightStatus || overnightDetail || "隔夜摘要已落盘")
     : (catalystText || mainlineText || "只读跟踪，不改 Top3");
-  const rawStrength = Number(item?.score ?? item?.strength_score ?? item?.technical_fund_score ?? 0);
-  const strengthPct = rawStrength
-    ? Math.max(0, Math.min(100, Math.round(rawStrength <= 1 ? rawStrength * 100 : rawStrength)))
-    : 62;
-  const trendTone = returnInfo.tone === "negative"
-    ? "回撤观察"
-    : ((returnInfo.tone === "pending" || returnInfo.tone === "flat")
-      ? "等待确认"
-      : (strengthPct >= 60 ? "上升趋势" : (strengthPct >= 45 ? "震荡增强" : "震荡偏弱")));
-  const trendArrow = returnInfo.tone === "negative"
-    ? "↓"
-    : ((returnInfo.tone === "pending" || returnInfo.tone === "flat")
-      ? "→"
-      : (strengthPct >= 60 ? "↑" : (strengthPct >= 45 ? "→" : "↘")));
   const sparkPath = returnInfo.tone === "negative"
     ? "2,16 14,13 26,15 38,20 50,18 62,23 74,21 86,25"
     : (returnInfo.tone === "pending" ? "2,18 14,17 26,19 38,18 50,17 62,19 74,18 86,17" : "2,22 14,19 26,20 38,14 50,16 62,9 74,12 86,7");
@@ -3921,14 +4041,11 @@ function renderLayerItem(item, card) {
           <em>${escapeHtml(parsed.symbol)}</em>
         </div>
       </div>
-      <div class="four-layer-matrix-module four-layer-direction-cell ${escapeHtml(returnInfo.tone)}">
-        <span>方向/强度</span>
-        <b>${escapeHtml(trendTone)} <i>${escapeHtml(trendArrow)}</i><small>强度 ${escapeHtml(String(strengthPct))}%</small></b>
-        <div class="four-layer-strength-bar" style="--strength:${escapeHtml(String(strengthPct))}%"></div>
-        ${boardMeta ? `<em class="four-layer-direction-meta">${escapeHtml(boardMeta)}</em>` : ""}
+      <div class="four-layer-matrix-module four-layer-direction-cell four-layer-board-cell ${escapeHtml(returnInfo.tone)}">
+        ${renderBoardMetaHtml(boardMeta)}
         ${renderOvernightProbabilityHtml(overnightHighlights.probability)}
       </div>
-      <div class="four-layer-matrix-module four-layer-risk-cell">
+      <div class="four-layer-matrix-module four-layer-risk-cell four-layer-action-cell">
         ${renderOvernightNextActionHtml(overnightHighlights.nextAction)}
       </div>
       <div class="four-layer-matrix-module four-layer-overnight-cell">
@@ -3978,7 +4095,7 @@ function renderFourLayerCard(card) {
       <div class="four-layer-table-panel">
         <div class="four-layer-table-head" aria-hidden="true">
           <span>标的</span>
-          <span>方向强度</span>
+          <span>板块 / 概率</span>
           <span>次日操作</span>
           <span>隔夜摘要</span>
           <span>收益</span>
