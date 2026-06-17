@@ -1,12 +1,12 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-18T00:01:54+08:00",
+  "generated_at": "2026-06-18T01:33:56+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
   "source": {
     "runs_dir": "runs",
-    "today": "2026-06-17",
+    "today": "2026-06-18",
     "filter": "strict real run dates"
   },
   "dates": [
