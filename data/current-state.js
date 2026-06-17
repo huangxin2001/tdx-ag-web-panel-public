@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-17T10:52:09+08:00",
+  "generated_at": "2026-06-17T11:39:35+08:00",
   "currentDate": "2026-06-17",
   "current_date": "2026-06-17",
   "panel_payload_mode": "lite",
@@ -11,9 +11,9 @@ window.THREE_PERIOD_PANEL_STATE = {
   "run": {
     "date": "2026-06-17",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-17",
-    "run_id": "20260617-morning-105015306473",
-    "period": "morning",
-    "status": "success",
+    "run_id": "20260617-noon-113500594716",
+    "period": "noon",
+    "status": "failed",
     "manifest_status": "ok",
     "lineage_status": "ok"
   },
@@ -161,12 +161,12 @@ window.THREE_PERIOD_PANEL_STATE = {
       "schedule": {
         "scheduled_time": "11:35",
         "scheduled_at": "2026-06-17T11:35+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
+        "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.noon.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
@@ -4585,8 +4585,9 @@ window.THREE_PERIOD_PANEL_STATE = {
   },
   "automation_schedule": {
     "by_status": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 1,
+      "precondition_failed": 1
     },
     "items": [
       {
@@ -4608,8 +4609,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-17T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -4623,7 +4624,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     ],
     "missed_count": 0,
-    "failed_count": 0,
+    "failed_count": 1,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -4631,20 +4632,21 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-06-17",
     "current_date": "2026-06-17",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-17：1/4 四报已生成",
+    "headline_cn": "当前日期 2026-06-17：1/4 四报已生成，前置失败 1 项",
     "report_ready_count": 1,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 2,
-      "invalid_count": 0,
+      "missing_count": 10,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 1,
+      "precondition_failed": 1
     },
     "schedule_items": [
       {
@@ -4666,8 +4668,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-17T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -4680,7 +4682,9 @@ window.THREE_PERIOD_PANEL_STATE = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [],
+    "missing_reports": [
+      "noon"
+    ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "top_status_summary": {
@@ -4688,20 +4692,21 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-06-17",
     "current_date": "2026-06-17",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-17：1/4 四报已生成",
+    "headline_cn": "当前日期 2026-06-17：1/4 四报已生成，前置失败 1 项",
     "report_ready_count": 1,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 2,
-      "invalid_count": 0,
+      "missing_count": 10,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 1,
+      "precondition_failed": 1
     },
     "schedule_items": [
       {
@@ -4723,8 +4728,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-17T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -4737,7 +4742,9 @@ window.THREE_PERIOD_PANEL_STATE = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [],
+    "missing_reports": [
+      "noon"
+    ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "visibility_audit": {},
@@ -4751,12 +4758,13 @@ window.THREE_PERIOD_PANEL_STATE = {
     "data_sources_ok": 20,
     "warnings": 0,
     "automation_missed": 0,
-    "automation_failed": 0,
+    "automation_failed": 1,
     "automation_incomplete": 0,
-    "lineage_nodes": 38,
+    "lineage_nodes": 36,
     "automation_status_counts": {
       "complete": 1,
-      "not_due": 3
+      "not_due": 2,
+      "precondition_failed": 1
     },
     "panel_payload_mode": "lite"
   },

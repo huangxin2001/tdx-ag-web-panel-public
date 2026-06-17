@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-17T10:57:02+08:00",
+  "generated_at": "2026-06-17T11:44:06+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -78,12 +78,12 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
           "schedule": {
             "scheduled_time": "11:35",
             "scheduled_at": "2026-06-17T11:35+08:00",
-            "due": false,
-            "automation_status": "not_due",
-            "automation_status_label": "未到计划时间",
-            "diagnosis_cn": "未到计划时间",
-            "manifest_status": "missing",
-            "manifest_json_status": "missing",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.noon.json",
             "precondition_gaps_cn": [],
             "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
