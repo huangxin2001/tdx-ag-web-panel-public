@@ -6238,7 +6238,7 @@ body::after,
 }
 
 .four-layer-table-head {
-  grid-template-columns: minmax(180px, 1.05fr) minmax(230px, 1.35fr) minmax(190px, 1.1fr) minmax(260px, 1.42fr) minmax(130px, 0.72fr);
+  grid-template-columns: minmax(180px, 1.05fr) minmax(230px, 1.26fr) minmax(270px, 1.52fr) minmax(220px, 1.12fr) minmax(130px, 0.72fr);
   padding: 8px 16px 7px;
   border-bottom: 1px solid color-mix(in srgb, var(--layer-color) 18%, rgba(255, 255, 255, 0.04));
   background: color-mix(in srgb, var(--layer-color) 5%, rgba(255, 255, 255, 0.012));
@@ -6253,7 +6253,7 @@ body::after,
 
 .four-layer-watch-item {
   position: relative;
-  grid-template-columns: minmax(180px, 1.05fr) minmax(230px, 1.35fr) minmax(190px, 1.1fr) minmax(260px, 1.42fr) minmax(130px, 0.72fr);
+  grid-template-columns: minmax(180px, 1.05fr) minmax(230px, 1.26fr) minmax(270px, 1.52fr) minmax(220px, 1.12fr) minmax(130px, 0.72fr);
   min-height: 76px;
   padding: 10px 16px 19px;
   border-width: 0 0 1px;
@@ -6376,6 +6376,43 @@ body::after,
   white-space: nowrap;
 }
 
+.four-layer-probability-card {
+  display: grid;
+  gap: 3px;
+  margin-top: 7px;
+  padding: 7px 8px;
+  border: 1px solid color-mix(in srgb, #f7c532 26%, transparent);
+  border-radius: 7px;
+  background: linear-gradient(135deg, rgba(247, 197, 50, 0.12), rgba(255, 255, 255, 0.02));
+}
+
+.four-layer-probability-card span,
+.four-layer-next-action-card span {
+  color: color-mix(in srgb, var(--layer-color) 76%, #ffffff);
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1.2;
+}
+
+.four-layer-probability-card strong {
+  color: #ffd84e;
+  font-size: 13px;
+  font-weight: 950;
+  line-height: 1.28;
+}
+
+.four-layer-probability-card em {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #b4c5ca;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 850;
+  line-height: 1.38;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .four-layer-risk-cell {
   background: color-mix(in srgb, var(--layer-color) 5%, rgba(255, 255, 255, 0.018));
 }
@@ -6401,6 +6438,25 @@ body::after,
   font-weight: 900;
   line-height: 1;
   white-space: nowrap;
+}
+
+.four-layer-next-action-card {
+  display: grid;
+  gap: 4px;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.four-layer-next-action-card strong {
+  display: -webkit-box;
+  overflow: hidden;
+  color: #f4fbff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .four-layer-overnight-cell {
@@ -6493,7 +6549,7 @@ body::after,
 @media (max-width: 1280px) {
   .four-layer-table-head,
   .four-layer-watch-item {
-    grid-template-columns: minmax(160px, 1fr) minmax(190px, 1.15fr) minmax(170px, 1fr) minmax(210px, 1.18fr) minmax(110px, 0.68fr);
+    grid-template-columns: minmax(160px, 1fr) minmax(190px, 1.08fr) minmax(220px, 1.28fr) minmax(180px, 0.92fr) minmax(110px, 0.68fr);
   }
 }
 

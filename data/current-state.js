@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-17T20:01:39+08:00",
+  "generated_at": "2026-06-17T22:48:26+08:00",
   "currentDate": "2026-06-17",
   "current_date": "2026-06-17",
   "panel_payload_mode": "lite",
@@ -7101,9 +7101,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-17T20:01:39+08:00",
-    "web_current_state_exported_at": "2026-06-17T20:01:39+08:00",
-    "web_visible_at": "2026-06-17T20:01:39+08:00",
+    "web_panel_state_exported_at": "2026-06-17T22:48:26+08:00",
+    "web_current_state_exported_at": "2026-06-17T22:48:26+08:00",
+    "web_visible_at": "2026-06-17T22:48:26+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -7126,17 +7126,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-17\\web-panel-state.json",
       "relative_path": "runs/2026-06-17/web-panel-state.json",
       "exists": true,
-      "size": 1415299,
-      "modified_at": "2026-06-17T16:52:14+08:00",
-      "sha256": "e455e1655a26add13186286cb36062eef6377c58107e81ba3ab3bb17d95215f2"
+      "size": 1601135,
+      "modified_at": "2026-06-17T20:05:31+08:00",
+      "sha256": "35593c01e0f7e9f043938461ec04b4987367cd83c87153aef5a741cdd2d1c4dc"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 308209,
-      "modified_at": "2026-06-17T16:52:14+08:00",
-      "sha256": "d22f0a1681bab2f465b634cc3969a598173f1cc6cd9b7b7c559f44d3e26cae27"
+      "size": 349483,
+      "modified_at": "2026-06-17T20:01:46+08:00",
+      "sha256": "a509ee325e3576029393d8ea2488ba8bc5ae42c99beb6b2ee75acec1bba2ef31"
     }
   },
   "summary": {

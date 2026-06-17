@@ -3767,11 +3767,67 @@ function parseOvernightOriginalContent(rawText) {
   return hasStructured ? { rows, conclusionTitle, conclusionParagraphs, planItems } : null;
 }
 
+function overnightLabelKey(label) {
+  return sanitizeBeginnerText(stripMarkdown(label || "")).replace(/[\s/／：:、，,。；;（）()【】\[\]-]/g, "");
+}
+
+function isOvernightProbabilityLabel(label) {
+  const key = overnightLabelKey(label);
+  return key.includes("上涨概率") || key.includes("上行概率") || key.includes("修复概率") || key.includes("冲高概率");
+}
+
+function isOvernightNextActionLabel(label) {
+  const key = overnightLabelKey(label);
+  return key.includes("次日操作") || key.includes("明日操作") || key.includes("次日策略") || key.includes("明日策略");
+}
+
+function overnightPromotedHighlights(item) {
+  const structured = parseOvernightOriginalContent(overnightReportOriginalText(item));
+  const report = item?.overnight_report && typeof item.overnight_report === "object" ? item.overnight_report : {};
+  const probabilityRow = structured?.rows?.find((row) => isOvernightProbabilityLabel(row?.label));
+  const nextActionRow = structured?.planItems?.find((row) => isOvernightNextActionLabel(row?.label));
+  return {
+    probability: probabilityRow ? {
+      label: probabilityRow.label || "上涨概率",
+      value: probabilityRow.judgement || "",
+      detail: probabilityRow.basis || "",
+    } : null,
+    nextAction: nextActionRow ? {
+      label: nextActionRow.label || "次日操作",
+      value: nextActionRow.value || "",
+    } : (report?.action_hint ? {
+      label: "次日操作",
+      value: sanitizeBeginnerText(report.action_hint),
+    } : null),
+  };
+}
+
+function renderOvernightProbabilityHtml(highlight) {
+  if (!highlight?.value && !highlight?.detail) return "";
+  return `
+    <div class="four-layer-probability-card">
+      <span>${escapeHtml(highlight.label || "上涨概率")}</span>
+      <strong>${escapeHtml(highlight.value || "--")}</strong>
+      ${highlight.detail ? `<em>${escapeHtml(highlight.detail)}</em>` : ""}
+    </div>
+  `;
+}
+
+function renderOvernightNextActionHtml(highlight) {
+  if (!highlight?.value) return "";
+  return `
+    <div class="four-layer-next-action-card">
+      <span>${escapeHtml(highlight.label || "次日操作")}</span>
+      <strong>${escapeHtml(highlight.value)}</strong>
+    </div>
+  `;
+}
+
 function renderOvernightStructuredHtml(item) {
   const structured = parseOvernightOriginalContent(overnightReportOriginalText(item));
   if (!structured) return "";
   const conclusionBasis = structured.conclusionParagraphs.filter(Boolean).join(" ");
-  const displayRows = structured.rows.slice();
+  const displayRows = structured.rows.filter((row) => !isOvernightProbabilityLabel(row?.label));
   if (structured.conclusionTitle || conclusionBasis) {
     displayRows.push({
       label: "结论",
@@ -3791,11 +3847,12 @@ function renderOvernightStructuredHtml(item) {
       `).join("")}
     </div>
   ` : "";
-  const planHtml = structured.planItems.length ? `
+  const visiblePlanItems = structured.planItems.filter((itemRow) => !isOvernightNextActionLabel(itemRow?.label));
+  const planHtml = visiblePlanItems.length ? `
     <div class="four-layer-overnight-section">
       <div class="four-layer-overnight-section-title">隔夜交易计划</div>
       <div class="four-layer-overnight-plan">
-        ${structured.planItems.map((itemRow) => `
+        ${visiblePlanItems.map((itemRow) => `
           <div class="four-layer-overnight-plan-row">
             <div class="four-layer-overnight-plan-label">${escapeHtml(itemRow.label || "要点")}</div>
             <div class="four-layer-overnight-plan-value">${escapeHtml(itemRow.value || "--")}</div>
@@ -3820,6 +3877,7 @@ function renderLayerItem(item, card) {
   const showOvernight = shouldRenderOvernightBrief(card);
   const hideAuxRowsForOvernight = shouldHideOvernightAuxRows(card);
   const overnightStructured = showOvernight ? renderOvernightStructuredHtml(item) : "";
+  const overnightHighlights = showOvernight ? overnightPromotedHighlights(item) : {};
   const overnightOriginal = showOvernight ? sanitizeBeginnerText(overnightReportOriginalText(item)) : "";
   const hasStructuredOvernight = Boolean(overnightStructured);
   const overnightStatus = showOvernight && !hasStructuredOvernight ? overnightReportSummaryText(item) : "";
@@ -3830,28 +3888,6 @@ function renderLayerItem(item, card) {
     item?.catalyst_timeliness_label,
     item?.catalyst_status_detail || item?.catalyst_timeliness_detail,
   ].filter(Boolean).join(" · ");
-  const noticeText = item?.announcement_check?.status
-    || item?.candidate_notice_status
-    || item?.notice_status
-    || (card.key === "formal" ? "checked_clear" : "旁路只读");
-  const technicalText = item?.technical_decision
-    || item?.candidate_validation?.validation?.technical_check?.decision
-    || item?.technical?.decision
-    || (card.key === "score" ? "评分旁路" : "观察");
-  const layerStatusLabel = (value) => {
-    const key = String(value || "").toLowerCase();
-    const labels = {
-      checked_clear: "公告已查",
-      complete_empty: "公告已查",
-      queried_empty: "已查为空",
-      not_checked: "未补查",
-      pass: "技术通过",
-      observe: "观察",
-      review_only: "只读",
-      sample: "旁路样本",
-    };
-    return labels[key] || friendlyStatus(key || value);
-  };
   const rankingConclusion = showOvernight ? overnightRankingConclusion(item?.symbol || parsed.symbol) : "";
   const overnightSummary = showOvernight
     ? (rankingConclusion || overnightStatus || overnightDetail || "隔夜摘要已落盘")
@@ -3890,13 +3926,10 @@ function renderLayerItem(item, card) {
         <b>${escapeHtml(trendTone)} <i>${escapeHtml(trendArrow)}</i><small>强度 ${escapeHtml(String(strengthPct))}%</small></b>
         <div class="four-layer-strength-bar" style="--strength:${escapeHtml(String(strengthPct))}%"></div>
         ${boardMeta ? `<em class="four-layer-direction-meta">${escapeHtml(boardMeta)}</em>` : ""}
+        ${renderOvernightProbabilityHtml(overnightHighlights.probability)}
       </div>
       <div class="four-layer-matrix-module four-layer-risk-cell">
-        <span>风险核验</span>
-        <div class="four-layer-status-pills">
-          <i>${escapeHtml(layerStatusLabel(noticeText))}</i>
-          <i>${escapeHtml(layerStatusLabel(technicalText))}</i>
-        </div>
+        ${renderOvernightNextActionHtml(overnightHighlights.nextAction)}
       </div>
       <div class="four-layer-matrix-module four-layer-overnight-cell">
         <span>隔夜/层级摘要</span>
@@ -3946,7 +3979,7 @@ function renderFourLayerCard(card) {
         <div class="four-layer-table-head" aria-hidden="true">
           <span>标的</span>
           <span>方向强度</span>
-          <span>风险核验</span>
+          <span>次日操作</span>
           <span>隔夜摘要</span>
           <span>收益</span>
         </div>
