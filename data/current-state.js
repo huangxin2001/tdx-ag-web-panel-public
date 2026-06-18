@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-18T15:00:42+08:00",
+  "generated_at": "2026-06-18T15:01:34+08:00",
   "currentDate": "2026-06-18",
   "current_date": "2026-06-18",
   "panel_payload_mode": "lite",
@@ -6586,31 +6586,40 @@ window.THREE_PERIOD_PANEL_STATE = {
     "status": "ok",
     "date": "2026-06-18",
     "title": "交易员复盘工作台",
-    "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
-    "market_tone_label": "偏弱复盘",
-    "emotion_score": 48,
-    "formal_sample_count": 2,
-    "side_channel_sample_count": 17,
-    "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-06-18",
+    "one_liner": "2026-06-17 收盘样本、2026-06-18 回填：正式票 T+1 平均 1.13%，样本 1 只。 正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
+    "market_tone_label": "承接尚可",
+    "emotion_score": 62,
+    "formal_sample_count": 1,
+    "side_channel_sample_count": 18,
+    "formal_return_text": "2026-06-17 收盘样本、2026-06-18 回填：正式票 T+1 平均 1.13%，样本 1 只。",
+    "side_return_text": "2026-06-17 收盘样本、2026-06-18 回填：旁路样本 T+1 平均 -0.20%，样本 18 只，只作对比。",
+    "return_source_close_date": "2026-06-17",
     "return_backfill_date": "2026-06-18",
-    "return_context_text": "2026-06-18 当前样本",
-    "cross_date_review_return": false,
-    "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
+    "return_context_text": "2026-06-17 收盘样本、2026-06-18 回填",
+    "cross_date_review_return": true,
+    "core_cause": "正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
       "second_view": "龙虾第二复盘暂无有效正文，按本地复盘产物继续审计。",
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
-    "decision_path": [],
+    "decision_path": [
+      {
+        "rank": 1,
+        "symbol": "603610",
+        "name": "麒盛科技",
+        "verdict": "降级观察",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      }
+    ],
     "loss_matrix": [
       {
         "label": "正式收益",
-        "value": "--",
+        "value": "1.13%",
         "status": "ok",
-        "detail": "正式票收益样本不足，复盘只做资料不足标记。"
+        "detail": "2026-06-17 收盘样本、2026-06-18 回填：正式票 T+1 平均 1.13%，样本 1 只。"
       },
       {
         "label": "上午承接",
@@ -6620,9 +6629,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "-0.20%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-06-17 收盘样本、2026-06-18 回填：旁路样本 T+1 平均 -0.20%，样本 18 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -6638,7 +6647,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -0.60%。只做旁路收益统计。"
       },
       {
         "group": "技术观察",
@@ -6648,27 +6657,27 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "候选评分前排",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -1.00%。只做旁路收益统计。"
       },
       {
         "group": "低位回流观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 0.26%。只做旁路收益统计。"
       },
       {
         "group": "早盘驱动观察",
         "verdict": "旁路统计",
-        "reason": "样本 2 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 3.39%。只做旁路收益统计。"
       },
       {
         "group": "隔夜涨停观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -1.82%。只做旁路收益统计。"
       },
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -1.44%。只做旁路收益统计。"
       }
     ],
     "timeline": [
@@ -6701,23 +6710,23 @@ window.THREE_PERIOD_PANEL_STATE = {
     },
     "source_status": {
       "paper_trade_summary": "ok",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-18\\paper-trade-summary.json",
-        "relative_path": "runs/2026-06-18/paper-trade-summary.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-18\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-06-18/paper-trade-summary.review.json",
         "exists": true,
-        "size": 1839,
-        "modified_at": "2026-06-18T14:57:31+08:00",
-        "sha256": "c59f98d315be23dd887fe9b5e466c5bc36295f762c333e66c7b29bb1f3044318"
+        "size": 1882,
+        "modified_at": "2026-06-18T15:01:32+08:00",
+        "sha256": "45b1bd66f6aa8f95629a8e70793d27190f64897ac1b237e3d40fd07ddc226598"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-18\\reverse-miss.json",
@@ -6816,7 +6825,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 5,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6873,7 +6882,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 5,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6981,9 +6990,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-18T15:00:42+08:00",
-    "web_current_state_exported_at": "2026-06-18T15:00:42+08:00",
-    "web_visible_at": "2026-06-18T15:00:42+08:00",
+    "web_panel_state_exported_at": "2026-06-18T15:01:34+08:00",
+    "web_current_state_exported_at": "2026-06-18T15:01:34+08:00",
+    "web_visible_at": "2026-06-18T15:01:34+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -7006,17 +7015,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-18\\web-panel-state.json",
       "relative_path": "runs/2026-06-18/web-panel-state.json",
       "exists": true,
-      "size": 1411328,
-      "modified_at": "2026-06-18T14:57:42+08:00",
-      "sha256": "d8987bf6a273898f0566544f1b15b225ec54f73c3ac0cf57b1c63860ae880ee9"
+      "size": 1464057,
+      "modified_at": "2026-06-18T15:00:48+08:00",
+      "sha256": "b4d75af619c05ba3cdf8d70d6e8d3529add7f81b1fc5287a99b961a1fdf4ce68"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 287605,
-      "modified_at": "2026-06-18T14:57:42+08:00",
-      "sha256": "a446234302555e9a069b5a0a89ff59408be0e3f7bc257df9a4f5de9e87cc5ce1"
+      "size": 341466,
+      "modified_at": "2026-06-18T15:00:48+08:00",
+      "sha256": "0d53fc1922d0b180de1ed6806effb88e3f60a68f8b178e03567b0ac69919c5be"
     }
   },
   "summary": {
@@ -7026,7 +7035,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 19,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 40,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
