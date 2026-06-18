@@ -454,7 +454,6 @@ function panelViewLockedToHistory() {
 function shouldAutoRefreshLiveState() {
   if (!autoBootPanelStateEnabled) return false;
   if (panelViewLockedToHistory()) return false;
-  if (window.location.protocol === "file:") return false;
   return true;
 }
 
@@ -695,6 +694,23 @@ function parsePanelStateScriptText(text, globalName) {
 }
 
 async function fetchPanelStatePayload(src, globalName) {
+  if (window.location.protocol === "file:") {
+    const loaded = await loadOptionalScript(src, {
+      cacheKey: `${DERIVED_DATA_VERSION}-${Date.now()}`,
+      removeAfterLoad: true,
+      timeoutMs: globalName === "THREE_PERIOD_PANEL_STATE_FULL"
+        ? PANEL_FULL_STATE_SCRIPT_TIMEOUT_MS
+        : PANEL_STATE_SCRIPT_TIMEOUT_MS,
+    });
+    if (!loaded) {
+      throw new Error(`script load failed: ${src}`);
+    }
+    const payload = window[globalName];
+    if (!payload || typeof payload !== "object") {
+      throw new Error(`未找到 ${globalName} 全局变量`);
+    }
+    return payload;
+  }
   const separator = src.includes("?") ? "&" : "?";
   const url = `${src}${separator}v=${encodeURIComponent(DERIVED_DATA_VERSION)}`;
   const response = await fetch(url, { cache: "no-cache" });
@@ -710,8 +726,12 @@ function scheduleSecondaryDerivedDataReload() {
   const now = Date.now();
   if (livePanelSecondaryRefreshAt && now < livePanelSecondaryRefreshAt) return;
   livePanelSecondaryRefreshAt = now + PANEL_SECONDARY_REFRESH_INTERVAL_MS;
+  const cacheKey = window.location.protocol === "file:"
+    ? `${DERIVED_DATA_VERSION}-${now}`
+    : DERIVED_DATA_VERSION;
   secondaryDerivedDataLoadPromise = Promise.all(
     SECONDARY_DERIVED_DATA_SCRIPTS.map((src) => loadOptionalScript(src, {
+      cacheKey,
       timeoutMs: PANEL_STATE_SCRIPT_TIMEOUT_MS,
       removeAfterLoad: true,
     })),
@@ -765,7 +785,7 @@ async function refreshLivePanelState(options = {}) {
 }
 
 function startLivePanelRefreshLoop() {
-  if (livePanelRefreshTimer || window.location.protocol === "file:") return;
+  if (livePanelRefreshTimer) return;
   livePanelRefreshTimer = window.setInterval(() => {
     refreshLivePanelState();
   }, PANEL_LIVE_REFRESH_INTERVAL_MS);
