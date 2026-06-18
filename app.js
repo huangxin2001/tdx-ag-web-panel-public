@@ -391,16 +391,16 @@ function bindCompleteReportScroll() {
 
 const PRIMARY_DERIVED_DATA_SCRIPT = "./data/current-state.js";
 const FULL_DERIVED_DATA_SCRIPT = "./data/current-state-full.js";
+const PANEL_STATE_EVENT_STREAM = "./data/panel-events";
 const SECONDARY_DERIVED_DATA_SCRIPTS = [
   "./data/history-index.js",
   "./data/strategy-history.js",
 ];
 const CRITICAL_DERIVED_DATA_SCRIPTS = [PRIMARY_DERIVED_DATA_SCRIPT];
 const HISTORY_DETAIL_SCRIPT = "./data/history-detail.js";
-const DERIVED_DATA_VERSION = "20260616-public-panel-lite-v1";
+const DERIVED_DATA_VERSION = "20260618-panel-events-v1";
 const PANEL_STATE_SCRIPT_TIMEOUT_MS = 4500;
 const PANEL_FULL_STATE_SCRIPT_TIMEOUT_MS = 12000;
-const PANEL_LIVE_REFRESH_INTERVAL_MS = 10000;
 const PANEL_SECONDARY_REFRESH_INTERVAL_MS = 60000;
 const READY_REPORT_STATUSES = new Set(["ok", "success", "complete", "complete_empty", "pass", "ready", "done"]);
 const STRATEGY_ANALYTICS_START_DATE = "2026-05-15";
@@ -410,7 +410,8 @@ let historyDetailLoadPromise = null;
 let secondaryDerivedDataLoadPromise = null;
 let fullPanelStateLoadPromise = null;
 let autoBootPanelStateEnabled = true;
-let livePanelRefreshTimer = null;
+let livePanelEventSource = null;
+let livePanelFocusRefreshBound = false;
 let livePanelRefreshInFlight = false;
 let livePanelSecondaryRefreshAt = 0;
 
@@ -785,15 +786,28 @@ async function refreshLivePanelState(options = {}) {
 }
 
 function startLivePanelRefreshLoop() {
-  if (livePanelRefreshTimer) return;
-  livePanelRefreshTimer = window.setInterval(() => {
-    refreshLivePanelState();
-  }, PANEL_LIVE_REFRESH_INTERVAL_MS);
-  document.addEventListener("visibilitychange", () => {
-    if (!document.hidden) {
+  if (!livePanelFocusRefreshBound) {
+    livePanelFocusRefreshBound = true;
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) {
+        refreshLivePanelState({ forceFull: true });
+      }
+    });
+    window.addEventListener("focus", () => {
+      refreshLivePanelState({ forceFull: true });
+    });
+  }
+  if (livePanelEventSource || window.location.protocol === "file:" || typeof EventSource !== "function") return;
+  livePanelEventSource = new EventSource(PANEL_STATE_EVENT_STREAM);
+  livePanelEventSource.addEventListener("panel-state-changed", () => {
+    if (shouldAutoRefreshLiveState()) {
       refreshLivePanelState({ forceFull: true });
     }
   });
+  livePanelEventSource.onerror = () => {
+    // EventSource reconnects by itself. Keep the old state visible until the
+    // local panel server is reachable again.
+  };
 }
 
 function escapeHtml(value) {
