@@ -4156,7 +4156,7 @@ function renderNextActionFlowHtml(value) {
           </div>
         `).join("")}
       </div>
-      ${fullText ? `<p class="four-layer-action-route-full">${escapeHtml(fullText)}</p>` : ""}
+      ${fullText ? `<div class="four-layer-action-route-full">${escapeHtml(fullText)}</div>` : ""}
     </div>
   `;
 }
@@ -4330,23 +4330,92 @@ function renderFourLayerCard(card) {
   `;
 }
 
+function renderFourLayerMiniToolbar() {
+  const activeKey = activeWorkflowReportKey();
+  const reportButtons = REPORT_ORDER.map((key) => {
+    const report = reportForKey(key);
+    const ready = isReportReady(report);
+    const label = REPORT_LABELS[key] || key;
+    return `
+      <button
+        class="four-layer-mini-tab ${key === activeKey ? "active" : ""} ${ready ? "ready" : "missing"}"
+        type="button"
+        data-four-layer-report="${key}"
+        aria-pressed="${key === activeKey ? "true" : "false"}"
+        title="${escapeHtml(label)}${ready ? "已生成" : "未生成"}"
+      >
+        <span>${escapeHtml(label)}</span>
+      </button>
+    `;
+  }).join("");
+  return `
+    <div class="four-layer-mini-toolbar" aria-label="四层票池快捷查询">
+      <div class="four-layer-mini-left">
+        <span class="four-layer-mini-label">快捷查看</span>
+        <div class="four-layer-mini-tabs" role="tablist" aria-label="切换四报">
+          ${reportButtons}
+        </div>
+      </div>
+      <div class="four-layer-mini-actions">
+        <label class="four-layer-mini-date">
+          <span>日期</span>
+          <select data-four-layer-date aria-label="选择四层票池日期">${panelDateOptions()}</select>
+        </label>
+        <button class="four-layer-mini-query" type="button" data-four-layer-date-query>查询</button>
+        <button class="four-layer-mini-report" type="button" data-complete-report>报告</button>
+      </div>
+    </div>
+  `;
+}
+
+function bindFourLayerMiniToolbar(root = document) {
+  const container = root || document;
+  if (!container) return;
+  container.querySelectorAll("[data-four-layer-report]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const nextReport = normalizeReportKey(button.dataset.fourLayerReport || "");
+      if (!REPORT_ORDER.includes(nextReport)) return;
+      activeWorkflowReport = nextReport;
+      activeWorkflowNodeId = "";
+      renderReportProgress();
+      renderTodayJudgement();
+      renderFourLayerCompare();
+      renderWorkflowChain();
+    });
+  });
+  const dateSelect = container.querySelector("[data-four-layer-date]");
+  const loadSelectedDate = () => {
+    const nextDate = dateSelect?.value || "";
+    if (nextDate) loadPanelDateState(nextDate);
+  };
+  dateSelect?.addEventListener("change", loadSelectedDate);
+  container.querySelector("[data-four-layer-date-query]")?.addEventListener("click", loadSelectedDate);
+}
+
 function renderFourLayerCompare() {
   const container = $("#fourLayerCompare");
   const hint = $("#fourLayerHint");
   if (!container) return;
   const data = fourLayerReportData();
+  const miniToolbar = renderFourLayerMiniToolbar();
   if (!data.lines.length) {
-    container.innerHTML = `<p class="empty">当前报告还没有四层逻辑对比内容。生成或重新导出收盘报后这里会显示。</p>`;
+    container.innerHTML = `
+      ${miniToolbar}
+      <p class="empty">当前报告还没有四层逻辑对比内容。生成或重新导出收盘报后这里会显示。</p>
+    `;
+    bindFourLayerMiniToolbar(container);
     if (hint) hint.textContent = "暂无四层数据";
     return;
   }
   const period = currentPanelPeriod();
   if (hint) hint.textContent = period === "close" ? "旁路层只复盘，不等于买入推荐" : "正式持仓和旁路观察分开看";
   container.innerHTML = `
+    ${miniToolbar}
     <div class="four-layer-grid">
       ${data.cards.map((card) => renderFourLayerCard(card)).join("")}
     </div>
   `;
+  bindFourLayerMiniToolbar(container);
 }
 
 function renderHeroPicks() {
@@ -4364,6 +4433,7 @@ function renderHeroPicks() {
             <span>自选股强弱分层</span>
             <em>${escapeHtml(currentPanelPeriod() === "close" ? "正式买入和旁路观察分开看" : "正式持仓和旁路观察分开看")}</em>
           </div>
+          ${renderFourLayerMiniToolbar()}
           ${fourLayerData.lines.length ? `
             <div class="four-layer-grid compact">
               ${fourLayerData.cards.map((card) => renderFourLayerCard(card)).join("")}
@@ -4374,6 +4444,7 @@ function renderHeroPicks() {
         ${sourceStripHtml}
       </div>
     `;
+    bindFourLayerMiniToolbar(container);
     return;
   }
   const sourceState = panelStateForView();
@@ -5529,7 +5600,11 @@ async function openCompleteReportModal() {
   const modal = $("#completeReportModal");
   if (!modal) return;
   const reportBody = $("#completeReportBody");
-  const selectedDate = $("#workflowDateSelect")?.value || state.run?.date || "";
+  const selectedDate = $("#workflowDateSelect")?.value
+    || $("[data-four-layer-date]")?.value
+    || selectedPanelDate
+    || state.run?.date
+    || "";
   const reportType = activeWorkflowReportKey();
   let { entry, markdown, source } = findCompleteReportEntry(selectedDate, reportType);
   const label = entry.label || REPORT_LABELS[reportType] || "报告";
