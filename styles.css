@@ -6699,6 +6699,15 @@ body::after,
   -webkit-line-clamp: 2;
 }
 
+.four-layer-action-route-full {
+  margin: 3px 2px 0;
+  color: #d7e5e8;
+  font-size: 11.5px;
+  font-weight: 850;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .four-layer-next-action-card.is-empty strong {
   color: #85989d;
   font-weight: 850;

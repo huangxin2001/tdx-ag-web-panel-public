@@ -4116,6 +4116,9 @@ function nextActionMarkersForStep(clause, step) {
 function renderNextActionFlowHtml(value) {
   const plan = nextActionPlanParts(value);
   const forecast = percentRangeToken(plan.intro);
+  const fullText = sanitizeBeginnerText(value || "")
+    .replace(/^次日操作[：:]\s*/, "")
+    .replace(/^明日操作[：:]\s*/, "");
   const steps = plan.clauses.map((clause, index) => {
     const title = nextActionStepTitle(clause, index);
     return {
@@ -4153,6 +4156,7 @@ function renderNextActionFlowHtml(value) {
           </div>
         `).join("")}
       </div>
+      ${fullText ? `<p class="four-layer-action-route-full">${escapeHtml(fullText)}</p>` : ""}
     </div>
   `;
 }
@@ -4195,7 +4199,7 @@ function renderOvernightStructuredHtml(item) {
       `).join("")}
     </div>
   ` : "";
-  const visiblePlanItems = structured.planItems.filter((itemRow) => !isOvernightNextActionLabel(itemRow?.label));
+  const visiblePlanItems = structured.planItems;
   const planHtml = visiblePlanItems.length ? `
     <div class="four-layer-overnight-section">
       <div class="four-layer-overnight-section-title">隔夜交易计划</div>
