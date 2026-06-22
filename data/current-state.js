@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-22T14:59:35+08:00",
+  "generated_at": "2026-06-22T15:01:36+08:00",
   "currentDate": "2026-06-22",
   "current_date": "2026-06-22",
   "panel_payload_mode": "lite",
@@ -6760,31 +6760,48 @@ window.THREE_PERIOD_PANEL_STATE = {
     "status": "ok",
     "date": "2026-06-22",
     "title": "交易员复盘工作台",
-    "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
-    "market_tone_label": "偏弱复盘",
-    "emotion_score": 48,
-    "formal_sample_count": 0,
-    "side_channel_sample_count": 20,
-    "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-06-22",
+    "one_liner": "2026-06-18 收盘样本、2026-06-22 回填：正式票 T+1 平均 0.58%，样本 2 只。 正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
+    "market_tone_label": "承接尚可",
+    "emotion_score": 62,
+    "formal_sample_count": 2,
+    "side_channel_sample_count": 17,
+    "formal_return_text": "2026-06-18 收盘样本、2026-06-22 回填：正式票 T+1 平均 0.58%，样本 2 只。",
+    "side_return_text": "2026-06-18 收盘样本、2026-06-22 回填：旁路样本 T+1 平均 0.72%，样本 17 只，只作对比。",
+    "return_source_close_date": "2026-06-18",
     "return_backfill_date": "2026-06-22",
-    "return_context_text": "2026-06-22 当前样本",
-    "cross_date_review_return": false,
-    "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
+    "return_context_text": "2026-06-18 收盘样本、2026-06-22 回填",
+    "cross_date_review_return": true,
+    "core_cause": "正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
       "second_view": "龙虾第二复盘暂无有效正文，按本地复盘产物继续审计。",
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
-    "decision_path": [],
+    "decision_path": [
+      {
+        "rank": 1,
+        "symbol": "002134",
+        "name": "天津普林",
+        "verdict": "降级观察",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      },
+      {
+        "rank": 2,
+        "symbol": "002023",
+        "name": "海特高新",
+        "verdict": "旁路跟踪",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "no_change"
+      }
+    ],
     "loss_matrix": [
       {
         "label": "正式收益",
-        "value": "--",
+        "value": "0.58%",
         "status": "ok",
-        "detail": "正式票收益样本不足，复盘只做资料不足标记。"
+        "detail": "2026-06-18 收盘样本、2026-06-22 回填：正式票 T+1 平均 0.58%，样本 2 只。"
       },
       {
         "label": "上午承接",
@@ -6794,9 +6811,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "0.72%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-06-18 收盘样本、2026-06-22 回填：旁路样本 T+1 平均 0.72%，样本 17 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -6812,37 +6829,37 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.25%。只做旁路收益统计。"
       },
       {
         "group": "技术观察",
         "verdict": "旁路统计",
-        "reason": "样本 2 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 0 只，T+1 平均 --。只做旁路收益统计。"
       },
       {
         "group": "候选评分前排",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 2.29%。只做旁路收益统计。"
       },
       {
         "group": "低位回流观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 6.96%。只做旁路收益统计。"
       },
       {
         "group": "早盘驱动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 2 只，T+1 平均 -4.62%。只做旁路收益统计。"
       },
       {
         "group": "隔夜涨停观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 1.73%。只做旁路收益统计。"
       },
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 0.45%。只做旁路收益统计。"
       }
     ],
     "timeline": [
@@ -6875,23 +6892,23 @@ window.THREE_PERIOD_PANEL_STATE = {
     },
     "source_status": {
       "paper_trade_summary": "ok",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\paper-trade-summary.json",
-        "relative_path": "runs/2026-06-22/paper-trade-summary.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-06-22/paper-trade-summary.review.json",
         "exists": true,
-        "size": 1835,
-        "modified_at": "2026-06-22T14:53:31+08:00",
-        "sha256": "91f12c3f89055cc7bb88c31f77716214a89ec73a779605611c6d77abb603ba3d"
+        "size": 1877,
+        "modified_at": "2026-06-22T15:01:34+08:00",
+        "sha256": "01f376d26e9ac51693e3e77d9d1393c6b84dcbe9b82283096e0007cf594fcca4"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\reverse-miss.json",
@@ -6990,7 +7007,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 5,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -7047,7 +7064,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 5,
+      "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -7155,9 +7172,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-22T14:59:35+08:00",
-    "web_current_state_exported_at": "2026-06-22T14:59:35+08:00",
-    "web_visible_at": "2026-06-22T14:59:35+08:00",
+    "web_panel_state_exported_at": "2026-06-22T15:01:36+08:00",
+    "web_current_state_exported_at": "2026-06-22T15:01:36+08:00",
+    "web_visible_at": "2026-06-22T15:01:36+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -7180,17 +7197,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\web-panel-state.json",
       "relative_path": "runs/2026-06-22/web-panel-state.json",
       "exists": true,
-      "size": 1438792,
-      "modified_at": "2026-06-22T14:53:41+08:00",
-      "sha256": "118a55bb87573efac037efca52937fdfb69644b1cc3fb6b2b721b234c46dd236"
+      "size": 1403968,
+      "modified_at": "2026-06-22T14:59:49+08:00",
+      "sha256": "8cec373dea15a3a20315eaad44277722a1cf205f27f163d7bf9f92557be93eb2"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 299320,
-      "modified_at": "2026-06-22T14:53:41+08:00",
-      "sha256": "3191d52d037bb76971ec6725ecb24118f3c95487c2df7a97606236ff8ec1f1d4"
+      "size": 307345,
+      "modified_at": "2026-06-22T14:59:49+08:00",
+      "sha256": "7e6ed1e022d2f6018cc3261e0a1a3d9a825ef4bd42bff96f5fbc53dc00e00700"
     }
   },
   "summary": {
@@ -7200,7 +7217,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 20,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 40,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
