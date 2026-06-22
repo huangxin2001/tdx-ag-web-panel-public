@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-22T09:55:19+08:00",
+  "generated_at": "2026-06-22T10:04:50+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -12,11 +12,10 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "dates": [
     {
       "date": "2026-06-22",
-      "status": "empty",
-      "reports_present": 0,
+      "status": "partial",
+      "reports_present": 1,
       "reports_missing": [
         "close",
-        "morning",
         "noon",
         "review"
       ],
@@ -44,21 +43,24 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
           }
         },
         "morning": {
-          "exists": false,
-          "status": "missing",
-          "char_count": 0,
+          "exists": true,
+          "status": "ok",
+          "char_count": 2778,
           "file": {
-            "relative_path": "morning-report.md",
-            "exists": false
+            "relative_path": "runs/2026-06-22/morning-report.md",
+            "exists": true,
+            "size": 6839,
+            "modified_at": "2026-06-22T10:00:31+08:00",
+            "sha256": "140e8c637449e54157466110f64fc5eb7690709d819596ef07cd638f52716c27"
           },
           "schedule": {
             "scheduled_time": "09:35",
             "scheduled_at": "2026-06-22T09:35+08:00",
             "due": true,
-            "automation_status": "precondition_failed",
-            "automation_status_label": "前置条件失败",
-            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
-            "manifest_status": "failed",
+            "automation_status": "complete",
+            "automation_status_label": "已按计划生成",
+            "diagnosis_cn": "已按计划生成",
+            "manifest_status": "success",
             "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.morning.json",
             "precondition_gaps_cn": [],
@@ -83,9 +85,7 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
             "manifest_status": "missing",
             "manifest_json_status": "missing",
             "manifest_path": "workflow-manifest.noon.json",
-            "precondition_gaps_cn": [
-              "当天早报未成功生成，午报不能补选新票。"
-            ],
+            "precondition_gaps_cn": [],
             "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
           }
         },
@@ -108,7 +108,7 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
             "manifest_json_status": "missing",
             "manifest_path": "workflow-manifest.review.json",
             "precondition_gaps_cn": [
-              "复盘缺少成功前三报：收盘报、早报、午报"
+              "复盘缺少成功前三报：收盘报、午报"
             ],
             "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
           }
@@ -4571,8 +4571,8 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "summary": {
     "dates": 42,
     "complete_dates": 28,
-    "partial_dates": 10,
-    "empty_dates": 4,
+    "partial_dates": 11,
+    "empty_dates": 3,
     "excluded_dirs": 4,
     "warnings": 0
   },
