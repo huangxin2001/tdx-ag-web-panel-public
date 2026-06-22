@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-22T09:25:40+08:00",
+  "generated_at": "2026-06-22T09:35:16+08:00",
   "currentDate": "2026-06-22",
   "current_date": "2026-06-22",
   "panel_payload_mode": "full",
@@ -11,11 +11,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-06-22",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22",
-    "run_id": "",
-    "period": "",
-    "status": "missing",
-    "manifest_status": "missing",
-    "lineage_status": "missing"
+    "run_id": "20260622-morning-093501019964",
+    "period": "morning",
+    "status": "failed",
+    "manifest_status": "ok",
+    "lineage_status": "ok"
   },
   "reports": [
     {
@@ -101,12 +101,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "schedule": {
         "scheduled_time": "09:35",
         "scheduled_at": "2026-06-22T09:35+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
+        "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.morning.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
@@ -250,7 +250,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "missing",
-    "period": "",
+    "period": "morning",
     "records": [],
     "summary": {},
     "tracking_coverage": {}
@@ -556,8 +556,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "morning-report.md"
           ],
           "write_files": [],
-          "status": "incomplete",
-          "result_cn": "未到计划时间",
+          "status": "failed",
+          "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
           "missing_or_risk_cn": [
             "计划时间：2026-06-22T09:35+08:00",
             "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
@@ -1138,22 +1138,28 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "workflow-manifest.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\workflow-manifest.json",
-        "relative_path": "workflow-manifest.json",
-        "exists": false
+        "relative_path": "runs/2026-06-22/workflow-manifest.json",
+        "exists": true,
+        "size": 39063,
+        "modified_at": "2026-06-22T09:35:16+08:00",
+        "sha256": "3d2bd864131e3cb889ba144afb8a42dc5f1448520b438970d30f799f4582c214"
       }
     },
     {
       "name": "data-lineage.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\data-lineage.json",
-        "relative_path": "data-lineage.json",
-        "exists": false
+        "relative_path": "runs/2026-06-22/data-lineage.json",
+        "exists": true,
+        "size": 16685,
+        "modified_at": "2026-06-22T09:35:16+08:00",
+        "sha256": "59a58a6a5de1700edfd62bf5b8ca4e98121a884fc942b15f4595b864675c016e"
       }
     },
     {
@@ -1169,7 +1175,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "not_due": 4
+      "not_due": 3,
+      "precondition_failed": 1
     },
     "items": [
       {
@@ -1183,8 +1190,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "morning",
         "label": "早报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-22T09:35+08:00",
         "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
       },
@@ -1206,7 +1213,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     ],
     "missed_count": 0,
-    "failed_count": 0,
+    "failed_count": 1,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -1214,19 +1221,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-22",
     "current_date": "2026-06-22",
     "status": "empty",
-    "headline_cn": "当前日期 2026-06-22：0/4 四报已生成",
+    "headline_cn": "当前日期 2026-06-22：0/4 四报已生成，前置失败 1 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 16,
-      "invalid_count": 0,
+      "missing_count": 22,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 0,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 4
+      "not_due": 3,
+      "precondition_failed": 1
     },
     "schedule_items": [
       {
@@ -1240,8 +1248,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "morning",
         "label": "早报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-22T09:35+08:00",
         "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
       },
@@ -1262,7 +1270,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [],
+    "missing_reports": [
+      "morning"
+    ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "top_status_summary": {
@@ -1270,19 +1280,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-22",
     "current_date": "2026-06-22",
     "status": "empty",
-    "headline_cn": "当前日期 2026-06-22：0/4 四报已生成",
+    "headline_cn": "当前日期 2026-06-22：0/4 四报已生成，前置失败 1 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 16,
-      "invalid_count": 0,
+      "missing_count": 22,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 0,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 4
+      "not_due": 3,
+      "precondition_failed": 1
     },
     "schedule_items": [
       {
@@ -1296,8 +1307,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "morning",
         "label": "早报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-22T09:35+08:00",
         "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
       },
@@ -1318,7 +1329,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [],
+    "missing_reports": [
+      "morning"
+    ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "visibility_audit": {},
@@ -1683,14 +1696,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "workflow-manifest.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\workflow-manifest.json",
-      "relative_path": "workflow-manifest.json",
-      "exists": false
+      "relative_path": "runs/2026-06-22/workflow-manifest.json",
+      "exists": true,
+      "size": 39063,
+      "modified_at": "2026-06-22T09:35:16+08:00",
+      "sha256": "3d2bd864131e3cb889ba144afb8a42dc5f1448520b438970d30f799f4582c214"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\data-lineage.json",
-      "relative_path": "data-lineage.json",
-      "exists": false
+      "relative_path": "runs/2026-06-22/data-lineage.json",
+      "exists": true,
+      "size": 16685,
+      "modified_at": "2026-06-22T09:35:16+08:00",
+      "sha256": "59a58a6a5de1700edfd62bf5b8ca4e98121a884fc942b15f4595b864675c016e"
     }
   ],
   "summary": {
@@ -1700,14 +1719,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "four_layer_visible": 0,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 3,
+    "data_sources_ok": 5,
     "warnings": 0,
     "automation_missed": 0,
-    "automation_failed": 0,
+    "automation_failed": 1,
     "automation_incomplete": 0,
-    "lineage_nodes": 0,
+    "lineage_nodes": 36,
     "automation_status_counts": {
-      "not_due": 4
+      "not_due": 3,
+      "precondition_failed": 1
     },
     "panel_payload_mode": "full"
   },

@@ -1,15 +1,225 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-18T20:05:34+08:00",
+  "generated_at": "2026-06-22T09:40:04+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
   "source": {
     "runs_dir": "runs",
-    "today": "2026-06-18",
+    "today": "2026-06-22",
     "filter": "strict real run dates"
   },
   "dates": [
+    {
+      "date": "2026-06-22",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-06-22T14:50+08:00",
+            "due": false,
+            "automation_status": "not_due",
+            "automation_status_label": "未到计划时间",
+            "diagnosis_cn": "未到计划时间",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-06-22T09:35+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-06-22T11:35+08:00",
+            "due": false,
+            "automation_status": "not_due",
+            "automation_status_label": "未到计划时间",
+            "diagnosis_cn": "未到计划时间",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-06-22T20:00+08:00",
+            "due": false,
+            "automation_status": "not_due",
+            "automation_status_label": "未到计划时间",
+            "diagnosis_cn": "未到计划时间",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-06-19T14:50+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-06-19T09:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-06-19T11:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "exists": false,
+          "status": "missing",
+          "char_count": 0,
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-06-19T20:00+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      }
+    },
     {
       "date": "2026-06-18",
       "status": "complete",
@@ -4359,10 +4569,10 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
     }
   ],
   "summary": {
-    "dates": 40,
+    "dates": 42,
     "complete_dates": 28,
     "partial_dates": 10,
-    "empty_dates": 2,
+    "empty_dates": 4,
     "excluded_dirs": 4,
     "warnings": 0
   },
