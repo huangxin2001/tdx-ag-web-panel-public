@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-22T10:00:32+08:00",
+  "generated_at": "2026-06-22T11:36:47+08:00",
   "currentDate": "2026-06-22",
   "current_date": "2026-06-22",
   "panel_payload_mode": "lite",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE = {
   "run": {
     "date": "2026-06-22",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22",
-    "run_id": "20260622-morning-095855043443",
-    "period": "morning",
+    "run_id": "20260622-noon-113501113572",
+    "period": "noon",
     "status": "success",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -128,45 +128,60 @@ window.THREE_PERIOD_PANEL_STATE = {
     {
       "key": "noon",
       "label": "午报",
-      "json_status": "missing",
-      "markdown_status": "missing",
+      "json_status": "ok",
+      "markdown_status": "ok",
       "report_type": "noon-report",
       "date": "2026-06-22",
-      "generated_at": "",
-      "recommendation_mode": "",
-      "candidate_count": 0,
-      "candidate_universe_count": 0,
+      "generated_at": "2026-06-22T11:35:51.681401+08:00",
+      "recommendation_mode": "observe",
+      "candidate_count": 1,
+      "candidate_universe_count": 1,
       "scan_pool_count": 0,
       "handoff_count": 0,
       "buy_top3_count": 0,
       "json_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\noon-report.json",
-        "relative_path": "noon-report.json",
-        "exists": false
+        "relative_path": "runs/2026-06-22/noon-report.json",
+        "exists": true,
+        "size": 305294,
+        "modified_at": "2026-06-22T11:36:46+08:00",
+        "sha256": "f46b3a1258eda687902e4f213c81763c912a0c7ecf8525eb28973e588c184312"
       },
       "markdown_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\noon-report.md",
-        "relative_path": "noon-report.md",
-        "exists": false
+        "relative_path": "runs/2026-06-22/noon-report.md",
+        "exists": true,
+        "size": 4895,
+        "modified_at": "2026-06-22T11:36:46+08:00",
+        "sha256": "2057f0c0ce36afb32776b34f41df6b9d49f413cb1ea1daf4849560537fabd87e"
       },
       "markdown": {
-        "exists": false,
-        "status": "missing",
-        "headings": [],
-        "full_text": "",
-        "excerpt": "",
+        "exists": true,
+        "status": "ok",
+        "headings": [
+          "上午验证结论",
+          "自选股盘中强弱分层",
+          "重点异动记录",
+          "午后继续盯盘名单",
+          "午后放弃名单",
+          "终止跟踪提示",
+          "午后执行与风控",
+          "铁律提醒"
+        ],
+        "full_text": "【上午验证结论】\n- 验证对象：早报确定的候选名单（逐只处理，不新增）\n- 逐只验证结果：\n  - 天津普林 / 002134 / 昨日尾盘模拟持仓 / 消息/题材驱动池 → 午后动作：退出（冲高回落超过3%，短线承接不足 / 分时弱于板块/大盘 / 均线位置不佳 / 冲高回落 7.51% 超过阈值，承接不足 / 分时弱于板块/大盘，不符合半路确认 / 均线位置不适合直接买入 / 最大回撤触发无条件止损）\n- 上午整体判断：只验证早报传下来的对象，不新增股票。\n- 外围环境：顺风，适合继续观察机会\n- 国内环境：逆风，不适合进攻\n- 情绪/趋势：逆风，不适合进攻\n- 三闸门综合：国内逆风，不适合进攻+情绪逆风，不适合进攻，只作为午后仓位和节奏参考。\n- 午后总体建议：按早报对象自身的公告、技术面和执行边界处理，不新增陌生票。\n- 模拟持仓：天津普林 / 002134 已按昨日 14:50 尾盘执行版进入模拟持仓跟踪。\n- 午报动作边界：模拟持仓可以继续持有、减仓或退出；旁路观察对象只能观察或放弃。\n- 事件整理后的关注方向：PCB、新能源。\n- 国内信息增强：国内关注方向：国企改革、新材料、高端装备。\n- 国内信息增强：当天新增国内证据 6 条，其中 A股政策/产业 6 条，A股公告 0 条。\n- 国内信息增强：国内信息暂未直接命中自选股，作为环境和方向参考。\n- 国内信息说明：这里只是上午市场背景，不新增午后处理名单，也不改变模拟持仓动作。\n\n【自选股盘中强弱分层】\n- 强层（持仓表现较强、承接相对较好）：无\n- 中层（跟随板块、量价正常）：\n  - 天津普林 / 昨日尾盘模拟持仓 / 消息/题材驱动池（降级观察）\n- 弱层（弱于板块、缩量、无承接）：无\n- 未异动（横盘震荡、无方向）：其余自选股暂无明确异动信号\n- 当前只有早报交下来的对象会进入完整盘中验证；其余自选股只作为盘面背景观察。\n- 盘中处理对象：\n  - 天津普林 / 002134 / 昨日尾盘模拟持仓 / 消息/题材驱动池 / 主线映射：PCB / 个股角色：掉队，角色分 0.646 / 持仓边界：只看上午兑现和午后处理，不新增买点 / 午后动作：退出 / 原因：最大回撤触发无条件止损\n\n【重点异动记录】\n- 异动1：上证指数 / 000001 / 上午 / 中性，先观察 / +0.18%，偏强/支撑风险偏好\n- 异动2：创业板指 / 399006 / 上午 / 顺风，适合继续观察机会 / +0.74%，偏强/支撑风险偏好\n- 异动3：深证成指 / 399001 / 上午 / 中性，先观察 / +0.29%，偏强/支撑风险偏好\n- 异动4：涨停87家 / 跌停59家 / 上午 / 冰点 / 跌停或亏钱效应偏高\n- 关键事件：2只新股今日申购！“高中签率”新股来了；时间：2026-06-22；影响：弱；方向：新能源；关联：未直接命中自选股。\n- 关键事件：事关霍尔木兹！保险巨头CEO：航运将逐步恢复 但情况多变仍似战区；时间：2026-06-22；影响：弱；方向：方向待确认；关联：未直接命中自选股。\n- 关键事件：产业景气上行叠加业绩兑现期来临，南方基金旗下科创人工智能ETF南方(589230)跟踪标的指数上证科创板人工智能指数(95018...；时间：2026-06-22；影响：弱；方向：方向待确认；关联：未直接命中自选股。\n\n【午后继续盯盘名单】\n- 当前无继续盯盘对象。\n- 早报观察对象已在上文回看，但下午暂不继续盯盘。\n\n【午后放弃名单】\n- 放弃1：天津普林 / 002134 / 昨日尾盘模拟持仓 / 消息/题材驱动池 / 放弃原因：冲高回落超过3%，短线承接不足；分时弱于板块/大盘；均线位置不佳；冲高回落 7.51% 超过阈值，承接不足；分时弱于板块/大盘，不符合半路确认；均线位置不适合直接买入\n\n【终止跟踪提示】\n- 今日该方向（早报验证方向）已证伪：天津普林均因技术面不合格被取消，上午未兑现早报预期。\n- 终止今日该方向跟踪，不再参与。\n- 若无新增盘中催化，午后不开新仓。\n\n【午后执行与风控】\n- 午后策略：已有模拟持仓按持有、减仓或退出处理；不新增开仓。\n- 已有仓位：弱于板块或冲高回落先兑现\n- 新开仓：不建议\n- 执行引擎结果：\n  - 天津普林 / 002134：退出。原因：盘中回撤达到放弃参与阈值\n- 失效条件：外围恶化、国内证据缺口扩大、情绪继续冰点、个股弱于板块、技术面不合格\n\n【铁律提醒】\n- T+1纪律\n- 不打板\n- 涨幅<3%\n- 总仓位受控\n- 绝不补仓死扛\n- 看不清就不买\n- 放弃的股票今日不再捡回\n",
+        "excerpt": "【上午验证结论】\n- 验证对象：早报确定的候选名单（逐只处理，不新增）\n- 逐只验证结果：\n- 天津普林 / 002134 / 昨日尾盘模拟持仓 / 消息/题材驱动池 → 午后动作：退出（冲高回落超过3%，短线承接不足 / 分时弱于板块/大盘 / 均线位置不佳 / 冲高回落 7.51% 超过阈值，承接不足 / 分时弱于板块/大盘，不符合半路确认 / 均线位置不适合直接买入 / 最大回撤触发无条件止损）\n- 上午整体判断：只验证早报传下来的对象，不新增股票。\n- 外围环境：顺风，适合继续观察机会\n- 国内环境：逆风，不适合进攻\n- 情绪/趋势：逆风，不适合进攻\n- 三闸门综合：国内逆风，不适合进攻+情绪逆风，不适合进攻，只作为午后仓位和节奏参考。\n- 午后总体建议：按早报对象自身的公告、技术面和执行边界处理，不新增陌生票。\n- 模拟持仓：天津普林 / 002134 已按昨日 14:50 尾盘执行版进入模拟持仓跟踪。\n- 午报动作边界：模拟持仓可以继续持有、减仓或退出；旁路观察对象只能观察或放弃。\n- 事件整理后的关注方向：PCB、新能源。\n- 国内信息增强：国内关注方向：国企改革、新材料",
         "focus_text": "",
-        "char_count": 0
+        "char_count": 1942
       },
       "schedule": {
         "scheduled_time": "11:35",
         "scheduled_at": "2026-06-22T11:35+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "complete",
+        "automation_status_label": "已按计划生成",
+        "diagnosis_cn": "已按计划生成",
+        "manifest_status": "success",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.noon.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
@@ -216,7 +231,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "manifest_json_status": "missing",
         "manifest_path": "workflow-manifest.review.json",
         "precondition_gaps_cn": [
-          "复盘缺少成功前三报：收盘报、午报"
+          "复盘缺少成功前三报：收盘报"
         ],
         "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -232,7 +247,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       "missing_count": 0,
       "limitations_count": 0,
       "top_evidence": [
-        "富时中国A50: +0.08%, 2026-06-22 09:59:43, sina_hq, a50_cfd",
+        "富时中国A50: +0.13%, 2026-06-22 11:35:50, sina_hq, a50_cfd",
         "道琼斯: +0.14%, 2026-06-19 04:45:07, sina_hq, index_realtime",
         "纳斯达克综合: +1.91%, 2026-06-19 05:30:00, sina_hq, index_realtime",
         "标普500: +1.08%, 2026-06-19 04:42:23, sina_hq, index_realtime"
@@ -259,17 +274,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "key": "emotion_trend",
       "label": "情绪/趋势闸门",
       "status": "headwind",
-      "score": 6,
+      "score": 8,
       "evidence_count": 10,
       "missing_count": 0,
       "limitations_count": 0,
       "top_evidence": [
-        "指数趋势flat（涨跌幅 0.37%）。",
-        "盘中趋势偏横盘（15分钟涨跌幅 -0.03%）。",
-        "成交额信号偏顺风。",
-        "涨停约 65 只，跌停约 36 只。"
+        "指数趋势flat（涨跌幅 -0.06%）。",
+        "盘中趋势偏顺风（15分钟涨跌幅 0.37%）。",
+        "成交额信号偏顺风，质量需复核。",
+        "涨停约 87 只，跌停约 59 只。"
       ],
-      "reason": "指数趋势flat（涨跌幅 0.37%）；盘中趋势偏横盘（15分钟涨跌幅 -0.03%）；成交额信号偏顺风；涨停约 65 只，跌停约 36 只；连板结构偏逆风，最高约 5 连板。"
+      "reason": "指数趋势flat（涨跌幅 -0.06%）；盘中趋势偏顺风（15分钟涨跌幅 0.37%）；成交额信号偏顺风，质量需复核；涨停约 87 只，跌停约 59 只；连板结构偏逆风，最高约 5 连板。"
     }
   ],
   "candidates": [
@@ -434,7 +449,7 @@ window.THREE_PERIOD_PANEL_STATE = {
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "ok",
-    "period": "morning",
+    "period": "noon",
     "records": [
       {
         "rank": 1,
@@ -442,12 +457,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "正式 Top3 逻辑",
         "symbol": "002134",
         "name": "天津普林",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "formal_return",
         "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
         "blocked_reason": "",
-        "tracking_status": "verified",
+        "tracking_status": "cancelled",
         "formal_return_eligible": true,
         "side_channel_return_eligible": false,
         "side_channel_return_scope": "formal_return_only",
@@ -460,7 +475,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "current_buy_allowed": false,
         "current_action": "downgrade",
         "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
+        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入；不进入正式交接",
         "buy_allowed": true,
         "eligible_for_top3": null,
         "eligible_for_handoff": null,
@@ -515,12 +530,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "PCB",
         "industry": "电子-元器件",
         "latest_snapshot": {
-          "change_pct": -3.46,
+          "change_pct": -6.6,
           "open_change_pct": 0.0,
-          "turnover_rate": 2.37,
-          "volume_ratio": 2.97,
-          "amount": 17385.59,
-          "last_price": 29.27,
+          "turnover_rate": 5.01,
+          "volume_ratio": 1.57,
+          "amount": 36171.77,
+          "last_price": 28.32,
           "theme": "PCB",
           "industry": "电子-元器件"
         },
@@ -529,7 +544,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -570,7 +585,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "正式 Top3 逻辑",
         "symbol": "002023",
         "name": "海特高新",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "formal_return",
         "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
@@ -657,7 +672,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -698,7 +713,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "001400",
         "name": "江顺科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -785,7 +800,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -810,7 +825,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "002448",
         "name": "中原内配",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -883,12 +898,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "底盘与发动机系统",
         "industry": "汽车-汽车零部件",
         "latest_snapshot": {
-          "change_pct": -4.3,
+          "change_pct": -4.08,
           "open_change_pct": -0.83,
-          "turnover_rate": 0.82,
-          "volume_ratio": 2.26,
-          "amount": 6147.28,
-          "last_price": 12.68,
+          "turnover_rate": 1.74,
+          "volume_ratio": 1.19,
+          "amount": 12859.95,
+          "last_price": 12.71,
           "theme": "底盘与发动机系统",
           "industry": "汽车-汽车零部件"
         },
@@ -897,7 +912,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -922,7 +937,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "603933",
         "name": "睿能科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -995,12 +1010,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "其他电子",
         "industry": "电子-其他电子",
         "latest_snapshot": {
-          "change_pct": -2.44,
+          "change_pct": -3.93,
           "open_change_pct": -0.04,
-          "turnover_rate": 0.94,
-          "volume_ratio": 3.19,
-          "amount": 4616.48,
-          "last_price": 23.58,
+          "turnover_rate": 2.14,
+          "volume_ratio": 1.82,
+          "amount": 10430.16,
+          "last_price": 23.22,
           "theme": "其他电子",
           "industry": "电子-其他电子"
         },
@@ -1009,7 +1024,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1034,7 +1049,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "000819",
         "name": "岳阳兴长",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
@@ -1107,12 +1122,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "其他石化",
         "industry": "石油-石油化工",
         "latest_snapshot": {
-          "change_pct": -4.15,
+          "change_pct": -2.26,
           "open_change_pct": 0.15,
-          "turnover_rate": 0.78,
-          "volume_ratio": 4.12,
-          "amount": 3690.04,
-          "last_price": 12.71,
+          "turnover_rate": 1.24,
+          "volume_ratio": 1.63,
+          "amount": 5810.54,
+          "last_price": 12.96,
           "theme": "其他石化",
           "industry": "石油-石油化工"
         },
@@ -1121,7 +1136,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1146,7 +1161,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "001359",
         "name": "平安电工",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
@@ -1233,7 +1248,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1258,7 +1273,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "600267",
         "name": "海正药业",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
@@ -1331,12 +1346,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "化学制剂",
         "industry": "医药医疗-化学制药",
         "latest_snapshot": {
-          "change_pct": -4.57,
+          "change_pct": -3.05,
           "open_change_pct": -1.93,
-          "turnover_rate": 0.55,
-          "volume_ratio": 3.5,
-          "amount": 6101.8,
-          "last_price": 9.4,
+          "turnover_rate": 0.9,
+          "volume_ratio": 1.44,
+          "amount": 10062.83,
+          "last_price": 9.55,
           "theme": "化学制剂",
           "industry": "医药医疗-化学制药"
         },
@@ -1345,7 +1360,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1370,7 +1385,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "002916",
         "name": "深南电路",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -1492,7 +1507,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1517,7 +1532,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "001359",
         "name": "平安电工",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -1641,7 +1656,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1666,7 +1681,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "600400",
         "name": "红豆股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -1746,7 +1761,7 @@ window.THREE_PERIOD_PANEL_STATE = {
           "next_day_success_threshold": 3.0
         },
         "low_reflow_watch_result": {
-          "next_day_change_pct": 10.04,
+          "next_day_change_pct": 5.58,
           "success": true,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -1779,12 +1794,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "非运动服装",
         "industry": "纺织服饰-服装家纺",
         "latest_snapshot": {
-          "change_pct": 10.04,
+          "change_pct": 5.58,
           "open_change_pct": 1.12,
-          "turnover_rate": 2.12,
-          "volume_ratio": 9.85,
-          "amount": 14099.03,
-          "last_price": 2.96,
+          "turnover_rate": 4.69,
+          "volume_ratio": 5.44,
+          "amount": 30810.5,
+          "last_price": 2.84,
           "theme": "非运动服装",
           "industry": "纺织服饰-服装家纺"
         },
@@ -1793,7 +1808,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1818,7 +1833,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "早盘驱动观察",
         "symbol": "001400",
         "name": "江顺科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -1953,7 +1968,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1994,7 +2009,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "早盘驱动观察",
         "symbol": "605588",
         "name": "冠石科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -2091,7 +2106,7 @@ window.THREE_PERIOD_PANEL_STATE = {
           "next_day_success_threshold": 3.0
         },
         "open_drive_watch_result": {
-          "next_day_change_pct": -0.03,
+          "next_day_change_pct": -1.93,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2122,12 +2137,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "光学元件",
         "industry": "电子-光学光电",
         "latest_snapshot": {
-          "change_pct": -0.03,
+          "change_pct": -1.93,
           "open_change_pct": 1.51,
-          "turnover_rate": 1.23,
-          "volume_ratio": 1.74,
-          "amount": 5675.61,
-          "last_price": 63.03,
+          "turnover_rate": 2.56,
+          "volume_ratio": 0.9,
+          "amount": 11728.8,
+          "last_price": 61.83,
           "theme": "光学元件",
           "industry": "电子-光学光电"
         },
@@ -2136,7 +2151,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2177,7 +2192,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "600961",
         "name": "株冶集团",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -2310,9 +2325,9 @@ window.THREE_PERIOD_PANEL_STATE = {
         "latest_snapshot": {
           "change_pct": 9.99,
           "open_change_pct": 9.3,
-          "turnover_rate": 2.5,
-          "volume_ratio": 2.09,
-          "amount": 59148.95,
+          "turnover_rate": 2.73,
+          "volume_ratio": 0.57,
+          "amount": 64650.48,
           "last_price": 31.7,
           "theme": "铅锌",
           "industry": "有色-工业金属"
@@ -2322,7 +2337,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2363,7 +2378,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "002290",
         "name": "禾盛新材",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -2464,7 +2479,7 @@ window.THREE_PERIOD_PANEL_STATE = {
           "next_day_success_threshold": 9.0
         },
         "overnight_limit_watch_result": {
-          "next_day_change_pct": 0.71,
+          "next_day_change_pct": -3.37,
           "success": false,
           "big_move_success": false,
           "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -2494,12 +2509,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "家电零部件",
         "industry": "家电-家电零部件",
         "latest_snapshot": {
-          "change_pct": 0.71,
+          "change_pct": -3.37,
           "open_change_pct": 0.47,
-          "turnover_rate": 1.65,
-          "volume_ratio": 4.0,
-          "amount": 36846.2,
-          "last_price": 89.82,
+          "turnover_rate": 3.53,
+          "volume_ratio": 2.13,
+          "amount": 77354.08,
+          "last_price": 86.18,
           "theme": "家电零部件",
           "industry": "家电-家电零部件"
         },
@@ -2508,7 +2523,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2549,7 +2564,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "601609",
         "name": "金田股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -2690,7 +2705,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2731,7 +2746,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "603076",
         "name": "乐惠国际",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -2833,7 +2848,7 @@ window.THREE_PERIOD_PANEL_STATE = {
           "next_day_success_threshold": 3.0
         },
         "theme_rotation_watch_result": {
-          "next_day_change_pct": -3.4,
+          "next_day_change_pct": -1.5,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2860,12 +2875,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "其他专用设备",
         "industry": "机械设备-专用设备",
         "latest_snapshot": {
-          "change_pct": -3.4,
+          "change_pct": -1.5,
           "open_change_pct": 0.14,
-          "turnover_rate": 1.09,
-          "volume_ratio": 2.76,
-          "amount": 2828.44,
-          "last_price": 21.28,
+          "turnover_rate": 2.21,
+          "volume_ratio": 1.4,
+          "amount": 5761.99,
+          "last_price": 21.7,
           "theme": "其他专用设备",
           "industry": "机械设备-专用设备"
         },
@@ -2874,7 +2889,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2915,7 +2930,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "002150",
         "name": "正泰电源",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -3017,7 +3032,7 @@ window.THREE_PERIOD_PANEL_STATE = {
           "next_day_success_threshold": 3.0
         },
         "theme_rotation_watch_result": {
-          "next_day_change_pct": -1.36,
+          "next_day_change_pct": -0.49,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -3044,12 +3059,12 @@ window.THREE_PERIOD_PANEL_STATE = {
         "theme_display": "金属制品",
         "industry": "机械设备-通用设备",
         "latest_snapshot": {
-          "change_pct": -1.36,
+          "change_pct": -0.49,
           "open_change_pct": 0.0,
-          "turnover_rate": 1.04,
-          "volume_ratio": 2.12,
-          "amount": 9798.02,
-          "last_price": 26.18,
+          "turnover_rate": 2.21,
+          "volume_ratio": 1.12,
+          "amount": 20778.79,
+          "last_price": 26.41,
           "theme": "金属制品",
           "industry": "机械设备-通用设备"
         },
@@ -3058,7 +3073,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3099,7 +3114,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "605111",
         "name": "新洁能",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -3237,7 +3252,7 @@ window.THREE_PERIOD_PANEL_STATE = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-22T10:00:31+08:00",
+        "source_mtime": "2026-06-22T11:36:46+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3294,10 +3309,10 @@ window.THREE_PERIOD_PANEL_STATE = {
           "avg_intraday_return": null,
           "avg_t1_return": null,
           "status_counts": {
-            "cancelled": 0,
+            "cancelled": 1,
             "price_missing": 0,
             "tracked": 1,
-            "verified": 1
+            "verified": 0
           }
         },
         "a_theme_watch": {
@@ -3424,12 +3439,12 @@ window.THREE_PERIOD_PANEL_STATE = {
       "notice_supplement_incomplete_count": 0
     },
     "file": {
-      "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\four-layer-tracking.morning.json",
-      "relative_path": "runs/2026-06-22/four-layer-tracking.morning.json",
+      "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-22\\four-layer-tracking.noon.json",
+      "relative_path": "runs/2026-06-22/four-layer-tracking.noon.json",
       "exists": true,
-      "size": 95585,
-      "modified_at": "2026-06-22T10:00:31+08:00",
-      "sha256": "19c025716bce320f805de86d59f53ac01691114a362c0385f3491bd6bfbc7b69"
+      "size": 95693,
+      "modified_at": "2026-06-22T11:36:46+08:00",
+      "sha256": "cc04ae2a96bb75e174a8647b7ab09661550f1be7336469f57e51e51b4050cbac"
     }
   },
   "overnight_report_brief": {
@@ -3877,8 +3892,8 @@ window.THREE_PERIOD_PANEL_STATE = {
   },
   "automation_schedule": {
     "by_status": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "items": [
       {
@@ -3900,8 +3915,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-22T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -3923,8 +3938,8 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-06-22",
     "current_date": "2026-06-22",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-22：1/4 四报已生成",
-    "report_ready_count": 1,
+    "headline_cn": "当前日期 2026-06-22：2/4 四报已生成",
+    "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 2,
@@ -3935,8 +3950,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "schedule_items": [
       {
@@ -3958,8 +3973,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-22T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -3980,8 +3995,8 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-06-22",
     "current_date": "2026-06-22",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-22：1/4 四报已生成",
-    "report_ready_count": 1,
+    "headline_cn": "当前日期 2026-06-22：2/4 四报已生成",
+    "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 2,
@@ -3992,8 +4007,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "schedule_items": [
       {
@@ -4015,8 +4030,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-22T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -4034,21 +4049,21 @@ window.THREE_PERIOD_PANEL_STATE = {
   },
   "visibility_audit": {},
   "summary": {
-    "reports_present": 1,
+    "reports_present": 2,
     "json_invalid": 0,
     "candidates_visible": 1,
     "four_layer_visible": 19,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 20,
+    "data_sources_ok": 28,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
     "automation_incomplete": 0,
     "lineage_nodes": 38,
     "automation_status_counts": {
-      "complete": 1,
-      "not_due": 3
+      "complete": 2,
+      "not_due": 2
     },
     "panel_payload_mode": "lite"
   },
