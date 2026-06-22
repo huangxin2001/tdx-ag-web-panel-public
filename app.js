@@ -2116,7 +2116,8 @@ function fourLayerFallbackReturnInfo(item, card) {
     ...paperTradePayloadsFromState(sourceState),
   ].filter(Boolean);
   const payload = payloadCandidates.find((candidate) => paperTradeRecordFor(symbol, card.strategyGroup, candidate)) || payloadCandidates[0];
-  const snapshotChange = numericValue(item?.latest_snapshot?.change_pct);
+  const hasCurrentSnapshot = item?.latest_snapshot_matched !== false && String(item?.last_seen_source || "") !== "not_found";
+  const snapshotChange = hasCurrentSnapshot ? numericValue(item?.latest_snapshot?.change_pct) : null;
   const legacyText = String(item?.legacy_next_day_change_text || "");
   if (!payload || payload.status === "missing") {
     if (snapshotChange !== null) {
