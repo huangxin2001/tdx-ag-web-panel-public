@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-23T09:00:07+08:00",
+  "generated_at": "2026-06-23T09:25:40+08:00",
   "currentDate": "2026-06-23",
   "current_date": "2026-06-23",
   "panel_payload_mode": "full",
@@ -679,12 +679,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "filtered-pool.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 265,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\filtered-pool.json",
-        "relative_path": "filtered-pool.json",
-        "exists": false
+        "relative_path": "runs/2026-06-23/filtered-pool.json",
+        "exists": true,
+        "size": 2100328,
+        "modified_at": "2026-06-23T09:25:40+08:00",
+        "sha256": "27e636b622590a9abc19d0d5ef81f6273be33f616394d9d2c5af122ba0ca7de2"
       }
     },
     {
@@ -1002,12 +1005,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "morning-risk-precheck.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\morning-risk-precheck.json",
-        "relative_path": "morning-risk-precheck.json",
-        "exists": false
+        "relative_path": "runs/2026-06-23/morning-risk-precheck.json",
+        "exists": true,
+        "size": 2981,
+        "modified_at": "2026-06-23T09:25:40+08:00",
+        "sha256": "8b1efc6761ae8da6a3c571f0d909f719aafdc5b72971bb7a12c7907750bd337d"
       }
     },
     {
@@ -1212,7 +1218,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 18,
+      "missing_count": 16,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 0,
@@ -1268,7 +1274,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 18,
+      "missing_count": 16,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 0,
@@ -1398,8 +1404,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "filtered-pool.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\filtered-pool.json",
-      "relative_path": "filtered-pool.json",
-      "exists": false
+      "relative_path": "runs/2026-06-23/filtered-pool.json",
+      "exists": true,
+      "size": 2100328,
+      "modified_at": "2026-06-23T09:25:40+08:00",
+      "sha256": "27e636b622590a9abc19d0d5ef81f6273be33f616394d9d2c5af122ba0ca7de2"
     },
     {
       "name": "candidate-score.json",
@@ -1593,8 +1602,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "morning-risk-precheck.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\morning-risk-precheck.json",
-      "relative_path": "morning-risk-precheck.json",
-      "exists": false
+      "relative_path": "runs/2026-06-23/morning-risk-precheck.json",
+      "exists": true,
+      "size": 2981,
+      "modified_at": "2026-06-23T09:25:40+08:00",
+      "sha256": "8b1efc6761ae8da6a3c571f0d909f719aafdc5b72971bb7a12c7907750bd337d"
     },
     {
       "name": "data-acquisition-health.close.json",
@@ -1688,7 +1700,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "four_layer_visible": 0,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 1,
+    "data_sources_ok": 3,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
