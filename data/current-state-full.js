@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-23T15:01:37+08:00",
+  "generated_at": "2026-06-23T16:15:09+08:00",
   "currentDate": "2026-06-23",
   "current_date": "2026-06-23",
   "panel_payload_mode": "full",
@@ -24481,78 +24481,78 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         {
           "rank": 1,
           "symbol": "605305",
-          "name": "中",
-          "verdict": "际联合 — 结论",
+          "name": "中际联合",
+          "verdict": "结论",
           "text": "可干（轻仓）；昨日涨停后今日继续放量上攻，尾盘再抬升，且风电/高空安全设备催化链最清晰。"
         },
         {
           "rank": 2,
           "symbol": "000859",
-          "name": "国",
-          "verdict": "风新材 — 结论",
+          "name": "国风新材",
+          "verdict": "结论",
           "text": "等；尾盘承接强、相对行业显著强，但当日涨幅已到 6%+，且缺少同等级硬催化，不能追高。"
         },
         {
           "rank": 3,
           "symbol": "605090",
-          "name": "九",
-          "verdict": "丰能源 — 结论",
+          "name": "九丰能源",
+          "verdict": "结论",
           "text": "等；能源/燃气方向较稳，券商覆盖催化存在，但题材属性数据不完整，适合等竞价确认。"
         },
         {
           "rank": 4,
           "symbol": "002174",
-          "name": "游",
-          "verdict": "族网络 — 结论",
+          "name": "游族网络",
+          "verdict": "结论",
           "text": "等；游戏行业逆板块走强，尾盘温和上行，但缺少新增新闻催化，隔夜溢价依赖情绪延续。"
         },
         {
           "rank": 5,
           "symbol": "002443",
-          "name": "金",
-          "verdict": "洲管道 — 结论",
+          "name": "金洲管道",
+          "verdict": "结论",
           "text": "观察；相对钢铁行业强，尾盘修复，但题材催化不足，适合观察不适合主动开重仓。"
         },
         {
           "rank": 6,
           "symbol": "600130",
-          "name": "波",
-          "verdict": "导股份 — 结论",
+          "name": "波导股份",
+          "verdict": "结论",
           "text": "观察；低价消费电子修复，日内强于行业，但尾盘横住而非继续放量，且估值/业绩弹性质量一般。"
         },
         {
           "rank": 7,
           "symbol": "002520",
-          "name": "日",
-          "verdict": "发精机 — 结论",
+          "name": "日发精机",
+          "verdict": "结论",
           "text": "观察；尾盘小幅修复，但日内高点回落明显，隔夜仓需要次日竞价重新确认承接。"
         },
         {
           "rank": 8,
           "symbol": "600572",
-          "name": "康",
-          "verdict": "恩贝 — 结论",
+          "name": "康恩贝",
+          "verdict": "结论",
           "text": "放弃；医药防守属性，尾盘平淡，弹性不足，隔夜冲高赔率不突出。"
         },
         {
           "rank": 9,
           "symbol": "000620",
-          "name": "盈",
-          "verdict": "新发展 — 结论",
+          "name": "盈新发展",
+          "verdict": "结论",
           "text": "放弃；虽有成交额，但弱于环保行业，且题材属性数据不完整，不适合新开隔夜仓。"
         },
         {
           "rank": 10,
           "symbol": "603912",
-          "name": "佳",
-          "verdict": "力图 — 结论",
+          "name": "佳力图",
+          "verdict": "结论",
           "text": "放弃；早盘大幅冲高后收盘仅小涨，日内冲高回落特征明显，隔夜风险高。"
         },
         {
           "rank": 11,
           "symbol": "000990",
-          "name": "诚",
-          "verdict": "志股份 — 结论",
+          "name": "诚志股份",
+          "verdict": "结论",
           "text": "放弃；日线趋势偏弱，收盘低于均价，尾盘只是低位小修复，不构成新开隔夜优势。"
         }
       ],
@@ -27884,9 +27884,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\web-panel-state.json",
-              "modified_at": "2026-06-23T14:59:28+08:00",
-              "size": 1682777,
-              "sha256": "65fb0df6358f443dc391b09bcce89f07feb8f0ebb710f77364b5e124cbf359cd"
+              "modified_at": "2026-06-23T15:01:45+08:00",
+              "size": 1552993,
+              "sha256": "eb7091c441ff387dfb7af53c28d146b29786a091ec0e60e3e35344e2567d28ce"
             }
           ],
           "key_conclusion_provenance": [
@@ -27910,9 +27910,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\web-panel-state.json",
-                  "modified_at": "2026-06-23T14:59:28+08:00",
-                  "size": 1682777,
-                  "sha256": "65fb0df6358f443dc391b09bcce89f07feb8f0ebb710f77364b5e124cbf359cd"
+                  "modified_at": "2026-06-23T15:01:45+08:00",
+                  "size": 1552993,
+                  "sha256": "eb7091c441ff387dfb7af53c28d146b29786a091ec0e60e3e35344e2567d28ce"
                 }
               ]
             }
@@ -33369,9 +33369,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\close-confirmation.1501-run.json",
         "relative_path": "runs/2026-06-23/close-confirmation.1501-run.json",
         "exists": true,
-        "size": 14231,
-        "modified_at": "2026-06-23T15:01:36+08:00",
-        "sha256": "ff87c0e973515f5426bb748a7b8d3da6155fbacddb70ddbe1e0cc7bacddfd5bb"
+        "size": 15254,
+        "modified_at": "2026-06-23T15:07:18+08:00",
+        "sha256": "9478d112319a3a836bc62b87754c44ca2b3b971d43c57a6d7f733b7607c29ae9"
       }
     },
     {
@@ -33641,9 +33641,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-23T15:01:37+08:00",
-    "web_current_state_exported_at": "2026-06-23T15:01:37+08:00",
-    "web_visible_at": "2026-06-23T15:01:37+08:00",
+    "web_panel_state_exported_at": "2026-06-23T16:15:09+08:00",
+    "web_current_state_exported_at": "2026-06-23T16:15:09+08:00",
+    "web_visible_at": "2026-06-23T16:15:09+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -33666,17 +33666,17 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\web-panel-state.json",
       "relative_path": "runs/2026-06-23/web-panel-state.json",
       "exists": true,
-      "size": 1682777,
-      "modified_at": "2026-06-23T14:59:28+08:00",
-      "sha256": "65fb0df6358f443dc391b09bcce89f07feb8f0ebb710f77364b5e124cbf359cd"
+      "size": 1552993,
+      "modified_at": "2026-06-23T15:01:45+08:00",
+      "sha256": "eb7091c441ff387dfb7af53c28d146b29786a091ec0e60e3e35344e2567d28ce"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 420985,
-      "modified_at": "2026-06-23T14:59:28+08:00",
-      "sha256": "376cb512381a97aff818b2d923da9af1d9fe149dab15ae7684783ea159cfaddf"
+      "size": 421147,
+      "modified_at": "2026-06-23T15:01:45+08:00",
+      "sha256": "f277dedef9b3dc2ae92c2379f21e190959e4ac806133299642b1f585e14c7ae6"
     }
   },
   "artifacts": [
@@ -34159,9 +34159,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\close-confirmation.1501-run.json",
       "relative_path": "runs/2026-06-23/close-confirmation.1501-run.json",
       "exists": true,
-      "size": 14231,
-      "modified_at": "2026-06-23T15:01:36+08:00",
-      "sha256": "ff87c0e973515f5426bb748a7b8d3da6155fbacddb70ddbe1e0cc7bacddfd5bb"
+      "size": 15254,
+      "modified_at": "2026-06-23T15:07:18+08:00",
+      "sha256": "9478d112319a3a836bc62b87754c44ca2b3b971d43c57a6d7f733b7607c29ae9"
     },
     {
       "name": "pool-governance.json",
