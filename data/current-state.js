@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-23T16:15:09+08:00",
+  "generated_at": "2026-06-23T16:17:38+08:00",
   "currentDate": "2026-06-23",
   "current_date": "2026-06-23",
   "panel_payload_mode": "lite",
@@ -8848,9 +8848,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-23T16:15:09+08:00",
-    "web_current_state_exported_at": "2026-06-23T16:15:09+08:00",
-    "web_visible_at": "2026-06-23T16:15:09+08:00",
+    "web_panel_state_exported_at": "2026-06-23T16:17:38+08:00",
+    "web_current_state_exported_at": "2026-06-23T16:17:38+08:00",
+    "web_visible_at": "2026-06-23T16:17:38+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -8873,17 +8873,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-23\\web-panel-state.json",
       "relative_path": "runs/2026-06-23/web-panel-state.json",
       "exists": true,
-      "size": 1552993,
-      "modified_at": "2026-06-23T15:01:45+08:00",
-      "sha256": "eb7091c441ff387dfb7af53c28d146b29786a091ec0e60e3e35344e2567d28ce"
+      "size": 1552938,
+      "modified_at": "2026-06-23T16:15:16+08:00",
+      "sha256": "7bd2391249bfa31b90724e4c8d018239fac8d66acf2a894de0a29d1a672ccfb8"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 421147,
-      "modified_at": "2026-06-23T15:01:45+08:00",
-      "sha256": "f277dedef9b3dc2ae92c2379f21e190959e4ac806133299642b1f585e14c7ae6"
+      "size": 421092,
+      "modified_at": "2026-06-23T16:15:16+08:00",
+      "sha256": "e240136b7bcaea517cbc77e6500d4f3e44c420e3573220e37824898befec8ff2"
     }
   },
   "summary": {
