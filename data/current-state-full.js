@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-24T09:36:47+08:00",
+  "generated_at": "2026-06-24T11:36:23+08:00",
   "currentDate": "2026-06-24",
   "current_date": "2026-06-24",
   "panel_payload_mode": "full",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-06-24",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24",
-    "run_id": "20260624-morning-093501062156",
-    "period": "morning",
+    "run_id": "20260624-noon-113501182009",
+    "period": "noon",
     "status": "success",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -128,45 +128,60 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "key": "noon",
       "label": "午报",
-      "json_status": "missing",
-      "markdown_status": "missing",
+      "json_status": "ok",
+      "markdown_status": "ok",
       "report_type": "noon-report",
       "date": "2026-06-24",
-      "generated_at": "",
-      "recommendation_mode": "",
-      "candidate_count": 0,
-      "candidate_universe_count": 0,
+      "generated_at": "2026-06-24T11:36:12.981136+08:00",
+      "recommendation_mode": "observe",
+      "candidate_count": 1,
+      "candidate_universe_count": 1,
       "scan_pool_count": 0,
       "handoff_count": 0,
       "buy_top3_count": 0,
       "json_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
-        "relative_path": "noon-report.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/noon-report.json",
+        "exists": true,
+        "size": 734982,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
       },
       "markdown_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
-        "relative_path": "noon-report.md",
-        "exists": false
+        "relative_path": "runs/2026-06-24/noon-report.md",
+        "exists": true,
+        "size": 4728,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
       },
       "markdown": {
-        "exists": false,
-        "status": "missing",
-        "headings": [],
-        "full_text": "",
-        "excerpt": "",
+        "exists": true,
+        "status": "ok",
+        "headings": [
+          "上午验证结论",
+          "自选股盘中强弱分层",
+          "重点异动记录",
+          "午后继续盯盘名单",
+          "午后放弃名单",
+          "终止跟踪提示",
+          "午后执行与风控",
+          "铁律提醒"
+        ],
+        "full_text": "【上午验证结论】\n- 验证对象：早报确定的候选名单（逐只处理，不新增）\n- 逐只验证结果：\n  - 游族网络 / 002174 / 昨日尾盘模拟持仓 / 技术/资金行为池 → 午后动作：减仓（K线结构破坏或过热 / K线结构破位或过热 / 技术检查未确认通过，午报降级处理）\n- 上午整体判断：只验证早报传下来的对象，不新增股票。\n- 外围环境：中性，先观察\n- 国内环境：中性，先观察\n- 情绪/趋势：逆风，不适合进攻\n- 三闸门综合：国内中性，先观察+情绪逆风，不适合进攻，只作为午后仓位和节奏参考。\n- 午后总体建议：按早报对象自身的公告、技术面和执行边界处理，不新增陌生票。\n- 模拟持仓：游族网络 / 002174 已按昨日 14:50 尾盘执行版进入模拟持仓跟踪。\n- 午报动作边界：模拟持仓可以继续持有、减仓或退出；旁路观察对象只能观察或放弃。\n- 事件整理后的关注方向：消费、储能、锂电。\n- 国内信息增强：国内关注方向：存储芯片、芯片。\n- 国内信息增强：当天新增国内证据 3 条，其中 A股政策/产业 3 条，A股公告 0 条。\n- 国内信息增强：国内信息暂未直接命中自选股，作为环境和方向参考。\n- 国内信息说明：这里只是上午市场背景，不新增午后处理名单，也不改变模拟持仓动作。\n\n【自选股盘中强弱分层】\n- 强层（持仓表现较强、承接相对较好）：无\n- 中层（跟随板块、量价正常）：\n  - 游族网络 / 昨日尾盘模拟持仓 / 技术/资金行为池（降级观察）\n- 弱层（弱于板块、缩量、无承接）：无\n- 未异动（横盘震荡、无方向）：其余自选股暂无明确异动信号\n- 当前只有早报交下来的对象会进入完整盘中验证；其余自选股只作为盘面背景观察。\n- 早报观察对象回看：早报有 1 个观察/降级对象，午报只做盘中回看。\n- 处理结果：这些对象暂未达到下午继续盯盘条件，所以不放入午后名单。\n  - 康恩贝 / 600572 / 剔除层 / 消息/题材驱动池 / 技术面不合格，取消买入 / 换手率异常，需降级观察；分时弱于板块/大盘 / 技术面取消、尾盘无承接或主线弱相关，不能进入早报重点验证\n- 盘中处理对象：\n  - 游族网络 / 002174 / 昨日尾盘模拟持仓 / 技术/资金行为池 / 主线映射：游戏 / 持仓边界：只看上午兑现和午后处理，不新增买点 / 午后动作：减仓 / 原因：技术检查未确认通过，午报降级处理\n\n【重点异动记录】\n- 异动1：上证指数 / 000001 / 上午 / 中性，先观察 / -0.25%，偏弱/压制风险偏好\n- 异动2：创业板指 / 399006 / 上午 / 中性，先观察 / +0.42%，偏强/支撑风险偏好\n- 异动3：深证成指 / 399001 / 上午 / 中性，先观察 / +0.33%，偏强/支撑风险偏好\n- 异动4：涨停63家 / 跌停24家 / 上午 / 冰点 / 跌停或亏钱效应偏高\n- 关键事件：摩根资产管理李博：消费未进入大周期 但细分高增公司已具配置价值；时间：2026-06-24；影响：弱；方向：消费；关联：未直接命中自选股。\n- 关键事件：摩根资产管理赵隆隆：锂电或成能源链复苏先头；时间：2026-06-24；影响：弱；方向：储能、锂电；关联：未直接命中自选股。\n- 关键事件：普生医疗科创板IPO获受理 系一次性医用内窥镜研发商 中信证券保荐；时间：2026-06-24；影响：弱；方向：方向待确认；关联：未直接命中自选股。\n\n【午后继续盯盘名单】\n- 处理1：游族网络 / 002174 / 昨日尾盘模拟持仓 / 技术/资金行为池 / 午后动作：减仓 / 盯盘理由：技术检查未确认通过，午报降级处理\n\n【午后放弃名单】\n- 无放弃对象。\n\n【终止跟踪提示】\n- 今日该方向没有完全证伪，但已经触发减仓/降级信号。\n- 午后只跟踪风险是否继续扩大，不加仓、不新开仓。\n\n【午后执行与风控】\n- 午后策略：已有模拟持仓按持有、减仓或退出处理；不新增开仓。\n- 已有仓位：弱于板块或冲高回落先兑现\n- 新开仓：不建议\n- 执行引擎结果：\n  - 游族网络 / 002174：减仓。原因：技术检查未确认通过，午报降级处理\n- 失效条件：外围恶化、国内证据缺口扩大、情绪继续冰点、个股弱于板块、技术面不合格\n\n【铁律提醒】\n- T+1纪律\n- 不打板\n- 涨幅<3%\n- 总仓位受控\n- 绝不补仓死扛\n- 看不清就不买\n- 放弃的股票今日不再捡回\n",
+        "excerpt": "【上午验证结论】\n- 验证对象：早报确定的候选名单（逐只处理，不新增）\n- 逐只验证结果：\n- 游族网络 / 002174 / 昨日尾盘模拟持仓 / 技术/资金行为池 → 午后动作：减仓（K线结构破坏或过热 / K线结构破位或过热 / 技术检查未确认通过，午报降级处理）\n- 上午整体判断：只验证早报传下来的对象，不新增股票。\n- 外围环境：中性，先观察\n- 国内环境：中性，先观察\n- 情绪/趋势：逆风，不适合进攻\n- 三闸门综合：国内中性，先观察+情绪逆风，不适合进攻，只作为午后仓位和节奏参考。\n- 午后总体建议：按早报对象自身的公告、技术面和执行边界处理，不新增陌生票。\n- 模拟持仓：游族网络 / 002174 已按昨日 14:50 尾盘执行版进入模拟持仓跟踪。\n- 午报动作边界：模拟持仓可以继续持有、减仓或退出；旁路观察对象只能观察或放弃。\n- 事件整理后的关注方向：消费、储能、锂电。\n- 国内信息增强：国内关注方向：存储芯片、芯片。\n- 国内信息增强：当天新增国内证据 3 条，其中 A股政策/产业 3 条，A股公告 0 条。\n- 国内信息增强：国内信息暂未直接命中自选股，作为环境",
         "focus_text": "",
-        "char_count": 0
+        "char_count": 1868
       },
       "schedule": {
         "scheduled_time": "11:35",
         "scheduled_at": "2026-06-24T11:35+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "complete",
+        "automation_status_label": "已按计划生成",
+        "diagnosis_cn": "已按计划生成",
+        "manifest_status": "success",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.noon.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
@@ -216,7 +231,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "manifest_json_status": "missing",
         "manifest_path": "workflow-manifest.review.json",
         "precondition_gaps_cn": [
-          "复盘缺少成功前三报：收盘报、午报"
+          "复盘缺少成功前三报：收盘报"
         ],
         "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -232,7 +247,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "missing_count": 0,
       "limitations_count": 0,
       "top_evidence": [
-        "富时中国A50: +0.40%, 2026-06-24 09:36:01, sina_hq, a50_cfd",
+        "富时中国A50: +0.45%, 2026-06-24 11:36:08, sina_hq, a50_cfd",
         "道琼斯: -0.09%, 2026-06-24 04:20:23, sina_hq, index_realtime",
         "纳斯达克综合: -2.21%, 2026-06-24 05:30:00, sina_hq, index_realtime",
         "标普500: -1.44%, 2026-06-24 04:20:23, sina_hq, index_realtime"
@@ -257,18 +272,18 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "key": "emotion_trend",
       "label": "情绪/趋势闸门",
-      "status": "tailwind",
-      "score": 6,
+      "status": "headwind",
+      "score": 4,
       "evidence_count": 10,
       "missing_count": 0,
       "limitations_count": 0,
       "top_evidence": [
-        "指数趋势flat（涨跌幅 -0.12%）。",
-        "盘中趋势偏横盘（15分钟涨跌幅 0.18%）。",
-        "成交额信号偏逆风。",
-        "涨停约 4 只，跌停约 8 只。"
+        "指数趋势flat（涨跌幅 0.48%）。",
+        "盘中趋势偏横盘（15分钟涨跌幅 -0.53%）。",
+        "成交额信号偏顺风。",
+        "涨停约 63 只，跌停约 24 只。"
       ],
-      "reason": "指数趋势flat（涨跌幅 -0.12%）；盘中趋势偏横盘（15分钟涨跌幅 0.18%）；成交额信号偏逆风；涨停约 4 只，跌停约 8 只；连板结构flat，最高约 4 连板。"
+      "reason": "指数趋势flat（涨跌幅 0.48%）；盘中趋势偏横盘（15分钟涨跌幅 -0.53%）；成交额信号偏顺风；涨停约 63 只，跌停约 24 只；连板结构偏逆风，最高约 4 连板。"
     }
   ],
   "candidates": [
@@ -426,7 +441,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "ok",
-    "period": "morning",
+    "period": "noon",
     "records": [
       {
         "rank": 1,
@@ -434,12 +449,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "正式 Top3 逻辑",
         "symbol": "600572",
         "name": "康恩贝",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "formal_return",
         "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
         "blocked_reason": "",
-        "tracking_status": "cancelled",
+        "tracking_status": "tracked",
         "formal_return_eligible": true,
         "side_channel_return_eligible": false,
         "side_channel_return_scope": "formal_return_only",
@@ -447,13 +462,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "rejected",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": true,
-        "current_action": "cancel",
-        "current_status_cn": "已取消",
-        "current_blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "last_seen_source": "report",
+        "current_observation_tier": "",
+        "current_candidate_channel": "",
+        "current_buy_allowed": false,
+        "current_action": "",
+        "current_status_cn": "行情已跟踪",
+        "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+        "last_seen_source": "watchlist",
         "last_seen_in_period": true,
         "latest_snapshot_matched": true,
         "snapshot_missing_reason": "",
@@ -511,12 +526,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "中药",
         "industry": "医药医疗-中药",
         "latest_snapshot": {
-          "change_pct": 0.25,
+          "change_pct": -0.25,
           "open_change_pct": 0.99,
-          "turnover_rate": 0.24,
-          "volume_ratio": 7.83,
-          "amount": 2434.96,
-          "last_price": 4.05,
+          "turnover_rate": 1.32,
+          "volume_ratio": 2.19,
+          "amount": 13570.87,
+          "last_price": 4.03,
           "theme": "中药",
           "industry": "医药医疗-中药"
         },
@@ -525,7 +540,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -566,12 +581,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "正式 Top3 逻辑",
         "symbol": "002174",
         "name": "游族网络",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "formal_return",
         "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
         "blocked_reason": "",
-        "tracking_status": "verified",
+        "tracking_status": "cancelled",
         "formal_return_eligible": true,
         "side_channel_return_eligible": false,
         "side_channel_return_scope": "formal_return_only",
@@ -579,12 +594,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "technical_fund_flow",
-        "current_observation_tier": "buy_top3",
+        "current_observation_tier": "b_watch",
         "current_candidate_channel": "technical_fund_flow",
-        "current_buy_allowed": true,
-        "current_action": "pass",
-        "current_status_cn": "继续持有",
-        "current_blocked_reason": "",
+        "current_buy_allowed": false,
+        "current_action": "downgrade",
+        "current_status_cn": "降级观察",
+        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入；不进入正式交接",
         "last_seen_source": "report",
         "last_seen_in_period": true,
         "latest_snapshot_matched": true,
@@ -643,12 +658,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "游戏",
         "industry": "传媒-游戏",
         "latest_snapshot": {
-          "change_pct": 1.26,
+          "change_pct": -0.55,
           "open_change_pct": -1.1,
-          "turnover_rate": 0.69,
-          "volume_ratio": 4.87,
-          "amount": 8589.57,
-          "last_price": 12.88,
+          "turnover_rate": 2.96,
+          "volume_ratio": 1.05,
+          "amount": 36998.78,
+          "last_price": 12.65,
           "theme": "游戏",
           "industry": "传媒-游戏"
         },
@@ -657,7 +672,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -698,7 +713,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "000567",
         "name": "海德股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -775,12 +790,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "其他金融服务",
         "industry": "非银金融-多元金融",
         "latest_snapshot": {
-          "change_pct": 0.16,
+          "change_pct": -4.38,
           "open_change_pct": 0.16,
-          "turnover_rate": 0.1,
-          "volume_ratio": 3.35,
-          "amount": 1259.73,
-          "last_price": 6.18,
+          "turnover_rate": 0.99,
+          "volume_ratio": 1.6,
+          "amount": 11633.37,
+          "last_price": 5.9,
           "theme": "其他金融服务",
           "industry": "非银金融-多元金融"
         },
@@ -789,7 +804,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -814,7 +829,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "603508",
         "name": "思维列控",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -891,12 +906,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "安防设备",
         "industry": "计算机-IT设备",
         "latest_snapshot": {
-          "change_pct": -0.81,
+          "change_pct": -2.04,
           "open_change_pct": 0.0,
-          "turnover_rate": 0.09,
-          "volume_ratio": 3.68,
-          "amount": 780.25,
-          "last_price": 21.93,
+          "turnover_rate": 0.58,
+          "volume_ratio": 1.15,
+          "amount": 4833.89,
+          "last_price": 21.66,
           "theme": "安防设备",
           "industry": "计算机-IT设备"
         },
@@ -905,7 +920,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -930,7 +945,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "A类主线/题材逻辑",
         "symbol": "605169",
         "name": "洪通燃气",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
@@ -1007,12 +1022,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "燃气",
         "industry": "公用事业-燃气",
         "latest_snapshot": {
-          "change_pct": -1.86,
+          "change_pct": -4.02,
           "open_change_pct": 0.0,
-          "turnover_rate": 0.11,
-          "volume_ratio": 3.94,
-          "amount": 292.66,
-          "last_price": 9.51,
+          "turnover_rate": 0.78,
+          "volume_ratio": 1.42,
+          "amount": 2060.14,
+          "last_price": 9.3,
           "theme": "燃气",
           "industry": "公用事业-燃气"
         },
@@ -1021,7 +1036,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1046,7 +1061,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "000652",
         "name": "泰达股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
@@ -1123,12 +1138,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "贸易",
         "industry": "商贸-贸易",
         "latest_snapshot": {
-          "change_pct": -1.69,
+          "change_pct": -3.93,
           "open_change_pct": -0.84,
-          "turnover_rate": 0.07,
-          "volume_ratio": 3.5,
-          "amount": 377.17,
-          "last_price": 3.5,
+          "turnover_rate": 0.69,
+          "volume_ratio": 1.65,
+          "amount": 3483.14,
+          "last_price": 3.42,
           "theme": "贸易",
           "industry": "商贸-贸易"
         },
@@ -1137,7 +1152,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1162,12 +1177,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "002174",
         "name": "游族网络",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
         "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "tracking_status": "verified",
+        "tracking_status": "cancelled",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
         "side_channel_return_scope": "panel_front_sample",
@@ -1175,12 +1190,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "technical_fund_flow",
-        "current_observation_tier": "buy_top3",
+        "current_observation_tier": "b_watch",
         "current_candidate_channel": "technical_fund_flow",
-        "current_buy_allowed": true,
-        "current_action": "pass",
-        "current_status_cn": "继续持有",
-        "current_blocked_reason": "",
+        "current_buy_allowed": false,
+        "current_action": "downgrade",
+        "current_status_cn": "降级观察",
+        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入；不进入正式交接",
         "last_seen_source": "report",
         "last_seen_in_period": true,
         "latest_snapshot_matched": true,
@@ -1239,12 +1254,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "游戏",
         "industry": "传媒-游戏",
         "latest_snapshot": {
-          "change_pct": 1.26,
+          "change_pct": -0.55,
           "open_change_pct": -1.1,
-          "turnover_rate": 0.69,
-          "volume_ratio": 4.87,
-          "amount": 8589.57,
-          "last_price": 12.88,
+          "turnover_rate": 2.96,
+          "volume_ratio": 1.05,
+          "amount": 36998.78,
+          "last_price": 12.65,
           "theme": "游戏",
           "industry": "传媒-游戏"
         },
@@ -1253,7 +1268,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1278,12 +1293,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "候选评分前排逻辑",
         "symbol": "600572",
         "name": "康恩贝",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
         "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "tracking_status": "cancelled",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
         "side_channel_return_scope": "panel_front_sample",
@@ -1291,13 +1306,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "rejected",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": true,
-        "current_action": "cancel",
-        "current_status_cn": "已取消",
-        "current_blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "last_seen_source": "report",
+        "current_observation_tier": "",
+        "current_candidate_channel": "",
+        "current_buy_allowed": false,
+        "current_action": "",
+        "current_status_cn": "行情已跟踪",
+        "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+        "last_seen_source": "watchlist",
         "last_seen_in_period": true,
         "latest_snapshot_matched": true,
         "snapshot_missing_reason": "",
@@ -1355,12 +1370,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "中药",
         "industry": "医药医疗-中药",
         "latest_snapshot": {
-          "change_pct": 0.25,
+          "change_pct": -0.25,
           "open_change_pct": 0.99,
-          "turnover_rate": 0.24,
-          "volume_ratio": 7.83,
-          "amount": 2434.96,
-          "last_price": 4.05,
+          "turnover_rate": 1.32,
+          "volume_ratio": 2.19,
+          "amount": 13570.87,
+          "last_price": 4.03,
           "theme": "中药",
           "industry": "医药医疗-中药"
         },
@@ -1369,7 +1384,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1394,7 +1409,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "B类技术/资金逻辑",
         "symbol": "603679",
         "name": "华体科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -1471,12 +1486,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "LED",
         "industry": "电子-光学光电",
         "latest_snapshot": {
-          "change_pct": -1.71,
+          "change_pct": -1.42,
           "open_change_pct": -3.56,
-          "turnover_rate": 0.61,
-          "volume_ratio": 3.79,
-          "amount": 2254.51,
-          "last_price": 20.73,
+          "turnover_rate": 3.02,
+          "volume_ratio": 0.94,
+          "amount": 11043.27,
+          "last_price": 20.79,
           "theme": "LED",
           "industry": "电子-光学光电"
         },
@@ -1485,7 +1500,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1510,7 +1525,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "B类技术/资金逻辑",
         "symbol": "002803",
         "name": "吉宏股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -1587,12 +1602,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "跨境电商",
         "industry": "商贸-电子商务",
         "latest_snapshot": {
-          "change_pct": 2.48,
+          "change_pct": 10.02,
           "open_change_pct": 0.17,
-          "turnover_rate": 0.46,
-          "volume_ratio": 4.69,
-          "amount": 3294.29,
-          "last_price": 24.34,
+          "turnover_rate": 6.74,
+          "volume_ratio": 3.43,
+          "amount": 50975.38,
+          "last_price": 26.13,
           "theme": "跨境电商",
           "industry": "商贸-电子商务"
         },
@@ -1601,7 +1616,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1626,7 +1641,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "B类技术/资金逻辑",
         "symbol": "002821",
         "name": "凯莱英",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "all_layer_records",
         "return_tracking_scope": "side_channel_or_status_only",
         "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -1703,12 +1718,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "医疗研发外包",
         "industry": "医药医疗-医疗服务",
         "latest_snapshot": {
-          "change_pct": 5.17,
+          "change_pct": 10.0,
           "open_change_pct": 0.56,
-          "turnover_rate": 0.43,
-          "volume_ratio": 9.07,
-          "amount": 18203.92,
-          "last_price": 135.35,
+          "turnover_rate": 1.88,
+          "volume_ratio": 1.97,
+          "amount": 82191.38,
+          "last_price": 141.57,
           "theme": "医疗研发外包",
           "industry": "医药医疗-医疗服务"
         },
@@ -1717,7 +1732,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1742,7 +1757,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "603110",
         "name": "东方材料",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -1826,7 +1841,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "low_reflow_watch_result": {
-          "next_day_change_pct": -2.04,
+          "next_day_change_pct": -1.65,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -1859,12 +1874,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "涂料油墨",
         "industry": "化工-化学制品",
         "latest_snapshot": {
-          "change_pct": -2.04,
+          "change_pct": -1.65,
           "open_change_pct": -0.94,
-          "turnover_rate": 0.71,
-          "volume_ratio": 2.97,
-          "amount": 3575.81,
-          "last_price": 24.98,
+          "turnover_rate": 4.42,
+          "volume_ratio": 0.93,
+          "amount": 22263.63,
+          "last_price": 25.08,
           "theme": "涂料油墨",
           "industry": "化工-化学制品"
         },
@@ -1873,7 +1888,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1898,12 +1913,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "603005",
         "name": "晶方科技",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
         "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
-        "tracking_status": "false_positive",
+        "tracking_status": "verified",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
         "side_channel_return_scope": "panel_front_sample",
@@ -1984,8 +1999,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "low_reflow_watch_result": {
-          "next_day_change_pct": -0.59,
-          "success": false,
+          "next_day_change_pct": 3.02,
+          "success": true,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
         },
@@ -2017,12 +2032,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "半导体封测",
         "industry": "电子-半导体",
         "latest_snapshot": {
-          "change_pct": -0.59,
+          "change_pct": 3.02,
           "open_change_pct": -3.81,
-          "turnover_rate": 1.37,
-          "volume_ratio": 4.23,
-          "amount": 41180.82,
-          "last_price": 47.02,
+          "turnover_rate": 12.76,
+          "volume_ratio": 1.97,
+          "amount": 400923.56,
+          "last_price": 48.73,
           "theme": "半导体封测",
           "industry": "电子-半导体"
         },
@@ -2031,7 +2046,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2056,7 +2071,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "低位回流观察",
         "symbol": "002056",
         "name": "横店东磁",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -2142,7 +2157,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "low_reflow_watch_result": {
-          "next_day_change_pct": -3.97,
+          "next_day_change_pct": -6.53,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2175,12 +2190,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "光伏电池组件",
         "industry": "电力设备-光伏设备",
         "latest_snapshot": {
-          "change_pct": -3.97,
+          "change_pct": -6.53,
           "open_change_pct": -1.26,
-          "turnover_rate": 0.64,
-          "volume_ratio": 4.0,
-          "amount": 29722.62,
-          "last_price": 28.09,
+          "turnover_rate": 3.48,
+          "volume_ratio": 1.08,
+          "amount": 157820.52,
+          "last_price": 27.34,
           "theme": "光伏电池组件",
           "industry": "电力设备-光伏设备"
         },
@@ -2189,7 +2204,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2214,7 +2229,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "早盘驱动观察",
         "symbol": "002520",
         "name": "日发精机",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -2316,7 +2331,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "open_drive_watch_result": {
-          "next_day_change_pct": -1.6,
+          "next_day_change_pct": -2.77,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2347,12 +2362,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "机床制造",
         "industry": "机械设备-通用设备",
         "latest_snapshot": {
-          "change_pct": -1.6,
+          "change_pct": -2.77,
           "open_change_pct": -0.29,
-          "turnover_rate": 0.6,
-          "volume_ratio": 3.15,
-          "amount": 2940.97,
-          "last_price": 6.76,
+          "turnover_rate": 3.91,
+          "volume_ratio": 1.02,
+          "amount": 18881.43,
+          "last_price": 6.68,
           "theme": "机床制造",
           "industry": "机械设备-通用设备"
         },
@@ -2361,7 +2376,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2402,7 +2417,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "早盘驱动观察",
         "symbol": "603912",
         "name": "佳力图",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -2503,7 +2518,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "open_drive_watch_result": {
-          "next_day_change_pct": -4.55,
+          "next_day_change_pct": -5.69,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2534,12 +2549,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "其他专用设备",
         "industry": "机械设备-专用设备",
         "latest_snapshot": {
-          "change_pct": -4.55,
+          "change_pct": -5.69,
           "open_change_pct": -2.5,
-          "turnover_rate": 0.86,
-          "volume_ratio": 8.69,
-          "amount": 3944.08,
-          "last_price": 8.39,
+          "turnover_rate": 4.04,
+          "volume_ratio": 2.05,
+          "amount": 18236.4,
+          "last_price": 8.29,
           "theme": "其他专用设备",
           "industry": "机械设备-专用设备"
         },
@@ -2548,7 +2563,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2589,7 +2604,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "早盘驱动观察",
         "symbol": "000990",
         "name": "诚志股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -2690,7 +2705,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "open_drive_watch_result": {
-          "next_day_change_pct": -0.79,
+          "next_day_change_pct": -0.68,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -2721,12 +2736,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "煤化工",
         "industry": "化工-化学原料",
         "latest_snapshot": {
-          "change_pct": -0.79,
+          "change_pct": -0.68,
           "open_change_pct": -0.34,
-          "turnover_rate": 0.21,
-          "volume_ratio": 3.63,
-          "amount": 2239.57,
-          "last_price": 8.76,
+          "turnover_rate": 1.25,
+          "volume_ratio": 1.08,
+          "amount": 13266.04,
+          "last_price": 8.77,
           "theme": "煤化工",
           "industry": "化工-化学原料"
         },
@@ -2735,7 +2750,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2776,7 +2791,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "000859",
         "name": "国风新材",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -2883,7 +2898,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 9.0
         },
         "overnight_limit_watch_result": {
-          "next_day_change_pct": -3.25,
+          "next_day_change_pct": -2.0,
           "success": false,
           "big_move_success": false,
           "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -2913,12 +2928,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "塑料薄膜",
         "industry": "化工-塑料",
         "latest_snapshot": {
-          "change_pct": -3.25,
+          "change_pct": -2.0,
           "open_change_pct": -1.67,
-          "turnover_rate": 1.41,
-          "volume_ratio": 5.75,
-          "amount": 14818.64,
-          "last_price": 11.62,
+          "turnover_rate": 5.5,
+          "volume_ratio": 1.13,
+          "amount": 57417.64,
+          "last_price": 11.77,
           "theme": "塑料薄膜",
           "industry": "化工-塑料"
         },
@@ -2927,7 +2942,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2968,7 +2983,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "605305",
         "name": "中际联合",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -3075,7 +3090,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 9.0
         },
         "overnight_limit_watch_result": {
-          "next_day_change_pct": -1.42,
+          "next_day_change_pct": 1.31,
           "success": false,
           "big_move_success": false,
           "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -3105,12 +3120,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "工程机械整机",
         "industry": "机械设备-工程机械",
         "latest_snapshot": {
-          "change_pct": -1.42,
+          "change_pct": 1.31,
           "open_change_pct": 0.0,
-          "turnover_rate": 0.29,
-          "volume_ratio": 3.53,
-          "amount": 2614.84,
-          "last_price": 42.23,
+          "turnover_rate": 2.48,
+          "volume_ratio": 1.51,
+          "amount": 22407.04,
+          "last_price": 43.4,
           "theme": "工程机械整机",
           "industry": "机械设备-工程机械"
         },
@@ -3119,7 +3134,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3160,7 +3175,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "隔夜涨停观察",
         "symbol": "600130",
         "name": "波导股份",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -3265,7 +3280,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 9.0
         },
         "overnight_limit_watch_result": {
-          "next_day_change_pct": -4.39,
+          "next_day_change_pct": -6.79,
           "success": false,
           "big_move_success": false,
           "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -3295,12 +3310,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "消费电子组件",
         "industry": "电子-消费电子",
         "latest_snapshot": {
-          "change_pct": -4.39,
+          "change_pct": -6.79,
           "open_change_pct": -1.8,
-          "turnover_rate": 0.89,
-          "volume_ratio": 6.76,
-          "amount": 3250.29,
-          "last_price": 4.79,
+          "turnover_rate": 5.69,
+          "volume_ratio": 2.15,
+          "amount": 20131.52,
+          "last_price": 4.67,
           "theme": "消费电子组件",
           "industry": "电子-消费电子"
         },
@@ -3309,7 +3324,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3350,7 +3365,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "000620",
         "name": "盈新发展",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -3459,7 +3474,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "theme_rotation_watch_result": {
-          "next_day_change_pct": -2.74,
+          "next_day_change_pct": -0.68,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -3486,12 +3501,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "住宅开发",
         "industry": "房地产-房地产开发",
         "latest_snapshot": {
-          "change_pct": -2.74,
+          "change_pct": -0.68,
           "open_change_pct": -2.4,
-          "turnover_rate": 0.84,
-          "volume_ratio": 6.04,
-          "amount": 11116.05,
-          "last_price": 2.84,
+          "turnover_rate": 3.54,
+          "volume_ratio": 1.28,
+          "amount": 46954.03,
+          "last_price": 2.9,
           "theme": "住宅开发",
           "industry": "房地产-房地产开发"
         },
@@ -3500,7 +3515,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3541,7 +3556,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "605090",
         "name": "九丰能源",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -3647,7 +3662,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "theme_rotation_watch_result": {
-          "next_day_change_pct": -2.27,
+          "next_day_change_pct": -4.68,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -3674,12 +3689,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "燃气",
         "industry": "公用事业-燃气",
         "latest_snapshot": {
-          "change_pct": -2.27,
+          "change_pct": -4.68,
           "open_change_pct": -0.97,
-          "turnover_rate": 0.47,
-          "volume_ratio": 7.26,
-          "amount": 12204.58,
-          "last_price": 37.38,
+          "turnover_rate": 2.15,
+          "volume_ratio": 1.66,
+          "amount": 55376.41,
+          "last_price": 36.46,
           "theme": "燃气",
           "industry": "公用事业-燃气"
         },
@@ -3688,7 +3703,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3729,7 +3744,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "strategy_group_cn": "题材轮动观察",
         "symbol": "002443",
         "name": "金洲管道",
-        "source_period": "morning",
+        "source_period": "noon",
         "tracking_scope": "side_channel_only",
         "return_tracking_scope": "side_channel_only",
         "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -3835,7 +3850,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "next_day_success_threshold": 3.0
         },
         "theme_rotation_watch_result": {
-          "next_day_change_pct": -0.96,
+          "next_day_change_pct": -3.95,
           "success": false,
           "success_standard": "next_day_change_pct >= 3",
           "source": "next_trading_day_tdx_export_change_pct"
@@ -3862,12 +3877,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "theme_display": "特钢",
         "industry": "钢铁-特钢",
         "latest_snapshot": {
-          "change_pct": -0.96,
+          "change_pct": -3.95,
           "open_change_pct": -0.96,
-          "turnover_rate": 0.25,
-          "volume_ratio": 1.49,
-          "amount": 1441.3,
-          "last_price": 11.29,
+          "turnover_rate": 2.54,
+          "volume_ratio": 0.78,
+          "amount": 14582.03,
+          "last_price": 10.95,
           "theme": "特钢",
           "industry": "钢铁-特钢"
         },
@@ -3876,7 +3891,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-24T09:36:45+08:00",
+        "source_mtime": "2026-06-24T11:36:21+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3936,8 +3951,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "status_counts": {
             "cancelled": 1,
             "price_missing": 0,
-            "tracked": 0,
-            "verified": 1
+            "tracked": 1,
+            "verified": 0
           }
         },
         "a_theme_watch": {
@@ -3978,8 +3993,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "status_counts": {
             "cancelled": 1,
             "price_missing": 0,
-            "tracked": 1,
-            "verified": 1
+            "tracked": 2,
+            "verified": 0
           }
         },
         "low_reflow_watch": {
@@ -3991,10 +4006,10 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "avg_t1_return": null,
           "status_counts": {
             "cancelled": 0,
-            "false_positive": 3,
+            "false_positive": 2,
             "price_missing": 0,
             "tracked": 0,
-            "verified": 0
+            "verified": 1
           }
         },
         "open_drive_watch": {
@@ -4057,7 +4072,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "notice_supplement_policy": "四层票池每层最多取前 3 只，低位回流观察最多 3 只，早盘驱动观察最多 3 只，隔夜涨停观察最多 3 只，题材轮动观察最多 3 只，去重后补查公告/风险证据；只补证据，不改 Top3、handoff 或交易计划。",
       "record_count": 23,
       "latest_snapshot_match_count": 23,
-      "report_match_count": 4,
+      "report_match_count": 2,
       "not_found_count": 0,
       "return_policy": "正式收益只统计 Top3；题材观察、技术观察、候选评分前排、低位回流观察、早盘驱动观察、隔夜涨停观察和题材轮动观察只跟踪面板展示样本，旁路收益也只按这些样本统计。",
       "notice_supplement_completed": true,
@@ -4065,12 +4080,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "notice_supplement_incomplete_count": 0
     },
     "file": {
-      "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.morning.json",
-      "relative_path": "runs/2026-06-24/four-layer-tracking.morning.json",
+      "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
+      "relative_path": "runs/2026-06-24/four-layer-tracking.noon.json",
       "exists": true,
-      "size": 114427,
-      "modified_at": "2026-06-24T09:36:45+08:00",
-      "sha256": "257153e3ac7c9ef0abf1539c3691ef4dd934f9959577cf7656172a7cb8a378de"
+      "size": 114250,
+      "modified_at": "2026-06-24T11:36:21+08:00",
+      "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
     }
   },
   "four_layer_tracking_by_period": {
@@ -11374,7 +11389,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     "noon": {
       "status": "ok",
-      "period": "morning",
+      "period": "noon",
       "records": [
         {
           "rank": 1,
@@ -11382,12 +11397,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "正式 Top3 逻辑",
           "symbol": "600572",
           "name": "康恩贝",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "formal_return",
           "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
           "blocked_reason": "",
-          "tracking_status": "cancelled",
+          "tracking_status": "tracked",
           "formal_return_eligible": true,
           "side_channel_return_eligible": false,
           "side_channel_return_scope": "formal_return_only",
@@ -11395,13 +11410,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "rejected",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": true,
-          "current_action": "cancel",
-          "current_status_cn": "已取消",
-          "current_blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "last_seen_source": "report",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
           "last_seen_in_period": true,
           "latest_snapshot_matched": true,
           "snapshot_missing_reason": "",
@@ -11459,12 +11474,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "中药",
           "industry": "医药医疗-中药",
           "latest_snapshot": {
-            "change_pct": 0.25,
+            "change_pct": -0.25,
             "open_change_pct": 0.99,
-            "turnover_rate": 0.24,
-            "volume_ratio": 7.83,
-            "amount": 2434.96,
-            "last_price": 4.05,
+            "turnover_rate": 1.32,
+            "volume_ratio": 2.19,
+            "amount": 13570.87,
+            "last_price": 4.03,
             "theme": "中药",
             "industry": "医药医疗-中药"
           },
@@ -11473,7 +11488,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -11514,12 +11529,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "正式 Top3 逻辑",
           "symbol": "002174",
           "name": "游族网络",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "formal_return",
           "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
           "blocked_reason": "",
-          "tracking_status": "verified",
+          "tracking_status": "cancelled",
           "formal_return_eligible": true,
           "side_channel_return_eligible": false,
           "side_channel_return_scope": "formal_return_only",
@@ -11527,12 +11542,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "technical_fund_flow",
-          "current_observation_tier": "buy_top3",
+          "current_observation_tier": "b_watch",
           "current_candidate_channel": "technical_fund_flow",
-          "current_buy_allowed": true,
-          "current_action": "pass",
-          "current_status_cn": "继续持有",
-          "current_blocked_reason": "",
+          "current_buy_allowed": false,
+          "current_action": "downgrade",
+          "current_status_cn": "降级观察",
+          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入；不进入正式交接",
           "last_seen_source": "report",
           "last_seen_in_period": true,
           "latest_snapshot_matched": true,
@@ -11591,12 +11606,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "游戏",
           "industry": "传媒-游戏",
           "latest_snapshot": {
-            "change_pct": 1.26,
+            "change_pct": -0.55,
             "open_change_pct": -1.1,
-            "turnover_rate": 0.69,
-            "volume_ratio": 4.87,
-            "amount": 8589.57,
-            "last_price": 12.88,
+            "turnover_rate": 2.96,
+            "volume_ratio": 1.05,
+            "amount": 36998.78,
+            "last_price": 12.65,
             "theme": "游戏",
             "industry": "传媒-游戏"
           },
@@ -11605,7 +11620,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -11646,7 +11661,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "A类主线/题材逻辑",
           "symbol": "000567",
           "name": "海德股份",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -11723,12 +11738,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "其他金融服务",
           "industry": "非银金融-多元金融",
           "latest_snapshot": {
-            "change_pct": 0.16,
+            "change_pct": -4.38,
             "open_change_pct": 0.16,
-            "turnover_rate": 0.1,
-            "volume_ratio": 3.35,
-            "amount": 1259.73,
-            "last_price": 6.18,
+            "turnover_rate": 0.99,
+            "volume_ratio": 1.6,
+            "amount": 11633.37,
+            "last_price": 5.9,
             "theme": "其他金融服务",
             "industry": "非银金融-多元金融"
           },
@@ -11737,7 +11752,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -11762,7 +11777,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "A类主线/题材逻辑",
           "symbol": "603508",
           "name": "思维列控",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "消息/题材驱动候选，需技术面继续确认",
@@ -11839,12 +11854,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "安防设备",
           "industry": "计算机-IT设备",
           "latest_snapshot": {
-            "change_pct": -0.81,
+            "change_pct": -2.04,
             "open_change_pct": 0.0,
-            "turnover_rate": 0.09,
-            "volume_ratio": 3.68,
-            "amount": 780.25,
-            "last_price": 21.93,
+            "turnover_rate": 0.58,
+            "volume_ratio": 1.15,
+            "amount": 4833.89,
+            "last_price": 21.66,
             "theme": "安防设备",
             "industry": "计算机-IT设备"
           },
@@ -11853,7 +11868,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -11878,7 +11893,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "A类主线/题材逻辑",
           "symbol": "605169",
           "name": "洪通燃气",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
@@ -11955,12 +11970,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "燃气",
           "industry": "公用事业-燃气",
           "latest_snapshot": {
-            "change_pct": -1.86,
+            "change_pct": -4.02,
             "open_change_pct": 0.0,
-            "turnover_rate": 0.11,
-            "volume_ratio": 3.94,
-            "amount": 292.66,
-            "last_price": 9.51,
+            "turnover_rate": 0.78,
+            "volume_ratio": 1.42,
+            "amount": 2060.14,
+            "last_price": 9.3,
             "theme": "燃气",
             "industry": "公用事业-燃气"
           },
@@ -11969,7 +11984,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -11994,7 +12009,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "候选评分前排逻辑",
           "symbol": "000652",
           "name": "泰达股份",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
@@ -12071,12 +12086,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "贸易",
           "industry": "商贸-贸易",
           "latest_snapshot": {
-            "change_pct": -1.69,
+            "change_pct": -3.93,
             "open_change_pct": -0.84,
-            "turnover_rate": 0.07,
-            "volume_ratio": 3.5,
-            "amount": 377.17,
-            "last_price": 3.5,
+            "turnover_rate": 0.69,
+            "volume_ratio": 1.65,
+            "amount": 3483.14,
+            "last_price": 3.42,
             "theme": "贸易",
             "industry": "商贸-贸易"
           },
@@ -12085,7 +12100,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -12110,12 +12125,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "候选评分前排逻辑",
           "symbol": "002174",
           "name": "游族网络",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
           "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "tracking_status": "verified",
+          "tracking_status": "cancelled",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
           "side_channel_return_scope": "panel_front_sample",
@@ -12123,12 +12138,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "technical_fund_flow",
-          "current_observation_tier": "buy_top3",
+          "current_observation_tier": "b_watch",
           "current_candidate_channel": "technical_fund_flow",
-          "current_buy_allowed": true,
-          "current_action": "pass",
-          "current_status_cn": "继续持有",
-          "current_blocked_reason": "",
+          "current_buy_allowed": false,
+          "current_action": "downgrade",
+          "current_status_cn": "降级观察",
+          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入；不进入正式交接",
           "last_seen_source": "report",
           "last_seen_in_period": true,
           "latest_snapshot_matched": true,
@@ -12187,12 +12202,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "游戏",
           "industry": "传媒-游戏",
           "latest_snapshot": {
-            "change_pct": 1.26,
+            "change_pct": -0.55,
             "open_change_pct": -1.1,
-            "turnover_rate": 0.69,
-            "volume_ratio": 4.87,
-            "amount": 8589.57,
-            "last_price": 12.88,
+            "turnover_rate": 2.96,
+            "volume_ratio": 1.05,
+            "amount": 36998.78,
+            "last_price": 12.65,
             "theme": "游戏",
             "industry": "传媒-游戏"
           },
@@ -12201,7 +12216,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -12226,12 +12241,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "候选评分前排逻辑",
           "symbol": "600572",
           "name": "康恩贝",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
           "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "tracking_status": "cancelled",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
           "side_channel_return_scope": "panel_front_sample",
@@ -12239,13 +12254,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "rejected",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": true,
-          "current_action": "cancel",
-          "current_status_cn": "已取消",
-          "current_blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "last_seen_source": "report",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
           "last_seen_in_period": true,
           "latest_snapshot_matched": true,
           "snapshot_missing_reason": "",
@@ -12303,12 +12318,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "中药",
           "industry": "医药医疗-中药",
           "latest_snapshot": {
-            "change_pct": 0.25,
+            "change_pct": -0.25,
             "open_change_pct": 0.99,
-            "turnover_rate": 0.24,
-            "volume_ratio": 7.83,
-            "amount": 2434.96,
-            "last_price": 4.05,
+            "turnover_rate": 1.32,
+            "volume_ratio": 2.19,
+            "amount": 13570.87,
+            "last_price": 4.03,
             "theme": "中药",
             "industry": "医药医疗-中药"
           },
@@ -12317,7 +12332,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -12342,7 +12357,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "B类技术/资金逻辑",
           "symbol": "603679",
           "name": "华体科技",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -12419,12 +12434,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "LED",
           "industry": "电子-光学光电",
           "latest_snapshot": {
-            "change_pct": -1.71,
+            "change_pct": -1.42,
             "open_change_pct": -3.56,
-            "turnover_rate": 0.61,
-            "volume_ratio": 3.79,
-            "amount": 2254.51,
-            "last_price": 20.73,
+            "turnover_rate": 3.02,
+            "volume_ratio": 0.94,
+            "amount": 11043.27,
+            "last_price": 20.79,
             "theme": "LED",
             "industry": "电子-光学光电"
           },
@@ -12433,7 +12448,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -12458,7 +12473,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "B类技术/资金逻辑",
           "symbol": "002803",
           "name": "吉宏股份",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -12535,12 +12550,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "跨境电商",
           "industry": "商贸-电子商务",
           "latest_snapshot": {
-            "change_pct": 2.48,
+            "change_pct": 10.02,
             "open_change_pct": 0.17,
-            "turnover_rate": 0.46,
-            "volume_ratio": 4.69,
-            "amount": 3294.29,
-            "last_price": 24.34,
+            "turnover_rate": 6.74,
+            "volume_ratio": 3.43,
+            "amount": 50975.38,
+            "last_price": 26.13,
             "theme": "跨境电商",
             "industry": "商贸-电子商务"
           },
@@ -12549,7 +12564,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -12574,7 +12589,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "B类技术/资金逻辑",
           "symbol": "002821",
           "name": "凯莱英",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "all_layer_records",
           "return_tracking_scope": "side_channel_or_status_only",
           "entry_reason": "技术/资金行为候选，需次日验证是否继续转强",
@@ -12651,12 +12666,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "医疗研发外包",
           "industry": "医药医疗-医疗服务",
           "latest_snapshot": {
-            "change_pct": 5.17,
+            "change_pct": 10.0,
             "open_change_pct": 0.56,
-            "turnover_rate": 0.43,
-            "volume_ratio": 9.07,
-            "amount": 18203.92,
-            "last_price": 135.35,
+            "turnover_rate": 1.88,
+            "volume_ratio": 1.97,
+            "amount": 82191.38,
+            "last_price": 141.57,
             "theme": "医疗研发外包",
             "industry": "医药医疗-医疗服务"
           },
@@ -12665,7 +12680,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -12690,7 +12705,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "低位回流观察",
           "symbol": "603110",
           "name": "东方材料",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -12774,7 +12789,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "low_reflow_watch_result": {
-            "next_day_change_pct": -2.04,
+            "next_day_change_pct": -1.65,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -12807,12 +12822,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "涂料油墨",
           "industry": "化工-化学制品",
           "latest_snapshot": {
-            "change_pct": -2.04,
+            "change_pct": -1.65,
             "open_change_pct": -0.94,
-            "turnover_rate": 0.71,
-            "volume_ratio": 2.97,
-            "amount": 3575.81,
-            "last_price": 24.98,
+            "turnover_rate": 4.42,
+            "volume_ratio": 0.93,
+            "amount": 22263.63,
+            "last_price": 25.08,
             "theme": "涂料油墨",
             "industry": "化工-化学制品"
           },
@@ -12821,7 +12836,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -12846,12 +12861,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "低位回流观察",
           "symbol": "603005",
           "name": "晶方科技",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
           "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
-          "tracking_status": "false_positive",
+          "tracking_status": "verified",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
           "side_channel_return_scope": "panel_front_sample",
@@ -12932,8 +12947,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "low_reflow_watch_result": {
-            "next_day_change_pct": -0.59,
-            "success": false,
+            "next_day_change_pct": 3.02,
+            "success": true,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
           },
@@ -12965,12 +12980,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "半导体封测",
           "industry": "电子-半导体",
           "latest_snapshot": {
-            "change_pct": -0.59,
+            "change_pct": 3.02,
             "open_change_pct": -3.81,
-            "turnover_rate": 1.37,
-            "volume_ratio": 4.23,
-            "amount": 41180.82,
-            "last_price": 47.02,
+            "turnover_rate": 12.76,
+            "volume_ratio": 1.97,
+            "amount": 400923.56,
+            "last_price": 48.73,
             "theme": "半导体封测",
             "industry": "电子-半导体"
           },
@@ -12979,7 +12994,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13004,7 +13019,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "低位回流观察",
           "symbol": "002056",
           "name": "横店东磁",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
@@ -13090,7 +13105,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "low_reflow_watch_result": {
-            "next_day_change_pct": -3.97,
+            "next_day_change_pct": -6.53,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -13123,12 +13138,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "光伏电池组件",
           "industry": "电力设备-光伏设备",
           "latest_snapshot": {
-            "change_pct": -3.97,
+            "change_pct": -6.53,
             "open_change_pct": -1.26,
-            "turnover_rate": 0.64,
-            "volume_ratio": 4.0,
-            "amount": 29722.62,
-            "last_price": 28.09,
+            "turnover_rate": 3.48,
+            "volume_ratio": 1.08,
+            "amount": 157820.52,
+            "last_price": 27.34,
             "theme": "光伏电池组件",
             "industry": "电力设备-光伏设备"
           },
@@ -13137,7 +13152,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13162,7 +13177,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "早盘驱动观察",
           "symbol": "002520",
           "name": "日发精机",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -13264,7 +13279,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "open_drive_watch_result": {
-            "next_day_change_pct": -1.6,
+            "next_day_change_pct": -2.77,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -13295,12 +13310,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "机床制造",
           "industry": "机械设备-通用设备",
           "latest_snapshot": {
-            "change_pct": -1.6,
+            "change_pct": -2.77,
             "open_change_pct": -0.29,
-            "turnover_rate": 0.6,
-            "volume_ratio": 3.15,
-            "amount": 2940.97,
-            "last_price": 6.76,
+            "turnover_rate": 3.91,
+            "volume_ratio": 1.02,
+            "amount": 18881.43,
+            "last_price": 6.68,
             "theme": "机床制造",
             "industry": "机械设备-通用设备"
           },
@@ -13309,7 +13324,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13350,7 +13365,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "早盘驱动观察",
           "symbol": "603912",
           "name": "佳力图",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -13451,7 +13466,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "open_drive_watch_result": {
-            "next_day_change_pct": -4.55,
+            "next_day_change_pct": -5.69,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -13482,12 +13497,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "其他专用设备",
           "industry": "机械设备-专用设备",
           "latest_snapshot": {
-            "change_pct": -4.55,
+            "change_pct": -5.69,
             "open_change_pct": -2.5,
-            "turnover_rate": 0.86,
-            "volume_ratio": 8.69,
-            "amount": 3944.08,
-            "last_price": 8.39,
+            "turnover_rate": 4.04,
+            "volume_ratio": 2.05,
+            "amount": 18236.4,
+            "last_price": 8.29,
             "theme": "其他专用设备",
             "industry": "机械设备-专用设备"
           },
@@ -13496,7 +13511,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13537,7 +13552,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "早盘驱动观察",
           "symbol": "000990",
           "name": "诚志股份",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
@@ -13638,7 +13653,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "open_drive_watch_result": {
-            "next_day_change_pct": -0.79,
+            "next_day_change_pct": -0.68,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -13669,12 +13684,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "煤化工",
           "industry": "化工-化学原料",
           "latest_snapshot": {
-            "change_pct": -0.79,
+            "change_pct": -0.68,
             "open_change_pct": -0.34,
-            "turnover_rate": 0.21,
-            "volume_ratio": 3.63,
-            "amount": 2239.57,
-            "last_price": 8.76,
+            "turnover_rate": 1.25,
+            "volume_ratio": 1.08,
+            "amount": 13266.04,
+            "last_price": 8.77,
             "theme": "煤化工",
             "industry": "化工-化学原料"
           },
@@ -13683,7 +13698,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13724,7 +13739,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "隔夜涨停观察",
           "symbol": "000859",
           "name": "国风新材",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -13831,7 +13846,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 9.0
           },
           "overnight_limit_watch_result": {
-            "next_day_change_pct": -3.25,
+            "next_day_change_pct": -2.0,
             "success": false,
             "big_move_success": false,
             "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -13861,12 +13876,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "塑料薄膜",
           "industry": "化工-塑料",
           "latest_snapshot": {
-            "change_pct": -3.25,
+            "change_pct": -2.0,
             "open_change_pct": -1.67,
-            "turnover_rate": 1.41,
-            "volume_ratio": 5.75,
-            "amount": 14818.64,
-            "last_price": 11.62,
+            "turnover_rate": 5.5,
+            "volume_ratio": 1.13,
+            "amount": 57417.64,
+            "last_price": 11.77,
             "theme": "塑料薄膜",
             "industry": "化工-塑料"
           },
@@ -13875,7 +13890,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -13916,7 +13931,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "隔夜涨停观察",
           "symbol": "605305",
           "name": "中际联合",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -14023,7 +14038,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 9.0
           },
           "overnight_limit_watch_result": {
-            "next_day_change_pct": -1.42,
+            "next_day_change_pct": 1.31,
             "success": false,
             "big_move_success": false,
             "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -14053,12 +14068,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "工程机械整机",
           "industry": "机械设备-工程机械",
           "latest_snapshot": {
-            "change_pct": -1.42,
+            "change_pct": 1.31,
             "open_change_pct": 0.0,
-            "turnover_rate": 0.29,
-            "volume_ratio": 3.53,
-            "amount": 2614.84,
-            "last_price": 42.23,
+            "turnover_rate": 2.48,
+            "volume_ratio": 1.51,
+            "amount": 22407.04,
+            "last_price": 43.4,
             "theme": "工程机械整机",
             "industry": "机械设备-工程机械"
           },
@@ -14067,7 +14082,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -14108,7 +14123,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "隔夜涨停观察",
           "symbol": "600130",
           "name": "波导股份",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
@@ -14213,7 +14228,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 9.0
           },
           "overnight_limit_watch_result": {
-            "next_day_change_pct": -4.39,
+            "next_day_change_pct": -6.79,
             "success": false,
             "big_move_success": false,
             "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
@@ -14243,12 +14258,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "消费电子组件",
           "industry": "电子-消费电子",
           "latest_snapshot": {
-            "change_pct": -4.39,
+            "change_pct": -6.79,
             "open_change_pct": -1.8,
-            "turnover_rate": 0.89,
-            "volume_ratio": 6.76,
-            "amount": 3250.29,
-            "last_price": 4.79,
+            "turnover_rate": 5.69,
+            "volume_ratio": 2.15,
+            "amount": 20131.52,
+            "last_price": 4.67,
             "theme": "消费电子组件",
             "industry": "电子-消费电子"
           },
@@ -14257,7 +14272,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -14298,7 +14313,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "题材轮动观察",
           "symbol": "000620",
           "name": "盈新发展",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -14407,7 +14422,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "theme_rotation_watch_result": {
-            "next_day_change_pct": -2.74,
+            "next_day_change_pct": -0.68,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -14434,12 +14449,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "住宅开发",
           "industry": "房地产-房地产开发",
           "latest_snapshot": {
-            "change_pct": -2.74,
+            "change_pct": -0.68,
             "open_change_pct": -2.4,
-            "turnover_rate": 0.84,
-            "volume_ratio": 6.04,
-            "amount": 11116.05,
-            "last_price": 2.84,
+            "turnover_rate": 3.54,
+            "volume_ratio": 1.28,
+            "amount": 46954.03,
+            "last_price": 2.9,
             "theme": "住宅开发",
             "industry": "房地产-房地产开发"
           },
@@ -14448,7 +14463,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -14489,7 +14504,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "题材轮动观察",
           "symbol": "605090",
           "name": "九丰能源",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -14595,7 +14610,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "theme_rotation_watch_result": {
-            "next_day_change_pct": -2.27,
+            "next_day_change_pct": -4.68,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -14622,12 +14637,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "燃气",
           "industry": "公用事业-燃气",
           "latest_snapshot": {
-            "change_pct": -2.27,
+            "change_pct": -4.68,
             "open_change_pct": -0.97,
-            "turnover_rate": 0.47,
-            "volume_ratio": 7.26,
-            "amount": 12204.58,
-            "last_price": 37.38,
+            "turnover_rate": 2.15,
+            "volume_ratio": 1.66,
+            "amount": 55376.41,
+            "last_price": 36.46,
             "theme": "燃气",
             "industry": "公用事业-燃气"
           },
@@ -14636,7 +14651,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -14677,7 +14692,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "strategy_group_cn": "题材轮动观察",
           "symbol": "002443",
           "name": "金洲管道",
-          "source_period": "morning",
+          "source_period": "noon",
           "tracking_scope": "side_channel_only",
           "return_tracking_scope": "side_channel_only",
           "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
@@ -14783,7 +14798,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "next_day_success_threshold": 3.0
           },
           "theme_rotation_watch_result": {
-            "next_day_change_pct": -0.96,
+            "next_day_change_pct": -3.95,
             "success": false,
             "success_standard": "next_day_change_pct >= 3",
             "source": "next_trading_day_tdx_export_change_pct"
@@ -14810,12 +14825,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "theme_display": "特钢",
           "industry": "钢铁-特钢",
           "latest_snapshot": {
-            "change_pct": -0.96,
+            "change_pct": -3.95,
             "open_change_pct": -0.96,
-            "turnover_rate": 0.25,
-            "volume_ratio": 1.49,
-            "amount": 1441.3,
-            "last_price": 11.29,
+            "turnover_rate": 2.54,
+            "volume_ratio": 0.78,
+            "amount": 14582.03,
+            "last_price": 10.95,
             "theme": "特钢",
             "industry": "钢铁-特钢"
           },
@@ -14824,7 +14839,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-24T09:36:45+08:00",
+          "source_mtime": "2026-06-24T11:36:21+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -14884,8 +14899,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "status_counts": {
               "cancelled": 1,
               "price_missing": 0,
-              "tracked": 0,
-              "verified": 1
+              "tracked": 1,
+              "verified": 0
             }
           },
           "a_theme_watch": {
@@ -14926,8 +14941,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "status_counts": {
               "cancelled": 1,
               "price_missing": 0,
-              "tracked": 1,
-              "verified": 1
+              "tracked": 2,
+              "verified": 0
             }
           },
           "low_reflow_watch": {
@@ -14939,10 +14954,10 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "avg_t1_return": null,
             "status_counts": {
               "cancelled": 0,
-              "false_positive": 3,
+              "false_positive": 2,
               "price_missing": 0,
               "tracked": 0,
-              "verified": 0
+              "verified": 1
             }
           },
           "open_drive_watch": {
@@ -15005,7 +15020,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "notice_supplement_policy": "四层票池每层最多取前 3 只，低位回流观察最多 3 只，早盘驱动观察最多 3 只，隔夜涨停观察最多 3 只，题材轮动观察最多 3 只，去重后补查公告/风险证据；只补证据，不改 Top3、handoff 或交易计划。",
         "record_count": 23,
         "latest_snapshot_match_count": 23,
-        "report_match_count": 4,
+        "report_match_count": 2,
         "not_found_count": 0,
         "return_policy": "正式收益只统计 Top3；题材观察、技术观察、候选评分前排、低位回流观察、早盘驱动观察、隔夜涨停观察和题材轮动观察只跟踪面板展示样本，旁路收益也只按这些样本统计。",
         "notice_supplement_completed": true,
@@ -15013,12 +15028,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "notice_supplement_incomplete_count": 0
       },
       "file": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.morning.json",
-        "relative_path": "runs/2026-06-24/four-layer-tracking.morning.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
+        "relative_path": "runs/2026-06-24/four-layer-tracking.noon.json",
         "exists": true,
-        "size": 114427,
-        "modified_at": "2026-06-24T09:36:45+08:00",
-        "sha256": "257153e3ac7c9ef0abf1539c3691ef4dd934f9959577cf7656172a7cb8a378de"
+        "size": 114250,
+        "modified_at": "2026-06-24T11:36:21+08:00",
+        "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
       }
     },
     "review": {
@@ -19417,9 +19432,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.morning.json",
-              "modified_at": "2026-06-24T09:36:47+08:00",
-              "size": 99751,
-              "sha256": "e27a2824ce0de2f4a64d1c20e05687e40673a57a102b16a1305e112d8dcc4ead"
+              "modified_at": "2026-06-24T09:43:10+08:00",
+              "size": 101190,
+              "sha256": "286f79918643c050fd136af3091532db0e5f6bb9813a553933b1be1f742c8f31"
             },
             {
               "role": "write",
@@ -19970,9 +19985,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
-              "modified_at": "2026-06-24T09:36:37+08:00",
-              "size": 4198,
-              "sha256": "40ebe9e4645f6ec41396d5f5876b69c710851da2cfcdda8c856f788f26c09eea"
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4177,
+              "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
             },
             {
               "role": "write",
@@ -19980,7 +19995,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.md",
-              "modified_at": "2026-06-24T09:36:37+08:00",
+              "modified_at": "2026-06-24T11:36:12+08:00",
               "size": 933,
               "sha256": "d3ca1fdaa58d7fe8f9819bf4f809cf3fa94b6ab2e81aee8dc825c70bd5cf6a81"
             }
@@ -19996,9 +20011,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
-                  "modified_at": "2026-06-24T09:36:37+08:00",
-                  "size": 4198,
-                  "sha256": "40ebe9e4645f6ec41396d5f5876b69c710851da2cfcdda8c856f788f26c09eea"
+                  "modified_at": "2026-06-24T11:36:12+08:00",
+                  "size": 4177,
+                  "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
                 },
                 {
                   "role": "write",
@@ -20006,7 +20021,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.md",
-                  "modified_at": "2026-06-24T09:36:37+08:00",
+                  "modified_at": "2026-06-24T11:36:12+08:00",
                   "size": 933,
                   "sha256": "d3ca1fdaa58d7fe8f9819bf4f809cf3fa94b6ab2e81aee8dc825c70bd5cf6a81"
                 }
@@ -20080,9 +20095,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
-              "modified_at": "2026-06-24T09:36:37+08:00",
-              "size": 4198,
-              "sha256": "40ebe9e4645f6ec41396d5f5876b69c710851da2cfcdda8c856f788f26c09eea"
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4177,
+              "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
             },
             {
               "role": "read",
@@ -21012,9 +21027,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.morning.json",
-              "modified_at": "2026-06-24T09:36:47+08:00",
-              "size": 99751,
-              "sha256": "e27a2824ce0de2f4a64d1c20e05687e40673a57a102b16a1305e112d8dcc4ead"
+              "modified_at": "2026-06-24T09:43:10+08:00",
+              "size": 101190,
+              "sha256": "286f79918643c050fd136af3091532db0e5f6bb9813a553933b1be1f742c8f31"
             },
             {
               "role": "write",
@@ -21038,9 +21053,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.morning.json",
-                  "modified_at": "2026-06-24T09:36:47+08:00",
-                  "size": 99751,
-                  "sha256": "e27a2824ce0de2f4a64d1c20e05687e40673a57a102b16a1305e112d8dcc4ead"
+                  "modified_at": "2026-06-24T09:43:10+08:00",
+                  "size": 101190,
+                  "sha256": "286f79918643c050fd136af3091532db0e5f6bb9813a553933b1be1f742c8f31"
                 },
                 {
                   "role": "write",
@@ -21062,28 +21077,1630 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "label": "午报",
       "nodes": [
         {
-          "id": "noon_schedule_status",
+          "id": "read_morning",
           "order": 1,
-          "title_cn": "午报自动化状态",
-          "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+          "title_cn": "读取早报对象",
+          "plain_goal_cn": "读取早报留下的对象。午报只验证上午兑现情况，不重新选股。",
           "data_used_cn": [
-            "workflow-manifest",
-            "正式报告 JSON",
-            "正式报告 Markdown",
-            "当前时间"
+            "早报验证对象",
+            "早报风险提示"
           ],
-          "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+          "source_method_cn": "通过 noon 流程读取真实前置早报 handoff：runs/2026-06-24/morning-report.json。",
           "read_files": [
-            "workflow-manifest.noon.json",
+            "runs/2026-06-24/morning-report.json",
+            "workflow-manifest.morning.json"
+          ],
+          "write_files": [
+            "noon-inherited-pool.json"
+          ],
+          "status": "ok",
+          "result_cn": "午报只读取早报对象，不新增股票。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "runs/2026-06-24/morning-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\morning-report.json",
+              "modified_at": "2026-06-24T09:36:46+08:00",
+              "size": 669378,
+              "sha256": "1ae5498063a0ddb10a08b26975798992da0cd0e512c458567bb4346ed3e9759e"
+            },
+            {
+              "role": "read",
+              "file": "workflow-manifest.morning.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.morning.json",
+              "modified_at": "2026-06-24T09:43:10+08:00",
+              "size": 101190,
+              "sha256": "286f79918643c050fd136af3091532db0e5f6bb9813a553933b1be1f742c8f31"
+            },
+            {
+              "role": "write",
+              "file": "noon-inherited-pool.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-inherited-pool.json",
+              "modified_at": "2026-06-24T11:35:44+08:00",
+              "size": 22545,
+              "sha256": "0e563770bf1076512203be64640c8684be47d1083e9efde4ea0ab5d2a5ff5e17"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "午报只读取早报对象，不新增股票。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "noon-inherited-pool.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-inherited-pool.json",
+                  "modified_at": "2026-06-24T11:35:44+08:00",
+                  "size": 22545,
+                  "sha256": "0e563770bf1076512203be64640c8684be47d1083e9efde4ea0ab5d2a5ff5e17"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "morning_verify",
+          "order": 2,
+          "title_cn": "上午兑现验证",
+          "plain_goal_cn": "检查早报对象上午是否真的走强、承接是否还在。",
+          "data_used_cn": [
+            "上午涨跌幅",
+            "承接",
+            "冲高回落",
+            "分时强弱"
+          ],
+          "source_method_cn": "通过 previous_report_verify.py 和 TDX 行情验证。",
+          "read_files": [
+            "noon-inherited-pool.json"
+          ],
+          "write_files": [
+            "noon-report.json"
+          ],
+          "status": "ok",
+          "result_cn": "上午没有兑现时，午后动作必须降级。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-inherited-pool.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-inherited-pool.json",
+              "modified_at": "2026-06-24T11:35:44+08:00",
+              "size": 22545,
+              "sha256": "0e563770bf1076512203be64640c8684be47d1083e9efde4ea0ab5d2a5ff5e17"
+            },
+            {
+              "role": "write",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "上午没有兑现时，午后动作必须降级。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "noon-report.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 734982,
+                  "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gates_recheck",
+          "order": 3,
+          "title_cn": "三闸门复核",
+          "plain_goal_cn": "午前重新看外围、国内、情绪趋势，作为下午仓位和节奏参考。",
+          "data_used_cn": [
+            "外围",
+            "国内",
+            "情绪/趋势"
+          ],
+          "source_method_cn": "复用并刷新三闸门产物。",
+          "read_files": [
+            "outer-gate.noon.json",
+            "domestic-gate.noon.json",
+            "emotion-trend-gate.noon.json"
+          ],
+          "write_files": [
+            "gates-protocol.noon.json"
+          ],
+          "status": "missing",
+          "result_cn": "两个以上逆风或关键证据缺失时，午后仓位和节奏保守；动作仍按执行引擎与候选自身风险处理。",
+          "missing_or_risk_cn": [
+            "未落盘文件：gates-protocol.noon.json"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "outer-gate.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "outer-gate.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\outer-gate.noon.json",
+              "modified_at": "2026-06-24T11:35:58+08:00",
+              "size": 21588,
+              "sha256": "ebeec95dc333fa1067bd0d1e0875a71085e58e5d7e210d829241b689056232bd"
+            },
+            {
+              "role": "read",
+              "file": "domestic-gate.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "domestic-gate.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.noon.json",
+              "modified_at": "2026-06-24T11:36:09+08:00",
+              "size": 268817,
+              "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
+            },
+            {
+              "role": "read",
+              "file": "emotion-trend-gate.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "emotion-trend-gate.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\emotion-trend-gate.noon.json",
+              "modified_at": "2026-06-24T11:36:11+08:00",
+              "size": 19335,
+              "sha256": "488f804561f20ac57b6df8424a0c236dde8838fb150fd053a0320cc501df702e"
+            },
+            {
+              "role": "write",
+              "file": "gates-protocol.noon.json",
+              "status": "period_snapshot_missing",
+              "exists": false,
+              "requested_file": "gates-protocol.json",
+              "freshness_note": "本节点要求本时段专属快照；缺失时不引用可能被后续时段覆盖的通用文件。"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "两个以上逆风或关键证据缺失时，午后仓位和节奏保守；动作仍按执行引擎与候选自身风险处理。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "read",
+                  "file": "outer-gate.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "requested_file": "outer-gate.json",
+                  "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\outer-gate.noon.json",
+                  "modified_at": "2026-06-24T11:35:58+08:00",
+                  "size": 21588,
+                  "sha256": "ebeec95dc333fa1067bd0d1e0875a71085e58e5d7e210d829241b689056232bd"
+                },
+                {
+                  "role": "read",
+                  "file": "domestic-gate.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "requested_file": "domestic-gate.json",
+                  "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.noon.json",
+                  "modified_at": "2026-06-24T11:36:09+08:00",
+                  "size": 268817,
+                  "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
+                },
+                {
+                  "role": "read",
+                  "file": "emotion-trend-gate.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "requested_file": "emotion-trend-gate.json",
+                  "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\emotion-trend-gate.noon.json",
+                  "modified_at": "2026-06-24T11:36:11+08:00",
+                  "size": 19335,
+                  "sha256": "488f804561f20ac57b6df8424a0c236dde8838fb150fd053a0320cc501df702e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intraday_layer",
+          "order": 4,
+          "title_cn": "盘中强弱分层",
+          "plain_goal_cn": "把早报对象分成强、中、弱层，决定下午继续看谁和放弃谁。",
+          "data_used_cn": [
+            "强层",
+            "中层",
+            "弱层",
+            "放弃名单"
+          ],
+          "source_method_cn": "通过午报结构化报告进行盘中分层。",
+          "read_files": [
+            "technical-check.noon.json"
+          ],
+          "write_files": [
+            "noon-report.json"
+          ],
+          "status": "ok",
+          "result_cn": "强弱分层只决定继续看谁，不重新开新名单。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "technical-check.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "technical-check.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 11866,
+              "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
+            },
+            {
+              "role": "write",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "强弱分层只决定继续看谁，不重新开新名单。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "noon-report.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 734982,
+                  "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "execution_engine",
+          "order": 5,
+          "title_cn": "执行引擎",
+          "plain_goal_cn": "把盘中表现翻译成持有观察、只观察、减仓、退出或放弃参与等动作。",
+          "data_used_cn": [
+            "模拟持仓/观察对象",
+            "盘中走势",
+            "风控动作"
+          ],
+          "source_method_cn": "通过 build_execution_input.py 和 execution_engine.py 输出动作。",
+          "read_files": [
+            "execution-inputs.json"
+          ],
+          "write_files": [
+            "execution-decision.json"
+          ],
+          "status": "ok",
+          "result_cn": "执行引擎输出动作，不负责选新票。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "execution-inputs.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-inputs.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 1614,
+              "sha256": "fc7919f908033d7175f4c30baa856c50b212e642b76cba1802e17a693d85b55e"
+            },
+            {
+              "role": "write",
+              "file": "execution-decision.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-decision.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 833,
+              "sha256": "bfd9b94e44cd1f4d7c1a1b6609dcc7459bb0a65ea9f070cb40797fd0b4f0bb3a"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "执行引擎输出动作，不负责选新票。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "execution-decision.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-decision.json",
+                  "modified_at": "2026-06-24T11:36:12+08:00",
+                  "size": 833,
+                  "sha256": "bfd9b94e44cd1f4d7c1a1b6609dcc7459bb0a65ea9f070cb40797fd0b4f0bb3a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "research_brief",
+          "order": 6,
+          "title_cn": "关键事件整理",
+          "plain_goal_cn": "把上午事件、板块方向和风险整理成午报可读背景，不改变午后名单。",
+          "data_used_cn": [
+            "授权新闻",
+            "授权公告",
+            "上午异动",
+            "板块方向",
+            "执行结果"
+          ],
+          "source_method_cn": "通过 build_research_brief.py 只读已落盘文件整理；不取数、不选股、不改名单。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "domestic-gate.noon.json",
+            "sector-split.noon.json",
+            "technical-check.noon.json"
+          ],
+          "write_files": [
+            "research-brief.json",
+            "research-brief.md"
+          ],
+          "status": "ok",
+          "result_cn": "只读已落盘材料整理事件，不取数、不选股、不改交接对象。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-news.json",
+              "modified_at": "2026-06-24T09:00:08+08:00",
+              "size": 83945,
+              "sha256": "34ceffa9c8b74ff14c6091378099a58a8d0f440ea270ad9ff44120312ba167dc"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-notices.json",
+              "modified_at": "2026-06-24T09:00:22+08:00",
+              "size": 144442,
+              "sha256": "75782f99111490a204f68bec2dc4cf90000f51d57883f32d52325859312e9b54"
+            },
+            {
+              "role": "read",
+              "file": "domestic-gate.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "domestic-gate.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.noon.json",
+              "modified_at": "2026-06-24T11:36:09+08:00",
+              "size": 268817,
+              "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "sector-split.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\sector-split.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 222547,
+              "sha256": "448458a8ce0919979dfc1667b513ca87494501234a015b4d84b08815a6054717"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "technical-check.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 11866,
+              "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
+            },
+            {
+              "role": "write",
+              "file": "research-brief.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4177,
+              "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
+            },
+            {
+              "role": "write",
+              "file": "research-brief.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.md",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 933,
+              "sha256": "d3ca1fdaa58d7fe8f9819bf4f809cf3fa94b6ab2e81aee8dc825c70bd5cf6a81"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "只读已落盘材料整理事件，不取数、不选股、不改交接对象。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "research-brief.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
+                  "modified_at": "2026-06-24T11:36:12+08:00",
+                  "size": 4177,
+                  "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
+                },
+                {
+                  "role": "write",
+                  "file": "research-brief.md",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.md",
+                  "modified_at": "2026-06-24T11:36:12+08:00",
+                  "size": 933,
+                  "sha256": "d3ca1fdaa58d7fe8f9819bf4f809cf3fa94b6ab2e81aee8dc825c70bd5cf6a81"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "news_notice_sentiment",
+          "order": 7,
+          "title_cn": "新闻/公告情绪摘要",
+          "plain_goal_cn": "只读已落盘新闻和公告，归纳上午资料的正面、风险和中性倾向；不改变午后名单。",
+          "data_used_cn": [
+            "授权新闻",
+            "授权公告",
+            "候选公告排雷",
+            "关键事件整理"
+          ],
+          "source_method_cn": "通过 build_news_notice_sentiment.py 只读已落盘新闻和公告，归纳正面/风险/中性；不取数、不选股、不改午后名单。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "candidate-notice-scan.noon.json",
+            "research-brief.json",
+            "domestic-intelligence.noon.json"
+          ],
+          "write_files": [
+            "news-notice-sentiment.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "新闻/公告摘要完成：正面 7 条，风险 19 条，谨慎/中性 39 条。",
+          "missing_or_risk_cn": [
+            "新闻/公告摘要：正面 7 条，风险 19 条，谨慎/中性 39 条。",
+            "有负面/风险关键词，正式报告只作风险提示，是否卡票仍看公告排雷硬规则。",
+            "有负面/风险关键词，正式报告只作风险提示，是否卡票仍看公告排雷硬规则。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-news.json",
+              "modified_at": "2026-06-24T09:00:08+08:00",
+              "size": 83945,
+              "sha256": "34ceffa9c8b74ff14c6091378099a58a8d0f440ea270ad9ff44120312ba167dc"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-notices.json",
+              "modified_at": "2026-06-24T09:00:22+08:00",
+              "size": 144442,
+              "sha256": "75782f99111490a204f68bec2dc4cf90000f51d57883f32d52325859312e9b54"
+            },
+            {
+              "role": "read",
+              "file": "candidate-notice-scan.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-notice-scan.noon.json",
+              "modified_at": "2026-06-24T11:36:21+08:00",
+              "size": 15391,
+              "sha256": "8261966db3c3e59b4081471a42e09ca8f33c6e2e3cd5b9766295f14f5b52fc31"
+            },
+            {
+              "role": "read",
+              "file": "research-brief.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\research-brief.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4177,
+              "sha256": "a24f11865045ea67d281ae53ec8b92325613aba1f991a32fe8f240fc35a70724"
+            },
+            {
+              "role": "read",
+              "file": "domestic-intelligence.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-intelligence.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4659,
+              "sha256": "3d735493ee37fbed292056a0a3314f0afe472b064801f6992b7d6686368a4034"
+            },
+            {
+              "role": "write",
+              "file": "news-notice-sentiment.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\news-notice-sentiment.noon.json",
+              "modified_at": "2026-06-24T11:36:21+08:00",
+              "size": 29222,
+              "sha256": "fefa4d70327269da17adde3a2b448ed05a772dcf448e3be5648f1e686a937dde"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "新闻/公告摘要完成：正面 7 条，风险 19 条，谨慎/中性 39 条。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "news-notice-sentiment.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\news-notice-sentiment.noon.json",
+                  "modified_at": "2026-06-24T11:36:21+08:00",
+                  "size": 29222,
+                  "sha256": "fefa4d70327269da17adde3a2b448ed05a772dcf448e3be5648f1e686a937dde"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domestic_intelligence",
+          "order": 8,
+          "title_cn": "国内信息增强",
+          "plain_goal_cn": "把上午国内事件映射到早报继承对象，只解释变化，不新增午后名单。",
+          "data_used_cn": [
+            "上午国内新闻",
+            "公告/业绩事件",
+            "板块兑现变化",
+            "早报继承对象"
+          ],
+          "source_method_cn": "通过 build_domestic_intelligence.py 只读已落盘产物映射到早报继承对象；不取数、不选股、不改午后名单。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "domestic-gate.noon.json",
+            "market-mainline.noon.json",
+            "sector-split.noon.json",
+            "candidate-score.noon.json",
+            "technical-check.noon.json"
+          ],
+          "write_files": [
+            "domestic-intelligence.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "国内信息增强已整理：当天新增证据 3 条，A股政策/产业 3 条，A股公告 0 条，直接关联自选股 0 条；催化状态 已确认催化，时效 当日新催化。",
+          "missing_or_risk_cn": [
+            "增强层只解释国内事件、板块和自选股关联，不新增股票，不改 Top3/A/B，不改 handoff",
+            "当前展示方向：存储芯片、芯片",
+            "已单独隔离：港股/海外中资 4 条、全球市场摘要 1 条，不写入正式国内催化"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-news.json",
+              "modified_at": "2026-06-24T09:00:08+08:00",
+              "size": 83945,
+              "sha256": "34ceffa9c8b74ff14c6091378099a58a8d0f440ea270ad9ff44120312ba167dc"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-notices.json",
+              "modified_at": "2026-06-24T09:00:22+08:00",
+              "size": 144442,
+              "sha256": "75782f99111490a204f68bec2dc4cf90000f51d57883f32d52325859312e9b54"
+            },
+            {
+              "role": "read",
+              "file": "domestic-gate.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "domestic-gate.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.noon.json",
+              "modified_at": "2026-06-24T11:36:09+08:00",
+              "size": 268817,
+              "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
+            },
+            {
+              "role": "read",
+              "file": "market-mainline.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "market-mainline.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\market-mainline.noon.json",
+              "modified_at": "2026-06-24T11:36:02+08:00",
+              "size": 196097,
+              "sha256": "f0064a0f1f6bede1d5210eb5a6f64abbea48ad1acce01ab8c1c31e6f26ba490b"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "sector-split.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\sector-split.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 222547,
+              "sha256": "448458a8ce0919979dfc1667b513ca87494501234a015b4d84b08815a6054717"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "candidate-score.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-score.noon.json",
+              "modified_at": "2026-06-24T11:36:11+08:00",
+              "size": 68189,
+              "sha256": "72ad842755ede347ddb77f9837f00bb043e767be7ec64d8d3bb5f1bab77f94a6"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "technical-check.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 11866,
+              "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
+            },
+            {
+              "role": "write",
+              "file": "domestic-intelligence.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-intelligence.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 4659,
+              "sha256": "3d735493ee37fbed292056a0a3314f0afe472b064801f6992b7d6686368a4034"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "国内信息增强已整理：当天新增证据 3 条，A股政策/产业 3 条，A股公告 0 条，直接关联自选股 0 条；催化状态 已确认催化，时效 当日新催化。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "domestic-intelligence.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-intelligence.noon.json",
+                  "modified_at": "2026-06-24T11:36:12+08:00",
+                  "size": 4659,
+                  "sha256": "3d735493ee37fbed292056a0a3314f0afe472b064801f6992b7d6686368a4034"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "external_skill_enrichment",
+          "order": 9,
+          "title_cn": "金融 skill 证据增强",
+          "plain_goal_cn": "午报步骤：金融 skill 证据增强。",
+          "data_used_cn": [
+            "早报对象",
+            "技术检查",
+            "执行边界",
+            "金融 skill 适配清单"
+          ],
+          "source_method_cn": "通过 build_external_skill_enrichment.py 只整理证据增强对象和上限；午报不重新选股。",
+          "read_files": [
+            "morning-report.json",
+            "candidate-score.noon.json",
+            "technical-check.noon.json"
+          ],
+          "write_files": [
+            "external-skill-enrichment.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "金融 skill 增强清单已生成：题材/资金 0 只，公告/股本风险 0 只，交易计划 0 只，复盘重点 2 只。",
+          "missing_or_risk_cn": [
+            "这些增强只补证据和解释，不改 Top3、不改 A/B 观察、不改 handoff",
+            "当前是适配清单/扫描上限，尚未逐个金融 skill 实时深拉：tdx-agzxsb、tdx-hot-topic、tdx-trading-info、tdx-event-driven-short-term-catalyst"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "morning-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\morning-report.json",
+              "modified_at": "2026-06-24T09:36:46+08:00",
+              "size": 669378,
+              "sha256": "1ae5498063a0ddb10a08b26975798992da0cd0e512c458567bb4346ed3e9759e"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "candidate-score.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-score.noon.json",
+              "modified_at": "2026-06-24T11:36:11+08:00",
+              "size": 68189,
+              "sha256": "72ad842755ede347ddb77f9837f00bb043e767be7ec64d8d3bb5f1bab77f94a6"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "technical-check.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 11866,
+              "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
+            },
+            {
+              "role": "write",
+              "file": "external-skill-enrichment.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\external-skill-enrichment.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 5780,
+              "sha256": "8f11126999cec4375972c550defe5bfa5e0f1b80b9c4b9fa86c32efc92933785"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "金融 skill 增强清单已生成：题材/资金 0 只，公告/股本风险 0 只，交易计划 0 只，复盘重点 2 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "external-skill-enrichment.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\external-skill-enrichment.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 5780,
+                  "sha256": "8f11126999cec4375972c550defe5bfa5e0f1b80b9c4b9fa86c32efc92933785"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "external_skill_deep_dive",
+          "order": 10,
+          "title_cn": "金融 skill 深挖",
+          "plain_goal_cn": "午报步骤：金融 skill 深挖。",
+          "data_used_cn": [
+            "Top3",
+            "A类观察",
+            "B类观察",
+            "候选评分前三",
+            "上午表现"
+          ],
+          "source_method_cn": "通过 build_external_skill_deep_dive.py 复用重点票深挖结果；只补上午兑现证据和空仓半日验证，不把旁路对象写成持仓。",
+          "read_files": [
+            "external-skill-enrichment.noon.json",
+            "four-layer-tracking.morning.json",
+            "morning-report.json"
+          ],
+          "write_files": [
+            "external-skill-deep-dive.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "金融 skill 深挖已生成：重点票 8 只，Top3 2 只，A类 3 只，B类 3 只，候选评分前三 2 只。",
+          "missing_or_risk_cn": [
+            "深挖只补主线、题材、资金、事件、股本风险、板块操盘、产业链、主营匹配、仓位节奏和复盘证据，不改 Top3、不改 handoff"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "external-skill-enrichment.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\external-skill-enrichment.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 5780,
+              "sha256": "8f11126999cec4375972c550defe5bfa5e0f1b80b9c4b9fa86c32efc92933785"
+            },
+            {
+              "role": "read",
+              "file": "four-layer-tracking.morning.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.morning.json",
+              "modified_at": "2026-06-24T09:36:45+08:00",
+              "size": 114427,
+              "sha256": "257153e3ac7c9ef0abf1539c3691ef4dd934f9959577cf7656172a7cb8a378de"
+            },
+            {
+              "role": "read",
+              "file": "morning-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\morning-report.json",
+              "modified_at": "2026-06-24T09:36:46+08:00",
+              "size": 669378,
+              "sha256": "1ae5498063a0ddb10a08b26975798992da0cd0e512c458567bb4346ed3e9759e"
+            },
+            {
+              "role": "write",
+              "file": "external-skill-deep-dive.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\external-skill-deep-dive.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 42228,
+              "sha256": "04f43f9cee5594dbbc7f06625fbc6877d23529ebc66a98f961df0086aaf074ad"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "金融 skill 深挖已生成：重点票 8 只，Top3 2 只，A类 3 只，B类 3 只，候选评分前三 2 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "external-skill-deep-dive.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\external-skill-deep-dive.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 42228,
+                  "sha256": "04f43f9cee5594dbbc7f06625fbc6877d23529ebc66a98f961df0086aaf074ad"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "four_layer_tracking",
+          "order": 11,
+          "title_cn": "四套逻辑跟踪",
+          "plain_goal_cn": "记录四套策略样本上午表现，旁路对象不进入午报执行输入。",
+          "data_used_cn": [
+            "早报四套逻辑样本",
+            "上午表现",
+            "执行边界",
+            "空仓是否继续合理"
+          ],
+          "source_method_cn": "通过 build_four_layer_tracking.py 更新四套策略样本盘中状态；无正式对象时只给复盘判断是否漏强，不新增股票、不改午后执行输入。",
+          "read_files": [
+            "four-layer-tracking.morning.json",
+            "noon-report.json"
+          ],
+          "write_files": [
+            "four-layer-tracking.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "四层/旁路策略对比账本已生成：正式 Top3 2 只，A类主线/题材 3 只，B类技术/资金 3 只，候选评分前排 3 只，低位回流观察 3 只，早盘驱动观察 3 只，隔夜涨停观察 3 只，题材轮动观察 3 只。 面板样本跟踪 23 条，本时段快照命中 23 条。",
+          "missing_or_risk_cn": [
+            "跟踪的是面板四层样本和旁路样本；正式买入只认 Top3，题材观察、技术观察、评分前排、低位回流、早盘驱动、隔夜涨停观察和题材轮动观察不进入 handoff、午报执行或正式收益"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "four-layer-tracking.morning.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.morning.json",
+              "modified_at": "2026-06-24T09:36:45+08:00",
+              "size": 114427,
+              "sha256": "257153e3ac7c9ef0abf1539c3691ef4dd934f9959577cf7656172a7cb8a378de"
+            },
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            },
+            {
+              "role": "write",
+              "file": "four-layer-tracking.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
+              "modified_at": "2026-06-24T11:36:21+08:00",
+              "size": 114250,
+              "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "四层/旁路策略对比账本已生成：正式 Top3 2 只，A类主线/题材 3 只，B类技术/资金 3 只，候选评分前排 3 只，低位回流观察 3 只，早盘驱动观察 3 只，隔夜涨停观察 3 只，题材轮动观察 3 只。 面板样本跟踪 23 条，本时段快照命中 23 条。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "four-layer-tracking.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
+                  "modified_at": "2026-06-24T11:36:21+08:00",
+                  "size": 114250,
+                  "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data_acquisition_health",
+          "order": 12,
+          "title_cn": "数据获取健康审计",
+          "plain_goal_cn": "午报步骤：数据获取健康审计。",
+          "data_used_cn": [
+            "当天自选股快照",
+            "授权新闻公告",
+            "候选公告排雷",
+            "三闸门",
+            "执行输入"
+          ],
+          "source_method_cn": "通过 build_data_acquisition_health.py 只读已落盘产物做审计；不取数、不选股、不改午报对象。",
+          "read_files": [
+            "raw-watchlist.noon.json",
+            "filtered-pool.noon.json",
+            "authorized-news.json",
+            "authorized-notices.json",
+            "candidate-notice-scan.noon.json"
+          ],
+          "write_files": [
+            "data-acquisition-health.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "数据获取健康审计完成：通过 13 项，需留意 0 项，阻断 0 项。",
+          "missing_or_risk_cn": [
+            "关键数据获取审计通过：未发现读旧、查询失败或关键产物缺失。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "raw-watchlist.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\raw-watchlist.noon.json",
+              "modified_at": "2026-06-24T11:35:44+08:00",
+              "size": 1796894,
+              "sha256": "2682b46c2ecf0d85b7a8aaa2bcf3fe6d136d0db687ae33d265dc8a3d5f89418c"
+            },
+            {
+              "role": "read",
+              "file": "filtered-pool.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\filtered-pool.noon.json",
+              "modified_at": "2026-06-24T11:35:44+08:00",
+              "size": 2274457,
+              "sha256": "0dbae4eec7842488f82d813f9acc8ae779753ec9bc1ecaaee4d9a7c378f02f51"
+            },
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-news.json",
+              "modified_at": "2026-06-24T09:00:08+08:00",
+              "size": 83945,
+              "sha256": "34ceffa9c8b74ff14c6091378099a58a8d0f440ea270ad9ff44120312ba167dc"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\authorized-notices.json",
+              "modified_at": "2026-06-24T09:00:22+08:00",
+              "size": 144442,
+              "sha256": "75782f99111490a204f68bec2dc4cf90000f51d57883f32d52325859312e9b54"
+            },
+            {
+              "role": "read",
+              "file": "candidate-notice-scan.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-notice-scan.noon.json",
+              "modified_at": "2026-06-24T11:36:21+08:00",
+              "size": 15391,
+              "sha256": "8261966db3c3e59b4081471a42e09ca8f33c6e2e3cd5b9766295f14f5b52fc31"
+            },
+            {
+              "role": "write",
+              "file": "data-acquisition-health.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-acquisition-health.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 9392,
+              "sha256": "19ac546eb93db32dc63d273fb09fefdaa84f6acfc59071d7948899b80a94c218"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "数据获取健康审计完成：通过 13 项，需留意 0 项，阻断 0 项。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "data-acquisition-health.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-acquisition-health.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 9392,
+                  "sha256": "19ac546eb93db32dc63d273fb09fefdaa84f6acfc59071d7948899b80a94c218"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "strategy_benchmark",
+          "order": 13,
+          "title_cn": "四套策略收益对比",
+          "plain_goal_cn": "午报只统计正式和旁路样本上午表现，不把旁路对象变成持仓。",
+          "data_used_cn": [
+            "四套逻辑样本",
+            "模拟收益账本",
+            "上午表现",
+            "收益缺口"
+          ],
+          "source_method_cn": "通过 build_strategy_benchmark.py 比较正式和旁路表现；只做审计，不改午报执行。",
+          "read_files": [
+            "four-layer-tracking.noon.json",
+            "paper-trade-ledger.noon.json"
+          ],
+          "write_files": [
+            "strategy-benchmark.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "四套策略对比审计完成：正式 Top3 2 只，旁路样本 21 只，午盘表现缺口 23 只。",
+          "missing_or_risk_cn": [
+            "这是旁路对比，只用于复盘判断哪套逻辑更有效；不改 Top3、不改 handoff、不改正式收益。",
+            "已对比 8 套策略样本；暂无可比收益，等待价格回填。",
+            "收益还在等待价格回填，这不是扫描失败，也不会影响早报/午报结论。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "four-layer-tracking.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
+              "modified_at": "2026-06-24T11:36:21+08:00",
+              "size": 114250,
+              "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
+            },
+            {
+              "role": "read",
+              "file": "paper-trade-ledger.noon.json",
+              "status": "period_snapshot_missing",
+              "exists": false,
+              "requested_file": "paper-trade-ledger.json",
+              "freshness_note": "本节点要求本时段专属快照；缺失时不引用可能被后续时段覆盖的通用文件。"
+            },
+            {
+              "role": "write",
+              "file": "strategy-benchmark.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\strategy-benchmark.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 10315,
+              "sha256": "37669dc7965c0644a08f09c05f9909d2572753befacdb224f8137b40a01639bd"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "四套策略对比审计完成：正式 Top3 2 只，旁路样本 21 只，午盘表现缺口 23 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "strategy-benchmark.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\strategy-benchmark.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 10315,
+                  "sha256": "37669dc7965c0644a08f09c05f9909d2572753befacdb224f8137b40a01639bd"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "multi_role_review",
+          "order": 14,
+          "title_cn": "多视角审计",
+          "plain_goal_cn": "从技术、题材、风险和数据质量看午报是否有弱点；只提示，不改算法。",
+          "data_used_cn": [
+            "午报",
+            "候选评分",
+            "技术检查",
+            "数据健康",
+            "四套策略对比"
+          ],
+          "source_method_cn": "通过 build_multi_role_review.py 做技术、题材、风险、数据质量复核；只给提示，不改算法。",
+          "read_files": [
+            "noon-report.json",
+            "candidate-score.noon.json",
+            "technical-check.noon.json",
+            "data-acquisition-health.noon.json"
+          ],
+          "write_files": [
+            "multi-role-review.noon.json"
+          ],
+          "status": "warning",
+          "result_cn": "多视角审计完成：技术、题材、风险、数据质量共 4 个视角；需留意 1 项，阻断 0 项。（需留意：技术：通过 0 只，取消 0 只）",
+          "missing_or_risk_cn": [
+            "审计层只找问题和给建议，不自动改算法、不改 Top3、不改交易计划。",
+            "技术审查：技术检查通过 0 只，取消/不合格 0 只；技术层只给证据，不直接改名单。",
+            "技术审查建议：若强票多被技术取消，复盘阶段检查取消原因；确认前不调技术阈值。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "candidate-score.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-score.noon.json",
+              "modified_at": "2026-06-24T11:36:11+08:00",
+              "size": 68189,
+              "sha256": "72ad842755ede347ddb77f9837f00bb043e767be7ec64d8d3bb5f1bab77f94a6"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.noon.json",
+              "status": "ok",
+              "exists": true,
+              "requested_file": "technical-check.json",
+              "freshness_note": "已使用本时段专属快照，避免读取后续时段覆盖后的通用文件。",
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.noon.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 11866,
+              "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
+            },
+            {
+              "role": "read",
+              "file": "data-acquisition-health.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-acquisition-health.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 9392,
+              "sha256": "19ac546eb93db32dc63d273fb09fefdaa84f6acfc59071d7948899b80a94c218"
+            },
+            {
+              "role": "write",
+              "file": "multi-role-review.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\multi-role-review.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4168,
+              "sha256": "ca1ece24dd9b1501683db4ff1265fba710b658464e4ca5f4ec60ea977a4f0f2e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "多视角审计完成：技术、题材、风险、数据质量共 4 个视角；需留意 1 项，阻断 0 项。（需留意：技术：通过 0 只，取消 0 只）",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "multi-role-review.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\multi-role-review.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 4168,
+                  "sha256": "ca1ece24dd9b1501683db4ff1265fba710b658464e4ca5f4ec60ea977a4f0f2e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report_quality_audit",
+          "order": 15,
+          "title_cn": "正式文本质量审计",
+          "plain_goal_cn": "检查午报正文有没有乱码、工程词或展示误导；不重写报告。",
+          "data_used_cn": [
+            "午报 Markdown",
+            "多视角审计",
+            "四套策略对比"
+          ],
+          "source_method_cn": "通过 build_report_quality_audit.py 检查乱码和工程词；不重写报告。",
+          "read_files": [
+            "noon-report.md",
+            "multi-role-review.noon.json",
+            "strategy-benchmark.noon.json"
+          ],
+          "write_files": [
+            "report-quality-audit.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "正式文本质量审计完成：状态 ok，发现 0 项可读性/展示风险。",
+          "missing_or_risk_cn": [
+            "质量审计只提示正式文本问题，不重写报告、不改结论。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4728,
+              "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+            },
+            {
+              "role": "read",
+              "file": "multi-role-review.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\multi-role-review.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4168,
+              "sha256": "ca1ece24dd9b1501683db4ff1265fba710b658464e4ca5f4ec60ea977a4f0f2e"
+            },
+            {
+              "role": "read",
+              "file": "strategy-benchmark.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\strategy-benchmark.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 10315,
+              "sha256": "37669dc7965c0644a08f09c05f9909d2572753befacdb224f8137b40a01639bd"
+            },
+            {
+              "role": "write",
+              "file": "report-quality-audit.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\report-quality-audit.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 1491,
+              "sha256": "7501cd6caedeaa44bb60560ab789d8521a40842d7dc968a94bf9c43d0ae56f10"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "正式文本质量审计完成：状态 ok，发现 0 项可读性/展示风险。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "report-quality-audit.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\report-quality-audit.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 1491,
+                  "sha256": "7501cd6caedeaa44bb60560ab789d8521a40842d7dc968a94bf9c43d0ae56f10"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "generate_noon",
+          "order": 16,
+          "title_cn": "生成午报",
+          "plain_goal_cn": "把上午验证和午后动作写成正式午报。",
+          "data_used_cn": [
+            "上午验证结论",
+            "午后动作",
+            "铁律提醒"
+          ],
+          "source_method_cn": "通过 build_report_snapshot.py 和 render_report_template.py 生成。",
+          "read_files": [
+            "noon-report.json"
+          ],
+          "write_files": [
+            "noon-report.md"
+          ],
+          "status": "ok",
+          "result_cn": "这一步已经跑完，关键产物已保存。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            },
+            {
+              "role": "write",
+              "file": "noon-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4728,
+              "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "生成午报",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "noon-report.md",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 4728,
+                  "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "validate_noon",
+          "order": 17,
+          "title_cn": "协议校验",
+          "plain_goal_cn": "确认午报没有新增股票，动作和早报交接对象一致。",
+          "data_used_cn": [
+            "午报 JSON",
+            "午报 Markdown",
+            "结果回收边界"
+          ],
+          "source_method_cn": "通过 report_protocol_validate.py 校验；午报到收盘只记录 result_review_targets，不续传候选。",
+          "read_files": [
             "noon-report.json",
             "noon-report.md"
           ],
-          "write_files": [],
-          "status": "incomplete",
-          "result_cn": "未到计划时间",
+          "write_files": [
+            "workflow-manifest.noon.json",
+            "data-lineage.noon.json"
+          ],
+          "status": "ok",
+          "result_cn": "这一步已经跑完，关键产物已保存。",
           "missing_or_risk_cn": [
-            "计划时间：2026-06-24T11:35+08:00",
-            "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            },
+            {
+              "role": "read",
+              "file": "noon-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4728,
+              "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+            },
+            {
+              "role": "write",
+              "file": "workflow-manifest.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 171742,
+              "sha256": "0b4e90f5d70340ed24462424a53fbffb9fa2fbc0168d70ac5df0d9edb904cb17"
+            },
+            {
+              "role": "write",
+              "file": "data-lineage.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-lineage.noon.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 53919,
+              "sha256": "839d9960c2a179ed56295afb1144f9f87a6d3dbdfd05b22d6ba8b4133b8cc093"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "协议校验",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "workflow-manifest.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 171742,
+                  "sha256": "0b4e90f5d70340ed24462424a53fbffb9fa2fbc0168d70ac5df0d9edb904cb17"
+                },
+                {
+                  "role": "write",
+                  "file": "data-lineage.noon.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-lineage.noon.json",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 53919,
+                  "sha256": "839d9960c2a179ed56295afb1144f9f87a6d3dbdfd05b22d6ba8b4133b8cc093"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "afternoon_action",
+          "order": 18,
+          "title_cn": "午后动作",
+          "plain_goal_cn": "给出下午继续跟踪、只观察、不参与或尾盘重点盯盘的动作。",
+          "data_used_cn": [
+            "继续盯盘",
+            "放弃名单",
+            "空仓/观察"
+          ],
+          "source_method_cn": "通过 noon-report.json 和 execution-decision.json 给出午后动作。",
+          "read_files": [
+            "noon-report.json",
+            "execution-decision.json"
+          ],
+          "write_files": [
+            "noon-report.md"
+          ],
+          "status": "ok",
+          "result_cn": "午报已生成固定 Markdown。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 734982,
+              "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
+            },
+            {
+              "role": "read",
+              "file": "execution-decision.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-decision.json",
+              "modified_at": "2026-06-24T11:36:12+08:00",
+              "size": 833,
+              "sha256": "bfd9b94e44cd1f4d7c1a1b6609dcc7459bb0a65ea9f070cb40797fd0b4f0bb3a"
+            },
+            {
+              "role": "write",
+              "file": "noon-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+              "modified_at": "2026-06-24T11:36:22+08:00",
+              "size": 4728,
+              "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "午报已生成固定 Markdown。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "noon-report.md",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
+                  "modified_at": "2026-06-24T11:36:22+08:00",
+                  "size": 4728,
+                  "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -21128,9 +22745,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\outer-gate.json",
         "relative_path": "runs/2026-06-24/outer-gate.json",
         "exists": true,
-        "size": 21320,
-        "modified_at": "2026-06-24T09:36:06+08:00",
-        "sha256": "f594735c9c51e268f456545cfa0e2b3c9e847601112b480fe1c521d52b006435"
+        "size": 21588,
+        "modified_at": "2026-06-24T11:35:58+08:00",
+        "sha256": "ebeec95dc333fa1067bd0d1e0875a71085e58e5d7e210d829241b689056232bd"
       }
     },
     {
@@ -21141,9 +22758,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.json",
         "relative_path": "runs/2026-06-24/domestic-gate.json",
         "exists": true,
-        "size": 204903,
-        "modified_at": "2026-06-24T09:36:33+08:00",
-        "sha256": "981ee45eddfbe14119fb864595ad81f2af1149448a36bc8c859a7fb7b9371213"
+        "size": 268817,
+        "modified_at": "2026-06-24T11:36:09+08:00",
+        "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
       }
     },
     {
@@ -21154,9 +22771,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\emotion-trend-gate.json",
         "relative_path": "runs/2026-06-24/emotion-trend-gate.json",
         "exists": true,
-        "size": 17255,
-        "modified_at": "2026-06-24T09:36:35+08:00",
-        "sha256": "837a2e683a121bc89744fd128dc3859476ecb06ae308cd849c180545cccb9eeb"
+        "size": 19335,
+        "modified_at": "2026-06-24T11:36:11+08:00",
+        "sha256": "488f804561f20ac57b6df8424a0c236dde8838fb150fd053a0320cc501df702e"
       }
     },
     {
@@ -21167,9 +22784,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\gates-protocol.json",
         "relative_path": "runs/2026-06-24/gates-protocol.json",
         "exists": true,
-        "size": 17185,
-        "modified_at": "2026-06-24T09:36:35+08:00",
-        "sha256": "63b9ede929dffaa6fb60e87595bf57ca1864bebf94334a0a82ead880b8412f4d"
+        "size": 17454,
+        "modified_at": "2026-06-24T11:36:11+08:00",
+        "sha256": "466ded4945a8357d44d26e59726fa3ff4e2db50fc3ad31e3d0441129b8a9adc0"
       }
     },
     {
@@ -21180,9 +22797,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\raw-watchlist.json",
         "relative_path": "runs/2026-06-24/raw-watchlist.json",
         "exists": true,
-        "size": 1797393,
-        "modified_at": "2026-06-24T09:35:44+08:00",
-        "sha256": "8f0376ac1b80e86bbae0f164e2f162d2f5fe1ba5a8c2009ba9057c126f3a8adb"
+        "size": 1796894,
+        "modified_at": "2026-06-24T11:35:44+08:00",
+        "sha256": "2682b46c2ecf0d85b7a8aaa2bcf3fe6d136d0db687ae33d265dc8a3d5f89418c"
       }
     },
     {
@@ -21193,35 +22810,35 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\filtered-pool.json",
         "relative_path": "runs/2026-06-24/filtered-pool.json",
         "exists": true,
-        "size": 2275521,
-        "modified_at": "2026-06-24T09:35:44+08:00",
-        "sha256": "0c532b336f503f62ca0ffda4b681bd6cb5513ac0ae0ff8b3e8c327a1037c0732"
+        "size": 2274457,
+        "modified_at": "2026-06-24T11:35:44+08:00",
+        "sha256": "0dbae4eec7842488f82d813f9acc8ae779753ec9bc1ecaaee4d9a7c378f02f51"
       }
     },
     {
       "name": "candidate-score.json",
       "status": "ok",
-      "records": 2,
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-score.json",
         "relative_path": "runs/2026-06-24/candidate-score.json",
         "exists": true,
-        "size": 136183,
-        "modified_at": "2026-06-24T09:36:35+08:00",
-        "sha256": "31119948148199a0a2cb4212899a032982e45e46ee471db1df777c04fb151095"
+        "size": 68189,
+        "modified_at": "2026-06-24T11:36:11+08:00",
+        "sha256": "72ad842755ede347ddb77f9837f00bb043e767be7ec64d8d3bb5f1bab77f94a6"
       }
     },
     {
       "name": "technical-check.json",
       "status": "ok",
-      "records": 2,
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.json",
         "relative_path": "runs/2026-06-24/technical-check.json",
         "exists": true,
-        "size": 23529,
-        "modified_at": "2026-06-24T09:36:36+08:00",
-        "sha256": "2e077cc31a6a0c560abe3b5e8f165e7f75b98ee2bc107044c54a5a619169c4a5"
+        "size": 11866,
+        "modified_at": "2026-06-24T11:36:12+08:00",
+        "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
       }
     },
     {
@@ -21249,12 +22866,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "four-layer-tracking.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 23,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
-        "relative_path": "four-layer-tracking.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/four-layer-tracking.noon.json",
+        "exists": true,
+        "size": 114250,
+        "modified_at": "2026-06-24T11:36:21+08:00",
+        "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
       }
     },
     {
@@ -21292,12 +22912,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "strategy-benchmark.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\strategy-benchmark.noon.json",
-        "relative_path": "strategy-benchmark.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/strategy-benchmark.noon.json",
+        "exists": true,
+        "size": 10315,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "37669dc7965c0644a08f09c05f9909d2572753befacdb224f8137b40a01639bd"
       }
     },
     {
@@ -21335,12 +22958,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "news-notice-sentiment.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 45,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\news-notice-sentiment.noon.json",
-        "relative_path": "news-notice-sentiment.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/news-notice-sentiment.noon.json",
+        "exists": true,
+        "size": 29222,
+        "modified_at": "2026-06-24T11:36:21+08:00",
+        "sha256": "fefa4d70327269da17adde3a2b448ed05a772dcf448e3be5648f1e686a937dde"
       }
     },
     {
@@ -21388,12 +23014,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "multi-role-review.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\multi-role-review.noon.json",
-        "relative_path": "multi-role-review.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/multi-role-review.noon.json",
+        "exists": true,
+        "size": 4168,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "ca1ece24dd9b1501683db4ff1265fba710b658464e4ca5f4ec60ea977a4f0f2e"
       }
     },
     {
@@ -21431,12 +23060,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "report-quality-audit.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\report-quality-audit.noon.json",
-        "relative_path": "report-quality-audit.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/report-quality-audit.noon.json",
+        "exists": true,
+        "size": 1491,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "7501cd6caedeaa44bb60560ab789d8521a40842d7dc968a94bf9c43d0ae56f10"
       }
     },
     {
@@ -21497,29 +23129,35 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\sector-split.json",
         "relative_path": "runs/2026-06-24/sector-split.json",
         "exists": true,
-        "size": 160808,
-        "modified_at": "2026-06-24T09:36:36+08:00",
-        "sha256": "13f4b5f50c323bb4b82ef197592a6e023b2a8c9a5afbe882fb26e0eb2c8687f4"
+        "size": 222547,
+        "modified_at": "2026-06-24T11:36:12+08:00",
+        "sha256": "448458a8ce0919979dfc1667b513ca87494501234a015b4d84b08815a6054717"
       }
     },
     {
       "name": "execution-inputs.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-inputs.json",
-        "relative_path": "execution-inputs.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/execution-inputs.json",
+        "exists": true,
+        "size": 1614,
+        "modified_at": "2026-06-24T11:36:12+08:00",
+        "sha256": "fc7919f908033d7175f4c30baa856c50b212e642b76cba1802e17a693d85b55e"
       }
     },
     {
       "name": "execution-decision.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-decision.json",
-        "relative_path": "execution-decision.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/execution-decision.json",
+        "exists": true,
+        "size": 833,
+        "modified_at": "2026-06-24T11:36:12+08:00",
+        "sha256": "bfd9b94e44cd1f4d7c1a1b6609dcc7459bb0a65ea9f070cb40797fd0b4f0bb3a"
       }
     },
     {
@@ -21573,12 +23211,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "data-acquisition-health.noon.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 13,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-acquisition-health.noon.json",
-        "relative_path": "data-acquisition-health.noon.json",
-        "exists": false
+        "relative_path": "runs/2026-06-24/data-acquisition-health.noon.json",
+        "exists": true,
+        "size": 9392,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "19ac546eb93db32dc63d273fb09fefdaa84f6acfc59071d7948899b80a94c218"
       }
     },
     {
@@ -21679,9 +23320,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.json",
         "relative_path": "runs/2026-06-24/workflow-manifest.json",
         "exists": true,
-        "size": 99751,
-        "modified_at": "2026-06-24T09:36:47+08:00",
-        "sha256": "e27a2824ce0de2f4a64d1c20e05687e40673a57a102b16a1305e112d8dcc4ead"
+        "size": 171742,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "0b4e90f5d70340ed24462424a53fbffb9fa2fbc0168d70ac5df0d9edb904cb17"
       }
     },
     {
@@ -21692,15 +23333,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-lineage.json",
         "relative_path": "runs/2026-06-24/data-lineage.json",
         "exists": true,
-        "size": 55304,
-        "modified_at": "2026-06-24T09:36:47+08:00",
-        "sha256": "3e900353ab691e6bc98cba04bdf730e537c50978d0f00b3427dafa23522d0def"
+        "size": 53919,
+        "modified_at": "2026-06-24T11:36:22+08:00",
+        "sha256": "839d9960c2a179ed56295afb1144f9f87a6d3dbdfd05b22d6ba8b4133b8cc093"
       }
     },
     {
       "name": "raw-watchlist/",
       "status": "ok",
-      "records": 1,
+      "records": 2,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\raw-watchlist",
         "relative_path": "runs/2026-06-24/raw-watchlist",
@@ -21710,8 +23351,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "items": [
       {
@@ -21733,8 +23374,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-24T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -21756,20 +23397,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-24",
     "current_date": "2026-06-24",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-24：1/4 四报已生成",
-    "report_ready_count": 1,
+    "headline_cn": "当前日期 2026-06-24：2/4 四报已生成",
+    "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
-      "headwind_count": 0,
+      "headwind_count": 1,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "schedule_items": [
       {
@@ -21791,8 +23432,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-24T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -21813,20 +23454,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-24",
     "current_date": "2026-06-24",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-24：1/4 四报已生成",
-    "report_ready_count": 1,
+    "headline_cn": "当前日期 2026-06-24：2/4 四报已生成",
+    "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 2,
       "invalid_count": 0,
       "incomplete_count": 0,
-      "headwind_count": 0,
+      "headwind_count": 1,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 3,
-      "complete": 1
+      "not_due": 2,
+      "complete": 2
     },
     "schedule_items": [
       {
@@ -21848,8 +23489,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "noon",
         "label": "午报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-06-24T11:35+08:00",
         "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
       },
@@ -21885,8 +23526,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "noon-report.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.json",
-      "relative_path": "noon-report.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/noon-report.json",
+      "exists": true,
+      "size": 734982,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "875993f90c226ea6f713e5a537fc77b6754d6f091a52120c12abca9b292a185e"
     },
     {
       "name": "review-report.json",
@@ -21912,8 +23556,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "noon-report.md",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\noon-report.md",
-      "relative_path": "noon-report.md",
-      "exists": false
+      "relative_path": "runs/2026-06-24/noon-report.md",
+      "exists": true,
+      "size": 4728,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "40fc4c04828bc3f5a370170fb0b783d6e747fec6d2a529bd114d84a01a8bd20e"
     },
     {
       "name": "review-report.md",
@@ -21926,72 +23573,72 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\outer-gate.json",
       "relative_path": "runs/2026-06-24/outer-gate.json",
       "exists": true,
-      "size": 21320,
-      "modified_at": "2026-06-24T09:36:06+08:00",
-      "sha256": "f594735c9c51e268f456545cfa0e2b3c9e847601112b480fe1c521d52b006435"
+      "size": 21588,
+      "modified_at": "2026-06-24T11:35:58+08:00",
+      "sha256": "ebeec95dc333fa1067bd0d1e0875a71085e58e5d7e210d829241b689056232bd"
     },
     {
       "name": "domestic-gate.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\domestic-gate.json",
       "relative_path": "runs/2026-06-24/domestic-gate.json",
       "exists": true,
-      "size": 204903,
-      "modified_at": "2026-06-24T09:36:33+08:00",
-      "sha256": "981ee45eddfbe14119fb864595ad81f2af1149448a36bc8c859a7fb7b9371213"
+      "size": 268817,
+      "modified_at": "2026-06-24T11:36:09+08:00",
+      "sha256": "323c5333e62cf6f54af322ebfc8d0a2e8798786d8846a9b3902048451b81bab0"
     },
     {
       "name": "emotion-trend-gate.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\emotion-trend-gate.json",
       "relative_path": "runs/2026-06-24/emotion-trend-gate.json",
       "exists": true,
-      "size": 17255,
-      "modified_at": "2026-06-24T09:36:35+08:00",
-      "sha256": "837a2e683a121bc89744fd128dc3859476ecb06ae308cd849c180545cccb9eeb"
+      "size": 19335,
+      "modified_at": "2026-06-24T11:36:11+08:00",
+      "sha256": "488f804561f20ac57b6df8424a0c236dde8838fb150fd053a0320cc501df702e"
     },
     {
       "name": "gates-protocol.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\gates-protocol.json",
       "relative_path": "runs/2026-06-24/gates-protocol.json",
       "exists": true,
-      "size": 17185,
-      "modified_at": "2026-06-24T09:36:35+08:00",
-      "sha256": "63b9ede929dffaa6fb60e87595bf57ca1864bebf94334a0a82ead880b8412f4d"
+      "size": 17454,
+      "modified_at": "2026-06-24T11:36:11+08:00",
+      "sha256": "466ded4945a8357d44d26e59726fa3ff4e2db50fc3ad31e3d0441129b8a9adc0"
     },
     {
       "name": "raw-watchlist.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\raw-watchlist.json",
       "relative_path": "runs/2026-06-24/raw-watchlist.json",
       "exists": true,
-      "size": 1797393,
-      "modified_at": "2026-06-24T09:35:44+08:00",
-      "sha256": "8f0376ac1b80e86bbae0f164e2f162d2f5fe1ba5a8c2009ba9057c126f3a8adb"
+      "size": 1796894,
+      "modified_at": "2026-06-24T11:35:44+08:00",
+      "sha256": "2682b46c2ecf0d85b7a8aaa2bcf3fe6d136d0db687ae33d265dc8a3d5f89418c"
     },
     {
       "name": "filtered-pool.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\filtered-pool.json",
       "relative_path": "runs/2026-06-24/filtered-pool.json",
       "exists": true,
-      "size": 2275521,
-      "modified_at": "2026-06-24T09:35:44+08:00",
-      "sha256": "0c532b336f503f62ca0ffda4b681bd6cb5513ac0ae0ff8b3e8c327a1037c0732"
+      "size": 2274457,
+      "modified_at": "2026-06-24T11:35:44+08:00",
+      "sha256": "0dbae4eec7842488f82d813f9acc8ae779753ec9bc1ecaaee4d9a7c378f02f51"
     },
     {
       "name": "candidate-score.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\candidate-score.json",
       "relative_path": "runs/2026-06-24/candidate-score.json",
       "exists": true,
-      "size": 136183,
-      "modified_at": "2026-06-24T09:36:35+08:00",
-      "sha256": "31119948148199a0a2cb4212899a032982e45e46ee471db1df777c04fb151095"
+      "size": 68189,
+      "modified_at": "2026-06-24T11:36:11+08:00",
+      "sha256": "72ad842755ede347ddb77f9837f00bb043e767be7ec64d8d3bb5f1bab77f94a6"
     },
     {
       "name": "technical-check.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\technical-check.json",
       "relative_path": "runs/2026-06-24/technical-check.json",
       "exists": true,
-      "size": 23529,
-      "modified_at": "2026-06-24T09:36:36+08:00",
-      "sha256": "2e077cc31a6a0c560abe3b5e8f165e7f75b98ee2bc107044c54a5a619169c4a5"
+      "size": 11866,
+      "modified_at": "2026-06-24T11:36:12+08:00",
+      "sha256": "19a83acbb4d2ab52fc6ed5aef049eac9fc899067aebe3e4586c371000c029d1b"
     },
     {
       "name": "four-layer-tracking.close.json",
@@ -22011,8 +23658,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "four-layer-tracking.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\four-layer-tracking.noon.json",
-      "relative_path": "four-layer-tracking.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/four-layer-tracking.noon.json",
+      "exists": true,
+      "size": 114250,
+      "modified_at": "2026-06-24T11:36:21+08:00",
+      "sha256": "fadf13b2cca10ae55d51af6a23b9444c5cae8aa123c92651881cc33a63f9d302"
     },
     {
       "name": "four-layer-tracking.review.json",
@@ -22038,8 +23688,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "strategy-benchmark.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\strategy-benchmark.noon.json",
-      "relative_path": "strategy-benchmark.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/strategy-benchmark.noon.json",
+      "exists": true,
+      "size": 10315,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "37669dc7965c0644a08f09c05f9909d2572753befacdb224f8137b40a01639bd"
     },
     {
       "name": "strategy-benchmark.review.json",
@@ -22065,8 +23718,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "news-notice-sentiment.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\news-notice-sentiment.noon.json",
-      "relative_path": "news-notice-sentiment.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/news-notice-sentiment.noon.json",
+      "exists": true,
+      "size": 29222,
+      "modified_at": "2026-06-24T11:36:21+08:00",
+      "sha256": "fefa4d70327269da17adde3a2b448ed05a772dcf448e3be5648f1e686a937dde"
     },
     {
       "name": "news-notice-sentiment.review.json",
@@ -22098,8 +23754,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "multi-role-review.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\multi-role-review.noon.json",
-      "relative_path": "multi-role-review.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/multi-role-review.noon.json",
+      "exists": true,
+      "size": 4168,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "ca1ece24dd9b1501683db4ff1265fba710b658464e4ca5f4ec60ea977a4f0f2e"
     },
     {
       "name": "multi-role-review.review.json",
@@ -22125,8 +23784,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "report-quality-audit.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\report-quality-audit.noon.json",
-      "relative_path": "report-quality-audit.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/report-quality-audit.noon.json",
+      "exists": true,
+      "size": 1491,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "7501cd6caedeaa44bb60560ab789d8521a40842d7dc968a94bf9c43d0ae56f10"
     },
     {
       "name": "report-quality-audit.review.json",
@@ -22163,21 +23825,27 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\sector-split.json",
       "relative_path": "runs/2026-06-24/sector-split.json",
       "exists": true,
-      "size": 160808,
-      "modified_at": "2026-06-24T09:36:36+08:00",
-      "sha256": "13f4b5f50c323bb4b82ef197592a6e023b2a8c9a5afbe882fb26e0eb2c8687f4"
+      "size": 222547,
+      "modified_at": "2026-06-24T11:36:12+08:00",
+      "sha256": "448458a8ce0919979dfc1667b513ca87494501234a015b4d84b08815a6054717"
     },
     {
       "name": "execution-inputs.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-inputs.json",
-      "relative_path": "execution-inputs.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/execution-inputs.json",
+      "exists": true,
+      "size": 1614,
+      "modified_at": "2026-06-24T11:36:12+08:00",
+      "sha256": "fc7919f908033d7175f4c30baa856c50b212e642b76cba1802e17a693d85b55e"
     },
     {
       "name": "execution-decision.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\execution-decision.json",
-      "relative_path": "execution-decision.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/execution-decision.json",
+      "exists": true,
+      "size": 833,
+      "modified_at": "2026-06-24T11:36:12+08:00",
+      "sha256": "bfd9b94e44cd1f4d7c1a1b6609dcc7459bb0a65ea9f070cb40797fd0b4f0bb3a"
     },
     {
       "name": "morning-precheck.prefetch.json",
@@ -22215,8 +23883,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "data-acquisition-health.noon.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-acquisition-health.noon.json",
-      "relative_path": "data-acquisition-health.noon.json",
-      "exists": false
+      "relative_path": "runs/2026-06-24/data-acquisition-health.noon.json",
+      "exists": true,
+      "size": 9392,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "19ac546eb93db32dc63d273fb09fefdaa84f6acfc59071d7948899b80a94c218"
     },
     {
       "name": "data-acquisition-health.review.json",
@@ -22277,36 +23948,36 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\workflow-manifest.json",
       "relative_path": "runs/2026-06-24/workflow-manifest.json",
       "exists": true,
-      "size": 99751,
-      "modified_at": "2026-06-24T09:36:47+08:00",
-      "sha256": "e27a2824ce0de2f4a64d1c20e05687e40673a57a102b16a1305e112d8dcc4ead"
+      "size": 171742,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "0b4e90f5d70340ed24462424a53fbffb9fa2fbc0168d70ac5df0d9edb904cb17"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-24\\data-lineage.json",
       "relative_path": "runs/2026-06-24/data-lineage.json",
       "exists": true,
-      "size": 55304,
-      "modified_at": "2026-06-24T09:36:47+08:00",
-      "sha256": "3e900353ab691e6bc98cba04bdf730e537c50978d0f00b3427dafa23522d0def"
+      "size": 53919,
+      "modified_at": "2026-06-24T11:36:22+08:00",
+      "sha256": "839d9960c2a179ed56295afb1144f9f87a6d3dbdfd05b22d6ba8b4133b8cc093"
     }
   ],
   "summary": {
-    "reports_present": 1,
+    "reports_present": 2,
     "json_invalid": 0,
     "candidates_visible": 1,
     "four_layer_visible": 23,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 20,
+    "data_sources_ok": 28,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
     "automation_incomplete": 0,
     "lineage_nodes": 38,
     "automation_status_counts": {
-      "complete": 1,
-      "not_due": 3
+      "complete": 2,
+      "not_due": 2
     },
     "panel_payload_mode": "full"
   },
