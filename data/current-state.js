@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-24T09:00:22+08:00",
+  "generated_at": "2026-06-24T09:25:45+08:00",
   "currentDate": "2026-06-24",
   "current_date": "2026-06-24",
   "panel_payload_mode": "lite",
@@ -499,7 +499,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 18,
+      "missing_count": 16,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 0,
@@ -555,7 +555,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 18,
+      "missing_count": 16,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 0,
@@ -610,7 +610,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 0,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 1,
+    "data_sources_ok": 3,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
