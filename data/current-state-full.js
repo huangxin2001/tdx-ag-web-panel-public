@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-25T14:54:14+08:00",
+  "generated_at": "2026-06-25T14:58:04+08:00",
   "currentDate": "2026-06-25",
   "current_date": "2026-06-25",
   "panel_payload_mode": "full",
@@ -11,9 +11,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-06-25",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25",
-    "run_id": "20260625-noon-113501431706",
-    "period": "noon",
-    "status": "success",
+    "run_id": "20260625-close-145423429798",
+    "period": "close",
+    "status": "failed",
     "manifest_status": "ok",
     "lineage_status": "ok"
   },
@@ -25,7 +25,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "markdown_status": "missing",
       "report_type": "close-report",
       "date": "2026-06-25",
-      "generated_at": "2026-06-25T14:54:01.712043+08:00",
+      "generated_at": "2026-06-25T14:54:24.609635+08:00",
       "recommendation_mode": "top3",
       "candidate_count": 8,
       "candidate_universe_count": 216,
@@ -36,9 +36,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
         "relative_path": "runs/2026-06-25/close-report.json",
         "exists": true,
-        "size": 12776019,
-        "modified_at": "2026-06-25T14:54:03+08:00",
-        "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+        "size": 12849931,
+        "modified_at": "2026-06-25T14:54:33+08:00",
+        "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
       },
       "markdown_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.md",
@@ -58,11 +58,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "scheduled_time": "14:50",
         "scheduled_at": "2026-06-25T14:50+08:00",
         "due": true,
-        "automation_status": "missed_schedule",
-        "automation_status_label": "自动化错过",
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
         "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.close.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -1647,7 +1647,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -1665,13 +1665,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002290",
+          "name": "禾盛新材",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
+          "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+          "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+          "stance": "放弃",
+          "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+          "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+          "action_hint": "放弃新开。",
+          "status": "ok"
         }
       },
       {
@@ -1771,7 +1779,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -1789,13 +1797,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "603995",
+          "name": "甬金股份",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
+          "original_text": "# 甬金股份（603995）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。 |\n| 尾盘 | 较好 | 14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾盘高位。 |\n| 板块 | 静态归属：特钢 + 不锈钢压延加工；概念标签：新材料、近期新高、含可转债、融资融券、沪港通；当日交易属性：周期/材料修复，不是全市场核心主线；板块地位：非主线修复偏前排；相对强弱：个股 +1.89% vs 行业 -0.38%，强于约 2.27pct；隔夜影响：相对强度加分，但板块不给高溢价。 | 行业特钢 -0.38%，个股强于行业 2.27pct。 |\n| 类型 | 低估值材料趋势修复 | 非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。 |\n| 日线 | 近期趋势较强 | 近30日方向 +24.22%，6月以来逐步抬升，今日从昨日回落后修复。 |\n| 上涨概率 | 隔夜评分：67/100；冲高概率：约50%-55%；主要加分：尾盘稳步抬升、相对行业强、涨幅不过热、估值不高；主要扣分：题材不在主线、催化偏弱、近期已有累计涨幅。 | 等。 |\n\n**一句话判断：甬金股份尾盘结构干净，是偏稳的隔夜候选，但缺少主线题材爆发力，只能等竞价强度。**\n\n**交易计划：**\n- 技术面：强弱线 24.20，压力 24.80-25.30；跌破 23.90 则修复失败。\n- 消息面：库存股注销偏中性偏正，不足以单独驱动连续冲高。\n- 赔率：低估值和尾盘承接提供安全垫，但弹性有限。\n- 仓位：轻仓以内，不能当主攻票。\n- 次日操作：次日冲高预估约1.5%-3.5%；高开 2% 以上若量能不足先减；平开站稳 24.20 可看 24.80；低开不破 23.90 可等反抽，跌破则离场。\n\n---",
+          "summary_short": "结论等；催化公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。；尾盘14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾",
+          "stance": "等",
+          "catalyst": "公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。",
+          "risk": "非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。",
+          "action_hint": "轻仓以内，不能当主攻票。",
+          "status": "ok"
         }
       },
       {
@@ -1895,7 +1911,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2011,7 +2027,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2127,7 +2143,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2243,7 +2259,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2359,7 +2375,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2475,7 +2491,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "unconfirmed",
         "catalyst_status_label": "催化未确认",
@@ -2591,7 +2607,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2707,7 +2723,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2823,7 +2839,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2976,7 +2992,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3127,7 +3143,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3278,7 +3294,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3444,7 +3460,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3462,13 +3478,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002301",
+          "name": "齐心集团",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
+          "original_text": "# 齐心集团（002301）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。 |\n| 尾盘 | 明显尾盘拉升，需警惕急拉 | 14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突袭特征明显。 |\n| 板块 | 静态归属：文娱用品 + B2B；概念标签：DeepSeek、AI眼镜、信创、云计算、腾讯概念、跨境电商；当日交易属性：无明确主线验证，更偏尾盘资金试盘；板块地位：孤立修复；相对强弱：个股 +0.13% vs 行业 -1.59%，强于约 1.72pct；隔夜影响：尾盘急拉不当成强承接，降档。 | 行业文娱用品 -1.59%，个股强于行业 1.72pct。 |\n| 类型 | 尾盘异动低价股 | 非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。 |\n| 日线 | 弱势震荡 | 近30日方向 -4.58%，仍在低位震荡区。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：尾盘价格拉升、相对行业略强；主要扣分：疑似尾盘急拉、无新增催化、行业不强、全天强度不足。 | 放弃。 |\n\n**一句话判断：齐心集团尾盘涨得快，但缺少催化和板块确认，更像隔夜资金偷袭，不适合新开隔夜仓。**\n\n**交易计划：**\n- 技术面：强弱线 7.40，压力 7.55-7.80，风险线 7.20。\n- 消息面：当前查询未发现可交易新增催化。\n- 赔率：偏低；尾盘急拉后次日容易低开或冲高兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不放量即兑现；平开若不能快速站上 7.55 不追；低开跌破 7.20 直接回避。\n\n---",
+          "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。；尾盘14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突",
+          "stance": "放弃",
+          "catalyst": "当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。",
+          "risk": "非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。",
+          "action_hint": "放弃新开。",
+          "status": "ok"
         }
       },
       {
@@ -3618,7 +3642,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3636,13 +3660,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002429",
+          "name": "兆驰股份",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
+          "original_text": "# 兆驰股份（002429）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.37，缺少进攻。 |\n| 板块 | 静态归属：黑色家电 + 电子制造及运营服务；概念标签：PCB、光通信、CPO、先进封装、MiniLED、数据中心；当日交易属性：科技链跟随但个股未跑出；板块地位：边缘/后排；相对强弱：个股 +0.09% vs 行业 +0.82%，弱于约 0.73pct；隔夜影响：不给板块溢价。 | 行业黑色家电 +0.82%，个股弱于行业 0.73pct。 |\n| 类型 | 大成交后排跟随票 | 非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。 |\n| 日线 | 下行修复不足 | 近30日方向 -15.98%，从高位回落后横盘，未形成明确反转。 |\n| 上涨概率 | 隔夜评分：46/100；冲高概率：约40%-45%；主要加分：成交额充足、概念覆盖科技主线；主要扣分：弱于行业、尾盘无进攻、无新增催化、日线仍弱。 | 放弃。 |\n\n**一句话判断：兆驰股份题材看起来多，但资金没有把它当主线前排做，隔夜赔率不够。**\n\n**交易计划：**\n- 技术面：强弱线 11.30，压力 11.55-11.70，风险线 10.95。\n- 消息面：无新增强催化，静态概念不能替代资金强度。\n- 赔率：偏低；容量大但缺少上攻主动性。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不突破 11.55 先兑现；平开若量能不足不追；低开跌破 10.95 回避。\n\n---",
+          "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。；尾盘14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.3",
+          "stance": "放弃",
+          "catalyst": "当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。",
+          "risk": "非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。",
+          "action_hint": "放弃新开。",
+          "status": "ok"
         }
       },
       {
@@ -3796,7 +3828,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3814,13 +3846,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002129",
+          "name": "TCL中环",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
+          "original_text": "# TCL中环（002129）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。 |\n| 尾盘 | 高位横盘 | 14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，未跌破但没有继续推升。 |\n| 板块 | 静态归属：光伏设备 + 新能源光伏；概念标签：光伏、BC电池、HJT电池、芯片、新材料、苹果概念；当日交易属性：光伏超跌修复；板块地位：非主线修复偏中军；相对强弱：个股 +7.26% vs 行业 +0.35%，强于约 6.91pct；隔夜影响：个股强度加分，但涨幅接近高位兑现区，显著降档。 | 行业光伏设备 +0.35%，个股强于行业 6.91pct。 |\n| 类型 | 超跌反弹容量票 | 非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。 |\n| 日线 | 超跌反弹 | 近30日方向 +0.99%，从前期弱势中放量反弹，但 10.30-10.80 压力明显。 |\n| 上涨概率 | 隔夜评分：57/100；冲高概率：约45%-50%；主要加分：个股显著强于行业、成交额充足、尾盘横住；主要扣分：当日涨幅 7.26% 接近兑现区、光伏不是当日最强主线、无新增强催化、PE为负。 | 观察。 |\n\n**一句话判断：TCL中环今日强度够，但隔夜新开最怕次日兑现；没有新增强催化时，不宜把大涨当成安全。**\n\n**交易计划：**\n- 技术面：强弱线 10.15，压力 10.30-10.45，风险线 9.90。\n- 消息面：当前查询未发现强新增催化，主要依赖光伏反弹延续。\n- 赔率：偏一般；冲高空间有，但兑现压力也大。\n- 仓位：不建议新开重仓，只能轻仓观察。\n- 次日操作：次日冲高预估约1%-3%；高开接近 10.45 若不能封强直接兑现；平开站稳 10.15 可等 10.30；低开跌破 9.90 说明反弹失败，应止损。\n\n---",
+          "summary_short": "结论观察；催化当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。；尾盘14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，",
+          "stance": "观察",
+          "catalyst": "当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。",
+          "risk": "非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。",
+          "action_hint": "不建议新开重仓，只能轻仓观察。",
+          "status": "ok"
         }
       },
       {
@@ -3974,7 +4014,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3992,13 +4032,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002335",
+          "name": "科华数据",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
+          "original_text": "# 科华数据（002335）— 放弃（硬否决）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 方向强但不纳入普通隔夜 | 当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。 |\n| 尾盘 | 极强但已涨停 | 14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。 |\n| 板块 | 静态归属：其他发电设备 + 新能源行业；概念标签：数据中心、液冷服务、算力租赁、储能、云计算、东数西算；当日交易属性：AI算力/液冷电源链条；板块地位：主线后排偏强；相对强弱：个股 +9.99% vs 行业 +0.37%，强于约 9.62pct；隔夜影响：主线强但已涨停，普通新开隔夜体系硬否决。 | 行业其他发电设备 +0.37%，个股强于行业 9.62pct。 |\n| 类型 | 涨停主线弹性票 | 非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。 |\n| 日线 | 超跌反弹涨停 | 近30日方向 -35.78%，今日涨停修复，但仍是大跌后的强反弹。 |\n| 上涨概率 | 隔夜评分：规则剔除/仅作参考；冲高概率：不做正常映射；硬否决原因：当日已涨停且涨幅 9.99%，普通隔夜新开仓体系不允许给可干。 | 放弃（硬否决）。 |\n\n**一句话判断：科华数据方向和尾盘都强，但“已涨停”是规则硬否决；除非用户改用打板/涨停接力体系，否则不纳入普通隔夜可买。**\n\n**交易计划：**\n- 技术面：涨停价 42.26 是强弱锚，若次日不能维持强封/强换手，容易兑现。\n- 消息面：算力、液冷、数据中心方向强，但今日已被资金充分定价。\n- 赔率：普通隔夜体系赔率不适用，更多是接力体系问题。\n- 仓位：放弃普通新开隔夜。\n- 次日操作：次日冲高预估约0%-3%（不做正常概率映射）；高开需看封单和换手质量，弱封或炸板先兑现；平开低于预期视为不及预期；低开则说明接力失败，回避。",
+          "summary_short": "结论放弃（硬否决）；催化当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。；尾盘14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。",
+          "stance": "放弃（硬否决）",
+          "catalyst": "当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。",
+          "risk": "非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。",
+          "action_hint": "放弃普通新开隔夜。",
+          "status": "ok"
         }
       },
       {
@@ -4152,7 +4200,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4170,13 +4218,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "603688",
+          "name": "石英股份",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
+          "original_text": "# 石英股份（603688）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强 | 新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。 |\n| 尾盘 | 稳定承接 | 14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，收在尾盘高位附近，未明显回落。 |\n| 板块 | 静态归属：非金属材料 + 光纤半导体材料；概念标签：光通信、存储芯片、芯片、光伏、行业龙头、近期新高；当日交易属性：半导体/材料景气链条扩散，非单纯静态概念；板块地位：主线后排偏中军；相对强弱：个股 +4.39% vs 行业 +3.69%，强于约 0.70pct；隔夜影响：给板块加分，但不是最前排。 | 行业非金属材料 +3.69%，个股强于行业 0.70pct。 |\n| 类型 | 主线材料趋势票 | 非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。 |\n| 日线 | 强趋势但高位波动 | 近30日从 72.50 到 83.40，方向 +15.03%；近端 86.33 高点后回撤再修复，仍有前高压力。 |\n| 上涨概率 | 隔夜评分：69/100；冲高概率：约50%-55%；主要加分：半导体材料催化、尾盘稳住、成交额充足、相对行业略强；主要扣分：股价近端已有较大涨幅、前高压力、不是涨停梯队前排。 | 等竞价确认。 |\n\n**一句话判断：石英股份是这批里最像“主线趋势延续”的标的，但高位压力和已定价程度不低，新开隔夜仓不宜追，只适合等强竞价确认。**\n\n**交易计划：**\n- 技术面：强弱线看 83.00-83.40，压力看 85.50-86.30；若跌回 82.80 下方，说明尾盘承接失效。\n- 消息面：高纯石英砂/半导体材料景气是核心叙事，需看次日半导体材料链是否继续扩散。\n- 赔率：赔率中等偏上，但不是低位首启，追高安全垫不足。\n- 仓位：仅适合轻仓观察，不适合重仓隔夜。\n- 次日操作：次日冲高预估约2%-4%；高开 2% 以上需看开盘 5-10 分钟能否站稳 85 附近，否则先兑现；平开若放量站回 84 可持有到前高附近；低开若不破 82.80 且板块强可等反抽，破位则止损。\n\n---",
+          "summary_short": "结论等；催化新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。；尾盘14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，",
+          "stance": "等",
+          "catalyst": "新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。",
+          "risk": "非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。",
+          "action_hint": "仅适合轻仓观察，不适合重仓隔夜。",
+          "status": "ok"
         }
       },
       {
@@ -4329,7 +4385,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4347,13 +4403,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002134",
+          "name": "天津普林",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
+          "original_text": "# 天津普林（002134）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱 | 公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。 |\n| 尾盘 | 小幅修复但不强 | 14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低于日内高位。 |\n| 板块 | 静态归属：元器件 + 电子元器件制造；概念标签：PCB概念、玻璃基板、折叠屏、国防军工、大飞机、新能源车；当日交易属性：电子/PCB链条跟随，非绝对前排；板块地位：主线后排；相对强弱：个股 +4.56% vs 行业 +5.62%，弱于约 1.06pct；隔夜影响：板块强但个股弱于板块，降档。 | 行业元器件 +5.62%，个股弱于行业 1.06pct。 |\n| 类型 | 题材弹性票 | 非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。 |\n| 日线 | 修复中但压力重 | 近30日方向 -2.09%，今日高开冲高后回落，30.80-31.10 是短压。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：电子/PCB板块强、尾盘小幅修复、成交额合格；主要扣分：弱于行业、盘中冲高回落、公告催化偏弱、概念含拟减持标签需复核。 | 观察。 |\n\n**一句话判断：天津普林有板块热度但不是强于板块的前排，隔夜更像跟风套利，不能主动追。**\n\n**交易计划：**\n- 技术面：强弱线 29.50，压力 30.50-31.10，风险线 28.80。\n- 消息面：公告不构成强催化，主要看 PCB/玻璃基板是否继续活跃。\n- 赔率：一般；板块强时有冲高，板块分化时容易先兑现。\n- 仓位：只适合小仓试错，弱竞价不做。\n- 次日操作：次日冲高预估约1%-3%；高开到 30.50 附近不放量先减；平开若站稳 29.50 可看 30.20；低开跌破 28.80 放弃反抽幻想。\n\n---",
+          "summary_short": "结论观察；催化公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。；尾盘14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低",
+          "stance": "观察",
+          "catalyst": "公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。",
+          "risk": "非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。",
+          "action_hint": "只适合小仓试错，弱竞价不做。",
+          "status": "ok"
         }
       },
       {
@@ -4504,7 +4568,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4522,13 +4586,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "002353",
+          "name": "杰瑞股份",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
+          "original_text": "# 杰瑞股份（002353）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 较强 | 证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。 |\n| 尾盘 | 横盘承接 | 14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.81-164.00，未明显进攻。 |\n| 板块 | 静态归属：专用设备；概念标签因 indicator 不完整需复核，交易上主要看 AIDC电源、燃气轮机、电力设备；当日交易属性：AI算力电源链外溢；板块地位：容量中军/趋势中军；相对强弱：个股 +2.90% vs 行业 +1.01%，强于约 1.89pct；隔夜影响：催化加分，但尾盘未放量上攻，需降一档。 | 行业专用设备 +1.01%，个股强于行业 1.89pct。 |\n| 类型 | 大市值容量趋势票 | 非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。 |\n| 日线 | 高位震荡修复 | 近30日方向 +18.09%，近期冲至 175.50 后回落，今日反弹但未收复前高。 |\n| 上涨概率 | 隔夜评分：63/100；冲高概率：约45%-50%；主要加分：AIDC电源催化、机构调研热度、容量票流动性好、相对行业强；主要扣分：indicator_incomplete、尾盘横盘不进攻、近端高位回落后压力仍在。 | 观察。 |\n\n**一句话判断：杰瑞股份逻辑强于形态，适合跟踪而不是直接新开隔夜；次日能否冲高取决于 AIDC 电源链是否继续被资金强化。**\n\n**交易计划：**\n- 技术面：强弱线 163.00，压力 167.50-170.00，风险线 160.00。\n- 消息面：AIDC 电源和燃气轮机涨价是正催化，但已被连续报道，需防兑现。\n- 赔率：中等；逻辑有弹性，但高位筹码压力压制隔夜赔率。\n- 仓位：观察仓或不做，新开不宜重。\n- 次日操作：次日冲高预估约1.5%-3%；高开接近 167 但放量不足先减；平开站稳 163 可等 166-168；低开跌破 160-162 区间则以风控为先。\n\n---",
+          "summary_short": "结论观察；催化证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。；尾盘14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.",
+          "stance": "观察",
+          "catalyst": "证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。",
+          "risk": "非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。",
+          "action_hint": "观察仓或不做，新开不宜重。",
+          "status": "ok"
         }
       },
       {
@@ -4681,7 +4753,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-06-25T14:54:03+08:00",
+        "source_mtime": "2026-06-25T14:54:25+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4699,13 +4771,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
-          "original_text": "",
-          "summary_short": "",
-          "stance": "",
-          "catalyst": "",
-          "risk": "",
-          "action_hint": ""
+          "symbol": "000620",
+          "name": "盈新发展",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
+          "original_text": "# 盈新发展（000620）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 数据不足 | 新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。 |\n| 板块 | 静态归属：动物保健；概念标签：indicator 不完整，需复核；当日交易属性：低价股/反弹属性为主，未见主线确认；板块地位：边缘；相对强弱：个股 +4.70% vs 行业 -1.22%，强于约 5.92pct；隔夜影响：相对强但数据缺口和换手过高，降档。 | 行业动物保健 -1.22%，个股强于行业 5.92pct；脚本 lookup 中 stock_pct 曾出现 -3.02 异常，最终以行情卡 +4.70% 为准。 |\n| 类型 | 低价高换手波动票 | 成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。 |\n| 日线 | 低位震荡反弹 | 近30日方向 +0.97%，日内曾触及涨停价 3.28 后回落至 3.12。 |\n| 上涨概率 | 隔夜评分：41/100；冲高概率：约40%以下-45%；主要加分：相对行业强、成交额充足；主要扣分：indicator_incomplete、尾盘偏弱、日内冲高回落、高换手分歧、低价股波动大。 | 放弃。 |\n\n**一句话判断：盈新发展最大问题不是涨幅，而是“数据缺口 + 高换手 + 冲高回落后尾盘不强”，不符合新开隔夜仓的确定性要求。**\n\n**交易计划：**\n- 技术面：强弱线 3.11-3.12，压力 3.20-3.28，风险线 3.00。\n- 消息面：题材和主营需复核，不能按强催化处理。\n- 赔率：偏低；次日若低开容易触发获利盘和分歧盘兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开若不能快速站上 3.20 先兑现；平开不放量不追；低开跌破 3.00 直接回避。\n\n---",
+          "summary_short": "结论放弃；催化新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。；尾盘14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。",
+          "stance": "放弃",
+          "catalyst": "新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。",
+          "risk": "成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。",
+          "action_hint": "放弃新开。",
+          "status": "ok"
         }
       }
     ],
@@ -4862,8 +4942,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/four-layer-tracking.close.json",
       "exists": true,
       "size": 109415,
-      "modified_at": "2026-06-25T14:54:03+08:00",
-      "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+      "modified_at": "2026-06-25T14:54:25+08:00",
+      "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
     }
   },
   "four_layer_tracking_by_period": {
@@ -4968,7 +5048,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -4986,13 +5066,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002290",
+            "name": "禾盛新材",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
+            "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+            "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -5092,7 +5180,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -5110,13 +5198,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "603995",
+            "name": "甬金股份",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
+            "original_text": "# 甬金股份（603995）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。 |\n| 尾盘 | 较好 | 14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾盘高位。 |\n| 板块 | 静态归属：特钢 + 不锈钢压延加工；概念标签：新材料、近期新高、含可转债、融资融券、沪港通；当日交易属性：周期/材料修复，不是全市场核心主线；板块地位：非主线修复偏前排；相对强弱：个股 +1.89% vs 行业 -0.38%，强于约 2.27pct；隔夜影响：相对强度加分，但板块不给高溢价。 | 行业特钢 -0.38%，个股强于行业 2.27pct。 |\n| 类型 | 低估值材料趋势修复 | 非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。 |\n| 日线 | 近期趋势较强 | 近30日方向 +24.22%，6月以来逐步抬升，今日从昨日回落后修复。 |\n| 上涨概率 | 隔夜评分：67/100；冲高概率：约50%-55%；主要加分：尾盘稳步抬升、相对行业强、涨幅不过热、估值不高；主要扣分：题材不在主线、催化偏弱、近期已有累计涨幅。 | 等。 |\n\n**一句话判断：甬金股份尾盘结构干净，是偏稳的隔夜候选，但缺少主线题材爆发力，只能等竞价强度。**\n\n**交易计划：**\n- 技术面：强弱线 24.20，压力 24.80-25.30；跌破 23.90 则修复失败。\n- 消息面：库存股注销偏中性偏正，不足以单独驱动连续冲高。\n- 赔率：低估值和尾盘承接提供安全垫，但弹性有限。\n- 仓位：轻仓以内，不能当主攻票。\n- 次日操作：次日冲高预估约1.5%-3.5%；高开 2% 以上若量能不足先减；平开站稳 24.20 可看 24.80；低开不破 23.90 可等反抽，跌破则离场。\n\n---",
+            "summary_short": "结论等；催化公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。；尾盘14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾",
+            "stance": "等",
+            "catalyst": "公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。",
+            "risk": "非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。",
+            "action_hint": "轻仓以内，不能当主攻票。",
+            "status": "ok"
           }
         },
         {
@@ -5216,7 +5312,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5332,7 +5428,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5448,7 +5544,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5564,7 +5660,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5680,7 +5776,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5796,7 +5892,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -5912,7 +6008,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6028,7 +6124,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6144,7 +6240,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6297,7 +6393,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6448,7 +6544,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6599,7 +6695,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6765,7 +6861,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6783,13 +6879,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002301",
+            "name": "齐心集团",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
+            "original_text": "# 齐心集团（002301）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。 |\n| 尾盘 | 明显尾盘拉升，需警惕急拉 | 14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突袭特征明显。 |\n| 板块 | 静态归属：文娱用品 + B2B；概念标签：DeepSeek、AI眼镜、信创、云计算、腾讯概念、跨境电商；当日交易属性：无明确主线验证，更偏尾盘资金试盘；板块地位：孤立修复；相对强弱：个股 +0.13% vs 行业 -1.59%，强于约 1.72pct；隔夜影响：尾盘急拉不当成强承接，降档。 | 行业文娱用品 -1.59%，个股强于行业 1.72pct。 |\n| 类型 | 尾盘异动低价股 | 非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。 |\n| 日线 | 弱势震荡 | 近30日方向 -4.58%，仍在低位震荡区。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：尾盘价格拉升、相对行业略强；主要扣分：疑似尾盘急拉、无新增催化、行业不强、全天强度不足。 | 放弃。 |\n\n**一句话判断：齐心集团尾盘涨得快，但缺少催化和板块确认，更像隔夜资金偷袭，不适合新开隔夜仓。**\n\n**交易计划：**\n- 技术面：强弱线 7.40，压力 7.55-7.80，风险线 7.20。\n- 消息面：当前查询未发现可交易新增催化。\n- 赔率：偏低；尾盘急拉后次日容易低开或冲高兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不放量即兑现；平开若不能快速站上 7.55 不追；低开跌破 7.20 直接回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。；尾盘14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。",
+            "risk": "非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -6939,7 +7043,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6957,13 +7061,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002429",
+            "name": "兆驰股份",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
+            "original_text": "# 兆驰股份（002429）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.37，缺少进攻。 |\n| 板块 | 静态归属：黑色家电 + 电子制造及运营服务；概念标签：PCB、光通信、CPO、先进封装、MiniLED、数据中心；当日交易属性：科技链跟随但个股未跑出；板块地位：边缘/后排；相对强弱：个股 +0.09% vs 行业 +0.82%，弱于约 0.73pct；隔夜影响：不给板块溢价。 | 行业黑色家电 +0.82%，个股弱于行业 0.73pct。 |\n| 类型 | 大成交后排跟随票 | 非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。 |\n| 日线 | 下行修复不足 | 近30日方向 -15.98%，从高位回落后横盘，未形成明确反转。 |\n| 上涨概率 | 隔夜评分：46/100；冲高概率：约40%-45%；主要加分：成交额充足、概念覆盖科技主线；主要扣分：弱于行业、尾盘无进攻、无新增催化、日线仍弱。 | 放弃。 |\n\n**一句话判断：兆驰股份题材看起来多，但资金没有把它当主线前排做，隔夜赔率不够。**\n\n**交易计划：**\n- 技术面：强弱线 11.30，压力 11.55-11.70，风险线 10.95。\n- 消息面：无新增强催化，静态概念不能替代资金强度。\n- 赔率：偏低；容量大但缺少上攻主动性。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不突破 11.55 先兑现；平开若量能不足不追；低开跌破 10.95 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。；尾盘14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.3",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。",
+            "risk": "非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -7117,7 +7229,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7135,13 +7247,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002129",
+            "name": "TCL中环",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# TCL中环（002129）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。 |\n| 尾盘 | 高位横盘 | 14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，未跌破但没有继续推升。 |\n| 板块 | 静态归属：光伏设备 + 新能源光伏；概念标签：光伏、BC电池、HJT电池、芯片、新材料、苹果概念；当日交易属性：光伏超跌修复；板块地位：非主线修复偏中军；相对强弱：个股 +7.26% vs 行业 +0.35%，强于约 6.91pct；隔夜影响：个股强度加分，但涨幅接近高位兑现区，显著降档。 | 行业光伏设备 +0.35%，个股强于行业 6.91pct。 |\n| 类型 | 超跌反弹容量票 | 非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。 |\n| 日线 | 超跌反弹 | 近30日方向 +0.99%，从前期弱势中放量反弹，但 10.30-10.80 压力明显。 |\n| 上涨概率 | 隔夜评分：57/100；冲高概率：约45%-50%；主要加分：个股显著强于行业、成交额充足、尾盘横住；主要扣分：当日涨幅 7.26% 接近兑现区、光伏不是当日最强主线、无新增强催化、PE为负。 | 观察。 |\n\n**一句话判断：TCL中环今日强度够，但隔夜新开最怕次日兑现；没有新增强催化时，不宜把大涨当成安全。**\n\n**交易计划：**\n- 技术面：强弱线 10.15，压力 10.30-10.45，风险线 9.90。\n- 消息面：当前查询未发现强新增催化，主要依赖光伏反弹延续。\n- 赔率：偏一般；冲高空间有，但兑现压力也大。\n- 仓位：不建议新开重仓，只能轻仓观察。\n- 次日操作：次日冲高预估约1%-3%；高开接近 10.45 若不能封强直接兑现；平开站稳 10.15 可等 10.30；低开跌破 9.90 说明反弹失败，应止损。\n\n---",
+            "summary_short": "结论观察；催化当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。；尾盘14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，",
+            "stance": "观察",
+            "catalyst": "当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。",
+            "risk": "非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。",
+            "action_hint": "不建议新开重仓，只能轻仓观察。",
+            "status": "ok"
           }
         },
         {
@@ -7295,7 +7415,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7313,13 +7433,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002335",
+            "name": "科华数据",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# 科华数据（002335）— 放弃（硬否决）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 方向强但不纳入普通隔夜 | 当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。 |\n| 尾盘 | 极强但已涨停 | 14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。 |\n| 板块 | 静态归属：其他发电设备 + 新能源行业；概念标签：数据中心、液冷服务、算力租赁、储能、云计算、东数西算；当日交易属性：AI算力/液冷电源链条；板块地位：主线后排偏强；相对强弱：个股 +9.99% vs 行业 +0.37%，强于约 9.62pct；隔夜影响：主线强但已涨停，普通新开隔夜体系硬否决。 | 行业其他发电设备 +0.37%，个股强于行业 9.62pct。 |\n| 类型 | 涨停主线弹性票 | 非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。 |\n| 日线 | 超跌反弹涨停 | 近30日方向 -35.78%，今日涨停修复，但仍是大跌后的强反弹。 |\n| 上涨概率 | 隔夜评分：规则剔除/仅作参考；冲高概率：不做正常映射；硬否决原因：当日已涨停且涨幅 9.99%，普通隔夜新开仓体系不允许给可干。 | 放弃（硬否决）。 |\n\n**一句话判断：科华数据方向和尾盘都强，但“已涨停”是规则硬否决；除非用户改用打板/涨停接力体系，否则不纳入普通隔夜可买。**\n\n**交易计划：**\n- 技术面：涨停价 42.26 是强弱锚，若次日不能维持强封/强换手，容易兑现。\n- 消息面：算力、液冷、数据中心方向强，但今日已被资金充分定价。\n- 赔率：普通隔夜体系赔率不适用，更多是接力体系问题。\n- 仓位：放弃普通新开隔夜。\n- 次日操作：次日冲高预估约0%-3%（不做正常概率映射）；高开需看封单和换手质量，弱封或炸板先兑现；平开低于预期视为不及预期；低开则说明接力失败，回避。",
+            "summary_short": "结论放弃（硬否决）；催化当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。；尾盘14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。",
+            "stance": "放弃（硬否决）",
+            "catalyst": "当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。",
+            "risk": "非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。",
+            "action_hint": "放弃普通新开隔夜。",
+            "status": "ok"
           }
         },
         {
@@ -7473,7 +7601,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7491,13 +7619,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "603688",
+            "name": "石英股份",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# 石英股份（603688）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强 | 新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。 |\n| 尾盘 | 稳定承接 | 14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，收在尾盘高位附近，未明显回落。 |\n| 板块 | 静态归属：非金属材料 + 光纤半导体材料；概念标签：光通信、存储芯片、芯片、光伏、行业龙头、近期新高；当日交易属性：半导体/材料景气链条扩散，非单纯静态概念；板块地位：主线后排偏中军；相对强弱：个股 +4.39% vs 行业 +3.69%，强于约 0.70pct；隔夜影响：给板块加分，但不是最前排。 | 行业非金属材料 +3.69%，个股强于行业 0.70pct。 |\n| 类型 | 主线材料趋势票 | 非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。 |\n| 日线 | 强趋势但高位波动 | 近30日从 72.50 到 83.40，方向 +15.03%；近端 86.33 高点后回撤再修复，仍有前高压力。 |\n| 上涨概率 | 隔夜评分：69/100；冲高概率：约50%-55%；主要加分：半导体材料催化、尾盘稳住、成交额充足、相对行业略强；主要扣分：股价近端已有较大涨幅、前高压力、不是涨停梯队前排。 | 等竞价确认。 |\n\n**一句话判断：石英股份是这批里最像“主线趋势延续”的标的，但高位压力和已定价程度不低，新开隔夜仓不宜追，只适合等强竞价确认。**\n\n**交易计划：**\n- 技术面：强弱线看 83.00-83.40，压力看 85.50-86.30；若跌回 82.80 下方，说明尾盘承接失效。\n- 消息面：高纯石英砂/半导体材料景气是核心叙事，需看次日半导体材料链是否继续扩散。\n- 赔率：赔率中等偏上，但不是低位首启，追高安全垫不足。\n- 仓位：仅适合轻仓观察，不适合重仓隔夜。\n- 次日操作：次日冲高预估约2%-4%；高开 2% 以上需看开盘 5-10 分钟能否站稳 85 附近，否则先兑现；平开若放量站回 84 可持有到前高附近；低开若不破 82.80 且板块强可等反抽，破位则止损。\n\n---",
+            "summary_short": "结论等；催化新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。；尾盘14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，",
+            "stance": "等",
+            "catalyst": "新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。",
+            "risk": "非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。",
+            "action_hint": "仅适合轻仓观察，不适合重仓隔夜。",
+            "status": "ok"
           }
         },
         {
@@ -7650,7 +7786,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7668,13 +7804,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002134",
+            "name": "天津普林",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 天津普林（002134）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱 | 公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。 |\n| 尾盘 | 小幅修复但不强 | 14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低于日内高位。 |\n| 板块 | 静态归属：元器件 + 电子元器件制造；概念标签：PCB概念、玻璃基板、折叠屏、国防军工、大飞机、新能源车；当日交易属性：电子/PCB链条跟随，非绝对前排；板块地位：主线后排；相对强弱：个股 +4.56% vs 行业 +5.62%，弱于约 1.06pct；隔夜影响：板块强但个股弱于板块，降档。 | 行业元器件 +5.62%，个股弱于行业 1.06pct。 |\n| 类型 | 题材弹性票 | 非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。 |\n| 日线 | 修复中但压力重 | 近30日方向 -2.09%，今日高开冲高后回落，30.80-31.10 是短压。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：电子/PCB板块强、尾盘小幅修复、成交额合格；主要扣分：弱于行业、盘中冲高回落、公告催化偏弱、概念含拟减持标签需复核。 | 观察。 |\n\n**一句话判断：天津普林有板块热度但不是强于板块的前排，隔夜更像跟风套利，不能主动追。**\n\n**交易计划：**\n- 技术面：强弱线 29.50，压力 30.50-31.10，风险线 28.80。\n- 消息面：公告不构成强催化，主要看 PCB/玻璃基板是否继续活跃。\n- 赔率：一般；板块强时有冲高，板块分化时容易先兑现。\n- 仓位：只适合小仓试错，弱竞价不做。\n- 次日操作：次日冲高预估约1%-3%；高开到 30.50 附近不放量先减；平开若站稳 29.50 可看 30.20；低开跌破 28.80 放弃反抽幻想。\n\n---",
+            "summary_short": "结论观察；催化公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。；尾盘14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低",
+            "stance": "观察",
+            "catalyst": "公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。",
+            "risk": "非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。",
+            "action_hint": "只适合小仓试错，弱竞价不做。",
+            "status": "ok"
           }
         },
         {
@@ -7825,7 +7969,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7843,13 +7987,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002353",
+            "name": "杰瑞股份",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 杰瑞股份（002353）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 较强 | 证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。 |\n| 尾盘 | 横盘承接 | 14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.81-164.00，未明显进攻。 |\n| 板块 | 静态归属：专用设备；概念标签因 indicator 不完整需复核，交易上主要看 AIDC电源、燃气轮机、电力设备；当日交易属性：AI算力电源链外溢；板块地位：容量中军/趋势中军；相对强弱：个股 +2.90% vs 行业 +1.01%，强于约 1.89pct；隔夜影响：催化加分，但尾盘未放量上攻，需降一档。 | 行业专用设备 +1.01%，个股强于行业 1.89pct。 |\n| 类型 | 大市值容量趋势票 | 非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。 |\n| 日线 | 高位震荡修复 | 近30日方向 +18.09%，近期冲至 175.50 后回落，今日反弹但未收复前高。 |\n| 上涨概率 | 隔夜评分：63/100；冲高概率：约45%-50%；主要加分：AIDC电源催化、机构调研热度、容量票流动性好、相对行业强；主要扣分：indicator_incomplete、尾盘横盘不进攻、近端高位回落后压力仍在。 | 观察。 |\n\n**一句话判断：杰瑞股份逻辑强于形态，适合跟踪而不是直接新开隔夜；次日能否冲高取决于 AIDC 电源链是否继续被资金强化。**\n\n**交易计划：**\n- 技术面：强弱线 163.00，压力 167.50-170.00，风险线 160.00。\n- 消息面：AIDC 电源和燃气轮机涨价是正催化，但已被连续报道，需防兑现。\n- 赔率：中等；逻辑有弹性，但高位筹码压力压制隔夜赔率。\n- 仓位：观察仓或不做，新开不宜重。\n- 次日操作：次日冲高预估约1.5%-3%；高开接近 167 但放量不足先减；平开站稳 163 可等 166-168；低开跌破 160-162 区间则以风控为先。\n\n---",
+            "summary_short": "结论观察；催化证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。；尾盘14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.",
+            "stance": "观察",
+            "catalyst": "证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。",
+            "risk": "非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。",
+            "action_hint": "观察仓或不做，新开不宜重。",
+            "status": "ok"
           }
         },
         {
@@ -8002,7 +8154,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -8020,13 +8172,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "000620",
+            "name": "盈新发展",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 盈新发展（000620）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 数据不足 | 新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。 |\n| 板块 | 静态归属：动物保健；概念标签：indicator 不完整，需复核；当日交易属性：低价股/反弹属性为主，未见主线确认；板块地位：边缘；相对强弱：个股 +4.70% vs 行业 -1.22%，强于约 5.92pct；隔夜影响：相对强但数据缺口和换手过高，降档。 | 行业动物保健 -1.22%，个股强于行业 5.92pct；脚本 lookup 中 stock_pct 曾出现 -3.02 异常，最终以行情卡 +4.70% 为准。 |\n| 类型 | 低价高换手波动票 | 成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。 |\n| 日线 | 低位震荡反弹 | 近30日方向 +0.97%，日内曾触及涨停价 3.28 后回落至 3.12。 |\n| 上涨概率 | 隔夜评分：41/100；冲高概率：约40%以下-45%；主要加分：相对行业强、成交额充足；主要扣分：indicator_incomplete、尾盘偏弱、日内冲高回落、高换手分歧、低价股波动大。 | 放弃。 |\n\n**一句话判断：盈新发展最大问题不是涨幅，而是“数据缺口 + 高换手 + 冲高回落后尾盘不强”，不符合新开隔夜仓的确定性要求。**\n\n**交易计划：**\n- 技术面：强弱线 3.11-3.12，压力 3.20-3.28，风险线 3.00。\n- 消息面：题材和主营需复核，不能按强催化处理。\n- 赔率：偏低；次日若低开容易触发获利盘和分歧盘兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开若不能快速站上 3.20 先兑现；平开不放量不追；低开跌破 3.00 直接回避。\n\n---",
+            "summary_short": "结论放弃；催化新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。；尾盘14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。",
+            "stance": "放弃",
+            "catalyst": "新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。",
+            "risk": "成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         }
       ],
@@ -8183,8 +8343,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/four-layer-tracking.close.json",
         "exists": true,
         "size": 109415,
-        "modified_at": "2026-06-25T14:54:03+08:00",
-        "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+        "modified_at": "2026-06-25T14:54:25+08:00",
+        "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
       }
     },
     "morning": {
@@ -8314,12 +8474,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "group_labels": [
               "正式 Top3"
             ],
-            "original_text": "# 禾盛新材（002290）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱到中性，静态概念含 DeepSeek/芯片/人工智能等，但未见当日明确新闻催化 | 当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。 |\n| 尾盘 | 小幅上行承接 | 14:30 后涨幅约 +0.30%，尾盘成交约 7803 万元；收 88.19，低于全天高 89.94。 |\n| 板块 | 静态归属：家电零部件/复合材料；概念标签：DeepSeek、芯片、人工智能、定增预案等；当日交易属性：非明确主线，偏个股修复；板块地位：边缘/非主线修复；相对强弱：个股 +2.19% vs 行业 +0.42%，强于约 1.77pct；隔夜影响：少量加分，但不给主线溢价。 | 行业 +0.42%，个股 +2.19%。 |\n| 类型 | 深市主板 10cm，非 ST；高价小流通弹性票 | 成交额约 7.40 亿元，换手约 3.44%，流动性尚可。 |\n| 日线 | 30 日趋势明显回落，当前只是弱修复 | 30 日方向约 -10.93%，30 日高点 108.91，当前 88.19。 |\n| 上涨概率 | 隔夜评分：61/100；冲高概率：约45%-50%；主要加分：尾盘小幅走高、强于行业、成交尚可；主要扣分：非明确主线、无新增催化、距离 30 日高位仍有套牢压力、全天涨幅不强。 | 结论映射为观察。 |\n\n**一句话判断：** 禾盛新材不是坏票，但隔夜缺少“尾盘强进攻 + 板块核心”的组合，优先级不高。\n\n**交易计划：**\n- 技术面：89.94 是第一压力，87.82-88.00 是尾盘承接带；跌破 87.80 则转弱。\n- 消息面：当前未见强新闻，静态概念不足以支撑高隔夜溢价。\n- 赔率：一般，偏等待确认。\n- 仓位：观察，不主动重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开接近 90 若无放量突破先兑现；平开站稳 88.20 可等冲高；低开跌破 87.80 则放弃。\n\n---",
-            "summary_short": "结论观察；催化当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。；尾盘14:30 后涨幅约 +0.30%，尾盘成交约 7803 万元；收 88.19，低于全天高 89.9",
-            "stance": "观察",
-            "catalyst": "当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。",
-            "risk": "成交额约 7.40 亿元，换手约 3.44%，流动性尚可。",
-            "action_hint": "观察，不主动重仓。",
+            "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+            "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+            "action_hint": "放弃新开。",
             "status": "ok"
           }
         },
@@ -8438,21 +8598,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002174",
-            "name": "游族网络",
-            "groups": [
-              "formal_top3"
-            ],
-            "group_labels": [
-              "正式 Top3"
-            ],
-            "original_text": "# 游族网络（002174）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱，当前查询未发现近端新闻/公告催化 | 静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。 |\n| 尾盘 | 基本横盘，缺乏隔夜进攻性 | 14:30 后涨幅约 +0.16%，尾盘成交约 6245 万元；全天涨幅仅 +0.94%，收 12.84，接近高点 13.00 但动能一般。 |\n| 板块 | 静态归属：游戏/信息服务方向需复核；概念标签：游戏、虚拟现实、AIGC、DeepSeek 等；当日交易属性：静态概念为主，未体现主线资金；板块地位：边缘；相对强弱：行业涨跌幅缺失，无法量化；隔夜影响：不给板块溢价。 | 行业行情字段缺失。 |\n| 类型 | 深市主板 10cm，非 ST；游戏题材票 | 成交额约 6.33 亿元，换手约 5.06%，流动性尚可。 |\n| 日线 | 30 日反弹较多，继续向上需要更强板块催化 | 30 日方向约 +16.20%，30 日高点 13.00，当前 12.84。 |\n| 上涨概率 | 隔夜评分：53/100；冲高概率：约40%-45%；主要加分：收盘接近阶段高位、流动性尚可；主要扣分：全天涨幅弱、尾盘不进攻、行业/主线缺口、无新闻催化。 | 结论映射为放弃。 |\n\n**一句话判断：** 游族网络不是风险最大，但隔夜仓要买强信号，它目前强度不够。\n\n**交易计划：**\n- 技术面：13.00 是短压，12.80 是尾盘承接线；跌破 12.80 后反抽应减仓。\n- 消息面：暂无明确新增催化，静态概念不能单独支撑隔夜。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开不能突破 13.00 先兑现；平开需快速站稳 12.84；低开跌破 12.80 不参与。\n\n---",
-            "summary_short": "结论放弃；催化静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。；尾盘14:30 后涨幅约 +0.16%，尾盘成交约 6245 万元；全天涨幅仅 +0.94%，收 12.",
-            "stance": "放弃",
-            "catalyst": "静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。",
-            "risk": "成交额约 6.33 亿元，换手约 5.06%，流动性尚可。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -8570,21 +8722,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002338",
-            "name": "奥普光电",
-            "groups": [
-              "formal_top3"
-            ],
-            "group_labels": [
-              "正式 Top3"
-            ],
-            "original_text": "# 奥普光电（002338）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 不明确，indicator 缺失导致题材/ST/主营需复核 | 当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。 |\n| 尾盘 | 横盘承接，进攻性不足 | 14:30 后涨幅约 +0.02%，尾盘成交约 4399 万元；收 54.13，低于全天高 54.63。 |\n| 板块 | 静态归属：行业字段显示为仪器/设备方向需复核；概念标签：缺失；当日交易属性：非明确主线；板块地位：边缘；相对强弱：个股 +2.87% vs 行业 +1.83%，强于约 1.04pct；隔夜影响：小幅加分但不够。 | 行业 +1.83%，个股 +2.87%。 |\n| 类型 | 深市主板 10cm，ST/主营需复核 | 成交额约 3.60 亿元，换手约 2.81%，流动性够但活跃度一般。 |\n| 日线 | 30 日仍处下行修复区，上方套牢压力明显 | 30 日方向约 -15.79%，30 日高点 67.96，当前 54.13。 |\n| 上涨概率 | 隔夜评分：52/100；冲高概率：约40%-45%；主要加分：强于行业、成交额过线；主要扣分：indicator 缺失、尾盘横盘、无明确催化、30 日趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 奥普光电没有触发硬否决，但缺少隔夜仓最关键的尾盘与催化信号。\n\n**交易计划：**\n- 技术面：54.63 是短压，53.98-54.13 是尾盘承接区；跌破 53.98 转弱。\n- 消息面：无明确新增催化，题材需复核。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开若不能突破 54.63 兑现；平开守住 54.00 才有反抽；低开跌破 53.98 不参与。\n\n---",
-            "summary_short": "结论放弃；催化当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。；尾盘14:30 后涨幅约 +0.02%，尾盘成交约 4399 万元；收 54.13，低于全天高 54.6",
-            "stance": "放弃",
-            "catalyst": "当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。",
-            "risk": "成交额约 3.60 亿元，换手约 2.81%，流动性够但活跃度一般。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -10155,23 +10299,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000688",
-            "name": "国城矿业",
-            "groups": [
-              "open_drive_watch",
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察",
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 国城矿业（000688）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱，更多是前一日跌停后的修复，缺少正向未定价催化 | 新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。 |\n| 尾盘 | 横盘承接，未明显走弱但也没有进攻 | 14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全天高 36.20。 |\n| 板块 | 静态归属：矿业/有色；概念标签：黄金、锂、稀缺资源等；当日交易属性：资源股修复而非市场最强主线；板块地位：非主线修复；相对强弱：个股 +3.93% vs 行业 +0.92%，强于约 3.01pct；隔夜影响：相对强弱加分，但前一日跌停负反馈降档。 | 行业矿业相关 +0.92%，个股 +3.93%。 |\n| 类型 | 深市主板 10cm，非 ST；资源弹性票 | 成交额约 16.10 亿元，换手约 3.98%，流动性良好。 |\n| 日线 | 30 日仍处下行区间，属于超跌/跌停后修复 | 30 日方向约 -12.82%，30 日高点 49.50，当前 35.98。 |\n| 上涨概率 | 隔夜评分：64/100；冲高概率：约45%-50%；主要加分：强于行业、成交充足、尾盘未破承接；主要扣分：前一日触及跌停、非主线、30 日趋势弱、尾盘无进攻。 | 结论映射为观察。 |\n\n**一句话判断：** 这只票有修复弹性，但前一日跌停阴影还在，隔夜不是优先选项。\n\n**交易计划：**\n- 技术面：36.20 为短压，35.85-35.95 为尾盘承接区；若跌回 35.50 下方，修复失败概率上升。\n- 消息面：未见新的强催化，主要看资源股情绪和跌停修复持续性。\n- 赔率：一般，属于反弹兑现型，不是进攻型隔夜。\n- 仓位：观察，不建议新开重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开靠近 36.20 若不放量突破应兑现；平开需守住 35.85；低开跌破 35.50 则不恋战。\n\n---",
-            "summary_short": "结论观察；催化新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。；尾盘14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全",
-            "stance": "观察",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。",
-            "risk": "成交额约 16.10 亿元，换手约 3.98%，流动性良好。",
-            "action_hint": "观察，不建议新开重仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -10344,21 +10478,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002237",
-            "name": "恒邦股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
-            "original_text": "# 恒邦股份（002237）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏负面，前一日触及跌停新闻削弱隔夜赔率 | 新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。 |\n| 尾盘 | 轻微上行但不强 | 14:30 后涨幅约 +0.21%，尾盘成交约 5826 万元；收 14.16，接近全天高 14.24。 |\n| 板块 | 静态归属：贵金属/黄金；概念标签：黄金、稀缺资源、融资融券等；当日交易属性：贵金属行业偏弱中的修复；板块地位：非主线修复；相对强弱：个股 +1.29% vs 行业 -0.33%，强于约 1.62pct；隔夜影响：行业不加分，前日跌停负反馈降档。 | 行业 -0.33%，个股 +1.29%。 |\n| 类型 | 深市主板 10cm，非 ST；贵金属中盘票 | 成交额约 4.73 亿元，换手约 2.84%，流动性一般。 |\n| 日线 | 30 日仍弱，属于跌停后低位修复 | 30 日方向约 -15.16%，30 日高点 16.93，当前 14.16。 |\n| 上涨概率 | 隔夜评分：51/100；冲高概率：约40%-45%；主要加分：尾盘未走弱、强于弱行业；主要扣分：前一日触及跌停、行业偏弱、公告非正向、日线趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 恒邦股份的反弹更像跌后修复，不是适合新开隔夜仓的进攻标的。\n\n**交易计划：**\n- 技术面：14.24 是短压，14.12 是尾盘支撑；跌破 14.12 则反弹走弱。\n- 消息面：无正向新增催化，前日跌停新闻仍需消化。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开靠近 14.24 若不突破先兑现；平开守 14.12 可等反抽；低开跌破 14.12 不参与。\n\n---",
-            "summary_short": "结论放弃；催化新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。；尾盘14:30 后涨幅约 +0.21%，尾盘成交约 5826 万元；收 14.16，接近全天高 14.2",
-            "stance": "放弃",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。",
-            "risk": "成交额约 4.73 亿元，换手约 2.84%，流动性一般。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -10532,21 +10658,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002812",
-            "name": "恩捷股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
-            "original_text": "# 恩捷股份（002812）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏负面，补缴税款及滞纳金公告压制隔夜风险偏好 | 新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。 |\n| 尾盘 | 走弱，14:30 后回落 | 14:30 后涨幅约 -0.44%，尾盘成交约 2.20 亿元；收 69.44，低于尾盘起点 69.75，也低于全天高 70.30。 |\n| 板块 | 静态归属：锂电/隔膜；概念标签：锂电池、固态电池、储能、新能源车、PVDF 等；当日交易属性：新能源链修复不强；板块地位：边缘；相对强弱：个股 +0.92% vs 行业 +0.64%，仅强约 0.28pct；隔夜影响：不给溢价，叠加公告风险降档。 | 行业 +0.64%，个股 +0.92%。 |\n| 类型 | 深市主板 10cm，非 ST；锂电隔膜龙头类中大盘票 | 成交额约 21.72 亿元，换手约 3.85%，流动性好。 |\n| 日线 | 30 日仍明显下行，当前反弹力度一般 | 30 日方向约 -14.72%，30 日高点 82.83，当前 69.44。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：流动性好、行业略有修复；主要扣分：尾盘回落、负面公告、相对行业不强、30 日趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 恩捷股份的流动性好，但尾盘和消息面都不支持新开隔夜仓。\n\n**交易计划：**\n- 技术面：70.30 是压力，69.38-69.44 是尾盘风险线；跌破 69.38 后反抽优先减仓。\n- 消息面：补缴税款/滞纳金公告属于风险项，质子交换膜研发尚未形成收入利润也难以构成短线强催化。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0%-2%；高开不能快速收回 70.30 应兑现；平开若站不稳 69.44 不参与；低开跌破 69.38 直接风控。",
-            "summary_short": "结论放弃；催化新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。；尾盘14:30 后涨幅约 -0.44%，尾盘成交约 2.20 亿元；收 69.44，低于尾盘起点 69.",
-            "stance": "放弃",
-            "catalyst": "新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。",
-            "risk": "成交额约 21.72 亿元，换手约 3.85%，流动性好。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -10724,21 +10842,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "600589",
-            "name": "大位科技",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 大位科技（600589）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 不明确，云服务/科技属性有板块想象，但 indicator 缺失且新闻公告为空 | 当前查询未发现近端新闻/公告；题材/主营需复核。 |\n| 尾盘 | 尾盘小幅回落，不支持高分 | 14:30 后涨幅约 -0.29%，尾盘成交约 1.36 亿元；收 10.26，低于尾盘高 10.34，也低于全天高 10.50。 |\n| 板块 | 静态归属：云服务；概念标签：需复核；当日交易属性：科技方向修复但非前排；板块地位：边缘/非主线修复；相对强弱：个股 +4.69% vs 行业 +0.88%，强于约 3.81pct；隔夜影响：相对强弱加分，尾盘回落降档。 | 行业云服务 +0.88%，个股 +4.69%。 |\n| 类型 | 沪市主板 10cm，ST/主营需复核；亏损估值口径 | 成交额约 14.43 亿元，换手约 9.93%，分歧较大。 |\n| 日线 | 30 日仍明显下行，属于反弹修复 | 30 日方向约 -24.34%，30 日高点 14.58，当前 10.26。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：强于行业、成交活跃、科技方向有交易热度；主要扣分：尾盘回落、indicator 缺失、无明确催化、30 日趋势弱、换手接近高分歧。 | 结论映射为观察。 |\n\n**一句话判断：** 大位科技全天弹性可以，但尾盘不是隔夜仓最喜欢的结构，更多是观察次日是否弱转强。\n\n**交易计划：**\n- 技术面：10.34-10.50 为压力区，10.22-10.26 为尾盘风险线；跌破 10.22 转弱。\n- 消息面：缺少独立催化，主要跟随科技/云服务风险偏好。\n- 赔率：中低，需次日竞价重新验证。\n- 仓位：观察，不能因全天涨幅直接追。\n- 次日操作：次日冲高预估约 1%-3%；高开若不能快速突破 10.50 应兑现；平开需站回 10.34；低开跌破 10.22 则放弃。\n\n---",
-            "summary_short": "结论观察；催化当前查询未发现近端新闻/公告；题材/主营需复核。；尾盘14:30 后涨幅约 -0.29%，尾盘成交约 1.36 亿元；收 10.26，低于尾盘高 10.3",
-            "stance": "观察",
-            "catalyst": "当前查询未发现近端新闻/公告；题材/主营需复核。",
-            "risk": "成交额约 14.43 亿元，换手约 9.93%，分歧较大。",
-            "action_hint": "观察，不能因全天涨幅直接追。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -10914,23 +11024,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000688",
-            "name": "国城矿业",
-            "groups": [
-              "open_drive_watch",
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察",
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 国城矿业（000688）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱，更多是前一日跌停后的修复，缺少正向未定价催化 | 新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。 |\n| 尾盘 | 横盘承接，未明显走弱但也没有进攻 | 14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全天高 36.20。 |\n| 板块 | 静态归属：矿业/有色；概念标签：黄金、锂、稀缺资源等；当日交易属性：资源股修复而非市场最强主线；板块地位：非主线修复；相对强弱：个股 +3.93% vs 行业 +0.92%，强于约 3.01pct；隔夜影响：相对强弱加分，但前一日跌停负反馈降档。 | 行业矿业相关 +0.92%，个股 +3.93%。 |\n| 类型 | 深市主板 10cm，非 ST；资源弹性票 | 成交额约 16.10 亿元，换手约 3.98%，流动性良好。 |\n| 日线 | 30 日仍处下行区间，属于超跌/跌停后修复 | 30 日方向约 -12.82%，30 日高点 49.50，当前 35.98。 |\n| 上涨概率 | 隔夜评分：64/100；冲高概率：约45%-50%；主要加分：强于行业、成交充足、尾盘未破承接；主要扣分：前一日触及跌停、非主线、30 日趋势弱、尾盘无进攻。 | 结论映射为观察。 |\n\n**一句话判断：** 这只票有修复弹性，但前一日跌停阴影还在，隔夜不是优先选项。\n\n**交易计划：**\n- 技术面：36.20 为短压，35.85-35.95 为尾盘承接区；若跌回 35.50 下方，修复失败概率上升。\n- 消息面：未见新的强催化，主要看资源股情绪和跌停修复持续性。\n- 赔率：一般，属于反弹兑现型，不是进攻型隔夜。\n- 仓位：观察，不建议新开重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开靠近 36.20 若不放量突破应兑现；平开需守住 35.85；低开跌破 35.50 则不恋战。\n\n---",
-            "summary_short": "结论观察；催化新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。；尾盘14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全",
-            "stance": "观察",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。",
-            "risk": "成交额约 16.10 亿元，换手约 3.98%，流动性良好。",
-            "action_hint": "观察，不建议新开重仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -11108,21 +11208,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002929",
-            "name": "润建股份",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 润建股份（002929）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱，公告多为担保、经营范围/章程、短融等常规事项 | 当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。 |\n| 尾盘 | 横盘承接，强度不如全天涨幅 | 14:30 后涨幅约 +0.12%，尾盘成交约 1.87 亿元；收 65.12，低于全天高 65.73。 |\n| 板块 | 静态归属：通信工程；概念标签：需复核；当日交易属性：个股相对行业独立走强；板块地位：孤立修复/非主线后排；相对强弱：个股 +5.85% vs 行业 -0.38%，强于约 6.23pct；隔夜影响：相对强弱加分，但板块不给主线溢价。 | 行业通信工程 -0.38%，个股 +5.85%。 |\n| 类型 | 深市主板 10cm，ST/主营需复核；高弹性通信工程票 | 成交额约 19.86 亿元，换手约 14.67%，分歧偏大。 |\n| 日线 | 30 日趋势仍明显下行，当前是反弹修复而非趋势主升 | 30 日方向约 -25.81%，30 日高点 100.09，当前 65.12。 |\n| 上涨概率 | 隔夜评分：70/100；冲高概率：约50%-55%；主要加分：全天涨幅强、明显强于行业、成交活跃；主要扣分：尾盘不够进攻、换手偏高、indicator 缺失、公告催化偏常规、30 日趋势弱。 | 结论映射为等。 |\n\n**一句话判断：** 润建强在“逆行业走强”，弱在尾盘没有继续进攻，隔夜最好等竞价确认资金是否继续接力。\n\n**交易计划：**\n- 技术面：65.73 为第一压力，64.78-65.00 为尾盘承接区，跌破 64.78 说明隔夜资金兑现。\n- 消息面：公告不构成强催化，更多是常规披露。\n- 赔率：中等偏博弈，适合看竞价，不适合无条件追隔夜。\n- 仓位：等待，若竞价强可轻仓。\n- 次日操作：次日冲高预估约 1.5%-4%；高开若量能放大并站稳 65.73 可看 67 附近压力；平开需快速收回 65.12；低开跌破 64.78 且无法修复，优先退出。\n\n---",
-            "summary_short": "结论等；催化当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。；尾盘14:30 后涨幅约 +0.12%，尾盘成交约 1.87 亿元；收 65.12，低于全天高 65.7",
-            "stance": "等",
-            "catalyst": "当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。",
-            "risk": "成交额约 19.86 亿元，换手约 14.67%，分歧偏大。",
-            "action_hint": "等待，若竞价强可轻仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -11298,21 +11390,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603327",
-            "name": "福蓉科技",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 福蓉科技（603327）— 可干（轻仓）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强，主要来自消费电子/AI 终端链条当日资金交易，而非单独公告催化 | 当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。 |\n| 尾盘 | 强承接，14:30 后继续抬升并收近全天高点 | 14:30 后涨幅约 +1.77%，尾盘成交约 2.64 亿元；尾盘区间 11.25-11.54，收 11.48；全天高 11.54、收盘接近高点。 |\n| 板块 | 静态归属：消费电子 + 消费电子材料；概念标签：消费电子、AI手机PC、AI眼镜、折叠屏、苹果概念、小米概念；当日交易属性：消费电子/AI终端扩散方向；板块地位：主线后排偏中军；相对强弱：个股 +5.61% vs 行业 +3.95%，强于约 1.66pct；隔夜影响：板块加分，但不是最前排涨停核心。 | 行业消费电子涨幅 +3.95%，个股涨幅 +5.61%。 |\n| 类型 | 沪市主板 10cm，非 ST；中小盘消费电子材料弹性票 | 成交额约 9.61 亿元，换手约 8.23%，流动性与分歧都可接受。 |\n| 日线 | 短线突破近 30 日高点，位置开始进入加速区，需防次日兑现 | 30 日高点 11.54，收盘 11.48；30 日方向约 +4.84%。 |\n| 上涨概率 | 隔夜评分：78/100；冲高概率：约55%-60%；主要加分：尾盘放量抬升、消费电子板块强、相对行业强、成交换手健康；主要扣分：无独立硬催化、涨幅已 5.61% 有兑现压力、非涨停前排。 | 结论映射为可干（轻仓）。 |\n\n**一句话判断：** 这是本组里最符合“板块强 + 尾盘强 + 收近高点”的隔夜结构，但没有涨停前排地位，只适合轻仓博次日冲高兑现。\n\n**交易计划：**\n- 技术面：强弱线看 11.25-11.30，压力看 11.54-11.70；若次日竞价高开但量价不跟，容易先兑现。\n- 消息面：没有单独重大公告催化，主要吃消费电子/AI 终端板块溢价。\n- 赔率：中等偏上，胜在尾盘结构，输在非核心前排。\n- 仓位：轻仓，不建议重仓追隔夜。\n- 次日操作：次日冲高预估约 2%-5%；高开 3% 以上若 5-10 分钟不能放量站稳 11.70，优先分批兑现；平开若快速站回 11.54 上方可看一波延续；低开若不跌破 11.25 可等反抽，跌破 11.25 则降预期离场。\n\n---",
-            "summary_short": "结论可干（轻仓）；催化当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。；尾盘14:30 后涨幅约 +1.77%，尾盘成交约 2.64 亿元；尾盘区间 11.25",
-            "stance": "可干（轻仓）",
-            "catalyst": "当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。",
-            "risk": "成交额约 9.61 亿元，换手约 8.23%，流动性与分歧都可接受。",
-            "action_hint": "轻仓，不建议重仓追隔夜。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -11486,21 +11570,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002426",
-            "name": "胜利精密",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 胜利精密（002426）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等，消费电子主线加分，但自身 indicator 缺失，主营/题材需复核 | 当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。 |\n| 尾盘 | 偏强，14:30 后小幅抬升，收在全天高位 | 14:30 后涨幅约 +0.93%，尾盘成交约 2.50 亿元；收 4.32，接近全天高 4.34。 |\n| 板块 | 静态归属：消费电子；概念标签：需复核；当日交易属性：消费电子板块强势扩散；板块地位：主线后排；相对强弱：个股 +4.60% vs 行业 +3.95%，强于约 0.65pct；隔夜影响：板块加分有限，需竞价确认主动性。 | 行业消费电子 +3.95%，个股 +4.60%。 |\n| 类型 | 深市主板 10cm，ST 状态因 indicator 缺失需复核；低价弹性票 | 成交额约 12.70 亿元，换手约 8.85%，流动性充足。 |\n| 日线 | 近 30 日高位突破，短线强但也临近兑现区 | 30 日高点 4.34，收 4.32；30 日方向约 +10.20%。 |\n| 上涨概率 | 隔夜评分：73/100；冲高概率：约50%-55%；主要加分：消费电子板块强、尾盘上推、成交额充足、收近高点；主要扣分：indicator 缺失、相对行业只小幅强、低价股波动与兑现压力。 | 结论映射为等。 |\n\n**一句话判断：** 图形和尾盘都不差，但由于题材/主营缺口，且只是消费电子后排，不适合在隔夜维度直接升为可干。\n\n**交易计划：**\n- 技术面：4.27-4.28 是尾盘承接区，4.34 是短压，4.54 涨停价附近是兑现预期上限。\n- 消息面：以板块交易为主，缺少独立公告或新闻催化。\n- 赔率：中等，适合等次日竞价确认，而不是尾盘盲目加仓。\n- 仓位：等待确认；若参与只能轻仓试错。\n- 次日操作：次日冲高预估约 1.5%-4%；高开需看是否放量突破 4.34，不能突破则兑现；平开站稳 4.28 可等冲高；低开跌破 4.27 且反抽无量，优先止损/放弃。\n\n---",
-            "summary_short": "结论等；催化当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。；尾盘14:30 后涨幅约 +0.93%，尾盘成交约 2.50 亿元；收 4.32，接近全天高 4.34。",
-            "stance": "等",
-            "catalyst": "当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。",
-            "risk": "成交额约 12.70 亿元，换手约 8.85%，流动性充足。",
-            "action_hint": "等待确认；若参与只能轻仓试错。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -11676,21 +11752,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "001268",
-            "name": "联合精密",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 联合精密（001268）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性，定增募资用于基地/产线建设，偏中长期，不是强隔夜催化 | 新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。 |\n| 尾盘 | 小幅回落，尾盘成交偏低 | 14:30 后涨幅约 -0.24%，尾盘成交约 1563 万元；收 41.92，低于全天高 43.44。 |\n| 板块 | 静态归属：通用设备/通用设备制造业；概念标签：定增预案、小盘非融、私募新进；当日交易属性：定增事件修复，不是市场主线；板块地位：边缘；相对强弱：个股 +4.41% vs 行业 +1.29%，强于约 3.12pct；隔夜影响：事件加分有限，尾盘与流动性降档。 | 行业通用设备 +1.29%，个股 +4.41%。 |\n| 类型 | 深市主板 10cm，非 ST；小市值设备股 | 成交额约 1.37 亿元，换手约 4.93%，未触发硬否决但流动性偏弱。 |\n| 日线 | 近期仍在箱体内修复，未形成强趋势 | 30 日方向约 -0.59%，30 日高点 47.20，当前 41.92。 |\n| 上涨概率 | 隔夜评分：56/100；冲高概率：约45%-50%；主要加分：强于行业、定增事件、换手适中；主要扣分：尾盘回落、成交额偏小、定增不是强短线催化、距日内高点回落较多。 | 结论映射为观察。 |\n\n**一句话判断：** 联合精密有事件，但尾盘和成交额不支持主动做隔夜，只适合观察次日定增事件是否被资金继续认可。\n\n**交易计划：**\n- 技术面：43.44 是日内压力，41.70-41.92 是尾盘风险区，跌破 41.70 则说明承接不足。\n- 消息面：定增偏中长期建设逻辑，短线溢价有限。\n- 赔率：一般偏低。\n- 仓位：观察，不建议主动新开。\n- 次日操作：次日冲高预估约 0.5%-2.5%；高开若不能放量回到 43 上方应兑现；平开守 41.70 可等反抽；低开跌破 41.70 直接降预期。\n\n---",
-            "summary_short": "结论观察；催化新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。；尾盘14:30 后涨幅约 -0.24%，尾盘成交约 1563 万元；收 41.92，低于全天高 43.",
-            "stance": "观察",
-            "catalyst": "新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。",
-            "risk": "成交额约 1.37 亿元，换手约 4.93%，未触发硬否决但流动性偏弱。",
-            "action_hint": "观察，不建议主动新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         }
       ],
@@ -11982,12 +12050,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "group_labels": [
               "正式 Top3"
             ],
-            "original_text": "# 禾盛新材（002290）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱到中性，静态概念含 DeepSeek/芯片/人工智能等，但未见当日明确新闻催化 | 当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。 |\n| 尾盘 | 小幅上行承接 | 14:30 后涨幅约 +0.30%，尾盘成交约 7803 万元；收 88.19，低于全天高 89.94。 |\n| 板块 | 静态归属：家电零部件/复合材料；概念标签：DeepSeek、芯片、人工智能、定增预案等；当日交易属性：非明确主线，偏个股修复；板块地位：边缘/非主线修复；相对强弱：个股 +2.19% vs 行业 +0.42%，强于约 1.77pct；隔夜影响：少量加分，但不给主线溢价。 | 行业 +0.42%，个股 +2.19%。 |\n| 类型 | 深市主板 10cm，非 ST；高价小流通弹性票 | 成交额约 7.40 亿元，换手约 3.44%，流动性尚可。 |\n| 日线 | 30 日趋势明显回落，当前只是弱修复 | 30 日方向约 -10.93%，30 日高点 108.91，当前 88.19。 |\n| 上涨概率 | 隔夜评分：61/100；冲高概率：约45%-50%；主要加分：尾盘小幅走高、强于行业、成交尚可；主要扣分：非明确主线、无新增催化、距离 30 日高位仍有套牢压力、全天涨幅不强。 | 结论映射为观察。 |\n\n**一句话判断：** 禾盛新材不是坏票，但隔夜缺少“尾盘强进攻 + 板块核心”的组合，优先级不高。\n\n**交易计划：**\n- 技术面：89.94 是第一压力，87.82-88.00 是尾盘承接带；跌破 87.80 则转弱。\n- 消息面：当前未见强新闻，静态概念不足以支撑高隔夜溢价。\n- 赔率：一般，偏等待确认。\n- 仓位：观察，不主动重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开接近 90 若无放量突破先兑现；平开站稳 88.20 可等冲高；低开跌破 87.80 则放弃。\n\n---",
-            "summary_short": "结论观察；催化当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。；尾盘14:30 后涨幅约 +0.30%，尾盘成交约 7803 万元；收 88.19，低于全天高 89.9",
-            "stance": "观察",
-            "catalyst": "当前查询未发现近端新闻/公告；概念标签虽多，但无法证明是当日主线资金核心。",
-            "risk": "成交额约 7.40 亿元，换手约 3.44%，流动性尚可。",
-            "action_hint": "观察，不主动重仓。",
+            "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+            "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+            "action_hint": "放弃新开。",
             "status": "ok"
           }
         },
@@ -12106,21 +12174,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002174",
-            "name": "游族网络",
-            "groups": [
-              "formal_top3"
-            ],
-            "group_labels": [
-              "正式 Top3"
-            ],
-            "original_text": "# 游族网络（002174）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱，当前查询未发现近端新闻/公告催化 | 静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。 |\n| 尾盘 | 基本横盘，缺乏隔夜进攻性 | 14:30 后涨幅约 +0.16%，尾盘成交约 6245 万元；全天涨幅仅 +0.94%，收 12.84，接近高点 13.00 但动能一般。 |\n| 板块 | 静态归属：游戏/信息服务方向需复核；概念标签：游戏、虚拟现实、AIGC、DeepSeek 等；当日交易属性：静态概念为主，未体现主线资金；板块地位：边缘；相对强弱：行业涨跌幅缺失，无法量化；隔夜影响：不给板块溢价。 | 行业行情字段缺失。 |\n| 类型 | 深市主板 10cm，非 ST；游戏题材票 | 成交额约 6.33 亿元，换手约 5.06%，流动性尚可。 |\n| 日线 | 30 日反弹较多，继续向上需要更强板块催化 | 30 日方向约 +16.20%，30 日高点 13.00，当前 12.84。 |\n| 上涨概率 | 隔夜评分：53/100；冲高概率：约40%-45%；主要加分：收盘接近阶段高位、流动性尚可；主要扣分：全天涨幅弱、尾盘不进攻、行业/主线缺口、无新闻催化。 | 结论映射为放弃。 |\n\n**一句话判断：** 游族网络不是风险最大，但隔夜仓要买强信号，它目前强度不够。\n\n**交易计划：**\n- 技术面：13.00 是短压，12.80 是尾盘承接线；跌破 12.80 后反抽应减仓。\n- 消息面：暂无明确新增催化，静态概念不能单独支撑隔夜。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开不能突破 13.00 先兑现；平开需快速站稳 12.84；低开跌破 12.80 不参与。\n\n---",
-            "summary_short": "结论放弃；催化静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。；尾盘14:30 后涨幅约 +0.16%，尾盘成交约 6245 万元；全天涨幅仅 +0.94%，收 12.",
-            "stance": "放弃",
-            "catalyst": "静态标签含游戏、虚拟现实、AIGC 等，但行业字段缺失，无法证明当日资金交易主线。",
-            "risk": "成交额约 6.33 亿元，换手约 5.06%，流动性尚可。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -12238,21 +12298,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002338",
-            "name": "奥普光电",
-            "groups": [
-              "formal_top3"
-            ],
-            "group_labels": [
-              "正式 Top3"
-            ],
-            "original_text": "# 奥普光电（002338）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 不明确，indicator 缺失导致题材/ST/主营需复核 | 当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。 |\n| 尾盘 | 横盘承接，进攻性不足 | 14:30 后涨幅约 +0.02%，尾盘成交约 4399 万元；收 54.13，低于全天高 54.63。 |\n| 板块 | 静态归属：行业字段显示为仪器/设备方向需复核；概念标签：缺失；当日交易属性：非明确主线；板块地位：边缘；相对强弱：个股 +2.87% vs 行业 +1.83%，强于约 1.04pct；隔夜影响：小幅加分但不够。 | 行业 +1.83%，个股 +2.87%。 |\n| 类型 | 深市主板 10cm，ST/主营需复核 | 成交额约 3.60 亿元，换手约 2.81%，流动性够但活跃度一般。 |\n| 日线 | 30 日仍处下行修复区，上方套牢压力明显 | 30 日方向约 -15.79%，30 日高点 67.96，当前 54.13。 |\n| 上涨概率 | 隔夜评分：52/100；冲高概率：约40%-45%；主要加分：强于行业、成交额过线；主要扣分：indicator 缺失、尾盘横盘、无明确催化、30 日趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 奥普光电没有触发硬否决，但缺少隔夜仓最关键的尾盘与催化信号。\n\n**交易计划：**\n- 技术面：54.63 是短压，53.98-54.13 是尾盘承接区；跌破 53.98 转弱。\n- 消息面：无明确新增催化，题材需复核。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开若不能突破 54.63 兑现；平开守住 54.00 才有反抽；低开跌破 53.98 不参与。\n\n---",
-            "summary_short": "结论放弃；催化当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。；尾盘14:30 后涨幅约 +0.02%，尾盘成交约 4399 万元；收 54.13，低于全天高 54.6",
-            "stance": "放弃",
-            "catalyst": "当前查询未发现新闻/公告；无法确认静态题材与当日交易原因。",
-            "risk": "成交额约 3.60 亿元，换手约 2.81%，流动性够但活跃度一般。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -13823,23 +13875,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000688",
-            "name": "国城矿业",
-            "groups": [
-              "open_drive_watch",
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察",
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 国城矿业（000688）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱，更多是前一日跌停后的修复，缺少正向未定价催化 | 新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。 |\n| 尾盘 | 横盘承接，未明显走弱但也没有进攻 | 14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全天高 36.20。 |\n| 板块 | 静态归属：矿业/有色；概念标签：黄金、锂、稀缺资源等；当日交易属性：资源股修复而非市场最强主线；板块地位：非主线修复；相对强弱：个股 +3.93% vs 行业 +0.92%，强于约 3.01pct；隔夜影响：相对强弱加分，但前一日跌停负反馈降档。 | 行业矿业相关 +0.92%，个股 +3.93%。 |\n| 类型 | 深市主板 10cm，非 ST；资源弹性票 | 成交额约 16.10 亿元，换手约 3.98%，流动性良好。 |\n| 日线 | 30 日仍处下行区间，属于超跌/跌停后修复 | 30 日方向约 -12.82%，30 日高点 49.50，当前 35.98。 |\n| 上涨概率 | 隔夜评分：64/100；冲高概率：约45%-50%；主要加分：强于行业、成交充足、尾盘未破承接；主要扣分：前一日触及跌停、非主线、30 日趋势弱、尾盘无进攻。 | 结论映射为观察。 |\n\n**一句话判断：** 这只票有修复弹性，但前一日跌停阴影还在，隔夜不是优先选项。\n\n**交易计划：**\n- 技术面：36.20 为短压，35.85-35.95 为尾盘承接区；若跌回 35.50 下方，修复失败概率上升。\n- 消息面：未见新的强催化，主要看资源股情绪和跌停修复持续性。\n- 赔率：一般，属于反弹兑现型，不是进攻型隔夜。\n- 仓位：观察，不建议新开重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开靠近 36.20 若不放量突破应兑现；平开需守住 35.85；低开跌破 35.50 则不恋战。\n\n---",
-            "summary_short": "结论观察；催化新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。；尾盘14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全",
-            "stance": "观察",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。",
-            "risk": "成交额约 16.10 亿元，换手约 3.98%，流动性良好。",
-            "action_hint": "观察，不建议新开重仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14012,21 +14054,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002237",
-            "name": "恒邦股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
-            "original_text": "# 恒邦股份（002237）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏负面，前一日触及跌停新闻削弱隔夜赔率 | 新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。 |\n| 尾盘 | 轻微上行但不强 | 14:30 后涨幅约 +0.21%，尾盘成交约 5826 万元；收 14.16，接近全天高 14.24。 |\n| 板块 | 静态归属：贵金属/黄金；概念标签：黄金、稀缺资源、融资融券等；当日交易属性：贵金属行业偏弱中的修复；板块地位：非主线修复；相对强弱：个股 +1.29% vs 行业 -0.33%，强于约 1.62pct；隔夜影响：行业不加分，前日跌停负反馈降档。 | 行业 -0.33%，个股 +1.29%。 |\n| 类型 | 深市主板 10cm，非 ST；贵金属中盘票 | 成交额约 4.73 亿元，换手约 2.84%，流动性一般。 |\n| 日线 | 30 日仍弱，属于跌停后低位修复 | 30 日方向约 -15.16%，30 日高点 16.93，当前 14.16。 |\n| 上涨概率 | 隔夜评分：51/100；冲高概率：约40%-45%；主要加分：尾盘未走弱、强于弱行业；主要扣分：前一日触及跌停、行业偏弱、公告非正向、日线趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 恒邦股份的反弹更像跌后修复，不是适合新开隔夜仓的进攻标的。\n\n**交易计划：**\n- 技术面：14.24 是短压，14.12 是尾盘支撑；跌破 14.12 则反弹走弱。\n- 消息面：无正向新增催化，前日跌停新闻仍需消化。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0.5%-2%；高开靠近 14.24 若不突破先兑现；平开守 14.12 可等反抽；低开跌破 14.12 不参与。\n\n---",
-            "summary_short": "结论放弃；催化新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。；尾盘14:30 后涨幅约 +0.21%，尾盘成交约 5826 万元；收 14.16，接近全天高 14.2",
-            "stance": "放弃",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停；公告为副总经理辞职，非正向交易催化。",
-            "risk": "成交额约 4.73 亿元，换手约 2.84%，流动性一般。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14200,21 +14234,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002812",
-            "name": "恩捷股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
-            "original_text": "# 恩捷股份（002812）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏负面，补缴税款及滞纳金公告压制隔夜风险偏好 | 新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。 |\n| 尾盘 | 走弱，14:30 后回落 | 14:30 后涨幅约 -0.44%，尾盘成交约 2.20 亿元；收 69.44，低于尾盘起点 69.75，也低于全天高 70.30。 |\n| 板块 | 静态归属：锂电/隔膜；概念标签：锂电池、固态电池、储能、新能源车、PVDF 等；当日交易属性：新能源链修复不强；板块地位：边缘；相对强弱：个股 +0.92% vs 行业 +0.64%，仅强约 0.28pct；隔夜影响：不给溢价，叠加公告风险降档。 | 行业 +0.64%，个股 +0.92%。 |\n| 类型 | 深市主板 10cm，非 ST；锂电隔膜龙头类中大盘票 | 成交额约 21.72 亿元，换手约 3.85%，流动性好。 |\n| 日线 | 30 日仍明显下行，当前反弹力度一般 | 30 日方向约 -14.72%，30 日高点 82.83，当前 69.44。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：流动性好、行业略有修复；主要扣分：尾盘回落、负面公告、相对行业不强、30 日趋势弱。 | 结论映射为放弃。 |\n\n**一句话判断：** 恩捷股份的流动性好，但尾盘和消息面都不支持新开隔夜仓。\n\n**交易计划：**\n- 技术面：70.30 是压力，69.38-69.44 是尾盘风险线；跌破 69.38 后反抽优先减仓。\n- 消息面：补缴税款/滞纳金公告属于风险项，质子交换膜研发尚未形成收入利润也难以构成短线强催化。\n- 赔率：偏低。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约 0%-2%；高开不能快速收回 70.30 应兑现；平开若站不稳 69.44 不参与；低开跌破 69.38 直接风控。",
-            "summary_short": "结论放弃；催化新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。；尾盘14:30 后涨幅约 -0.44%，尾盘成交约 2.20 亿元；收 69.44，低于尾盘起点 69.",
-            "stance": "放弃",
-            "catalyst": "新闻显示子公司已补缴税款及滞纳金合计 2959.56 万元；另有质子交换膜研发尚未产生收入和利润的信息。",
-            "risk": "成交额约 21.72 亿元，换手约 3.85%，流动性好。",
-            "action_hint": "放弃新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14392,21 +14418,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "600589",
-            "name": "大位科技",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 大位科技（600589）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 不明确，云服务/科技属性有板块想象，但 indicator 缺失且新闻公告为空 | 当前查询未发现近端新闻/公告；题材/主营需复核。 |\n| 尾盘 | 尾盘小幅回落，不支持高分 | 14:30 后涨幅约 -0.29%，尾盘成交约 1.36 亿元；收 10.26，低于尾盘高 10.34，也低于全天高 10.50。 |\n| 板块 | 静态归属：云服务；概念标签：需复核；当日交易属性：科技方向修复但非前排；板块地位：边缘/非主线修复；相对强弱：个股 +4.69% vs 行业 +0.88%，强于约 3.81pct；隔夜影响：相对强弱加分，尾盘回落降档。 | 行业云服务 +0.88%，个股 +4.69%。 |\n| 类型 | 沪市主板 10cm，ST/主营需复核；亏损估值口径 | 成交额约 14.43 亿元，换手约 9.93%，分歧较大。 |\n| 日线 | 30 日仍明显下行，属于反弹修复 | 30 日方向约 -24.34%，30 日高点 14.58，当前 10.26。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：强于行业、成交活跃、科技方向有交易热度；主要扣分：尾盘回落、indicator 缺失、无明确催化、30 日趋势弱、换手接近高分歧。 | 结论映射为观察。 |\n\n**一句话判断：** 大位科技全天弹性可以，但尾盘不是隔夜仓最喜欢的结构，更多是观察次日是否弱转强。\n\n**交易计划：**\n- 技术面：10.34-10.50 为压力区，10.22-10.26 为尾盘风险线；跌破 10.22 转弱。\n- 消息面：缺少独立催化，主要跟随科技/云服务风险偏好。\n- 赔率：中低，需次日竞价重新验证。\n- 仓位：观察，不能因全天涨幅直接追。\n- 次日操作：次日冲高预估约 1%-3%；高开若不能快速突破 10.50 应兑现；平开需站回 10.34；低开跌破 10.22 则放弃。\n\n---",
-            "summary_short": "结论观察；催化当前查询未发现近端新闻/公告；题材/主营需复核。；尾盘14:30 后涨幅约 -0.29%，尾盘成交约 1.36 亿元；收 10.26，低于尾盘高 10.3",
-            "stance": "观察",
-            "catalyst": "当前查询未发现近端新闻/公告；题材/主营需复核。",
-            "risk": "成交额约 14.43 亿元，换手约 9.93%，分歧较大。",
-            "action_hint": "观察，不能因全天涨幅直接追。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14582,23 +14600,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000688",
-            "name": "国城矿业",
-            "groups": [
-              "open_drive_watch",
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察",
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 国城矿业（000688）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 偏弱，更多是前一日跌停后的修复，缺少正向未定价催化 | 新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。 |\n| 尾盘 | 横盘承接，未明显走弱但也没有进攻 | 14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全天高 36.20。 |\n| 板块 | 静态归属：矿业/有色；概念标签：黄金、锂、稀缺资源等；当日交易属性：资源股修复而非市场最强主线；板块地位：非主线修复；相对强弱：个股 +3.93% vs 行业 +0.92%，强于约 3.01pct；隔夜影响：相对强弱加分，但前一日跌停负反馈降档。 | 行业矿业相关 +0.92%，个股 +3.93%。 |\n| 类型 | 深市主板 10cm，非 ST；资源弹性票 | 成交额约 16.10 亿元，换手约 3.98%，流动性良好。 |\n| 日线 | 30 日仍处下行区间，属于超跌/跌停后修复 | 30 日方向约 -12.82%，30 日高点 49.50，当前 35.98。 |\n| 上涨概率 | 隔夜评分：64/100；冲高概率：约45%-50%；主要加分：强于行业、成交充足、尾盘未破承接；主要扣分：前一日触及跌停、非主线、30 日趋势弱、尾盘无进攻。 | 结论映射为观察。 |\n\n**一句话判断：** 这只票有修复弹性，但前一日跌停阴影还在，隔夜不是优先选项。\n\n**交易计划：**\n- 技术面：36.20 为短压，35.85-35.95 为尾盘承接区；若跌回 35.50 下方，修复失败概率上升。\n- 消息面：未见新的强催化，主要看资源股情绪和跌停修复持续性。\n- 赔率：一般，属于反弹兑现型，不是进攻型隔夜。\n- 仓位：观察，不建议新开重仓。\n- 次日操作：次日冲高预估约 1%-3%；高开靠近 36.20 若不放量突破应兑现；平开需守住 35.85；低开跌破 35.50 则不恋战。\n\n---",
-            "summary_short": "结论观察；催化新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。；尾盘14:30 后涨幅约 +0.08%，尾盘成交约 1.60 亿元；收 35.98，接近尾盘高位但低于全",
-            "stance": "观察",
-            "catalyst": "新闻显示 6 月 23 日盘中触及跌停板；当前查询未发现新的强正向公告。",
-            "risk": "成交额约 16.10 亿元，换手约 3.98%，流动性良好。",
-            "action_hint": "观察，不建议新开重仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14776,21 +14784,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002929",
-            "name": "润建股份",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
-            "original_text": "# 润建股份（002929）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱，公告多为担保、经营范围/章程、短融等常规事项 | 当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。 |\n| 尾盘 | 横盘承接，强度不如全天涨幅 | 14:30 后涨幅约 +0.12%，尾盘成交约 1.87 亿元；收 65.12，低于全天高 65.73。 |\n| 板块 | 静态归属：通信工程；概念标签：需复核；当日交易属性：个股相对行业独立走强；板块地位：孤立修复/非主线后排；相对强弱：个股 +5.85% vs 行业 -0.38%，强于约 6.23pct；隔夜影响：相对强弱加分，但板块不给主线溢价。 | 行业通信工程 -0.38%，个股 +5.85%。 |\n| 类型 | 深市主板 10cm，ST/主营需复核；高弹性通信工程票 | 成交额约 19.86 亿元，换手约 14.67%，分歧偏大。 |\n| 日线 | 30 日趋势仍明显下行，当前是反弹修复而非趋势主升 | 30 日方向约 -25.81%，30 日高点 100.09，当前 65.12。 |\n| 上涨概率 | 隔夜评分：70/100；冲高概率：约50%-55%；主要加分：全天涨幅强、明显强于行业、成交活跃；主要扣分：尾盘不够进攻、换手偏高、indicator 缺失、公告催化偏常规、30 日趋势弱。 | 结论映射为等。 |\n\n**一句话判断：** 润建强在“逆行业走强”，弱在尾盘没有继续进攻，隔夜最好等竞价确认资金是否继续接力。\n\n**交易计划：**\n- 技术面：65.73 为第一压力，64.78-65.00 为尾盘承接区，跌破 64.78 说明隔夜资金兑现。\n- 消息面：公告不构成强催化，更多是常规披露。\n- 赔率：中等偏博弈，适合看竞价，不适合无条件追隔夜。\n- 仓位：等待，若竞价强可轻仓。\n- 次日操作：次日冲高预估约 1.5%-4%；高开若量能放大并站稳 65.73 可看 67 附近压力；平开需快速收回 65.12；低开跌破 64.78 且无法修复，优先退出。\n\n---",
-            "summary_short": "结论等；催化当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。；尾盘14:30 后涨幅约 +0.12%，尾盘成交约 1.87 亿元；收 65.12，低于全天高 65.7",
-            "stance": "等",
-            "catalyst": "当前查询未发现新闻；公告包括为控股子公司提供担保、变更经营范围/注册资本及章程、短期融资券发行结果。",
-            "risk": "成交额约 19.86 亿元，换手约 14.67%，分歧偏大。",
-            "action_hint": "等待，若竞价强可轻仓。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -14966,21 +14966,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603327",
-            "name": "福蓉科技",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 福蓉科技（603327）— 可干（轻仓）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强，主要来自消费电子/AI 终端链条当日资金交易，而非单独公告催化 | 当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。 |\n| 尾盘 | 强承接，14:30 后继续抬升并收近全天高点 | 14:30 后涨幅约 +1.77%，尾盘成交约 2.64 亿元；尾盘区间 11.25-11.54，收 11.48；全天高 11.54、收盘接近高点。 |\n| 板块 | 静态归属：消费电子 + 消费电子材料；概念标签：消费电子、AI手机PC、AI眼镜、折叠屏、苹果概念、小米概念；当日交易属性：消费电子/AI终端扩散方向；板块地位：主线后排偏中军；相对强弱：个股 +5.61% vs 行业 +3.95%，强于约 1.66pct；隔夜影响：板块加分，但不是最前排涨停核心。 | 行业消费电子涨幅 +3.95%，个股涨幅 +5.61%。 |\n| 类型 | 沪市主板 10cm，非 ST；中小盘消费电子材料弹性票 | 成交额约 9.61 亿元，换手约 8.23%，流动性与分歧都可接受。 |\n| 日线 | 短线突破近 30 日高点，位置开始进入加速区，需防次日兑现 | 30 日高点 11.54，收盘 11.48；30 日方向约 +4.84%。 |\n| 上涨概率 | 隔夜评分：78/100；冲高概率：约55%-60%；主要加分：尾盘放量抬升、消费电子板块强、相对行业强、成交换手健康；主要扣分：无独立硬催化、涨幅已 5.61% 有兑现压力、非涨停前排。 | 结论映射为可干（轻仓）。 |\n\n**一句话判断：** 这是本组里最符合“板块强 + 尾盘强 + 收近高点”的隔夜结构，但没有涨停前排地位，只适合轻仓博次日冲高兑现。\n\n**交易计划：**\n- 技术面：强弱线看 11.25-11.30，压力看 11.54-11.70；若次日竞价高开但量价不跟，容易先兑现。\n- 消息面：没有单独重大公告催化，主要吃消费电子/AI 终端板块溢价。\n- 赔率：中等偏上，胜在尾盘结构，输在非核心前排。\n- 仓位：轻仓，不建议重仓追隔夜。\n- 次日操作：次日冲高预估约 2%-5%；高开 3% 以上若 5-10 分钟不能放量站稳 11.70，优先分批兑现；平开若快速站回 11.54 上方可看一波延续；低开若不跌破 11.25 可等反抽，跌破 11.25 则降预期离场。\n\n---",
-            "summary_short": "结论可干（轻仓）；催化当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。；尾盘14:30 后涨幅约 +1.77%，尾盘成交约 2.64 亿元；尾盘区间 11.25",
-            "stance": "可干（轻仓）",
-            "catalyst": "当前查询未发现近端新闻/公告；概念含消费电子、AI手机PC、AI眼镜、折叠屏、苹果、小米等；当日涨停主线存在消费电子/芯片扩散。",
-            "risk": "成交额约 9.61 亿元，换手约 8.23%，流动性与分歧都可接受。",
-            "action_hint": "轻仓，不建议重仓追隔夜。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -15154,21 +15146,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002426",
-            "name": "胜利精密",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 胜利精密（002426）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等，消费电子主线加分，但自身 indicator 缺失，主营/题材需复核 | 当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。 |\n| 尾盘 | 偏强，14:30 后小幅抬升，收在全天高位 | 14:30 后涨幅约 +0.93%，尾盘成交约 2.50 亿元；收 4.32，接近全天高 4.34。 |\n| 板块 | 静态归属：消费电子；概念标签：需复核；当日交易属性：消费电子板块强势扩散；板块地位：主线后排；相对强弱：个股 +4.60% vs 行业 +3.95%，强于约 0.65pct；隔夜影响：板块加分有限，需竞价确认主动性。 | 行业消费电子 +3.95%，个股 +4.60%。 |\n| 类型 | 深市主板 10cm，ST 状态因 indicator 缺失需复核；低价弹性票 | 成交额约 12.70 亿元，换手约 8.85%，流动性充足。 |\n| 日线 | 近 30 日高位突破，短线强但也临近兑现区 | 30 日高点 4.34，收 4.32；30 日方向约 +10.20%。 |\n| 上涨概率 | 隔夜评分：73/100；冲高概率：约50%-55%；主要加分：消费电子板块强、尾盘上推、成交额充足、收近高点；主要扣分：indicator 缺失、相对行业只小幅强、低价股波动与兑现压力。 | 结论映射为等。 |\n\n**一句话判断：** 图形和尾盘都不差，但由于题材/主营缺口，且只是消费电子后排，不适合在隔夜维度直接升为可干。\n\n**交易计划：**\n- 技术面：4.27-4.28 是尾盘承接区，4.34 是短压，4.54 涨停价附近是兑现预期上限。\n- 消息面：以板块交易为主，缺少独立公告或新闻催化。\n- 赔率：中等，适合等次日竞价确认，而不是尾盘盲目加仓。\n- 仓位：等待确认；若参与只能轻仓试错。\n- 次日操作：次日冲高预估约 1.5%-4%；高开需看是否放量突破 4.34，不能突破则兑现；平开站稳 4.28 可等冲高；低开跌破 4.27 且反抽无量，优先止损/放弃。\n\n---",
-            "summary_short": "结论等；催化当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。；尾盘14:30 后涨幅约 +0.93%，尾盘成交约 2.50 亿元；收 4.32，接近全天高 4.34。",
-            "stance": "等",
-            "catalyst": "当前查询未发现近端新闻/公告；静态标签缺口，不能确认是否为当日资金核心交易标的。",
-            "risk": "成交额约 12.70 亿元，换手约 8.85%，流动性充足。",
-            "action_hint": "等待确认；若参与只能轻仓试错。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         },
         {
@@ -15344,21 +15328,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "001268",
-            "name": "联合精密",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
-            "original_text": "# 联合精密（001268）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性，定增募资用于基地/产线建设，偏中长期，不是强隔夜催化 | 新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。 |\n| 尾盘 | 小幅回落，尾盘成交偏低 | 14:30 后涨幅约 -0.24%，尾盘成交约 1563 万元；收 41.92，低于全天高 43.44。 |\n| 板块 | 静态归属：通用设备/通用设备制造业；概念标签：定增预案、小盘非融、私募新进；当日交易属性：定增事件修复，不是市场主线；板块地位：边缘；相对强弱：个股 +4.41% vs 行业 +1.29%，强于约 3.12pct；隔夜影响：事件加分有限，尾盘与流动性降档。 | 行业通用设备 +1.29%，个股 +4.41%。 |\n| 类型 | 深市主板 10cm，非 ST；小市值设备股 | 成交额约 1.37 亿元，换手约 4.93%，未触发硬否决但流动性偏弱。 |\n| 日线 | 近期仍在箱体内修复，未形成强趋势 | 30 日方向约 -0.59%，30 日高点 47.20，当前 41.92。 |\n| 上涨概率 | 隔夜评分：56/100；冲高概率：约45%-50%；主要加分：强于行业、定增事件、换手适中；主要扣分：尾盘回落、成交额偏小、定增不是强短线催化、距日内高点回落较多。 | 结论映射为观察。 |\n\n**一句话判断：** 联合精密有事件，但尾盘和成交额不支持主动做隔夜，只适合观察次日定增事件是否被资金继续认可。\n\n**交易计划：**\n- 技术面：43.44 是日内压力，41.70-41.92 是尾盘风险区，跌破 41.70 则说明承接不足。\n- 消息面：定增偏中长期建设逻辑，短线溢价有限。\n- 赔率：一般偏低。\n- 仓位：观察，不建议主动新开。\n- 次日操作：次日冲高预估约 0.5%-2.5%；高开若不能放量回到 43 上方应兑现；平开守 41.70 可等反抽；低开跌破 41.70 直接降预期。\n\n---",
-            "summary_short": "结论观察；催化新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。；尾盘14:30 后涨幅约 -0.24%，尾盘成交约 1563 万元；收 41.92，低于全天高 43.",
-            "stance": "观察",
-            "catalyst": "新闻/公告显示拟以简易程序定增募资不超 2 亿元，用于顺德精密智造华南总部基地、压缩机核心零部件产线及补流；另有担保公告。",
-            "risk": "成交额约 1.37 亿元，换手约 4.93%，未触发硬否决但流动性偏弱。",
-            "action_hint": "观察，不建议主动新开。",
-            "status": "ok"
+            "status": "ok",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
           }
         }
       ],
@@ -15624,7 +15600,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -15642,13 +15618,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002290",
+            "name": "禾盛新材",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
+            "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+            "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -15748,7 +15732,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -15766,13 +15750,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "603995",
+            "name": "甬金股份",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
+            "original_text": "# 甬金股份（603995）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。 |\n| 尾盘 | 较好 | 14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾盘高位。 |\n| 板块 | 静态归属：特钢 + 不锈钢压延加工；概念标签：新材料、近期新高、含可转债、融资融券、沪港通；当日交易属性：周期/材料修复，不是全市场核心主线；板块地位：非主线修复偏前排；相对强弱：个股 +1.89% vs 行业 -0.38%，强于约 2.27pct；隔夜影响：相对强度加分，但板块不给高溢价。 | 行业特钢 -0.38%，个股强于行业 2.27pct。 |\n| 类型 | 低估值材料趋势修复 | 非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。 |\n| 日线 | 近期趋势较强 | 近30日方向 +24.22%，6月以来逐步抬升，今日从昨日回落后修复。 |\n| 上涨概率 | 隔夜评分：67/100；冲高概率：约50%-55%；主要加分：尾盘稳步抬升、相对行业强、涨幅不过热、估值不高；主要扣分：题材不在主线、催化偏弱、近期已有累计涨幅。 | 等。 |\n\n**一句话判断：甬金股份尾盘结构干净，是偏稳的隔夜候选，但缺少主线题材爆发力，只能等竞价强度。**\n\n**交易计划：**\n- 技术面：强弱线 24.20，压力 24.80-25.30；跌破 23.90 则修复失败。\n- 消息面：库存股注销偏中性偏正，不足以单独驱动连续冲高。\n- 赔率：低估值和尾盘承接提供安全垫，但弹性有限。\n- 仓位：轻仓以内，不能当主攻票。\n- 次日操作：次日冲高预估约1.5%-3.5%；高开 2% 以上若量能不足先减；平开站稳 24.20 可看 24.80；低开不破 23.90 可等反抽，跌破则离场。\n\n---",
+            "summary_short": "结论等；催化公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。；尾盘14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾",
+            "stance": "等",
+            "catalyst": "公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。",
+            "risk": "非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。",
+            "action_hint": "轻仓以内，不能当主攻票。",
+            "status": "ok"
           }
         },
         {
@@ -15872,7 +15864,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -15988,7 +15980,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -16104,7 +16096,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -16220,7 +16212,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -16336,7 +16328,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -16452,7 +16444,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -16568,7 +16560,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -16684,7 +16676,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -16800,7 +16792,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -16953,7 +16945,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17104,7 +17096,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17255,7 +17247,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17421,7 +17413,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17439,13 +17431,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002301",
+            "name": "齐心集团",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
+            "original_text": "# 齐心集团（002301）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。 |\n| 尾盘 | 明显尾盘拉升，需警惕急拉 | 14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突袭特征明显。 |\n| 板块 | 静态归属：文娱用品 + B2B；概念标签：DeepSeek、AI眼镜、信创、云计算、腾讯概念、跨境电商；当日交易属性：无明确主线验证，更偏尾盘资金试盘；板块地位：孤立修复；相对强弱：个股 +0.13% vs 行业 -1.59%，强于约 1.72pct；隔夜影响：尾盘急拉不当成强承接，降档。 | 行业文娱用品 -1.59%，个股强于行业 1.72pct。 |\n| 类型 | 尾盘异动低价股 | 非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。 |\n| 日线 | 弱势震荡 | 近30日方向 -4.58%，仍在低位震荡区。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：尾盘价格拉升、相对行业略强；主要扣分：疑似尾盘急拉、无新增催化、行业不强、全天强度不足。 | 放弃。 |\n\n**一句话判断：齐心集团尾盘涨得快，但缺少催化和板块确认，更像隔夜资金偷袭，不适合新开隔夜仓。**\n\n**交易计划：**\n- 技术面：强弱线 7.40，压力 7.55-7.80，风险线 7.20。\n- 消息面：当前查询未发现可交易新增催化。\n- 赔率：偏低；尾盘急拉后次日容易低开或冲高兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不放量即兑现；平开若不能快速站上 7.55 不追；低开跌破 7.20 直接回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。；尾盘14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。",
+            "risk": "非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -17595,7 +17595,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17613,13 +17613,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002429",
+            "name": "兆驰股份",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
+            "original_text": "# 兆驰股份（002429）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.37，缺少进攻。 |\n| 板块 | 静态归属：黑色家电 + 电子制造及运营服务；概念标签：PCB、光通信、CPO、先进封装、MiniLED、数据中心；当日交易属性：科技链跟随但个股未跑出；板块地位：边缘/后排；相对强弱：个股 +0.09% vs 行业 +0.82%，弱于约 0.73pct；隔夜影响：不给板块溢价。 | 行业黑色家电 +0.82%，个股弱于行业 0.73pct。 |\n| 类型 | 大成交后排跟随票 | 非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。 |\n| 日线 | 下行修复不足 | 近30日方向 -15.98%，从高位回落后横盘，未形成明确反转。 |\n| 上涨概率 | 隔夜评分：46/100；冲高概率：约40%-45%；主要加分：成交额充足、概念覆盖科技主线；主要扣分：弱于行业、尾盘无进攻、无新增催化、日线仍弱。 | 放弃。 |\n\n**一句话判断：兆驰股份题材看起来多，但资金没有把它当主线前排做，隔夜赔率不够。**\n\n**交易计划：**\n- 技术面：强弱线 11.30，压力 11.55-11.70，风险线 10.95。\n- 消息面：无新增强催化，静态概念不能替代资金强度。\n- 赔率：偏低；容量大但缺少上攻主动性。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不突破 11.55 先兑现；平开若量能不足不追；低开跌破 10.95 回避。\n\n---",
+            "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。；尾盘14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.3",
+            "stance": "放弃",
+            "catalyst": "当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。",
+            "risk": "非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         },
         {
@@ -17773,7 +17781,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17791,13 +17799,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002129",
+            "name": "TCL中环",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# TCL中环（002129）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。 |\n| 尾盘 | 高位横盘 | 14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，未跌破但没有继续推升。 |\n| 板块 | 静态归属：光伏设备 + 新能源光伏；概念标签：光伏、BC电池、HJT电池、芯片、新材料、苹果概念；当日交易属性：光伏超跌修复；板块地位：非主线修复偏中军；相对强弱：个股 +7.26% vs 行业 +0.35%，强于约 6.91pct；隔夜影响：个股强度加分，但涨幅接近高位兑现区，显著降档。 | 行业光伏设备 +0.35%，个股强于行业 6.91pct。 |\n| 类型 | 超跌反弹容量票 | 非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。 |\n| 日线 | 超跌反弹 | 近30日方向 +0.99%，从前期弱势中放量反弹，但 10.30-10.80 压力明显。 |\n| 上涨概率 | 隔夜评分：57/100；冲高概率：约45%-50%；主要加分：个股显著强于行业、成交额充足、尾盘横住；主要扣分：当日涨幅 7.26% 接近兑现区、光伏不是当日最强主线、无新增强催化、PE为负。 | 观察。 |\n\n**一句话判断：TCL中环今日强度够，但隔夜新开最怕次日兑现；没有新增强催化时，不宜把大涨当成安全。**\n\n**交易计划：**\n- 技术面：强弱线 10.15，压力 10.30-10.45，风险线 9.90。\n- 消息面：当前查询未发现强新增催化，主要依赖光伏反弹延续。\n- 赔率：偏一般；冲高空间有，但兑现压力也大。\n- 仓位：不建议新开重仓，只能轻仓观察。\n- 次日操作：次日冲高预估约1%-3%；高开接近 10.45 若不能封强直接兑现；平开站稳 10.15 可等 10.30；低开跌破 9.90 说明反弹失败，应止损。\n\n---",
+            "summary_short": "结论观察；催化当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。；尾盘14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，",
+            "stance": "观察",
+            "catalyst": "当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。",
+            "risk": "非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。",
+            "action_hint": "不建议新开重仓，只能轻仓观察。",
+            "status": "ok"
           }
         },
         {
@@ -17951,7 +17967,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -17969,13 +17985,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002335",
+            "name": "科华数据",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# 科华数据（002335）— 放弃（硬否决）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 方向强但不纳入普通隔夜 | 当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。 |\n| 尾盘 | 极强但已涨停 | 14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。 |\n| 板块 | 静态归属：其他发电设备 + 新能源行业；概念标签：数据中心、液冷服务、算力租赁、储能、云计算、东数西算；当日交易属性：AI算力/液冷电源链条；板块地位：主线后排偏强；相对强弱：个股 +9.99% vs 行业 +0.37%，强于约 9.62pct；隔夜影响：主线强但已涨停，普通新开隔夜体系硬否决。 | 行业其他发电设备 +0.37%，个股强于行业 9.62pct。 |\n| 类型 | 涨停主线弹性票 | 非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。 |\n| 日线 | 超跌反弹涨停 | 近30日方向 -35.78%，今日涨停修复，但仍是大跌后的强反弹。 |\n| 上涨概率 | 隔夜评分：规则剔除/仅作参考；冲高概率：不做正常映射；硬否决原因：当日已涨停且涨幅 9.99%，普通隔夜新开仓体系不允许给可干。 | 放弃（硬否决）。 |\n\n**一句话判断：科华数据方向和尾盘都强，但“已涨停”是规则硬否决；除非用户改用打板/涨停接力体系，否则不纳入普通隔夜可买。**\n\n**交易计划：**\n- 技术面：涨停价 42.26 是强弱锚，若次日不能维持强封/强换手，容易兑现。\n- 消息面：算力、液冷、数据中心方向强，但今日已被资金充分定价。\n- 赔率：普通隔夜体系赔率不适用，更多是接力体系问题。\n- 仓位：放弃普通新开隔夜。\n- 次日操作：次日冲高预估约0%-3%（不做正常概率映射）；高开需看封单和换手质量，弱封或炸板先兑现；平开低于预期视为不及预期；低开则说明接力失败，回避。",
+            "summary_short": "结论放弃（硬否决）；催化当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。；尾盘14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。",
+            "stance": "放弃（硬否决）",
+            "catalyst": "当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。",
+            "risk": "非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。",
+            "action_hint": "放弃普通新开隔夜。",
+            "status": "ok"
           }
         },
         {
@@ -18129,7 +18153,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -18147,13 +18171,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "603688",
+            "name": "石英股份",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
+            "original_text": "# 石英股份（603688）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强 | 新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。 |\n| 尾盘 | 稳定承接 | 14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，收在尾盘高位附近，未明显回落。 |\n| 板块 | 静态归属：非金属材料 + 光纤半导体材料；概念标签：光通信、存储芯片、芯片、光伏、行业龙头、近期新高；当日交易属性：半导体/材料景气链条扩散，非单纯静态概念；板块地位：主线后排偏中军；相对强弱：个股 +4.39% vs 行业 +3.69%，强于约 0.70pct；隔夜影响：给板块加分，但不是最前排。 | 行业非金属材料 +3.69%，个股强于行业 0.70pct。 |\n| 类型 | 主线材料趋势票 | 非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。 |\n| 日线 | 强趋势但高位波动 | 近30日从 72.50 到 83.40，方向 +15.03%；近端 86.33 高点后回撤再修复，仍有前高压力。 |\n| 上涨概率 | 隔夜评分：69/100；冲高概率：约50%-55%；主要加分：半导体材料催化、尾盘稳住、成交额充足、相对行业略强；主要扣分：股价近端已有较大涨幅、前高压力、不是涨停梯队前排。 | 等竞价确认。 |\n\n**一句话判断：石英股份是这批里最像“主线趋势延续”的标的，但高位压力和已定价程度不低，新开隔夜仓不宜追，只适合等强竞价确认。**\n\n**交易计划：**\n- 技术面：强弱线看 83.00-83.40，压力看 85.50-86.30；若跌回 82.80 下方，说明尾盘承接失效。\n- 消息面：高纯石英砂/半导体材料景气是核心叙事，需看次日半导体材料链是否继续扩散。\n- 赔率：赔率中等偏上，但不是低位首启，追高安全垫不足。\n- 仓位：仅适合轻仓观察，不适合重仓隔夜。\n- 次日操作：次日冲高预估约2%-4%；高开 2% 以上需看开盘 5-10 分钟能否站稳 85 附近，否则先兑现；平开若放量站回 84 可持有到前高附近；低开若不破 82.80 且板块强可等反抽，破位则止损。\n\n---",
+            "summary_short": "结论等；催化新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。；尾盘14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，",
+            "stance": "等",
+            "catalyst": "新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。",
+            "risk": "非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。",
+            "action_hint": "仅适合轻仓观察，不适合重仓隔夜。",
+            "status": "ok"
           }
         },
         {
@@ -18306,7 +18338,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -18324,13 +18356,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002134",
+            "name": "天津普林",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 天津普林（002134）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱 | 公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。 |\n| 尾盘 | 小幅修复但不强 | 14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低于日内高位。 |\n| 板块 | 静态归属：元器件 + 电子元器件制造；概念标签：PCB概念、玻璃基板、折叠屏、国防军工、大飞机、新能源车；当日交易属性：电子/PCB链条跟随，非绝对前排；板块地位：主线后排；相对强弱：个股 +4.56% vs 行业 +5.62%，弱于约 1.06pct；隔夜影响：板块强但个股弱于板块，降档。 | 行业元器件 +5.62%，个股弱于行业 1.06pct。 |\n| 类型 | 题材弹性票 | 非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。 |\n| 日线 | 修复中但压力重 | 近30日方向 -2.09%，今日高开冲高后回落，30.80-31.10 是短压。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：电子/PCB板块强、尾盘小幅修复、成交额合格；主要扣分：弱于行业、盘中冲高回落、公告催化偏弱、概念含拟减持标签需复核。 | 观察。 |\n\n**一句话判断：天津普林有板块热度但不是强于板块的前排，隔夜更像跟风套利，不能主动追。**\n\n**交易计划：**\n- 技术面：强弱线 29.50，压力 30.50-31.10，风险线 28.80。\n- 消息面：公告不构成强催化，主要看 PCB/玻璃基板是否继续活跃。\n- 赔率：一般；板块强时有冲高，板块分化时容易先兑现。\n- 仓位：只适合小仓试错，弱竞价不做。\n- 次日操作：次日冲高预估约1%-3%；高开到 30.50 附近不放量先减；平开若站稳 29.50 可看 30.20；低开跌破 28.80 放弃反抽幻想。\n\n---",
+            "summary_short": "结论观察；催化公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。；尾盘14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低",
+            "stance": "观察",
+            "catalyst": "公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。",
+            "risk": "非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。",
+            "action_hint": "只适合小仓试错，弱竞价不做。",
+            "status": "ok"
           }
         },
         {
@@ -18481,7 +18521,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -18499,13 +18539,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "002353",
+            "name": "杰瑞股份",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 杰瑞股份（002353）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 较强 | 证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。 |\n| 尾盘 | 横盘承接 | 14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.81-164.00，未明显进攻。 |\n| 板块 | 静态归属：专用设备；概念标签因 indicator 不完整需复核，交易上主要看 AIDC电源、燃气轮机、电力设备；当日交易属性：AI算力电源链外溢；板块地位：容量中军/趋势中军；相对强弱：个股 +2.90% vs 行业 +1.01%，强于约 1.89pct；隔夜影响：催化加分，但尾盘未放量上攻，需降一档。 | 行业专用设备 +1.01%，个股强于行业 1.89pct。 |\n| 类型 | 大市值容量趋势票 | 非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。 |\n| 日线 | 高位震荡修复 | 近30日方向 +18.09%，近期冲至 175.50 后回落，今日反弹但未收复前高。 |\n| 上涨概率 | 隔夜评分：63/100；冲高概率：约45%-50%；主要加分：AIDC电源催化、机构调研热度、容量票流动性好、相对行业强；主要扣分：indicator_incomplete、尾盘横盘不进攻、近端高位回落后压力仍在。 | 观察。 |\n\n**一句话判断：杰瑞股份逻辑强于形态，适合跟踪而不是直接新开隔夜；次日能否冲高取决于 AIDC 电源链是否继续被资金强化。**\n\n**交易计划：**\n- 技术面：强弱线 163.00，压力 167.50-170.00，风险线 160.00。\n- 消息面：AIDC 电源和燃气轮机涨价是正催化，但已被连续报道，需防兑现。\n- 赔率：中等；逻辑有弹性，但高位筹码压力压制隔夜赔率。\n- 仓位：观察仓或不做，新开不宜重。\n- 次日操作：次日冲高预估约1.5%-3%；高开接近 167 但放量不足先减；平开站稳 163 可等 166-168；低开跌破 160-162 区间则以风控为先。\n\n---",
+            "summary_short": "结论观察；催化证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。；尾盘14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.",
+            "stance": "观察",
+            "catalyst": "证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。",
+            "risk": "非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。",
+            "action_hint": "观察仓或不做，新开不宜重。",
+            "status": "ok"
           }
         },
         {
@@ -18658,7 +18706,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-06-25T14:54:03+08:00",
+          "source_mtime": "2026-06-25T14:54:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -18676,13 +18724,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
-            "original_text": "",
-            "summary_short": "",
-            "stance": "",
-            "catalyst": "",
-            "risk": "",
-            "action_hint": ""
+            "symbol": "000620",
+            "name": "盈新发展",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
+            "original_text": "# 盈新发展（000620）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 数据不足 | 新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。 |\n| 板块 | 静态归属：动物保健；概念标签：indicator 不完整，需复核；当日交易属性：低价股/反弹属性为主，未见主线确认；板块地位：边缘；相对强弱：个股 +4.70% vs 行业 -1.22%，强于约 5.92pct；隔夜影响：相对强但数据缺口和换手过高，降档。 | 行业动物保健 -1.22%，个股强于行业 5.92pct；脚本 lookup 中 stock_pct 曾出现 -3.02 异常，最终以行情卡 +4.70% 为准。 |\n| 类型 | 低价高换手波动票 | 成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。 |\n| 日线 | 低位震荡反弹 | 近30日方向 +0.97%，日内曾触及涨停价 3.28 后回落至 3.12。 |\n| 上涨概率 | 隔夜评分：41/100；冲高概率：约40%以下-45%；主要加分：相对行业强、成交额充足；主要扣分：indicator_incomplete、尾盘偏弱、日内冲高回落、高换手分歧、低价股波动大。 | 放弃。 |\n\n**一句话判断：盈新发展最大问题不是涨幅，而是“数据缺口 + 高换手 + 冲高回落后尾盘不强”，不符合新开隔夜仓的确定性要求。**\n\n**交易计划：**\n- 技术面：强弱线 3.11-3.12，压力 3.20-3.28，风险线 3.00。\n- 消息面：题材和主营需复核，不能按强催化处理。\n- 赔率：偏低；次日若低开容易触发获利盘和分歧盘兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开若不能快速站上 3.20 先兑现；平开不放量不追；低开跌破 3.00 直接回避。\n\n---",
+            "summary_short": "结论放弃；催化新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。；尾盘14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。",
+            "stance": "放弃",
+            "catalyst": "新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。",
+            "risk": "成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。",
+            "action_hint": "放弃新开。",
+            "status": "ok"
           }
         }
       ],
@@ -18839,38 +18895,350 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/four-layer-tracking.close.json",
         "exists": true,
         "size": 109415,
-        "modified_at": "2026-06-25T14:54:03+08:00",
-        "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+        "modified_at": "2026-06-25T14:54:25+08:00",
+        "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
       }
     }
   },
   "overnight_report_brief": {
-    "status": "missing",
-    "covered_count": 0,
+    "status": "ok",
+    "covered_count": 10,
     "failed_count": 0,
-    "query_symbol_count": 0,
-    "source_groups": [],
+    "query_symbol_count": 10,
+    "source_groups": [
+      "formal_top3",
+      "open_drive_watch",
+      "overnight_limit_watch",
+      "theme_rotation_watch"
+    ],
     "source_run_date": "2026-06-25",
-    "records": [],
+    "records": [
+      {
+        "symbol": "002290",
+        "name": "禾盛新材",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "# 禾盛新材（002290）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。 |\n| 尾盘 | 小幅走弱 | 14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.80，收盘未能走强。 |\n| 板块 | 静态归属：家电零部件 + 家电用复合材料；概念标签：DeepSeek、东数西算、芯片、人工智能、智能医疗、控制变更；当日交易属性：非明确主线，偏静态概念；板块地位：边缘；相对强弱：个股 +1.64% vs 行业 -0.71%，强于约 2.35pct；隔夜影响：相对强度加分，但尾盘和催化不足，不能给隔夜溢价。 | 行业家电零部件 -0.71%，个股强于行业 2.35pct。 |\n| 类型 | 高估值题材边缘票 | 非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。 |\n| 日线 | 高位回落后弱修复 | 近30日方向 -13.48%，从 108.91 区域下行后反弹有限。 |\n| 上涨概率 | 隔夜评分：44/100；冲高概率：约40%-45%；主要加分：相对行业强、成交额合格；主要扣分：尾盘走弱、催化缺失、主营与热门概念贴合度一般、估值偏高、日线仍在回落修复。 | 放弃。 |\n\n**一句话判断：禾盛新材没有形成隔夜仓最关键的尾盘进攻，题材也不够硬，不适合新开。**\n\n**交易计划：**\n- 技术面：强弱线 89.40，压力 91.00-92.80，风险线 86.80。\n- 消息面：当前查询未发现新增强催化，静态 AI/芯片标签不足以支撑隔夜溢价。\n- 赔率：偏低；上方压力和估值压制明显。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开靠近 91 不放量先走；平开若不能站稳 89.80 不追；低开跌破 86.80 回避。\n\n---",
+        "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。；尾盘14:30 后从 89.73 到 89.64，方向 -0.10%，尾盘高点 89.8",
+        "stance": "放弃",
+        "catalyst": "当前查询未发现新增新闻/公告；概念有 DeepSeek、东数西算、芯片、人工智能等，但主营为家电用复合材料，静态概念与主营贴合度需谨慎。",
+        "risk": "非 ST，成交额 9.84 亿，换手 4.46%，PE TTM 128.99。",
+        "action_hint": "放弃新开。",
+        "status": "ok"
+      },
+      {
+        "symbol": "603995",
+        "name": "甬金股份",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "# 甬金股份（603995）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。 |\n| 尾盘 | 较好 | 14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾盘高位。 |\n| 板块 | 静态归属：特钢 + 不锈钢压延加工；概念标签：新材料、近期新高、含可转债、融资融券、沪港通；当日交易属性：周期/材料修复，不是全市场核心主线；板块地位：非主线修复偏前排；相对强弱：个股 +1.89% vs 行业 -0.38%，强于约 2.27pct；隔夜影响：相对强度加分，但板块不给高溢价。 | 行业特钢 -0.38%，个股强于行业 2.27pct。 |\n| 类型 | 低估值材料趋势修复 | 非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。 |\n| 日线 | 近期趋势较强 | 近30日方向 +24.22%，6月以来逐步抬升，今日从昨日回落后修复。 |\n| 上涨概率 | 隔夜评分：67/100；冲高概率：约50%-55%；主要加分：尾盘稳步抬升、相对行业强、涨幅不过热、估值不高；主要扣分：题材不在主线、催化偏弱、近期已有累计涨幅。 | 等。 |\n\n**一句话判断：甬金股份尾盘结构干净，是偏稳的隔夜候选，但缺少主线题材爆发力，只能等竞价强度。**\n\n**交易计划：**\n- 技术面：强弱线 24.20，压力 24.80-25.30；跌破 23.90 则修复失败。\n- 消息面：库存股注销偏中性偏正，不足以单独驱动连续冲高。\n- 赔率：低估值和尾盘承接提供安全垫，但弹性有限。\n- 仓位：轻仓以内，不能当主攻票。\n- 次日操作：次日冲高预估约1.5%-3.5%；高开 2% 以上若量能不足先减；平开站稳 24.20 可看 24.80；低开不破 23.90 可等反抽，跌破则离场。\n\n---",
+        "summary_short": "结论等；催化公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。；尾盘14:30 后从 24.00 到 24.26，方向 +1.08%，尾盘高点 24.28，收盘基本在尾",
+        "stance": "等",
+        "catalyst": "公告为回购专用证券账户库存股注销实施，偏治理/股本事件，对短线刺激有限。",
+        "risk": "非 ST，成交额 3.20 亿，换手 3.66%，PE TTM 17.48，流动性合格。",
+        "action_hint": "轻仓以内，不能当主攻票。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002301",
+        "name": "齐心集团",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "# 齐心集团（002301）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。 |\n| 尾盘 | 明显尾盘拉升，需警惕急拉 | 14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突袭特征明显。 |\n| 板块 | 静态归属：文娱用品 + B2B；概念标签：DeepSeek、AI眼镜、信创、云计算、腾讯概念、跨境电商；当日交易属性：无明确主线验证，更偏尾盘资金试盘；板块地位：孤立修复；相对强弱：个股 +0.13% vs 行业 -1.59%，强于约 1.72pct；隔夜影响：尾盘急拉不当成强承接，降档。 | 行业文娱用品 -1.59%，个股强于行业 1.72pct。 |\n| 类型 | 尾盘异动低价股 | 非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。 |\n| 日线 | 弱势震荡 | 近30日方向 -4.58%，仍在低位震荡区。 |\n| 上涨概率 | 隔夜评分：48/100；冲高概率：约40%-45%；主要加分：尾盘价格拉升、相对行业略强；主要扣分：疑似尾盘急拉、无新增催化、行业不强、全天强度不足。 | 放弃。 |\n\n**一句话判断：齐心集团尾盘涨得快，但缺少催化和板块确认，更像隔夜资金偷袭，不适合新开隔夜仓。**\n\n**交易计划：**\n- 技术面：强弱线 7.40，压力 7.55-7.80，风险线 7.20。\n- 消息面：当前查询未发现可交易新增催化。\n- 赔率：偏低；尾盘急拉后次日容易低开或冲高兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不放量即兑现；平开若不能快速站上 7.55 不追；低开跌破 7.20 直接回避。\n\n---",
+        "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。；尾盘14:30 后从 7.21 到 7.50，方向 +4.02%，但全天涨幅仅 +0.13%，尾盘突",
+        "stance": "放弃",
+        "catalyst": "当前查询未发现新增新闻/公告；静态概念较多，包括 DeepSeek、AI眼镜、远程办公、信创、云计算等，但无强交易事件验证。",
+        "risk": "非 ST，成交额 1.85 亿，换手 3.54%，流动性尚可但强度来自尾盘。",
+        "action_hint": "放弃新开。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002429",
+        "name": "兆驰股份",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "# 兆驰股份（002429）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱 | 当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.37，缺少进攻。 |\n| 板块 | 静态归属：黑色家电 + 电子制造及运营服务；概念标签：PCB、光通信、CPO、先进封装、MiniLED、数据中心；当日交易属性：科技链跟随但个股未跑出；板块地位：边缘/后排；相对强弱：个股 +0.09% vs 行业 +0.82%，弱于约 0.73pct；隔夜影响：不给板块溢价。 | 行业黑色家电 +0.82%，个股弱于行业 0.73pct。 |\n| 类型 | 大成交后排跟随票 | 非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。 |\n| 日线 | 下行修复不足 | 近30日方向 -15.98%，从高位回落后横盘，未形成明确反转。 |\n| 上涨概率 | 隔夜评分：46/100；冲高概率：约40%-45%；主要加分：成交额充足、概念覆盖科技主线；主要扣分：弱于行业、尾盘无进攻、无新增催化、日线仍弱。 | 放弃。 |\n\n**一句话判断：兆驰股份题材看起来多，但资金没有把它当主线前排做，隔夜赔率不够。**\n\n**交易计划：**\n- 技术面：强弱线 11.30，压力 11.55-11.70，风险线 10.95。\n- 消息面：无新增强催化，静态概念不能替代资金强度。\n- 赔率：偏低；容量大但缺少上攻主动性。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开不突破 11.55 先兑现；平开若量能不足不追；低开跌破 10.95 回避。\n\n---",
+        "summary_short": "结论放弃；催化当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。；尾盘14:30 后从 11.35 到 11.36，方向 +0.09%，尾盘区间 11.30-11.3",
+        "stance": "放弃",
+        "catalyst": "当前查询未发现新增新闻/公告；概念包括 PCB、光通信、CPO、先进封装、MiniLED、数据中心等，但日内未体现领先强度。",
+        "risk": "非 ST，成交额 12.15 亿，换手 2.38%，流动性足但弹性一般。",
+        "action_hint": "放弃新开。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002129",
+        "name": "TCL中环",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "# TCL中环（002129）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 弱到中等 | 当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。 |\n| 尾盘 | 高位横盘 | 14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，未跌破但没有继续推升。 |\n| 板块 | 静态归属：光伏设备 + 新能源光伏；概念标签：光伏、BC电池、HJT电池、芯片、新材料、苹果概念；当日交易属性：光伏超跌修复；板块地位：非主线修复偏中军；相对强弱：个股 +7.26% vs 行业 +0.35%，强于约 6.91pct；隔夜影响：个股强度加分，但涨幅接近高位兑现区，显著降档。 | 行业光伏设备 +0.35%，个股强于行业 6.91pct。 |\n| 类型 | 超跌反弹容量票 | 非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。 |\n| 日线 | 超跌反弹 | 近30日方向 +0.99%，从前期弱势中放量反弹，但 10.30-10.80 压力明显。 |\n| 上涨概率 | 隔夜评分：57/100；冲高概率：约45%-50%；主要加分：个股显著强于行业、成交额充足、尾盘横住；主要扣分：当日涨幅 7.26% 接近兑现区、光伏不是当日最强主线、无新增强催化、PE为负。 | 观察。 |\n\n**一句话判断：TCL中环今日强度够，但隔夜新开最怕次日兑现；没有新增强催化时，不宜把大涨当成安全。**\n\n**交易计划：**\n- 技术面：强弱线 10.15，压力 10.30-10.45，风险线 9.90。\n- 消息面：当前查询未发现强新增催化，主要依赖光伏反弹延续。\n- 赔率：偏一般；冲高空间有，但兑现压力也大。\n- 仓位：不建议新开重仓，只能轻仓观察。\n- 次日操作：次日冲高预估约1%-3%；高开接近 10.45 若不能封强直接兑现；平开站稳 10.15 可等 10.30；低开跌破 9.90 说明反弹失败，应止损。\n\n---",
+        "summary_short": "结论观察；催化当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。；尾盘14:30 后从 10.20 到 10.19，方向 -0.10%，尾盘区间 10.15-10.24，",
+        "stance": "观察",
+        "catalyst": "当前查询未发现新增新闻/公告；概念为光伏、BC电池、HJT电池、芯片、新材料，更多是板块反弹属性。",
+        "risk": "非 ST，成交额 31.99 亿，换手 7.93%，PE TTM 为负，基本面压力仍在。",
+        "action_hint": "不建议新开重仓，只能轻仓观察。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002335",
+        "name": "科华数据",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "# 科华数据（002335）— 放弃（硬否决）\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 方向强但不纳入普通隔夜 | 当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。 |\n| 尾盘 | 极强但已涨停 | 14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。 |\n| 板块 | 静态归属：其他发电设备 + 新能源行业；概念标签：数据中心、液冷服务、算力租赁、储能、云计算、东数西算；当日交易属性：AI算力/液冷电源链条；板块地位：主线后排偏强；相对强弱：个股 +9.99% vs 行业 +0.37%，强于约 9.62pct；隔夜影响：主线强但已涨停，普通新开隔夜体系硬否决。 | 行业其他发电设备 +0.37%，个股强于行业 9.62pct。 |\n| 类型 | 涨停主线弹性票 | 非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。 |\n| 日线 | 超跌反弹涨停 | 近30日方向 -35.78%，今日涨停修复，但仍是大跌后的强反弹。 |\n| 上涨概率 | 隔夜评分：规则剔除/仅作参考；冲高概率：不做正常映射；硬否决原因：当日已涨停且涨幅 9.99%，普通隔夜新开仓体系不允许给可干。 | 放弃（硬否决）。 |\n\n**一句话判断：科华数据方向和尾盘都强，但“已涨停”是规则硬否决；除非用户改用打板/涨停接力体系，否则不纳入普通隔夜可买。**\n\n**交易计划：**\n- 技术面：涨停价 42.26 是强弱锚，若次日不能维持强封/强换手，容易兑现。\n- 消息面：算力、液冷、数据中心方向强，但今日已被资金充分定价。\n- 赔率：普通隔夜体系赔率不适用，更多是接力体系问题。\n- 仓位：放弃普通新开隔夜。\n- 次日操作：次日冲高预估约0%-3%（不做正常概率映射）；高开需看封单和换手质量，弱封或炸板先兑现；平开低于预期视为不及预期；低开则说明接力失败，回避。",
+        "summary_short": "结论放弃（硬否决）；催化当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。；尾盘14:30 后从 40.67 到 42.26，方向 +3.91%，尾盘最后阶段封至涨停。",
+        "stance": "放弃（硬否决）",
+        "catalyst": "当前查询未发现新增新闻/公告；概念包括数据中心、液冷服务、算力租赁、储能、云计算、东数西算等，契合当日算力/液冷方向。",
+        "risk": "非 ST，成交额 24.50 亿，换手 9.21%，但已涨停。",
+        "action_hint": "放弃普通新开隔夜。",
+        "status": "ok"
+      },
+      {
+        "symbol": "603688",
+        "name": "石英股份",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "# 石英股份（603688）— 等\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中等偏强 | 新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。 |\n| 尾盘 | 稳定承接 | 14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，收在尾盘高位附近，未明显回落。 |\n| 板块 | 静态归属：非金属材料 + 光纤半导体材料；概念标签：光通信、存储芯片、芯片、光伏、行业龙头、近期新高；当日交易属性：半导体/材料景气链条扩散，非单纯静态概念；板块地位：主线后排偏中军；相对强弱：个股 +4.39% vs 行业 +3.69%，强于约 0.70pct；隔夜影响：给板块加分，但不是最前排。 | 行业非金属材料 +3.69%，个股强于行业 0.70pct。 |\n| 类型 | 主线材料趋势票 | 非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。 |\n| 日线 | 强趋势但高位波动 | 近30日从 72.50 到 83.40，方向 +15.03%；近端 86.33 高点后回撤再修复，仍有前高压力。 |\n| 上涨概率 | 隔夜评分：69/100；冲高概率：约50%-55%；主要加分：半导体材料催化、尾盘稳住、成交额充足、相对行业略强；主要扣分：股价近端已有较大涨幅、前高压力、不是涨停梯队前排。 | 等竞价确认。 |\n\n**一句话判断：石英股份是这批里最像“主线趋势延续”的标的，但高位压力和已定价程度不低，新开隔夜仓不宜追，只适合等强竞价确认。**\n\n**交易计划：**\n- 技术面：强弱线看 83.00-83.40，压力看 85.50-86.30；若跌回 82.80 下方，说明尾盘承接失效。\n- 消息面：高纯石英砂/半导体材料景气是核心叙事，需看次日半导体材料链是否继续扩散。\n- 赔率：赔率中等偏上，但不是低位首启，追高安全垫不足。\n- 仓位：仅适合轻仓观察，不适合重仓隔夜。\n- 次日操作：次日冲高预估约2%-4%；高开 2% 以上需看开盘 5-10 分钟能否站稳 85 附近，否则先兑现；平开若放量站回 84 可持有到前高附近；低开若不破 82.80 且板块强可等反抽，破位则止损。\n\n---",
+        "summary_short": "结论等；催化新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。；尾盘14:30 后从 83.23 到 83.40，方向 +0.20%，尾盘区间 82.95-83.40，",
+        "stance": "等",
+        "catalyst": "新闻提到高纯石英砂受益半导体及光纤需求，龙头股价表现强；属于景气上行叙事，但已有一定定价。",
+        "risk": "非 ST，成交额 30.26 亿，换手 6.92%，流动性充足。",
+        "action_hint": "仅适合轻仓观察，不适合重仓隔夜。",
+        "status": "ok"
+      },
+      {
+        "symbol": "000620",
+        "name": "盈新发展",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "# 盈新发展（000620）— 放弃\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 数据不足 | 新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。 |\n| 尾盘 | 横盘偏弱 | 14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。 |\n| 板块 | 静态归属：动物保健；概念标签：indicator 不完整，需复核；当日交易属性：低价股/反弹属性为主，未见主线确认；板块地位：边缘；相对强弱：个股 +4.70% vs 行业 -1.22%，强于约 5.92pct；隔夜影响：相对强但数据缺口和换手过高，降档。 | 行业动物保健 -1.22%，个股强于行业 5.92pct；脚本 lookup 中 stock_pct 曾出现 -3.02 异常，最终以行情卡 +4.70% 为准。 |\n| 类型 | 低价高换手波动票 | 成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。 |\n| 日线 | 低位震荡反弹 | 近30日方向 +0.97%，日内曾触及涨停价 3.28 后回落至 3.12。 |\n| 上涨概率 | 隔夜评分：41/100；冲高概率：约40%以下-45%；主要加分：相对行业强、成交额充足；主要扣分：indicator_incomplete、尾盘偏弱、日内冲高回落、高换手分歧、低价股波动大。 | 放弃。 |\n\n**一句话判断：盈新发展最大问题不是涨幅，而是“数据缺口 + 高换手 + 冲高回落后尾盘不强”，不符合新开隔夜仓的确定性要求。**\n\n**交易计划：**\n- 技术面：强弱线 3.11-3.12，压力 3.20-3.28，风险线 3.00。\n- 消息面：题材和主营需复核，不能按强催化处理。\n- 赔率：偏低；次日若低开容易触发获利盘和分歧盘兑现。\n- 仓位：放弃新开。\n- 次日操作：次日冲高预估约0%-2%；高开若不能快速站上 3.20 先兑现；平开不放量不追；低开跌破 3.00 直接回避。\n\n---",
+        "summary_short": "结论放弃；催化新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。；尾盘14:30 后从 3.13 到 3.12，方向 -0.32%，尾盘区间 3.11-3.14，无进攻。",
+        "stance": "放弃",
+        "catalyst": "新闻/公告当前查询未发现；indicator 字段不完整，主营、题材、ST 状态需复核。",
+        "risk": "成交额 18.01 亿，换手 12.21%，PE TTM 为负，分歧偏高。",
+        "action_hint": "放弃新开。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002134",
+        "name": "天津普林",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "# 天津普林（002134）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 中性偏弱 | 公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。 |\n| 尾盘 | 小幅修复但不强 | 14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低于日内高位。 |\n| 板块 | 静态归属：元器件 + 电子元器件制造；概念标签：PCB概念、玻璃基板、折叠屏、国防军工、大飞机、新能源车；当日交易属性：电子/PCB链条跟随，非绝对前排；板块地位：主线后排；相对强弱：个股 +4.56% vs 行业 +5.62%，弱于约 1.06pct；隔夜影响：板块强但个股弱于板块，降档。 | 行业元器件 +5.62%，个股弱于行业 1.06pct。 |\n| 类型 | 题材弹性票 | 非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。 |\n| 日线 | 修复中但压力重 | 近30日方向 -2.09%，今日高开冲高后回落，30.80-31.10 是短压。 |\n| 上涨概率 | 隔夜评分：58/100；冲高概率：约45%-50%；主要加分：电子/PCB板块强、尾盘小幅修复、成交额合格；主要扣分：弱于行业、盘中冲高回落、公告催化偏弱、概念含拟减持标签需复核。 | 观察。 |\n\n**一句话判断：天津普林有板块热度但不是强于板块的前排，隔夜更像跟风套利，不能主动追。**\n\n**交易计划：**\n- 技术面：强弱线 29.50，压力 30.50-31.10，风险线 28.80。\n- 消息面：公告不构成强催化，主要看 PCB/玻璃基板是否继续活跃。\n- 赔率：一般；板块强时有冲高，板块分化时容易先兑现。\n- 仓位：只适合小仓试错，弱竞价不做。\n- 次日操作：次日冲高预估约1%-3%；高开到 30.50 附近不放量先减；平开若站稳 29.50 可看 30.20；低开跌破 28.80 放弃反抽幻想。\n\n---",
+        "summary_short": "结论观察；催化公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。；尾盘14:30 后从 29.33 到 29.56，方向 +0.78%，但全天高点 30.80，收盘明显低",
+        "stance": "观察",
+        "catalyst": "公告为授信、董事/总裁变动、担保、股东会通知等，交易性不强；概念上有玻璃基板、PCB、折叠屏。",
+        "risk": "非 ST，成交额 5.97 亿，换手 8.07%，流动性可，但分歧不小。",
+        "action_hint": "只适合小仓试错，弱竞价不做。",
+        "status": "ok"
+      },
+      {
+        "symbol": "002353",
+        "name": "杰瑞股份",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "# 杰瑞股份（002353）— 观察\n\n| 项 | 判断 | 数据 |\n|---|---|---|\n| 催化 | 较强 | 证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。 |\n| 尾盘 | 横盘承接 | 14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.81-164.00，未明显进攻。 |\n| 板块 | 静态归属：专用设备；概念标签因 indicator 不完整需复核，交易上主要看 AIDC电源、燃气轮机、电力设备；当日交易属性：AI算力电源链外溢；板块地位：容量中军/趋势中军；相对强弱：个股 +2.90% vs 行业 +1.01%，强于约 1.89pct；隔夜影响：催化加分，但尾盘未放量上攻，需降一档。 | 行业专用设备 +1.01%，个股强于行业 1.89pct。 |\n| 类型 | 大市值容量趋势票 | 非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。 |\n| 日线 | 高位震荡修复 | 近30日方向 +18.09%，近期冲至 175.50 后回落，今日反弹但未收复前高。 |\n| 上涨概率 | 隔夜评分：63/100；冲高概率：约45%-50%；主要加分：AIDC电源催化、机构调研热度、容量票流动性好、相对行业强；主要扣分：indicator_incomplete、尾盘横盘不进攻、近端高位回落后压力仍在。 | 观察。 |\n\n**一句话判断：杰瑞股份逻辑强于形态，适合跟踪而不是直接新开隔夜；次日能否冲高取决于 AIDC 电源链是否继续被资金强化。**\n\n**交易计划：**\n- 技术面：强弱线 163.00，压力 167.50-170.00，风险线 160.00。\n- 消息面：AIDC 电源和燃气轮机涨价是正催化，但已被连续报道，需防兑现。\n- 赔率：中等；逻辑有弹性，但高位筹码压力压制隔夜赔率。\n- 仓位：观察仓或不做，新开不宜重。\n- 次日操作：次日冲高预估约1.5%-3%；高开接近 167 但放量不足先减；平开站稳 163 可等 166-168；低开跌破 160-162 区间则以风控为先。\n\n---",
+        "summary_short": "结论观察；催化证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。；尾盘14:30 后从 163.61 到 163.75，方向 +0.09%，尾盘区间 162.",
+        "stance": "观察",
+        "catalyst": "证券时报报道 AIDC 电源景气度上行，杰瑞股份为机构调研频繁标的，并涉及燃气轮机发电机组价格上涨；近10日海外机构调研关注度较高。",
+        "risk": "非 ST 状态字段缺口但行情正常；成交额 23.73 亿，换手 2.09%，流动性好。",
+        "action_hint": "观察仓或不做，新开不宜重。",
+        "status": "ok"
+      }
+    ],
     "final_ranking": {
-      "items": [],
-      "summary": ""
+      "items": [
+        {
+          "rank": 1,
+          "symbol": "603688",
+          "name": "石英股份",
+          "verdict": "结论",
+          "text": "等；半导体/非金属材料方向强，尾盘稳住高位，但个股已处相对高位且行业只小幅跑赢，适合等竞价确认，不追。"
+        },
+        {
+          "rank": 2,
+          "symbol": "603995",
+          "name": "甬金股份",
+          "verdict": "结论",
+          "text": "等；尾盘稳步上推、相对行业强，涨幅克制，但催化偏弱，只能等开盘承接。"
+        },
+        {
+          "rank": 3,
+          "symbol": "002353",
+          "name": "杰瑞股份",
+          "verdict": "结论",
+          "text": "观察；AIDC电源/机构调研催化较强，容量好，但尾盘不够进攻且指标字段缺口，隔夜溢价要打折。"
+        },
+        {
+          "rank": 4,
+          "symbol": "002134",
+          "name": "天津普林",
+          "verdict": "结论",
+          "text": "观察；PCB/玻璃基板方向有交易热度，尾盘小幅修复，但弱于元器件行业且盘中冲高回落，不能排前。"
+        },
+        {
+          "rank": 5,
+          "symbol": "002129",
+          "name": "TCL中环",
+          "verdict": "结论",
+          "text": "观察；光伏反弹中个股显著强于行业，但日涨 7.26% 接近高位兑现区，尾盘横住未继续上攻，只能低吸/持有风控思路。"
+        },
+        {
+          "rank": 6,
+          "symbol": "002301",
+          "name": "齐心集团",
+          "verdict": "结论",
+          "text": "放弃；尾盘拉升明显但更像资金尾盘突袭，缺少催化和板块主线确认。"
+        },
+        {
+          "rank": 7,
+          "symbol": "002429",
+          "name": "兆驰股份",
+          "verdict": "结论",
+          "text": "放弃；成交活跃但全天弱于行业，尾盘仅横盘，板块溢价不足。"
+        },
+        {
+          "rank": 8,
+          "symbol": "002290",
+          "name": "禾盛新材",
+          "verdict": "结论",
+          "text": "放弃；相对行业强但尾盘小幅走弱、无新增催化，PE偏高，赔率一般。"
+        },
+        {
+          "rank": 9,
+          "symbol": "000620",
+          "name": "盈新发展",
+          "verdict": "结论",
+          "text": "放弃；题材/主营字段缺口，换手偏高且尾盘不强，低价股波动大。"
+        },
+        {
+          "rank": 10,
+          "symbol": "002335",
+          "name": "科华数据",
+          "verdict": "结论",
+          "text": "放弃（硬否决）；已涨停且涨幅 9.99%，普通新开隔夜仓体系直接规则剔除。"
+        }
+      ],
+      "summary": "市场状态：分化偏进攻。涨停榜显示半导体、先进封装、液冷/算力、电容等方向有明显资金攻击，中科曙光、长电科技、太极实业等容量/趋势票强化主线；同时跌停家数仍不低，市场不是全面普涨。隔夜仓应优先选择“主线内、尾盘稳、未涨停、未高位透支”的票，回避尾盘急拉和涨停后排。"
     },
     "file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 60489,
+      "modified_at": "2026-06-25T14:58:03+08:00",
+      "sha256": "8f3cb90b8f85bd0c4f5b830e7bd90a8639df4307efc395f1262911330c953100"
     }
   },
   "paper_trade": {
-    "status": "missing",
-    "ledger_status": "missing",
-    "summary_status": "missing",
-    "artifact_scope": "canonical",
+    "status": "ok",
+    "ledger_status": "ok",
+    "summary_status": "ok",
+    "artifact_scope": "close",
     "date": "2026-06-25",
-    "source_close_date": "",
+    "source_close_date": "2026-06-25",
     "ledger_matches_selected_close": true,
-    "summary": {},
+    "summary": {
+      "schema_version": "paper_trade_summary.v1",
+      "date": "2026-06-25",
+      "source_close_date": "2026-06-25",
+      "generated_at": "2026-06-25T14:54:32+08:00",
+      "mode": "simulated_follow",
+      "is_real_brokerage_pnl": false,
+      "entry_timing": "tail_session_1450",
+      "price_policy": "tail_session_1450_then_latest_then_close_proxy",
+      "formal_count": 2,
+      "formal_completed_count": 2,
+      "observation_count": 0,
+      "side_channel_count": 20,
+      "side_channel_completed_count": 20,
+      "side_channel_by_group": {
+        "a_theme_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "b_technical_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "score_front_rejected": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "low_reflow_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "open_drive_watch": {
+          "count": 2,
+          "completed_count": 2,
+          "avg_t1_return": null
+        },
+        "overnight_limit_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "theme_rotation_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        }
+      },
+      "missing_price_count": 0,
+      "verification_missing_count": 0,
+      "formal_avg_same_day_return": 0.000786,
+      "formal_avg_t1_return": null,
+      "formal_avg_day3_return": null,
+      "formal_win_rate_t1": null,
+      "side_channel_avg_same_day_return": 0.002313,
+      "side_channel_avg_t1_return": null,
+      "side_channel_avg_day3_return": null,
+      "not_real_brokerage_pnl": true,
+      "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json"
+    },
     "formal_targets": [
       {
         "symbol": "002290",
@@ -18887,21 +19255,1198 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "buy_allowed": true
       }
     ],
-    "records": [],
-    "formal_records": [],
-    "records_count": 0,
+    "records": [
+      {
+        "symbol": "002290",
+        "name": "禾盛新材",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 89.669998,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 89.699997,
+        "same_day_return": 0.000335,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603995",
+        "name": "甬金股份",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 24.25,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 24.280001,
+        "same_day_return": 0.001237,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603937",
+        "name": "丽岛新材",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 13.88,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 13.92,
+        "same_day_return": 0.002882,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002785",
+        "name": "万里石",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 44.700001,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 44.610001,
+        "same_day_return": -0.002013,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "001229",
+        "name": "魅视科技",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 29.139999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 29.1,
+        "same_day_return": -0.001373,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002797",
+        "name": "第一创业",
+        "strategy_group": "b_technical_watch",
+        "source_tier": "b_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 6.85,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 6.85,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000063",
+        "name": "中兴通讯",
+        "strategy_group": "b_technical_watch",
+        "source_tier": "b_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 38.330002,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 38.41,
+        "same_day_return": 0.002087,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603260",
+        "name": "合盛硅业",
+        "strategy_group": "b_technical_watch",
+        "source_tier": "b_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 49.57,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 49.75,
+        "same_day_return": 0.003631,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600576",
+        "name": "祥源文旅",
+        "strategy_group": "score_front_rejected",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 5.38,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 5.4,
+        "same_day_return": 0.003717,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603198",
+        "name": "迎驾贡酒",
+        "strategy_group": "score_front_rejected",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 30.32,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 30.540001,
+        "same_day_return": 0.007256,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002213",
+        "name": "大为股份",
+        "strategy_group": "score_front_rejected",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 39.779999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 39.779999,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603125",
+        "name": "常青科技",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 30.790001,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 30.809999,
+        "same_day_return": 0.000649,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002785",
+        "name": "万里石",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 44.700001,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 44.610001,
+        "same_day_return": -0.002013,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603937",
+        "name": "丽岛新材",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 13.88,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 13.92,
+        "same_day_return": 0.002882,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002301",
+        "name": "齐心集团",
+        "strategy_group": "open_drive_watch",
+        "source_tier": "open_drive_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 7.43,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 7.51,
+        "same_day_return": 0.010767,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002429",
+        "name": "兆驰股份",
+        "strategy_group": "open_drive_watch",
+        "source_tier": "open_drive_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 11.33,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 11.35,
+        "same_day_return": 0.001765,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002129",
+        "name": "TCL中环",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 10.16,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 10.18,
+        "same_day_return": 0.001969,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002335",
+        "name": "科华数据",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 41.700001,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 42.259998,
+        "same_day_return": 0.013429,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603688",
+        "name": "石英股份",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 83.279999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 83.360001,
+        "same_day_return": 0.000961,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002134",
+        "name": "天津普林",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 29.559999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 29.549999,
+        "same_day_return": -0.000338,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002353",
+        "name": "杰瑞股份",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 164.0,
+        "entry_price_source": "close_proxy_for_1450",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 164.0,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000620",
+        "name": "盈新发展",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 3.12,
+        "entry_price_source": "close_proxy_for_1450",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 3.12,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      }
+    ],
+    "formal_records": [
+      {
+        "symbol": "002290",
+        "name": "禾盛新材",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 89.669998,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 89.699997,
+        "same_day_return": 0.000335,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603995",
+        "name": "甬金股份",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 24.25,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-06-25",
+        "same_day_close": 24.280001,
+        "same_day_return": 0.001237,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      }
+    ],
+    "records_count": 22,
     "files": {
       "ledger": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json",
-        "relative_path": "paper-trade-ledger.json",
-        "exists": false
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.close.json",
+        "relative_path": "runs/2026-06-25/paper-trade-ledger.close.json",
+        "exists": true,
+        "size": 28433,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "ee665307093787f5f4c468b3a56a5b5a7b52ddec7ea427689c8f43b8040256f2"
       },
       "summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.close.json",
+        "relative_path": "runs/2026-06-25/paper-trade-summary.close.json",
+        "exists": true,
+        "size": 1839,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
       }
-    }
+    },
+    "related_payloads": [
+      {
+        "status": "ok",
+        "ledger_status": "ok",
+        "summary_status": "ok",
+        "artifact_scope": "canonical",
+        "date": "2026-06-25",
+        "source_close_date": "2026-06-25",
+        "ledger_matches_selected_close": true,
+        "summary": {
+          "schema_version": "paper_trade_summary.v1",
+          "date": "2026-06-25",
+          "source_close_date": "2026-06-25",
+          "generated_at": "2026-06-25T14:54:32+08:00",
+          "mode": "simulated_follow",
+          "is_real_brokerage_pnl": false,
+          "entry_timing": "tail_session_1450",
+          "price_policy": "tail_session_1450_then_latest_then_close_proxy",
+          "formal_count": 2,
+          "formal_completed_count": 2,
+          "observation_count": 0,
+          "side_channel_count": 20,
+          "side_channel_completed_count": 20,
+          "side_channel_by_group": {
+            "a_theme_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "b_technical_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "score_front_rejected": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "low_reflow_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "open_drive_watch": {
+              "count": 2,
+              "completed_count": 2,
+              "avg_t1_return": null
+            },
+            "overnight_limit_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "theme_rotation_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            }
+          },
+          "missing_price_count": 0,
+          "verification_missing_count": 0,
+          "formal_avg_same_day_return": 0.000786,
+          "formal_avg_t1_return": null,
+          "formal_avg_day3_return": null,
+          "formal_win_rate_t1": null,
+          "side_channel_avg_same_day_return": 0.002313,
+          "side_channel_avg_t1_return": null,
+          "side_channel_avg_day3_return": null,
+          "not_real_brokerage_pnl": true,
+          "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json"
+        },
+        "formal_targets": [
+          {
+            "symbol": "002290",
+            "name": "禾盛新材",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "news_theme",
+            "buy_allowed": true
+          },
+          {
+            "symbol": "603995",
+            "name": "甬金股份",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "technical_fund_flow",
+            "buy_allowed": true
+          }
+        ],
+        "records": [
+          {
+            "symbol": "002290",
+            "name": "禾盛新材",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 89.669998,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 89.699997,
+            "same_day_return": 0.000335,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603995",
+            "name": "甬金股份",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 24.25,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 24.280001,
+            "same_day_return": 0.001237,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603937",
+            "name": "丽岛新材",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 13.88,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 13.92,
+            "same_day_return": 0.002882,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002785",
+            "name": "万里石",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 44.700001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 44.610001,
+            "same_day_return": -0.002013,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "001229",
+            "name": "魅视科技",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 29.139999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 29.1,
+            "same_day_return": -0.001373,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002797",
+            "name": "第一创业",
+            "strategy_group": "b_technical_watch",
+            "source_tier": "b_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 6.85,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 6.85,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000063",
+            "name": "中兴通讯",
+            "strategy_group": "b_technical_watch",
+            "source_tier": "b_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 38.330002,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 38.41,
+            "same_day_return": 0.002087,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603260",
+            "name": "合盛硅业",
+            "strategy_group": "b_technical_watch",
+            "source_tier": "b_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 49.57,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 49.75,
+            "same_day_return": 0.003631,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600576",
+            "name": "祥源文旅",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 5.38,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 5.4,
+            "same_day_return": 0.003717,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603198",
+            "name": "迎驾贡酒",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 30.32,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 30.540001,
+            "same_day_return": 0.007256,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002213",
+            "name": "大为股份",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 39.779999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 39.779999,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603125",
+            "name": "常青科技",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 30.790001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 30.809999,
+            "same_day_return": 0.000649,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002785",
+            "name": "万里石",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 44.700001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 44.610001,
+            "same_day_return": -0.002013,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603937",
+            "name": "丽岛新材",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 13.88,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 13.92,
+            "same_day_return": 0.002882,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002301",
+            "name": "齐心集团",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 7.43,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 7.51,
+            "same_day_return": 0.010767,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002429",
+            "name": "兆驰股份",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 11.33,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 11.35,
+            "same_day_return": 0.001765,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002129",
+            "name": "TCL中环",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 10.16,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 10.18,
+            "same_day_return": 0.001969,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002335",
+            "name": "科华数据",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 41.700001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 42.259998,
+            "same_day_return": 0.013429,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603688",
+            "name": "石英股份",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 83.279999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 83.360001,
+            "same_day_return": 0.000961,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002134",
+            "name": "天津普林",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 29.559999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 29.549999,
+            "same_day_return": -0.000338,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002353",
+            "name": "杰瑞股份",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 164.0,
+            "entry_price_source": "close_proxy_for_1450",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 164.0,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000620",
+            "name": "盈新发展",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 3.12,
+            "entry_price_source": "close_proxy_for_1450",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 3.12,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          }
+        ],
+        "formal_records": [
+          {
+            "symbol": "002290",
+            "name": "禾盛新材",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 89.669998,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 89.699997,
+            "same_day_return": 0.000335,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603995",
+            "name": "甬金股份",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 24.25,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-06-25",
+            "same_day_close": 24.280001,
+            "same_day_return": 0.001237,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          }
+        ],
+        "records_count": 22,
+        "files": {
+          "ledger": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json",
+            "relative_path": "runs/2026-06-25/paper-trade-ledger.json",
+            "exists": true,
+            "size": 28433,
+            "modified_at": "2026-06-25T14:54:32+08:00",
+            "sha256": "ee665307093787f5f4c468b3a56a5b5a7b52ddec7ea427689c8f43b8040256f2"
+          },
+          "summary": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
+            "relative_path": "runs/2026-06-25/paper-trade-summary.json",
+            "exists": true,
+            "size": 1839,
+            "modified_at": "2026-06-25T14:54:32+08:00",
+            "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
+          }
+        }
+      }
+    ]
   },
   "rule_upgrade_proposals": {
     "status": "missing",
@@ -18936,14 +20481,14 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   },
   "trader_review": {
     "schema_version": "trader_review_workbench.v1",
-    "status": "missing",
+    "status": "ok",
     "date": "2026-06-25",
     "title": "交易员复盘工作台",
     "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
     "market_tone_label": "偏弱复盘",
     "emotion_score": 48,
-    "formal_sample_count": 0,
-    "side_channel_sample_count": 0,
+    "formal_sample_count": 2,
+    "side_channel_sample_count": 20,
     "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
     "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
     "return_source_close_date": "2026-06-25",
@@ -18987,7 +20532,43 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     ],
     "missed_count": 0,
     "underestimated_count": 0,
-    "side_channel_cards": [],
+    "side_channel_cards": [
+      {
+        "group": "题材观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "技术观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "候选评分前排",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "低位回流观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "早盘驱动观察",
+        "verdict": "旁路统计",
+        "reason": "样本 2 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "隔夜涨停观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "题材轮动观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+      }
+    ],
     "timeline": [
       {
         "time": "14:50",
@@ -19017,7 +20598,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "items": []
     },
     "source_status": {
-      "paper_trade_summary": "missing",
+      "paper_trade_summary": "ok",
       "paper_trade_summary_scope": "canonical",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
@@ -19030,8 +20611,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "source_files": {
       "paper_trade_summary": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/paper-trade-summary.json",
+        "exists": true,
+        "size": 1839,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\reverse-miss.json",
@@ -19100,7 +20684,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "close-report.md"
           ],
           "write_files": [],
-          "status": "missed",
+          "status": "failed",
           "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
           "missing_or_risk_cn": [
             "计划时间：2026-06-25T14:50+08:00",
@@ -19146,9 +20730,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
-              "size": 12776019,
-              "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+              "modified_at": "2026-06-25T14:54:33+08:00",
+              "size": 12849931,
+              "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
             },
             {
               "role": "read",
@@ -19613,9 +21197,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
-              "size": 12776019,
-              "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+              "modified_at": "2026-06-25T14:54:33+08:00",
+              "size": 12849931,
+              "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
             },
             {
               "role": "write",
@@ -20221,9 +21805,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
-              "size": 12776019,
-              "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+              "modified_at": "2026-06-25T14:54:33+08:00",
+              "size": 12849931,
+              "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
             },
             {
               "role": "read",
@@ -20322,9 +21906,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\four-layer-tracking.close.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
+              "modified_at": "2026-06-25T14:54:25+08:00",
               "size": 109415,
-              "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+              "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
             },
             {
               "role": "read",
@@ -20332,9 +21916,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
-              "size": 12776019,
-              "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+              "modified_at": "2026-06-25T14:54:33+08:00",
+              "size": 12849931,
+              "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
             },
             {
               "role": "write",
@@ -20397,9 +21981,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\four-layer-tracking.close.json",
-              "modified_at": "2026-06-25T14:54:03+08:00",
+              "modified_at": "2026-06-25T14:54:25+08:00",
               "size": 109415,
-              "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+              "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
             },
             {
               "role": "read",
@@ -22669,7 +24253,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/outer-gate.json",
         "exists": true,
         "size": 22114,
-        "modified_at": "2026-06-25T14:54:00+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "a30749c71fc4215551559e0b1bf562ce1c5bd40f78081878aceffd521ae02113"
       }
     },
@@ -22682,7 +24266,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/domestic-gate.json",
         "exists": true,
         "size": 130019,
-        "modified_at": "2026-06-25T14:54:00+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "7cb532b705571adda43a7f09c60b4d8a38e154e544ae606d4a67f4774afe7798"
       }
     },
@@ -22695,7 +24279,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/emotion-trend-gate.json",
         "exists": true,
         "size": 19446,
-        "modified_at": "2026-06-25T14:54:00+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "bf39277a57cceb38cac343eb3adc29aceec3a4fd33d927a0805f65171eb4e4ac"
       }
     },
@@ -22720,9 +24304,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\raw-watchlist.json",
         "relative_path": "runs/2026-06-25/raw-watchlist.json",
         "exists": true,
-        "size": 1830234,
-        "modified_at": "2026-06-25T14:50:28+08:00",
-        "sha256": "49711817a0d265caae28283b36dfb8132ad535568e91b639825b072409cd9f6e"
+        "size": 1830383,
+        "modified_at": "2026-06-25T14:54:24+08:00",
+        "sha256": "5851946d9d01e769d490c830d264d4728c421dd0a6f29db3335ba20e94ce9462"
       }
     },
     {
@@ -22733,9 +24317,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\filtered-pool.json",
         "relative_path": "runs/2026-06-25/filtered-pool.json",
         "exists": true,
-        "size": 2315516,
-        "modified_at": "2026-06-25T14:50:28+08:00",
-        "sha256": "0a181e5c08fa5c4cd270c5709105c7516f1cc83c93aaf657373aa03c24e06be0"
+        "size": 2315633,
+        "modified_at": "2026-06-25T14:54:23+08:00",
+        "sha256": "eecebf342d99886c41e3ecc949b765dd03c909beb4427fb82dad09614c716b27"
       }
     },
     {
@@ -22747,7 +24331,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/candidate-score.json",
         "exists": true,
         "size": 6296379,
-        "modified_at": "2026-06-25T14:50:29+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "65e54a846c6a1e422979ffa99ed99a11fca67a104054d4bd270801106ec22b0b"
       }
     },
@@ -22760,7 +24344,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/technical-check.json",
         "exists": true,
         "size": 2357050,
-        "modified_at": "2026-06-25T14:52:00+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "b992e75668aa741cc67b209a1168602041e91a488433feb06d9501faa4817b86"
       }
     },
@@ -22773,8 +24357,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/four-layer-tracking.close.json",
         "exists": true,
         "size": 109415,
-        "modified_at": "2026-06-25T14:54:03+08:00",
-        "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+        "modified_at": "2026-06-25T14:54:25+08:00",
+        "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
       }
     },
     {
@@ -22910,12 +24494,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "overnight-report-brief.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 10,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\overnight-report-brief.close.json",
-        "relative_path": "overnight-report-brief.close.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/overnight-report-brief.close.json",
+        "exists": true,
+        "size": 60489,
+        "modified_at": "2026-06-25T14:58:03+08:00",
+        "sha256": "8f3cb90b8f85bd0c4f5b830e7bd90a8639df4307efc395f1262911330c953100"
       }
     },
     {
@@ -23059,7 +24646,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-06-25/sector-split.json",
         "exists": true,
         "size": 830769,
-        "modified_at": "2026-06-25T14:54:00+08:00",
+        "modified_at": "2026-06-25T14:54:24+08:00",
         "sha256": "f86e7c1a28f50bb4703936b2dfb70674a6f34ecc4c029a92097a122625f71c7d"
       }
     },
@@ -23163,42 +24750,54 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "market-data.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 20,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\market-data.json",
-        "relative_path": "market-data.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/market-data.json",
+        "exists": true,
+        "size": 30400,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "c7d6d890492b44aa67dd23181fec2250a0206ac45948a3d391547f76c10a2b1e"
       }
     },
     {
       "name": "paper-trade-ledger.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 22,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json",
-        "relative_path": "paper-trade-ledger.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/paper-trade-ledger.json",
+        "exists": true,
+        "size": 28433,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "ee665307093787f5f4c468b3a56a5b5a7b52ddec7ea427689c8f43b8040256f2"
       }
     },
     {
       "name": "paper-trade-summary.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/paper-trade-summary.json",
+        "exists": true,
+        "size": 1839,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
       }
     },
     {
       "name": "close-confirmation.1501.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 2,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-confirmation.1501.json",
-        "relative_path": "close-confirmation.1501.json",
-        "exists": false
+        "relative_path": "runs/2026-06-25/close-confirmation.1501.json",
+        "exists": true,
+        "size": 2313,
+        "modified_at": "2026-06-25T14:54:32+08:00",
+        "sha256": "ad4d45d896655c5b58ea2a26714a0c8aa5367c8bf567109a27ae6d453abb9417"
       }
     },
     {
@@ -23239,9 +24838,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\pool-governance.json",
         "relative_path": "runs/2026-06-25/pool-governance.json",
         "exists": true,
-        "size": 195520,
-        "modified_at": "2026-06-25T14:54:01+08:00",
-        "sha256": "1541f4cafbd92a3560404a6d2a66c09dfb1c1fbbe209285bd7448c60429b0425"
+        "size": 200866,
+        "modified_at": "2026-06-25T14:54:24+08:00",
+        "sha256": "e24978c90bfb2a04acbc5ae9aef6aff642d240d573aa093f18ede2ba187d3585"
       }
     },
     {
@@ -23252,9 +24851,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\workflow-manifest.json",
         "relative_path": "runs/2026-06-25/workflow-manifest.json",
         "exists": true,
-        "size": 172482,
-        "modified_at": "2026-06-25T11:44:16+08:00",
-        "sha256": "417e654f27f89ebe703a7cbf58a84db17bce7fbfec14fe9bb86a9f9db23d4125"
+        "size": 256370,
+        "modified_at": "2026-06-25T14:54:36+08:00",
+        "sha256": "cec8a452db70ecc9b1cd92b03b240bf74aee112e487642805c3300275e3d3c16"
       }
     },
     {
@@ -23265,15 +24864,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\data-lineage.json",
         "relative_path": "runs/2026-06-25/data-lineage.json",
         "exists": true,
-        "size": 53918,
-        "modified_at": "2026-06-25T11:36:34+08:00",
-        "sha256": "9e0da96e16933cbc186572ed1a00339bcbe1e0c6613352389e46eadfe95e2b63"
+        "size": 49675,
+        "modified_at": "2026-06-25T14:54:36+08:00",
+        "sha256": "54971e7983f6d4366c967f3550ed999f113314e6e35cd4409f25252bfa7f376a"
       }
     },
     {
       "name": "raw-watchlist/",
       "status": "ok",
-      "records": 3,
+      "records": 4,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\raw-watchlist",
         "relative_path": "runs/2026-06-25/raw-watchlist",
@@ -23283,7 +24882,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "missed_schedule": 1,
+      "precondition_failed": 1,
       "complete": 2,
       "not_due": 1
     },
@@ -23291,7 +24890,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
+        "status": "precondition_failed",
         "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-25T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -23321,8 +24920,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missed_count": 1,
-    "failed_count": 0,
+    "missed_count": 0,
+    "failed_count": 1,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -23330,19 +24929,19 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-25",
     "current_date": "2026-06-25",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-25：2/4 四报已生成，错过自动化 1 项",
+    "headline_cn": "当前日期 2026-06-25：2/4 四报已生成，前置失败 1 项",
     "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 16,
-      "invalid_count": 0,
+      "missing_count": 10,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 1,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "missed_schedule": 1,
+      "precondition_failed": 1,
       "complete": 2,
       "not_due": 1
     },
@@ -23350,7 +24949,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
+        "status": "precondition_failed",
         "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-25T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -23390,19 +24989,19 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-06-25",
     "current_date": "2026-06-25",
     "status": "partial",
-    "headline_cn": "当前日期 2026-06-25：2/4 四报已生成，错过自动化 1 项",
+    "headline_cn": "当前日期 2026-06-25：2/4 四报已生成，前置失败 1 项",
     "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 16,
-      "invalid_count": 0,
+      "missing_count": 10,
+      "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 1,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "missed_schedule": 1,
+      "precondition_failed": 1,
       "complete": 2,
       "not_due": 1
     },
@@ -23410,7 +25009,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
+        "status": "precondition_failed",
         "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-06-25T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -23505,9 +25104,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-25T14:54:14+08:00",
-    "web_current_state_exported_at": "2026-06-25T14:54:14+08:00",
-    "web_visible_at": "2026-06-25T14:54:14+08:00",
+    "web_panel_state_exported_at": "2026-06-25T14:58:04+08:00",
+    "web_current_state_exported_at": "2026-06-25T14:58:04+08:00",
+    "web_visible_at": "2026-06-25T14:58:04+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -23522,25 +25121,25 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-tail-decision.1450.json",
       "relative_path": "runs/2026-06-25/close-tail-decision.1450.json",
       "exists": true,
-      "size": 5413,
-      "modified_at": "2026-06-25T14:54:02+08:00",
-      "sha256": "3d88c1bb3c8699775f996a5e4735792532c751470f4844ad411762951d5de50c"
+      "size": 5524,
+      "modified_at": "2026-06-25T14:54:25+08:00",
+      "sha256": "a59908b9bfff82badaed308ccbda19926ae82d74e4e85c37fda6e3b426b1492b"
     },
     "web_panel_state_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\web-panel-state.json",
       "relative_path": "runs/2026-06-25/web-panel-state.json",
       "exists": true,
-      "size": 1122841,
-      "modified_at": "2026-06-25T14:54:05+08:00",
-      "sha256": "b8b88cbf697fe7f3245c4e0ae2e59617e0878f95324b6d1fa416beabef6b767c"
+      "size": 1172996,
+      "modified_at": "2026-06-25T14:54:38+08:00",
+      "sha256": "994f7cb0b2eabbc8dd410acf62c5d9aea1e50fecd549a23e96b1cd1225b4e762"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 234178,
-      "modified_at": "2026-06-25T14:54:05+08:00",
-      "sha256": "284edd503f493867981cd1473ea05daec41745c5fe1293e79ca8615c2aa3365d"
+      "size": 235858,
+      "modified_at": "2026-06-25T14:54:38+08:00",
+      "sha256": "1fc830e1f37539628a1b28dcf1ff13ba293f915d25486ac3cee9d394eb4fb0b0"
     }
   },
   "artifacts": [
@@ -23549,9 +25148,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-report.json",
       "relative_path": "runs/2026-06-25/close-report.json",
       "exists": true,
-      "size": 12776019,
-      "modified_at": "2026-06-25T14:54:03+08:00",
-      "sha256": "abbc52ae8a05d19662e2ecb67586a354032e2f2a577ac7cf011b70e9242e85b5"
+      "size": 12849931,
+      "modified_at": "2026-06-25T14:54:33+08:00",
+      "sha256": "5d5f51874806b0673cc9414f887259402133aadb2c6abe4d8b46b86b8f73e3e8"
     },
     {
       "name": "morning-report.json",
@@ -23613,7 +25212,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/outer-gate.json",
       "exists": true,
       "size": 22114,
-      "modified_at": "2026-06-25T14:54:00+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "a30749c71fc4215551559e0b1bf562ce1c5bd40f78081878aceffd521ae02113"
     },
     {
@@ -23622,7 +25221,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/domestic-gate.json",
       "exists": true,
       "size": 130019,
-      "modified_at": "2026-06-25T14:54:00+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "7cb532b705571adda43a7f09c60b4d8a38e154e544ae606d4a67f4774afe7798"
     },
     {
@@ -23631,7 +25230,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/emotion-trend-gate.json",
       "exists": true,
       "size": 19446,
-      "modified_at": "2026-06-25T14:54:00+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "bf39277a57cceb38cac343eb3adc29aceec3a4fd33d927a0805f65171eb4e4ac"
     },
     {
@@ -23648,18 +25247,18 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\raw-watchlist.json",
       "relative_path": "runs/2026-06-25/raw-watchlist.json",
       "exists": true,
-      "size": 1830234,
-      "modified_at": "2026-06-25T14:50:28+08:00",
-      "sha256": "49711817a0d265caae28283b36dfb8132ad535568e91b639825b072409cd9f6e"
+      "size": 1830383,
+      "modified_at": "2026-06-25T14:54:24+08:00",
+      "sha256": "5851946d9d01e769d490c830d264d4728c421dd0a6f29db3335ba20e94ce9462"
     },
     {
       "name": "filtered-pool.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\filtered-pool.json",
       "relative_path": "runs/2026-06-25/filtered-pool.json",
       "exists": true,
-      "size": 2315516,
-      "modified_at": "2026-06-25T14:50:28+08:00",
-      "sha256": "0a181e5c08fa5c4cd270c5709105c7516f1cc83c93aaf657373aa03c24e06be0"
+      "size": 2315633,
+      "modified_at": "2026-06-25T14:54:23+08:00",
+      "sha256": "eecebf342d99886c41e3ecc949b765dd03c909beb4427fb82dad09614c716b27"
     },
     {
       "name": "candidate-score.json",
@@ -23667,7 +25266,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/candidate-score.json",
       "exists": true,
       "size": 6296379,
-      "modified_at": "2026-06-25T14:50:29+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "65e54a846c6a1e422979ffa99ed99a11fca67a104054d4bd270801106ec22b0b"
     },
     {
@@ -23676,7 +25275,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/technical-check.json",
       "exists": true,
       "size": 2357050,
-      "modified_at": "2026-06-25T14:52:00+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "b992e75668aa741cc67b209a1168602041e91a488433feb06d9501faa4817b86"
     },
     {
@@ -23685,8 +25284,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/four-layer-tracking.close.json",
       "exists": true,
       "size": 109415,
-      "modified_at": "2026-06-25T14:54:03+08:00",
-      "sha256": "b2ce1ddc939888f82e790094cf7f5559cd782346574dbd68389d3dd4959c4708"
+      "modified_at": "2026-06-25T14:54:25+08:00",
+      "sha256": "b22c52706eaba3aaab7c06232bd941bad379be98d3aaeb52c57bd8b3832e8eee"
     },
     {
       "name": "four-layer-tracking.morning.json",
@@ -23778,8 +25377,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "overnight-report-brief.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 60489,
+      "modified_at": "2026-06-25T14:58:03+08:00",
+      "sha256": "8f3cb90b8f85bd0c4f5b830e7bd90a8639df4307efc395f1262911330c953100"
     },
     {
       "name": "multi-role-review.close.json",
@@ -23871,7 +25473,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-06-25/sector-split.json",
       "exists": true,
       "size": 830769,
-      "modified_at": "2026-06-25T14:54:00+08:00",
+      "modified_at": "2026-06-25T14:54:24+08:00",
       "sha256": "f86e7c1a28f50bb4703936b2dfb70674a6f34ecc4c029a92097a122625f71c7d"
     },
     {
@@ -23943,26 +25545,38 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "market-data.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\market-data.json",
-      "relative_path": "market-data.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/market-data.json",
+      "exists": true,
+      "size": 30400,
+      "modified_at": "2026-06-25T14:54:32+08:00",
+      "sha256": "c7d6d890492b44aa67dd23181fec2250a0206ac45948a3d391547f76c10a2b1e"
     },
     {
       "name": "paper-trade-ledger.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-ledger.json",
-      "relative_path": "paper-trade-ledger.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/paper-trade-ledger.json",
+      "exists": true,
+      "size": 28433,
+      "modified_at": "2026-06-25T14:54:32+08:00",
+      "sha256": "ee665307093787f5f4c468b3a56a5b5a7b52ddec7ea427689c8f43b8040256f2"
     },
     {
       "name": "paper-trade-summary.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
-      "relative_path": "paper-trade-summary.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/paper-trade-summary.json",
+      "exists": true,
+      "size": 1839,
+      "modified_at": "2026-06-25T14:54:32+08:00",
+      "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
     },
     {
       "name": "close-confirmation.1501.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\close-confirmation.1501.json",
-      "relative_path": "close-confirmation.1501.json",
-      "exists": false
+      "relative_path": "runs/2026-06-25/close-confirmation.1501.json",
+      "exists": true,
+      "size": 2313,
+      "modified_at": "2026-06-25T14:54:32+08:00",
+      "sha256": "ad4d45d896655c5b58ea2a26714a0c8aa5367c8bf567109a27ae6d453abb9417"
     },
     {
       "name": "close-watchlist.1501.json",
@@ -23987,27 +25601,27 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\pool-governance.json",
       "relative_path": "runs/2026-06-25/pool-governance.json",
       "exists": true,
-      "size": 195520,
-      "modified_at": "2026-06-25T14:54:01+08:00",
-      "sha256": "1541f4cafbd92a3560404a6d2a66c09dfb1c1fbbe209285bd7448c60429b0425"
+      "size": 200866,
+      "modified_at": "2026-06-25T14:54:24+08:00",
+      "sha256": "e24978c90bfb2a04acbc5ae9aef6aff642d240d573aa093f18ede2ba187d3585"
     },
     {
       "name": "workflow-manifest.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\workflow-manifest.json",
       "relative_path": "runs/2026-06-25/workflow-manifest.json",
       "exists": true,
-      "size": 172482,
-      "modified_at": "2026-06-25T11:44:16+08:00",
-      "sha256": "417e654f27f89ebe703a7cbf58a84db17bce7fbfec14fe9bb86a9f9db23d4125"
+      "size": 256370,
+      "modified_at": "2026-06-25T14:54:36+08:00",
+      "sha256": "cec8a452db70ecc9b1cd92b03b240bf74aee112e487642805c3300275e3d3c16"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\data-lineage.json",
       "relative_path": "runs/2026-06-25/data-lineage.json",
       "exists": true,
-      "size": 53918,
-      "modified_at": "2026-06-25T11:36:34+08:00",
-      "sha256": "9e0da96e16933cbc186572ed1a00339bcbe1e0c6613352389e46eadfe95e2b63"
+      "size": 49675,
+      "modified_at": "2026-06-25T14:54:36+08:00",
+      "sha256": "54971e7983f6d4366c967f3550ed999f113314e6e35cd4409f25252bfa7f376a"
     }
   ],
   "summary": {
@@ -24016,17 +25630,17 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "candidates_visible": 8,
     "four_layer_visible": 22,
     "rule_upgrade_pending": 0,
-    "trader_review_status": "missing",
-    "data_sources_ok": 31,
+    "trader_review_status": "ok",
+    "data_sources_ok": 36,
     "warnings": 0,
-    "automation_missed": 1,
-    "automation_failed": 0,
+    "automation_missed": 0,
+    "automation_failed": 1,
     "automation_incomplete": 0,
-    "lineage_nodes": 38,
+    "lineage_nodes": 41,
     "automation_status_counts": {
       "complete": 2,
-      "missed_schedule": 1,
-      "not_due": 1
+      "not_due": 1,
+      "precondition_failed": 1
     },
     "panel_payload_mode": "full"
   },
