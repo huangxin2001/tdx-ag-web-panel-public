@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-25T11:43:59+08:00",
+  "generated_at": "2026-06-25T15:00:56+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -30,12 +30,12 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
           "schedule": {
             "scheduled_time": "14:50",
             "scheduled_at": "2026-06-25T14:50+08:00",
-            "due": false,
-            "automation_status": "not_due",
-            "automation_status_label": "未到计划时间",
-            "diagnosis_cn": "未到计划时间",
-            "manifest_status": "missing",
-            "manifest_json_status": "missing",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.close.json",
             "precondition_gaps_cn": [],
             "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
