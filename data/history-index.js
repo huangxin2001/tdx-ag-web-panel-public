@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
   "schema_version": "web-panel-history-index/v1",
-  "generated_at": "2026-06-25T09:43:00+08:00",
+  "generated_at": "2026-06-25T11:43:59+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -13,10 +13,9 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
     {
       "date": "2026-06-25",
       "status": "partial",
-      "reports_present": 1,
+      "reports_present": 2,
       "reports_missing": [
         "close",
-        "noon",
         "review"
       ],
       "reports": {
@@ -68,22 +67,25 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
           }
         },
         "noon": {
-          "exists": false,
-          "status": "missing",
-          "char_count": 0,
+          "exists": true,
+          "status": "ok",
+          "char_count": 1970,
           "file": {
-            "relative_path": "noon-report.md",
-            "exists": false
+            "relative_path": "runs/2026-06-25/noon-report.md",
+            "exists": true,
+            "size": 5006,
+            "modified_at": "2026-06-25T11:36:33+08:00",
+            "sha256": "b108f50307c16ad2a4e353e5fb7128cff41849d1cf17ac4b14a508154a371095"
           },
           "schedule": {
             "scheduled_time": "11:35",
             "scheduled_at": "2026-06-25T11:35+08:00",
-            "due": false,
-            "automation_status": "not_due",
-            "automation_status_label": "未到计划时间",
-            "diagnosis_cn": "未到计划时间",
-            "manifest_status": "missing",
-            "manifest_json_status": "missing",
+            "due": true,
+            "automation_status": "complete",
+            "automation_status_label": "已按计划生成",
+            "diagnosis_cn": "已按计划生成",
+            "manifest_status": "success",
+            "manifest_json_status": "ok",
             "manifest_path": "workflow-manifest.noon.json",
             "precondition_gaps_cn": [],
             "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
@@ -108,7 +110,7 @@ window.THREE_PERIOD_PANEL_HISTORY_INDEX = {
             "manifest_json_status": "missing",
             "manifest_path": "workflow-manifest.review.json",
             "precondition_gaps_cn": [
-              "复盘缺少成功前三报：收盘报、午报"
+              "复盘缺少成功前三报：收盘报"
             ],
             "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
           }
