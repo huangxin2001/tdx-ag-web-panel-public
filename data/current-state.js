@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-25T22:02:43+08:00",
+  "generated_at": "2026-06-25T22:09:21+08:00",
   "currentDate": "2026-06-25",
   "current_date": "2026-06-25",
   "panel_payload_mode": "lite",
@@ -9227,9 +9227,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-25T22:02:43+08:00",
-    "web_current_state_exported_at": "2026-06-25T22:02:43+08:00",
-    "web_visible_at": "2026-06-25T22:02:43+08:00",
+    "web_panel_state_exported_at": "2026-06-25T22:09:21+08:00",
+    "web_current_state_exported_at": "2026-06-25T22:09:21+08:00",
+    "web_visible_at": "2026-06-25T22:09:21+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -9252,17 +9252,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\web-panel-state.json",
       "relative_path": "runs/2026-06-25/web-panel-state.json",
       "exists": true,
-      "size": 1603303,
-      "modified_at": "2026-06-25T20:00:25+08:00",
-      "sha256": "c470f58d7156ff784959ae16cc665ccfb31309cb5b58b908106093b342c2a719"
+      "size": 1785528,
+      "modified_at": "2026-06-25T22:02:53+08:00",
+      "sha256": "3d618c2fd359d6f0196d2671c3fba7619ef0faa2596e8046de39ef487c0c82ef"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 414241,
-      "modified_at": "2026-06-25T20:00:25+08:00",
-      "sha256": "3ed24eca9c1fbf87af3fc5fc6b5449630500813252b85d846908f2c1c631abf4"
+      "size": 453090,
+      "modified_at": "2026-06-25T22:02:53+08:00",
+      "sha256": "9f166909e2a086d4b4093410010750dc6ec2586c828e85922e504540b15047c2"
     }
   },
   "summary": {
