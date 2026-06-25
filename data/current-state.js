@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-25T14:58:04+08:00",
+  "generated_at": "2026-06-25T15:01:44+08:00",
   "currentDate": "2026-06-25",
   "current_date": "2026-06-25",
   "panel_payload_mode": "lite",
@@ -5250,31 +5250,56 @@ window.THREE_PERIOD_PANEL_STATE = {
     "status": "ok",
     "date": "2026-06-25",
     "title": "交易员复盘工作台",
-    "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
-    "market_tone_label": "偏弱复盘",
-    "emotion_score": 48,
-    "formal_sample_count": 2,
+    "one_liner": "2026-06-24 收盘样本、2026-06-25 回填：正式票 T+1 平均 1.77%，样本 1 只。 正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
+    "market_tone_label": "承接尚可",
+    "emotion_score": 62,
+    "formal_sample_count": 1,
     "side_channel_sample_count": 20,
-    "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-06-25",
+    "formal_return_text": "2026-06-24 收盘样本、2026-06-25 回填：正式票 T+1 平均 1.77%，样本 1 只。",
+    "side_return_text": "2026-06-24 收盘样本、2026-06-25 回填：旁路样本 T+1 平均 -1.62%，样本 20 只，只作对比。",
+    "return_source_close_date": "2026-06-24",
     "return_backfill_date": "2026-06-25",
-    "return_context_text": "2026-06-25 当前样本",
-    "cross_date_review_return": false,
-    "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
+    "return_context_text": "2026-06-24 收盘样本、2026-06-25 回填",
+    "cross_date_review_return": true,
+    "core_cause": "正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
       "second_view": "龙虾第二复盘暂无有效正文，按本地复盘产物继续审计。",
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
-    "decision_path": [],
+    "decision_path": [
+      {
+        "rank": 1,
+        "symbol": "002290",
+        "name": "禾盛新材",
+        "verdict": "题材观察",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "no_change"
+      },
+      {
+        "rank": 2,
+        "symbol": "002174",
+        "name": "游族网络",
+        "verdict": "已取消",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      },
+      {
+        "rank": 3,
+        "symbol": "002338",
+        "name": "奥普光电",
+        "verdict": "已取消",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      }
+    ],
     "loss_matrix": [
       {
         "label": "正式收益",
-        "value": "--",
+        "value": "1.77%",
         "status": "ok",
-        "detail": "正式票收益样本不足，复盘只做资料不足标记。"
+        "detail": "2026-06-24 收盘样本、2026-06-25 回填：正式票 T+1 平均 1.77%，样本 1 只。"
       },
       {
         "label": "上午承接",
@@ -5284,9 +5309,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "-1.62%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-06-24 收盘样本、2026-06-25 回填：旁路样本 T+1 平均 -1.62%，样本 20 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -5302,37 +5327,37 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 1.37%。只做旁路收益统计。"
       },
       {
         "group": "技术观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 2 只，T+1 平均 0.24%。只做旁路收益统计。"
       },
       {
         "group": "候选评分前排",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -2.49%。只做旁路收益统计。"
       },
       {
         "group": "低位回流观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -1.85%。只做旁路收益统计。"
       },
       {
         "group": "早盘驱动观察",
         "verdict": "旁路统计",
-        "reason": "样本 2 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -3.72%。只做旁路收益统计。"
       },
       {
         "group": "隔夜涨停观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -0.46%。只做旁路收益统计。"
       },
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -3.79%。只做旁路收益统计。"
       }
     ],
     "timeline": [
@@ -5365,23 +5390,23 @@ window.THREE_PERIOD_PANEL_STATE = {
     },
     "source_status": {
       "paper_trade_summary": "ok",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.json",
-        "relative_path": "runs/2026-06-25/paper-trade-summary.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-06-25/paper-trade-summary.review.json",
         "exists": true,
-        "size": 1839,
-        "modified_at": "2026-06-25T14:54:32+08:00",
-        "sha256": "a1b177e24a8615e7340c5aa90a42b486e4d47c0be8f5b0af780ae275958eeefc"
+        "size": 1881,
+        "modified_at": "2026-06-25T15:01:43+08:00",
+        "sha256": "1f159cfb20b5610f7fe842c40913d798a3d18fa624707dcc9ddb75089100ec12"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\reverse-miss.json",
@@ -5481,7 +5506,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 10,
+      "missing_count": 7,
       "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -5541,7 +5566,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 2,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 10,
+      "missing_count": 7,
       "invalid_count": 1,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -5652,9 +5677,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-25T14:58:04+08:00",
-    "web_current_state_exported_at": "2026-06-25T14:58:04+08:00",
-    "web_visible_at": "2026-06-25T14:58:04+08:00",
+    "web_panel_state_exported_at": "2026-06-25T15:01:44+08:00",
+    "web_current_state_exported_at": "2026-06-25T15:01:44+08:00",
+    "web_visible_at": "2026-06-25T15:01:44+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -5677,17 +5702,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-25\\web-panel-state.json",
       "relative_path": "runs/2026-06-25/web-panel-state.json",
       "exists": true,
-      "size": 1172996,
-      "modified_at": "2026-06-25T14:54:38+08:00",
-      "sha256": "994f7cb0b2eabbc8dd410acf62c5d9aea1e50fecd549a23e96b1cd1225b4e762"
+      "size": 1227627,
+      "modified_at": "2026-06-25T14:58:06+08:00",
+      "sha256": "e4915cb40ee4a51d74fc7460dfe1ddc1c53deb5e2eb77bcb4421ed07f7804562"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 235858,
-      "modified_at": "2026-06-25T14:54:38+08:00",
-      "sha256": "1fc830e1f37539628a1b28dcf1ff13ba293f915d25486ac3cee9d394eb4fb0b0"
+      "size": 294897,
+      "modified_at": "2026-06-25T14:58:06+08:00",
+      "sha256": "0f7cd1dc55feff88da5b848af4cf1e766b89a83bc09eb45db533c961003b01a4"
     }
   },
   "summary": {
@@ -5697,7 +5722,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 22,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 36,
+    "data_sources_ok": 41,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 1,
