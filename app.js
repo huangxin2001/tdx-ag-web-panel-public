@@ -928,8 +928,19 @@ function reportDueMap(reports) {
 }
 
 function dataSourceDuePeriod(name) {
+  const normalized = String(name || "").split(/[\\/]/).pop()?.toLowerCase() || "";
   const match = String(name || "").match(/\.(close|morning|noon|review)\./i);
-  return match ? match[1].toLowerCase() : "";
+  if (match) return match[1].toLowerCase();
+  if ([
+    "review-judgement.json",
+    "learning-validation.json",
+    "rule-upgrade-implementation.json",
+    "longxia-second-review-validation.json",
+    "longxia-second-review-validation.md",
+  ].includes(normalized)) {
+    return "review";
+  }
+  return "";
 }
 
 function shouldCountDataSourceStatus(item, dueByPeriod) {

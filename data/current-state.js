@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-25T15:20:51+08:00",
+  "generated_at": "2026-06-25T16:11:41+08:00",
   "currentDate": "2026-06-25",
   "current_date": "2026-06-25",
   "panel_payload_mode": "lite",
@@ -8523,7 +8523,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 2,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -8580,7 +8580,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 2,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -8688,9 +8688,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-25T15:20:51+08:00",
-    "web_current_state_exported_at": "2026-06-25T15:20:51+08:00",
-    "web_visible_at": "2026-06-25T15:20:51+08:00",
+    "web_panel_state_exported_at": "2026-06-25T16:11:41+08:00",
+    "web_current_state_exported_at": "2026-06-25T16:11:41+08:00",
+    "web_visible_at": "2026-06-25T16:11:41+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -8714,16 +8714,16 @@ window.THREE_PERIOD_PANEL_STATE = {
       "relative_path": "runs/2026-06-25/web-panel-state.json",
       "exists": true,
       "size": 1602874,
-      "modified_at": "2026-06-25T15:16:42+08:00",
-      "sha256": "6aed61b7ee0035e2fca6f57729eb2829b84792a6dc8a0d1ca9155fd4845eb632"
+      "modified_at": "2026-06-25T15:23:41+08:00",
+      "sha256": "5cfa41b7a656405f20b933bc06d37e108be8f960eb3d3ea0e338082256ed141e"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
       "size": 413859,
-      "modified_at": "2026-06-25T15:16:42+08:00",
-      "sha256": "04a659b942babeba4a344629d4a61d98b8f4c07b627e2c73635924a1b8de9010"
+      "modified_at": "2026-06-25T15:23:41+08:00",
+      "sha256": "4c4504ea0f04f1246933e673c3d0d1ebedf91ac1bfc13ba33aa844045c65dd87"
     }
   },
   "summary": {
