@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-06-26T14:53:16+08:00",
+  "generated_at": "2026-06-26T15:03:15+08:00",
   "currentDate": "2026-06-26",
   "current_date": "2026-06-26",
   "panel_payload_mode": "lite",
@@ -4350,13 +4350,23 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000962",
+          "name": "东方钽业",
+          "groups": [
+            "open_drive_watch",
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察",
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4522,13 +4532,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000591",
+          "name": "太阳能",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4698,13 +4716,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603283",
+          "name": "赛腾股份",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -4874,13 +4900,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000668",
+          "name": "荣丰控股",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5050,13 +5084,23 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000962",
+          "name": "东方钽业",
+          "groups": [
+            "open_drive_watch",
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察",
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5228,13 +5272,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600783",
+          "name": "XD鲁信创",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5406,13 +5458,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "601698",
+          "name": "中国卫通",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5584,13 +5644,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600459",
+          "name": "XD贵研铂",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       },
       {
@@ -5761,13 +5829,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603005",
+          "name": "晶方科技",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告桥接失败",
+          "status": "bridge_failed"
         }
       }
     ],
@@ -5928,21 +6004,224 @@ window.THREE_PERIOD_PANEL_STATE = {
     }
   },
   "overnight_report_brief": {
-    "status": "missing",
+    "status": "bridge_failed",
     "covered_count": 0,
-    "failed_count": 0,
-    "query_symbol_count": 0,
-    "source_groups": [],
+    "failed_count": 8,
+    "query_symbol_count": 8,
+    "source_groups": [
+      "open_drive_watch",
+      "overnight_limit_watch",
+      "theme_rotation_watch"
+    ],
     "source_run_date": "2026-06-26",
-    "records": [],
+    "records": [
+      {
+        "symbol": "000591",
+        "name": "太阳能",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "000962",
+        "name": "东方钽业",
+        "groups": [
+          "open_drive_watch",
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察",
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "603283",
+        "name": "赛腾股份",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "000668",
+        "name": "荣丰控股",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "600783",
+        "name": "XD鲁信创",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "600459",
+        "name": "XD贵研铂",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "601698",
+        "name": "中国卫通",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      },
+      {
+        "symbol": "603005",
+        "name": "晶方科技",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告桥接失败",
+        "status": "bridge_failed"
+      }
+    ],
     "final_ranking": {
-      "items": [],
+      "items": [
+        {
+          "rank": 1,
+          "symbol": "000591",
+          "name": "太阳能",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 2,
+          "symbol": "000962",
+          "name": "东方钽业",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 3,
+          "symbol": "603283",
+          "name": "赛腾股份",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 4,
+          "symbol": "000668",
+          "name": "荣丰控股",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 5,
+          "symbol": "600783",
+          "name": "XD鲁信创",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 6,
+          "symbol": "600459",
+          "name": "XD贵研铂",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 7,
+          "symbol": "601698",
+          "name": "中国卫通",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        },
+        {
+          "rank": 8,
+          "symbol": "603005",
+          "name": "晶方科技",
+          "verdict": "",
+          "text": "隔夜报告桥接失败"
+        }
+      ],
       "summary": ""
     },
     "file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-26\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-06-26/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 7318,
+      "modified_at": "2026-06-26T15:03:13+08:00",
+      "sha256": "342f6855cea50a3d40579aa8cd9d3a6e6d72c64daa639360bb1c42eda08f1aed"
     }
   },
   "rule_upgrade_proposals": {
@@ -5984,14 +6263,14 @@ window.THREE_PERIOD_PANEL_STATE = {
     "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
     "market_tone_label": "偏弱复盘",
     "emotion_score": 48,
-    "formal_sample_count": 0,
-    "side_channel_sample_count": 19,
+    "formal_sample_count": 2,
+    "side_channel_sample_count": 20,
     "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-06-26",
+    "side_return_text": "2026-06-25 收盘样本、2026-06-26 回填：旁路样本 T+1 平均 -1.03%，样本 20 只，只作对比。",
+    "return_source_close_date": "2026-06-25",
     "return_backfill_date": "2026-06-26",
-    "return_context_text": "2026-06-26 当前样本",
-    "cross_date_review_return": false,
+    "return_context_text": "2026-06-25 收盘样本、2026-06-26 回填",
+    "cross_date_review_return": true,
     "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
@@ -5999,7 +6278,24 @@ window.THREE_PERIOD_PANEL_STATE = {
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
-    "decision_path": [],
+    "decision_path": [
+      {
+        "rank": 1,
+        "symbol": "002290",
+        "name": "禾盛新材",
+        "verdict": "已取消",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      },
+      {
+        "rank": 2,
+        "symbol": "603995",
+        "name": "甬金股份",
+        "verdict": "已取消",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "keep_or_review_cancel_reason"
+      }
+    ],
     "loss_matrix": [
       {
         "label": "正式收益",
@@ -6015,9 +6311,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "-1.03%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-06-25 收盘样本、2026-06-26 回填：旁路样本 T+1 平均 -1.03%，样本 20 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -6033,37 +6329,37 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -0.74%。只做旁路收益统计。"
       },
       {
         "group": "技术观察",
         "verdict": "旁路统计",
-        "reason": "样本 1 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -5.39%。只做旁路收益统计。"
       },
       {
         "group": "候选评分前排",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -3.28%。只做旁路收益统计。"
       },
       {
         "group": "低位回流观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -1.70%。只做旁路收益统计。"
       },
       {
         "group": "早盘驱动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 2 只，T+1 平均 -6.17%。只做旁路收益统计。"
       },
       {
         "group": "隔夜涨停观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 6.24%。只做旁路收益统计。"
       },
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 2.14%。只做旁路收益统计。"
       }
     ],
     "timeline": [
@@ -6096,23 +6392,23 @@ window.THREE_PERIOD_PANEL_STATE = {
     },
     "source_status": {
       "paper_trade_summary": "ok",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-26\\paper-trade-summary.json",
-        "relative_path": "runs/2026-06-26/paper-trade-summary.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-26\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-06-26/paper-trade-summary.review.json",
         "exists": true,
-        "size": 1836,
-        "modified_at": "2026-06-26T14:53:12+08:00",
-        "sha256": "4acaea1d68966c0bcc05bc2b623f4e974246297047be4648a647747d56b88374"
+        "size": 1880,
+        "modified_at": "2026-06-26T15:01:41+08:00",
+        "sha256": "aa92a59d03cc4c04d1fefc4e236212c0cddc211e5b8f70128db6b70905a735c7"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-26\\reverse-miss.json",
@@ -6211,7 +6507,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 4,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6268,7 +6564,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 4,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -6376,9 +6672,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-06-26T14:53:16+08:00",
-    "web_current_state_exported_at": "2026-06-26T14:53:16+08:00",
-    "web_visible_at": "2026-06-26T14:53:16+08:00",
+    "web_panel_state_exported_at": "2026-06-26T15:03:15+08:00",
+    "web_current_state_exported_at": "2026-06-26T15:03:15+08:00",
+    "web_visible_at": "2026-06-26T15:03:15+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -6401,17 +6697,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-06-26\\web-panel-state.json",
       "relative_path": "runs/2026-06-26/web-panel-state.json",
       "exists": true,
-      "size": 1033003,
-      "modified_at": "2026-06-26T14:52:41+08:00",
-      "sha256": "2f2214a88c4238c05f02a6c0a09b457db3521e8ce34d39cd4b83f299aa27a26d"
+      "size": 1426768,
+      "modified_at": "2026-06-26T15:01:51+08:00",
+      "sha256": "9d856888c37e68de93c8dfa810f18538851483af9d5eeb8384179b83bf391b14"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 197815,
-      "modified_at": "2026-06-26T14:52:41+08:00",
-      "sha256": "21fbf6b4a111a919cb429418b3e0ff3d1f0cd557d5d5c69bfc028c74bc5ea1a4"
+      "size": 280135,
+      "modified_at": "2026-06-26T15:01:51+08:00",
+      "sha256": "82681aa0d9abecbed4a077b4e37e3ceedb0c2163a7c06b511736f4e4362f354e"
     }
   },
   "summary": {
@@ -6421,7 +6717,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 19,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 39,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
