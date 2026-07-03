@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-03T15:01:44+08:00",
+  "generated_at": "2026-07-03T15:04:47+08:00",
   "currentDate": "2026-07-03",
   "current_date": "2026-07-03",
   "panel_payload_mode": "lite",
@@ -1783,13 +1783,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "主线不清",
         "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603317",
+          "name": "天味食品",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -2176,13 +2184,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "主线不清",
         "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600854",
+          "name": "春兰股份",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -2573,13 +2589,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "主线不清",
         "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603332",
+          "name": "苏州龙杰",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -5931,13 +5955,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002881",
+          "name": "美格智能",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6106,13 +6138,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002338",
+          "name": "奥普光电",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6281,13 +6321,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600322",
+          "name": "津投城开",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6459,13 +6507,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600118",
+          "name": "中国卫星",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6635,13 +6691,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002009",
+          "name": "天奇股份",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6814,13 +6878,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002384",
+          "name": "东山精密",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -6991,13 +7063,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603626",
+          "name": "科森科技",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -7166,13 +7246,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603308",
+          "name": "应流股份",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       },
       {
@@ -7343,13 +7431,21 @@ window.THREE_PERIOD_PANEL_STATE = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "603920",
+          "name": "世运电路",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "隔夜报告解析失败",
+          "status": "parse_failed"
         }
       }
     ],
@@ -7511,21 +7607,319 @@ window.THREE_PERIOD_PANEL_STATE = {
     }
   },
   "overnight_report_brief": {
-    "status": "missing",
+    "status": "parse_failed",
     "covered_count": 0,
-    "failed_count": 0,
-    "query_symbol_count": 0,
-    "source_groups": [],
+    "failed_count": 12,
+    "query_symbol_count": 12,
+    "source_groups": [
+      "formal_top3",
+      "open_drive_watch",
+      "overnight_limit_watch",
+      "theme_rotation_watch"
+    ],
     "source_run_date": "2026-07-03",
-    "records": [],
+    "records": [
+      {
+        "symbol": "600854",
+        "name": "春兰股份",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "603317",
+        "name": "天味食品",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "603332",
+        "name": "苏州龙杰",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "002338",
+        "name": "奥普光电",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "002881",
+        "name": "美格智能",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "600322",
+        "name": "津投城开",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "002009",
+        "name": "天奇股份",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "002384",
+        "name": "东山精密",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "600118",
+        "name": "中国卫星",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "603308",
+        "name": "应流股份",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "603626",
+        "name": "科森科技",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      },
+      {
+        "symbol": "603920",
+        "name": "世运电路",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "隔夜报告解析失败",
+        "status": "parse_failed"
+      }
+    ],
     "final_ranking": {
-      "items": [],
+      "items": [
+        {
+          "rank": 1,
+          "symbol": "600854",
+          "name": "春兰股份",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 2,
+          "symbol": "603317",
+          "name": "天味食品",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 3,
+          "symbol": "603332",
+          "name": "苏州龙杰",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 4,
+          "symbol": "002338",
+          "name": "奥普光电",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 5,
+          "symbol": "002881",
+          "name": "美格智能",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 6,
+          "symbol": "600322",
+          "name": "津投城开",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 7,
+          "symbol": "002009",
+          "name": "天奇股份",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 8,
+          "symbol": "002384",
+          "name": "东山精密",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 9,
+          "symbol": "600118",
+          "name": "中国卫星",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 10,
+          "symbol": "603308",
+          "name": "应流股份",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 11,
+          "symbol": "603626",
+          "name": "科森科技",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        },
+        {
+          "rank": 12,
+          "symbol": "603920",
+          "name": "世运电路",
+          "verdict": "",
+          "text": "隔夜报告解析失败"
+        }
+      ],
       "summary": ""
     },
     "file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-03\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-03/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 13531,
+      "modified_at": "2026-07-03T15:04:46+08:00",
+      "sha256": "79a1dd5606c996b1aa03a3e0682291cfb3a116ab2d053f72953209bec8dbb40f"
     }
   },
   "rule_upgrade_proposals": {
@@ -7794,7 +8188,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 1,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 3,
@@ -7851,7 +8245,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 1,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 3,
@@ -7959,9 +8353,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-03T15:01:44+08:00",
-    "web_current_state_exported_at": "2026-07-03T15:01:44+08:00",
-    "web_visible_at": "2026-07-03T15:01:44+08:00",
+    "web_panel_state_exported_at": "2026-07-03T15:04:47+08:00",
+    "web_current_state_exported_at": "2026-07-03T15:04:47+08:00",
+    "web_visible_at": "2026-07-03T15:04:47+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -7984,17 +8378,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-03\\web-panel-state.json",
       "relative_path": "runs/2026-07-03/web-panel-state.json",
       "exists": true,
-      "size": 1498791,
-      "modified_at": "2026-07-03T14:55:08+08:00",
-      "sha256": "976b6122cf20c5606a552a451bfc92c7e910a1d57a1c1c5efe36abb2c731d411"
+      "size": 1402442,
+      "modified_at": "2026-07-03T15:01:55+08:00",
+      "sha256": "c3a91d9eb6c466cc3fab9a9db5eaf52ba7b4581919339f93f9a5e0170b5fe4e8"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 337591,
-      "modified_at": "2026-07-03T14:55:08+08:00",
-      "sha256": "a26e95a21abeeffec8f613fd6e2ad93341ea3575074d021c0bc1777a6d9723de"
+      "size": 337747,
+      "modified_at": "2026-07-03T15:01:55+08:00",
+      "sha256": "08569f90ebe103fb0a3dd8882868b8d9e6f3f0eb882c48b277e94da0995e6903"
     }
   },
   "summary": {
@@ -8004,7 +8398,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 22,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 44,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
