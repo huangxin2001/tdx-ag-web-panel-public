@@ -3155,6 +3155,11 @@ button:hover,
   --layer-soft: rgba(255, 181, 71, 0.15);
 }
 
+.four-layer-card.strength-hold {
+  --layer-color: #f6d365;
+  --layer-soft: rgba(246, 211, 101, 0.14);
+}
+
 .four-layer-card::before {
   position: absolute;
   inset: 0;

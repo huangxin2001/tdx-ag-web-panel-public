@@ -1662,6 +1662,20 @@ const FOUR_LAYER_CARD_DEFS = [
     linePattern: /^题材轮动观察-\d+[：:]/,
   },
   {
+    key: "closeStrength",
+    strategyGroup: "close_strength_hold_watch",
+    title: "收盘中强承接观察",
+    label: "承接旁路",
+    tone: "strength-hold",
+    index: 5,
+    empty: "无收盘中强承接样本",
+    subtitle: "中强未高潮，尾盘承接只观察",
+    usageTitle: "用途：中强延续验证",
+    usage: "验证收盘中等强度、回落可控且量价不过热的样本，不作为买入依据",
+    displayLimit: 3,
+    linePattern: /^收盘中强承接观察-\d+[：:]/,
+  },
+  {
     key: "reflow",
     strategyGroup: "low_reflow_watch",
     title: "低位回流观察",
@@ -2273,6 +2287,7 @@ function strategyGroupLabel(group) {
     open_drive_watch: "早盘驱动观察",
     overnight_limit_watch: "隔夜涨停观察",
     theme_rotation_watch: "题材轮动观察",
+    close_strength_hold_watch: "收盘中强承接观察",
   }[String(group || "")] || String(group || "未分组");
 }
 
@@ -3648,6 +3663,7 @@ function trimRepeatedFourLayerReason(reason, card) {
     .replace(/^早盘驱动观察[：:]\s*/i, "")
     .replace(/^隔夜涨停观察[：:]\s*/i, "")
     .replace(/^题材轮动观察[：:]\s*/i, "")
+    .replace(/^收盘中强承接观察[：:]\s*/i, "")
     .replace(/^题材观察[：:]\s*/i, "")
     .replace(/^技术观察[：:]\s*/i, "")
     .trim();
