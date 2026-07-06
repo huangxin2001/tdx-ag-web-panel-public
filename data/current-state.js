@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-06T15:01:12+08:00",
+  "generated_at": "2026-07-06T15:01:46+08:00",
   "currentDate": "2026-07-06",
   "current_date": "2026-07-06",
   "panel_payload_mode": "lite",
@@ -7381,31 +7381,56 @@ window.THREE_PERIOD_PANEL_STATE = {
     "status": "ok",
     "date": "2026-07-06",
     "title": "交易员复盘工作台",
-    "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
-    "market_tone_label": "偏弱复盘",
-    "emotion_score": 48,
-    "formal_sample_count": 2,
+    "one_liner": "2026-07-03 收盘样本、2026-07-06 回填：正式票 T+1 平均 0.40%，样本 3 只。 正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
+    "market_tone_label": "承接尚可",
+    "emotion_score": 62,
+    "formal_sample_count": 3,
     "side_channel_sample_count": 21,
-    "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-07-06",
+    "formal_return_text": "2026-07-03 收盘样本、2026-07-06 回填：正式票 T+1 平均 0.40%，样本 3 只。",
+    "side_return_text": "2026-07-03 收盘样本、2026-07-06 回填：旁路样本 T+1 平均 -2.74%，样本 21 只，只作对比。",
+    "return_source_close_date": "2026-07-03",
     "return_backfill_date": "2026-07-06",
-    "return_context_text": "2026-07-06 当前样本",
-    "cross_date_review_return": false,
-    "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
+    "return_context_text": "2026-07-03 收盘样本、2026-07-06 回填",
+    "cross_date_review_return": true,
+    "core_cause": "正式票 T+1 没有形成明显负反馈，复盘重点放在漏选和旁路连续验证。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
       "second_view": "龙虾第二复盘暂无有效正文，按本地复盘产物继续审计。",
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
-    "decision_path": [],
+    "decision_path": [
+      {
+        "rank": 1,
+        "symbol": "603317",
+        "name": "天味食品",
+        "verdict": "继续持有",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "no_change"
+      },
+      {
+        "rank": 2,
+        "symbol": "600854",
+        "name": "春兰股份",
+        "verdict": "题材观察",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "no_change"
+      },
+      {
+        "rank": 3,
+        "symbol": "603332",
+        "name": "苏州龙杰",
+        "verdict": "旁路跟踪",
+        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "attribution": "no_change"
+      }
+    ],
     "loss_matrix": [
       {
         "label": "正式收益",
-        "value": "--",
+        "value": "0.40%",
         "status": "ok",
-        "detail": "正式票收益样本不足，复盘只做资料不足标记。"
+        "detail": "2026-07-03 收盘样本、2026-07-06 回填：正式票 T+1 平均 0.40%，样本 3 只。"
       },
       {
         "label": "上午承接",
@@ -7415,9 +7440,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "-2.74%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-07-03 收盘样本、2026-07-06 回填：旁路样本 T+1 平均 -2.74%，样本 21 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -7433,42 +7458,42 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -0.90%。只做旁路收益统计。"
       },
       {
         "group": "技术观察",
         "verdict": "旁路统计",
-        "reason": "样本 0 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 1 只，T+1 平均 0.42%。只做旁路收益统计。"
       },
       {
         "group": "候选评分前排",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 2 只，T+1 平均 -0.59%。只做旁路收益统计。"
       },
       {
         "group": "低位回流观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.43%。只做旁路收益统计。"
       },
       {
         "group": "早盘驱动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -3.78%。只做旁路收益统计。"
       },
       {
         "group": "隔夜涨停观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.60%。只做旁路收益统计。"
       },
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.30%。只做旁路收益统计。"
       },
       {
         "group": "收盘中强承接观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 --。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -0.90%。只做旁路收益统计。"
       }
     ],
     "timeline": [
@@ -7501,23 +7526,23 @@ window.THREE_PERIOD_PANEL_STATE = {
     },
     "source_status": {
       "paper_trade_summary": "ok",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-06\\paper-trade-summary.json",
-        "relative_path": "runs/2026-07-06/paper-trade-summary.json",
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-06\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-07-06/paper-trade-summary.review.json",
         "exists": true,
-        "size": 1960,
-        "modified_at": "2026-07-06T14:54:58+08:00",
-        "sha256": "a45c92733265683ef1bed681d243a2a97671e8a65d00074fb2755f0fbfc4d9dc"
+        "size": 2019,
+        "modified_at": "2026-07-06T15:01:44+08:00",
+        "sha256": "881f4792d4d04151338f9be7f65ef00a7d63d5cb5114d85c66948de9873c1290"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-06\\reverse-miss.json",
@@ -7616,7 +7641,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 3,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -7673,7 +7698,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 3,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -7781,9 +7806,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-06T15:01:12+08:00",
-    "web_current_state_exported_at": "2026-07-06T15:01:12+08:00",
-    "web_visible_at": "2026-07-06T15:01:12+08:00",
+    "web_panel_state_exported_at": "2026-07-06T15:01:46+08:00",
+    "web_current_state_exported_at": "2026-07-06T15:01:46+08:00",
+    "web_visible_at": "2026-07-06T15:01:46+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -7806,17 +7831,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-06\\web-panel-state.json",
       "relative_path": "runs/2026-07-06/web-panel-state.json",
       "exists": true,
-      "size": 1328764,
-      "modified_at": "2026-07-06T14:55:13+08:00",
-      "sha256": "ef5f987ece78543bfeb3b6221b4a580ae3c3baeb7084ef1b335f85d70ff8106a"
+      "size": 1414488,
+      "modified_at": "2026-07-06T15:01:23+08:00",
+      "sha256": "e21e2e1afd4a59c837e20e8309c02540db5efe760b5a649185f62381001db9f7"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 321907,
-      "modified_at": "2026-07-06T14:55:13+08:00",
-      "sha256": "5e7cf572c67b365cfc15a03860160aceb29875ffaf96e036b94b25968ab9693a"
+      "size": 377984,
+      "modified_at": "2026-07-06T15:01:23+08:00",
+      "sha256": "36829e818dac1b2bf12e50c3507adc25e18db0dc2ad147a3d01ea9deb6cce912"
     }
   },
   "summary": {
@@ -7826,7 +7851,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 23,
     "rule_upgrade_pending": 0,
     "trader_review_status": "ok",
-    "data_sources_ok": 40,
+    "data_sources_ok": 45,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
