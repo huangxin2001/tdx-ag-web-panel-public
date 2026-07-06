@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-06T13:36:04+08:00",
+  "generated_at": "2026-07-06T13:58:47+08:00",
   "currentDate": "2026-07-06",
   "current_date": "2026-07-06",
   "panel_payload_mode": "full",
@@ -948,7 +948,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "t1_return": null,
           "day3_return": null,
           "missing_reasons": [
-            "intraday_price_missing"
+            "当前快照缺价格，收益待回填"
           ]
         },
         "theme": "",
@@ -967,7 +967,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
         "return_status": "待次日回填",
         "return_scope": "pending",
-        "missing_reason": "intraday_price_missing",
+        "missing_reason": "当前快照缺价格，收益待回填",
         "freshness": "当前结构化账本",
         "source_mtime": "2026-07-06T13:25:44+08:00",
         "historical_backfill": false,
@@ -1792,7 +1792,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "t1_return": null,
           "day3_return": null,
           "missing_reasons": [
-            "intraday_price_missing"
+            "当前快照缺价格，收益待回填"
           ]
         },
         "theme": "",
@@ -1811,7 +1811,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "display_reason": "技术/资金行为候选，需次日验证是否继续转强",
         "return_status": "旁路收益待回填",
         "return_scope": "side_channel",
-        "missing_reason": "intraday_price_missing",
+        "missing_reason": "当前快照缺价格，收益待回填",
         "freshness": "当前结构化账本",
         "source_mtime": "2026-07-06T13:25:44+08:00",
         "historical_backfill": false,
@@ -3595,7 +3595,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "t1_return": null,
           "day3_return": null,
           "missing_reasons": [
-            "intraday_price_missing"
+            "当前快照缺价格，收益待回填"
           ]
         },
         "theme": "",
@@ -3614,7 +3614,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
         "return_status": "旁路收益待回填",
         "return_scope": "side_channel",
-        "missing_reason": "intraday_price_missing",
+        "missing_reason": "当前快照缺价格，收益待回填",
         "freshness": "当前结构化账本",
         "source_mtime": "2026-07-06T13:25:44+08:00",
         "historical_backfill": false,
@@ -5115,7 +5115,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -5134,7 +5134,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
           "return_status": "待次日回填",
           "return_scope": "pending",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:30:35+08:00",
           "historical_backfill": false,
@@ -5959,7 +5959,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -5978,7 +5978,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "技术/资金行为候选，需次日验证是否继续转强",
           "return_status": "旁路收益待回填",
           "return_scope": "side_channel",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:30:35+08:00",
           "historical_backfill": false,
@@ -7762,7 +7762,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -7781,7 +7781,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
           "return_status": "旁路收益待回填",
           "return_scope": "side_channel",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:30:35+08:00",
           "historical_backfill": false,
@@ -9274,7 +9274,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -9293,7 +9293,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
           "return_status": "待次日回填",
           "return_scope": "pending",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:25:44+08:00",
           "historical_backfill": false,
@@ -10118,7 +10118,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -10137,7 +10137,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "技术/资金行为候选，需次日验证是否继续转强",
           "return_status": "旁路收益待回填",
           "return_scope": "side_channel",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:25:44+08:00",
           "historical_backfill": false,
@@ -11921,7 +11921,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "t1_return": null,
             "day3_return": null,
             "missing_reasons": [
-              "intraday_price_missing"
+              "当前快照缺价格，收益待回填"
             ]
           },
           "theme": "",
@@ -11940,7 +11940,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
           "return_status": "旁路收益待回填",
           "return_scope": "side_channel",
-          "missing_reason": "intraday_price_missing",
+          "missing_reason": "当前快照缺价格，收益待回填",
           "freshness": "当前结构化账本",
           "source_mtime": "2026-07-06T13:25:44+08:00",
           "historical_backfill": false,

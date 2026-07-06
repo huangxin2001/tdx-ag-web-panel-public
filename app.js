@@ -830,8 +830,25 @@ function stripMarkdown(value) {
     .trim();
 }
 
+const RETURN_MISSING_REASON_LABELS = {
+  intraday_price_missing: "当前快照缺价格，收益待回填",
+  entry_price_missing: "模拟买入价缺失，收益待回填",
+  paper_trade_ledger_record_missing: "模拟收益账本缺这只票，收益待回填",
+  price_missing: "行情价格缺失，收益待回填",
+  t1_price_missing: "次日价格缺失，收益待回填",
+  day3_price_missing: "3日价格缺失，收益待回填",
+};
+
+function translateReturnMissingReasonText(value) {
+  let text = String(value ?? "");
+  Object.entries(RETURN_MISSING_REASON_LABELS).forEach(([code, label]) => {
+    text = text.replaceAll(code, label);
+  });
+  return text;
+}
+
 function sanitizeBeginnerText(value) {
-  return String(value ?? "")
+  return translateReturnMissingReasonText(value)
     .replace(/[A-Za-z]:\\[^\s，。；]+/g, "[路径已隐藏]")
     .replace(/\bruns\/[^\s，。；]+/g, "[路径已隐藏]")
     .replace(/\b[a-f0-9]{32,64}\b/gi, "[校验值已隐藏]")
@@ -2176,7 +2193,7 @@ function fourLayerReturnText(item, card) {
   const fallbackInfo = metricInfo || fourLayerFallbackReturnInfo(item, card);
   const return_status = sanitizeBeginnerText(item?.return_status || "");
   const return_scope = String(item?.return_scope || "");
-  const missing_reason = sanitizeBeginnerText(item?.missing_reason || asList(item?.return_metrics?.missing_reasons).join("；"));
+  const missing_reason = sanitizeBeginnerText(item?.missing_reason || asList(item?.return_metrics?.missing_reasons).map(translateReturnMissingReasonText).join("；"));
   const freshness = sanitizeBeginnerText(item?.freshness || "");
   const source_mtime = shortDateTimeText(item?.source_mtime || "");
   const historical = Boolean(item?.historical_backfill || return_scope === "legacy_next_day_change" || return_status.includes("历史回填"));
