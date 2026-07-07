@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-07T15:02:51+08:00",
+  "generated_at": "2026-07-07T16:32:47+08:00",
   "currentDate": "2026-07-07",
   "current_date": "2026-07-07",
   "panel_payload_mode": "full",
@@ -19297,7 +19297,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "formal",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -19425,7 +19425,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "formal",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -19551,7 +19551,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -19669,7 +19669,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -19787,7 +19787,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -19905,7 +19905,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -20023,7 +20023,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -20141,7 +20141,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "unconfirmed",
           "catalyst_status_label": "催化未确认",
@@ -20299,7 +20299,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -20457,7 +20457,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -20617,7 +20617,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -20790,7 +20790,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -20973,7 +20973,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -21155,7 +21155,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -21339,7 +21339,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -21525,7 +21525,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -21711,7 +21711,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -21895,7 +21895,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22058,7 +22058,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "return_basis": "",
             "same_day_return": 0.004737,
             "ledger_same_day_return": null,
-            "t1_return": -0.290202,
+            "t1_return": -0.001576,
             "day3_return": null,
             "missing_reasons": []
           },
@@ -22080,7 +22080,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22265,7 +22265,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22454,7 +22454,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22635,7 +22635,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22816,7 +22816,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-07T15:01:43+08:00",
+          "source_mtime": "2026-07-07T16:32:25+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -22957,7 +22957,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "formal_return_eligible_count": 0,
             "side_channel_return_eligible_count": 3,
             "avg_intraday_return": null,
-            "avg_t1_return": -0.138906,
+            "avg_t1_return": -0.042698,
             "status_counts": {
               "cancelled": 0,
               "false_positive": 3,
@@ -23014,9 +23014,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\four-layer-tracking.review.json",
         "relative_path": "runs/2026-07-07/four-layer-tracking.review.json",
         "exists": true,
-        "size": 124328,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "f79cdbc093a522b3e88d0a87d1f0065d95bbc06cb3ea99b0d6a71a0dbe4bf451"
+        "size": 120180,
+        "modified_at": "2026-07-07T16:32:25+08:00",
+        "sha256": "c74d5165970ebe6867bc9a47b1adb5cbf4aad49744eda72131d4f30df97b083f"
       }
     }
   },
@@ -24442,7 +24442,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "schema_version": "paper_trade_summary.v1",
           "date": "2026-07-07",
           "source_close_date": "2026-07-06",
-          "generated_at": "2026-07-07T15:01:43+08:00",
+          "generated_at": "2026-07-07T16:31:46+08:00",
           "mode": "simulated_follow",
           "is_real_brokerage_pnl": false,
           "entry_timing": "tail_session_1450",
@@ -24486,7 +24486,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "theme_rotation_watch": {
               "count": 3,
               "completed_count": 3,
-              "avg_t1_return": -0.138906
+              "avg_t1_return": -0.042698
             },
             "close_strength_hold_watch": {
               "count": 3,
@@ -24501,10 +24501,10 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "formal_avg_day3_return": null,
           "formal_win_rate_t1": 0.0,
           "side_channel_avg_same_day_return": 0.00058,
-          "side_channel_avg_t1_return": -0.043123,
+          "side_channel_avg_t1_return": -0.029379,
           "side_channel_avg_day3_return": null,
           "not_real_brokerage_pnl": true,
-          "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\paper-trade-ledger.review.json"
+          "records_ref": "runs\\2026-07-07\\paper-trade-ledger.review.json"
         },
         "formal_targets": [
           {
@@ -24928,7 +24928,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "same_day_close": 40.299999,
             "same_day_return": 0.004737,
             "t1_close": 28.469999,
-            "t1_return": -0.290202,
+            "t1_return": -0.001576,
             "day3_close": null,
             "day3_return": null,
             "verification_status": "verification_pending",
@@ -25079,17 +25079,17 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\paper-trade-ledger.review.json",
             "relative_path": "runs/2026-07-07/paper-trade-ledger.review.json",
             "exists": true,
-            "size": 30357,
-            "modified_at": "2026-07-07T15:01:43+08:00",
-            "sha256": "b7a8dbc756f0647c31b64a41c092505a03f332af678de3e4fc535729eff00df1"
+            "size": 32951,
+            "modified_at": "2026-07-07T16:31:46+08:00",
+            "sha256": "3b3f5e65ef8c9ffb1177c1dcf0194733d496dcaf1f9831cece68c07df622fca6"
           },
           "summary": {
             "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\paper-trade-summary.review.json",
             "relative_path": "runs/2026-07-07/paper-trade-summary.review.json",
             "exists": true,
-            "size": 2011,
-            "modified_at": "2026-07-07T15:01:43+08:00",
-            "sha256": "010e0780f0c1f2bb8cdbf86ab92679b12670478452f741ce817a6542f3c3f459"
+            "size": 1921,
+            "modified_at": "2026-07-07T16:31:46+08:00",
+            "sha256": "73bffcf8099e7f00715506c5b39daa888c6a8824be074cc599843bf77cb437b3"
           }
         }
       }
@@ -25137,7 +25137,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "formal_sample_count": 1,
     "side_channel_sample_count": 21,
     "formal_return_text": "2026-07-06 收盘样本、2026-07-07 回填：正式票 T+1 平均 -1.89%，样本 1 只。",
-    "side_return_text": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -4.31%，样本 21 只，只作对比。",
+    "side_return_text": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -2.94%，样本 21 只，只作对比。",
     "return_source_close_date": "2026-07-06",
     "return_backfill_date": "2026-07-07",
     "return_context_text": "2026-07-06 收盘样本、2026-07-07 回填",
@@ -25182,9 +25182,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       },
       {
         "label": "旁路对比",
-        "value": "-4.31%",
+        "value": "-2.94%",
         "status": "watch",
-        "detail": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -4.31%，样本 21 只，只作对比。"
+        "detail": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -2.94%，样本 21 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -25230,7 +25230,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -13.89%。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.27%。只做旁路收益统计。"
       },
       {
         "group": "收盘中强承接观察",
@@ -25282,9 +25282,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\paper-trade-summary.review.json",
         "relative_path": "runs/2026-07-07/paper-trade-summary.review.json",
         "exists": true,
-        "size": 2011,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "010e0780f0c1f2bb8cdbf86ab92679b12670478452f741ce817a6542f3c3f459"
+        "size": 1921,
+        "modified_at": "2026-07-07T16:31:46+08:00",
+        "sha256": "73bffcf8099e7f00715506c5b39daa888c6a8824be074cc599843bf77cb437b3"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\reverse-miss.json",
@@ -25408,9 +25408,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.close.json",
-              "modified_at": "2026-07-07T14:55:13+08:00",
-              "size": 262020,
-              "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+              "modified_at": "2026-07-07T15:04:35+08:00",
+              "size": 267429,
+              "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
             }
           ],
           "key_conclusion_provenance": [
@@ -25444,9 +25444,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.close.json",
-                  "modified_at": "2026-07-07T14:55:13+08:00",
-                  "size": 262020,
-                  "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+                  "modified_at": "2026-07-07T15:04:35+08:00",
+                  "size": 267429,
+                  "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
                 }
               ]
             }
@@ -26648,9 +26648,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\web-panel-state.json",
-              "modified_at": "2026-07-07T15:01:55+08:00",
-              "size": 1511167,
-              "sha256": "b8c2f9ab231e4eed1c91b36bdb6c2e08857f6baf025fe6d96af152bc80a54b36"
+              "modified_at": "2026-07-07T15:03:01+08:00",
+              "size": 1449060,
+              "sha256": "c30787e69dabc7f998498374e16053557c0224d5f93bcada0bae2bf29a515180"
             }
           ],
           "key_conclusion_provenance": [
@@ -26674,9 +26674,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\web-panel-state.json",
-                  "modified_at": "2026-07-07T15:01:55+08:00",
-                  "size": 1511167,
-                  "sha256": "b8c2f9ab231e4eed1c91b36bdb6c2e08857f6baf025fe6d96af152bc80a54b36"
+                  "modified_at": "2026-07-07T15:03:01+08:00",
+                  "size": 1449060,
+                  "sha256": "c30787e69dabc7f998498374e16053557c0224d5f93bcada0bae2bf29a515180"
                 }
               ]
             }
@@ -27308,9 +27308,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.close.json",
-              "modified_at": "2026-07-07T14:55:13+08:00",
-              "size": 262020,
-              "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+              "modified_at": "2026-07-07T15:04:35+08:00",
+              "size": 267429,
+              "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
             },
             {
               "role": "write",
@@ -27334,9 +27334,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
                   "status": "ok",
                   "exists": true,
                   "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.close.json",
-                  "modified_at": "2026-07-07T14:55:13+08:00",
-                  "size": 262020,
-                  "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+                  "modified_at": "2026-07-07T15:04:35+08:00",
+                  "size": 267429,
+                  "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
                 },
                 {
                   "role": "write",
@@ -31682,9 +31682,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\four-layer-tracking.review.json",
         "relative_path": "runs/2026-07-07/four-layer-tracking.review.json",
         "exists": true,
-        "size": 124328,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "f79cdbc093a522b3e88d0a87d1f0065d95bbc06cb3ea99b0d6a71a0dbe4bf451"
+        "size": 120180,
+        "modified_at": "2026-07-07T16:32:25+08:00",
+        "sha256": "c74d5165970ebe6867bc9a47b1adb5cbf4aad49744eda72131d4f30df97b083f"
       }
     },
     {
@@ -31734,9 +31734,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\strategy-benchmark.review.json",
         "relative_path": "runs/2026-07-07/strategy-benchmark.review.json",
         "exists": true,
-        "size": 10680,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "0d4e31c0ff5f5bbd2b2050473858876a4ad9dac2d02d68c55da54ebecda96817"
+        "size": 10500,
+        "modified_at": "2026-07-07T16:32:36+08:00",
+        "sha256": "8feba783f392fb7fa315c9abdc18ab785584ec9400453efb46f14695f8a34fe7"
       }
     },
     {
@@ -32139,9 +32139,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\close-confirmation.1501-run.json",
         "relative_path": "runs/2026-07-07/close-confirmation.1501-run.json",
         "exists": true,
-        "size": 14224,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "bb2d98524a145687d1fb1c0ae3bb6e15d74f5a8ef5bde546e2ef23bcbadedd4f"
+        "size": 15247,
+        "modified_at": "2026-07-07T15:10:47+08:00",
+        "sha256": "42dc513cd71f6029e0f98ee3f31d9da6aedb499318165b4d94d99aea8bf5b929"
       }
     },
     {
@@ -32165,9 +32165,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.json",
         "relative_path": "runs/2026-07-07/workflow-manifest.json",
         "exists": true,
-        "size": 262020,
-        "modified_at": "2026-07-07T14:55:13+08:00",
-        "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+        "size": 267429,
+        "modified_at": "2026-07-07T15:04:35+08:00",
+        "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
       }
     },
     {
@@ -32411,9 +32411,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-07T15:02:51+08:00",
-    "web_current_state_exported_at": "2026-07-07T15:02:51+08:00",
-    "web_visible_at": "2026-07-07T15:02:51+08:00",
+    "web_panel_state_exported_at": "2026-07-07T16:32:47+08:00",
+    "web_current_state_exported_at": "2026-07-07T16:32:47+08:00",
+    "web_visible_at": "2026-07-07T16:32:47+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -32436,17 +32436,17 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\web-panel-state.json",
       "relative_path": "runs/2026-07-07/web-panel-state.json",
       "exists": true,
-      "size": 1511167,
-      "modified_at": "2026-07-07T15:01:55+08:00",
-      "sha256": "b8c2f9ab231e4eed1c91b36bdb6c2e08857f6baf025fe6d96af152bc80a54b36"
+      "size": 1449060,
+      "modified_at": "2026-07-07T15:03:01+08:00",
+      "sha256": "c30787e69dabc7f998498374e16053557c0224d5f93bcada0bae2bf29a515180"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 287441,
-      "modified_at": "2026-07-07T15:01:55+08:00",
-      "sha256": "cc433ad4ed14b75f7db05235fdf3b8716af58688ab182ebcd188dae6d7cc3d97"
+      "size": 296312,
+      "modified_at": "2026-07-07T15:03:01+08:00",
+      "sha256": "3de971966a5e371a6a8141e0f164f48da6605df36896c2a61c3de959b0a96d81"
     }
   },
   "artifacts": [
@@ -32620,9 +32620,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\four-layer-tracking.review.json",
       "relative_path": "runs/2026-07-07/four-layer-tracking.review.json",
       "exists": true,
-      "size": 124328,
-      "modified_at": "2026-07-07T15:01:43+08:00",
-      "sha256": "f79cdbc093a522b3e88d0a87d1f0065d95bbc06cb3ea99b0d6a71a0dbe4bf451"
+      "size": 120180,
+      "modified_at": "2026-07-07T16:32:25+08:00",
+      "sha256": "c74d5165970ebe6867bc9a47b1adb5cbf4aad49744eda72131d4f30df97b083f"
     },
     {
       "name": "strategy-benchmark.close.json",
@@ -32656,9 +32656,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\strategy-benchmark.review.json",
       "relative_path": "runs/2026-07-07/strategy-benchmark.review.json",
       "exists": true,
-      "size": 10680,
-      "modified_at": "2026-07-07T15:01:43+08:00",
-      "sha256": "0d4e31c0ff5f5bbd2b2050473858876a4ad9dac2d02d68c55da54ebecda96817"
+      "size": 10500,
+      "modified_at": "2026-07-07T16:32:36+08:00",
+      "sha256": "8feba783f392fb7fa315c9abdc18ab785584ec9400453efb46f14695f8a34fe7"
     },
     {
       "name": "news-notice-sentiment.close.json",
@@ -32929,9 +32929,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\close-confirmation.1501-run.json",
       "relative_path": "runs/2026-07-07/close-confirmation.1501-run.json",
       "exists": true,
-      "size": 14224,
-      "modified_at": "2026-07-07T15:01:43+08:00",
-      "sha256": "bb2d98524a145687d1fb1c0ae3bb6e15d74f5a8ef5bde546e2ef23bcbadedd4f"
+      "size": 15247,
+      "modified_at": "2026-07-07T15:10:47+08:00",
+      "sha256": "42dc513cd71f6029e0f98ee3f31d9da6aedb499318165b4d94d99aea8bf5b929"
     },
     {
       "name": "pool-governance.json",
@@ -32947,9 +32947,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\workflow-manifest.json",
       "relative_path": "runs/2026-07-07/workflow-manifest.json",
       "exists": true,
-      "size": 262020,
-      "modified_at": "2026-07-07T14:55:13+08:00",
-      "sha256": "2e6410e9e170ace95d8062875a57609d98914cdb643cbdf2d414f738a830b9ee"
+      "size": 267429,
+      "modified_at": "2026-07-07T15:04:35+08:00",
+      "sha256": "0af1da330123fa7465fbb168608e00e2a704e5127b7a68b4bbac9a49cd51adff"
     },
     {
       "name": "data-lineage.json",

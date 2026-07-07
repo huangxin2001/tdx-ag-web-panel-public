@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-07T15:02:51+08:00",
+  "generated_at": "2026-07-07T16:32:47+08:00",
   "currentDate": "2026-07-07",
   "current_date": "2026-07-07",
   "panel_payload_mode": "lite",
@@ -6489,7 +6489,7 @@ window.THREE_PERIOD_PANEL_STATE = {
     "formal_sample_count": 1,
     "side_channel_sample_count": 21,
     "formal_return_text": "2026-07-06 收盘样本、2026-07-07 回填：正式票 T+1 平均 -1.89%，样本 1 只。",
-    "side_return_text": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -4.31%，样本 21 只，只作对比。",
+    "side_return_text": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -2.94%，样本 21 只，只作对比。",
     "return_source_close_date": "2026-07-06",
     "return_backfill_date": "2026-07-07",
     "return_context_text": "2026-07-06 收盘样本、2026-07-07 回填",
@@ -6534,9 +6534,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "旁路对比",
-        "value": "-4.31%",
+        "value": "-2.94%",
         "status": "watch",
-        "detail": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -4.31%，样本 21 只，只作对比。"
+        "detail": "2026-07-06 收盘样本、2026-07-07 回填：旁路样本 T+1 平均 -2.94%，样本 21 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -6582,7 +6582,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "group": "题材轮动观察",
         "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -13.89%。只做旁路收益统计。"
+        "reason": "样本 3 只，T+1 平均 -4.27%。只做旁路收益统计。"
       },
       {
         "group": "收盘中强承接观察",
@@ -6634,9 +6634,9 @@ window.THREE_PERIOD_PANEL_STATE = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\paper-trade-summary.review.json",
         "relative_path": "runs/2026-07-07/paper-trade-summary.review.json",
         "exists": true,
-        "size": 2011,
-        "modified_at": "2026-07-07T15:01:43+08:00",
-        "sha256": "010e0780f0c1f2bb8cdbf86ab92679b12670478452f741ce817a6542f3c3f459"
+        "size": 1921,
+        "modified_at": "2026-07-07T16:31:46+08:00",
+        "sha256": "73bffcf8099e7f00715506c5b39daa888c6a8824be074cc599843bf77cb437b3"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\reverse-miss.json",
@@ -6900,9 +6900,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-07T15:02:51+08:00",
-    "web_current_state_exported_at": "2026-07-07T15:02:51+08:00",
-    "web_visible_at": "2026-07-07T15:02:51+08:00",
+    "web_panel_state_exported_at": "2026-07-07T16:32:47+08:00",
+    "web_current_state_exported_at": "2026-07-07T16:32:47+08:00",
+    "web_visible_at": "2026-07-07T16:32:47+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -6925,17 +6925,17 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-07\\web-panel-state.json",
       "relative_path": "runs/2026-07-07/web-panel-state.json",
       "exists": true,
-      "size": 1511167,
-      "modified_at": "2026-07-07T15:01:55+08:00",
-      "sha256": "b8c2f9ab231e4eed1c91b36bdb6c2e08857f6baf025fe6d96af152bc80a54b36"
+      "size": 1449060,
+      "modified_at": "2026-07-07T15:03:01+08:00",
+      "sha256": "c30787e69dabc7f998498374e16053557c0224d5f93bcada0bae2bf29a515180"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 287441,
-      "modified_at": "2026-07-07T15:01:55+08:00",
-      "sha256": "cc433ad4ed14b75f7db05235fdf3b8716af58688ab182ebcd188dae6d7cc3d97"
+      "size": 296312,
+      "modified_at": "2026-07-07T15:03:01+08:00",
+      "sha256": "3de971966a5e371a6a8141e0f164f48da6605df36896c2a61c3de959b0a96d81"
     }
   },
   "summary": {
