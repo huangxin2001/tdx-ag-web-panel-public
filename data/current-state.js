@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-08T15:04:55+08:00",
+  "generated_at": "2026-07-08T20:03:02+08:00",
   "currentDate": "2026-07-08",
   "current_date": "2026-07-08",
   "panel_payload_mode": "lite",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE = {
   "run": {
     "date": "2026-07-08",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08",
-    "run_id": "20260708-close-145443665526",
-    "period": "close",
+    "run_id": "20260708-review-200000966174",
+    "period": "review",
     "status": "success",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -204,12 +204,12 @@ window.THREE_PERIOD_PANEL_STATE = {
     {
       "key": "review",
       "label": "复盘报",
-      "json_status": "missing",
-      "markdown_status": "missing",
+      "json_status": "ok",
+      "markdown_status": "ok",
       "report_type": "review-report",
       "date": "2026-07-08",
-      "generated_at": "",
-      "recommendation_mode": "",
+      "generated_at": "2026-07-08T20:00:35.550716+08:00",
+      "recommendation_mode": "cash",
       "candidate_count": 0,
       "candidate_universe_count": 0,
       "scan_pool_count": 0,
@@ -217,32 +217,46 @@ window.THREE_PERIOD_PANEL_STATE = {
       "buy_top3_count": 0,
       "json_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\review-report.json",
-        "relative_path": "review-report.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/review-report.json",
+        "exists": true,
+        "size": 632671,
+        "modified_at": "2026-07-08T20:00:36+08:00",
+        "sha256": "c861609537f83166185add7cc44ad65c6316cb1cd096d36c775725a351a94ed5"
       },
       "markdown_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\review-report.md",
-        "relative_path": "review-report.md",
-        "exists": false
+        "relative_path": "runs/2026-07-08/review-report.md",
+        "exists": true,
+        "size": 12836,
+        "modified_at": "2026-07-08T20:03:00+08:00",
+        "sha256": "82d5b03928922531597144ff48083682b04c34932ba266964b6dffcdfe5a8680"
       },
       "markdown": {
-        "exists": false,
-        "status": "missing",
-        "headings": [],
-        "full_text": "",
-        "excerpt": "",
+        "exists": true,
+        "status": "ok",
+        "headings": [
+          "复盘对象",
+          "原始结论回放",
+          "结果验证",
+          "错因归类",
+          "统计",
+          "规则升级建议",
+          "下次修正动作"
+        ],
+        "full_text": "【复盘对象】\n- 对象类型：收盘报 / 次日早报 / 午报完整链路复盘。\n- 复盘范围：上一交易日收盘报、当日早报、当日午报；当日 14:50 收盘新选票只进入下一交易日验证，不进入本篇主文。\n- 本报告只做复盘，不给新的买入名单；未提供券商成交记录时，只复盘策略判断。\n- 数据缺口：candidate-notice-scan 日期/时段/候选池不匹配，已拒绝复用。\n- 数据处理提醒：候选不足，不强行凑 买入前三名。\n- 条件筛选数据偏少：筛选结果只能作线索，还要结合行情、K 线和结构化数据复核。\n\n【原始结论回放】\n- 本次只复盘上一交易日收盘报留下、今日早报和午报已经验证过的对象。\n- 上一收盘报留下的今日验证对象：金徽股份 / 603132。\n- 三份报告原文摘要：\n- 收盘报原文摘要：【今日总判断】 - 今日市场状态：分歧试错局 - 今日处理：可输出买入前三名 - 原因：存在单项逆风，环境偏谨慎；三闸门只提示仓位和节奏，不直接阻断正式买入名单。 - 午报结果回收：已回看午报盘中结果 1 个，只作为收盘重扫参考，不直接续作明日名单。减仓：天味食品。\n- 早报原文摘要：【结论】 - 当前判断：观察，不买入。 - 仓位建议：轻仓。 - 原因：没有候选满足买入前三名 准入条件，只观察。 - 盘前预取：已提前读取昨日对象、隔夜新闻公告和外围/国内背景；目标 1 只。 - 风险快检：继续持有 1 只，观察 0 只，减仓 0 只，退出 0 只。 - 早报口径：这些结论只复核昨日尾盘模拟持仓，不重新选股。 - 昨日验证对象： - 金徽股份（昨日尾盘模拟买入对象） → 继续持有观察，盘前未见硬风险，竞价未触发退出条件\n- 午报原文摘要：【上午验证结论】 - 上午没有早报交下来的可执行对象。 - 午报重点：回看早报观察股有没有转强；如果没有达到条件，下午不新增盯盘。 - 早报观察对象回看：早报有 1 个观察/降级对象，午报只做盘中回看。 - 处理结果：这些对象暂未达到下午继续盯盘条件，所以不放入午后名单。 - 金徽股份 / 603132 / 剔除层 / 技术/资金行为池 / 技术面不合格，取消买入 / 换手率异常，需降级观察；冲高回落超过3%，短线承接不足 / 技术面取消、尾盘无承接或主线弱相关，不能进入早报重点验证 - 空仓半日验证：早报没有正式...\n- 仓位建议：轻仓。\n- 上一收盘报候选回放（前5只，只用于复盘，不等于新增交接对象）：\n  - 金徽股份 / 603132 / 买入 Top3 / 技术/资金行为池 / 主线映射：未映射主线 / 入场风格：等回踩确认；竞价/开盘：偏强；相对强弱：偏强（自选池第23/274，分位0.9194）；不追原因：没有追高硬伤，但还要看量能、分时和尾盘承接 / 技术结论：无\n\n【结果验证】\n- 环境是否命中：缺少正式买入名单 后验收益样本，环境判断只能保留原始回放。\n- 主线是否命中：缺少正式候选后验与明显漏选样本，主线判断先保留原结论。\n- 候选是否获得溢价：上一收盘没有正式买入名单 后验样本，本次只复盘观察链和旁路表现。。\n- 观察升级：0 只具备升级复核价值，0 只继续观察，0 只建议移出，0 只需要补数据。\n- 可升级复核对象：本次没有足够证据把观察对象上调。\n- 市场风格：发现变化，主要在趋势和情绪偏好、风险偏好；建议切换为防御口径，但不允许单日机械改规则。\n- 链路是否运行正确：上一收盘报、当日早报、午报的报告文件、运行清单和交接对象校验一致，本次复盘使用的源链路未发现污染。\n- 模拟跟单盈亏：正式买入对象 1 只，其中 0 只具备可复现买入价和当日收盘价。\n- 按保守口径：14:50 尾盘模拟买入；收益从尾盘模拟买入价开始算；当日收盘平均收益 未取得，T+1 收盘平均收益 未取得，3 日跟踪平均收益 未取得。\n- 四层收益对比：题材观察 -5.90%；候选评分前排 -4.56%；低位回流观察 -6.13%；早盘驱动观察 -8.52%；隔夜涨停观察 -4.83%；题材轮动观察 -5.57%；收盘中强承接观察 -1.63%。\n- 旁路假设收益：19 只（完成计算 19 只），当日收盘平均收益 0.10%；其中 A类 3、B类 0、评分前排 3、低位回流 3、早盘驱动 3、隔夜涨停观察 3、题材轮动观察 3、收盘中强承接观察 1。\n- 口径说明：这是纸面模拟，不代表账户成交记录，也不会触发下单。\n- 旁路单票提醒：东山精密 / 002384 T+1 0.40%，只说明旁路有值得继续观察的样本，不能反向改当天 Top3。\n- 超短兑现复盘：正式模拟买入 1 只，隔夜直接给溢价 0 只，盘中继续走强 0 只，冲高回落 0 只，低开修复 0 只，弱承接/止损 1 只。\n- 口径说明：这是 14:50 模拟买入后的纸面复盘，不代表账户成交，不下单，不反向改当天买入名单。\n- 四套逻辑对比：正式买入只统计 Top3；A类、B类、评分前排、低位回流、早盘驱动、隔夜涨停观察、题材轮动观察和收盘中强承接观察只做旁路观察收益。\n- 样本数量：正式 Top3 1 只，A类主线/题材 3 只，B类技术/资金 0 只，候选评分前排 3 只，低位回流观察 3 只，早盘驱动观察 3 只，隔夜涨停观察 3 只，题材轮动观察 3 只，收盘中强承接观察 1 只。\n- 当前纸面对比：T+1 平均收益暂时较好的是 收盘中强承接观察；这只用于复盘建议，不反向改当天买入名单。\n- 是否存在漏选强票：完全漏选强票 0 只。\n- 是否存在低估强票：14 只旁路对象次日跑强。\n- 完全漏选强票：本次未发现未进入买入名单、题材观察、技术观察或候选评分前排，但次日明显跑强的对象。\n- 低估强票 / 旁路跑强：\n  - 启明星辰 / 002439：题材观察；强度分 90；次日涨跌 5.98%；涨幅达到强势区 5.98%；自选池相对强弱分位 0.97。\n  - 中国软件 / 600536：题材观察；强度分 90；次日涨跌 3.19%；涨幅达到强势区 3.19%；自选池相对强弱分位 0.95。\n  - 依依股份 / 001206：题材观察；强度分 90；次日涨跌 5.58%；涨幅达到强势区 5.58%；自选池相对强弱分位 0.97。\n  - 晋控煤业 / 601001：题材观察；强度分 90；次日涨跌 6.55%；涨幅达到强势区 6.55%；自选池相对强弱分位 0.98。\n  - 富春环保 / 002479：题材观察；强度分 90；次日涨跌 3.69%；涨幅达到强势区 3.69%；自选池相对强弱分位 0.96。\n- 若有实盘：未提供券商成交记录，因此不做执行买卖点复盘。\n\n【错因归类】\n- 本次主要问题：前三报链路已读取；本次没有发现需要归咎于环境、主线或个股规则的明确问题。\n- 反向漏选：完全漏选强票 0 只，先看数据缺口和规则重复性，不直接改买入规则。\n- 低估强票：发现 14 只旁路对象跑强，只证明旁路样本有复盘价值，不能反向改当天 Top3。\n- 旁路观察：东山精密 / 002384 T+1 0.40%，说明旁路层有价值，但样本不足，不能反向改买入名单。\n- 节奏 / 仓位 / 纪律：未提供券商成交或执行记录，暂不判断执行纪律，只保留策略层复盘。\n- 核心错因：正式候选并非完全错误，主要矛盾转到次日上午的执行节奏和退出纪律。\n\n【统计】\n- 完全漏选强票数量：0。\n- 低估强票 / 旁路跑强数量：14。\n- 观察升级候选数量：0。\n- 模拟跟单样本：正式买入 1 只，完成计算 0 只。\n- 超短兑现样本：正式模拟买入 1 只，隔夜或盘中兑现 0 只，弱承接 1 只。\n- 券商成交样本：未提供，因此不计算买卖点命中率。\n- 连续误判：样本不足，暂不下结论。\n- 观察升级命中率：需要更多后验样本，暂不机械计算。\n\n【规则升级建议】\n- 规则结论：小幅调整规则；置信度：中。\n- 原因：反向漏选数量达到复盘复核阈值，且正式收益未证明规则有效。\n- 原因：市场风格相对历史样本出现变化。\n- 建议动作：复核候选容量、技术/资金行为通道权重和强度阈值，连续出现后再调规则。\n- 建议动作：复核当前风格下题材、技术/资金行为、风险偏好的权重，不允许单日机械改规则。\n- 复盘建议：漏选复核 / 漏选强度阈值，先观察复核；当前状态：30；建议：连续复盘仍漏选时，将漏选强度复核阈值下调 5 点到 25，并同步复核候选容量；依据：反向漏选待复核对象 14 只；类型统计={}。\n- 复盘建议：规则配置 / score_weights.theme / score_weights.technical，先观察复核；当前状态：see configs/rules.yaml；建议：如果风格漂移连续出现，复核题材权重和技术/资金行为权重，不做单日机械调参；依据：style_drift.changed_dimensions=trend_vs_emotion,risk_appetite。\n- 说明：复盘建议只用于后续维护，不反向改写当天买入名单、观察名单或交接对象。\n- 算法改进审批：有 2 条待确认建议；其中 1 条属于白名单参数，确认后会自动写回并生成回滚记录。\n- 待确认 P1：漏选复核，建议：连续复盘仍漏选时，将漏选强度复核阈值下调 5 点到 25，并同步复核候选容量；证据：反向漏选待复核对象 14 只；类型统计={}；学习验证：reverse_miss.min_strength_score 近5个复盘日里重复触发 5 次，有效复盘 5 日、链路干净 5 日；可进入确认，确认后只会对白名单参数自动写回，并生成回滚记录。；实施方式：确认后自动写回白名单参数。\n- 待确认 P2：规则配置，建议：如果风格漂移连续出现，复核题材权重和技术/资金行为权重，不做单日机械调参；证据：style_drift.changed_dimensions=trend_vs_emotion,risk_appetite；学习验证：configs/rules.yaml:score_weights.theme / score_weights.technical 近5个复盘日里重复触发 2 次，有效复盘 5 日、链路干净 5 日；可进入确认，但只记录已批准状态，不会网页自动改正式规则。；实施方式：确认后只进入已批准，仍需人工实施。\n- 审批边界：未确认前绝不修改规则；确认后也只允许对白名单参数自动写回，其余建议仍需人工实施。\n- 双复盘合议结论：正式复盘负责事实链路，龙虾第二复盘只做反证和质询；最终只合成这一份复盘结论，不输出第二套用户结论。\n- 合议后的边界：不改正式 Top3、候选排名、三闸门、交接对象、执行输入、交易计划或正式收益；只决定是否进入后续观察、补数据或人工确认。\n- 合议依据：龙虾反证认为：本次复盘只能给 continue_observation：正式链路未污染，但正式买入名单 缺少完整后验收益样本，主要问题落在金徽股份盘中弱承接后的执行节奏验证，而不是选股规则改写。\n- 龙虾规则建议已并入合议动作：继续观察；证据天数 1；允许自动实施：否；需要用户确认：是。\n- 合议原因：单日只显示执行节奏有复核价值和旁路低估现象存在，但没有完整正式收益样本，也没有完全漏选样本；按硬边界不能调参、不能改 买入前三名、不能改候选排名，只能继续观察并累计更多样本。\n- 正式票合议复核：金徽股份/603132：执行需优化。\n- 旁路合议观察：题材观察：样本不足；候选评分前排：继续观察；早盘驱动/低位回流/隔夜涨停观察/题材轮动观察：样本不足。\n- 合议多日验证：ready；历史样本 25 日，有效第二意见 24 日；只进入观察提案，不自动改策略。\n\n【下次修正动作】\n- 1. 复盘报生成时继承 收盘/早报/午报 三份报告的三闸门、候选、技术面、执行字段、候选来源和观察分层。\n- 2. 增加观察名单升级判断：明确输出应升级 / 继续观察 / 剔除。\n- 3. 风格变化必须和历史样本对比后再判断，不因单日变化机械改规则。\n- 4. 反向漏选保持扫描，但只有多次重复漏选才调整规则；单次漏选先判定数据缺口或噪音。\n- 5. 保持仓位降级纪律：连续证据不足或情绪逆风时，只允许观察或试错。\n- 执行纪律不变：T+1纪律、不打板、涨幅<3%、总仓位受控、绝不补仓死扛、看不清就不买。\n",
+        "excerpt": "【复盘对象】\n- 对象类型：收盘报 / 次日早报 / 午报完整链路复盘。\n- 复盘范围：上一交易日收盘报、当日早报、当日午报；当日 14:50 收盘新选票只进入下一交易日验证，不进入本篇主文。\n- 本报告只做复盘，不给新的买入名单；未提供券商成交记录时，只复盘策略判断。\n- 数据缺口：candidate-notice-scan 日期/时段/候选池不匹配，已拒绝复用。\n- 数据处理提醒：候选不足，不强行凑 买入前三名。\n- 条件筛选数据偏少：筛选结果只能作线索，还要结合行情、K 线和结构化数据复核。\n【原始结论回放】\n- 本次只复盘上一交易日收盘报留下、今日早报和午报已经验证过的对象。\n- 上一收盘报留下的今日验证对象：金徽股份 / 603132。\n- 三份报告原文摘要：\n- 收盘报原文摘要：【今日总判断】 - 今日市场状态：分歧试错局 - 今日处理：可输出买入前三名 - 原因：存在单项逆风，环境偏谨慎；三闸门只提示仓位和节奏，不直接阻断正式买入名单。 - 午报结果回收：已回看午报盘中结果 1 个，只作为收盘重扫参考，不直接续作明日名单。减仓：天味食品。\n- 早报原文摘要：【结论】 -",
         "focus_text": "",
-        "char_count": 0
+        "char_count": 5140
       },
       "schedule": {
         "scheduled_time": "20:00",
         "scheduled_at": "2026-07-08T20:00+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "complete",
+        "automation_status_label": "已按计划生成",
+        "diagnosis_cn": "已按计划生成",
+        "manifest_status": "success",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.review.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
@@ -6417,18 +6431,353 @@ window.THREE_PERIOD_PANEL_STATE = {
     }
   },
   "rule_upgrade_proposals": {
-    "status": "missing",
+    "schema_version": "rule_upgrade_proposals.v1",
+    "date": "2026-07-08",
+    "generated_at": "2026-07-08T20:00:36.229735+08:00",
+    "source_rule_upgrade": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade.json",
+    "approval_file": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-approvals.json",
+    "learning_validation_file": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\learning-validation.json",
+    "implementation_file": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-implementation.json",
+    "decision": "adjust",
     "summary": {
-      "proposal_count": 0,
-      "pending_count": 0,
-      "approval_required": false
+      "proposal_count": 2,
+      "pending_count": 2,
+      "approved_count": 0,
+      "rejected_count": 0,
+      "auto_apply_ready_count": 1,
+      "applied_count": 0,
+      "highest_severity": "P1",
+      "highest_review_score": 91,
+      "highest_priority_cn": "高优先级：证据较足，需用户确认后再改。",
+      "scored_count": 2,
+      "approval_required": true
     },
-    "proposals": [],
+    "proposals": [
+      {
+        "proposal_id": "rup-20260708-13f1dfb3d002",
+        "created_at": "2026-07-08T20:00:36.229639+08:00",
+        "date": "2026-07-08",
+        "severity": "P1",
+        "risk_level": "P1",
+        "status": "pending_user_approval",
+        "display_status": "pending_user_approval",
+        "module": "reverse_miss_scan.py",
+        "parameter": "min_strength_score",
+        "target_files": [
+          "configs/rules.yaml",
+          "scripts/reverse_miss_scan.py"
+        ],
+        "current_value": 30,
+        "current_rule": "30",
+        "suggested_change": "连续复盘仍漏选时，将漏选强度复核阈值下调 5 点到 25，并同步复核候选容量。",
+        "config_path": "reverse_miss.min_strength_score",
+        "suggested_value": 25,
+        "value_type": "int",
+        "change_type": "threshold_change",
+        "impact_scope": {
+          "affected_layers": [
+            "review",
+            "selection_rules"
+          ],
+          "affected_reports": [
+            "review-report"
+          ],
+          "selection_logic_may_change_after_approval": true,
+          "formal_top3_unchanged_until_approved": true
+        },
+        "evidence_files": [
+          "rule-upgrade.json",
+          "observation-upgrade.json",
+          "reverse-miss.json",
+          "style-drift.json",
+          "paper-trade-summary.json",
+          "ultra-short-review.json",
+          "attribution.json"
+        ],
+        "evidence_summary": "反向漏选待复核对象 14 只；类型统计={}",
+        "affected_reports": [
+          "review-report"
+        ],
+        "expected_benefit": "复核阈值是否过严或过松，降低连续漏选或误伤。",
+        "risk": "单日复盘只进入维护建议，不自动改 Top3 或 handoff。",
+        "requires_user_approval": true,
+        "requires_user_confirmation": true,
+        "review_score": {
+          "total": 91,
+          "parts": {
+            "severity": 28,
+            "evidence": 22,
+            "actionability": 25,
+            "confidence": 16
+          },
+          "priority_cn": "高优先级：证据较足，需用户确认后再改。",
+          "scoring_rule": "severity + evidence + actionability + confidence, max 100"
+        },
+        "approval_status": "not_requested",
+        "approval_source": "",
+        "approved_at": "",
+        "rejected_reason": "",
+        "implementation_status": "not_started",
+        "implementation_reason": "",
+        "implementation_mode": "auto_apply_after_approval",
+        "auto_apply_after_approval": true,
+        "rollback_supported": true,
+        "validation_gate": "pending_user_approval",
+        "validation_summary": "reverse_miss.min_strength_score 近5个复盘日里重复触发 5 次，有效复盘 5 日、链路干净 5 日；可进入确认，确认后只会对白名单参数自动写回，并生成回滚记录。",
+        "validation_windows": [
+          {
+            "window": 5,
+            "review_days": 5,
+            "clean_chain_days": 5,
+            "trigger_days": 5,
+            "trigger_dates": [
+              "2026-07-02",
+              "2026-07-03",
+              "2026-07-06",
+              "2026-07-07",
+              "2026-07-08"
+            ],
+            "formal_win_days": 1,
+            "avg_premium_rate": -0.0074,
+            "avg_formal_t1_return": -0.0074,
+            "worst_formal_t1_return": -0.0189,
+            "side_channel_better_days": 0
+          },
+          {
+            "window": 10,
+            "review_days": 10,
+            "clean_chain_days": 10,
+            "trigger_days": 10,
+            "trigger_dates": [
+              "2026-06-25",
+              "2026-06-26",
+              "2026-06-29",
+              "2026-06-30",
+              "2026-07-01",
+              "2026-07-02",
+              "2026-07-03",
+              "2026-07-06",
+              "2026-07-07",
+              "2026-07-08"
+            ],
+            "formal_win_days": 3,
+            "avg_premium_rate": 0.0103,
+            "avg_formal_t1_return": 0.0103,
+            "worst_formal_t1_return": -0.0189,
+            "side_channel_better_days": 0
+          },
+          {
+            "window": 20,
+            "review_days": 20,
+            "clean_chain_days": 20,
+            "trigger_days": 20,
+            "trigger_dates": [
+              "2026-06-10",
+              "2026-06-11",
+              "2026-06-12",
+              "2026-06-15",
+              "2026-06-16",
+              "2026-06-17",
+              "2026-06-18",
+              "2026-06-22",
+              "2026-06-23",
+              "2026-06-24",
+              "2026-06-25",
+              "2026-06-26",
+              "2026-06-29",
+              "2026-06-30",
+              "2026-07-01",
+              "2026-07-02",
+              "2026-07-03",
+              "2026-07-06",
+              "2026-07-07",
+              "2026-07-08"
+            ],
+            "formal_win_days": 7,
+            "avg_premium_rate": 0.0056,
+            "avg_formal_t1_return": 0.0056,
+            "worst_formal_t1_return": -0.025,
+            "side_channel_better_days": 0
+          }
+        ],
+        "best_validation_window": {
+          "window": 5,
+          "review_days": 5,
+          "clean_chain_days": 5,
+          "trigger_days": 5,
+          "trigger_dates": [
+            "2026-07-02",
+            "2026-07-03",
+            "2026-07-06",
+            "2026-07-07",
+            "2026-07-08"
+          ],
+          "formal_win_days": 1,
+          "avg_premium_rate": -0.0074,
+          "avg_formal_t1_return": -0.0074,
+          "worst_formal_t1_return": -0.0189,
+          "side_channel_better_days": 0
+        }
+      },
+      {
+        "proposal_id": "rup-20260708-5125fb5dc9d5",
+        "created_at": "2026-07-08T20:00:36.229703+08:00",
+        "date": "2026-07-08",
+        "severity": "P2",
+        "risk_level": "P2",
+        "status": "pending_user_approval",
+        "display_status": "pending_user_approval",
+        "module": "configs/rules.yaml",
+        "parameter": "score_weights.theme / score_weights.technical",
+        "target_files": [
+          "configs/rules.yaml",
+          "rules.yaml"
+        ],
+        "current_value": "see configs/rules.yaml",
+        "current_rule": "see configs/rules.yaml",
+        "suggested_change": "如果风格漂移连续出现，复核题材权重和技术/资金行为权重，不做单日机械调参。",
+        "config_path": "",
+        "suggested_value": null,
+        "value_type": "",
+        "change_type": "weight_change",
+        "impact_scope": {
+          "affected_layers": [
+            "review",
+            "selection_rules"
+          ],
+          "affected_reports": [
+            "review-report"
+          ],
+          "selection_logic_may_change_after_approval": true,
+          "formal_top3_unchanged_until_approved": true
+        },
+        "evidence_files": [
+          "rule-upgrade.json",
+          "observation-upgrade.json",
+          "reverse-miss.json",
+          "style-drift.json",
+          "paper-trade-summary.json",
+          "ultra-short-review.json",
+          "attribution.json"
+        ],
+        "evidence_summary": "style_drift.changed_dimensions=trend_vs_emotion,risk_appetite",
+        "affected_reports": [
+          "review-report"
+        ],
+        "expected_benefit": "复核信号权重是否跟当前短线风格匹配。",
+        "risk": "至少需要多日样本或回测样本确认。",
+        "requires_user_approval": true,
+        "requires_user_confirmation": true,
+        "review_score": {
+          "total": 81,
+          "parts": {
+            "severity": 18,
+            "evidence": 22,
+            "actionability": 25,
+            "confidence": 16
+          },
+          "priority_cn": "高优先级：证据较足，需用户确认后再改。",
+          "scoring_rule": "severity + evidence + actionability + confidence, max 100"
+        },
+        "approval_status": "not_requested",
+        "approval_source": "",
+        "approved_at": "",
+        "rejected_reason": "",
+        "implementation_status": "not_started",
+        "implementation_reason": "",
+        "implementation_mode": "manual_after_approval",
+        "auto_apply_after_approval": false,
+        "rollback_supported": false,
+        "validation_gate": "pending_user_approval",
+        "validation_summary": "configs/rules.yaml:score_weights.theme / score_weights.technical 近5个复盘日里重复触发 2 次，有效复盘 5 日、链路干净 5 日；可进入确认，但只记录已批准状态，不会网页自动改正式规则。",
+        "validation_windows": [
+          {
+            "window": 5,
+            "review_days": 5,
+            "clean_chain_days": 5,
+            "trigger_days": 2,
+            "trigger_dates": [
+              "2026-07-03",
+              "2026-07-08"
+            ],
+            "formal_win_days": 1,
+            "avg_premium_rate": -0.0074,
+            "avg_formal_t1_return": -0.0074,
+            "worst_formal_t1_return": -0.0189,
+            "side_channel_better_days": 0
+          },
+          {
+            "window": 10,
+            "review_days": 10,
+            "clean_chain_days": 10,
+            "trigger_days": 4,
+            "trigger_dates": [
+              "2026-06-25",
+              "2026-07-01",
+              "2026-07-03",
+              "2026-07-08"
+            ],
+            "formal_win_days": 3,
+            "avg_premium_rate": 0.0103,
+            "avg_formal_t1_return": 0.0103,
+            "worst_formal_t1_return": -0.0189,
+            "side_channel_better_days": 0
+          },
+          {
+            "window": 20,
+            "review_days": 20,
+            "clean_chain_days": 20,
+            "trigger_days": 7,
+            "trigger_dates": [
+              "2026-06-11",
+              "2026-06-15",
+              "2026-06-16",
+              "2026-06-25",
+              "2026-07-01",
+              "2026-07-03",
+              "2026-07-08"
+            ],
+            "formal_win_days": 7,
+            "avg_premium_rate": 0.0056,
+            "avg_formal_t1_return": 0.0056,
+            "worst_formal_t1_return": -0.025,
+            "side_channel_better_days": 0
+          }
+        ],
+        "best_validation_window": {
+          "window": 5,
+          "review_days": 5,
+          "clean_chain_days": 5,
+          "trigger_days": 2,
+          "trigger_dates": [
+            "2026-07-03",
+            "2026-07-08"
+          ],
+          "formal_win_days": 1,
+          "avg_premium_rate": -0.0074,
+          "avg_formal_t1_return": -0.0074,
+          "worst_formal_t1_return": -0.0189,
+          "side_channel_better_days": 0
+        }
+      }
+    ],
+    "guardrails": {
+      "requires_user_approval_before_changes": true,
+      "does_not_modify_rules": true,
+      "does_not_modify_top3": true,
+      "does_not_modify_handoff": true,
+      "does_not_execute_trade": true,
+      "auto_apply_whitelist_only": true
+    },
+    "status": "ok",
     "files": {
       "proposals": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-proposals.json",
-        "relative_path": "rule-upgrade-proposals.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/rule-upgrade-proposals.json",
+        "exists": true,
+        "size": 11819,
+        "modified_at": "2026-07-08T20:00:36+08:00",
+        "sha256": "759cc54def0fa93e7f2dcde61c25d9d17583f843e6dcd29d8b9c876436bb1ddc"
       },
       "approvals": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-approvals.json",
@@ -6437,24 +6786,29 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       "learning_validation": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\learning-validation.json",
-        "relative_path": "learning-validation.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/learning-validation.json",
+        "exists": true,
+        "size": 8605,
+        "modified_at": "2026-07-08T20:00:36+08:00",
+        "sha256": "6411ad48dc7ed24dcbde5f43e5238b79101f37496202963560ad3f6a87c8c729"
       },
       "implementation": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-implementation.json",
         "relative_path": "rule-upgrade-implementation.json",
         "exists": false
       }
-    }
+    },
+    "approvals": {},
+    "usage_boundary": "Web 确认前不得改任何规则；确认后也只允许对白名单参数自动写回并保留回滚，其余建议只记录已批准状态。"
   },
   "trader_review": {
     "schema_version": "trader_review_workbench.v1",
     "status": "ok",
     "date": "2026-07-08",
     "title": "交易员复盘工作台",
-    "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
-    "market_tone_label": "偏弱复盘",
-    "emotion_score": 48,
+    "one_liner": "本次复盘只能给 continue_observation：正式链路未污染，但正式 Top3 缺少完整后验收益样本，主要问题落在金徽股份盘中弱承接后的执行节奏验证，而不是选股规则改写。",
+    "market_tone_label": "弱承接复盘",
+    "emotion_score": 42,
     "formal_sample_count": 1,
     "side_channel_sample_count": 19,
     "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
@@ -6463,10 +6817,10 @@ window.THREE_PERIOD_PANEL_STATE = {
     "return_backfill_date": "2026-07-08",
     "return_context_text": "2026-07-07 收盘样本、2026-07-08 回填",
     "cross_date_review_return": true,
-    "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
+    "core_cause": "超短复盘显示 1 只正式样本上午走弱，重点不是立刻改选股，而是复核次日上午承接和退出纪律。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
-      "second_view": "龙虾第二复盘暂无有效正文，按本地复盘产物继续审计。",
+      "second_view": "本次复盘只能给 continue_observation：正式链路未污染，但正式 Top3 缺少完整后验收益样本，主要问题落在金徽股份盘中弱承接后的执行节奏验证，而不是选股规则改写。",
       "final_resolution": "合议层只给复盘结论和待审动作，不生成第二套买入名单。",
       "validation_summary": "第二复盘意见只进入多日观察，不单日自动调规则。"
     },
@@ -6475,9 +6829,9 @@ window.THREE_PERIOD_PANEL_STATE = {
         "rank": 1,
         "symbol": "603132",
         "name": "金徽股份",
-        "verdict": "已取消",
-        "reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
-        "attribution": "keep_or_review_cancel_reason"
+        "verdict": "执行需优化",
+        "reason": "上一收盘唯一正式验证对象，早报仍给继续持有观察，但午报显示换手率异常、冲高回落超过3%、短线承接不足，并被取消午后继续盯盘；这说明原始选择不能直接判为失效，真正需要复核的是次日上午转弱后的减仓/退出纪律是否足够及时。",
+        "attribution": "execution"
       }
     ],
     "loss_matrix": [
@@ -6489,8 +6843,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       },
       {
         "label": "上午承接",
-        "value": "0",
-        "status": "ok",
+        "value": "1",
+        "status": "weak",
         "detail": "上午走弱样本要先看执行纪律，不能直接等同选股失败。"
       },
       {
@@ -6508,47 +6862,22 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     ],
     "missed_count": 0,
-    "underestimated_count": 0,
+    "underestimated_count": 14,
     "side_channel_cards": [
       {
         "group": "题材观察",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -5.90%。只做旁路收益统计。"
-      },
-      {
-        "group": "技术观察",
-        "verdict": "旁路统计",
-        "reason": "样本 0 只，T+1 平均 --。只做旁路收益统计。"
+        "verdict": "样本不足",
+        "reason": "收盘报记录贝因美、丽岛新材、巨星农牧为观察层，午报仅作为旁路比较，不写入执行名单；当前没有形成可用于升级的多日表现证据。"
       },
       {
         "group": "候选评分前排",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -4.56%。只做旁路收益统计。"
+        "verdict": "继续观察",
+        "reason": "会稽山、丽岛新材、上峰材料只用于复盘对比，不计入正式收益；review_report 显示 underestimated_strong_count 为 14，但 observation_upgrade_count 为 0，说明旁路有低估现象但未达到升级复核条件。"
       },
       {
-        "group": "低位回流观察",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -6.13%。只做旁路收益统计。"
-      },
-      {
-        "group": "早盘驱动观察",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -8.52%。只做旁路收益统计。"
-      },
-      {
-        "group": "隔夜涨停观察",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -4.83%。只做旁路收益统计。"
-      },
-      {
-        "group": "题材轮动观察",
-        "verdict": "旁路统计",
-        "reason": "样本 3 只，T+1 平均 -5.57%。只做旁路收益统计。"
-      },
-      {
-        "group": "收盘中强承接观察",
-        "verdict": "旁路统计",
-        "reason": "样本 1 只，T+1 平均 -1.63%。只做旁路收益统计。"
+        "group": "早盘驱动/低位回流/隔夜涨停观察/题材轮动观察",
+        "verdict": "样本不足",
+        "reason": "午报记录多个旁路组用于盘面比较，但明确边界是不补票、不追买、不改午后执行；单日旁路强弱不能反推改候选排名或三闸门。"
       }
     ],
     "timeline": [
@@ -6570,64 +6899,101 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "time": "待确认",
         "label": "规则待审",
-        "detail": "0 条提案等待用户确认，确认前不改规则。"
+        "detail": "2 条提案等待用户确认，确认前不改规则。"
       }
     ],
     "rule_queue_summary": {
-      "pending_count": 0,
-      "approval_required": false,
-      "highest_priority_cn": "",
-      "items": []
+      "pending_count": 2,
+      "approval_required": true,
+      "highest_priority_cn": "高优先级：证据较足，需用户确认后再改。",
+      "items": [
+        {
+          "proposal_id": "rup-20260708-13f1dfb3d002",
+          "module": "reverse_miss_scan.py",
+          "parameter": "min_strength_score",
+          "status": "pending_user_approval",
+          "priority": "P1",
+          "summary": "连续复盘仍漏选时，将漏选强度复核阈值下调 5 点到 25，并同步复核候选容量。",
+          "requires_user_confirmation": true
+        },
+        {
+          "proposal_id": "rup-20260708-5125fb5dc9d5",
+          "module": "configs/rules.yaml",
+          "parameter": "score_weights.theme / score_weights.technical",
+          "status": "pending_user_approval",
+          "priority": "P2",
+          "summary": "如果风格漂移连续出现，复核题材权重和技术/资金行为权重，不做单日机械调参。",
+          "requires_user_confirmation": true
+        }
+      ]
     },
     "source_status": {
       "paper_trade_summary": "ok",
       "paper_trade_summary_scope": "review",
-      "reverse_miss": "missing",
-      "ultra_short_review": "missing",
-      "longxia_second_review": "missing",
-      "longxia_second_review_validation": "missing",
-      "rule_upgrade_proposals": "missing",
+      "reverse_miss": "ok",
+      "ultra_short_review": "ok",
+      "longxia_second_review": "ok",
+      "longxia_second_review_validation": "ok",
+      "rule_upgrade_proposals": "ok",
       "four_layer_tracking": "ok",
-      "review_markdown": "missing"
+      "review_markdown": "ok"
     },
     "source_files": {
       "paper_trade_summary": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\paper-trade-summary.review.json",
         "relative_path": "runs/2026-07-08/paper-trade-summary.review.json",
         "exists": true,
-        "size": 2002,
-        "modified_at": "2026-07-08T15:01:42+08:00",
-        "sha256": "d7f37d65d0899d745d6596548a0e404ecdfff74c1d20d78811e1a9d1bd53417f"
+        "size": 1995,
+        "modified_at": "2026-07-08T20:00:33+08:00",
+        "sha256": "aa7aa8e9146d36d9d4a59d40235c2e00dbf0943c46e1b143df7ad449ba5789c0"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\reverse-miss.json",
-        "relative_path": "reverse-miss.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/reverse-miss.json",
+        "exists": true,
+        "size": 18696,
+        "modified_at": "2026-07-08T20:00:25+08:00",
+        "sha256": "02b3fe5bab0b01ce76787387839c4770421032b6049eea038f3eddab30e92844"
       },
       "ultra_short_review": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\ultra-short-review.json",
-        "relative_path": "ultra-short-review.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/ultra-short-review.json",
+        "exists": true,
+        "size": 33053,
+        "modified_at": "2026-07-08T20:00:33+08:00",
+        "sha256": "1793dd284f48ba0a786596259cd29d25829f66404690f3795a1a10f8bf5e4e6a"
       },
       "longxia_second_review": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\second-review.longxia.review.json",
-        "relative_path": "second-review.longxia.review.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/second-review.longxia.review.json",
+        "exists": true,
+        "size": 33306,
+        "modified_at": "2026-07-08T20:03:00+08:00",
+        "sha256": "91397d1b81645f03784950f1cf17110e4386a88b998586fd38354a555968d2f3"
       },
       "longxia_second_review_validation": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\longxia-second-review-validation.json",
-        "relative_path": "longxia-second-review-validation.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/longxia-second-review-validation.json",
+        "exists": true,
+        "size": 99944,
+        "modified_at": "2026-07-08T20:03:00+08:00",
+        "sha256": "402403a034b191cbe498987416b3a12213f0bd7ed47b8409e4d99366867b4cc3"
       },
       "rule_upgrade_proposals": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\rule-upgrade-proposals.json",
-        "relative_path": "rule-upgrade-proposals.json",
-        "exists": false
+        "relative_path": "runs/2026-07-08/rule-upgrade-proposals.json",
+        "exists": true,
+        "size": 11819,
+        "modified_at": "2026-07-08T20:00:36+08:00",
+        "sha256": "759cc54def0fa93e7f2dcde61c25d9d17583f843e6dcd29d8b9c876436bb1ddc"
       },
       "review_markdown": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\review-report.md",
-        "relative_path": "review-report.md",
-        "exists": false
+        "relative_path": "runs/2026-07-08/review-report.md",
+        "exists": true,
+        "size": 12836,
+        "modified_at": "2026-07-08T20:03:00+08:00",
+        "sha256": "82d5b03928922531597144ff48083682b04c34932ba266964b6dffcdfe5a8680"
       }
     },
     "boundaries": {
@@ -6646,8 +7012,7 @@ window.THREE_PERIOD_PANEL_STATE = {
   },
   "automation_schedule": {
     "by_status": {
-      "complete": 3,
-      "not_due": 1
+      "complete": 4
     },
     "items": [
       {
@@ -6677,8 +7042,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-08T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -6691,9 +7056,9 @@ window.THREE_PERIOD_PANEL_STATE = {
     "schema_version": "web-panel-status-summary/v1",
     "currentDate": "2026-07-08",
     "current_date": "2026-07-08",
-    "status": "partial",
-    "headline_cn": "当前日期 2026-07-08：3/4 四报已生成",
-    "report_ready_count": 3,
+    "status": "complete",
+    "headline_cn": "当前日期 2026-07-08：4/4 四报已生成",
+    "report_ready_count": 4,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 0,
@@ -6704,8 +7069,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "complete": 3,
-      "not_due": 1
+      "complete": 4
     },
     "schedule_items": [
       {
@@ -6735,8 +7099,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-08T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -6748,9 +7112,9 @@ window.THREE_PERIOD_PANEL_STATE = {
     "schema_version": "web-panel-status-summary/v1",
     "currentDate": "2026-07-08",
     "current_date": "2026-07-08",
-    "status": "partial",
-    "headline_cn": "当前日期 2026-07-08：3/4 四报已生成",
-    "report_ready_count": 3,
+    "status": "complete",
+    "headline_cn": "当前日期 2026-07-08：4/4 四报已生成",
+    "report_ready_count": 4,
     "report_total_count": 4,
     "status_detail_counts": {
       "missing_count": 0,
@@ -6761,8 +7125,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "complete": 3,
-      "not_due": 1
+      "complete": 4
     },
     "schedule_items": [
       {
@@ -6792,8 +7155,8 @@ window.THREE_PERIOD_PANEL_STATE = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-08T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -6861,9 +7224,9 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-08T15:04:55+08:00",
-    "web_current_state_exported_at": "2026-07-08T15:04:55+08:00",
-    "web_visible_at": "2026-07-08T15:04:55+08:00",
+    "web_panel_state_exported_at": "2026-07-08T20:03:02+08:00",
+    "web_current_state_exported_at": "2026-07-08T20:03:02+08:00",
+    "web_visible_at": "2026-07-08T20:03:02+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -6886,35 +7249,34 @@ window.THREE_PERIOD_PANEL_STATE = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-08\\web-panel-state.json",
       "relative_path": "runs/2026-07-08/web-panel-state.json",
       "exists": true,
-      "size": 1370990,
-      "modified_at": "2026-07-08T15:01:55+08:00",
-      "sha256": "c06cb2424f364abbc0e6dd561b18ea227ee2a98a7b9034051e4ce4bec0080946"
+      "size": 1374914,
+      "modified_at": "2026-07-08T15:05:07+08:00",
+      "sha256": "1585d1a185a46a30b15c50f4411c85d3fd86198ce849b36a4bbc8646f2a57abd"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 285191,
-      "modified_at": "2026-07-08T15:01:55+08:00",
-      "sha256": "1beb146a0fb829184f7999a4e7806cb6c205a8c49cd548f43e7d99c82581ff7b"
+      "size": 293206,
+      "modified_at": "2026-07-08T15:05:07+08:00",
+      "sha256": "1d1bebcec0307c05e1a6b762215bb4fe0d0bb1217f90bc2ce9bdc3b8863cfb82"
     }
   },
   "summary": {
-    "reports_present": 3,
+    "reports_present": 4,
     "json_invalid": 0,
     "candidates_visible": 4,
     "four_layer_visible": 20,
-    "rule_upgrade_pending": 0,
+    "rule_upgrade_pending": 2,
     "trader_review_status": "ok",
-    "data_sources_ok": 45,
+    "data_sources_ok": 53,
     "warnings": 0,
     "automation_missed": 0,
     "automation_failed": 0,
     "automation_incomplete": 0,
-    "lineage_nodes": 41,
+    "lineage_nodes": 42,
     "automation_status_counts": {
-      "complete": 3,
-      "not_due": 1
+      "complete": 4
     },
     "panel_payload_mode": "lite"
   },
