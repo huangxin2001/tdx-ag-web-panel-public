@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-10T14:54:39+08:00",
+  "generated_at": "2026-07-10T15:08:07+08:00",
   "currentDate": "2026-07-10",
   "current_date": "2026-07-10",
   "panel_payload_mode": "full",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-07-10",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10",
-    "run_id": "20260710-noon-113501051864",
-    "period": "noon",
+    "run_id": "20260710-close-145841623140",
+    "period": "close",
     "status": "success",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -22,10 +22,10 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "key": "close",
       "label": "收盘报",
       "json_status": "ok",
-      "markdown_status": "missing",
+      "markdown_status": "ok",
       "report_type": "close-report",
       "date": "2026-07-10",
-      "generated_at": "2026-07-10T14:54:09.702477+08:00",
+      "generated_at": "2026-07-10T14:58:43.026470+08:00",
       "recommendation_mode": "top3",
       "candidate_count": 5,
       "candidate_universe_count": 214,
@@ -36,33 +36,44 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
         "relative_path": "runs/2026-07-10/close-report.json",
         "exists": true,
-        "size": 13083952,
-        "modified_at": "2026-07-10T14:54:11+08:00",
-        "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+        "size": 13132227,
+        "modified_at": "2026-07-10T14:58:52+08:00",
+        "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
       },
       "markdown_file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
-        "relative_path": "close-report.md",
-        "exists": false
+        "relative_path": "runs/2026-07-10/close-report.md",
+        "exists": true,
+        "size": 6596,
+        "modified_at": "2026-07-10T14:58:55+08:00",
+        "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
       },
       "markdown": {
-        "exists": false,
-        "status": "missing",
-        "headings": [],
-        "full_text": "",
-        "excerpt": "",
-        "focus_text": "",
-        "char_count": 0
+        "exists": true,
+        "status": "ok",
+        "headings": [
+          "今日总判断",
+          "外围摘要",
+          "国内摘要",
+          "情绪与趋势摘要",
+          "候选来源",
+          "自选股池强弱分层",
+          "次日早报验证对象"
+        ],
+        "full_text": "【今日总判断】\n- 今日市场状态：分歧试错局\n- 今日是否形成买入名单：是\n- 今日处理：可输出买入前三名\n- 原因：存在单项逆风，环境偏谨慎；三闸门只提示仓位和节奏，不直接阻断正式买入名单。\n- 午报结果回收：午报没有交给收盘报的盘中结果对象；收盘报按全自选股池重新筛选，不从午报名单续票。\n\n【外围摘要】\n- 外围结论：顺风，适合继续观察机会。\n- 关键数据：富时中国A50: -1.66%, 2026-07-10 14:35:24；道琼斯: +0.27%, 2026-07-10 04:57:04；纳斯达克综合: +1.30%, 2026-07-10 05:30:00；标普500: +0.81%, 2026-07-10 04:56:03；VIX恐慌指数期货: +0.49%, 2026-07-10 14:31:33；离岸人民币（香港）: -0.19%, 2026-07-10 14:35:15。\n- 正面证据：美股三大指数平均 +0.79%；纳斯达克偏强 +1.30%；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价。\n- 负面证据：A50 偏弱 -1.66%；A50归因偏逆风: 离岸中国资产风险偏好承压；VIX归因偏逆风: 波动率上行，避险升温。\n- 对 A 股影响：外围不是强顺风，只能给结构性方向参考，不能单独支持尾盘主攻。\n\n【国内摘要】\n- 国内结论：风险优先；国内侧风险偏高，环境偏谨慎；只降低环境置信度和仓位语气，候选是否进入买入名单仍看公告、技术、评分和数据质量。\n- 影响：国内侧偏谨慎，只影响环境置信度和仓位语气，不直接卡买入名单。\n- 板块响应：已共振；主线强度：中；证据：人形机器人.机器人概念 强度 8.0；非周期股.芯片.国企改革.航天装备 强度 2.0；AI 强度 1.0。\n- 催化未确认：\n  2. 人形机器人.机器人概念；时效：时效不明；类型：结构线索；证据：主线结构线索补充证据\n  3. 摩根大通打造的AI代理在回测中跑赢60/40投资组合；时效：时效不明；类型：产业催化；证据：格隆汇7月10日｜投资者如今正日益借助人工智能来执行从选股到风险管理的各种任务，摩根大通研究人员构建了一批AI投资代理，它们会根据不断变化的市况在股票和债券之间切换。在针对过去二十年开展的回溯...\n- 风险提示：\n  2. Z FIN(01168)7月10日起短暂停牌；类型：监管风险；严重度：中；证据：智通财经APP讯，Z FIN(01168)发布公告，该公司股份将于今天(10/7/2026)上午九时正起短暂停止买卖。\n  3. 派格生物(02565)牵手Rani：口服化打开下一代代谢资产的全球重估空间；类型：负面风险；严重度：弱；证据：但正因为其目标并非简单将周制剂变成口服制剂，而是探索低频口服生物药，其潜在产品价值及全球合作空间才更值得关注。 APGP6：如果“减重增肌”再实现口服化 在下一代肥胖症治疗领域，派格生物还布局了具有减重保肌乃至潜在增肌价...\n- 公告背景提示：国内信息里的公告抽样只作环境和风险解释；正式买入准入以候选级公告排雷为准。\n- 风险提示：国内信息只能辅助判断，不能单独作为买点；是否进入买入名单仍要看板块证据、公告排雷、技术面、评分和数据质量；授权样本和离线样本只作背景和风险参考，不等同于全市场完整实时扫描。\n- 公告提示：国内公告抽样没有覆盖全部自选股，只能作背景风险解释；正式买入名单以候选级公告排雷结果为准。\n- 国内信息增强：国内关注方向：人形机器人、机器人概念、芯片。\n- 国内信息增强：当天新增国内证据 6 条，其中 A股政策/产业 6 条，A股公告 0 条。\n- 国内信息增强：国内信息暂未直接命中自选股，作为环境和方向参考。\n- 正式候选公告排雷：通过 13 只，未扫描 0 只，查询失败 0 只，硬风险 2 只。未扫描或查询失败不是公告雷，但不能进买入名单。\n\n【情绪与趋势摘要】\n- 指数趋势：逆风，不适合进攻；上证指数下跌 1.33%。\n- 情绪阶段：分歧；状态：中性，先观察；仍有活跃度但未形成单边一致\n- 量能信号：量能数据异常，今天不按量能倍数做买入依据。\n- 连板/涨跌停结构：精确 3 连板；涨停 98 家，跌停 2 家；高位股反馈：顺风，适合继续观察机会。\n- 亏钱效应：顺风，适合继续观察机会；大跌数量 9，负反馈比例 0.2245。\n- 仓位建议：试错；平局或周五，控制仓位\n\n【候选来源】\n- 今天市场主攻方向：证券。\n- 轮动方向：线缆部件及其他、互联网广告、生猪养殖，更像跟随补位，不直接等于主线。\n- 暂不当主线看的方向：磨具磨料、纸包装、工程咨询服务。\n- 最后形成 2 只正式买入 Top3，其余方向只做观察或复盘对比。\n- 正式执行票怎么看：别把它们都当成同一种票。\n- 主线票：暂无。这类票和今天市场主攻方向是一条线。\n- 轮动票：暂无。这类票更像主线旁边的分支或补位。\n- 技术确认票：游戏。这类票不一定是当天最强主线，但尾盘技术形态或资金承接更适合留到次日验证。\n\n【自选股池强弱分层】\n- 正式买入 Top3-1：浙数文化 / 600633，方向：游戏。\n- 正式买入 Top3-2：游族网络 / 002174，方向：游戏。\n- 题材观察-1：绿发电力 / 000537，方向：风力发电；风险：技术面只观察。\n- 题材观察-2：西昌电力 / 600505，方向：水力发电；风险：技术面只观察。\n- 题材观察-3：波导股份 / 600130，方向：消费电子组件；风险：技术面只观察。\n- 技术观察：无。\n- 候选评分前排-1：游族网络 / 002174，板块：游戏。\n- 候选评分前排-2：会稽山 / 601579，板块：黄酒。\n- 候选评分前排-3：绿发电力 / 000537，板块：风力发电。\n- 评分前排说明：只用于复盘对比，不等于买入 Top3。\n- 收益统计口径：正式收益只统计浙数文化 / 600633、游族网络 / 002174；题材观察、技术观察、评分前排只做旁路对比。\n- 初始收益参考：从尾盘模拟买入到当日收盘，平均收益 -0.18%。\n- 次日早报验证：浙数文化 / 600633、游族网络 / 002174。\n- 金融 skill 深挖：已覆盖重点票 6 只，只补证据、风险和仓位节奏，不改买入名单。\n\n【次日早报验证对象】\n- 浙数文化 / 600633、游族网络 / 002174。\n",
+        "excerpt": "【今日总判断】\n- 今日市场状态：分歧试错局\n- 今日是否形成买入名单：是\n- 今日处理：可输出买入前三名\n- 原因：存在单项逆风，环境偏谨慎；三闸门只提示仓位和节奏，不直接阻断正式买入名单。\n- 午报结果回收：午报没有交给收盘报的盘中结果对象；收盘报按全自选股池重新筛选，不从午报名单续票。\n【外围摘要】\n- 外围结论：顺风，适合继续观察机会。\n- 关键数据：富时中国A50: -1.66%, 2026-07-10 14:35:24；道琼斯: +0.27%, 2026-07-10 04:57:04；纳斯达克综合: +1.30%, 2026-07-10 05:30:00；标普500: +0.81%, 2026-07-10 04:56:03；VIX恐慌指数期货: +0.49%, 2026-07-10 14:31:33；离岸人民币（香港）: -0.19%, 2026-07-10 14:35:15。\n- 正面证据：美股三大指数平均 +0.79%；纳斯达克偏强 +1.30%；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价。\n- 负面证据：A50 偏弱 -1.66%；A50归因偏逆风: 离岸中国资",
+        "focus_text": "【候选来源】\n- 今天市场主攻方向：证券。\n- 轮动方向：线缆部件及其他、互联网广告、生猪养殖，更像跟随补位，不直接等于主线。\n- 暂不当主线看的方向：磨具磨料、纸包装、工程咨询服务。\n- 最后形成 2 只正式买入 Top3，其余方向只做观察或复盘对比。\n- 正式执行票怎么看：别把它们都当成同一种票。\n- 主线票：暂无。这类票和今天市场主攻方向是一条线。\n- 轮动票：暂无。这类票更像主线旁边的分支或补位。\n- 技术确认票：游戏。这类票不一定是当天最强主线，但尾盘技术形态或资金承接更适合留到次日验证。\n【自选股池强弱分层】\n- 正式买入 Top3-1：浙数文化 / 600633，方向：游戏。\n- 正式买入 Top3-2：游族网络 / 002174，方向：游戏。\n- 题材观察-1：绿发电力 / 000537，方向：风力发电；风险：技术面只观察。\n- 题材观察-2：西昌电力 / 600505，方向：水力发电；风险：技术面只观察。\n- 题材观察-3：波导股份 / 600130，方向：消费电子组件；风险：技术面只观察。\n- 技术观察：无。\n- 候选评分前排-1：游族网络 / 002174，板块：游戏。\n- 候选评分前排-2：会稽山 / 601579，板块：黄酒。\n- 候选评分前排-3：绿发电力 / 000537，板块：风力发电。\n- 评分前排说明：只用于复盘对比，不等于买入 Top3。\n- 收益统计口径：正式收益只统计浙数文化 / 600633、游族网络 / 002174；题材观察、技术观察、评分前排只做旁路对比。\n- 初始收益参考：从尾盘模拟买入到当日收盘，平均收益 -0.18%。\n- 次日早报验证：浙数文化 / 600633、游族网络 / 002174。\n- 金融 skill 深挖：已覆盖重点票 6 只，只补证据、风险和仓位节奏，不改买入名单。",
+        "char_count": 2674
       },
       "schedule": {
         "scheduled_time": "14:50",
         "scheduled_at": "2026-07-10T14:50+08:00",
         "due": true,
-        "automation_status": "missed_schedule",
-        "automation_status_label": "自动化错过",
-        "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "automation_status": "complete",
+        "automation_status_label": "已按计划生成",
+        "diagnosis_cn": "已按计划生成",
+        "manifest_status": "success",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.close.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -233,9 +244,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "manifest_status": "missing",
         "manifest_json_status": "missing",
         "manifest_path": "workflow-manifest.review.json",
-        "precondition_gaps_cn": [
-          "复盘缺少成功前三报：收盘报"
-        ],
+        "precondition_gaps_cn": [],
         "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     }
@@ -1076,961 +1085,3133 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "rank": 1,
         "strategy_group": "formal_top3",
-        "strategy_group_cn": "正式 Top3 逻辑",
+        "strategy_group_cn": "",
         "symbol": "600633",
         "name": "浙数文化",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "formal_return",
-        "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "entry_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
+        "display_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
         "blocked_reason": "",
-        "tracking_status": "verified",
+        "tracking_status": "tracked",
         "formal_return_eligible": true,
         "side_channel_return_eligible": false,
-        "side_channel_return_scope": "formal_return_only",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "technical_fund_flow",
-        "current_observation_tier": "buy_top3",
-        "current_candidate_channel": "technical_fund_flow",
-        "current_buy_allowed": true,
-        "current_action": "pass",
-        "current_status_cn": "继续持有",
-        "current_blocked_reason": "",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": true,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "pass",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "pass",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": true,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 43,
+              "size": 273,
+              "percentile": 0.8456,
+              "metric": 3.389147
+            },
+            "theme": {
+              "theme": "游戏",
+              "rank": 1,
+              "size": 3,
+              "percentile": 1.0,
+              "metric": 3.389147
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.83
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": -0.49,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.02,
+              "open_amount": 146.17,
+              "prev_open_amount": 96.6,
+              "prev_amount": 26059.4,
+              "two_min_amount": 242.04,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.56,
+              "open_amount_vs_prev_open_ratio": 1.5131,
+              "two_min_amount_vs_prev_amount_ratio": 0.0093
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.66,
+          "turnover_rate": 2.55,
+          "amount_change": {
+            "status": "expanding",
+            "amount": 34069.7,
+            "comparison_amount": 26059.4,
+            "ratio": 1.3074,
+            "reason": "成交额放大"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "strong",
+            "tail_volume_support": true,
+            "fade_from_high": -2.68
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "游戏",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5922,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "pass",
+            "reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.725,
+            "technical_pool_type": "technical_watch"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.82926774,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 2.55149055,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.65100086,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "strong",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时收盘较首段上涨 2.23%"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 2.6777469990766476,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "supportive",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.60 倍，温和放量"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "neutral",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "站上短均线但均线排列未完全确认"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 游戏"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "游戏",
+            "display_theme_list": [
+              "游戏",
+              "传媒-游戏"
+            ],
+            "display_branch_themes": [
+              "传媒-游戏"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "600633",
+          "candidate_name": "浙数文化",
+          "entry_style": "pullback_confirm",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": -0.49,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.02,
+                "open_amount": 146.17,
+                "prev_open_amount": 96.6,
+                "prev_amount": 26059.4,
+                "two_min_amount": 242.04,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.56,
+                "open_amount_vs_prev_open_ratio": 1.5131,
+                "two_min_amount_vs_prev_amount_ratio": 0.0093
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 43,
+                "size": 273,
+                "percentile": 0.8456,
+                "metric": 3.389147
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 1,
+                "size": 3,
+                "percentile": 1.0,
+                "metric": 3.389147
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.83
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "pass",
+              "missing_fields": [],
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "pass",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": true,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [
+            "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+          ],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
         },
         "score": 0.62,
         "source_score": 0.62,
         "normalized_score": 62.0,
         "unified_score": 62.0,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "游戏",
         "theme_display": "游戏",
-        "industry": "传媒-游戏",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "",
         "latest_snapshot": {
-          "change_pct": 2.83,
-          "open_change_pct": -0.49,
-          "turnover_rate": 2.55,
-          "volume_ratio": 1.66,
-          "amount": 34069.7,
-          "last_price": 10.54,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "游戏",
-          "industry": "传媒-游戏"
+          "industry": ""
         },
-        "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "待次日回填",
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
-        "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "execution_off_mainline",
         "mainline_relation_label": "主线外执行票",
-        "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "游戏",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600633",
+          "name": "浙数文化",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
         "rank": 2,
         "strategy_group": "formal_top3",
-        "strategy_group_cn": "正式 Top3 逻辑",
+        "strategy_group_cn": "",
         "symbol": "002174",
         "name": "游族网络",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "formal_return",
-        "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "entry_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
+        "display_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
         "blocked_reason": "",
-        "tracking_status": "verified",
+        "tracking_status": "tracked",
         "formal_return_eligible": true,
         "side_channel_return_eligible": false,
-        "side_channel_return_scope": "formal_return_only",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
         "observation_tier": "buy_top3",
         "candidate_channel": "technical_fund_flow",
-        "current_observation_tier": "buy_top3",
-        "current_candidate_channel": "technical_fund_flow",
-        "current_buy_allowed": true,
-        "current_action": "pass",
-        "current_status_cn": "继续持有",
-        "current_blocked_reason": "",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": true,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "pass",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "pass",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": true,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 57,
+              "size": 273,
+              "percentile": 0.7941,
+              "metric": 2.581377
+            },
+            "theme": {
+              "theme": "游戏",
+              "rank": 2,
+              "size": 3,
+              "percentile": 0.5,
+              "metric": 2.581377
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.48
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.0,
+              "open_grab_pct": 0.4,
+              "open_turnover_rate": 0.03,
+              "open_amount": 330.64,
+              "prev_open_amount": 130.54,
+              "prev_amount": 70228.38,
+              "two_min_amount": 590.3,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.47,
+              "open_amount_vs_prev_open_ratio": 2.5329,
+              "two_min_amount_vs_prev_amount_ratio": 0.0084
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.16,
+          "turnover_rate": 5.64,
+          "amount_change": {
+            "status": "flat",
+            "amount": 71231.35,
+            "comparison_amount": 70228.38,
+            "ratio": 1.0143,
+            "reason": "成交额基本持平"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -2.36
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "游戏",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5922,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "pass",
+            "reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.725,
+            "technical_pool_type": "technical_watch"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.39808297,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 5.65028191,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.16065168,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时未明显走强或走弱"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 2.4371667936024393,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "supportive",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.12 倍，温和放量"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "bullish",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "MA5/MA10/MA20 多头排列"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 游戏"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "游戏",
+            "display_theme_list": [
+              "游戏",
+              "传媒-游戏"
+            ],
+            "display_branch_themes": [
+              "传媒-游戏"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "002174",
+          "candidate_name": "游族网络",
+          "entry_style": "pullback_confirm",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.4,
+                "open_turnover_rate": 0.03,
+                "open_amount": 330.64,
+                "prev_open_amount": 130.54,
+                "prev_amount": 70228.38,
+                "two_min_amount": 590.3,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.47,
+                "open_amount_vs_prev_open_ratio": 2.5329,
+                "two_min_amount_vs_prev_amount_ratio": 0.0084
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 57,
+                "size": 273,
+                "percentile": 0.7941,
+                "metric": 2.581377
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.581377
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.48
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "pass",
+              "missing_fields": [],
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "pass",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": true,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [
+            "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+          ],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
         },
         "score": 0.637,
         "source_score": 0.637,
         "normalized_score": 63.7,
         "unified_score": 63.7,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "游戏",
         "theme_display": "游戏",
-        "industry": "传媒-游戏",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "",
         "latest_snapshot": {
-          "change_pct": 2.48,
-          "open_change_pct": 0.0,
-          "turnover_rate": 5.64,
-          "volume_ratio": 1.16,
-          "amount": 71231.35,
-          "last_price": 12.82,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "游戏",
-          "industry": "传媒-游戏"
+          "industry": ""
         },
-        "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "待次日回填",
         "return_scope": "pending",
         "missing_reason": "待次日行情和模拟收益回填",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
-        "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "execution_off_mainline",
         "mainline_relation_label": "主线外执行票",
-        "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "游戏",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002174",
+          "name": "游族网络",
+          "groups": [
+            "formal_top3"
+          ],
+          "group_labels": [
+            "正式 Top3"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
         "rank": 3,
         "strategy_group": "a_theme_watch",
-        "strategy_group_cn": "A类主线/题材逻辑",
+        "strategy_group_cn": "",
         "symbol": "000537",
         "name": "绿发电力",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-        "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "tracking_status": "verified",
+        "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
         "observation_tier": "a_watch",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "a_watch",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": false,
-        "current_action": "downgrade",
-        "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "downgrade",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "downgrade",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": false,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 55,
+              "size": 273,
+              "percentile": 0.8015,
+              "metric": 2.667511
+            },
+            "theme": {
+              "theme": "风力发电",
+              "rank": 3,
+              "size": 4,
+              "percentile": 0.3333,
+              "metric": 2.667511
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.59
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.0,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.01,
+              "open_amount": 31.44,
+              "prev_open_amount": 23.63,
+              "prev_amount": 14465.17,
+              "two_min_amount": 42.1,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.22,
+              "open_amount_vs_prev_open_ratio": 1.3305,
+              "two_min_amount_vs_prev_amount_ratio": 0.0029
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.07,
+          "turnover_rate": 1.13,
+          "amount_change": {
+            "status": "expanding",
+            "amount": 16458.0,
+            "comparison_amount": 14465.17,
+            "ratio": 1.1378,
+            "reason": "成交额放大"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -1.39
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "风力发电",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5896,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "风力发电",
+              "display_theme_list": [
+                "风力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "downgrade",
+            "reasons": [
+              "均线位置不佳",
+              "均线位置不适合直接买入"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.545,
+            "technical_pool_type": "rejected"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.59365749,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 1.13370609,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.06709075,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "strong",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时收盘较首段上涨 4.25%"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 1.3850415512465326,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "neutral",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.03 倍"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "below_key_ma",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "收盘价低于短均线: close=7.12, MA5=7.14, MA10=7.28"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 风力发电"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "风力发电",
+            "display_theme_list": [
+              "风力发电",
+              "公用事业-电力"
+            ],
+            "display_branch_themes": [
+              "公用事业-电力"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "000537",
+          "candidate_name": "绿发电力",
+          "entry_style": "observe_only",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 31.44,
+                "prev_open_amount": 23.63,
+                "prev_amount": 14465.17,
+                "two_min_amount": 42.1,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.22,
+                "open_amount_vs_prev_open_ratio": 1.3305,
+                "two_min_amount_vs_prev_amount_ratio": 0.0029
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 55,
+                "size": 273,
+                "percentile": 0.8015,
+                "metric": 2.667511
+              },
+              "theme": {
+                "theme": "风力发电",
+                "rank": 3,
+                "size": 4,
+                "percentile": 0.3333,
+                "metric": 2.667511
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.59
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "downgrade",
+              "missing_fields": [],
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "downgrade",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": false,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不适合直接买入"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
         },
         "score": 0.63,
         "source_score": 0.63,
         "normalized_score": 63.0,
         "unified_score": 63.0,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "风力发电",
         "theme_display": "风力发电",
-        "industry": "公用事业-电力",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.59,
-          "open_change_pct": 0.0,
-          "turnover_rate": 1.13,
-          "volume_ratio": 1.07,
-          "amount": 16458.0,
-          "last_price": 7.12,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "风力发电",
-          "industry": "公用事业-电力"
+          "industry": ""
         },
-        "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
-        "catalyst_status": "unconfirmed",
-        "catalyst_status_label": "催化未确认",
-        "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+        "catalyst_status": "none",
+        "catalyst_status_label": "暂无明确催化",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "theme_watch",
         "mainline_relation_label": "题材观察票",
         "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "风力发电",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
         "rank": 4,
         "strategy_group": "a_theme_watch",
-        "strategy_group_cn": "A类主线/题材逻辑",
+        "strategy_group_cn": "",
         "symbol": "600505",
         "name": "西昌电力",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-        "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "tracking_status": "verified",
+        "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
         "observation_tier": "a_watch",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "a_watch",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": false,
-        "current_action": "downgrade",
-        "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "downgrade",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "downgrade",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": false,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 51,
+              "size": 273,
+              "percentile": 0.8162,
+              "metric": 2.756183
+            },
+            "theme": {
+              "theme": "水力发电",
+              "rank": 2,
+              "size": 3,
+              "percentile": 0.5,
+              "metric": 2.756183
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.54
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "partial",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": -0.29,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.0,
+              "open_amount": 5.31,
+              "prev_open_amount": 14.38,
+              "prev_amount": 7324.76,
+              "two_min_amount": 119.34,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.07,
+              "open_amount_vs_prev_open_ratio": 0.3693,
+              "two_min_amount_vs_prev_amount_ratio": 0.0163
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.09,
+          "turnover_rate": 2.1,
+          "amount_change": {
+            "status": "flat",
+            "amount": 7994.84,
+            "comparison_amount": 7324.76,
+            "ratio": 1.0915,
+            "reason": "成交额基本持平"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -1.32
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "水力发电",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5804,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "水力发电",
+              "display_theme_list": [
+                "水力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "downgrade",
+            "reasons": [
+              "均线位置不佳",
+              "均线位置不适合直接买入"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.545,
+            "technical_pool_type": "rejected"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.44140625,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 2.10331416,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.08772266,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "strong",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时收盘较首段上涨 3.76%"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 1.4097744360902287,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "positive",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘最后三段收高，有承接"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "neutral",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.05 倍"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "below_key_ma",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "收盘价低于短均线: close=10.49, MA5=10.49, MA10=10.74"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 水力发电"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "水力发电",
+            "display_theme_list": [
+              "水力发电",
+              "公用事业-电力"
+            ],
+            "display_branch_themes": [
+              "公用事业-电力"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "600505",
+          "candidate_name": "西昌电力",
+          "entry_style": "observe_only",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "partial",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": -0.29,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.0,
+                "open_amount": 5.31,
+                "prev_open_amount": 14.38,
+                "prev_amount": 7324.76,
+                "two_min_amount": 119.34,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.07,
+                "open_amount_vs_prev_open_ratio": 0.3693,
+                "two_min_amount_vs_prev_amount_ratio": 0.0163
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 51,
+                "size": 273,
+                "percentile": 0.8162,
+                "metric": 2.756183
+              },
+              "theme": {
+                "theme": "水力发电",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.756183
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.54
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "downgrade",
+              "missing_fields": [],
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "downgrade",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": false,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不适合直接买入"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
         },
         "score": 0.615,
         "source_score": 0.615,
         "normalized_score": 61.5,
         "unified_score": 61.5,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "水力发电",
         "theme_display": "水力发电",
-        "industry": "公用事业-电力",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.54,
-          "open_change_pct": -0.29,
-          "turnover_rate": 2.1,
-          "volume_ratio": 1.09,
-          "amount": 7994.84,
-          "last_price": 10.5,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "水力发电",
-          "industry": "公用事业-电力"
+          "industry": ""
         },
-        "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
-        "catalyst_status": "unconfirmed",
-        "catalyst_status_label": "催化未确认",
-        "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+        "catalyst_status": "none",
+        "catalyst_status_label": "暂无明确催化",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "theme_watch",
         "mainline_relation_label": "题材观察票",
         "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "水力发电",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
         "rank": 5,
         "strategy_group": "a_theme_watch",
-        "strategy_group_cn": "A类主线/题材逻辑",
+        "strategy_group_cn": "",
         "symbol": "600130",
         "name": "波导股份",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-        "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "tracking_status": "verified",
+        "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
         "observation_tier": "a_watch",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "a_watch",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": false,
-        "current_action": "downgrade",
-        "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "downgrade",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "downgrade",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": false,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 45,
+              "size": 273,
+              "percentile": 0.8382,
+              "metric": 3.021523
+            },
+            "theme": {
+              "theme": "消费电子组件",
+              "rank": 2,
+              "size": 6,
+              "percentile": 0.8,
+              "metric": 3.021523
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.75
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.0,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.01,
+              "open_amount": 22.32,
+              "prev_open_amount": 11.3,
+              "prev_amount": 11079.63,
+              "two_min_amount": 128.66,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.2,
+              "open_amount_vs_prev_open_ratio": 1.9752,
+              "two_min_amount_vs_prev_amount_ratio": 0.0116
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.24,
+          "turnover_rate": 3.69,
+          "amount_change": {
+            "status": "flat",
+            "amount": 11421.64,
+            "comparison_amount": 11079.63,
+            "ratio": 1.0309,
+            "reason": "成交额基本持平"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -2.38
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "消费电子组件",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5688,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "消费电子组件",
+              "display_theme_list": [
+                "消费电子组件",
+                "电子-消费电子"
+              ],
+              "display_branch_themes": [
+                "电子-消费电子"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "downgrade",
+            "reasons": [
+              "均线位置不佳",
+              "题材/主营匹配未确认，不能作为淘汰依据",
+              "均线位置不适合直接买入"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.545,
+            "technical_pool_type": "rejected"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.75000334,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 3.69230676,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.23894417,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "strong",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时收盘较首段上涨 4.05%"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 2.3752969121140057,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "supportive",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.20 倍，温和放量"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "below_key_ma",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "收盘价低于短均线: close=4.11, MA5=4.08, MA10=4.24"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "unconfirmed",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司主营/题材数据未形成明确交集，暂记为未确认，不等同于匹配度低"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "消费电子组件",
+            "display_theme_list": [
+              "消费电子组件",
+              "电子-消费电子"
+            ],
+            "display_branch_themes": [
+              "电子-消费电子"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "600130",
+          "candidate_name": "波导股份",
+          "entry_style": "observe_only",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 22.32,
+                "prev_open_amount": 11.3,
+                "prev_amount": 11079.63,
+                "two_min_amount": 128.66,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.2,
+                "open_amount_vs_prev_open_ratio": 1.9752,
+                "two_min_amount_vs_prev_amount_ratio": 0.0116
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 45,
+                "size": 273,
+                "percentile": 0.8382,
+                "metric": 3.021523
+              },
+              "theme": {
+                "theme": "消费电子组件",
+                "rank": 2,
+                "size": 6,
+                "percentile": 0.8,
+                "metric": 3.021523
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.75
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "downgrade",
+              "missing_fields": [],
+              "reasons": [
+                "均线位置不佳",
+                "题材/主营匹配未确认，不能作为淘汰依据",
+                "均线位置不适合直接买入"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "downgrade",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": false,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不适合直接买入"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
         },
         "score": 0.62,
         "source_score": 0.62,
         "normalized_score": 62.0,
         "unified_score": 62.0,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "消费电子组件",
         "theme_display": "消费电子组件",
-        "industry": "电子-消费电子",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.75,
-          "open_change_pct": 0.0,
-          "turnover_rate": 3.69,
-          "volume_ratio": 1.24,
-          "amount": 11421.64,
-          "last_price": 4.11,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "消费电子组件",
-          "industry": "电子-消费电子"
+          "industry": ""
         },
-        "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
-        "catalyst_status": "unconfirmed",
-        "catalyst_status_label": "催化未确认",
-        "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+        "catalyst_status": "none",
+        "catalyst_status_label": "暂无明确催化",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "theme_watch",
         "mainline_relation_label": "题材观察票",
         "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "消费电子组件",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
         "rank": 6,
         "strategy_group": "score_front_rejected",
-        "strategy_group_cn": "候选评分前排逻辑",
+        "strategy_group_cn": "",
         "symbol": "002174",
         "name": "游族网络",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-        "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "tracking_status": "verified",
+        "entry_reason": "候选评分前排：综合评分 0.637，排序靠前，但未追高，量能/分时/尾盘承接未触发硬伤；次日竞价验证待确认；今天只用于复盘是否误杀或漏强。",
+        "display_reason": "候选评分前排：综合评分 0.637，排序靠前，但未追高，量能/分时/尾盘承接未触发硬伤；次日竞价验证待确认；今天只用于复盘是否误杀或漏强。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
-        "observation_tier": "buy_top3",
+        "observation_tier": "score_front_rejected",
         "candidate_channel": "technical_fund_flow",
-        "current_observation_tier": "buy_top3",
-        "current_candidate_channel": "technical_fund_flow",
-        "current_buy_allowed": true,
-        "current_action": "pass",
-        "current_status_cn": "继续持有",
-        "current_blocked_reason": "",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "pass",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "pass",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": true,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 57,
+              "size": 273,
+              "percentile": 0.7941,
+              "metric": 2.581377
+            },
+            "theme": {
+              "theme": "游戏",
+              "rank": 2,
+              "size": 3,
+              "percentile": 0.5,
+              "metric": 2.581377
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.48
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.0,
+              "open_grab_pct": 0.4,
+              "open_turnover_rate": 0.03,
+              "open_amount": 330.64,
+              "prev_open_amount": 130.54,
+              "prev_amount": 70228.38,
+              "two_min_amount": 590.3,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.47,
+              "open_amount_vs_prev_open_ratio": 2.5329,
+              "two_min_amount_vs_prev_amount_ratio": 0.0084
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.16,
+          "turnover_rate": 5.64,
+          "amount_change": {
+            "status": "flat",
+            "amount": 71231.35,
+            "comparison_amount": 70228.38,
+            "ratio": 1.0143,
+            "reason": "成交额基本持平"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -2.36
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "游戏",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5922,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "pass",
+            "reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.725,
+            "technical_pool_type": "technical_watch"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.39808297,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 5.65028191,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.16065168,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时未明显走强或走弱"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 2.4371667936024393,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "supportive",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.12 倍，温和放量"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "bullish",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "MA5/MA10/MA20 多头排列"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 游戏"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "游戏",
+            "display_theme_list": [
+              "游戏",
+              "传媒-游戏"
+            ],
+            "display_branch_themes": [
+              "传媒-游戏"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "002174",
+          "candidate_name": "游族网络",
+          "entry_style": "pullback_confirm",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.4,
+                "open_turnover_rate": 0.03,
+                "open_amount": 330.64,
+                "prev_open_amount": 130.54,
+                "prev_amount": 70228.38,
+                "two_min_amount": 590.3,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.47,
+                "open_amount_vs_prev_open_ratio": 2.5329,
+                "two_min_amount_vs_prev_amount_ratio": 0.0084
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 57,
+                "size": 273,
+                "percentile": 0.7941,
+                "metric": 2.581377
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.581377
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.48
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "pass",
+              "missing_fields": [],
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "pass",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": true,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [
+            "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+          ],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
         },
         "score": 0.637,
         "source_score": 0.637,
         "normalized_score": 63.7,
         "unified_score": 63.7,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "游戏",
         "theme_display": "游戏",
-        "industry": "传媒-游戏",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.48,
-          "open_change_pct": 0.0,
-          "turnover_rate": 5.64,
-          "volume_ratio": 1.16,
-          "amount": 71231.35,
-          "last_price": 12.82,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "游戏",
-          "industry": "传媒-游戏"
+          "industry": ""
         },
-        "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
-        "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "execution_off_mainline",
         "mainline_relation_label": "主线外执行票",
-        "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "游戏",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
         "rank": 7,
         "strategy_group": "score_front_rejected",
-        "strategy_group_cn": "候选评分前排逻辑",
+        "strategy_group_cn": "",
         "symbol": "601579",
         "name": "会稽山",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-        "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "tracking_status": "verified",
+        "entry_reason": "候选评分前排：综合评分 0.637，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+        "display_reason": "候选评分前排：综合评分 0.637，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
-        "observation_tier": "a_watch",
+        "observation_tier": "score_front_rejected",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "a_watch",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": false,
-        "current_action": "downgrade",
-        "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "downgrade",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "downgrade",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": false,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 63,
+              "size": 273,
+              "percentile": 0.7721,
+              "metric": 2.419085
+            },
+            "theme": {
+              "theme": "黄酒",
+              "rank": 1,
+              "size": 1,
+              "percentile": 1.0,
+              "metric": 2.419085
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.43
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.62,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.01,
+              "open_amount": 28.29,
+              "prev_open_amount": 5.22,
+              "prev_amount": 6722.25,
+              "two_min_amount": 28.22,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.42,
+              "open_amount_vs_prev_open_ratio": 5.4195,
+              "two_min_amount_vs_prev_amount_ratio": 0.0042
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 0.99,
+          "turnover_rate": 1.03,
+          "amount_change": {
+            "status": "flat",
+            "amount": 7295.33,
+            "comparison_amount": 6722.25,
+            "ratio": 1.0853,
+            "reason": "成交额基本持平"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -1.86
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "黄酒",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5347,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "黄酒",
+              "display_theme_list": [
+                "黄酒",
+                "食品饮料-酿酒"
+              ],
+              "display_branch_themes": [
+                "食品饮料-酿酒"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "downgrade",
+            "reasons": [
+              "均线位置不佳",
+              "均线位置不适合直接买入"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.545,
+            "technical_pool_type": "rejected"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.4271872,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 1.03036022,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 0.982293487,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时未明显走强或走弱"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 1.8604651162790773,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "neutral",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 0.95 倍"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "below_key_ma",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "收盘价低于短均线: close=14.77, MA5=14.70, MA10=14.83"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 黄酒"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "黄酒",
+            "display_theme_list": [
+              "黄酒",
+              "食品饮料-酿酒"
+            ],
+            "display_branch_themes": [
+              "食品饮料-酿酒"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "601579",
+          "candidate_name": "会稽山",
+          "entry_style": "observe_only",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.62,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 28.29,
+                "prev_open_amount": 5.22,
+                "prev_amount": 6722.25,
+                "two_min_amount": 28.22,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.42,
+                "open_amount_vs_prev_open_ratio": 5.4195,
+                "two_min_amount_vs_prev_amount_ratio": 0.0042
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 63,
+                "size": 273,
+                "percentile": 0.7721,
+                "metric": 2.419085
+              },
+              "theme": {
+                "theme": "黄酒",
+                "rank": 1,
+                "size": 1,
+                "percentile": 1.0,
+                "metric": 2.419085
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.43
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "downgrade",
+              "missing_fields": [],
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "downgrade",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": false,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不适合直接买入"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
         },
         "score": 0.637,
         "source_score": 0.637,
         "normalized_score": 63.7,
         "unified_score": 63.7,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "黄酒",
         "theme_display": "黄酒",
-        "industry": "食品饮料-酿酒",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.43,
-          "open_change_pct": 0.62,
-          "turnover_rate": 1.03,
-          "volume_ratio": 0.99,
-          "amount": 7295.33,
-          "last_price": 14.77,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "黄酒",
-          "industry": "食品饮料-酿酒"
+          "industry": ""
         },
-        "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
-        "catalyst_status": "unconfirmed",
-        "catalyst_status_label": "催化未确认",
-        "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+        "catalyst_status": "none",
+        "catalyst_status_label": "暂无明确催化",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "theme_watch",
         "mainline_relation_label": "题材观察票",
         "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "黄酒",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
         "rank": 8,
         "strategy_group": "score_front_rejected",
-        "strategy_group_cn": "候选评分前排逻辑",
+        "strategy_group_cn": "",
         "symbol": "000537",
         "name": "绿发电力",
         "source_period": "close",
-        "tracking_scope": "all_layer_records",
-        "return_tracking_scope": "side_channel_or_status_only",
-        "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-        "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
-        "tracking_status": "verified",
+        "entry_reason": "候选评分前排：综合评分 0.630，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+        "display_reason": "候选评分前排：综合评分 0.630，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+        "blocked_reason": "",
+        "tracking_status": "tracked",
         "formal_return_eligible": false,
         "side_channel_return_eligible": true,
-        "side_channel_return_scope": "panel_front_sample",
-        "display_tracking_eligible": true,
-        "source_close_date": "",
-        "observation_tier": "a_watch",
+        "observation_tier": "score_front_rejected",
         "candidate_channel": "news_theme",
-        "current_observation_tier": "a_watch",
-        "current_candidate_channel": "news_theme",
-        "current_buy_allowed": false,
-        "current_action": "downgrade",
-        "current_status_cn": "降级观察",
-        "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-        "last_seen_source": "report",
-        "last_seen_in_period": true,
-        "latest_snapshot_matched": true,
-        "snapshot_missing_reason": "",
-        "buy_allowed": false,
-        "eligible_for_top3": null,
-        "eligible_for_handoff": null,
-        "technical_decision": "downgrade",
-        "admission_reason": "",
+        "current_candidate_channel": "",
+        "current_observation_tier": "",
         "candidate_notice_status": "checked_clear",
-        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-        "notice_supplement_status": "checked_clear",
-        "notice_supplement_required": false,
-        "no_chase_reasons": [],
-        "cancel_conditions": [],
-        "data_quality_warnings": [],
-        "raw_status": {
-          "technical_decision": "downgrade",
-          "candidate_notice_status": "checked_clear",
-          "eligible_for_top3": false,
-          "eligible_for_handoff": true
+        "strength_explain": {
+          "relative_sector_strength": "未映射板块强弱",
+          "relative_strength_check": {
+            "status": "strong",
+            "watchlist": {
+              "rank": 55,
+              "size": 273,
+              "percentile": 0.8015,
+              "metric": 2.667511
+            },
+            "theme": {
+              "theme": "风力发电",
+              "rank": 3,
+              "size": 4,
+              "percentile": 0.3333,
+              "metric": 2.667511
+            },
+            "index_context": {
+              "status": "missing",
+              "index_change_pct": null,
+              "change_pct": 2.59
+            },
+            "warnings": [
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ]
+          },
+          "auction_open_check": {
+            "enabled": true,
+            "status": "positive",
+            "action": "pass",
+            "top3_allowed": true,
+            "values": {
+              "open_change_pct": 0.0,
+              "open_grab_pct": 0.0,
+              "open_turnover_rate": 0.01,
+              "open_amount": 31.44,
+              "prev_open_amount": 23.63,
+              "prev_amount": 14465.17,
+              "two_min_amount": 42.1,
+              "auction_limit_buy": null,
+              "open_vs_prev_pct": 0.22,
+              "open_amount_vs_prev_open_ratio": 1.3305,
+              "two_min_amount_vs_prev_amount_ratio": 0.0029
+            },
+            "missing_fields": [
+              "auction_limit_buy"
+            ],
+            "positive_signals": [
+              "开盘金额较昨日开盘放大"
+            ],
+            "risk_flags": [],
+            "warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+            ],
+            "no_chase_reasons": []
+          },
+          "volume_ratio": 1.07,
+          "turnover_rate": 1.13,
+          "amount_change": {
+            "status": "expanding",
+            "amount": 16458.0,
+            "comparison_amount": 14465.17,
+            "ratio": 1.1378,
+            "reason": "成交额放大"
+          },
+          "intraday_support": {
+            "intraday_relative_strength": "neutral",
+            "tail_volume_support": true,
+            "fade_from_high": -1.39
+          },
+          "triggers": {
+            "has_trigger": false,
+            "news": false,
+            "notice": false,
+            "status": {
+              "news": "none",
+              "notice": "checked"
+            },
+            "events": {
+              "news": [],
+              "notice": []
+            }
+          },
+          "mainline": {
+            "theme": "风力发电",
+            "is_mainline": false,
+            "mainline_verdict": "非主线执行方向",
+            "market_mainline_verdict": "确认主线",
+            "role": "",
+            "role_label": "未映射",
+            "role_score": null,
+            "sector_strength_score": 0.5896,
+            "relative_sector_strength": "未映射板块强弱",
+            "display_fields": {
+              "display_theme": "风力发电",
+              "display_theme_list": [
+                "风力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票"
+            }
+          },
+          "technical": {
+            "decision": "downgrade",
+            "reasons": [
+              "均线位置不佳",
+              "均线位置不适合直接买入"
+            ],
+            "missing_fields": [],
+            "technical_fund_score": 0.545,
+            "technical_pool_type": "rejected"
+          },
+          "technical_10_results": [
+            {
+              "label": "涨幅纪律",
+              "value": 2.59365749,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "换手率",
+              "value": 1.13370609,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "量比",
+              "value": 1.06709075,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "分时强弱",
+              "value": "strong",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "分时收盘较首段上涨 4.25%"
+              ]
+            },
+            {
+              "label": "是否冲高回落",
+              "value": 1.3850415512465326,
+              "source": "tdx_quotes",
+              "reason": []
+            },
+            {
+              "label": "尾盘承接",
+              "value": "neutral",
+              "source": "tdx_kline(period=1)",
+              "reason": [
+                "尾盘缩量横住，承接中性"
+              ]
+            },
+            {
+              "label": "K线结构",
+              "value": "healthy",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "K线结构未发现明显破位或过热"
+              ]
+            },
+            {
+              "label": "近3-5天量能",
+              "value": "neutral",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "今日量能为5日均量 1.03 倍"
+              ]
+            },
+            {
+              "label": "均线位置",
+              "value": "below_key_ma",
+              "source": "tdx_kline(period=4)",
+              "reason": [
+                "收盘价低于短均线: close=7.12, MA5=7.14, MA10=7.28"
+              ]
+            },
+            {
+              "label": "主营匹配",
+              "value": "high",
+              "source": "tdx_api_data",
+              "reason": [
+                "候选主题与公司/题材数据命中: 风力发电"
+              ]
+            }
+          ],
+          "display_fields": {
+            "display_theme": "风力发电",
+            "display_theme_list": [
+              "风力发电",
+              "公用事业-电力"
+            ],
+            "display_branch_themes": [
+              "公用事业-电力"
+            ],
+            "display_theme_source": "candidate_fields",
+            "display_mainline_alignment": "non_mainline",
+            "display_mainline_alignment_label": "非主线执行方向",
+            "display_execution_position": "technical_confirmation_stock",
+            "display_execution_position_label": "技术确认票",
+            "display_catalyst_status": "none",
+            "display_catalyst_label": "暂无明确催化",
+            "display_catalyst_freshness": "unknown",
+            "display_catalyst_basis": "no_clear_match"
+          }
+        },
+        "candidate_validation": {
+          "candidate_code": "000537",
+          "candidate_name": "绿发电力",
+          "entry_style": "observe_only",
+          "validation": {
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 31.44,
+                "prev_open_amount": 23.63,
+                "prev_amount": 14465.17,
+                "two_min_amount": 42.1,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.22,
+                "open_amount_vs_prev_open_ratio": 1.3305,
+                "two_min_amount_vs_prev_amount_ratio": 0.0029
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 55,
+                "size": 273,
+                "percentile": 0.8015,
+                "metric": 2.667511
+              },
+              "theme": {
+                "theme": "风力发电",
+                "rank": 3,
+                "size": 4,
+                "percentile": 0.3333,
+                "metric": 2.667511
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.59
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "technical_check": {
+              "decision": "downgrade",
+              "missing_fields": [],
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ]
+            },
+            "announcement_check": {
+              "status": "checked_clear",
+              "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+            },
+            "data_quality_check": {
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ],
+              "rank_confidence": "normal"
+            },
+            "discipline_check": {
+              "no_chase_reasons": [],
+              "non_limit_short_term": {
+                "enabled": true,
+                "action": "downgrade",
+                "entry_style": "half_way_confirm",
+                "top3_allowed": false,
+                "handoff_allowed": true,
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不适合直接买入"
+                ],
+                "rules": {
+                  "price_change_watch_above_pct": 3.0,
+                  "near_limit_risk_pct": 7.0,
+                  "max_fade_from_high_pct": 3.0
+                }
+              }
+            }
+          },
+          "cancel_conditions": [],
+          "no_chase_reasons": [],
+          "risk_flags": [],
+          "data_quality_warnings": [
+            "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+            "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+          ],
+          "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
         },
         "score": 0.63,
         "source_score": 0.63,
         "normalized_score": 63.0,
         "unified_score": 63.0,
         "score_display_scale": "0_100",
-        "low_reflow_watch": {},
-        "low_reflow_watch_result": {},
-        "open_drive_watch": {},
-        "open_drive_watch_result": {},
-        "overnight_limit_watch": {},
-        "overnight_limit_watch_result": {},
-        "theme_rotation_watch": {},
-        "theme_rotation_watch_result": {},
-        "close_strength_hold_watch": {},
-        "close_strength_hold_watch_result": {},
-        "legacy_next_day_change_pct": null,
-        "legacy_next_day_change_text": "",
-        "legacy_next_day_date": "",
-        "legacy_next_day_source": "",
-        "legacy_next_day_last_price": null,
-        "return_metrics": {
-          "intraday_return": null,
-          "intraday_price": null,
-          "intraday_price_source": "",
-          "entry_price": null,
-          "entry_price_source": "",
-          "return_basis": "",
-          "same_day_return": null,
-          "ledger_same_day_return": null,
-          "t1_return": null,
-          "day3_return": null,
-          "missing_reasons": []
-        },
         "theme": "风力发电",
         "theme_display": "风力发电",
-        "industry": "公用事业-电力",
+        "industry": "",
+        "display_tracking_eligible": true,
+        "side_channel_return_scope": "panel_front_sample",
         "latest_snapshot": {
-          "change_pct": 2.59,
-          "open_change_pct": 0.0,
-          "turnover_rate": 1.13,
-          "volume_ratio": 1.07,
-          "amount": 16458.0,
-          "last_price": 7.12,
+          "change_pct": null,
+          "open_change_pct": null,
+          "turnover_rate": null,
+          "volume_ratio": null,
+          "amount": null,
+          "last_price": null,
           "theme": "风力发电",
-          "industry": "公用事业-电力"
+          "industry": ""
         },
-        "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+        "raw_status": {
+          "candidate_notice_status": "checked_clear"
+        },
+        "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+        "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+        "notice_supplement_status": "checked_clear",
         "return_status": "旁路收益",
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
-        "catalyst_status": "unconfirmed",
-        "catalyst_status_label": "催化未确认",
-        "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+        "catalyst_status": "none",
+        "catalyst_status_label": "暂无明确催化",
+        "catalyst_status_detail": "no_clear_match",
         "catalyst_timeliness": "unknown",
-        "catalyst_timeliness_label": "时效不明",
-        "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+        "catalyst_timeliness_label": "时效未确认",
+        "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
         "mainline_relation": "theme_watch",
         "mainline_relation_label": "题材观察票",
         "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-        "execution_position_label": "",
-        "execution_position_detail": "",
+        "execution_position_label": "技术确认票",
+        "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
         "mainline_theme_display": "风力发电",
-        "mainline_verdict_display": "",
-        "market_mainline_verdict_display": "",
-        "mainline_role_label": "",
+        "mainline_verdict_display": "非主线执行方向",
+        "market_mainline_verdict_display": "确认主线",
+        "mainline_role_label": "未映射",
         "overnight_report": {}
       },
       {
@@ -2167,7 +4348,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2320,7 +4501,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2476,7 +4657,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2644,7 +4825,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2662,13 +4843,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002832",
+          "name": "比音勒芬",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -2818,7 +5007,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -2836,13 +5025,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002201",
+          "name": "九鼎新材",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -2994,7 +5191,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3012,13 +5209,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000990",
+          "name": "诚志股份",
+          "groups": [
+            "open_drive_watch"
+          ],
+          "group_labels": [
+            "早盘驱动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -3174,7 +5379,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3192,13 +5397,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600986",
+          "name": "浙文互联",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -3354,7 +5567,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3372,13 +5585,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "000980",
+          "name": "众泰汽车",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -3535,7 +5756,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3553,13 +5774,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002929",
+          "name": "润建股份",
+          "groups": [
+            "overnight_limit_watch"
+          ],
+          "group_labels": [
+            "隔夜涨停观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -3712,7 +5941,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3730,13 +5959,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "600536",
+          "name": "中国软件",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -3891,7 +6128,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -3909,13 +6146,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "002300",
+          "name": "太阳电缆",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -4068,7 +6313,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4086,13 +6331,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "market_mainline_verdict_display": "",
         "mainline_role_label": "",
         "overnight_report": {
-          "status": "pending",
+          "symbol": "601619",
+          "name": "嘉泽新能",
+          "groups": [
+            "theme_rotation_watch"
+          ],
+          "group_labels": [
+            "题材轮动观察"
+          ],
           "original_text": "",
           "summary_short": "",
           "stance": "",
           "catalyst": "",
           "risk": "",
-          "action_hint": ""
+          "action_hint": "暂无龙虾结论",
+          "status": "missing"
         }
       },
       {
@@ -4250,7 +6503,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4424,7 +6677,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4598,7 +6851,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "return_scope": "side_channel",
         "missing_reason": "",
         "freshness": "当前结构化账本",
-        "source_mtime": "2026-07-10T14:54:11+08:00",
+        "source_mtime": "2026-07-10T14:58:44+08:00",
         "historical_backfill": false,
         "catalyst_status": "none",
         "catalyst_status_label": "暂无明确催化",
@@ -4618,7 +6871,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "overnight_report": {}
       }
     ],
-    "display_source": "four_layer_tracking",
+    "display_source": "formal_report_markdown",
     "raw_record_count": 23,
     "raw_strategy_counts": {
       "formal_top3": 2,
@@ -4785,8 +7038,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/four-layer-tracking.close.json",
       "exists": true,
       "size": 122821,
-      "modified_at": "2026-07-10T14:54:11+08:00",
-      "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+      "modified_at": "2026-07-10T14:58:44+08:00",
+      "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
     }
   },
   "four_layer_tracking_by_period": {
@@ -4797,961 +7050,3133 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         {
           "rank": 1,
           "strategy_group": "formal_top3",
-          "strategy_group_cn": "正式 Top3 逻辑",
+          "strategy_group_cn": "",
           "symbol": "600633",
           "name": "浙数文化",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "formal_return",
-          "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+          "entry_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
+          "display_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
           "blocked_reason": "",
-          "tracking_status": "verified",
+          "tracking_status": "tracked",
           "formal_return_eligible": true,
           "side_channel_return_eligible": false,
-          "side_channel_return_scope": "formal_return_only",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "technical_fund_flow",
-          "current_observation_tier": "buy_top3",
-          "current_candidate_channel": "technical_fund_flow",
-          "current_buy_allowed": true,
-          "current_action": "pass",
-          "current_status_cn": "继续持有",
-          "current_blocked_reason": "",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": true,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "pass",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "pass",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": true,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 43,
+                "size": 273,
+                "percentile": 0.8456,
+                "metric": 3.389147
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 1,
+                "size": 3,
+                "percentile": 1.0,
+                "metric": 3.389147
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.83
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": -0.49,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.02,
+                "open_amount": 146.17,
+                "prev_open_amount": 96.6,
+                "prev_amount": 26059.4,
+                "two_min_amount": 242.04,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.56,
+                "open_amount_vs_prev_open_ratio": 1.5131,
+                "two_min_amount_vs_prev_amount_ratio": 0.0093
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.66,
+            "turnover_rate": 2.55,
+            "amount_change": {
+              "status": "expanding",
+              "amount": 34069.7,
+              "comparison_amount": 26059.4,
+              "ratio": 1.3074,
+              "reason": "成交额放大"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "strong",
+              "tail_volume_support": true,
+              "fade_from_high": -2.68
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "游戏",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5922,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "游戏",
+                "display_theme_list": [
+                  "游戏",
+                  "传媒-游戏"
+                ],
+                "display_branch_themes": [
+                  "传媒-游戏"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "pass",
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.725,
+              "technical_pool_type": "technical_watch"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.82926774,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 2.55149055,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.65100086,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "strong",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时收盘较首段上涨 2.23%"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 2.6777469990766476,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "supportive",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.60 倍，温和放量"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "neutral",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "站上短均线但均线排列未完全确认"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 游戏"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "600633",
+            "candidate_name": "浙数文化",
+            "entry_style": "pullback_confirm",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": -0.49,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.02,
+                  "open_amount": 146.17,
+                  "prev_open_amount": 96.6,
+                  "prev_amount": 26059.4,
+                  "two_min_amount": 242.04,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.56,
+                  "open_amount_vs_prev_open_ratio": 1.5131,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0093
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 43,
+                  "size": 273,
+                  "percentile": 0.8456,
+                  "metric": 3.389147
+                },
+                "theme": {
+                  "theme": "游戏",
+                  "rank": 1,
+                  "size": 3,
+                  "percentile": 1.0,
+                  "metric": 3.389147
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.83
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "pass",
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "pass",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": true,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
           },
           "score": 0.62,
           "source_score": 0.62,
           "normalized_score": 62.0,
           "unified_score": 62.0,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "游戏",
           "theme_display": "游戏",
-          "industry": "传媒-游戏",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "",
           "latest_snapshot": {
-            "change_pct": 2.83,
-            "open_change_pct": -0.49,
-            "turnover_rate": 2.55,
-            "volume_ratio": 1.66,
-            "amount": 34069.7,
-            "last_price": 10.54,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "游戏",
-            "industry": "传媒-游戏"
+            "industry": ""
           },
-          "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "待次日回填",
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
-          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "execution_off_mainline",
           "mainline_relation_label": "主线外执行票",
-          "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "游戏",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "600633",
+            "name": "浙数文化",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
           "rank": 2,
           "strategy_group": "formal_top3",
-          "strategy_group_cn": "正式 Top3 逻辑",
+          "strategy_group_cn": "",
           "symbol": "002174",
           "name": "游族网络",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "formal_return",
-          "entry_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+          "entry_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
+          "display_reason": "正式买入：游戏 方向里公告排雷、技术面、评分和执行边界达到正式准入，进入模拟买入和正式收益统计。",
           "blocked_reason": "",
-          "tracking_status": "verified",
+          "tracking_status": "tracked",
           "formal_return_eligible": true,
           "side_channel_return_eligible": false,
-          "side_channel_return_scope": "formal_return_only",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
           "observation_tier": "buy_top3",
           "candidate_channel": "technical_fund_flow",
-          "current_observation_tier": "buy_top3",
-          "current_candidate_channel": "technical_fund_flow",
-          "current_buy_allowed": true,
-          "current_action": "pass",
-          "current_status_cn": "继续持有",
-          "current_blocked_reason": "",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": true,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "pass",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "pass",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": true,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 57,
+                "size": 273,
+                "percentile": 0.7941,
+                "metric": 2.581377
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.581377
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.48
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.4,
+                "open_turnover_rate": 0.03,
+                "open_amount": 330.64,
+                "prev_open_amount": 130.54,
+                "prev_amount": 70228.38,
+                "two_min_amount": 590.3,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.47,
+                "open_amount_vs_prev_open_ratio": 2.5329,
+                "two_min_amount_vs_prev_amount_ratio": 0.0084
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.16,
+            "turnover_rate": 5.64,
+            "amount_change": {
+              "status": "flat",
+              "amount": 71231.35,
+              "comparison_amount": 70228.38,
+              "ratio": 1.0143,
+              "reason": "成交额基本持平"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -2.36
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "游戏",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5922,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "游戏",
+                "display_theme_list": [
+                  "游戏",
+                  "传媒-游戏"
+                ],
+                "display_branch_themes": [
+                  "传媒-游戏"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "pass",
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.725,
+              "technical_pool_type": "technical_watch"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.39808297,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 5.65028191,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.16065168,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时未明显走强或走弱"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 2.4371667936024393,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "supportive",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.12 倍，温和放量"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "bullish",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "MA5/MA10/MA20 多头排列"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 游戏"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "002174",
+            "candidate_name": "游族网络",
+            "entry_style": "pullback_confirm",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.0,
+                  "open_grab_pct": 0.4,
+                  "open_turnover_rate": 0.03,
+                  "open_amount": 330.64,
+                  "prev_open_amount": 130.54,
+                  "prev_amount": 70228.38,
+                  "two_min_amount": 590.3,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.47,
+                  "open_amount_vs_prev_open_ratio": 2.5329,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0084
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 57,
+                  "size": 273,
+                  "percentile": 0.7941,
+                  "metric": 2.581377
+                },
+                "theme": {
+                  "theme": "游戏",
+                  "rank": 2,
+                  "size": 3,
+                  "percentile": 0.5,
+                  "metric": 2.581377
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.48
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "pass",
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "pass",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": true,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
           },
           "score": 0.637,
           "source_score": 0.637,
           "normalized_score": 63.7,
           "unified_score": 63.7,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "游戏",
           "theme_display": "游戏",
-          "industry": "传媒-游戏",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "",
           "latest_snapshot": {
-            "change_pct": 2.48,
-            "open_change_pct": 0.0,
-            "turnover_rate": 5.64,
-            "volume_ratio": 1.16,
-            "amount": 71231.35,
-            "last_price": 12.82,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "游戏",
-            "industry": "传媒-游戏"
+            "industry": ""
           },
-          "display_reason": "公告、技术、评分和执行边界通过，进入正式 Top3 样本",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "待次日回填",
           "return_scope": "pending",
           "missing_reason": "待次日行情和模拟收益回填",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
-          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "execution_off_mainline",
           "mainline_relation_label": "主线外执行票",
-          "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "游戏",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "002174",
+            "name": "游族网络",
+            "groups": [
+              "formal_top3"
+            ],
+            "group_labels": [
+              "正式 Top3"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
           "rank": 3,
           "strategy_group": "a_theme_watch",
-          "strategy_group_cn": "A类主线/题材逻辑",
+          "strategy_group_cn": "",
           "symbol": "000537",
           "name": "绿发电力",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-          "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "tracking_status": "verified",
+          "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
           "observation_tier": "a_watch",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "a_watch",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": false,
-          "current_action": "downgrade",
-          "current_status_cn": "降级观察",
-          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "downgrade",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "downgrade",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": false,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 55,
+                "size": 273,
+                "percentile": 0.8015,
+                "metric": 2.667511
+              },
+              "theme": {
+                "theme": "风力发电",
+                "rank": 3,
+                "size": 4,
+                "percentile": 0.3333,
+                "metric": 2.667511
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.59
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 31.44,
+                "prev_open_amount": 23.63,
+                "prev_amount": 14465.17,
+                "two_min_amount": 42.1,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.22,
+                "open_amount_vs_prev_open_ratio": 1.3305,
+                "two_min_amount_vs_prev_amount_ratio": 0.0029
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.07,
+            "turnover_rate": 1.13,
+            "amount_change": {
+              "status": "expanding",
+              "amount": 16458.0,
+              "comparison_amount": 14465.17,
+              "ratio": 1.1378,
+              "reason": "成交额放大"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -1.39
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "风力发电",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5896,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "风力发电",
+                "display_theme_list": [
+                  "风力发电",
+                  "公用事业-电力"
+                ],
+                "display_branch_themes": [
+                  "公用事业-电力"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "downgrade",
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.545,
+              "technical_pool_type": "rejected"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.59365749,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 1.13370609,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.06709075,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "strong",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时收盘较首段上涨 4.25%"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 1.3850415512465326,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "neutral",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.03 倍"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "below_key_ma",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "收盘价低于短均线: close=7.12, MA5=7.14, MA10=7.28"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 风力发电"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "风力发电",
+              "display_theme_list": [
+                "风力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "000537",
+            "candidate_name": "绿发电力",
+            "entry_style": "observe_only",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.0,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.01,
+                  "open_amount": 31.44,
+                  "prev_open_amount": 23.63,
+                  "prev_amount": 14465.17,
+                  "two_min_amount": 42.1,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.22,
+                  "open_amount_vs_prev_open_ratio": 1.3305,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0029
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 55,
+                  "size": 273,
+                  "percentile": 0.8015,
+                  "metric": 2.667511
+                },
+                "theme": {
+                  "theme": "风力发电",
+                  "rank": 3,
+                  "size": 4,
+                  "percentile": 0.3333,
+                  "metric": 2.667511
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.59
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "downgrade",
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不佳",
+                  "均线位置不适合直接买入"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "downgrade",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": false,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "均线位置不适合直接买入"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
           },
           "score": 0.63,
           "source_score": 0.63,
           "normalized_score": 63.0,
           "unified_score": 63.0,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "风力发电",
           "theme_display": "风力发电",
-          "industry": "公用事业-电力",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.59,
-            "open_change_pct": 0.0,
-            "turnover_rate": 1.13,
-            "volume_ratio": 1.07,
-            "amount": 16458.0,
-            "last_price": 7.12,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "风力发电",
-            "industry": "公用事业-电力"
+            "industry": ""
           },
-          "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
-          "catalyst_status": "unconfirmed",
-          "catalyst_status_label": "催化未确认",
-          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "theme_watch",
           "mainline_relation_label": "题材观察票",
           "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "风力发电",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
           "rank": 4,
           "strategy_group": "a_theme_watch",
-          "strategy_group_cn": "A类主线/题材逻辑",
+          "strategy_group_cn": "",
           "symbol": "600505",
           "name": "西昌电力",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-          "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "tracking_status": "verified",
+          "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
           "observation_tier": "a_watch",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "a_watch",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": false,
-          "current_action": "downgrade",
-          "current_status_cn": "降级观察",
-          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "downgrade",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "downgrade",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": false,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 51,
+                "size": 273,
+                "percentile": 0.8162,
+                "metric": 2.756183
+              },
+              "theme": {
+                "theme": "水力发电",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.756183
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.54
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "partial",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": -0.29,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.0,
+                "open_amount": 5.31,
+                "prev_open_amount": 14.38,
+                "prev_amount": 7324.76,
+                "two_min_amount": 119.34,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.07,
+                "open_amount_vs_prev_open_ratio": 0.3693,
+                "two_min_amount_vs_prev_amount_ratio": 0.0163
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.09,
+            "turnover_rate": 2.1,
+            "amount_change": {
+              "status": "flat",
+              "amount": 7994.84,
+              "comparison_amount": 7324.76,
+              "ratio": 1.0915,
+              "reason": "成交额基本持平"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -1.32
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "水力发电",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5804,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "水力发电",
+                "display_theme_list": [
+                  "水力发电",
+                  "公用事业-电力"
+                ],
+                "display_branch_themes": [
+                  "公用事业-电力"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "downgrade",
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.545,
+              "technical_pool_type": "rejected"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.44140625,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 2.10331416,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.08772266,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "strong",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时收盘较首段上涨 3.76%"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 1.4097744360902287,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "positive",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘最后三段收高，有承接"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "neutral",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.05 倍"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "below_key_ma",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "收盘价低于短均线: close=10.49, MA5=10.49, MA10=10.74"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 水力发电"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "水力发电",
+              "display_theme_list": [
+                "水力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "600505",
+            "candidate_name": "西昌电力",
+            "entry_style": "observe_only",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "partial",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": -0.29,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.0,
+                  "open_amount": 5.31,
+                  "prev_open_amount": 14.38,
+                  "prev_amount": 7324.76,
+                  "two_min_amount": 119.34,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.07,
+                  "open_amount_vs_prev_open_ratio": 0.3693,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0163
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 51,
+                  "size": 273,
+                  "percentile": 0.8162,
+                  "metric": 2.756183
+                },
+                "theme": {
+                  "theme": "水力发电",
+                  "rank": 2,
+                  "size": 3,
+                  "percentile": 0.5,
+                  "metric": 2.756183
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.54
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "downgrade",
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不佳",
+                  "均线位置不适合直接买入"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "downgrade",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": false,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "均线位置不适合直接买入"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
           },
           "score": 0.615,
           "source_score": 0.615,
           "normalized_score": 61.5,
           "unified_score": 61.5,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "水力发电",
           "theme_display": "水力发电",
-          "industry": "公用事业-电力",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.54,
-            "open_change_pct": -0.29,
-            "turnover_rate": 2.1,
-            "volume_ratio": 1.09,
-            "amount": 7994.84,
-            "last_price": 10.5,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "水力发电",
-            "industry": "公用事业-电力"
+            "industry": ""
           },
-          "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
-          "catalyst_status": "unconfirmed",
-          "catalyst_status_label": "催化未确认",
-          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "theme_watch",
           "mainline_relation_label": "题材观察票",
           "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "水力发电",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
           "rank": 5,
           "strategy_group": "a_theme_watch",
-          "strategy_group_cn": "A类主线/题材逻辑",
+          "strategy_group_cn": "",
           "symbol": "600130",
           "name": "波导股份",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
-          "blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "tracking_status": "verified",
+          "entry_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "display_reason": "题材观察：消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察；次日竞价验证待确认；相对强弱待次日补证。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
           "observation_tier": "a_watch",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "a_watch",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": false,
-          "current_action": "downgrade",
-          "current_status_cn": "降级观察",
-          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "downgrade",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "downgrade",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": false,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 45,
+                "size": 273,
+                "percentile": 0.8382,
+                "metric": 3.021523
+              },
+              "theme": {
+                "theme": "消费电子组件",
+                "rank": 2,
+                "size": 6,
+                "percentile": 0.8,
+                "metric": 3.021523
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.75
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 22.32,
+                "prev_open_amount": 11.3,
+                "prev_amount": 11079.63,
+                "two_min_amount": 128.66,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.2,
+                "open_amount_vs_prev_open_ratio": 1.9752,
+                "two_min_amount_vs_prev_amount_ratio": 0.0116
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.24,
+            "turnover_rate": 3.69,
+            "amount_change": {
+              "status": "flat",
+              "amount": 11421.64,
+              "comparison_amount": 11079.63,
+              "ratio": 1.0309,
+              "reason": "成交额基本持平"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -2.38
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "消费电子组件",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5688,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "消费电子组件",
+                "display_theme_list": [
+                  "消费电子组件",
+                  "电子-消费电子"
+                ],
+                "display_branch_themes": [
+                  "电子-消费电子"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "downgrade",
+              "reasons": [
+                "均线位置不佳",
+                "题材/主营匹配未确认，不能作为淘汰依据",
+                "均线位置不适合直接买入"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.545,
+              "technical_pool_type": "rejected"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.75000334,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 3.69230676,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.23894417,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "strong",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时收盘较首段上涨 4.05%"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 2.3752969121140057,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "supportive",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.20 倍，温和放量"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "below_key_ma",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "收盘价低于短均线: close=4.11, MA5=4.08, MA10=4.24"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "unconfirmed",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司主营/题材数据未形成明确交集，暂记为未确认，不等同于匹配度低"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "消费电子组件",
+              "display_theme_list": [
+                "消费电子组件",
+                "电子-消费电子"
+              ],
+              "display_branch_themes": [
+                "电子-消费电子"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "600130",
+            "candidate_name": "波导股份",
+            "entry_style": "observe_only",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.0,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.01,
+                  "open_amount": 22.32,
+                  "prev_open_amount": 11.3,
+                  "prev_amount": 11079.63,
+                  "two_min_amount": 128.66,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.2,
+                  "open_amount_vs_prev_open_ratio": 1.9752,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0116
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 45,
+                  "size": 273,
+                  "percentile": 0.8382,
+                  "metric": 3.021523
+                },
+                "theme": {
+                  "theme": "消费电子组件",
+                  "rank": 2,
+                  "size": 6,
+                  "percentile": 0.8,
+                  "metric": 3.021523
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.75
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "downgrade",
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不佳",
+                  "题材/主营匹配未确认，不能作为淘汰依据",
+                  "均线位置不适合直接买入"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "downgrade",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": false,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "均线位置不适合直接买入"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
           },
           "score": 0.62,
           "source_score": 0.62,
           "normalized_score": 62.0,
           "unified_score": 62.0,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "消费电子组件",
           "theme_display": "消费电子组件",
-          "industry": "电子-消费电子",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.75,
-            "open_change_pct": 0.0,
-            "turnover_rate": 3.69,
-            "volume_ratio": 1.24,
-            "amount": 11421.64,
-            "last_price": 4.11,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "消费电子组件",
-            "industry": "电子-消费电子"
+            "industry": ""
           },
-          "display_reason": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
-          "catalyst_status": "unconfirmed",
-          "catalyst_status_label": "催化未确认",
-          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "theme_watch",
           "mainline_relation_label": "题材观察票",
           "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "消费电子组件",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
           "rank": 6,
           "strategy_group": "score_front_rejected",
-          "strategy_group_cn": "候选评分前排逻辑",
+          "strategy_group_cn": "",
           "symbol": "002174",
           "name": "游族网络",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-          "blocked_reason": "已进入正式 Top3；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "tracking_status": "verified",
+          "entry_reason": "候选评分前排：综合评分 0.637，排序靠前，但未追高，量能/分时/尾盘承接未触发硬伤；次日竞价验证待确认；今天只用于复盘是否误杀或漏强。",
+          "display_reason": "候选评分前排：综合评分 0.637，排序靠前，但未追高，量能/分时/尾盘承接未触发硬伤；次日竞价验证待确认；今天只用于复盘是否误杀或漏强。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
-          "observation_tier": "buy_top3",
+          "observation_tier": "score_front_rejected",
           "candidate_channel": "technical_fund_flow",
-          "current_observation_tier": "buy_top3",
-          "current_candidate_channel": "technical_fund_flow",
-          "current_buy_allowed": true,
-          "current_action": "pass",
-          "current_status_cn": "继续持有",
-          "current_blocked_reason": "",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "pass",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "pass",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": true,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 57,
+                "size": 273,
+                "percentile": 0.7941,
+                "metric": 2.581377
+              },
+              "theme": {
+                "theme": "游戏",
+                "rank": 2,
+                "size": 3,
+                "percentile": 0.5,
+                "metric": 2.581377
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.48
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.4,
+                "open_turnover_rate": 0.03,
+                "open_amount": 330.64,
+                "prev_open_amount": 130.54,
+                "prev_amount": 70228.38,
+                "two_min_amount": 590.3,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.47,
+                "open_amount_vs_prev_open_ratio": 2.5329,
+                "two_min_amount_vs_prev_amount_ratio": 0.0084
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.16,
+            "turnover_rate": 5.64,
+            "amount_change": {
+              "status": "flat",
+              "amount": 71231.35,
+              "comparison_amount": 70228.38,
+              "ratio": 1.0143,
+              "reason": "成交额基本持平"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -2.36
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "游戏",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5922,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "游戏",
+                "display_theme_list": [
+                  "游戏",
+                  "传媒-游戏"
+                ],
+                "display_branch_themes": [
+                  "传媒-游戏"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "pass",
+              "reasons": [
+                "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.725,
+              "technical_pool_type": "technical_watch"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.39808297,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 5.65028191,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.16065168,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时未明显走强或走弱"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 2.4371667936024393,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "supportive",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.12 倍，温和放量"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "bullish",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "MA5/MA10/MA20 多头排列"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 游戏"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "游戏",
+              "display_theme_list": [
+                "游戏",
+                "传媒-游戏"
+              ],
+              "display_branch_themes": [
+                "传媒-游戏"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "002174",
+            "candidate_name": "游族网络",
+            "entry_style": "pullback_confirm",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.0,
+                  "open_grab_pct": 0.4,
+                  "open_turnover_rate": 0.03,
+                  "open_amount": 330.64,
+                  "prev_open_amount": 130.54,
+                  "prev_amount": 70228.38,
+                  "two_min_amount": 590.3,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.47,
+                  "open_amount_vs_prev_open_ratio": 2.5329,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0084
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 57,
+                  "size": 273,
+                  "percentile": 0.7941,
+                  "metric": 2.581377
+                },
+                "theme": {
+                  "theme": "游戏",
+                  "rank": 2,
+                  "size": 3,
+                  "percentile": 0.5,
+                  "metric": 2.581377
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.48
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "pass",
+                "missing_fields": [],
+                "reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [
+                  "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                ],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "pass",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": true,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [
+              "不打板模型通过：未追高，量能/分时/尾盘承接未触发硬伤"
+            ],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "技术/资金行为候选经公告排雷、技术面、尾盘承接和资金/主线确认后允许进入 Top3"
           },
           "score": 0.637,
           "source_score": 0.637,
           "normalized_score": 63.7,
           "unified_score": 63.7,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "游戏",
           "theme_display": "游戏",
-          "industry": "传媒-游戏",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.48,
-            "open_change_pct": 0.0,
-            "turnover_rate": 5.64,
-            "volume_ratio": 1.16,
-            "amount": 71231.35,
-            "last_price": 12.82,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "游戏",
-            "industry": "传媒-游戏"
+            "industry": ""
           },
-          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
-          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "execution_off_mainline",
           "mainline_relation_label": "主线外执行票",
-          "mainline_relation_detail": "这票不是按主线扩散去上，而是按技术/资金确认去执行；不是链路漂移。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "mainline_relation_detail": "市场大方向已是“确认主线”，但这票走的是执行层确认路线。",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "游戏",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
           "rank": 7,
           "strategy_group": "score_front_rejected",
-          "strategy_group_cn": "候选评分前排逻辑",
+          "strategy_group_cn": "",
           "symbol": "601579",
           "name": "会稽山",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-          "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "tracking_status": "verified",
+          "entry_reason": "候选评分前排：综合评分 0.637，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+          "display_reason": "候选评分前排：综合评分 0.637，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
-          "observation_tier": "a_watch",
+          "observation_tier": "score_front_rejected",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "a_watch",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": false,
-          "current_action": "downgrade",
-          "current_status_cn": "降级观察",
-          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "downgrade",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "downgrade",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": false,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 63,
+                "size": 273,
+                "percentile": 0.7721,
+                "metric": 2.419085
+              },
+              "theme": {
+                "theme": "黄酒",
+                "rank": 1,
+                "size": 1,
+                "percentile": 1.0,
+                "metric": 2.419085
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.43
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.62,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 28.29,
+                "prev_open_amount": 5.22,
+                "prev_amount": 6722.25,
+                "two_min_amount": 28.22,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.42,
+                "open_amount_vs_prev_open_ratio": 5.4195,
+                "two_min_amount_vs_prev_amount_ratio": 0.0042
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 0.99,
+            "turnover_rate": 1.03,
+            "amount_change": {
+              "status": "flat",
+              "amount": 7295.33,
+              "comparison_amount": 6722.25,
+              "ratio": 1.0853,
+              "reason": "成交额基本持平"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -1.86
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "黄酒",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5347,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "黄酒",
+                "display_theme_list": [
+                  "黄酒",
+                  "食品饮料-酿酒"
+                ],
+                "display_branch_themes": [
+                  "食品饮料-酿酒"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "downgrade",
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.545,
+              "technical_pool_type": "rejected"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.4271872,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 1.03036022,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 0.982293487,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时未明显走强或走弱"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 1.8604651162790773,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "neutral",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 0.95 倍"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "below_key_ma",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "收盘价低于短均线: close=14.77, MA5=14.70, MA10=14.83"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 黄酒"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "黄酒",
+              "display_theme_list": [
+                "黄酒",
+                "食品饮料-酿酒"
+              ],
+              "display_branch_themes": [
+                "食品饮料-酿酒"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "601579",
+            "candidate_name": "会稽山",
+            "entry_style": "observe_only",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.62,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.01,
+                  "open_amount": 28.29,
+                  "prev_open_amount": 5.22,
+                  "prev_amount": 6722.25,
+                  "two_min_amount": 28.22,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.42,
+                  "open_amount_vs_prev_open_ratio": 5.4195,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0042
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 63,
+                  "size": 273,
+                  "percentile": 0.7721,
+                  "metric": 2.419085
+                },
+                "theme": {
+                  "theme": "黄酒",
+                  "rank": 1,
+                  "size": 1,
+                  "percentile": 1.0,
+                  "metric": 2.419085
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.43
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "downgrade",
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不佳",
+                  "均线位置不适合直接买入"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "downgrade",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": false,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "均线位置不适合直接买入"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
           },
           "score": 0.637,
           "source_score": 0.637,
           "normalized_score": 63.7,
           "unified_score": 63.7,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "黄酒",
           "theme_display": "黄酒",
-          "industry": "食品饮料-酿酒",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.43,
-            "open_change_pct": 0.62,
-            "turnover_rate": 1.03,
-            "volume_ratio": 0.99,
-            "amount": 7295.33,
-            "last_price": 14.77,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "黄酒",
-            "industry": "食品饮料-酿酒"
+            "industry": ""
           },
-          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
-          "catalyst_status": "unconfirmed",
-          "catalyst_status_label": "催化未确认",
-          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "theme_watch",
           "mainline_relation_label": "题材观察票",
           "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "黄酒",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
           "rank": 8,
           "strategy_group": "score_front_rejected",
-          "strategy_group_cn": "候选评分前排逻辑",
+          "strategy_group_cn": "",
           "symbol": "000537",
           "name": "绿发电力",
           "source_period": "close",
-          "tracking_scope": "all_layer_records",
-          "return_tracking_scope": "side_channel_or_status_only",
-          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
-          "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
-          "tracking_status": "verified",
+          "entry_reason": "候选评分前排：综合评分 0.630，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+          "display_reason": "候选评分前排：综合评分 0.630，排序靠前，但次日竞价验证待确认；相对强弱待次日补证；今天只用于复盘是否误杀或漏强。",
+          "blocked_reason": "",
+          "tracking_status": "tracked",
           "formal_return_eligible": false,
           "side_channel_return_eligible": true,
-          "side_channel_return_scope": "panel_front_sample",
-          "display_tracking_eligible": true,
-          "source_close_date": "",
-          "observation_tier": "a_watch",
+          "observation_tier": "score_front_rejected",
           "candidate_channel": "news_theme",
-          "current_observation_tier": "a_watch",
-          "current_candidate_channel": "news_theme",
-          "current_buy_allowed": false,
-          "current_action": "downgrade",
-          "current_status_cn": "降级观察",
-          "current_blocked_reason": "技术面降级；未达到正式 Top3 准入",
-          "last_seen_source": "report",
-          "last_seen_in_period": true,
-          "latest_snapshot_matched": true,
-          "snapshot_missing_reason": "",
-          "buy_allowed": false,
-          "eligible_for_top3": null,
-          "eligible_for_handoff": null,
-          "technical_decision": "downgrade",
-          "admission_reason": "",
+          "current_candidate_channel": "",
+          "current_observation_tier": "",
           "candidate_notice_status": "checked_clear",
-          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
-          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
-          "notice_supplement_status": "checked_clear",
-          "notice_supplement_required": false,
-          "no_chase_reasons": [],
-          "cancel_conditions": [],
-          "data_quality_warnings": [],
-          "raw_status": {
-            "technical_decision": "downgrade",
-            "candidate_notice_status": "checked_clear",
-            "eligible_for_top3": false,
-            "eligible_for_handoff": true
+          "strength_explain": {
+            "relative_sector_strength": "未映射板块强弱",
+            "relative_strength_check": {
+              "status": "strong",
+              "watchlist": {
+                "rank": 55,
+                "size": 273,
+                "percentile": 0.8015,
+                "metric": 2.667511
+              },
+              "theme": {
+                "theme": "风力发电",
+                "rank": 3,
+                "size": 4,
+                "percentile": 0.3333,
+                "metric": 2.667511
+              },
+              "index_context": {
+                "status": "missing",
+                "index_change_pct": null,
+                "change_pct": 2.59
+              },
+              "warnings": [
+                "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+              ]
+            },
+            "auction_open_check": {
+              "enabled": true,
+              "status": "positive",
+              "action": "pass",
+              "top3_allowed": true,
+              "values": {
+                "open_change_pct": 0.0,
+                "open_grab_pct": 0.0,
+                "open_turnover_rate": 0.01,
+                "open_amount": 31.44,
+                "prev_open_amount": 23.63,
+                "prev_amount": 14465.17,
+                "two_min_amount": 42.1,
+                "auction_limit_buy": null,
+                "open_vs_prev_pct": 0.22,
+                "open_amount_vs_prev_open_ratio": 1.3305,
+                "two_min_amount_vs_prev_amount_ratio": 0.0029
+              },
+              "missing_fields": [
+                "auction_limit_buy"
+              ],
+              "positive_signals": [
+                "开盘金额较昨日开盘放大"
+              ],
+              "risk_flags": [],
+              "warnings": [
+                "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+              ],
+              "no_chase_reasons": []
+            },
+            "volume_ratio": 1.07,
+            "turnover_rate": 1.13,
+            "amount_change": {
+              "status": "expanding",
+              "amount": 16458.0,
+              "comparison_amount": 14465.17,
+              "ratio": 1.1378,
+              "reason": "成交额放大"
+            },
+            "intraday_support": {
+              "intraday_relative_strength": "neutral",
+              "tail_volume_support": true,
+              "fade_from_high": -1.39
+            },
+            "triggers": {
+              "has_trigger": false,
+              "news": false,
+              "notice": false,
+              "status": {
+                "news": "none",
+                "notice": "checked"
+              },
+              "events": {
+                "news": [],
+                "notice": []
+              }
+            },
+            "mainline": {
+              "theme": "风力发电",
+              "is_mainline": false,
+              "mainline_verdict": "非主线执行方向",
+              "market_mainline_verdict": "确认主线",
+              "role": "",
+              "role_label": "未映射",
+              "role_score": null,
+              "sector_strength_score": 0.5896,
+              "relative_sector_strength": "未映射板块强弱",
+              "display_fields": {
+                "display_theme": "风力发电",
+                "display_theme_list": [
+                  "风力发电",
+                  "公用事业-电力"
+                ],
+                "display_branch_themes": [
+                  "公用事业-电力"
+                ],
+                "display_theme_source": "candidate_fields",
+                "display_mainline_alignment": "non_mainline",
+                "display_mainline_alignment_label": "非主线执行方向",
+                "display_execution_position": "technical_confirmation_stock",
+                "display_execution_position_label": "技术确认票"
+              }
+            },
+            "technical": {
+              "decision": "downgrade",
+              "reasons": [
+                "均线位置不佳",
+                "均线位置不适合直接买入"
+              ],
+              "missing_fields": [],
+              "technical_fund_score": 0.545,
+              "technical_pool_type": "rejected"
+            },
+            "technical_10_results": [
+              {
+                "label": "涨幅纪律",
+                "value": 2.59365749,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "换手率",
+                "value": 1.13370609,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "量比",
+                "value": 1.06709075,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "分时强弱",
+                "value": "strong",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "分时收盘较首段上涨 4.25%"
+                ]
+              },
+              {
+                "label": "是否冲高回落",
+                "value": 1.3850415512465326,
+                "source": "tdx_quotes",
+                "reason": []
+              },
+              {
+                "label": "尾盘承接",
+                "value": "neutral",
+                "source": "tdx_kline(period=1)",
+                "reason": [
+                  "尾盘缩量横住，承接中性"
+                ]
+              },
+              {
+                "label": "K线结构",
+                "value": "healthy",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "K线结构未发现明显破位或过热"
+                ]
+              },
+              {
+                "label": "近3-5天量能",
+                "value": "neutral",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "今日量能为5日均量 1.03 倍"
+                ]
+              },
+              {
+                "label": "均线位置",
+                "value": "below_key_ma",
+                "source": "tdx_kline(period=4)",
+                "reason": [
+                  "收盘价低于短均线: close=7.12, MA5=7.14, MA10=7.28"
+                ]
+              },
+              {
+                "label": "主营匹配",
+                "value": "high",
+                "source": "tdx_api_data",
+                "reason": [
+                  "候选主题与公司/题材数据命中: 风力发电"
+                ]
+              }
+            ],
+            "display_fields": {
+              "display_theme": "风力发电",
+              "display_theme_list": [
+                "风力发电",
+                "公用事业-电力"
+              ],
+              "display_branch_themes": [
+                "公用事业-电力"
+              ],
+              "display_theme_source": "candidate_fields",
+              "display_mainline_alignment": "non_mainline",
+              "display_mainline_alignment_label": "非主线执行方向",
+              "display_execution_position": "technical_confirmation_stock",
+              "display_execution_position_label": "技术确认票",
+              "display_catalyst_status": "none",
+              "display_catalyst_label": "暂无明确催化",
+              "display_catalyst_freshness": "unknown",
+              "display_catalyst_basis": "no_clear_match"
+            }
+          },
+          "candidate_validation": {
+            "candidate_code": "000537",
+            "candidate_name": "绿发电力",
+            "entry_style": "observe_only",
+            "validation": {
+              "auction_open_check": {
+                "enabled": true,
+                "status": "positive",
+                "action": "pass",
+                "top3_allowed": true,
+                "values": {
+                  "open_change_pct": 0.0,
+                  "open_grab_pct": 0.0,
+                  "open_turnover_rate": 0.01,
+                  "open_amount": 31.44,
+                  "prev_open_amount": 23.63,
+                  "prev_amount": 14465.17,
+                  "two_min_amount": 42.1,
+                  "auction_limit_buy": null,
+                  "open_vs_prev_pct": 0.22,
+                  "open_amount_vs_prev_open_ratio": 1.3305,
+                  "two_min_amount_vs_prev_amount_ratio": 0.0029
+                },
+                "missing_fields": [
+                  "auction_limit_buy"
+                ],
+                "positive_signals": [
+                  "开盘金额较昨日开盘放大"
+                ],
+                "risk_flags": [],
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据"
+                ],
+                "no_chase_reasons": []
+              },
+              "relative_strength_check": {
+                "status": "strong",
+                "watchlist": {
+                  "rank": 55,
+                  "size": 273,
+                  "percentile": 0.8015,
+                  "metric": 2.667511
+                },
+                "theme": {
+                  "theme": "风力发电",
+                  "rank": 3,
+                  "size": 4,
+                  "percentile": 0.3333,
+                  "metric": 2.667511
+                },
+                "index_context": {
+                  "status": "missing",
+                  "index_change_pct": null,
+                  "change_pct": 2.59
+                },
+                "warnings": [
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ]
+              },
+              "technical_check": {
+                "decision": "downgrade",
+                "missing_fields": [],
+                "reasons": [
+                  "均线位置不佳",
+                  "均线位置不适合直接买入"
+                ]
+              },
+              "announcement_check": {
+                "status": "checked_clear",
+                "reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景"
+              },
+              "data_quality_check": {
+                "warnings": [
+                  "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+                  "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+                ],
+                "rank_confidence": "normal"
+              },
+              "discipline_check": {
+                "no_chase_reasons": [],
+                "non_limit_short_term": {
+                  "enabled": true,
+                  "action": "downgrade",
+                  "entry_style": "half_way_confirm",
+                  "top3_allowed": false,
+                  "handoff_allowed": true,
+                  "missing_fields": [],
+                  "reasons": [
+                    "均线位置不适合直接买入"
+                  ],
+                  "rules": {
+                    "price_change_watch_above_pct": 3.0,
+                    "near_limit_risk_pct": 7.0,
+                    "max_fade_from_high_pct": 3.0
+                  }
+                }
+              }
+            },
+            "cancel_conditions": [],
+            "no_chase_reasons": [],
+            "risk_flags": [],
+            "data_quality_warnings": [
+              "开盘验证字段不完整，不能把竞价强弱作为硬放行依据",
+              "缺少指数涨跌或个股涨跌，无法确认相对大盘强弱"
+            ],
+            "handoff_notes": "消息/题材驱动候选，需技术面继续确认；不打板短线模型禁止追买，只允许回踩/承接确认后观察"
           },
           "score": 0.63,
           "source_score": 0.63,
           "normalized_score": 63.0,
           "unified_score": 63.0,
           "score_display_scale": "0_100",
-          "low_reflow_watch": {},
-          "low_reflow_watch_result": {},
-          "open_drive_watch": {},
-          "open_drive_watch_result": {},
-          "overnight_limit_watch": {},
-          "overnight_limit_watch_result": {},
-          "theme_rotation_watch": {},
-          "theme_rotation_watch_result": {},
-          "close_strength_hold_watch": {},
-          "close_strength_hold_watch_result": {},
-          "legacy_next_day_change_pct": null,
-          "legacy_next_day_change_text": "",
-          "legacy_next_day_date": "",
-          "legacy_next_day_source": "",
-          "legacy_next_day_last_price": null,
-          "return_metrics": {
-            "intraday_return": null,
-            "intraday_price": null,
-            "intraday_price_source": "",
-            "entry_price": null,
-            "entry_price_source": "",
-            "return_basis": "",
-            "same_day_return": null,
-            "ledger_same_day_return": null,
-            "t1_return": null,
-            "day3_return": null,
-            "missing_reasons": []
-          },
           "theme": "风力发电",
           "theme_display": "风力发电",
-          "industry": "公用事业-电力",
+          "industry": "",
+          "display_tracking_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
           "latest_snapshot": {
-            "change_pct": 2.59,
-            "open_change_pct": 0.0,
-            "turnover_rate": 1.13,
-            "volume_ratio": 1.07,
-            "amount": 16458.0,
-            "last_price": 7.12,
+            "change_pct": null,
+            "open_change_pct": null,
+            "turnover_rate": null,
+            "volume_ratio": null,
+            "amount": null,
+            "last_price": null,
             "theme": "风力发电",
-            "industry": "公用事业-电力"
+            "industry": ""
           },
-          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "raw_status": {
+            "candidate_notice_status": "checked_clear"
+          },
+          "candidate_notice_source": "tdxclaw_bridge.授权公告查询",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "notice_supplement_status": "checked_clear",
           "return_status": "旁路收益",
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
-          "catalyst_status": "unconfirmed",
-          "catalyst_status_label": "催化未确认",
-          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "no_clear_match",
           "catalyst_timeliness": "unknown",
-          "catalyst_timeliness_label": "时效不明",
-          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "catalyst_timeliness_label": "时效未确认",
+          "catalyst_timeliness_detail": "催化时效优先沿用正式报告已落盘的时间口径。",
           "mainline_relation": "theme_watch",
           "mainline_relation_label": "题材观察票",
           "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
-          "execution_position_label": "",
-          "execution_position_detail": "",
+          "execution_position_label": "技术确认票",
+          "execution_position_detail": "执行落点更偏技术/资金确认，不等于当天最强主线。",
           "mainline_theme_display": "风力发电",
-          "mainline_verdict_display": "",
-          "market_mainline_verdict_display": "",
-          "mainline_role_label": "",
+          "mainline_verdict_display": "非主线执行方向",
+          "market_mainline_verdict_display": "确认主线",
+          "mainline_role_label": "未映射",
           "overnight_report": {}
         },
         {
@@ -5888,7 +10313,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6041,7 +10466,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6197,7 +10622,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6365,7 +10790,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6383,13 +10808,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "002832",
+            "name": "比音勒芬",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -6539,7 +10972,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6557,13 +10990,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "002201",
+            "name": "九鼎新材",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -6715,7 +11156,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6733,13 +11174,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "000990",
+            "name": "诚志股份",
+            "groups": [
+              "open_drive_watch"
+            ],
+            "group_labels": [
+              "早盘驱动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -6895,7 +11344,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -6913,13 +11362,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "600986",
+            "name": "浙文互联",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7075,7 +11532,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7093,13 +11550,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "000980",
+            "name": "众泰汽车",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7256,7 +11721,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7274,13 +11739,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "002929",
+            "name": "润建股份",
+            "groups": [
+              "overnight_limit_watch"
+            ],
+            "group_labels": [
+              "隔夜涨停观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7433,7 +11906,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7451,13 +11924,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "600536",
+            "name": "中国软件",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7612,7 +12093,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7630,13 +12111,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "002300",
+            "name": "太阳电缆",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7789,7 +12278,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -7807,13 +12296,21 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "status": "pending",
+            "symbol": "601619",
+            "name": "嘉泽新能",
+            "groups": [
+              "theme_rotation_watch"
+            ],
+            "group_labels": [
+              "题材轮动观察"
+            ],
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": ""
+            "action_hint": "暂无龙虾结论",
+            "status": "missing"
           }
         },
         {
@@ -7971,7 +12468,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -8145,7 +12642,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -8319,7 +12816,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "return_scope": "side_channel",
           "missing_reason": "",
           "freshness": "当前结构化账本",
-          "source_mtime": "2026-07-10T14:54:11+08:00",
+          "source_mtime": "2026-07-10T14:58:44+08:00",
           "historical_backfill": false,
           "catalyst_status": "none",
           "catalyst_status_label": "暂无明确催化",
@@ -8339,7 +12836,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "overnight_report": {}
         }
       ],
-      "display_source": "four_layer_tracking",
+      "display_source": "formal_report_markdown",
       "raw_record_count": 23,
       "raw_strategy_counts": {
         "formal_top3": 2,
@@ -8506,8 +13003,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/four-layer-tracking.close.json",
         "exists": true,
         "size": 122821,
-        "modified_at": "2026-07-10T14:54:11+08:00",
-        "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+        "modified_at": "2026-07-10T14:58:44+08:00",
+        "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
       }
     },
     "morning": {
@@ -9901,21 +14398,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000960",
-            "name": "锡业股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -10091,21 +14580,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002518",
-            "name": "科士达",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -10284,21 +14765,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002876",
-            "name": "三利谱",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -10479,21 +14952,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002222",
-            "name": "福晶科技",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -10674,21 +15139,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002046",
-            "name": "国机精工",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -10869,21 +15326,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "003031",
-            "name": "中瓷电子",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -11062,21 +15511,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603175",
-            "name": "超颖电子",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -11257,21 +15698,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603328",
-            "name": "依顿电子",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -11450,21 +15883,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002134",
-            "name": "天津普林",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -13582,21 +18007,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "000960",
-            "name": "锡业股份",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -13772,21 +18189,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002518",
-            "name": "科士达",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -13965,21 +18374,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002876",
-            "name": "三利谱",
-            "groups": [
-              "open_drive_watch"
-            ],
-            "group_labels": [
-              "早盘驱动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -14160,21 +18561,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002222",
-            "name": "福晶科技",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -14355,21 +18748,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002046",
-            "name": "国机精工",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -14550,21 +18935,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "003031",
-            "name": "中瓷电子",
-            "groups": [
-              "overnight_limit_watch"
-            ],
-            "group_labels": [
-              "隔夜涨停观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -14743,21 +19120,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603175",
-            "name": "超颖电子",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -14938,21 +19307,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "603328",
-            "name": "依顿电子",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -15131,21 +19492,13 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
           "market_mainline_verdict_display": "",
           "mainline_role_label": "",
           "overnight_report": {
-            "symbol": "002134",
-            "name": "天津普林",
-            "groups": [
-              "theme_rotation_watch"
-            ],
-            "group_labels": [
-              "题材轮动观察"
-            ],
+            "status": "partial",
             "original_text": "",
             "summary_short": "",
             "stance": "",
             "catalyst": "",
             "risk": "",
-            "action_hint": "暂无龙虾结论",
-            "status": "missing"
+            "action_hint": ""
           }
         },
         {
@@ -15873,40 +20226,3927 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "review": {
-      "status": "missing",
+      "status": "ok",
       "period": "review",
-      "records": [],
-      "summary": {},
-      "tracking_coverage": {}
+      "records": [
+        {
+          "rank": 1,
+          "strategy_group": "a_theme_watch",
+          "strategy_group_cn": "A类主线/题材逻辑",
+          "symbol": "600536",
+          "name": "中国软件",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "消息/题材驱动候选，需技术面继续确认",
+          "blocked_reason": "仍需观察确认；未达到正式 Top3 准入；技术面观察",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "observe",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "observe",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.62,
+          "source_score": 0.62,
+          "normalized_score": 62.0,
+          "unified_score": 62.0,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.003138,
+            "ledger_same_day_return": null,
+            "t1_return": 0.022315,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "行业应用软件",
+          "theme_display": "行业应用软件",
+          "industry": "计算机-软件服务",
+          "latest_snapshot": {
+            "change_pct": 2.52,
+            "open_change_pct": -0.98,
+            "turnover_rate": 3.16,
+            "volume_ratio": 1.83,
+            "amount": 78471.16,
+            "last_price": 29.32,
+            "theme": "行业应用软件",
+            "industry": "计算机-软件服务"
+          },
+          "display_reason": "消息/题材驱动候选，需技术面继续确认",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "行业应用软件",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 2,
+          "strategy_group": "a_theme_watch",
+          "strategy_group_cn": "A类主线/题材逻辑",
+          "symbol": "600835",
+          "name": "上海机电",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "消息/题材驱动候选，需技术面继续确认",
+          "blocked_reason": "仍需观察确认；未达到正式 Top3 准入；技术面观察",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "observe",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "observe",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.605,
+          "source_score": 0.605,
+          "normalized_score": 60.5,
+          "unified_score": 60.5,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.001392,
+            "ledger_same_day_return": null,
+            "t1_return": -0.003711,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "楼宇设备",
+          "theme_display": "楼宇设备",
+          "industry": "机械设备-专用设备",
+          "latest_snapshot": {
+            "change_pct": -0.6,
+            "open_change_pct": 0.28,
+            "turnover_rate": 0.94,
+            "volume_ratio": 0.93,
+            "amount": 16304.41,
+            "last_price": 21.48,
+            "theme": "楼宇设备",
+            "industry": "机械设备-专用设备"
+          },
+          "display_reason": "消息/题材驱动候选，需技术面继续确认",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "楼宇设备",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 3,
+          "strategy_group": "a_theme_watch",
+          "strategy_group_cn": "A类主线/题材逻辑",
+          "symbol": "601999",
+          "name": "出版传媒",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "消息/题材驱动候选，需技术面继续确认",
+          "blocked_reason": "仍需观察确认；未达到正式 Top3 准入；技术面观察",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "observe",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "observe",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.63,
+          "source_score": 0.63,
+          "normalized_score": 63.0,
+          "unified_score": 63.0,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.003497,
+            "ledger_same_day_return": null,
+            "t1_return": 0.034965,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "大众出版",
+          "theme_display": "大众出版",
+          "industry": "传媒-出版业",
+          "latest_snapshot": {
+            "change_pct": 3.14,
+            "open_change_pct": 0.17,
+            "turnover_rate": 1.29,
+            "volume_ratio": 2.03,
+            "amount": 4171.41,
+            "last_price": 5.92,
+            "theme": "大众出版",
+            "industry": "传媒-出版业"
+          },
+          "display_reason": "消息/题材驱动候选，需技术面继续确认",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "大众出版",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 4,
+          "strategy_group": "score_front_rejected",
+          "strategy_group_cn": "候选评分前排逻辑",
+          "symbol": "002039",
+          "name": "黔源电力",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.637,
+          "source_score": 0.637,
+          "normalized_score": 63.7,
+          "unified_score": 63.7,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.001509,
+            "ledger_same_day_return": null,
+            "t1_return": -0.052817,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "水力发电",
+          "theme_display": "水力发电",
+          "industry": "公用事业-电力",
+          "latest_snapshot": {
+            "change_pct": -5.61,
+            "open_change_pct": -0.95,
+            "turnover_rate": 4.27,
+            "volume_ratio": 2.12,
+            "amount": 34825.86,
+            "last_price": 18.83,
+            "theme": "水力发电",
+            "industry": "公用事业-电力"
+          },
+          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "水力发电",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 5,
+          "strategy_group": "score_front_rejected",
+          "strategy_group_cn": "候选评分前排逻辑",
+          "symbol": "601999",
+          "name": "出版传媒",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "observe",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "observe",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.63,
+          "source_score": 0.63,
+          "normalized_score": 63.0,
+          "unified_score": 63.0,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.003497,
+            "ledger_same_day_return": null,
+            "t1_return": 0.034965,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "大众出版",
+          "theme_display": "大众出版",
+          "industry": "传媒-出版业",
+          "latest_snapshot": {
+            "change_pct": 3.14,
+            "open_change_pct": 0.17,
+            "turnover_rate": 1.29,
+            "volume_ratio": 2.03,
+            "amount": 4171.41,
+            "last_price": 5.92,
+            "theme": "大众出版",
+            "industry": "传媒-出版业"
+          },
+          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "大众出版",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 6,
+          "strategy_group": "score_front_rejected",
+          "strategy_group_cn": "候选评分前排逻辑",
+          "symbol": "603139",
+          "name": "康惠股份",
+          "source_period": "review",
+          "tracking_scope": "all_layer_records",
+          "return_tracking_scope": "side_channel_or_status_only",
+          "entry_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "blocked_reason": "已进入观察层；这里仍作为候选评分前排逻辑样本参与横向比较",
+          "tracking_status": "tracked",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "a_watch",
+          "candidate_channel": "news_theme",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": true
+          },
+          "score": 0.62,
+          "source_score": 0.62,
+          "normalized_score": 62.0,
+          "unified_score": 62.0,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.000248,
+            "ledger_same_day_return": null,
+            "t1_return": 0.014154,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "中药",
+          "theme_display": "中药",
+          "industry": "医药医疗-中药",
+          "latest_snapshot": {
+            "change_pct": 1.44,
+            "open_change_pct": -0.35,
+            "turnover_rate": 3.83,
+            "volume_ratio": 1.15,
+            "amount": 15729.38,
+            "last_price": 40.84,
+            "theme": "中药",
+            "industry": "医药医疗-中药"
+          },
+          "display_reason": "候选综合评分靠前，但后续准入条件未全部通过",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "unconfirmed",
+          "catalyst_status_label": "催化未确认",
+          "catalyst_status_detail": "有题材/消息线索，但还没拿到可直接盖章的明确触发。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "theme_watch",
+          "mainline_relation_label": "题材观察票",
+          "mainline_relation_detail": "这票先按题材/消息观察处理，是否升级还要看技术确认和主线承接。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "中药",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 7,
+          "strategy_group": "low_reflow_watch",
+          "strategy_group_cn": "低位回流观察",
+          "symbol": "001230",
+          "name": "劲旅环境",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "low_reflow_watch",
+          "candidate_channel": "low_reflow_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 23.496742,
+          "source_score": 23.496742,
+          "normalized_score": 23.497,
+          "unified_score": 23.497,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {
+            "model": "low_reflow_watch_v1",
+            "rank": 1,
+            "selection_status": "picked",
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                3
+              ],
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                2,
+                18
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "low_reflow_v1: reflow strength + low-position safety + theme relation + risk status penalties",
+            "buy_day_fields": {
+              "change_pct": -0.33,
+              "volume_ratio": 1.79,
+              "turnover_rate": 9.04,
+              "amount": 17177.0,
+              "open_grab_pct": 1.61,
+              "attack_wave_pct": 8.57
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "low_reflow_watch_result": {
+            "next_day_change_pct": -1.73,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.000558,
+            "ledger_same_day_return": null,
+            "t1_return": -0.018405,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "固废治理",
+          "theme_display": "固废治理",
+          "industry": "环保-环境治理",
+          "latest_snapshot": {
+            "change_pct": -1.73,
+            "open_change_pct": -0.06,
+            "turnover_rate": 7.22,
+            "volume_ratio": 1.09,
+            "amount": 14375.3,
+            "last_price": 17.6,
+            "theme": "固废治理",
+            "industry": "环保-环境治理"
+          },
+          "display_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "固废治理",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 8,
+          "strategy_group": "low_reflow_watch",
+          "strategy_group_cn": "低位回流观察",
+          "symbol": "002885",
+          "name": "京泉华",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "low_reflow_watch",
+          "candidate_channel": "low_reflow_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "fetch_failed",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "fetch_failed",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 22.902316,
+          "source_score": 22.902316,
+          "normalized_score": 22.902,
+          "unified_score": 22.902,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {
+            "model": "low_reflow_watch_v1",
+            "rank": 2,
+            "selection_status": "picked",
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                3
+              ],
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                2,
+                18
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "low_reflow_v1: reflow strength + low-position safety + theme relation + risk status penalties",
+            "buy_day_fields": {
+              "change_pct": 2.34,
+              "volume_ratio": 0.96,
+              "turnover_rate": 9.84,
+              "amount": 79006.57,
+              "open_grab_pct": 3.0,
+              "attack_wave_pct": 9.11
+            },
+            "risk_penalties": [
+              "公告状态未完全确认",
+              "量能偏弱"
+            ],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "low_reflow_watch_result": {
+            "next_day_change_pct": -3.84,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.001973,
+            "ledger_same_day_return": null,
+            "t1_return": -0.03947,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "其他电子",
+          "theme_display": "其他电子",
+          "industry": "电子-其他电子",
+          "latest_snapshot": {
+            "change_pct": -3.84,
+            "open_change_pct": -0.68,
+            "turnover_rate": 7.82,
+            "volume_ratio": 0.79,
+            "amount": 65077.02,
+            "last_price": 34.07,
+            "theme": "其他电子",
+            "industry": "电子-其他电子"
+          },
+          "display_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "其他电子",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 9,
+          "strategy_group": "low_reflow_watch",
+          "strategy_group_cn": "低位回流观察",
+          "symbol": "603610",
+          "name": "麒盛科技",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "low_reflow_watch",
+          "candidate_channel": "low_reflow_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "fetch_failed",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "fetch_failed",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 21.958719,
+          "source_score": 21.958719,
+          "normalized_score": 21.959,
+          "unified_score": 21.959,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {
+            "model": "low_reflow_watch_v1",
+            "rank": 3,
+            "selection_status": "picked",
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                3
+              ],
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                2,
+                18
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "low_reflow_v1: reflow strength + low-position safety + theme relation + risk status penalties",
+            "buy_day_fields": {
+              "change_pct": 1.04,
+              "volume_ratio": 1.2,
+              "turnover_rate": 4.55,
+              "amount": 22287.42,
+              "open_grab_pct": -0.49,
+              "attack_wave_pct": 8.68
+            },
+            "risk_penalties": [
+              "公告状态未完全确认"
+            ],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "low_reflow_watch_result": {
+            "next_day_change_pct": 1.31,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.003441,
+            "ledger_same_day_return": null,
+            "t1_return": 0.009635,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "家具",
+          "theme_display": "家具",
+          "industry": "轻工制造-家居用品",
+          "latest_snapshot": {
+            "change_pct": 1.31,
+            "open_change_pct": 2.0,
+            "turnover_rate": 3.58,
+            "volume_ratio": 0.94,
+            "amount": 18361.39,
+            "last_price": 14.67,
+            "theme": "家具",
+            "industry": "轻工制造-家居用品"
+          },
+          "display_reason": "低位回流二次确认观察 v1：调整后出现温和放量、未明显追高，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "家具",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 10,
+          "strategy_group": "open_drive_watch",
+          "strategy_group_cn": "早盘驱动观察",
+          "symbol": "000960",
+          "name": "锡业股份",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "open_drive_watch",
+          "candidate_channel": "open_drive_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 21.17878,
+          "source_score": 21.17878,
+          "normalized_score": 21.179,
+          "unified_score": 21.179,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {
+            "model": "open_drive_watch_v1",
+            "rank": 1,
+            "selection_status": "picked",
+            "research_evidence": {
+              "sample_count": 310,
+              "next_day_avg_change_pct": 0.543,
+              "next_day_big_move_rate_ge_3pct": 0.239,
+              "baseline_next_day_avg_change_pct": -0.094,
+              "baseline_big_move_rate_ge_3pct": 0.149,
+              "source": "local_runs_filtered_pool_close_to_next_close_light_replay"
+            },
+            "hard_filters": {
+              "open_drive_range": [
+                0.5,
+                5
+              ],
+              "change_pct_range": [
+                -1,
+                4
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.2
+              ],
+              "turnover_rate_range": [
+                2,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "open_drive_v1: early drive + muted close + volume/turnover confirmation + attack wave + theme relation - pullback/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 2.86,
+              "open_drive_pct": 0.78,
+              "volume_ratio": 1.01,
+              "turnover_rate": 4.65,
+              "amount": 271840.09,
+              "attack_wave_pct": 8.43,
+              "pullback_from_high_pct": 0.22
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "open_drive_watch_result": {
+            "next_day_change_pct": -2.2,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.006742,
+            "ledger_same_day_return": null,
+            "t1_return": -0.01699,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "其他金属",
+          "theme_display": "其他金属",
+          "industry": "有色-稀有金属",
+          "latest_snapshot": {
+            "change_pct": -2.2,
+            "open_change_pct": -0.38,
+            "turnover_rate": 3.94,
+            "volume_ratio": 0.83,
+            "amount": 241780.28,
+            "last_price": 36.45,
+            "theme": "其他金属",
+            "industry": "有色-稀有金属"
+          },
+          "display_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "其他金属",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 11,
+          "strategy_group": "open_drive_watch",
+          "strategy_group_cn": "早盘驱动观察",
+          "symbol": "002518",
+          "name": "科士达",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "open_drive_watch",
+          "candidate_channel": "open_drive_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "candidate_notice_source": "candidate_notice_scan",
+          "notice_supplement_status": "checked_clear",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 20.046194,
+          "source_score": 20.046194,
+          "normalized_score": 20.046,
+          "unified_score": 20.046,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {
+            "model": "open_drive_watch_v1",
+            "rank": 2,
+            "selection_status": "picked",
+            "research_evidence": {
+              "sample_count": 310,
+              "next_day_avg_change_pct": 0.543,
+              "next_day_big_move_rate_ge_3pct": 0.239,
+              "baseline_next_day_avg_change_pct": -0.094,
+              "baseline_big_move_rate_ge_3pct": 0.149,
+              "source": "local_runs_filtered_pool_close_to_next_close_light_replay"
+            },
+            "hard_filters": {
+              "open_drive_range": [
+                0.5,
+                5
+              ],
+              "change_pct_range": [
+                -1,
+                4
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.2
+              ],
+              "turnover_rate_range": [
+                2,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "open_drive_v1: early drive + muted close + volume/turnover confirmation + attack wave + theme relation - pullback/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 2.94,
+              "open_drive_pct": 1.14,
+              "volume_ratio": 1.0,
+              "turnover_rate": 2.77,
+              "amount": 64246.85,
+              "attack_wave_pct": 6.83,
+              "pullback_from_high_pct": 0.31
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "open_drive_watch_result": {
+            "next_day_change_pct": -3.07,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.002359,
+            "ledger_same_day_return": null,
+            "t1_return": -0.033255,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "其他发电设备",
+          "theme_display": "其他发电设备",
+          "industry": "电力设备-其他发电设备",
+          "latest_snapshot": {
+            "change_pct": -3.07,
+            "open_change_pct": 0.0,
+            "turnover_rate": 2.27,
+            "volume_ratio": 0.79,
+            "amount": 53928.4,
+            "last_price": 40.99,
+            "theme": "其他发电设备",
+            "industry": "电力设备-其他发电设备"
+          },
+          "display_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "其他发电设备",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 12,
+          "strategy_group": "open_drive_watch",
+          "strategy_group_cn": "早盘驱动观察",
+          "symbol": "002876",
+          "name": "三利谱",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "open_drive_watch",
+          "candidate_channel": "open_drive_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "fetch_failed",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "fetch_failed",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 18.783281,
+          "source_score": 18.783281,
+          "normalized_score": 18.783,
+          "unified_score": 18.783,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {
+            "model": "open_drive_watch_v1",
+            "rank": 3,
+            "selection_status": "picked",
+            "research_evidence": {
+              "sample_count": 310,
+              "next_day_avg_change_pct": 0.543,
+              "next_day_big_move_rate_ge_3pct": 0.239,
+              "baseline_next_day_avg_change_pct": -0.094,
+              "baseline_big_move_rate_ge_3pct": 0.149,
+              "source": "local_runs_filtered_pool_close_to_next_close_light_replay"
+            },
+            "hard_filters": {
+              "open_drive_range": [
+                0.5,
+                5
+              ],
+              "change_pct_range": [
+                -1,
+                4
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.2
+              ],
+              "turnover_rate_range": [
+                2,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true
+            },
+            "score_formula": "open_drive_v1: early drive + muted close + volume/turnover confirmation + attack wave + theme relation - pullback/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 0.84,
+              "open_drive_pct": 1.63,
+              "volume_ratio": 0.94,
+              "turnover_rate": 5.41,
+              "amount": 24290.54,
+              "attack_wave_pct": 6.52,
+              "pullback_from_high_pct": 0.3
+            },
+            "risk_penalties": [
+              "公告状态未完全确认",
+              "量能偏弱"
+            ],
+            "next_day_success_standard": "next_day_change_pct >= 3",
+            "next_day_success_threshold": 3.0
+          },
+          "open_drive_watch_result": {
+            "next_day_change_pct": 1.81,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.002574,
+            "ledger_same_day_return": null,
+            "t1_return": 0.015444,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "光学元件",
+          "theme_display": "光学元件",
+          "industry": "电子-光学光电",
+          "latest_snapshot": {
+            "change_pct": 1.81,
+            "open_change_pct": 1.45,
+            "turnover_rate": 7.6,
+            "volume_ratio": 1.39,
+            "amount": 36780.55,
+            "last_price": 31.56,
+            "theme": "光学元件",
+            "industry": "电子-光学光电"
+          },
+          "display_reason": "早盘驱动未完全兑现观察 v1：竞价/早盘资金动作出现，但收盘涨幅未充分兑现，作为旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "光学元件",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 13,
+          "strategy_group": "overnight_limit_watch",
+          "strategy_group_cn": "隔夜涨停观察",
+          "symbol": "002222",
+          "name": "福晶科技",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "overnight_limit_watch",
+          "candidate_channel": "overnight_limit_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 56.238081,
+          "source_score": 56.238081,
+          "normalized_score": 56.238,
+          "unified_score": 56.238,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {
+            "model": "overnight_limit_watch_v1",
+            "rank": 1,
+            "selection_status": "picked",
+            "bucket": "core_limit_rehearsal",
+            "research_evidence": {
+              "desktop_history_folder": "C:/Users/1/Desktop/新建文件夹 (7)",
+              "file_count": 27,
+              "paired_sample_count": 6342,
+              "next_day_ge_9pct_count": 193,
+              "baseline_next_day_ge_9pct_rate": 0.0304,
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                8.8
+              ],
+              "limit_rehearsal_min": "high_pct>=3 and attack/high evidence present",
+              "pullback_from_high_max": 5.0,
+              "volume_ratio_range": [
+                0.6,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                18
+              ],
+              "amount_min": 10000,
+              "year_limit_up_days_min": 1,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_already_climax": "change_pct>8.8"
+            },
+            "score_formula": "overnight_limit_v1: attack strength + controlled pullback + volume/turnover + limit-up memory + tail support - overheating/fake-drive penalties",
+            "buy_day_fields": {
+              "change_pct": 6.65,
+              "high_pct": 7.03,
+              "pullback_from_high_pct": 0.38,
+              "volume_ratio": 1.27,
+              "turnover_rate": 6.1,
+              "amount": 222092.34,
+              "attack_wave_pct": 10.08,
+              "open_grab_pct": 1.21,
+              "year_limit_up_days": 8.0,
+              "tail_volume_support": true
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 9；辅助观察 next_day_change_pct >= 5",
+            "next_day_success_threshold": 9.0
+          },
+          "overnight_limit_watch_result": {
+            "next_day_change_pct": -4.82,
+            "success": false,
+            "big_move_success": false,
+            "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.001838,
+            "ledger_same_day_return": null,
+            "t1_return": -0.050974,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "光学元件",
+          "theme_display": "光学元件",
+          "industry": "电子-光学光电",
+          "latest_snapshot": {
+            "change_pct": -4.82,
+            "open_change_pct": 0.25,
+            "turnover_rate": 5.93,
+            "volume_ratio": 1.12,
+            "amount": 225572.64,
+            "last_price": 77.45,
+            "theme": "光学元件",
+            "industry": "电子-光学光电"
+          },
+          "display_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "光学元件",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 14,
+          "strategy_group": "overnight_limit_watch",
+          "strategy_group_cn": "隔夜涨停观察",
+          "symbol": "002046",
+          "name": "国机精工",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "overnight_limit_watch",
+          "candidate_channel": "overnight_limit_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 55.847688,
+          "source_score": 55.847688,
+          "normalized_score": 55.848,
+          "unified_score": 55.848,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {
+            "model": "overnight_limit_watch_v1",
+            "rank": 2,
+            "selection_status": "picked",
+            "bucket": "core_limit_rehearsal",
+            "research_evidence": {
+              "desktop_history_folder": "C:/Users/1/Desktop/新建文件夹 (7)",
+              "file_count": 27,
+              "paired_sample_count": 6342,
+              "next_day_ge_9pct_count": 193,
+              "baseline_next_day_ge_9pct_rate": 0.0304,
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                8.8
+              ],
+              "limit_rehearsal_min": "high_pct>=3 and attack/high evidence present",
+              "pullback_from_high_max": 5.0,
+              "volume_ratio_range": [
+                0.6,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                18
+              ],
+              "amount_min": 10000,
+              "year_limit_up_days_min": 1,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_already_climax": "change_pct>8.8"
+            },
+            "score_formula": "overnight_limit_v1: attack strength + controlled pullback + volume/turnover + limit-up memory + tail support - overheating/fake-drive penalties",
+            "buy_day_fields": {
+              "change_pct": 7.31,
+              "high_pct": 7.52,
+              "pullback_from_high_pct": 0.21,
+              "volume_ratio": 0.89,
+              "turnover_rate": 2.89,
+              "amount": 96963.73,
+              "attack_wave_pct": 9.45,
+              "open_grab_pct": 2.03,
+              "year_limit_up_days": 21.0,
+              "tail_volume_support": true
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 9；辅助观察 next_day_change_pct >= 5",
+            "next_day_success_threshold": 9.0
+          },
+          "overnight_limit_watch_result": {
+            "next_day_change_pct": -5.04,
+            "success": false,
+            "big_move_success": false,
+            "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.0,
+            "ledger_same_day_return": null,
+            "t1_return": -0.050817,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "机械基础件",
+          "theme_display": "机械基础件",
+          "industry": "机械设备-通用设备",
+          "latest_snapshot": {
+            "change_pct": -5.04,
+            "open_change_pct": 0.32,
+            "turnover_rate": 3.09,
+            "volume_ratio": 1.02,
+            "amount": 107303.34,
+            "last_price": 62.76,
+            "theme": "机械基础件",
+            "industry": "机械设备-通用设备"
+          },
+          "display_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "机械基础件",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 15,
+          "strategy_group": "overnight_limit_watch",
+          "strategy_group_cn": "隔夜涨停观察",
+          "symbol": "003031",
+          "name": "中瓷电子",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "overnight_limit_watch",
+          "candidate_channel": "overnight_limit_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 55.419773,
+          "source_score": 55.419773,
+          "normalized_score": 55.42,
+          "unified_score": 55.42,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {
+            "model": "overnight_limit_watch_v1",
+            "rank": 3,
+            "selection_status": "picked",
+            "bucket": "wide_limit_rehearsal",
+            "research_evidence": {
+              "desktop_history_folder": "C:/Users/1/Desktop/新建文件夹 (7)",
+              "file_count": 27,
+              "paired_sample_count": 6342,
+              "next_day_ge_9pct_count": 193,
+              "baseline_next_day_ge_9pct_rate": 0.0304,
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                -2,
+                8.8
+              ],
+              "limit_rehearsal_min": "high_pct>=3 and attack/high evidence present",
+              "pullback_from_high_max": 5.0,
+              "volume_ratio_range": [
+                0.6,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                18
+              ],
+              "amount_min": 10000,
+              "year_limit_up_days_min": 1,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_already_climax": "change_pct>8.8"
+            },
+            "score_formula": "overnight_limit_v1: attack strength + controlled pullback + volume/turnover + limit-up memory + tail support - overheating/fake-drive penalties",
+            "buy_day_fields": {
+              "change_pct": 5.95,
+              "high_pct": 6.11,
+              "pullback_from_high_pct": 0.16,
+              "volume_ratio": 1.28,
+              "turnover_rate": 2.94,
+              "amount": 144986.5,
+              "attack_wave_pct": 8.54,
+              "open_grab_pct": 0.54,
+              "year_limit_up_days": 12.0,
+              "tail_volume_support": true
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 9；辅助观察 next_day_change_pct >= 5",
+            "next_day_success_threshold": 9.0
+          },
+          "overnight_limit_watch_result": {
+            "next_day_change_pct": -5.62,
+            "success": false,
+            "big_move_success": false,
+            "success_standard": "next_day_change_pct >= 9；big_move_success >= 5",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.000465,
+            "ledger_same_day_return": null,
+            "t1_return": -0.056087,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "其他电子",
+          "theme_display": "其他电子",
+          "industry": "电子-其他电子",
+          "latest_snapshot": {
+            "change_pct": -5.62,
+            "open_change_pct": 1.0,
+            "turnover_rate": 3.05,
+            "volume_ratio": 1.27,
+            "amount": 155260.16,
+            "last_price": 142.04,
+            "theme": "其他电子",
+            "industry": "电子-其他电子"
+          },
+          "display_reason": "隔夜涨停观察 v1：当日出现攻击预演、回落可控、尾盘承接未坏且具备涨停股性，只做旁路观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "其他电子",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 16,
+          "strategy_group": "theme_rotation_watch",
+          "strategy_group_cn": "题材轮动观察",
+          "symbol": "603175",
+          "name": "超颖电子",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "theme_rotation_watch",
+          "candidate_channel": "theme_rotation_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 31.751532,
+          "source_score": 31.751532,
+          "normalized_score": 31.752,
+          "unified_score": 31.752,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {
+            "model": "theme_rotation_watch_v1",
+            "rank": 1,
+            "selection_status": "picked",
+            "theme": "PCB",
+            "theme_stats": {
+              "theme": "PCB",
+              "count": 9,
+              "active_count": 9,
+              "strong_count": 9,
+              "positive_count": 9,
+              "avg_change_pct": 6.137778,
+              "avg_volume_ratio": 1.117778,
+              "total_amount": 4041815.96
+            },
+            "hard_filters": {
+              "theme_breadth_min": 2,
+              "theme_active_count_min": 2,
+              "change_pct_range": [
+                -1,
+                6
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "theme_rotation_v1: theme breadth + active/strong count + theme avg strength + individual volume/attack confirmation - overheat/risk penalties",
+            "buy_day_fields": {
+              "theme": "PCB",
+              "change_pct": 3.95,
+              "volume_ratio": 0.95,
+              "turnover_rate": 7.3,
+              "amount": 26701.63,
+              "attack_wave_pct": 7.32,
+              "open_grab_pct": 0.0,
+              "pullback_from_high_pct": 0.23
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察主题是否继续扩散",
+            "next_day_success_threshold": 3.0
+          },
+          "theme_rotation_watch_result": {
+            "next_day_change_pct": -1.85,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.003385,
+            "ledger_same_day_return": null,
+            "t1_return": -0.02067,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "PCB",
+          "theme_display": "PCB",
+          "industry": "电子-元器件",
+          "latest_snapshot": {
+            "change_pct": -1.85,
+            "open_change_pct": 0.4,
+            "turnover_rate": 7.53,
+            "volume_ratio": 1.03,
+            "amount": 28198.96,
+            "last_price": 81.02,
+            "theme": "PCB",
+            "industry": "电子-元器件"
+          },
+          "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "PCB",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 17,
+          "strategy_group": "theme_rotation_watch",
+          "strategy_group_cn": "题材轮动观察",
+          "symbol": "603328",
+          "name": "依顿电子",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "theme_rotation_watch",
+          "candidate_channel": "theme_rotation_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "fetch_failed",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "fetch_failed",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 31.252482,
+          "source_score": 31.252482,
+          "normalized_score": 31.252,
+          "unified_score": 31.252,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {
+            "model": "theme_rotation_watch_v1",
+            "rank": 2,
+            "selection_status": "picked",
+            "theme": "PCB",
+            "theme_stats": {
+              "theme": "PCB",
+              "count": 9,
+              "active_count": 9,
+              "strong_count": 9,
+              "positive_count": 9,
+              "avg_change_pct": 6.137778,
+              "avg_volume_ratio": 1.117778,
+              "total_amount": 4041815.96
+            },
+            "hard_filters": {
+              "theme_breadth_min": 2,
+              "theme_active_count_min": 2,
+              "change_pct_range": [
+                -1,
+                6
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "theme_rotation_v1: theme breadth + active/strong count + theme avg strength + individual volume/attack confirmation - overheat/risk penalties",
+            "buy_day_fields": {
+              "theme": "PCB",
+              "change_pct": 2.01,
+              "volume_ratio": 1.23,
+              "turnover_rate": 2.64,
+              "amount": 28561.47,
+              "attack_wave_pct": 6.79,
+              "open_grab_pct": 0.0,
+              "pullback_from_high_pct": 0.18
+            },
+            "risk_penalties": [
+              "公告状态未完全确认"
+            ],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察主题是否继续扩散",
+            "next_day_success_threshold": 3.0
+          },
+          "theme_rotation_watch_result": {
+            "next_day_change_pct": -2.42,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.001789,
+            "ledger_same_day_return": null,
+            "t1_return": -0.025939,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "PCB",
+          "theme_display": "PCB",
+          "industry": "电子-元器件",
+          "latest_snapshot": {
+            "change_pct": -2.42,
+            "open_change_pct": 0.0,
+            "turnover_rate": 2.47,
+            "volume_ratio": 1.08,
+            "amount": 27651.5,
+            "last_price": 10.89,
+            "theme": "PCB",
+            "industry": "电子-元器件"
+          },
+          "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "PCB",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 18,
+          "strategy_group": "theme_rotation_watch",
+          "strategy_group_cn": "题材轮动观察",
+          "symbol": "002134",
+          "name": "天津普林",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "theme_rotation_watch",
+          "candidate_channel": "theme_rotation_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 31.025012,
+          "source_score": 31.025012,
+          "normalized_score": 31.025,
+          "unified_score": 31.025,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {
+            "model": "theme_rotation_watch_v1",
+            "rank": 3,
+            "selection_status": "picked",
+            "theme": "PCB",
+            "theme_stats": {
+              "theme": "PCB",
+              "count": 9,
+              "active_count": 9,
+              "strong_count": 9,
+              "positive_count": 9,
+              "avg_change_pct": 6.137778,
+              "avg_volume_ratio": 1.117778,
+              "total_amount": 4041815.96
+            },
+            "hard_filters": {
+              "theme_breadth_min": 2,
+              "theme_active_count_min": 2,
+              "change_pct_range": [
+                -1,
+                6
+              ],
+              "volume_ratio_range": [
+                0.8,
+                3.5
+              ],
+              "turnover_rate_range": [
+                1.5,
+                20
+              ],
+              "amount_min": 10000,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "theme_rotation_v1: theme breadth + active/strong count + theme avg strength + individual volume/attack confirmation - overheat/risk penalties",
+            "buy_day_fields": {
+              "theme": "PCB",
+              "change_pct": 2.17,
+              "volume_ratio": 1.14,
+              "turnover_rate": 6.92,
+              "amount": 48133.59,
+              "attack_wave_pct": 4.48,
+              "open_grab_pct": 0.7,
+              "pullback_from_high_pct": 2.36
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察主题是否继续扩散",
+            "next_day_success_threshold": 3.0
+          },
+          "theme_rotation_watch_result": {
+            "next_day_change_pct": -3.3,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "close_strength_hold_watch": {},
+          "close_strength_hold_watch_result": {},
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.00248,
+            "ledger_same_day_return": null,
+            "t1_return": -0.034715,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "PCB",
+          "theme_display": "PCB",
+          "industry": "电子-元器件",
+          "latest_snapshot": {
+            "change_pct": -3.3,
+            "open_change_pct": 0.28,
+            "turnover_rate": 6.85,
+            "volume_ratio": 1.07,
+            "amount": 47691.66,
+            "last_price": 27.25,
+            "theme": "PCB",
+            "industry": "电子-元器件"
+          },
+          "display_reason": "题材轮动观察 v1：同题材多只个股同步转强，个股未明显过热，只做旁路观察样本",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "PCB",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {
+            "status": "partial",
+            "original_text": "",
+            "summary_short": "",
+            "stance": "",
+            "catalyst": "",
+            "risk": "",
+            "action_hint": ""
+          }
+        },
+        {
+          "rank": 19,
+          "strategy_group": "close_strength_hold_watch",
+          "strategy_group_cn": "收盘中强承接观察",
+          "symbol": "600536",
+          "name": "中国软件",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "close_strength_hold_watch",
+          "candidate_channel": "close_strength_hold_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "observe",
+          "admission_reason": "",
+          "candidate_notice_status": "checked_clear",
+          "candidate_notice_reason": "硬窗口公告排雷通过，旧公告或固定风险说明仅作背景",
+          "candidate_notice_source": "candidate_notice_scan",
+          "notice_supplement_status": "checked_clear",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "observe",
+            "candidate_notice_status": "checked_clear",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 17.066632,
+          "source_score": 17.066632,
+          "normalized_score": 17.067,
+          "unified_score": 17.067,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {
+            "model": "close_strength_hold_watch_v1",
+            "rank": 1,
+            "selection_status": "picked",
+            "research_evidence": {
+              "source": "local_runs_close_only_light_replay",
+              "date_range": "all_available_close_runs",
+              "priced_sample_count": 125,
+              "eligible_rows_after_excluding_existing_side_groups": 665,
+              "next_day_avg_change_pct": 0.503,
+              "next_day_ge_3pct_rate": 0.28,
+              "existing_strategy_profit_used_as": "benchmark_context_only",
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                2,
+                6
+              ],
+              "high_pct_max": 6.5,
+              "fade_from_high_max": 2.2,
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                1.5,
+                16
+              ],
+              "amount_min": 10000,
+              "change_20d_max": 55,
+              "change_60d_max": 140,
+              "year_limit_up_days_max": 8,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_existing_side_strategy": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "close_strength_hold_v1: moderate close strength + controlled fade + healthy volume/turnover + attack support - overheat/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 2.98,
+              "high_pct": 3.74,
+              "fade_from_high_pct": -0.73,
+              "volume_ratio": 1.35,
+              "turnover_rate": 2.19,
+              "amount": 52377.5,
+              "attack_wave_pct": 5.02,
+              "open_grab_pct": -0.28,
+              "change_20d_pct": -16.97,
+              "year_limit_up_days": 2.0
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察次日是否延续中强承接",
+            "next_day_success_threshold": 3.0
+          },
+          "close_strength_hold_watch_result": {
+            "next_day_change_pct": 2.52,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.003138,
+            "ledger_same_day_return": null,
+            "t1_return": 0.022315,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "行业应用软件",
+          "theme_display": "行业应用软件",
+          "industry": "计算机-软件服务",
+          "latest_snapshot": {
+            "change_pct": 2.52,
+            "open_change_pct": -0.98,
+            "turnover_rate": 3.16,
+            "volume_ratio": 1.83,
+            "amount": 78471.16,
+            "last_price": 29.32,
+            "theme": "行业应用软件",
+            "industry": "计算机-软件服务"
+          },
+          "display_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "行业应用软件",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 20,
+          "strategy_group": "close_strength_hold_watch",
+          "strategy_group_cn": "收盘中强承接观察",
+          "symbol": "605090",
+          "name": "九丰能源",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "verified",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "close_strength_hold_watch",
+          "candidate_channel": "close_strength_hold_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "",
+          "admission_reason": "",
+          "candidate_notice_status": "not_checked",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "",
+            "candidate_notice_status": "not_checked",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 16.582139,
+          "source_score": 16.582139,
+          "normalized_score": 16.582,
+          "unified_score": 16.582,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {
+            "model": "close_strength_hold_watch_v1",
+            "rank": 2,
+            "selection_status": "picked",
+            "research_evidence": {
+              "source": "local_runs_close_only_light_replay",
+              "date_range": "all_available_close_runs",
+              "priced_sample_count": 125,
+              "eligible_rows_after_excluding_existing_side_groups": 665,
+              "next_day_avg_change_pct": 0.503,
+              "next_day_ge_3pct_rate": 0.28,
+              "existing_strategy_profit_used_as": "benchmark_context_only",
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                2,
+                6
+              ],
+              "high_pct_max": 6.5,
+              "fade_from_high_max": 2.2,
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                1.5,
+                16
+              ],
+              "amount_min": 10000,
+              "change_20d_max": 55,
+              "change_60d_max": 140,
+              "year_limit_up_days_max": 8,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_existing_side_strategy": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "close_strength_hold_v1: moderate close strength + controlled fade + healthy volume/turnover + attack support - overheat/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 3.34,
+              "high_pct": 4.59,
+              "fade_from_high_pct": -1.2,
+              "volume_ratio": 1.18,
+              "turnover_rate": 2.05,
+              "amount": 48546.28,
+              "attack_wave_pct": 5.9,
+              "open_grab_pct": 1.58,
+              "change_20d_pct": -2.56,
+              "year_limit_up_days": 3.0
+            },
+            "risk_penalties": [],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察次日是否延续中强承接",
+            "next_day_success_threshold": 3.0
+          },
+          "close_strength_hold_watch_result": {
+            "next_day_change_pct": 9.99,
+            "success": true,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": -0.009466,
+            "ledger_same_day_return": null,
+            "t1_return": 0.089501,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "燃气",
+          "theme_display": "燃气",
+          "industry": "公用事业-燃气",
+          "latest_snapshot": {
+            "change_pct": 9.99,
+            "open_change_pct": -1.1,
+            "turnover_rate": 5.08,
+            "volume_ratio": 2.83,
+            "amount": 131894.03,
+            "last_price": 37.98,
+            "theme": "燃气",
+            "industry": "公用事业-燃气"
+          },
+          "display_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "燃气",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        },
+        {
+          "rank": 21,
+          "strategy_group": "close_strength_hold_watch",
+          "strategy_group_cn": "收盘中强承接观察",
+          "symbol": "002129",
+          "name": "TCL中环",
+          "source_period": "review",
+          "tracking_scope": "side_channel_only",
+          "return_tracking_scope": "side_channel_only",
+          "entry_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "blocked_reason": "只读旁路观察，不进入正式 Top3、handoff、execution 或交易计划",
+          "tracking_status": "false_positive",
+          "formal_return_eligible": false,
+          "side_channel_return_eligible": true,
+          "side_channel_return_scope": "panel_front_sample",
+          "display_tracking_eligible": true,
+          "source_close_date": "",
+          "observation_tier": "close_strength_hold_watch",
+          "candidate_channel": "close_strength_hold_watch",
+          "current_observation_tier": "",
+          "current_candidate_channel": "",
+          "current_buy_allowed": false,
+          "current_action": "",
+          "current_status_cn": "行情已跟踪",
+          "current_blocked_reason": "评分靠前但未进入正式 Top3/A/B 样本",
+          "last_seen_source": "watchlist",
+          "last_seen_in_period": true,
+          "latest_snapshot_matched": true,
+          "snapshot_missing_reason": "",
+          "buy_allowed": false,
+          "eligible_for_top3": null,
+          "eligible_for_handoff": null,
+          "technical_decision": "downgrade",
+          "admission_reason": "",
+          "candidate_notice_status": "fetch_failed",
+          "candidate_notice_reason": "",
+          "candidate_notice_source": "",
+          "notice_supplement_status": "not_checked",
+          "notice_supplement_required": false,
+          "no_chase_reasons": [],
+          "cancel_conditions": [],
+          "data_quality_warnings": [],
+          "raw_status": {
+            "technical_decision": "downgrade",
+            "candidate_notice_status": "fetch_failed",
+            "eligible_for_top3": false,
+            "eligible_for_handoff": false
+          },
+          "score": 16.264,
+          "source_score": 16.264,
+          "normalized_score": 16.264,
+          "unified_score": 16.264,
+          "score_display_scale": "0_100",
+          "low_reflow_watch": {},
+          "low_reflow_watch_result": {},
+          "open_drive_watch": {},
+          "open_drive_watch_result": {},
+          "overnight_limit_watch": {},
+          "overnight_limit_watch_result": {},
+          "theme_rotation_watch": {},
+          "theme_rotation_watch_result": {},
+          "close_strength_hold_watch": {
+            "model": "close_strength_hold_watch_v1",
+            "rank": 3,
+            "selection_status": "picked",
+            "research_evidence": {
+              "source": "local_runs_close_only_light_replay",
+              "date_range": "all_available_close_runs",
+              "priced_sample_count": 125,
+              "eligible_rows_after_excluding_existing_side_groups": 665,
+              "next_day_avg_change_pct": 0.503,
+              "next_day_ge_3pct_rate": 0.28,
+              "existing_strategy_profit_used_as": "benchmark_context_only",
+              "longxia_second_opinion_used_as": "side_channel_design_reference_only"
+            },
+            "hard_filters": {
+              "change_pct_range": [
+                2,
+                6
+              ],
+              "high_pct_max": 6.5,
+              "fade_from_high_max": 2.2,
+              "volume_ratio_range": [
+                0.8,
+                2.8
+              ],
+              "turnover_rate_range": [
+                1.5,
+                16
+              ],
+              "amount_min": 10000,
+              "change_20d_max": 55,
+              "change_60d_max": 140,
+              "year_limit_up_days_max": 8,
+              "exclude_st": true,
+              "exclude_notice_high_risk": true,
+              "exclude_technical_cancel": true,
+              "exclude_formal_top3": true,
+              "exclude_existing_side_strategy": true,
+              "tracking_scope": "side_channel_only"
+            },
+            "score_formula": "close_strength_hold_v1: moderate close strength + controlled fade + healthy volume/turnover + attack support - overheat/risk penalties",
+            "buy_day_fields": {
+              "change_pct": 3.46,
+              "high_pct": 3.84,
+              "fade_from_high_pct": -0.36,
+              "volume_ratio": 1.0,
+              "turnover_rate": 7.73,
+              "amount": 339943.84,
+              "attack_wave_pct": 4.34,
+              "open_grab_pct": 1.41,
+              "change_20d_pct": 9.18,
+              "year_limit_up_days": 8.0
+            },
+            "risk_penalties": [
+              "公告状态未完全确认"
+            ],
+            "next_day_success_standard": "next_day_change_pct >= 3；辅助观察次日是否延续中强承接",
+            "next_day_success_threshold": 3.0
+          },
+          "close_strength_hold_watch_result": {
+            "next_day_change_pct": -3.35,
+            "success": false,
+            "success_standard": "next_day_change_pct >= 3",
+            "source": "next_trading_day_tdx_export_change_pct"
+          },
+          "legacy_next_day_change_pct": null,
+          "legacy_next_day_change_text": "",
+          "legacy_next_day_date": "",
+          "legacy_next_day_source": "",
+          "legacy_next_day_last_price": null,
+          "return_metrics": {
+            "intraday_return": null,
+            "intraday_price": null,
+            "intraday_price_source": "",
+            "entry_price": null,
+            "entry_price_source": "",
+            "return_basis": "",
+            "same_day_return": 0.0,
+            "ledger_same_day_return": null,
+            "t1_return": -0.036166,
+            "day3_return": null,
+            "missing_reasons": []
+          },
+          "theme": "光伏硅片",
+          "theme_display": "光伏硅片",
+          "industry": "电力设备-光伏设备",
+          "latest_snapshot": {
+            "change_pct": -3.35,
+            "open_change_pct": 0.0,
+            "turnover_rate": 8.5,
+            "volume_ratio": 1.08,
+            "amount": 380172.19,
+            "last_price": 10.66,
+            "theme": "光伏硅片",
+            "industry": "电力设备-光伏设备"
+          },
+          "display_reason": "收盘中强承接观察 v1：收盘中等强度、回落可控、量价不过热，排除既有旁路后只做次日延续观察",
+          "return_status": "旁路收益",
+          "return_scope": "side_channel",
+          "missing_reason": "",
+          "freshness": "当前结构化账本",
+          "source_mtime": "2026-07-10T15:01:43+08:00",
+          "historical_backfill": false,
+          "catalyst_status": "none",
+          "catalyst_status_label": "暂无明确催化",
+          "catalyst_status_detail": "当前更像技术/资金确认路线，不依赖明确新闻催化。",
+          "catalyst_timeliness": "unknown",
+          "catalyst_timeliness_label": "时效不明",
+          "catalyst_timeliness_detail": "没有拿到可追溯事件时间，只能标成时效不明。",
+          "mainline_relation": "execution_watch",
+          "mainline_relation_label": "执行层观察票",
+          "mainline_relation_detail": "这票当前只保留执行层观察口径，不把它直接等同于市场主线。",
+          "execution_position_label": "",
+          "execution_position_detail": "",
+          "mainline_theme_display": "光伏硅片",
+          "mainline_verdict_display": "",
+          "market_mainline_verdict_display": "",
+          "mainline_role_label": "",
+          "overnight_report": {}
+        }
+      ],
+      "display_source": "four_layer_tracking",
+      "raw_record_count": 21,
+      "raw_strategy_counts": {
+        "a_theme_watch": 3,
+        "score_front_rejected": 3,
+        "low_reflow_watch": 3,
+        "open_drive_watch": 3,
+        "overnight_limit_watch": 3,
+        "theme_rotation_watch": 3,
+        "close_strength_hold_watch": 3
+      },
+      "summary": {
+        "groups": {
+          "formal_top3": {
+            "label": "正式 Top3 逻辑",
+            "count": 0,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 0,
+            "avg_intraday_return": null,
+            "avg_t1_return": null,
+            "status_counts": {
+              "cancelled": 0,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "a_theme_watch": {
+            "label": "A类主线/题材逻辑",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": 0.017856,
+            "status_counts": {
+              "cancelled": 0,
+              "price_missing": 0,
+              "tracked": 3,
+              "verified": 0
+            }
+          },
+          "b_technical_watch": {
+            "label": "B类技术/资金逻辑",
+            "count": 0,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 0,
+            "avg_intraday_return": null,
+            "avg_t1_return": null,
+            "status_counts": {
+              "cancelled": 0,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "score_front_rejected": {
+            "label": "候选评分前排逻辑",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": -0.001233,
+            "status_counts": {
+              "cancelled": 0,
+              "price_missing": 0,
+              "tracked": 3,
+              "verified": 0
+            }
+          },
+          "low_reflow_watch": {
+            "label": "低位回流观察",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": -0.01608,
+            "status_counts": {
+              "cancelled": 0,
+              "false_positive": 3,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "open_drive_watch": {
+            "label": "早盘驱动观察",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": -0.0116,
+            "status_counts": {
+              "cancelled": 0,
+              "false_positive": 3,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "overnight_limit_watch": {
+            "label": "隔夜涨停观察",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": -0.052626,
+            "status_counts": {
+              "cancelled": 0,
+              "false_positive": 3,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "theme_rotation_watch": {
+            "label": "题材轮动观察",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": -0.027108,
+            "status_counts": {
+              "cancelled": 0,
+              "false_positive": 3,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 0
+            }
+          },
+          "close_strength_hold_watch": {
+            "label": "收盘中强承接观察",
+            "count": 3,
+            "formal_return_eligible_count": 0,
+            "side_channel_return_eligible_count": 3,
+            "avg_intraday_return": null,
+            "avg_t1_return": 0.025217,
+            "status_counts": {
+              "cancelled": 0,
+              "false_positive": 2,
+              "price_missing": 0,
+              "tracked": 0,
+              "verified": 1
+            }
+          }
+        },
+        "comparison": {
+          "best_avg_t1_group": "close_strength_hold_watch",
+          "best_avg_t1_group_cn": "收盘中强承接观察",
+          "note": "正式收益和旁路收益分开；A/B/评分前排/低位回流观察/早盘驱动观察/隔夜涨停观察/题材轮动观察/收盘中强承接观察只能用于复盘建议，不能反向改当天 Top3。"
+        }
+      },
+      "tracking_coverage": {
+        "panel_layer_records_tracked": true,
+        "candidate_pool_audit_limit": 30,
+        "notice_supplement_source": "persisted_four_layer_json_not_web_dom",
+        "notice_supplement_limit_per_group": {
+          "formal_top3": 3,
+          "a_theme_watch": 3,
+          "b_technical_watch": 3,
+          "score_front_rejected": 3,
+          "low_reflow_watch": 3,
+          "open_drive_watch": 3,
+          "overnight_limit_watch": 3,
+          "theme_rotation_watch": 3,
+          "close_strength_hold_watch": 3
+        },
+        "notice_supplement_policy": "四层票池每层最多取前 3 只，低位回流观察最多 3 只，早盘驱动观察最多 3 只，隔夜涨停观察最多 3 只，题材轮动观察最多 3 只，收盘中强承接观察最多 3 只，去重后补查公告/风险证据；只补证据，不改 Top3、handoff 或交易计划。",
+        "record_count": 21,
+        "latest_snapshot_match_count": 21,
+        "report_match_count": 0,
+        "not_found_count": 0,
+        "return_policy": "正式收益只统计 Top3；题材观察、技术观察、候选评分前排、低位回流观察、早盘驱动观察、隔夜涨停观察、题材轮动观察和收盘中强承接观察只跟踪面板展示样本，旁路收益也只按这些样本统计。"
+      },
+      "file": {
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.review.json",
+        "relative_path": "runs/2026-07-10/four-layer-tracking.review.json",
+        "exists": true,
+        "size": 116372,
+        "modified_at": "2026-07-10T15:01:43+08:00",
+        "sha256": "16dd4a529e6a74e6766ab020eda61f551c224e03fd723469f45e60359527e673"
+      }
     }
   },
   "overnight_report_brief": {
-    "status": "missing",
+    "status": "partial",
     "covered_count": 0,
-    "failed_count": 0,
-    "query_symbol_count": 0,
-    "source_groups": [],
+    "failed_count": 11,
+    "query_symbol_count": 11,
+    "source_groups": [
+      "formal_top3",
+      "open_drive_watch",
+      "overnight_limit_watch",
+      "theme_rotation_watch"
+    ],
     "source_run_date": "2026-07-10",
-    "records": [],
+    "records": [
+      {
+        "symbol": "002174",
+        "name": "游族网络",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "600633",
+        "name": "浙数文化",
+        "groups": [
+          "formal_top3"
+        ],
+        "group_labels": [
+          "正式 Top3"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "000990",
+        "name": "诚志股份",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "002201",
+        "name": "九鼎新材",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "002832",
+        "name": "比音勒芬",
+        "groups": [
+          "open_drive_watch"
+        ],
+        "group_labels": [
+          "早盘驱动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "000980",
+        "name": "众泰汽车",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "002929",
+        "name": "润建股份",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "600986",
+        "name": "浙文互联",
+        "groups": [
+          "overnight_limit_watch"
+        ],
+        "group_labels": [
+          "隔夜涨停观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "002300",
+        "name": "太阳电缆",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "600536",
+        "name": "中国软件",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      },
+      {
+        "symbol": "601619",
+        "name": "嘉泽新能",
+        "groups": [
+          "theme_rotation_watch"
+        ],
+        "group_labels": [
+          "题材轮动观察"
+        ],
+        "original_text": "",
+        "summary_short": "",
+        "stance": "",
+        "catalyst": "",
+        "risk": "",
+        "action_hint": "暂无龙虾结论",
+        "status": "missing"
+      }
+    ],
     "final_ranking": {
-      "items": [],
+      "items": [
+        {
+          "rank": 1,
+          "symbol": "002174",
+          "name": "游族网络",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 2,
+          "symbol": "600633",
+          "name": "浙数文化",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 3,
+          "symbol": "000990",
+          "name": "诚志股份",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 4,
+          "symbol": "002201",
+          "name": "九鼎新材",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 5,
+          "symbol": "002832",
+          "name": "比音勒芬",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 6,
+          "symbol": "000980",
+          "name": "众泰汽车",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 7,
+          "symbol": "002929",
+          "name": "润建股份",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 8,
+          "symbol": "600986",
+          "name": "浙文互联",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 9,
+          "symbol": "002300",
+          "name": "太阳电缆",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 10,
+          "symbol": "600536",
+          "name": "中国软件",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        },
+        {
+          "rank": 11,
+          "symbol": "601619",
+          "name": "嘉泽新能",
+          "verdict": "",
+          "text": "暂无龙虾结论"
+        }
+      ],
       "summary": ""
     },
     "file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 101647,
+      "modified_at": "2026-07-10T15:08:05+08:00",
+      "sha256": "0a9f31a83382ca4e42b33071ed9e95d78a2b20131af41037c32567395daadecf"
     }
   },
   "paper_trade": {
-    "status": "missing",
-    "ledger_status": "missing",
-    "summary_status": "missing",
-    "artifact_scope": "canonical",
+    "status": "ok",
+    "ledger_status": "ok",
+    "summary_status": "ok",
+    "artifact_scope": "close",
     "date": "2026-07-10",
-    "source_close_date": "",
+    "source_close_date": "2026-07-10",
     "ledger_matches_selected_close": true,
-    "summary": {},
+    "summary": {
+      "schema_version": "paper_trade_summary.v1",
+      "date": "2026-07-10",
+      "source_close_date": "2026-07-10",
+      "generated_at": "2026-07-10T14:58:51+08:00",
+      "mode": "simulated_follow",
+      "is_real_brokerage_pnl": false,
+      "entry_timing": "tail_session_1450",
+      "price_policy": "tail_session_1450_then_latest_then_close_proxy",
+      "formal_count": 2,
+      "formal_completed_count": 2,
+      "observation_count": 0,
+      "side_channel_count": 20,
+      "side_channel_completed_count": 20,
+      "side_channel_by_group": {
+        "a_theme_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "b_technical_watch": {
+          "count": 0,
+          "completed_count": 0,
+          "avg_t1_return": null
+        },
+        "score_front_rejected": {
+          "count": 2,
+          "completed_count": 2,
+          "avg_t1_return": null
+        },
+        "low_reflow_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "open_drive_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "overnight_limit_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "theme_rotation_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        },
+        "close_strength_hold_watch": {
+          "count": 3,
+          "completed_count": 3,
+          "avg_t1_return": null
+        }
+      },
+      "missing_price_count": 0,
+      "verification_missing_count": 0,
+      "formal_avg_same_day_return": -0.001778,
+      "formal_avg_t1_return": null,
+      "formal_avg_day3_return": null,
+      "formal_win_rate_t1": null,
+      "side_channel_avg_same_day_return": 0.00065,
+      "side_channel_avg_t1_return": null,
+      "side_channel_avg_day3_return": null,
+      "not_real_brokerage_pnl": true,
+      "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json"
+    },
     "formal_targets": [
       {
         "symbol": "600633",
@@ -15923,21 +24163,1780 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "buy_allowed": true
       }
     ],
-    "records": [],
-    "formal_records": [],
-    "records_count": 0,
+    "records": [
+      {
+        "symbol": "600633",
+        "name": "浙数文化",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 10.53,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 10.55,
+        "same_day_return": 0.001899,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002174",
+        "name": "游族网络",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 12.83,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 12.76,
+        "same_day_return": -0.005456,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000537",
+        "name": "绿发电力",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 7.12,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 7.12,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600505",
+        "name": "西昌电力",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 10.48,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 10.47,
+        "same_day_return": -0.000954,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600130",
+        "name": "波导股份",
+        "strategy_group": "a_theme_watch",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 4.1,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 4.14,
+        "same_day_return": 0.009756,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "601579",
+        "name": "会稽山",
+        "strategy_group": "score_front_rejected",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 14.78,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 14.74,
+        "same_day_return": -0.002706,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000537",
+        "name": "绿发电力",
+        "strategy_group": "score_front_rejected",
+        "source_tier": "a_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 7.12,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 7.12,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603444",
+        "name": "吉比特",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 360.779999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 360.200012,
+        "same_day_return": -0.001608,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002973",
+        "name": "侨银股份",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 10.18,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 10.18,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600783",
+        "name": "鲁信创投",
+        "strategy_group": "low_reflow_watch",
+        "source_tier": "low_reflow_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 20.02,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 19.950001,
+        "same_day_return": -0.003496,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002832",
+        "name": "比音勒芬",
+        "strategy_group": "open_drive_watch",
+        "source_tier": "open_drive_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 20.719999,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 20.690001,
+        "same_day_return": -0.001448,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002201",
+        "name": "九鼎新材",
+        "strategy_group": "open_drive_watch",
+        "source_tier": "open_drive_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 8.9,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 8.92,
+        "same_day_return": 0.002247,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000990",
+        "name": "诚志股份",
+        "strategy_group": "open_drive_watch",
+        "source_tier": "open_drive_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 8.71,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 8.74,
+        "same_day_return": 0.003444,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600986",
+        "name": "浙文互联",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 7.04,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 7.0,
+        "same_day_return": -0.005682,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "000980",
+        "name": "众泰汽车",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 1.78,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 1.79,
+        "same_day_return": 0.005618,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002929",
+        "name": "润建股份",
+        "strategy_group": "overnight_limit_watch",
+        "source_tier": "overnight_limit_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 61.669998,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 61.580002,
+        "same_day_return": -0.001459,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600536",
+        "name": "中国软件",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 29.440001,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 29.379999,
+        "same_day_return": -0.002038,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002300",
+        "name": "太阳电缆",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 6.37,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 6.38,
+        "same_day_return": 0.00157,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "601619",
+        "name": "嘉泽新能",
+        "strategy_group": "theme_rotation_watch",
+        "source_tier": "theme_rotation_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 4.23,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 4.23,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603912",
+        "name": "佳力图",
+        "strategy_group": "close_strength_hold_watch",
+        "source_tier": "close_strength_hold_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 7.55,
+        "entry_price_source": "close_proxy_for_1450",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 7.55,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "600130",
+        "name": "波导股份",
+        "strategy_group": "close_strength_hold_watch",
+        "source_tier": "close_strength_hold_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 4.1,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 4.14,
+        "same_day_return": 0.009756,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "603345",
+        "name": "安井食品",
+        "strategy_group": "close_strength_hold_watch",
+        "source_tier": "close_strength_hold_watch",
+        "formal_return_eligible": false,
+        "assumed_filled": false,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 81.66,
+        "entry_price_source": "close_proxy_for_1450",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 81.66,
+        "same_day_return": 0.0,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": false,
+        "counted_in_side_channel_return": true,
+        "missing_reasons": []
+      }
+    ],
+    "formal_records": [
+      {
+        "symbol": "600633",
+        "name": "浙数文化",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 10.53,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 10.55,
+        "same_day_return": 0.001899,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      },
+      {
+        "symbol": "002174",
+        "name": "游族网络",
+        "strategy_group": "formal_top3",
+        "source_tier": "buy_top3",
+        "formal_return_eligible": true,
+        "assumed_filled": true,
+        "entry_timing": "14:50 尾盘模拟买入口径",
+        "entry_price": 12.83,
+        "entry_price_source": "tail_1450_price",
+        "source_close_date": "2026-07-10",
+        "same_day_close": 12.76,
+        "same_day_return": -0.005456,
+        "t1_close": null,
+        "t1_return": null,
+        "day3_close": null,
+        "day3_return": null,
+        "verification_status": "verification_pending",
+        "counted_in_formal_return": true,
+        "counted_in_side_channel_return": false,
+        "missing_reasons": []
+      }
+    ],
+    "records_count": 22,
     "files": {
       "ledger": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
-        "relative_path": "paper-trade-ledger.json",
-        "exists": false
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.close.json",
+        "relative_path": "runs/2026-07-10/paper-trade-ledger.close.json",
+        "exists": true,
+        "size": 31281,
+        "modified_at": "2026-07-10T14:58:51+08:00",
+        "sha256": "d5ddd37740c9b484fc02a4954d45778bc5e50783843ae1514fd26d8d0bc8993f"
       },
       "summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.close.json",
+        "relative_path": "runs/2026-07-10/paper-trade-summary.close.json",
+        "exists": true,
+        "size": 1960,
+        "modified_at": "2026-07-10T14:58:51+08:00",
+        "sha256": "4349598474595241a4abcded5f60786abc1bd853b99ea39d506ec710e0855771"
       }
-    }
+    },
+    "related_payloads": [
+      {
+        "status": "ok",
+        "ledger_status": "ok",
+        "summary_status": "ok",
+        "artifact_scope": "canonical",
+        "date": "2026-07-10",
+        "source_close_date": "2026-07-10",
+        "ledger_matches_selected_close": true,
+        "summary": {
+          "schema_version": "paper_trade_summary.v1",
+          "date": "2026-07-10",
+          "source_close_date": "2026-07-10",
+          "generated_at": "2026-07-10T15:01:35+08:00",
+          "mode": "simulated_follow",
+          "is_real_brokerage_pnl": false,
+          "entry_timing": "tail_session_1450",
+          "price_policy": "tail_session_1450_then_latest_then_close_proxy",
+          "formal_count": 2,
+          "formal_completed_count": 2,
+          "observation_count": 0,
+          "side_channel_count": 20,
+          "side_channel_completed_count": 20,
+          "side_channel_by_group": {
+            "a_theme_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "b_technical_watch": {
+              "count": 0,
+              "completed_count": 0,
+              "avg_t1_return": null
+            },
+            "score_front_rejected": {
+              "count": 2,
+              "completed_count": 2,
+              "avg_t1_return": null
+            },
+            "low_reflow_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "open_drive_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "overnight_limit_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "theme_rotation_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            },
+            "close_strength_hold_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": null
+            }
+          },
+          "missing_price_count": 0,
+          "verification_missing_count": 0,
+          "formal_avg_same_day_return": -0.003508,
+          "formal_avg_t1_return": null,
+          "formal_avg_day3_return": null,
+          "formal_win_rate_t1": null,
+          "side_channel_avg_same_day_return": -0.00034,
+          "side_channel_avg_t1_return": null,
+          "side_channel_avg_day3_return": null,
+          "not_real_brokerage_pnl": true,
+          "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json"
+        },
+        "formal_targets": [
+          {
+            "symbol": "600633",
+            "name": "浙数文化",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "technical_fund_flow",
+            "buy_allowed": true
+          },
+          {
+            "symbol": "002174",
+            "name": "游族网络",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "technical_fund_flow",
+            "buy_allowed": true
+          }
+        ],
+        "records": [
+          {
+            "symbol": "600633",
+            "name": "浙数文化",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 10.53,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 10.53,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002174",
+            "name": "游族网络",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 12.83,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 12.74,
+            "same_day_return": -0.007015,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000537",
+            "name": "绿发电力",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 7.12,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 7.13,
+            "same_day_return": 0.001404,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600505",
+            "name": "西昌电力",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 10.48,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 10.47,
+            "same_day_return": -0.000954,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600130",
+            "name": "波导股份",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 4.1,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 4.14,
+            "same_day_return": 0.009756,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "601579",
+            "name": "会稽山",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "score_front_rejected",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 14.78,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 14.74,
+            "same_day_return": -0.002706,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000537",
+            "name": "绿发电力",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "score_front_rejected",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 7.12,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 7.13,
+            "same_day_return": 0.001404,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603444",
+            "name": "吉比特",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 360.779999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 360.200012,
+            "same_day_return": -0.001608,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002973",
+            "name": "侨银股份",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 10.18,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 10.15,
+            "same_day_return": -0.002947,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600783",
+            "name": "鲁信创投",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 20.02,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 19.950001,
+            "same_day_return": -0.003496,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002832",
+            "name": "比音勒芬",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 20.719999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 20.690001,
+            "same_day_return": -0.001448,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002201",
+            "name": "九鼎新材",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 8.9,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 8.92,
+            "same_day_return": 0.002247,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000990",
+            "name": "诚志股份",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 8.71,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 8.75,
+            "same_day_return": 0.004592,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600986",
+            "name": "浙文互联",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 7.04,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 7.0,
+            "same_day_return": -0.005682,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000980",
+            "name": "众泰汽车",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 1.78,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 1.78,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002929",
+            "name": "润建股份",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 61.669998,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 61.5,
+            "same_day_return": -0.002757,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600536",
+            "name": "中国软件",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 29.440001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 29.32,
+            "same_day_return": -0.004076,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002300",
+            "name": "太阳电缆",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 6.37,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 6.38,
+            "same_day_return": 0.00157,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "601619",
+            "name": "嘉泽新能",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 4.23,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 4.21,
+            "same_day_return": -0.004728,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603912",
+            "name": "佳力图",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 7.55,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 7.51,
+            "same_day_return": -0.005298,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600130",
+            "name": "波导股份",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 4.1,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 4.14,
+            "same_day_return": 0.009756,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603345",
+            "name": "安井食品",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 81.660004,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 81.510002,
+            "same_day_return": -0.001837,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          }
+        ],
+        "formal_records": [
+          {
+            "symbol": "600633",
+            "name": "浙数文化",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 10.53,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 10.53,
+            "same_day_return": 0.0,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002174",
+            "name": "游族网络",
+            "strategy_group": "formal_top3",
+            "source_tier": "buy_top3",
+            "formal_return_eligible": true,
+            "assumed_filled": true,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 12.83,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-10",
+            "same_day_close": 12.74,
+            "same_day_return": -0.007015,
+            "t1_close": null,
+            "t1_return": null,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": true,
+            "counted_in_side_channel_return": false,
+            "missing_reasons": []
+          }
+        ],
+        "records_count": 22,
+        "files": {
+          "ledger": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
+            "relative_path": "runs/2026-07-10/paper-trade-ledger.json",
+            "exists": true,
+            "size": 31320,
+            "modified_at": "2026-07-10T15:01:35+08:00",
+            "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
+          },
+          "summary": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
+            "relative_path": "runs/2026-07-10/paper-trade-summary.json",
+            "exists": true,
+            "size": 1961,
+            "modified_at": "2026-07-10T15:01:35+08:00",
+            "sha256": "e8a15914d7ea907588727bd9b6b313d394ef1d0c7c02ba5089a39d02efc8202c"
+          }
+        }
+      },
+      {
+        "status": "ok",
+        "ledger_status": "ok",
+        "summary_status": "ok",
+        "artifact_scope": "review",
+        "date": "2026-07-10",
+        "source_close_date": "2026-07-09",
+        "ledger_matches_selected_close": false,
+        "summary": {
+          "schema_version": "paper_trade_summary.v1",
+          "date": "2026-07-10",
+          "source_close_date": "2026-07-09",
+          "generated_at": "2026-07-10T15:01:43+08:00",
+          "mode": "simulated_follow",
+          "is_real_brokerage_pnl": false,
+          "entry_timing": "tail_session_1450",
+          "price_policy": "tail_session_1450_then_latest_then_close_proxy",
+          "formal_count": 0,
+          "formal_completed_count": 0,
+          "observation_count": 0,
+          "side_channel_count": 21,
+          "side_channel_completed_count": 21,
+          "side_channel_by_group": {
+            "a_theme_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": 0.017856
+            },
+            "b_technical_watch": {
+              "count": 0,
+              "completed_count": 0,
+              "avg_t1_return": null
+            },
+            "score_front_rejected": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": -0.001233
+            },
+            "low_reflow_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": -0.01608
+            },
+            "open_drive_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": -0.0116
+            },
+            "overnight_limit_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": -0.052626
+            },
+            "theme_rotation_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": -0.027108
+            },
+            "close_strength_hold_watch": {
+              "count": 3,
+              "completed_count": 3,
+              "avg_t1_return": 0.025217
+            }
+          },
+          "missing_price_count": 0,
+          "verification_missing_count": 0,
+          "formal_avg_same_day_return": null,
+          "formal_avg_t1_return": null,
+          "formal_avg_day3_return": null,
+          "formal_win_rate_t1": null,
+          "side_channel_avg_same_day_return": -0.000939,
+          "side_channel_avg_t1_return": -0.009368,
+          "side_channel_avg_day3_return": null,
+          "not_real_brokerage_pnl": true,
+          "records_ref": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.review.json"
+        },
+        "formal_targets": [
+          {
+            "symbol": "600633",
+            "name": "浙数文化",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "technical_fund_flow",
+            "buy_allowed": true
+          },
+          {
+            "symbol": "002174",
+            "name": "游族网络",
+            "observation_tier": "buy_top3",
+            "candidate_channel": "technical_fund_flow",
+            "buy_allowed": true
+          }
+        ],
+        "records": [
+          {
+            "symbol": "600536",
+            "name": "中国软件",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 28.68,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 28.59,
+            "same_day_return": -0.003138,
+            "t1_close": 29.32,
+            "t1_return": 0.022315,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600835",
+            "name": "上海机电",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 21.559999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 21.59,
+            "same_day_return": 0.001392,
+            "t1_close": 21.48,
+            "t1_return": -0.003711,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "601999",
+            "name": "出版传媒",
+            "strategy_group": "a_theme_watch",
+            "source_tier": "a_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 5.72,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 5.74,
+            "same_day_return": 0.003497,
+            "t1_close": 5.92,
+            "t1_return": 0.034965,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002039",
+            "name": "黔源电力",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "score_front_rejected",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 19.879999,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 19.91,
+            "same_day_return": 0.001509,
+            "t1_close": 18.83,
+            "t1_return": -0.052817,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "601999",
+            "name": "出版传媒",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "score_front_rejected",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 5.72,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 5.74,
+            "same_day_return": 0.003497,
+            "t1_close": 5.92,
+            "t1_return": 0.034965,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603139",
+            "name": "康惠股份",
+            "strategy_group": "score_front_rejected",
+            "source_tier": "score_front_rejected",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 40.27,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 40.279999,
+            "same_day_return": 0.000248,
+            "t1_close": 40.84,
+            "t1_return": 0.014154,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "001230",
+            "name": "劲旅环境",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 17.93,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 17.92,
+            "same_day_return": -0.000558,
+            "t1_close": 17.6,
+            "t1_return": -0.018405,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002885",
+            "name": "京泉华",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 35.470001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 35.400002,
+            "same_day_return": -0.001973,
+            "t1_close": 34.07,
+            "t1_return": -0.03947,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603610",
+            "name": "麒盛科技",
+            "strategy_group": "low_reflow_watch",
+            "source_tier": "low_reflow_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 14.53,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 14.48,
+            "same_day_return": -0.003441,
+            "t1_close": 14.67,
+            "t1_return": 0.009635,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "000960",
+            "name": "锡业股份",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 37.080002,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 37.330002,
+            "same_day_return": 0.006742,
+            "t1_close": 36.450001,
+            "t1_return": -0.01699,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002518",
+            "name": "科士达",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 42.400002,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 42.299999,
+            "same_day_return": -0.002359,
+            "t1_close": 40.990002,
+            "t1_return": -0.033255,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002876",
+            "name": "三利谱",
+            "strategy_group": "open_drive_watch",
+            "source_tier": "open_drive_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 31.08,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 31.0,
+            "same_day_return": -0.002574,
+            "t1_close": 31.559999,
+            "t1_return": 0.015444,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002222",
+            "name": "福晶科技",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 81.610001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 81.459999,
+            "same_day_return": -0.001838,
+            "t1_close": 77.449997,
+            "t1_return": -0.050974,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002046",
+            "name": "国机精工",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 66.120003,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 66.120003,
+            "same_day_return": 0.0,
+            "t1_close": 62.759998,
+            "t1_return": -0.050817,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "003031",
+            "name": "中瓷电子",
+            "strategy_group": "overnight_limit_watch",
+            "source_tier": "overnight_limit_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 150.479996,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 150.410004,
+            "same_day_return": -0.000465,
+            "t1_close": 142.039993,
+            "t1_return": -0.056087,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603175",
+            "name": "超颖电子",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 82.730003,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 82.449997,
+            "same_day_return": -0.003385,
+            "t1_close": 81.019997,
+            "t1_return": -0.02067,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "603328",
+            "name": "依顿电子",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 11.18,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 11.16,
+            "same_day_return": -0.001789,
+            "t1_close": 10.89,
+            "t1_return": -0.025939,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002134",
+            "name": "天津普林",
+            "strategy_group": "theme_rotation_watch",
+            "source_tier": "theme_rotation_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 28.23,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 28.16,
+            "same_day_return": -0.00248,
+            "t1_close": 27.25,
+            "t1_return": -0.034715,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "600536",
+            "name": "中国软件",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 28.68,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 28.59,
+            "same_day_return": -0.003138,
+            "t1_close": 29.32,
+            "t1_return": 0.022315,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "605090",
+            "name": "九丰能源",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 34.860001,
+            "entry_price_source": "tail_1450_price",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 34.529999,
+            "same_day_return": -0.009466,
+            "t1_close": 37.98,
+            "t1_return": 0.089501,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          },
+          {
+            "symbol": "002129",
+            "name": "TCL中环",
+            "strategy_group": "close_strength_hold_watch",
+            "source_tier": "close_strength_hold_watch",
+            "formal_return_eligible": false,
+            "assumed_filled": false,
+            "entry_timing": "14:50 尾盘模拟买入口径",
+            "entry_price": 11.06,
+            "entry_price_source": "close_proxy_for_1450",
+            "source_close_date": "2026-07-09",
+            "same_day_close": 11.06,
+            "same_day_return": 0.0,
+            "t1_close": 10.66,
+            "t1_return": -0.036166,
+            "day3_close": null,
+            "day3_return": null,
+            "verification_status": "verification_pending",
+            "counted_in_formal_return": false,
+            "counted_in_side_channel_return": true,
+            "missing_reasons": []
+          }
+        ],
+        "formal_records": [],
+        "records_count": 21,
+        "files": {
+          "ledger": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.review.json",
+            "relative_path": "runs/2026-07-10/paper-trade-ledger.review.json",
+            "exists": true,
+            "size": 30706,
+            "modified_at": "2026-07-10T15:01:43+08:00",
+            "sha256": "b89ae454b420fd8e7268c866571ca165d260325cf350f64234d5942cfd000601"
+          },
+          "summary": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.review.json",
+            "relative_path": "runs/2026-07-10/paper-trade-summary.review.json",
+            "exists": true,
+            "size": 1999,
+            "modified_at": "2026-07-10T15:01:43+08:00",
+            "sha256": "622ec9ef5f2fdf80517f7b0091f942724ebf420c61b9505adf5d0666d4f58273"
+          }
+        }
+      }
+    ]
   },
   "rule_upgrade_proposals": {
     "status": "missing",
@@ -15972,20 +25971,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   },
   "trader_review": {
     "schema_version": "trader_review_workbench.v1",
-    "status": "missing",
+    "status": "ok",
     "date": "2026-07-10",
     "title": "交易员复盘工作台",
     "one_liner": "正式票收益样本不足，复盘只做资料不足标记。 正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
     "market_tone_label": "偏弱复盘",
     "emotion_score": 48,
     "formal_sample_count": 0,
-    "side_channel_sample_count": 0,
+    "side_channel_sample_count": 21,
     "formal_return_text": "正式票收益样本不足，复盘只做资料不足标记。",
-    "side_return_text": "旁路样本收益未完整定价，只能继续观察。",
-    "return_source_close_date": "2026-07-10",
+    "side_return_text": "2026-07-09 收盘样本、2026-07-10 回填：旁路样本 T+1 平均 -0.94%，样本 21 只，只作对比。",
+    "return_source_close_date": "2026-07-09",
     "return_backfill_date": "2026-07-10",
-    "return_context_text": "2026-07-10 当前样本",
-    "cross_date_review_return": false,
+    "return_context_text": "2026-07-09 收盘样本、2026-07-10 回填",
+    "cross_date_review_return": true,
     "core_cause": "正式票收益偏弱但证据不足以证明选股逻辑失效，先按纪律内亏损和数据/执行缺口拆分。",
     "consensus": {
       "official_view": "正式复盘负责回放当时结论、收益和错因归类。",
@@ -16009,9 +26008,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       },
       {
         "label": "旁路对比",
-        "value": "--",
+        "value": "-0.94%",
         "status": "watch",
-        "detail": "旁路样本收益未完整定价，只能继续观察。"
+        "detail": "2026-07-09 收盘样本、2026-07-10 回填：旁路样本 T+1 平均 -0.94%，样本 21 只，只作对比。"
       }
     ],
     "miss_attribution_matrix": [
@@ -16023,7 +26022,48 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     ],
     "missed_count": 0,
     "underestimated_count": 0,
-    "side_channel_cards": [],
+    "side_channel_cards": [
+      {
+        "group": "题材观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 1.79%。只做旁路收益统计。"
+      },
+      {
+        "group": "技术观察",
+        "verdict": "旁路统计",
+        "reason": "样本 0 只，T+1 平均 --。只做旁路收益统计。"
+      },
+      {
+        "group": "候选评分前排",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 -0.12%。只做旁路收益统计。"
+      },
+      {
+        "group": "低位回流观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 -1.61%。只做旁路收益统计。"
+      },
+      {
+        "group": "早盘驱动观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 -1.16%。只做旁路收益统计。"
+      },
+      {
+        "group": "隔夜涨停观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 -5.26%。只做旁路收益统计。"
+      },
+      {
+        "group": "题材轮动观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 -2.71%。只做旁路收益统计。"
+      },
+      {
+        "group": "收盘中强承接观察",
+        "verdict": "旁路统计",
+        "reason": "样本 3 只，T+1 平均 2.52%。只做旁路收益统计。"
+      }
+    ],
     "timeline": [
       {
         "time": "14:50",
@@ -16053,21 +26093,24 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "items": []
     },
     "source_status": {
-      "paper_trade_summary": "missing",
-      "paper_trade_summary_scope": "canonical",
+      "paper_trade_summary": "ok",
+      "paper_trade_summary_scope": "review",
       "reverse_miss": "missing",
       "ultra_short_review": "missing",
       "longxia_second_review": "missing",
       "longxia_second_review_validation": "missing",
       "rule_upgrade_proposals": "missing",
-      "four_layer_tracking": "missing",
+      "four_layer_tracking": "ok",
       "review_markdown": "missing"
     },
     "source_files": {
       "paper_trade_summary": {
-        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.review.json",
+        "relative_path": "runs/2026-07-10/paper-trade-summary.review.json",
+        "exists": true,
+        "size": 1999,
+        "modified_at": "2026-07-10T15:01:43+08:00",
+        "sha256": "622ec9ef5f2fdf80517f7b0091f942724ebf420c61b9505adf5d0666d4f58273"
       },
       "reverse_miss": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\reverse-miss.json",
@@ -16119,28 +26162,2646 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "label": "收盘报",
       "nodes": [
         {
-          "id": "close_schedule_status",
+          "id": "close_trigger",
           "order": 1,
-          "title_cn": "收盘报自动化状态",
-          "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+          "title_cn": "收盘报触发",
+          "plain_goal_cn": "启动收盘报流程，先读取午报结果作参考，再按全自选股池重新扫描。",
           "data_used_cn": [
-            "workflow-manifest",
-            "正式报告 JSON",
-            "正式报告 Markdown",
-            "当前时间"
+            "运行日期",
+            "报告阶段",
+            "午报结果回收",
+            "全池重扫边界"
           ],
-          "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+          "source_method_cn": "通过 run_fixed_workflow.py --period close 触发正式收盘流程。",
           "read_files": [
-            "workflow-manifest.close.json",
+            "noon-report.json",
+            "workflow-manifest.noon.json"
+          ],
+          "write_files": [
+            "previous-verification.json",
+            "close-workflow.json",
+            "workflow-manifest.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "这一步已经跑完，关键产物已保存。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "noon-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\noon-report.json",
+              "modified_at": "2026-07-10T11:36:34+08:00",
+              "size": 732864,
+              "sha256": "3a3fce0ab6fd97a39d584d6b81e2561c95fd7b2f720f0f580e3c045ca2d93653"
+            },
+            {
+              "role": "read",
+              "file": "workflow-manifest.noon.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.noon.json",
+              "modified_at": "2026-07-10T11:46:24+08:00",
+              "size": 158315,
+              "sha256": "2a4217fa6ec732b32a02014f96142a2f0245629d5d252537192bc43c2b22b43d"
+            },
+            {
+              "role": "write",
+              "file": "previous-verification.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\previous-verification.json",
+              "modified_at": "2026-07-10T14:58:43+08:00",
+              "size": 260,
+              "sha256": "4e32f6c13872fea6bf83d85954f28c69ae1fad08d26949bb30304e27408c7dc7"
+            },
+            {
+              "role": "write",
+              "file": "close-workflow.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-workflow.json",
+              "modified_at": "2026-07-10T14:58:56+08:00",
+              "size": 32019,
+              "sha256": "102cde86ce7869fe04d64207537fd0095223e6e2616b1cc2d6ca65d8b4e5379e"
+            },
+            {
+              "role": "write",
+              "file": "workflow-manifest.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.close.json",
+              "modified_at": "2026-07-10T14:58:57+08:00",
+              "size": 254427,
+              "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "收盘报触发",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "previous-verification.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\previous-verification.json",
+                  "modified_at": "2026-07-10T14:58:43+08:00",
+                  "size": 260,
+                  "sha256": "4e32f6c13872fea6bf83d85954f28c69ae1fad08d26949bb30304e27408c7dc7"
+                },
+                {
+                  "role": "write",
+                  "file": "close-workflow.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-workflow.json",
+                  "modified_at": "2026-07-10T14:58:56+08:00",
+                  "size": 32019,
+                  "sha256": "102cde86ce7869fe04d64207537fd0095223e6e2616b1cc2d6ca65d8b4e5379e"
+                },
+                {
+                  "role": "write",
+                  "file": "workflow-manifest.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.close.json",
+                  "modified_at": "2026-07-10T14:58:57+08:00",
+                  "size": 254427,
+                  "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "watchlist_export",
+          "order": 2,
+          "title_cn": "导出最新自选股",
+          "plain_goal_cn": "重新导出当前通达信自选股，确保收盘报从全自选股池重新扫描。",
+          "data_used_cn": [
+            "通达信当前自选股表",
+            "54 个正式字段",
+            "涨幅",
+            "换手",
+            "量比",
+            "行业/题材字段"
+          ],
+          "source_method_cn": "通过 tdx-auto-export-zxg / 通达信 UI 导出，再由 parse_watchlist.py 标准化。",
+          "read_files": [
+            "raw-watchlist/*"
+          ],
+          "write_files": [
+            "raw-watchlist.json",
+            "filtered-pool.json"
+          ],
+          "status": "ok",
+          "result_cn": "收盘报必须全自选股重扫，不能沿用旧两只票。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "raw-watchlist/*",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist\\20260710-close-145001062634__自选股20260710收盘预取.xls",
+              "modified_at": "2026-07-10T14:50:25+08:00",
+              "size": 114345,
+              "sha256": "b883163af75090daf0c7406d1080d50cc3a41e5e90901239db8e094788807540"
+            },
+            {
+              "role": "write",
+              "file": "raw-watchlist.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1875545,
+              "sha256": "7cad7d77ff811726b9a9827b38f704c54e93fb9f812436513edfd3cfbd2d1ed9"
+            },
+            {
+              "role": "write",
+              "file": "filtered-pool.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-pool.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2372477,
+              "sha256": "560227ccb41adc3c201e8f89798709980069abcb93ed5834a9e9fa1544fee806"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "收盘报必须全自选股重扫，不能沿用旧两只票。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "raw-watchlist.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 1875545,
+                  "sha256": "7cad7d77ff811726b9a9827b38f704c54e93fb9f812436513edfd3cfbd2d1ed9"
+                },
+                {
+                  "role": "write",
+                  "file": "filtered-pool.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-pool.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 2372477,
+                  "sha256": "560227ccb41adc3c201e8f89798709980069abcb93ed5834a9e9fa1544fee806"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "outer_gate",
+          "order": 3,
+          "title_cn": "外围闸门",
+          "plain_goal_cn": "记录外围闸门的环境顺逆和证据完整度，作为仓位节奏参考。",
+          "data_used_cn": [
+            "A50",
+            "美股三大指数",
+            "VIX",
+            "离岸人民币",
+            "黄金",
+            "白银",
+            "布伦特原油",
+            "搜索归因"
+          ],
+          "source_method_cn": "通过 A50、美股、VIX、汇率、黄金、原油等外围行情组件和 build_outer_gate.py 获取，新闻归因组件只做归因。",
+          "read_files": [
+            "outer-skill-output.txt"
+          ],
+          "write_files": [
+            "outer-gate.json"
+          ],
+          "status": "tailwind",
+          "result_cn": "美股三大指数平均 +0.79%；纳斯达克偏强 +1.30%；A50 偏弱 -1.66%；A50归因偏逆风: 离岸中国资产风险偏好承压；VIX归因偏逆风: 波动率上行，避险升温；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价；白银归因偏顺风: 工业需求/风险偏好主导白银定价；布伦特原油归因偏顺风: 供应恢复/风险缓和压低油价；证据数量：16",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "outer-skill-output.txt",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\outer-skill-output.txt",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2363,
+              "sha256": "c47b0d2304ba8a992b3213ee6d94e618c7e5aa32a64d62d443aacac638ec1d1c"
+            },
+            {
+              "role": "write",
+              "file": "outer-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\outer-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 22242,
+              "sha256": "56c84b8ce538e0e29dac1c34f7a07db6f0f70ad23be348bdff22ac459e127c43"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "美股三大指数平均 +0.79%；纳斯达克偏强 +1.30%；A50 偏弱 -1.66%；A50归因偏逆风: 离岸中国资产风险偏好承压；VIX归因偏逆风: 波动率上行，避险升温；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价；白银归因偏顺风: 工业需求/风险偏好主导白银定价；布伦特原油归因偏顺风: 供应恢复/风险缓和压低油价；证据数量：16",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "outer-gate.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\outer-gate.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 22242,
+                  "sha256": "56c84b8ce538e0e29dac1c34f7a07db6f0f70ad23be348bdff22ac459e127c43"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domestic_gate",
+          "order": 4,
+          "title_cn": "国内闸门",
+          "plain_goal_cn": "记录国内闸门的环境顺逆和证据完整度，作为仓位节奏参考。",
+          "data_used_cn": [
+            "政策",
+            "产业新闻",
+            "监管消息",
+            "自选股公告",
+            "重要事件日历",
+            "候选相关催化/利空"
+          ],
+          "source_method_cn": "通过龙虾/TdxClaw 授权新闻公告工具、授权新闻查询、授权公告查询 和 build_domestic_gate.py 获取。",
+          "read_files": [
+            "domestic-gate.json"
+          ],
+          "write_files": [
+            "domestic-gate.json"
+          ],
+          "status": "headwind",
+          "result_cn": "国内侧负面/监管/公告风险占优",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "domestic-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 340639,
+              "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
+            },
+            {
+              "role": "write",
+              "file": "domestic-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 340639,
+              "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "国内侧负面/监管/公告风险占优",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "domestic-gate.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-gate.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 340639,
+                  "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "emotion_trend_gate",
+          "order": 5,
+          "title_cn": "情绪/趋势闸门",
+          "plain_goal_cn": "记录情绪/趋势闸门的环境顺逆和证据完整度，作为仓位节奏参考。",
+          "data_used_cn": [
+            "上证/深成/创业板走势",
+            "15 分钟趋势",
+            "成交额",
+            "涨停/跌停数量",
+            "连板结构",
+            "高位股反馈"
+          ],
+          "source_method_cn": "通过 通达信行情、通达信K线、通达信条件筛选 和 build_emotion_trend_gate.py 获取。",
+          "read_files": [
+            "emotion-trend-gate.json"
+          ],
+          "write_files": [
+            "emotion-trend-gate.json"
+          ],
+          "status": "tailwind",
+          "result_cn": "指数趋势偏逆风（涨跌幅 -1.33%）；盘中趋势偏横盘（15分钟涨跌幅 1.21%）；成交额信号偏顺风，质量需复核；涨停约 98 只，跌停约 2 只；连板结构flat，最高约 3 连板。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "emotion-trend-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\emotion-trend-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 17783,
+              "sha256": "60304fa34a1dd538345bef825fa893b918bfff6acf3f68de82d8adeb84ba6439"
+            },
+            {
+              "role": "write",
+              "file": "emotion-trend-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\emotion-trend-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 17783,
+              "sha256": "60304fa34a1dd538345bef825fa893b918bfff6acf3f68de82d8adeb84ba6439"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "指数趋势偏逆风（涨跌幅 -1.33%）；盘中趋势偏横盘（15分钟涨跌幅 1.21%）；成交额信号偏顺风，质量需复核；涨停约 98 只，跌停约 2 只；连板结构flat，最高约 3 连板。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "emotion-trend-gate.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\emotion-trend-gate.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 17783,
+                  "sha256": "60304fa34a1dd538345bef825fa893b918bfff6acf3f68de82d8adeb84ba6439"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "candidate_filter",
+          "order": 6,
+          "title_cn": "候选池过滤",
+          "plain_goal_cn": "从完整自选股里剔除硬性不合格对象，保留可评分候选池。",
+          "data_used_cn": [
+            "全自选股",
+            "涨幅",
+            "换手",
+            "量比",
+            "市值",
+            "题材",
+            "风险字段"
+          ],
+          "source_method_cn": "通过 filter_candidates.py 执行基础过滤。",
+          "read_files": [
+            "filtered-pool.json"
+          ],
+          "write_files": [
+            "filtered-candidates.json"
+          ],
+          "status": "ok",
+          "result_cn": "大市值只降权不淘汰，小市值低于阈值才淘汰。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "filtered-pool.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-pool.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2372477,
+              "sha256": "560227ccb41adc3c201e8f89798709980069abcb93ed5834a9e9fa1544fee806"
+            },
+            {
+              "role": "write",
+              "file": "filtered-candidates.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-candidates.json",
+              "modified_at": "2026-07-10T14:50:28+08:00",
+              "size": 2373194,
+              "sha256": "697dca7f0dae37be857ce77260080c1e7edae385963ba22c2283a7e4c0b21820"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "大市值只降权不淘汰，小市值低于阈值才淘汰。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "filtered-candidates.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-candidates.json",
+                  "modified_at": "2026-07-10T14:50:28+08:00",
+                  "size": 2373194,
+                  "sha256": "697dca7f0dae37be857ce77260080c1e7edae385963ba22c2283a7e4c0b21820"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sector_split",
+          "order": 7,
+          "title_cn": "板块裂变与板块统计",
+          "plain_goal_cn": "先看全市场板块强弱，再映射到自选股内部题材与个股角色。",
+          "data_used_cn": [
+            "全市场板块强弱",
+            "自选股题材分组",
+            "主线 Top1/Top2",
+            "领头羊映射"
+          ],
+          "source_method_cn": "通过 build_sector_split.py 生成板块裂变和板块统计。",
+          "read_files": [
+            "candidate-score.json",
+            "technical-check.json"
+          ],
+          "write_files": [
+            "sector-split.json"
+          ],
+          "status": "ok",
+          "result_cn": "板块统计基于完整候选池，不只看最后 Top3。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "write",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "板块统计基于完整候选池，不只看最后 Top3。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "sector-split.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 1038340,
+                  "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "research_brief",
+          "order": 8,
+          "title_cn": "关键事件整理",
+          "plain_goal_cn": "把已落盘的新闻、公告、板块和候选信息整理成用户能看懂的关键事件表。",
+          "data_used_cn": [
+            "授权新闻",
+            "授权公告",
+            "板块方向",
+            "候选池",
+            "技术检查"
+          ],
+          "source_method_cn": "通过 build_research_brief.py 只读已落盘文件整理；不取数、不选股、不改名单。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "domestic-gate.json",
+            "sector-split.json",
+            "candidate-score.json",
+            "technical-check.json"
+          ],
+          "write_files": [
+            "research-brief.json",
+            "research-brief.md"
+          ],
+          "status": "ok",
+          "result_cn": "只整理事件、影响方向和风险提示，正式候选仍由四报原规则决定。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-news.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 63191,
+              "sha256": "29cccd1b28731501f71788fa2483efebba59f12fc627343d72b3e667d12aeb56"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-notices.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 740,
+              "sha256": "b11188a1ed2eb23ae474c6a82c9854ab818602d5ed8d7a4348d209cc17697399"
+            },
+            {
+              "role": "read",
+              "file": "domestic-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 340639,
+              "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "write",
+              "file": "research-brief.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\research-brief.json",
+              "modified_at": "2026-07-10T11:36:09+08:00",
+              "size": 4968,
+              "sha256": "42039e6db21642c6993cdd521c74b2ad379670a98d916463b71d633ada78553a"
+            },
+            {
+              "role": "write",
+              "file": "research-brief.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\research-brief.md",
+              "modified_at": "2026-07-10T11:36:09+08:00",
+              "size": 1363,
+              "sha256": "f0044ab8da7fb58d9a585f69b483cdb8eb4fda6a1e3bbc90c876e7cd2cdc9761"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "只整理事件、影响方向和风险提示，正式候选仍由四报原规则决定。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "research-brief.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\research-brief.json",
+                  "modified_at": "2026-07-10T11:36:09+08:00",
+                  "size": 4968,
+                  "sha256": "42039e6db21642c6993cdd521c74b2ad379670a98d916463b71d633ada78553a"
+                },
+                {
+                  "role": "write",
+                  "file": "research-brief.md",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\research-brief.md",
+                  "modified_at": "2026-07-10T11:36:09+08:00",
+                  "size": 1363,
+                  "sha256": "f0044ab8da7fb58d9a585f69b483cdb8eb4fda6a1e3bbc90c876e7cd2cdc9761"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "news_notice_sentiment",
+          "order": 9,
+          "title_cn": "新闻/公告情绪摘要",
+          "plain_goal_cn": "把已落盘新闻和公告按正面、风险、中性做只读摘要，供报告解释和复盘使用。",
+          "data_used_cn": [
+            "授权新闻",
+            "授权公告",
+            "候选公告排雷",
+            "关键事件整理",
+            "国内信息增强"
+          ],
+          "source_method_cn": "通过 build_news_notice_sentiment.py 只读已落盘文件；不取数、不选股、不改 Top3/A/B/handoff。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "candidate-notice-scan.close.json",
+            "research-brief.json",
+            "domestic-intelligence.close.json"
+          ],
+          "write_files": [
+            "news-notice-sentiment.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "新闻/公告摘要完成：正面 8 条，风险 11 条，谨慎/中性 26 条。",
+          "missing_or_risk_cn": [
+            "新闻/公告摘要：正面 8 条，风险 11 条，谨慎/中性 26 条。",
+            "有负面/风险关键词，正式报告只作风险提示，是否卡票仍看公告排雷硬规则。",
+            "有负面/风险关键词，正式报告只作风险提示，是否卡票仍看公告排雷硬规则。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-news.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 63191,
+              "sha256": "29cccd1b28731501f71788fa2483efebba59f12fc627343d72b3e667d12aeb56"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-notices.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 740,
+              "sha256": "b11188a1ed2eb23ae474c6a82c9854ab818602d5ed8d7a4348d209cc17697399"
+            },
+            {
+              "role": "read",
+              "file": "candidate-notice-scan.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-notice-scan.close.json",
+              "modified_at": "2026-07-10T14:54:08+08:00",
+              "size": 13377,
+              "sha256": "ead0cd1ac160fa52f2009f8683b0c06d916efcab7186132744e56d0a11d25220"
+            },
+            {
+              "role": "read",
+              "file": "research-brief.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\research-brief.json",
+              "modified_at": "2026-07-10T11:36:09+08:00",
+              "size": 4968,
+              "sha256": "42039e6db21642c6993cdd521c74b2ad379670a98d916463b71d633ada78553a"
+            },
+            {
+              "role": "read",
+              "file": "domestic-intelligence.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-intelligence.close.json",
+              "modified_at": "2026-07-10T14:54:09+08:00",
+              "size": 5864,
+              "sha256": "888bea060efe1233fd8b2d152c9e98302ad246c8be13129d998b46d555ef0e77"
+            },
+            {
+              "role": "write",
+              "file": "news-notice-sentiment.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\news-notice-sentiment.close.json",
+              "modified_at": "2026-07-10T14:54:11+08:00",
+              "size": 24534,
+              "sha256": "b0ca186d41c09da072884d35f2b91cf0faf989f20780d386b0ce81e26ea4adf8"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "新闻/公告摘要完成：正面 8 条，风险 11 条，谨慎/中性 26 条。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "news-notice-sentiment.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\news-notice-sentiment.close.json",
+                  "modified_at": "2026-07-10T14:54:11+08:00",
+                  "size": 24534,
+                  "sha256": "b0ca186d41c09da072884d35f2b91cf0faf989f20780d386b0ce81e26ea4adf8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "domestic_intelligence",
+          "order": 10,
+          "title_cn": "国内信息增强",
+          "plain_goal_cn": "把政策、产业链、板块、公告和业绩事件映射回自选股，解释影响但不改名单。",
+          "data_used_cn": [
+            "授权新闻",
+            "授权公告",
+            "国内闸门",
+            "主线识别",
+            "板块裂变",
+            "候选池",
+            "技术检查"
+          ],
+          "source_method_cn": "通过 build_domestic_intelligence.py 只读已落盘文件整理；不取数、不选股、不改 Top3/A/B/handoff。",
+          "read_files": [
+            "authorized-news.json",
+            "authorized-notices.json",
+            "domestic-gate.json",
+            "market-mainline.json",
+            "sector-split.json",
+            "candidate-score.json",
+            "technical-check.json"
+          ],
+          "write_files": [
+            "domestic-intelligence.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "国内信息增强已整理：当天新增证据 6 条，A股政策/产业 6 条，A股公告 0 条，直接关联自选股 0 条；催化状态 已确认催化，时效 当日新催化。",
+          "missing_or_risk_cn": [
+            "增强层只解释国内事件、板块和自选股关联，不新增股票，不改 Top3/A/B，不改 handoff",
+            "当前展示方向：人形机器人、机器人概念、芯片",
+            "已单独隔离：港股/海外中资 2 条、全球市场摘要 7 条，不写入正式国内催化"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-news.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 63191,
+              "sha256": "29cccd1b28731501f71788fa2483efebba59f12fc627343d72b3e667d12aeb56"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-notices.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 740,
+              "sha256": "b11188a1ed2eb23ae474c6a82c9854ab818602d5ed8d7a4348d209cc17697399"
+            },
+            {
+              "role": "read",
+              "file": "domestic-gate.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-gate.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 340639,
+              "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
+            },
+            {
+              "role": "read",
+              "file": "market-mainline.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-mainline.json",
+              "modified_at": "2026-07-10T14:35:08+08:00",
+              "size": 228188,
+              "sha256": "47dba65f56746593fc7fa5d7cddcf50b2f17cc39021e390fbf6e7367ce87d837"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "write",
+              "file": "domestic-intelligence.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-intelligence.close.json",
+              "modified_at": "2026-07-10T14:54:09+08:00",
+              "size": 5864,
+              "sha256": "888bea060efe1233fd8b2d152c9e98302ad246c8be13129d998b46d555ef0e77"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "国内信息增强已整理：当天新增证据 6 条，A股政策/产业 6 条，A股公告 0 条，直接关联自选股 0 条；催化状态 已确认催化，时效 当日新催化。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "domestic-intelligence.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\domestic-intelligence.close.json",
+                  "modified_at": "2026-07-10T14:54:09+08:00",
+                  "size": 5864,
+                  "sha256": "888bea060efe1233fd8b2d152c9e98302ad246c8be13129d998b46d555ef0e77"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ab_channel_pool",
+          "order": 11,
+          "title_cn": "A/B 双通道候选",
+          "plain_goal_cn": "把候选分成消息/题材驱动和技术/资金行为两条通道。",
+          "data_used_cn": [
+            "消息/题材驱动池",
+            "技术/资金行为池",
+            "候选评分数据"
+          ],
+          "source_method_cn": "通过 build_report_snapshot.py 和 candidate-score.json 汇总。",
+          "read_files": [
+            "candidate-score.json",
+            "sector-split.json"
+          ],
+          "write_files": [
+            "close-report.json"
+          ],
+          "status": "ok",
+          "result_cn": "A 通道是消息题材，B 通道是技术资金。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            },
+            {
+              "role": "write",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "A 通道是消息题材，B 通道是技术资金。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "close-report.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+                  "modified_at": "2026-07-10T14:58:52+08:00",
+                  "size": 13132227,
+                  "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "technical_check",
+          "order": 12,
+          "title_cn": "技术面 10 项检查",
+          "plain_goal_cn": "逐只候选确认是否具备短线承接和技术条件。",
+          "data_used_cn": [
+            "涨幅",
+            "换手",
+            "量比",
+            "分时强弱",
+            "冲高回落",
+            "尾盘承接",
+            "K 线",
+            "3-5 日量能",
+            "均线位置",
+            "主营匹配"
+          ],
+          "source_method_cn": "通过 technical_check.py --tdxclaw-data 从 TdxClaw/TDX 后台补齐。",
+          "read_files": [
+            "candidate-score.json"
+          ],
+          "write_files": [
+            "technical-check.json"
+          ],
+          "status": "ok",
+          "result_cn": "缺字段只能只观察、降级或取消，不能脑补通过。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "write",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "缺字段只能只观察、降级或取消，不能脑补通过。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "technical-check.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 2319543,
+                  "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "candidate_score",
+          "order": 13,
+          "title_cn": "综合评分与排序",
+          "plain_goal_cn": "把板块裂变、技术面和候选质量合并评分排序，三闸门只记录环境参考。",
+          "data_used_cn": [
+            "三闸门环境参考",
+            "板块裂变",
+            "技术面",
+            "候选池",
+            "selection_universe"
+          ],
+          "source_method_cn": "通过 score_candidates.py 生成候选综合评分。",
+          "read_files": [
+            "gates-protocol.json",
+            "sector-split.json",
+            "technical-check.json"
+          ],
+          "write_files": [
+            "candidate-score.json"
+          ],
+          "status": "ok",
+          "result_cn": "全池扫描/候选宇宙：214 只；最终验证对象：2 只；买入 Top3：2 只。完整池用于审计，不等于推荐候选。",
+          "missing_or_risk_cn": [
+            "面板不得把全池扫描数当成最终候选数展示"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "gates-protocol.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\gates-protocol.json",
+              "modified_at": "2026-07-10T14:54:08+08:00",
+              "size": 18234,
+              "sha256": "a1484c8016421bb48935b66e8ad6b5cf85f064cee64d370f2484a35872072789"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "write",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "全池扫描/候选宇宙：214 只；最终验证对象：2 只；买入 Top3：2 只。完整池用于审计，不等于推荐候选。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "candidate-score.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+                  "modified_at": "2026-07-10T14:58:42+08:00",
+                  "size": 6228888,
+                  "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "four_layer_tracking",
+          "order": 14,
+          "title_cn": "四套逻辑对比",
+          "plain_goal_cn": "把正式 Top3、A类观察、B类观察、候选评分前排分成四套策略样本，后续早报、午报和复盘只做跟踪比较。",
+          "data_used_cn": [
+            "正式 Top3",
+            "A类观察",
+            "B类观察",
+            "候选评分前排",
+            "技术/公告/评分状态"
+          ],
+          "source_method_cn": "通过 build_four_layer_tracking.py 只读收盘报、候选评分和技术检查生成；不改 handoff、不改执行输入。",
+          "read_files": [
+            "close-report.json",
+            "candidate-score.json",
+            "technical-check.json"
+          ],
+          "write_files": [
+            "four-layer-tracking.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "四层/旁路策略对比账本已生成：正式 Top3 2 只，A类主线/题材 3 只，B类技术/资金 0 只，候选评分前排 3 只，低位回流观察 3 只，早盘驱动观察 3 只，隔夜涨停观察 3 只，题材轮动观察 3 只，收盘中强承接观察 3 只。 面板样本跟踪 23 条，本时段快照命中 23 条。",
+          "missing_or_risk_cn": [
+            "跟踪的是面板四层样本和旁路样本；正式买入只认 Top3，题材观察、技术观察、评分前排、低位回流、早盘驱动、隔夜涨停观察、题材轮动观察和收盘中强承接观察不进入 handoff、午报执行或正式收益"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "write",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "四层/旁路策略对比账本已生成：正式 Top3 2 只，A类主线/题材 3 只，B类技术/资金 0 只，候选评分前排 3 只，低位回流观察 3 只，早盘驱动观察 3 只，隔夜涨停观察 3 只，题材轮动观察 3 只，收盘中强承接观察 3 只。 面板样本跟踪 23 条，本时段快照命中 23 条。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "four-layer-tracking.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+                  "modified_at": "2026-07-10T14:58:44+08:00",
+                  "size": 122821,
+                  "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "longxia_overnight_report",
+          "order": 15,
+          "title_cn": "龙虾隔夜摘要",
+          "plain_goal_cn": "对正式 Top3、早盘驱动观察、隔夜涨停观察做逐票隔夜摘要，只增强展示和复盘。",
+          "data_used_cn": [
+            "正式 Top3",
+            "早盘驱动观察",
+            "隔夜涨停观察",
+            "龙虾隔夜报告能力"
+          ],
+          "source_method_cn": "通过 build_overnight_report_brief.py 后台调用 longxia_agent_message，只写摘要产物并二次刷新 Web；不改票、不改收益。",
+          "read_files": [
+            "close-report.json",
+            "four-layer-tracking.close.json"
+          ],
+          "write_files": [
+            "overnight-report-brief.close.json",
+            "web-panel-state.json"
+          ],
+          "status": "ok",
+          "result_cn": "龙虾隔夜摘要部分回填：成功 0 只，缺口 11 只。",
+          "missing_or_risk_cn": [
+            "缺口只影响卡片摘要展示，不影响正式收盘报和收益口径"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            },
+            {
+              "role": "write",
+              "file": "overnight-report-brief.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\overnight-report-brief.close.json",
+              "modified_at": "2026-07-10T15:08:05+08:00",
+              "size": 101647,
+              "sha256": "0a9f31a83382ca4e42b33071ed9e95d78a2b20131af41037c32567395daadecf"
+            },
+            {
+              "role": "write",
+              "file": "web-panel-state.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\web-panel-state.json",
+              "modified_at": "2026-07-10T15:01:55+08:00",
+              "size": 1469051,
+              "sha256": "d288ec16a543c691140e4941a8fae52188709643802ee1f3dcc8c024eecf66e4"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "龙虾隔夜摘要部分回填：成功 0 只，缺口 11 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "overnight-report-brief.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\overnight-report-brief.close.json",
+                  "modified_at": "2026-07-10T15:08:05+08:00",
+                  "size": 101647,
+                  "sha256": "0a9f31a83382ca4e42b33071ed9e95d78a2b20131af41037c32567395daadecf"
+                },
+                {
+                  "role": "write",
+                  "file": "web-panel-state.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\web-panel-state.json",
+                  "modified_at": "2026-07-10T15:01:55+08:00",
+                  "size": 1469051,
+                  "sha256": "d288ec16a543c691140e4941a8fae52188709643802ee1f3dcc8c024eecf66e4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "external_skill_enrichment",
+          "order": 16,
+          "title_cn": "金融 skill 证据增强",
+          "plain_goal_cn": "把题材、资金、公告股本、仓位和交易计划需要的证据增强对象按上限整理出来。",
+          "data_used_cn": [
+            "候选评分",
+            "技术检查",
+            "最终交接对象",
+            "金融 skill 适配清单"
+          ],
+          "source_method_cn": "通过 build_external_skill_enrichment.py 只读已落盘产物；增强只补证据，不改 Top3/A/B/handoff。",
+          "read_files": [
+            "candidate-score.json",
+            "technical-check.json",
+            "close-report.json"
+          ],
+          "write_files": [
+            "external-skill-enrichment.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "增强层只说明哪些票需要补题材、资金、公告股本和交易计划证据，不重新选股。",
+          "missing_or_risk_cn": [
+            "外部金融 skill 不能直接改买入名单或交接对象。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "write",
+              "file": "external-skill-enrichment.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-enrichment.close.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13559,
+              "sha256": "73198f7e5fc371ba3986c7b2b4ddba9e5292bfeece5b034eb8cad4d602b96f30"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "增强层只说明哪些票需要补题材、资金、公告股本和交易计划证据，不重新选股。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "external-skill-enrichment.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-enrichment.close.json",
+                  "modified_at": "2026-07-10T14:58:52+08:00",
+                  "size": 13559,
+                  "sha256": "73198f7e5fc371ba3986c7b2b4ddba9e5292bfeece5b034eb8cad4d602b96f30"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "external_skill_deep_dive",
+          "order": 17,
+          "title_cn": "金融 skill 深挖",
+          "plain_goal_cn": "只对 Top3、A类前3、B类前3和候选评分前三做重点票证据深挖。",
+          "data_used_cn": [
+            "正式 Top3",
+            "A类观察前3",
+            "B类观察前3",
+            "候选评分前三",
+            "授权新闻公告",
+            "技术检查"
+          ],
+          "source_method_cn": "通过 build_external_skill_deep_dive.py 按金融 skill 口径整理；新增板块操盘、产业链和主营匹配复盘镜头，不全池深扫、不改买入名单。",
+          "read_files": [
+            "external-skill-enrichment.close.json",
+            "four-layer-tracking.close.json",
+            "close-report.json",
+            "candidate-score.json",
+            "technical-check.json",
+            "authorized-news.json",
+            "authorized-notices.json"
+          ],
+          "write_files": [
+            "external-skill-deep-dive.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "金融 skill 深挖已生成：重点票 6 只，Top3 2 只，A类 3 只，B类 0 只，候选评分前三 3 只。",
+          "missing_or_risk_cn": [
+            "深挖只补主线、题材、资金、事件、股本风险、板块操盘、产业链、主营匹配、仓位节奏和复盘证据，不改 Top3、不改 handoff"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "external-skill-enrichment.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-enrichment.close.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13559,
+              "sha256": "73198f7e5fc371ba3986c7b2b4ddba9e5292bfeece5b034eb8cad4d602b96f30"
+            },
+            {
+              "role": "read",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            },
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-news.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 63191,
+              "sha256": "29cccd1b28731501f71788fa2483efebba59f12fc627343d72b3e667d12aeb56"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-notices.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 740,
+              "sha256": "b11188a1ed2eb23ae474c6a82c9854ab818602d5ed8d7a4348d209cc17697399"
+            },
+            {
+              "role": "write",
+              "file": "external-skill-deep-dive.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-deep-dive.close.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 31891,
+              "sha256": "bec207093155f6581efbefde54c3cc7fd179e506d2636b22cd6d5f72ba5afdc1"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "金融 skill 深挖已生成：重点票 6 只，Top3 2 只，A类 3 只，B类 0 只，候选评分前三 3 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "external-skill-deep-dive.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-deep-dive.close.json",
+                  "modified_at": "2026-07-10T14:58:52+08:00",
+                  "size": 31891,
+                  "sha256": "bec207093155f6581efbefde54c3cc7fd179e506d2636b22cd6d5f72ba5afdc1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report_snapshot",
+          "order": 18,
+          "title_cn": "报告快照",
+          "plain_goal_cn": "把闸门、候选、技术、板块、执行和数据质量写成结构化报告。",
+          "data_used_cn": [
+            "闸门",
+            "候选",
+            "技术面",
+            "板块",
+            "执行",
+            "数据质量"
+          ],
+          "source_method_cn": "通过 build_report_snapshot.py 生成结构化收盘报。",
+          "read_files": [
+            "candidate-score.json",
+            "technical-check.json",
+            "sector-split.json"
+          ],
+          "write_files": [
+            "close-report.json"
+          ],
+          "status": "ok",
+          "result_cn": "这一步已经跑完，关键产物已保存。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "sector-split.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\sector-split.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1038340,
+              "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
+            },
+            {
+              "role": "write",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "报告快照",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "close-report.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+                  "modified_at": "2026-07-10T14:58:52+08:00",
+                  "size": 13132227,
+                  "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "market_data",
+          "order": 19,
+          "title_cn": "真实行情落盘",
+          "plain_goal_cn": "把重点票的 14:50、收盘、次日开盘、前30分钟、午盘和日K价格整理成标准行情文件。",
+          "data_used_cn": [
+            "TDX 实时行情",
+            "5分钟K线",
+            "15分钟K线",
+            "日K",
+            "四套逻辑样本"
+          ],
+          "source_method_cn": "通过 TDX 授权行情和K线链路落盘；只补价格字段，不重新选股。",
+          "read_files": [
+            "close-report.json",
+            "four-layer-tracking.close.json",
+            "candidate-score.json"
+          ],
+          "write_files": [
+            "market-data.json"
+          ],
+          "status": "ok",
+          "result_cn": "真实行情落盘完成：目标 23 只，当前字段完整 0 只，仍有后续字段待补 23 只；来源：真实 TDX 行情/K线。",
+          "missing_or_risk_cn": [
+            "行情落盘只补价格字段，不选股、不改 Top3、不改 handoff。",
+            "后续待补：次日前30分钟高点、次日前30分钟低点、次日开盘价、次日午盘价"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "write",
+              "file": "market-data.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 34717,
+              "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "真实行情落盘完成：目标 23 只，当前字段完整 0 只，仍有后续字段待补 23 只；来源：真实 TDX 行情/K线。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "market-data.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
+                  "modified_at": "2026-07-10T15:01:35+08:00",
+                  "size": 34717,
+                  "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tail_session_paper_trade",
+          "order": 20,
+          "title_cn": "14:50 尾盘模拟买入",
+          "plain_goal_cn": "把收盘报正式 Top3 记入模拟买入账本，后续早报、午报和复盘按模拟持仓跟踪。",
+          "data_used_cn": [
+            "正式 Top3",
+            "handoff.validation_targets",
+            "14:50 附近价格",
+            "收盘价代理",
+            "四套逻辑账本"
+          ],
+          "source_method_cn": "通过 build_paper_trade_ledger.py 按 14:50 尾盘模拟买入口径 口径生成；只算模拟收益，不下单。",
+          "read_files": [
+            "close-report.json",
+            "market-data.json",
+            "technical-check.json",
+            "four-layer-tracking.close.json"
+          ],
+          "write_files": [
+            "paper-trade-ledger.json",
+            "paper-trade-summary.json"
+          ],
+          "status": "ok",
+          "result_cn": "模拟跟单完成：正式买入 2 只，可计算 2 只；收益基准：14:50 尾盘模拟买入价；T+1 平均收益 未取得。",
+          "missing_or_risk_cn": [
+            "这是按 14:50 尾盘模拟买入价计算的纸面模拟，不代表账户成交记录，不触发下单"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "market-data.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 34717,
+              "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            },
+            {
+              "role": "write",
+              "file": "paper-trade-ledger.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 31320,
+              "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
+            },
+            {
+              "role": "write",
+              "file": "paper-trade-summary.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 1961,
+              "sha256": "e8a15914d7ea907588727bd9b6b313d394ef1d0c7c02ba5089a39d02efc8202c"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "模拟跟单完成：正式买入 2 只，可计算 2 只；收益基准：14:50 尾盘模拟买入价；T+1 平均收益 未取得。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "paper-trade-ledger.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
+                  "modified_at": "2026-07-10T15:01:35+08:00",
+                  "size": 31320,
+                  "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
+                },
+                {
+                  "role": "write",
+                  "file": "paper-trade-summary.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
+                  "modified_at": "2026-07-10T15:01:35+08:00",
+                  "size": 1961,
+                  "sha256": "e8a15914d7ea907588727bd9b6b313d394ef1d0c7c02ba5089a39d02efc8202c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report_markdown",
+          "order": 21,
+          "title_cn": "固定模板渲染",
+          "plain_goal_cn": "把结构化收盘报渲染成用户可见 Markdown。",
+          "data_used_cn": [
+            "结构化收盘报 JSON",
+            "收盘报固定 7 栏"
+          ],
+          "source_method_cn": "通过 render_report_template.py 渲染固定模板。",
+          "read_files": [
+            "close-report.json"
+          ],
+          "write_files": [
+            "close-report.md"
+          ],
+          "status": "ok",
+          "result_cn": "收盘报固定 7 栏，不能改栏目名和顺序。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "write",
+              "file": "close-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 6596,
+              "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "收盘报固定 7 栏，不能改栏目名和顺序。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "close-report.md",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
+                  "modified_at": "2026-07-10T14:58:55+08:00",
+                  "size": 6596,
+                  "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "protocol_validate",
+          "order": 21,
+          "title_cn": "协议校验",
+          "plain_goal_cn": "确认收盘报 JSON、Markdown 和交接对象符合四报协议。",
+          "data_used_cn": [
+            "收盘报 JSON",
+            "收盘报 Markdown",
+            "handoff.validation_targets"
+          ],
+          "source_method_cn": "通过 report_protocol_validate.py 和 validate_handoff_chain.py 校验。",
+          "read_files": [
             "close-report.json",
             "close-report.md"
           ],
-          "write_files": [],
-          "status": "missed",
-          "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+          "write_files": [
+            "workflow-manifest.close.json",
+            "data-lineage.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "没有合格对象时必须写“无次日早报验证对象”。",
           "missing_or_risk_cn": [
-            "计划时间：2026-07-10T14:50+08:00",
-            "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "close-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 6596,
+              "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
+            },
+            {
+              "role": "write",
+              "file": "workflow-manifest.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.close.json",
+              "modified_at": "2026-07-10T14:58:57+08:00",
+              "size": 254427,
+              "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
+            },
+            {
+              "role": "write",
+              "file": "data-lineage.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-lineage.close.json",
+              "modified_at": "2026-07-10T14:58:56+08:00",
+              "size": 55440,
+              "sha256": "09863dfe7f89f63dc3c19c50d8511c4d8219e0578f46e109ef87b0f56338cac2"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "没有合格对象时必须写“无次日早报验证对象”。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "workflow-manifest.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.close.json",
+                  "modified_at": "2026-07-10T14:58:57+08:00",
+                  "size": 254427,
+                  "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
+                },
+                {
+                  "role": "write",
+                  "file": "data-lineage.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-lineage.close.json",
+                  "modified_at": "2026-07-10T14:58:56+08:00",
+                  "size": 55440,
+                  "sha256": "09863dfe7f89f63dc3c19c50d8511c4d8219e0578f46e109ef87b0f56338cac2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data_acquisition_health",
+          "order": 22,
+          "title_cn": "数据获取健康审计",
+          "plain_goal_cn": "统一检查自选股、授权新闻公告、公告排雷、三闸门和行情是否真的取到且没有读旧。",
+          "data_used_cn": [
+            "通达信自选股快照",
+            "授权新闻",
+            "授权公告",
+            "候选公告排雷",
+            "三闸门产物",
+            "TDX 行情/K线"
+          ],
+          "source_method_cn": "通过 build_data_acquisition_health.py 只读已落盘产物做审计；不取数、不选股、不改 Top3 或 handoff。",
+          "read_files": [
+            "raw-watchlist.json",
+            "authorized-news.json",
+            "authorized-notices.json",
+            "candidate-notice-scan.close.json",
+            "market-data.json"
+          ],
+          "write_files": [
+            "data-acquisition-health.close.json"
+          ],
+          "status": "warning",
+          "result_cn": "数据获取健康审计完成：通过 12 项，需留意 1 项，阻断 0 项（四层旁路样本公告补查未完成：吉比特/603444、鲁信创投/600783、比音勒芬/002832 等 11 只，不影响正式 Top3）。",
+          "missing_or_risk_cn": [
+            "存在资料缺口：报告可以生成，但相关结论需要谨慎。",
+            "四层旁路样本公告补查未完成：吉比特/603444、鲁信创投/600783、比音勒芬/002832 等 11 只；处理：这只影响四层票池展示和复盘审计，不影响正式 Top3；需补查这些样本后再刷新四层公告状态"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "raw-watchlist.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 1875545,
+              "sha256": "7cad7d77ff811726b9a9827b38f704c54e93fb9f812436513edfd3cfbd2d1ed9"
+            },
+            {
+              "role": "read",
+              "file": "authorized-news.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-news.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 63191,
+              "sha256": "29cccd1b28731501f71788fa2483efebba59f12fc627343d72b3e667d12aeb56"
+            },
+            {
+              "role": "read",
+              "file": "authorized-notices.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\authorized-notices.json",
+              "modified_at": "2026-07-10T09:00:11+08:00",
+              "size": 740,
+              "sha256": "b11188a1ed2eb23ae474c6a82c9854ab818602d5ed8d7a4348d209cc17697399"
+            },
+            {
+              "role": "read",
+              "file": "candidate-notice-scan.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-notice-scan.close.json",
+              "modified_at": "2026-07-10T14:54:08+08:00",
+              "size": 13377,
+              "sha256": "ead0cd1ac160fa52f2009f8683b0c06d916efcab7186132744e56d0a11d25220"
+            },
+            {
+              "role": "read",
+              "file": "market-data.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 34717,
+              "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
+            },
+            {
+              "role": "write",
+              "file": "data-acquisition-health.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-acquisition-health.close.json",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 10659,
+              "sha256": "c8ffe5349b3837c22349536fadce08f7fb6dc132f1acd9c07b1a722de6dd71c1"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "数据获取健康审计完成：通过 12 项，需留意 1 项，阻断 0 项（四层旁路样本公告补查未完成：吉比特/603444、鲁信创投/600783、比音勒芬/002832 等 11 只，不影响正式 Top3）。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "data-acquisition-health.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-acquisition-health.close.json",
+                  "modified_at": "2026-07-10T14:58:55+08:00",
+                  "size": 10659,
+                  "sha256": "c8ffe5349b3837c22349536fadce08f7fb6dc132f1acd9c07b1a722de6dd71c1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "strategy_benchmark",
+          "order": 23,
+          "title_cn": "四套策略收益对比",
+          "plain_goal_cn": "把正式 Top3 和旁路观察层分开统计，复盘时判断哪套逻辑有效、哪套容易误伤或假强。",
+          "data_used_cn": [
+            "四套逻辑样本",
+            "模拟收益账本",
+            "当日/T+1/3日收益",
+            "缺价标记"
+          ],
+          "source_method_cn": "通过 build_strategy_benchmark.py 只读 four-layer-tracking 和 paper-trade-ledger；不选股、不改收益归属。",
+          "read_files": [
+            "four-layer-tracking.close.json",
+            "paper-trade-ledger.json"
+          ],
+          "write_files": [
+            "strategy-benchmark.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "四套策略对比审计完成：正式 Top3 2 只，旁路样本 21 只，收益缺口 1 只。",
+          "missing_or_risk_cn": [
+            "这是旁路对比，只用于复盘判断哪套逻辑更有效；不改 Top3、不改 handoff、不改正式收益。",
+            "已对比 8 套策略样本；当日 当前最好的是 收盘中强承接观察。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "four-layer-tracking.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
+              "modified_at": "2026-07-10T14:58:44+08:00",
+              "size": 122821,
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
+            },
+            {
+              "role": "read",
+              "file": "paper-trade-ledger.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 31320,
+              "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
+            },
+            {
+              "role": "write",
+              "file": "strategy-benchmark.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 10508,
+              "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "四套策略对比审计完成：正式 Top3 2 只，旁路样本 21 只，收益缺口 1 只。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "strategy-benchmark.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
+                  "modified_at": "2026-07-10T14:58:55+08:00",
+                  "size": 10508,
+                  "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "multi_role_review",
+          "order": 24,
+          "title_cn": "多视角审计",
+          "plain_goal_cn": "从技术、题材、风险、数据质量四个视角复核本次报告有没有明显弱点。",
+          "data_used_cn": [
+            "正式报告",
+            "候选评分",
+            "技术检查",
+            "数据健康",
+            "金融 skill 深挖",
+            "四套策略对比"
+          ],
+          "source_method_cn": "通过 build_multi_role_review.py 只读产物做审计；确认前不改算法、不改 Top3。",
+          "read_files": [
+            "close-report.json",
+            "candidate-score.json",
+            "technical-check.json",
+            "data-acquisition-health.close.json",
+            "external-skill-deep-dive.close.json",
+            "strategy-benchmark.close.json"
+          ],
+          "write_files": [
+            "multi-role-review.close.json"
+          ],
+          "status": "warning",
+          "result_cn": "多视角审计完成：技术、题材、风险、数据质量共 4 个视角；需留意 3 项，阻断 0 项。（需留意：技术：通过 5 只，取消 50 只；风控：候选硬风险 2 只已排除；数据：存在旁路审计缺口，不影响正式 Top3）",
+          "missing_or_risk_cn": [
+            "审计层只找问题和给建议，不自动改算法、不改 Top3、不改交易计划。",
+            "技术审查：技术检查通过 5 只，取消/不合格 50 只；技术层只给证据，不直接改名单。",
+            "技术审查建议：若强票多被技术取消，复盘阶段检查取消原因；确认前不调技术阈值。",
+            "风控审查：正式准入公告排雷：通过 13 只，候选硬风险 2 只，未确认/失败 0 只，正式交接对象 2 只。 硬风险票已被排除，未进入正式 Top3/交接。",
+            "风控审查建议：候选硬风险票被排除说明公告规则在正常工作；只有正式交接对象本身未确认/查询失败时，才算真正阻断。",
+            "数据质量审查：数据健康状态为 partial；数据审计只提示缺口，不改变选股结论。",
+            "数据质量审查建议：先补齐数据链路，再讨论策略参数；禁止用旧数据或缺字段硬凑结论。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "candidate-score.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\candidate-score.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 6228888,
+              "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "data-acquisition-health.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-acquisition-health.close.json",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 10659,
+              "sha256": "c8ffe5349b3837c22349536fadce08f7fb6dc132f1acd9c07b1a722de6dd71c1"
+            },
+            {
+              "role": "read",
+              "file": "external-skill-deep-dive.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\external-skill-deep-dive.close.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 31891,
+              "sha256": "bec207093155f6581efbefde54c3cc7fd179e506d2636b22cd6d5f72ba5afdc1"
+            },
+            {
+              "role": "read",
+              "file": "strategy-benchmark.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 10508,
+              "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
+            },
+            {
+              "role": "write",
+              "file": "multi-role-review.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\multi-role-review.close.json",
+              "modified_at": "2026-07-10T14:58:56+08:00",
+              "size": 4349,
+              "sha256": "66f950f860b46e2c833ac3e63e0d5fb6d348a4b24b70887f2df6cc25b43246e3"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "多视角审计完成：技术、题材、风险、数据质量共 4 个视角；需留意 3 项，阻断 0 项。（需留意：技术：通过 5 只，取消 50 只；风控：候选硬风险 2 只已排除；数据：存在旁路审计缺口，不影响正式 Top3）",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "multi-role-review.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\multi-role-review.close.json",
+                  "modified_at": "2026-07-10T14:58:56+08:00",
+                  "size": 4349,
+                  "sha256": "66f950f860b46e2c833ac3e63e0d5fb6d348a4b24b70887f2df6cc25b43246e3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "report_quality_audit",
+          "order": 25,
+          "title_cn": "正式文本质量审计",
+          "plain_goal_cn": "检查正式报告是否存在乱码、工程词裸露、过短或缺少复盘建议等用户可见问题。",
+          "data_used_cn": [
+            "正式 Markdown",
+            "结构化报告",
+            "多视角审计",
+            "四套策略对比"
+          ],
+          "source_method_cn": "通过 build_report_quality_audit.py 只读正式报告检查，不重写报告、不改结论。",
+          "read_files": [
+            "close-report.md",
+            "close-report.json",
+            "multi-role-review.close.json",
+            "strategy-benchmark.close.json"
+          ],
+          "write_files": [
+            "report-quality-audit.close.json"
+          ],
+          "status": "ok",
+          "result_cn": "正式文本质量审计完成：状态 ok，发现 0 项可读性/展示风险。",
+          "missing_or_risk_cn": [
+            "质量审计只提示正式文本问题，不重写报告、不改结论。"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.md",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 6596,
+              "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
+            },
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "multi-role-review.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\multi-role-review.close.json",
+              "modified_at": "2026-07-10T14:58:56+08:00",
+              "size": 4349,
+              "sha256": "66f950f860b46e2c833ac3e63e0d5fb6d348a4b24b70887f2df6cc25b43246e3"
+            },
+            {
+              "role": "read",
+              "file": "strategy-benchmark.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
+              "modified_at": "2026-07-10T14:58:55+08:00",
+              "size": 10508,
+              "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
+            },
+            {
+              "role": "write",
+              "file": "report-quality-audit.close.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\report-quality-audit.close.json",
+              "modified_at": "2026-07-10T14:58:56+08:00",
+              "size": 1451,
+              "sha256": "0b8c1868ad6e7755c0b90f6e1d7ea61cf24031ce7414bf4e1c197d6a67f8f90a"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "正式文本质量审计完成：状态 ok，发现 0 项可读性/展示风险。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "report-quality-audit.close.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\report-quality-audit.close.json",
+                  "modified_at": "2026-07-10T14:58:56+08:00",
+                  "size": 1451,
+                  "sha256": "0b8c1868ad6e7755c0b90f6e1d7ea61cf24031ce7414bf4e1c197d6a67f8f90a"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "handoff_targets",
+          "order": 26,
+          "title_cn": "次日验证对象",
+          "plain_goal_cn": "把收盘报最终允许交接的对象传给次日早报。",
+          "data_used_cn": [
+            "最终观察名单",
+            "Top3",
+            "空仓结论",
+            "handoff.validation_targets"
+          ],
+          "source_method_cn": "通过 close-report.json 的 handoff.validation_targets 交接。",
+          "read_files": [
+            "close-report.json"
+          ],
+          "write_files": [
+            "inherited-pool.json"
+          ],
+          "status": "ok",
+          "result_cn": "次日早报验证对象数量：2。只有收盘报能重新生成次日对象。",
+          "missing_or_risk_cn": [
+            "无关键缺失"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "write",
+              "file": "inherited-pool.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\inherited-pool.json",
+              "modified_at": "2026-07-10T09:36:00+08:00",
+              "size": 2023,
+              "sha256": "dffc373b5b83d40dddbf7d5fddc4be02e96ae00e9dd9cebbc2c007e774edf3a3"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "次日早报验证对象数量：2。只有收盘报能重新生成次日对象。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "inherited-pool.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\inherited-pool.json",
+                  "modified_at": "2026-07-10T09:36:00+08:00",
+                  "size": 2023,
+                  "sha256": "dffc373b5b83d40dddbf7d5fddc4be02e96ae00e9dd9cebbc2c007e774edf3a3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "close_confirmation_1501",
+          "order": 27,
+          "title_cn": "15:01 收盘确认回填",
+          "plain_goal_cn": "收盘后可以再导出完整自选股快照，但只用于补收盘事实和复盘，不重新选股。",
+          "data_used_cn": [
+            "15:01 完整自选股快照",
+            "收盘价",
+            "尾盘承接",
+            "模拟买入价来源",
+            "初始纸面收益"
+          ],
+          "source_method_cn": "通过 run_close_confirmation_1501.py 编排：可先导出 close-watchlist.1501.json，再生成 close-snapshot.1501.json 和 close-confirmation.1501.json；不能改 Top3 或 handoff。",
+          "read_files": [
+            "close-report.json",
+            "paper-trade-ledger.json",
+            "market-data.json",
+            "technical-check.json",
+            "close-snapshot.1501.json"
+          ],
+          "write_files": [
+            "close-watchlist.1501.json",
+            "close-snapshot.1501.json",
+            "close-confirmation.1501.json"
+          ],
+          "status": "ok",
+          "result_cn": "15:01 是完整收盘快照 + 收盘确认回填，不是第二份收盘报；14:50 Top3 仍锁定。",
+          "missing_or_risk_cn": [
+            "15:01 完整快照只能用于复盘/收益/漏选检查，不能反向改 14:50 买入名单"
+          ],
+          "data_provenance": [
+            {
+              "role": "read",
+              "file": "close-report.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
+            },
+            {
+              "role": "read",
+              "file": "paper-trade-ledger.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 31320,
+              "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
+            },
+            {
+              "role": "read",
+              "file": "market-data.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
+              "modified_at": "2026-07-10T15:01:35+08:00",
+              "size": 34717,
+              "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
+            },
+            {
+              "role": "read",
+              "file": "technical-check.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\technical-check.json",
+              "modified_at": "2026-07-10T14:58:42+08:00",
+              "size": 2319543,
+              "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
+            },
+            {
+              "role": "read",
+              "file": "close-snapshot.1501.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-snapshot.1501.json",
+              "modified_at": "2026-07-10T15:01:28+08:00",
+              "size": 2771291,
+              "sha256": "c06f0cf208a81320446f38fabd157514b9cb69e60dc299a965ae7ccb9c8af580"
+            },
+            {
+              "role": "write",
+              "file": "close-watchlist.1501.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-watchlist.1501.json",
+              "modified_at": "2026-07-10T15:01:28+08:00",
+              "size": 2375414,
+              "sha256": "8b873af3ebf7be26749622f5eaf70595824104b63a427d85f568e5f734bd623a"
+            },
+            {
+              "role": "write",
+              "file": "close-snapshot.1501.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-snapshot.1501.json",
+              "modified_at": "2026-07-10T15:01:28+08:00",
+              "size": 2771291,
+              "sha256": "c06f0cf208a81320446f38fabd157514b9cb69e60dc299a965ae7ccb9c8af580"
+            },
+            {
+              "role": "write",
+              "file": "close-confirmation.1501.json",
+              "status": "ok",
+              "exists": true,
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501.json",
+              "modified_at": "2026-07-10T15:01:36+08:00",
+              "size": 2309,
+              "sha256": "81c67851f518fc3fe2a87ed1c9fed767d81d45670f0c7a0144ca9845061e2401"
+            }
+          ],
+          "key_conclusion_provenance": [
+            {
+              "conclusion_cn": "15:01 是完整收盘快照 + 收盘确认回填，不是第二份收盘报；14:50 Top3 仍锁定。",
+              "freshness_cn": "已落盘，可追溯",
+              "source_files": [
+                {
+                  "role": "write",
+                  "file": "close-watchlist.1501.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-watchlist.1501.json",
+                  "modified_at": "2026-07-10T15:01:28+08:00",
+                  "size": 2375414,
+                  "sha256": "8b873af3ebf7be26749622f5eaf70595824104b63a427d85f568e5f734bd623a"
+                },
+                {
+                  "role": "write",
+                  "file": "close-snapshot.1501.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-snapshot.1501.json",
+                  "modified_at": "2026-07-10T15:01:28+08:00",
+                  "size": 2771291,
+                  "sha256": "c06f0cf208a81320446f38fabd157514b9cb69e60dc299a965ae7ccb9c8af580"
+                },
+                {
+                  "role": "write",
+                  "file": "close-confirmation.1501.json",
+                  "status": "ok",
+                  "exists": true,
+                  "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501.json",
+                  "modified_at": "2026-07-10T15:01:36+08:00",
+                  "size": 2309,
+                  "sha256": "81c67851f518fc3fe2a87ed1c9fed767d81d45670f0c7a0144ca9845061e2401"
+                }
+              ]
+            }
           ]
         }
       ]
@@ -16182,9 +28843,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
-              "size": 13083952,
-              "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
             },
             {
               "role": "read",
@@ -16649,9 +29310,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
-              "size": 13083952,
-              "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
             },
             {
               "role": "write",
@@ -17257,9 +29918,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
-              "size": 13083952,
-              "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
             },
             {
               "role": "read",
@@ -17358,9 +30019,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
+              "modified_at": "2026-07-10T14:58:44+08:00",
               "size": 122821,
-              "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
             },
             {
               "role": "read",
@@ -17368,9 +30029,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
-              "size": 13083952,
-              "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+              "modified_at": "2026-07-10T14:58:52+08:00",
+              "size": 13132227,
+              "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
             },
             {
               "role": "write",
@@ -17433,9 +30094,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
               "status": "ok",
               "exists": true,
               "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.close.json",
-              "modified_at": "2026-07-10T14:54:11+08:00",
+              "modified_at": "2026-07-10T14:58:44+08:00",
               "size": 122821,
-              "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+              "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
             },
             {
               "role": "read",
@@ -19701,7 +32362,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/outer-gate.json",
         "exists": true,
         "size": 22242,
-        "modified_at": "2026-07-10T14:54:08+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "56c84b8ce538e0e29dac1c34f7a07db6f0f70ad23be348bdff22ac459e127c43"
       }
     },
@@ -19714,7 +32375,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/domestic-gate.json",
         "exists": true,
         "size": 340639,
-        "modified_at": "2026-07-10T14:54:08+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
       }
     },
@@ -19727,7 +32388,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/emotion-trend-gate.json",
         "exists": true,
         "size": 17783,
-        "modified_at": "2026-07-10T14:54:08+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "60304fa34a1dd538345bef825fa893b918bfff6acf3f68de82d8adeb84ba6439"
       }
     },
@@ -19752,9 +32413,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist.json",
         "relative_path": "runs/2026-07-10/raw-watchlist.json",
         "exists": true,
-        "size": 1875396,
-        "modified_at": "2026-07-10T14:50:27+08:00",
-        "sha256": "40e283c36ce6d5689d426282b88aefd4e3375da2285373e9c6c74d5ad2e50fe4"
+        "size": 1875545,
+        "modified_at": "2026-07-10T14:58:42+08:00",
+        "sha256": "7cad7d77ff811726b9a9827b38f704c54e93fb9f812436513edfd3cfbd2d1ed9"
       }
     },
     {
@@ -19765,9 +32426,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-pool.json",
         "relative_path": "runs/2026-07-10/filtered-pool.json",
         "exists": true,
-        "size": 2372360,
-        "modified_at": "2026-07-10T14:50:27+08:00",
-        "sha256": "06152b7a24cf466d937c312c6cbd9e04ffb5d6a20f9c552d109293c1bad6a6ae"
+        "size": 2372477,
+        "modified_at": "2026-07-10T14:58:42+08:00",
+        "sha256": "560227ccb41adc3c201e8f89798709980069abcb93ed5834a9e9fa1544fee806"
       }
     },
     {
@@ -19779,7 +32440,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/candidate-score.json",
         "exists": true,
         "size": 6228888,
-        "modified_at": "2026-07-10T14:50:28+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
       }
     },
@@ -19792,7 +32453,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/technical-check.json",
         "exists": true,
         "size": 2319543,
-        "modified_at": "2026-07-10T14:52:04+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
       }
     },
@@ -19805,8 +32466,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/four-layer-tracking.close.json",
         "exists": true,
         "size": 122821,
-        "modified_at": "2026-07-10T14:54:11+08:00",
-        "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+        "modified_at": "2026-07-10T14:58:44+08:00",
+        "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
       }
     },
     {
@@ -19837,22 +32498,28 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "four-layer-tracking.review.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 21,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.review.json",
-        "relative_path": "four-layer-tracking.review.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/four-layer-tracking.review.json",
+        "exists": true,
+        "size": 116372,
+        "modified_at": "2026-07-10T15:01:43+08:00",
+        "sha256": "16dd4a529e6a74e6766ab020eda61f551c224e03fd723469f45e60359527e673"
       }
     },
     {
       "name": "strategy-benchmark.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
-        "relative_path": "strategy-benchmark.close.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/strategy-benchmark.close.json",
+        "exists": true,
+        "size": 10508,
+        "modified_at": "2026-07-10T14:58:55+08:00",
+        "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
       }
     },
     {
@@ -19883,12 +32550,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "strategy-benchmark.review.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.review.json",
-        "relative_path": "strategy-benchmark.review.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/strategy-benchmark.review.json",
+        "exists": true,
+        "size": 9806,
+        "modified_at": "2026-07-10T15:01:43+08:00",
+        "sha256": "24289a0e8184a6039ff2ad585d8f7104be5a1c4f80721cb5fe0ac618565cf543"
       }
     },
     {
@@ -19942,22 +32612,28 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "overnight-report-brief.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 11,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\overnight-report-brief.close.json",
-        "relative_path": "overnight-report-brief.close.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/overnight-report-brief.close.json",
+        "exists": true,
+        "size": 101647,
+        "modified_at": "2026-07-10T15:08:05+08:00",
+        "sha256": "0a9f31a83382ca4e42b33071ed9e95d78a2b20131af41037c32567395daadecf"
       }
     },
     {
       "name": "multi-role-review.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\multi-role-review.close.json",
-        "relative_path": "multi-role-review.close.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/multi-role-review.close.json",
+        "exists": true,
+        "size": 4349,
+        "modified_at": "2026-07-10T14:58:56+08:00",
+        "sha256": "66f950f860b46e2c833ac3e63e0d5fb6d348a4b24b70887f2df6cc25b43246e3"
       }
     },
     {
@@ -19998,12 +32674,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "report-quality-audit.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\report-quality-audit.close.json",
-        "relative_path": "report-quality-audit.close.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/report-quality-audit.close.json",
+        "exists": true,
+        "size": 1451,
+        "modified_at": "2026-07-10T14:58:56+08:00",
+        "sha256": "0b8c1868ad6e7755c0b90f6e1d7ea61cf24031ce7414bf4e1c197d6a67f8f90a"
       }
     },
     {
@@ -20091,7 +32770,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "relative_path": "runs/2026-07-10/sector-split.json",
         "exists": true,
         "size": 1038340,
-        "modified_at": "2026-07-10T14:54:08+08:00",
+        "modified_at": "2026-07-10T14:58:42+08:00",
         "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
       }
     },
@@ -20149,12 +32828,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "data-acquisition-health.close.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 13,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-acquisition-health.close.json",
-        "relative_path": "data-acquisition-health.close.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/data-acquisition-health.close.json",
+        "exists": true,
+        "size": 10659,
+        "modified_at": "2026-07-10T14:58:55+08:00",
+        "sha256": "c8ffe5349b3837c22349536fadce08f7fb6dc132f1acd9c07b1a722de6dd71c1"
       }
     },
     {
@@ -20195,72 +32877,93 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     },
     {
       "name": "market-data.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 23,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
-        "relative_path": "market-data.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/market-data.json",
+        "exists": true,
+        "size": 34717,
+        "modified_at": "2026-07-10T15:01:35+08:00",
+        "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
       }
     },
     {
       "name": "paper-trade-ledger.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 22,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
-        "relative_path": "paper-trade-ledger.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/paper-trade-ledger.json",
+        "exists": true,
+        "size": 31320,
+        "modified_at": "2026-07-10T15:01:35+08:00",
+        "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
       }
     },
     {
       "name": "paper-trade-summary.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
-        "relative_path": "paper-trade-summary.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/paper-trade-summary.json",
+        "exists": true,
+        "size": 1961,
+        "modified_at": "2026-07-10T15:01:35+08:00",
+        "sha256": "e8a15914d7ea907588727bd9b6b313d394ef1d0c7c02ba5089a39d02efc8202c"
       }
     },
     {
       "name": "close-confirmation.1501.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 2,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501.json",
-        "relative_path": "close-confirmation.1501.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/close-confirmation.1501.json",
+        "exists": true,
+        "size": 2309,
+        "modified_at": "2026-07-10T15:01:36+08:00",
+        "sha256": "81c67851f518fc3fe2a87ed1c9fed767d81d45670f0c7a0144ca9845061e2401"
       }
     },
     {
       "name": "close-watchlist.1501.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 283,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-watchlist.1501.json",
-        "relative_path": "close-watchlist.1501.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/close-watchlist.1501.json",
+        "exists": true,
+        "size": 2375414,
+        "modified_at": "2026-07-10T15:01:28+08:00",
+        "sha256": "8b873af3ebf7be26749622f5eaf70595824104b63a427d85f568e5f734bd623a"
       }
     },
     {
       "name": "close-snapshot.1501.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 283,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-snapshot.1501.json",
-        "relative_path": "close-snapshot.1501.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/close-snapshot.1501.json",
+        "exists": true,
+        "size": 2771291,
+        "modified_at": "2026-07-10T15:01:28+08:00",
+        "sha256": "c06f0cf208a81320446f38fabd157514b9cb69e60dc299a965ae7ccb9c8af580"
       }
     },
     {
       "name": "close-confirmation.1501-run.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501-run.json",
-        "relative_path": "close-confirmation.1501-run.json",
-        "exists": false
+        "relative_path": "runs/2026-07-10/close-confirmation.1501-run.json",
+        "exists": true,
+        "size": 14231,
+        "modified_at": "2026-07-10T15:01:43+08:00",
+        "sha256": "e58f89e5663cf983cbbe7a1d0f94d4c7b6bb4d0360e74f8f0a4fb5e1f045ae4b"
       }
     },
     {
@@ -20271,9 +32974,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\pool-governance.json",
         "relative_path": "runs/2026-07-10/pool-governance.json",
         "exists": true,
-        "size": 180404,
-        "modified_at": "2026-07-10T14:54:08+08:00",
-        "sha256": "cbef73b0c1567ad41ed33308ef593bf06b8e55f61ba341e8cee8af8219dbd8e0"
+        "size": 192042,
+        "modified_at": "2026-07-10T14:58:42+08:00",
+        "sha256": "3a5f9ef3af164bdd6eca586254b016dea2105fd022d6147f96b4cd5f08cfebe8"
       }
     },
     {
@@ -20284,9 +32987,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.json",
         "relative_path": "runs/2026-07-10/workflow-manifest.json",
         "exists": true,
-        "size": 158315,
-        "modified_at": "2026-07-10T11:46:24+08:00",
-        "sha256": "2a4217fa6ec732b32a02014f96142a2f0245629d5d252537192bc43c2b22b43d"
+        "size": 254427,
+        "modified_at": "2026-07-10T14:58:57+08:00",
+        "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
       }
     },
     {
@@ -20297,15 +33000,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-lineage.json",
         "relative_path": "runs/2026-07-10/data-lineage.json",
         "exists": true,
-        "size": 53103,
-        "modified_at": "2026-07-10T11:36:35+08:00",
-        "sha256": "9242714e03b659167aeddefa6530aac90b64cf60e7e49aab4c1ab09704c56270"
+        "size": 55440,
+        "modified_at": "2026-07-10T14:58:56+08:00",
+        "sha256": "09863dfe7f89f63dc3c19c50d8511c4d8219e0578f46e109ef87b0f56338cac2"
       }
     },
     {
       "name": "raw-watchlist/",
       "status": "ok",
-      "records": 3,
+      "records": 4,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist",
         "relative_path": "runs/2026-07-10/raw-watchlist",
@@ -20315,16 +33018,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "missed_schedule": 1,
-      "complete": 2,
+      "complete": 3,
       "not_due": 1
     },
     "items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
-        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-10T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -20353,7 +33055,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missed_count": 1,
+    "missed_count": 0,
     "failed_count": 0,
     "incomplete_count": 0
   },
@@ -20362,11 +33064,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-10",
     "current_date": "2026-07-10",
     "status": "partial",
-    "headline_cn": "当前日期 2026-07-10：2/4 四报已生成，错过自动化 1 项",
-    "report_ready_count": 2,
+    "headline_cn": "当前日期 2026-07-10：3/4 四报已生成",
+    "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 14,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -20374,16 +33076,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "missed_schedule": 1,
-      "complete": 2,
+      "complete": 3,
       "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
-        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-10T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -20412,9 +33113,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [
-      "close"
-    ],
+    "missing_reports": [],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "top_status_summary": {
@@ -20422,11 +33121,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-10",
     "current_date": "2026-07-10",
     "status": "partial",
-    "headline_cn": "当前日期 2026-07-10：2/4 四报已生成，错过自动化 1 项",
-    "report_ready_count": 2,
+    "headline_cn": "当前日期 2026-07-10：3/4 四报已生成",
+    "report_ready_count": 3,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 14,
+      "missing_count": 0,
       "invalid_count": 0,
       "incomplete_count": 0,
       "headwind_count": 1,
@@ -20434,16 +33133,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "empty_count": 0
     },
     "schedule_counts": {
-      "missed_schedule": 1,
-      "complete": 2,
+      "complete": 3,
       "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "missed_schedule",
-        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "status": "complete",
+        "reason_cn": "已按计划生成",
         "scheduled_at": "2026-07-10T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -20472,9 +33170,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
-    "missing_reports": [
-      "close"
-    ],
+    "missing_reports": [],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
   "visibility_audit": {
@@ -20537,9 +33233,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     },
     "selection_logic_unchanged": true,
-    "web_panel_state_exported_at": "2026-07-10T14:54:39+08:00",
-    "web_current_state_exported_at": "2026-07-10T14:54:39+08:00",
-    "web_visible_at": "2026-07-10T14:54:39+08:00",
+    "web_panel_state_exported_at": "2026-07-10T15:08:07+08:00",
+    "web_current_state_exported_at": "2026-07-10T15:08:07+08:00",
+    "web_visible_at": "2026-07-10T15:08:07+08:00",
     "source_tail_lock_manifest_status": "ok",
     "source_close_tail_decision_status": "ok",
     "tail_lock_manifest_file": {
@@ -20554,25 +33250,25 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-tail-decision.1450.json",
       "relative_path": "runs/2026-07-10/close-tail-decision.1450.json",
       "exists": true,
-      "size": 5422,
-      "modified_at": "2026-07-10T14:54:10+08:00",
-      "sha256": "dcb68428648054eb8eb991e200dec324eecaa178eb8e3432e424e35c49b23786"
+      "size": 5533,
+      "modified_at": "2026-07-10T14:58:44+08:00",
+      "sha256": "bf3a7723ff86380180ce0a23f66e5cdeb4dee2286b3565a551b4c39bbfaee5ab"
     },
     "web_panel_state_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\web-panel-state.json",
       "relative_path": "runs/2026-07-10/web-panel-state.json",
       "exists": true,
-      "size": 942113,
-      "modified_at": "2026-07-10T14:54:15+08:00",
-      "sha256": "486d19c03909a2885f004d8be90dab818bff8f0c91e4d6d5d91747d65655795c"
+      "size": 1469051,
+      "modified_at": "2026-07-10T15:01:55+08:00",
+      "sha256": "d288ec16a543c691140e4941a8fae52188709643802ee1f3dcc8c024eecf66e4"
     },
     "web_current_state_js_file": {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\web-panel\\data\\current-state.js",
       "relative_path": "web-panel/data/current-state.js",
       "exists": true,
-      "size": 231496,
-      "modified_at": "2026-07-10T14:54:15+08:00",
-      "sha256": "3dbd6bbcaf7045c224621fe38f8a499763d50e3bbe5dd951f2c3ebd2cd1ebfa6"
+      "size": 320156,
+      "modified_at": "2026-07-10T15:01:55+08:00",
+      "sha256": "e6f2d4ebebe149d32e9c56ec08b3868356231f4b5fc17bee34efa097bb96b543"
     }
   },
   "artifacts": [
@@ -20581,9 +33277,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.json",
       "relative_path": "runs/2026-07-10/close-report.json",
       "exists": true,
-      "size": 13083952,
-      "modified_at": "2026-07-10T14:54:11+08:00",
-      "sha256": "393815c6550dcca623df21d2ebcedebc30f6812bfae66c03a65e8e66c07d0a60"
+      "size": 13132227,
+      "modified_at": "2026-07-10T14:58:52+08:00",
+      "sha256": "698cdc8d97adc3fd1a30d23644eb88275d5c3398bab9a1f577044dc2d14641d3"
     },
     {
       "name": "morning-report.json",
@@ -20612,8 +33308,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "close-report.md",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-report.md",
-      "relative_path": "close-report.md",
-      "exists": false
+      "relative_path": "runs/2026-07-10/close-report.md",
+      "exists": true,
+      "size": 6596,
+      "modified_at": "2026-07-10T14:58:55+08:00",
+      "sha256": "56649bffeb71fbea1a4a47fc448cdfaaba0331a675cc96db16e0874d01c52749"
     },
     {
       "name": "morning-report.md",
@@ -20645,7 +33344,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/outer-gate.json",
       "exists": true,
       "size": 22242,
-      "modified_at": "2026-07-10T14:54:08+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "56c84b8ce538e0e29dac1c34f7a07db6f0f70ad23be348bdff22ac459e127c43"
     },
     {
@@ -20654,7 +33353,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/domestic-gate.json",
       "exists": true,
       "size": 340639,
-      "modified_at": "2026-07-10T14:54:08+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "fd705a70a9ce0ef3a1e8c33bb34cc16f223a292998fb04f139ec02c528dfa22e"
     },
     {
@@ -20663,7 +33362,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/emotion-trend-gate.json",
       "exists": true,
       "size": 17783,
-      "modified_at": "2026-07-10T14:54:08+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "60304fa34a1dd538345bef825fa893b918bfff6acf3f68de82d8adeb84ba6439"
     },
     {
@@ -20680,18 +33379,18 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\raw-watchlist.json",
       "relative_path": "runs/2026-07-10/raw-watchlist.json",
       "exists": true,
-      "size": 1875396,
-      "modified_at": "2026-07-10T14:50:27+08:00",
-      "sha256": "40e283c36ce6d5689d426282b88aefd4e3375da2285373e9c6c74d5ad2e50fe4"
+      "size": 1875545,
+      "modified_at": "2026-07-10T14:58:42+08:00",
+      "sha256": "7cad7d77ff811726b9a9827b38f704c54e93fb9f812436513edfd3cfbd2d1ed9"
     },
     {
       "name": "filtered-pool.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\filtered-pool.json",
       "relative_path": "runs/2026-07-10/filtered-pool.json",
       "exists": true,
-      "size": 2372360,
-      "modified_at": "2026-07-10T14:50:27+08:00",
-      "sha256": "06152b7a24cf466d937c312c6cbd9e04ffb5d6a20f9c552d109293c1bad6a6ae"
+      "size": 2372477,
+      "modified_at": "2026-07-10T14:58:42+08:00",
+      "sha256": "560227ccb41adc3c201e8f89798709980069abcb93ed5834a9e9fa1544fee806"
     },
     {
       "name": "candidate-score.json",
@@ -20699,7 +33398,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/candidate-score.json",
       "exists": true,
       "size": 6228888,
-      "modified_at": "2026-07-10T14:50:28+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "60c456f79873d8299ec669e82b0783c46e7ec2869ce1d7348db43c7d543c4848"
     },
     {
@@ -20708,7 +33407,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/technical-check.json",
       "exists": true,
       "size": 2319543,
-      "modified_at": "2026-07-10T14:52:04+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "c668e197dc4bbc9990c546b2d721c9139daab5573615ccd7b4766c7d69959a72"
     },
     {
@@ -20717,8 +33416,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/four-layer-tracking.close.json",
       "exists": true,
       "size": 122821,
-      "modified_at": "2026-07-10T14:54:11+08:00",
-      "sha256": "29c003460b9ccaa3cef7d33f2daed15681fa625a00f6003ba57726c9e15436ac"
+      "modified_at": "2026-07-10T14:58:44+08:00",
+      "sha256": "b0026992008c949f493f0344deb06134825a8ca2cb39259578d32b7590970740"
     },
     {
       "name": "four-layer-tracking.morning.json",
@@ -20741,14 +33440,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "four-layer-tracking.review.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\four-layer-tracking.review.json",
-      "relative_path": "four-layer-tracking.review.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/four-layer-tracking.review.json",
+      "exists": true,
+      "size": 116372,
+      "modified_at": "2026-07-10T15:01:43+08:00",
+      "sha256": "16dd4a529e6a74e6766ab020eda61f551c224e03fd723469f45e60359527e673"
     },
     {
       "name": "strategy-benchmark.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.close.json",
-      "relative_path": "strategy-benchmark.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/strategy-benchmark.close.json",
+      "exists": true,
+      "size": 10508,
+      "modified_at": "2026-07-10T14:58:55+08:00",
+      "sha256": "889ab062bac25d55827d66c8109e3305d35dde86bf740430946bf4ed00e4f182"
     },
     {
       "name": "strategy-benchmark.morning.json",
@@ -20771,8 +33476,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "strategy-benchmark.review.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\strategy-benchmark.review.json",
-      "relative_path": "strategy-benchmark.review.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/strategy-benchmark.review.json",
+      "exists": true,
+      "size": 9806,
+      "modified_at": "2026-07-10T15:01:43+08:00",
+      "sha256": "24289a0e8184a6039ff2ad585d8f7104be5a1c4f80721cb5fe0ac618565cf543"
     },
     {
       "name": "news-notice-sentiment.close.json",
@@ -20810,14 +33518,20 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "overnight-report-brief.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\overnight-report-brief.close.json",
-      "relative_path": "overnight-report-brief.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/overnight-report-brief.close.json",
+      "exists": true,
+      "size": 101647,
+      "modified_at": "2026-07-10T15:08:05+08:00",
+      "sha256": "0a9f31a83382ca4e42b33071ed9e95d78a2b20131af41037c32567395daadecf"
     },
     {
       "name": "multi-role-review.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\multi-role-review.close.json",
-      "relative_path": "multi-role-review.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/multi-role-review.close.json",
+      "exists": true,
+      "size": 4349,
+      "modified_at": "2026-07-10T14:58:56+08:00",
+      "sha256": "66f950f860b46e2c833ac3e63e0d5fb6d348a4b24b70887f2df6cc25b43246e3"
     },
     {
       "name": "multi-role-review.morning.json",
@@ -20846,8 +33560,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "report-quality-audit.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\report-quality-audit.close.json",
-      "relative_path": "report-quality-audit.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/report-quality-audit.close.json",
+      "exists": true,
+      "size": 1451,
+      "modified_at": "2026-07-10T14:58:56+08:00",
+      "sha256": "0b8c1868ad6e7755c0b90f6e1d7ea61cf24031ce7414bf4e1c197d6a67f8f90a"
     },
     {
       "name": "report-quality-audit.morning.json",
@@ -20903,7 +33620,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "relative_path": "runs/2026-07-10/sector-split.json",
       "exists": true,
       "size": 1038340,
-      "modified_at": "2026-07-10T14:54:08+08:00",
+      "modified_at": "2026-07-10T14:58:42+08:00",
       "sha256": "1970784e25422de10feef35eba5aae2273374de4adbbdac96131646266fe66f1"
     },
     {
@@ -20945,8 +33662,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "data-acquisition-health.close.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-acquisition-health.close.json",
-      "relative_path": "data-acquisition-health.close.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/data-acquisition-health.close.json",
+      "exists": true,
+      "size": 10659,
+      "modified_at": "2026-07-10T14:58:55+08:00",
+      "sha256": "c8ffe5349b3837c22349536fadce08f7fb6dc132f1acd9c07b1a722de6dd71c1"
     },
     {
       "name": "data-acquisition-health.morning.json",
@@ -20975,71 +33695,92 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "market-data.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\market-data.json",
-      "relative_path": "market-data.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/market-data.json",
+      "exists": true,
+      "size": 34717,
+      "modified_at": "2026-07-10T15:01:35+08:00",
+      "sha256": "8c0c558f365f06c83b2c22d1d83aa4d2da9bea0e0f8db8eb413d2ce263dd3b08"
     },
     {
       "name": "paper-trade-ledger.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-ledger.json",
-      "relative_path": "paper-trade-ledger.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/paper-trade-ledger.json",
+      "exists": true,
+      "size": 31320,
+      "modified_at": "2026-07-10T15:01:35+08:00",
+      "sha256": "79175be81419d6d5e9f49138fb451b1ff54d00e784593a9c67062bdfca8e58b4"
     },
     {
       "name": "paper-trade-summary.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\paper-trade-summary.json",
-      "relative_path": "paper-trade-summary.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/paper-trade-summary.json",
+      "exists": true,
+      "size": 1961,
+      "modified_at": "2026-07-10T15:01:35+08:00",
+      "sha256": "e8a15914d7ea907588727bd9b6b313d394ef1d0c7c02ba5089a39d02efc8202c"
     },
     {
       "name": "close-confirmation.1501.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501.json",
-      "relative_path": "close-confirmation.1501.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/close-confirmation.1501.json",
+      "exists": true,
+      "size": 2309,
+      "modified_at": "2026-07-10T15:01:36+08:00",
+      "sha256": "81c67851f518fc3fe2a87ed1c9fed767d81d45670f0c7a0144ca9845061e2401"
     },
     {
       "name": "close-watchlist.1501.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-watchlist.1501.json",
-      "relative_path": "close-watchlist.1501.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/close-watchlist.1501.json",
+      "exists": true,
+      "size": 2375414,
+      "modified_at": "2026-07-10T15:01:28+08:00",
+      "sha256": "8b873af3ebf7be26749622f5eaf70595824104b63a427d85f568e5f734bd623a"
     },
     {
       "name": "close-snapshot.1501.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-snapshot.1501.json",
-      "relative_path": "close-snapshot.1501.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/close-snapshot.1501.json",
+      "exists": true,
+      "size": 2771291,
+      "modified_at": "2026-07-10T15:01:28+08:00",
+      "sha256": "c06f0cf208a81320446f38fabd157514b9cb69e60dc299a965ae7ccb9c8af580"
     },
     {
       "name": "close-confirmation.1501-run.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\close-confirmation.1501-run.json",
-      "relative_path": "close-confirmation.1501-run.json",
-      "exists": false
+      "relative_path": "runs/2026-07-10/close-confirmation.1501-run.json",
+      "exists": true,
+      "size": 14231,
+      "modified_at": "2026-07-10T15:01:43+08:00",
+      "sha256": "e58f89e5663cf983cbbe7a1d0f94d4c7b6bb4d0360e74f8f0a4fb5e1f045ae4b"
     },
     {
       "name": "pool-governance.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\pool-governance.json",
       "relative_path": "runs/2026-07-10/pool-governance.json",
       "exists": true,
-      "size": 180404,
-      "modified_at": "2026-07-10T14:54:08+08:00",
-      "sha256": "cbef73b0c1567ad41ed33308ef593bf06b8e55f61ba341e8cee8af8219dbd8e0"
+      "size": 192042,
+      "modified_at": "2026-07-10T14:58:42+08:00",
+      "sha256": "3a5f9ef3af164bdd6eca586254b016dea2105fd022d6147f96b4cd5f08cfebe8"
     },
     {
       "name": "workflow-manifest.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\workflow-manifest.json",
       "relative_path": "runs/2026-07-10/workflow-manifest.json",
       "exists": true,
-      "size": 158315,
-      "modified_at": "2026-07-10T11:46:24+08:00",
-      "sha256": "2a4217fa6ec732b32a02014f96142a2f0245629d5d252537192bc43c2b22b43d"
+      "size": 254427,
+      "modified_at": "2026-07-10T14:58:57+08:00",
+      "sha256": "bbe528dbc9aeae04ac60197f304d06b91d7013f4c70fffe4350ef533b33bfd77"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-10\\data-lineage.json",
       "relative_path": "runs/2026-07-10/data-lineage.json",
       "exists": true,
-      "size": 53103,
-      "modified_at": "2026-07-10T11:36:35+08:00",
-      "sha256": "9242714e03b659167aeddefa6530aac90b64cf60e7e49aab4c1ab09704c56270"
+      "size": 55440,
+      "modified_at": "2026-07-10T14:58:56+08:00",
+      "sha256": "09863dfe7f89f63dc3c19c50d8511c4d8219e0578f46e109ef87b0f56338cac2"
     }
   ],
   "summary": {
@@ -21048,16 +33789,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "candidates_visible": 5,
     "four_layer_visible": 23,
     "rule_upgrade_pending": 0,
-    "trader_review_status": "missing",
-    "data_sources_ok": 31,
+    "trader_review_status": "ok",
+    "data_sources_ok": 45,
     "warnings": 0,
-    "automation_missed": 1,
+    "automation_missed": 0,
     "automation_failed": 0,
     "automation_incomplete": 0,
-    "lineage_nodes": 38,
+    "lineage_nodes": 41,
     "automation_status_counts": {
-      "complete": 2,
-      "missed_schedule": 1,
+      "complete": 3,
       "not_due": 1
     },
     "panel_payload_mode": "full"
