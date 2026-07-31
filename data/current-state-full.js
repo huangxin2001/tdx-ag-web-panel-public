@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-31T11:35:01+08:00",
+  "generated_at": "2026-07-31T14:54:02+08:00",
   "currentDate": "2026-07-31",
   "current_date": "2026-07-31",
   "panel_payload_mode": "full",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-07-31",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31",
-    "run_id": "20260731-noon-113501315734",
-    "period": "noon",
+    "run_id": "20260731-close-145001391124",
+    "period": "close",
     "status": "failed",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -54,12 +54,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "schedule": {
         "scheduled_time": "14:50",
         "scheduled_at": "2026-07-31T14:50+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
+        "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.close.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -215,42 +215,57 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "key": "outer",
       "label": "外围闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "tailwind",
+      "score": 8,
+      "evidence_count": 16,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "富时中国A50: +0.83%, 2026-07-31 14:35:11, sina_hq, a50_cfd",
+        "道琼斯: +1.19%, 2026-07-31 04:56:45, sina_hq, index_realtime",
+        "纳斯达克综合: +2.78%, 2026-07-31 05:30:00, sina_hq, index_realtime",
+        "标普500: +1.66%, 2026-07-31 04:44:45, sina_hq, index_realtime"
+      ],
+      "reason": "美股三大指数平均 +1.88%；纳斯达克偏强 +2.78%；A50 偏强 +0.83%；A50归因偏顺风: 离岸中国资产风险偏好改善；美股三大指数归因偏顺风: 美股风险偏好改善；VIX归因偏逆风: 波动率上行，避险升温；美元兑离岸人民币归因偏顺风: 人民币压力缓和；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价；白银归因偏顺风: 工业需求/风险偏好主导白银定价；布伦特原油归因偏顺风: 供应恢复/风险缓和压低油价"
     },
     {
       "key": "domestic",
       "label": "国内闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "headwind",
+      "score": 0,
+      "evidence_count": 5,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "policy_signal: 风险集中释放叠加海外回暖，科技赛道或有望迎来修复",
+        "policy_signal: 避险资金集中涌入，创业板ETF期权成交创新高",
+        "industry_news_signal: 日韩股市大反攻！韩国KOSPI指数一度暴涨超15%，SK海力士暴拉28%",
+        "industry_news_signal: 港股异动丨两倍做多三星电子、两倍做多海力士高开近15%"
+      ],
+      "reason": "国内侧负面/监管/公告风险占优"
     },
     {
       "key": "emotion_trend",
       "label": "情绪/趋势闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "headwind",
+      "score": 7,
+      "evidence_count": 11,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "今天是周五，短线接力强度按偏谨慎处理",
+        "指数趋势偏顺风（涨跌幅 2.95%）。",
+        "盘中趋势偏顺风（15分钟涨跌幅 0.38%）。",
+        "成交额信号偏顺风，质量需复核。"
+      ],
+      "reason": "指数趋势偏顺风（涨跌幅 2.95%）；盘中趋势偏顺风（15分钟涨跌幅 0.38%）；成交额信号偏顺风，质量需复核；涨停约 104 只，跌停约 76 只；连板结构偏逆风，最高约 5 连板。"
     }
   ],
   "candidates": [],
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "missing",
-    "period": "noon",
+    "period": "close",
     "records": [],
     "summary": {},
     "tracking_coverage": {}
@@ -526,8 +541,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "close-report.md"
           ],
           "write_files": [],
-          "status": "incomplete",
-          "result_cn": "未到计划时间",
+          "status": "failed",
+          "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
           "missing_or_risk_cn": [
             "计划时间：2026-07-31T14:50+08:00",
             "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -629,42 +644,54 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "data_sources": [
     {
       "name": "outer-gate.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\outer-gate.json",
-        "relative_path": "outer-gate.json",
-        "exists": false
+        "relative_path": "runs/2026-07-31/outer-gate.json",
+        "exists": true,
+        "size": 22628,
+        "modified_at": "2026-07-31T14:35:24+08:00",
+        "sha256": "e70fa0c10bf7b1887c25b63b71ea1110a16d83d4f4530e60214e8a0b3832cecf"
       }
     },
     {
       "name": "domestic-gate.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\domestic-gate.json",
-        "relative_path": "domestic-gate.json",
-        "exists": false
+        "relative_path": "runs/2026-07-31/domestic-gate.json",
+        "exists": true,
+        "size": 405104,
+        "modified_at": "2026-07-31T14:35:43+08:00",
+        "sha256": "6ec4c8d8ce425e0a170b8fdfc052e477e59ebf9a70054be351a6a5e015a130a9"
       }
     },
     {
       "name": "emotion-trend-gate.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\emotion-trend-gate.json",
-        "relative_path": "emotion-trend-gate.json",
-        "exists": false
+        "relative_path": "runs/2026-07-31/emotion-trend-gate.json",
+        "exists": true,
+        "size": 16983,
+        "modified_at": "2026-07-31T14:35:46+08:00",
+        "sha256": "c70258dd5c482654d745b6a610674d5474121e8c0dc58dd1242582a9fdf6174b"
       }
     },
     {
       "name": "gates-protocol.json",
-      "status": "missing",
-      "records": 0,
+      "status": "ok",
+      "records": 1,
       "file": {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\gates-protocol.json",
-        "relative_path": "gates-protocol.json",
-        "exists": false
+        "relative_path": "runs/2026-07-31/gates-protocol.json",
+        "exists": true,
+        "size": 18679,
+        "modified_at": "2026-07-31T14:35:46+08:00",
+        "sha256": "d496e70425c288e7c45918c7e1eb38086130dfa63a2f3a20a158b2f61356e9d4"
       }
     },
     {
@@ -1135,9 +1162,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\workflow-manifest.json",
         "relative_path": "runs/2026-07-31/workflow-manifest.json",
         "exists": true,
-        "size": 30841,
-        "modified_at": "2026-07-31T11:35:01+08:00",
-        "sha256": "0e36a66b99e216dfb529a23be5c64e989110b09faa6f2c7cca6b7fdf960eb448"
+        "size": 54223,
+        "modified_at": "2026-07-31T14:54:01+08:00",
+        "sha256": "383c2f90a78849b58120874a4b62034d8bf2b8e2ff62537edefa117664f741ec"
       }
     },
     {
@@ -1148,9 +1175,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\data-lineage.json",
         "relative_path": "runs/2026-07-31/data-lineage.json",
         "exists": true,
-        "size": 15692,
-        "modified_at": "2026-07-31T11:35:01+08:00",
-        "sha256": "751cd05d0c245a4a20aa10a4ac92335e4f9c5002f2ead513315bbb969cc1f80f"
+        "size": 18948,
+        "modified_at": "2026-07-31T14:54:01+08:00",
+        "sha256": "262a9b81c4c09efde7f4842a60a82ec1b1390d846613031b2baa2652338cdf0a"
       }
     },
     {
@@ -1166,15 +1193,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "not_due": 2,
-      "precondition_failed": 2
+      "precondition_failed": 3,
+      "not_due": 1
     },
     "items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-07-31T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -1204,7 +1231,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     ],
     "missed_count": 0,
-    "failed_count": 2,
+    "failed_count": 3,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -1212,27 +1239,27 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-31",
     "current_date": "2026-07-31",
     "status": "empty",
-    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 2 项",
+    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 3 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 31,
-      "invalid_count": 2,
+      "missing_count": 43,
+      "invalid_count": 3,
       "incomplete_count": 0,
-      "headwind_count": 0,
+      "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 2,
-      "precondition_failed": 2
+      "precondition_failed": 3,
+      "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-07-31T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -1262,6 +1289,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     ],
     "missing_reports": [
+      "close",
       "morning",
       "noon"
     ],
@@ -1272,27 +1300,27 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-31",
     "current_date": "2026-07-31",
     "status": "empty",
-    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 2 项",
+    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 3 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 31,
-      "invalid_count": 2,
+      "missing_count": 43,
+      "invalid_count": 3,
       "incomplete_count": 0,
-      "headwind_count": 0,
+      "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 2,
-      "precondition_failed": 2
+      "precondition_failed": 3,
+      "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-07-31T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -1322,6 +1350,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       }
     ],
     "missing_reports": [
+      "close",
       "morning",
       "noon"
     ],
@@ -1380,26 +1409,38 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     {
       "name": "outer-gate.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\outer-gate.json",
-      "relative_path": "outer-gate.json",
-      "exists": false
+      "relative_path": "runs/2026-07-31/outer-gate.json",
+      "exists": true,
+      "size": 22628,
+      "modified_at": "2026-07-31T14:35:24+08:00",
+      "sha256": "e70fa0c10bf7b1887c25b63b71ea1110a16d83d4f4530e60214e8a0b3832cecf"
     },
     {
       "name": "domestic-gate.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\domestic-gate.json",
-      "relative_path": "domestic-gate.json",
-      "exists": false
+      "relative_path": "runs/2026-07-31/domestic-gate.json",
+      "exists": true,
+      "size": 405104,
+      "modified_at": "2026-07-31T14:35:43+08:00",
+      "sha256": "6ec4c8d8ce425e0a170b8fdfc052e477e59ebf9a70054be351a6a5e015a130a9"
     },
     {
       "name": "emotion-trend-gate.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\emotion-trend-gate.json",
-      "relative_path": "emotion-trend-gate.json",
-      "exists": false
+      "relative_path": "runs/2026-07-31/emotion-trend-gate.json",
+      "exists": true,
+      "size": 16983,
+      "modified_at": "2026-07-31T14:35:46+08:00",
+      "sha256": "c70258dd5c482654d745b6a610674d5474121e8c0dc58dd1242582a9fdf6174b"
     },
     {
       "name": "gates-protocol.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\gates-protocol.json",
-      "relative_path": "gates-protocol.json",
-      "exists": false
+      "relative_path": "runs/2026-07-31/gates-protocol.json",
+      "exists": true,
+      "size": 18679,
+      "modified_at": "2026-07-31T14:35:46+08:00",
+      "sha256": "d496e70425c288e7c45918c7e1eb38086130dfa63a2f3a20a158b2f61356e9d4"
     },
     {
       "name": "raw-watchlist.json",
@@ -1682,18 +1723,18 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\workflow-manifest.json",
       "relative_path": "runs/2026-07-31/workflow-manifest.json",
       "exists": true,
-      "size": 30841,
-      "modified_at": "2026-07-31T11:35:01+08:00",
-      "sha256": "0e36a66b99e216dfb529a23be5c64e989110b09faa6f2c7cca6b7fdf960eb448"
+      "size": 54223,
+      "modified_at": "2026-07-31T14:54:01+08:00",
+      "sha256": "383c2f90a78849b58120874a4b62034d8bf2b8e2ff62537edefa117664f741ec"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\data-lineage.json",
       "relative_path": "runs/2026-07-31/data-lineage.json",
       "exists": true,
-      "size": 15692,
-      "modified_at": "2026-07-31T11:35:01+08:00",
-      "sha256": "751cd05d0c245a4a20aa10a4ac92335e4f9c5002f2ead513315bbb969cc1f80f"
+      "size": 18948,
+      "modified_at": "2026-07-31T14:54:01+08:00",
+      "sha256": "262a9b81c4c09efde7f4842a60a82ec1b1390d846613031b2baa2652338cdf0a"
     }
   ],
   "summary": {
@@ -1703,15 +1744,15 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "four_layer_visible": 0,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 2,
+    "data_sources_ok": 6,
     "warnings": 0,
     "automation_missed": 0,
-    "automation_failed": 2,
+    "automation_failed": 3,
     "automation_incomplete": 0,
-    "lineage_nodes": 36,
+    "lineage_nodes": 39,
     "automation_status_counts": {
-      "not_due": 2,
-      "precondition_failed": 2
+      "not_due": 1,
+      "precondition_failed": 3
     },
     "panel_payload_mode": "full"
   },
