@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE_FULL = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-07-31T14:54:02+08:00",
+  "generated_at": "2026-07-31T20:00:25+08:00",
   "currentDate": "2026-07-31",
   "current_date": "2026-07-31",
   "panel_payload_mode": "full",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "run": {
     "date": "2026-07-31",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31",
-    "run_id": "20260731-close-145001391124",
-    "period": "close",
+    "run_id": "20260731-review-200001352761",
+    "period": "review",
     "status": "failed",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -197,12 +197,12 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "schedule": {
         "scheduled_time": "20:00",
         "scheduled_at": "2026-07-31T20:00+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
+        "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.review.json",
         "precondition_gaps_cn": [
           "复盘缺少成功前三报：收盘报、早报、午报"
@@ -265,7 +265,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "missing",
-    "period": "close",
+    "period": "review",
     "records": [],
     "summary": {},
     "tracking_coverage": {}
@@ -631,8 +631,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
             "review-report.md"
           ],
           "write_files": [],
-          "status": "incomplete",
-          "result_cn": "未到计划时间",
+          "status": "failed",
+          "result_cn": "复盘缺少成功前三报：收盘报、早报、午报",
           "missing_or_risk_cn": [
             "计划时间：2026-07-31T20:00+08:00",
             "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
@@ -1162,9 +1162,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\workflow-manifest.json",
         "relative_path": "runs/2026-07-31/workflow-manifest.json",
         "exists": true,
-        "size": 54223,
-        "modified_at": "2026-07-31T14:54:01+08:00",
-        "sha256": "383c2f90a78849b58120874a4b62034d8bf2b8e2ff62537edefa117664f741ec"
+        "size": 56683,
+        "modified_at": "2026-07-31T20:00:24+08:00",
+        "sha256": "1c3b04bbed086fdb2092ccd94d60879295d228be24a04654f839fe3bce8f1736"
       }
     },
     {
@@ -1175,9 +1175,9 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
         "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\data-lineage.json",
         "relative_path": "runs/2026-07-31/data-lineage.json",
         "exists": true,
-        "size": 18948,
-        "modified_at": "2026-07-31T14:54:01+08:00",
-        "sha256": "262a9b81c4c09efde7f4842a60a82ec1b1390d846613031b2baa2652338cdf0a"
+        "size": 20588,
+        "modified_at": "2026-07-31T20:00:24+08:00",
+        "sha256": "37ffd7c2a49334d3d35b01bc44499ee9b5671543decd4ecbf5b8a8219a753565"
       }
     },
     {
@@ -1193,8 +1193,7 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
   ],
   "automation_schedule": {
     "by_status": {
-      "precondition_failed": 3,
-      "not_due": 1
+      "precondition_failed": 4
     },
     "items": [
       {
@@ -1224,14 +1223,14 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
         "scheduled_at": "2026-07-31T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
     ],
     "missed_count": 0,
-    "failed_count": 3,
+    "failed_count": 4,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -1239,20 +1238,19 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-31",
     "current_date": "2026-07-31",
     "status": "empty",
-    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 3 项",
+    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 4 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 43,
-      "invalid_count": 3,
+      "missing_count": 55,
+      "invalid_count": 4,
       "incomplete_count": 0,
       "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "precondition_failed": 3,
-      "not_due": 1
+      "precondition_failed": 4
     },
     "schedule_items": [
       {
@@ -1282,8 +1280,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
         "scheduled_at": "2026-07-31T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -1291,7 +1289,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "missing_reports": [
       "close",
       "morning",
-      "noon"
+      "noon",
+      "review"
     ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
@@ -1300,20 +1299,19 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "currentDate": "2026-07-31",
     "current_date": "2026-07-31",
     "status": "empty",
-    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 3 项",
+    "headline_cn": "当前日期 2026-07-31：0/4 四报已生成，前置失败 4 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 43,
-      "invalid_count": 3,
+      "missing_count": 55,
+      "invalid_count": 4,
       "incomplete_count": 0,
       "headwind_count": 2,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "precondition_failed": 3,
-      "not_due": 1
+      "precondition_failed": 4
     },
     "schedule_items": [
       {
@@ -1343,8 +1341,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       {
         "period": "review",
         "label": "复盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
         "scheduled_at": "2026-07-31T20:00+08:00",
         "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
       }
@@ -1352,7 +1350,8 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "missing_reports": [
       "close",
       "morning",
-      "noon"
+      "noon",
+      "review"
     ],
     "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
   },
@@ -1723,18 +1722,18 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\workflow-manifest.json",
       "relative_path": "runs/2026-07-31/workflow-manifest.json",
       "exists": true,
-      "size": 54223,
-      "modified_at": "2026-07-31T14:54:01+08:00",
-      "sha256": "383c2f90a78849b58120874a4b62034d8bf2b8e2ff62537edefa117664f741ec"
+      "size": 56683,
+      "modified_at": "2026-07-31T20:00:24+08:00",
+      "sha256": "1c3b04bbed086fdb2092ccd94d60879295d228be24a04654f839fe3bce8f1736"
     },
     {
       "name": "data-lineage.json",
       "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-07-31\\data-lineage.json",
       "relative_path": "runs/2026-07-31/data-lineage.json",
       "exists": true,
-      "size": 18948,
-      "modified_at": "2026-07-31T14:54:01+08:00",
-      "sha256": "262a9b81c4c09efde7f4842a60a82ec1b1390d846613031b2baa2652338cdf0a"
+      "size": 20588,
+      "modified_at": "2026-07-31T20:00:24+08:00",
+      "sha256": "37ffd7c2a49334d3d35b01bc44499ee9b5671543decd4ecbf5b8a8219a753565"
     }
   ],
   "summary": {
@@ -1747,12 +1746,11 @@ window.THREE_PERIOD_PANEL_STATE_FULL = {
     "data_sources_ok": 6,
     "warnings": 0,
     "automation_missed": 0,
-    "automation_failed": 3,
+    "automation_failed": 4,
     "automation_incomplete": 0,
     "lineage_nodes": 39,
     "automation_status_counts": {
-      "not_due": 1,
-      "precondition_failed": 3
+      "precondition_failed": 4
     },
     "panel_payload_mode": "full"
   },
