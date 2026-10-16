@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
   "schema_version": "web-panel-history-detail/v1",
-  "generated_at": "2026-09-10T20:07:37+08:00",
+  "generated_at": "2026-10-16T20:07:32+08:00",
   "project": {
     "name": "tdx-ag-three-period-split"
   },
@@ -27,6 +27,6796 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
     }
   ],
   "dates": {
+    "2026-10-16": {
+      "date": "2026-10-16",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "key": "close",
+          "label": "收盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-10-16T14:50+08:00",
+            "due": true,
+            "automation_status": "missed_schedule",
+            "automation_status_label": "自动化错过",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "key": "morning",
+          "label": "早报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-10-16T09:35+08:00",
+            "due": true,
+            "automation_status": "missed_schedule",
+            "automation_status_label": "自动化错过",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "key": "noon",
+          "label": "午报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-10-16T11:35+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "key": "review",
+          "label": "复盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-10-16T20:00+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      },
+      "panel_state": {
+        "schema_version": "web-panel-state/v1",
+        "generated_at": "2026-10-16T20:00:27+08:00",
+        "currentDate": "2026-10-16",
+        "current_date": "2026-10-16",
+        "run": {
+          "date": "2026-10-16",
+          "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16",
+          "run_id": "20261016-review-200001149292",
+          "period": "review",
+          "status": "failed",
+          "manifest_status": "ok",
+          "lineage_status": "ok"
+        },
+        "reports": [
+          {
+            "key": "close",
+            "label": "收盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "close-report",
+            "date": "2026-10-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-report.json",
+              "relative_path": "close-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-report.md",
+              "relative_path": "close-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "14:50",
+              "scheduled_at": "2026-10-16T14:50+08:00",
+              "due": true,
+              "automation_status": "missed_schedule",
+              "automation_status_label": "自动化错过",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.close.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            }
+          },
+          {
+            "key": "morning",
+            "label": "早报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "morning-report",
+            "date": "2026-10-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\morning-report.json",
+              "relative_path": "morning-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\morning-report.md",
+              "relative_path": "morning-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "09:35",
+              "scheduled_at": "2026-10-16T09:35+08:00",
+              "due": true,
+              "automation_status": "missed_schedule",
+              "automation_status_label": "自动化错过",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.morning.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            }
+          },
+          {
+            "key": "noon",
+            "label": "午报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "noon-report",
+            "date": "2026-10-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\noon-report.json",
+              "relative_path": "noon-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\noon-report.md",
+              "relative_path": "noon-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "11:35",
+              "scheduled_at": "2026-10-16T11:35+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.noon.json",
+              "precondition_gaps_cn": [
+                "当天早报未成功生成，午报不能补选新票。"
+              ],
+              "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            }
+          },
+          {
+            "key": "review",
+            "label": "复盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "review-report",
+            "date": "2026-10-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\review-report.json",
+              "relative_path": "review-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\review-report.md",
+              "relative_path": "review-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "20:00",
+              "scheduled_at": "2026-10-16T20:00+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "manifest_status": "failed",
+              "manifest_json_status": "ok",
+              "manifest_path": "workflow-manifest.review.json",
+              "precondition_gaps_cn": [
+                "复盘缺少成功前三报：收盘报、早报、午报"
+              ],
+              "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          }
+        ],
+        "gates": [
+          {
+            "key": "outer",
+            "label": "外围闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "domestic",
+            "label": "国内闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "emotion_trend",
+            "label": "情绪/趋势闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          }
+        ],
+        "data_sources": [
+          {
+            "name": "outer-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\outer-gate.json",
+              "relative_path": "outer-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "domestic-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\domestic-gate.json",
+              "relative_path": "domestic-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "emotion-trend-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\emotion-trend-gate.json",
+              "relative_path": "emotion-trend-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "gates-protocol.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\gates-protocol.json",
+              "relative_path": "gates-protocol.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\raw-watchlist.json",
+              "relative_path": "raw-watchlist.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "filtered-pool.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\filtered-pool.json",
+              "relative_path": "filtered-pool.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "candidate-score.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\candidate-score.json",
+              "relative_path": "candidate-score.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "technical-check.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\technical-check.json",
+              "relative_path": "technical-check.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\four-layer-tracking.close.json",
+              "relative_path": "four-layer-tracking.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\four-layer-tracking.morning.json",
+              "relative_path": "four-layer-tracking.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\four-layer-tracking.noon.json",
+              "relative_path": "four-layer-tracking.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\four-layer-tracking.review.json",
+              "relative_path": "four-layer-tracking.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\strategy-benchmark.close.json",
+              "relative_path": "strategy-benchmark.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\strategy-benchmark.morning.json",
+              "relative_path": "strategy-benchmark.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\strategy-benchmark.noon.json",
+              "relative_path": "strategy-benchmark.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\strategy-benchmark.review.json",
+              "relative_path": "strategy-benchmark.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\news-notice-sentiment.close.json",
+              "relative_path": "news-notice-sentiment.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\news-notice-sentiment.morning.json",
+              "relative_path": "news-notice-sentiment.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\news-notice-sentiment.noon.json",
+              "relative_path": "news-notice-sentiment.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\news-notice-sentiment.review.json",
+              "relative_path": "news-notice-sentiment.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "overnight-report-brief.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\overnight-report-brief.close.json",
+              "relative_path": "overnight-report-brief.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\multi-role-review.close.json",
+              "relative_path": "multi-role-review.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\multi-role-review.morning.json",
+              "relative_path": "multi-role-review.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\multi-role-review.noon.json",
+              "relative_path": "multi-role-review.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\multi-role-review.review.json",
+              "relative_path": "multi-role-review.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\report-quality-audit.close.json",
+              "relative_path": "report-quality-audit.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\report-quality-audit.morning.json",
+              "relative_path": "report-quality-audit.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\report-quality-audit.noon.json",
+              "relative_path": "report-quality-audit.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\report-quality-audit.review.json",
+              "relative_path": "report-quality-audit.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\second-review.longxia.review.json",
+              "relative_path": "second-review.longxia.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\second-review.longxia.review.md",
+              "relative_path": "second-review.longxia.review.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\longxia-second-review-validation.json",
+              "relative_path": "longxia-second-review-validation.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\longxia-second-review-validation.md",
+              "relative_path": "longxia-second-review-validation.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "sector-split.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\sector-split.json",
+              "relative_path": "sector-split.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-inputs.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\execution-inputs.json",
+              "relative_path": "execution-inputs.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-decision.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\execution-decision.json",
+              "relative_path": "execution-decision.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-precheck.prefetch.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\morning-precheck.prefetch.json",
+              "relative_path": "morning-precheck.prefetch.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-risk-precheck.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\morning-risk-precheck.json",
+              "relative_path": "morning-risk-precheck.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\data-acquisition-health.close.json",
+              "relative_path": "data-acquisition-health.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\data-acquisition-health.morning.json",
+              "relative_path": "data-acquisition-health.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\data-acquisition-health.noon.json",
+              "relative_path": "data-acquisition-health.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\data-acquisition-health.review.json",
+              "relative_path": "data-acquisition-health.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "market-data.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\market-data.json",
+              "relative_path": "market-data.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-ledger.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-summary.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-confirmation.1501.json",
+              "relative_path": "close-confirmation.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-watchlist.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-watchlist.1501.json",
+              "relative_path": "close-watchlist.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-snapshot.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-snapshot.1501.json",
+              "relative_path": "close-snapshot.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501-run.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\close-confirmation.1501-run.json",
+              "relative_path": "close-confirmation.1501-run.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "pool-governance.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\pool-governance.json",
+              "relative_path": "pool-governance.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "workflow-manifest.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\workflow-manifest.json",
+              "relative_path": "runs/2026-10-16/workflow-manifest.json",
+              "exists": true,
+              "size": 9597,
+              "modified_at": "2026-10-16T20:00:26+08:00",
+              "sha256": "39ad40ef55341022deaf5ac25824f1f738f5c2afa8d4b128453545027746dd1a"
+            }
+          },
+          {
+            "name": "data-lineage.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\data-lineage.json",
+              "relative_path": "runs/2026-10-16/data-lineage.json",
+              "exists": true,
+              "size": 19931,
+              "modified_at": "2026-10-16T20:00:26+08:00",
+              "sha256": "7380d7602b4b87e3368d26e671cbcc4a40a0c4ce0c6ee5aedb6ac155e8672de7"
+            }
+          },
+          {
+            "name": "raw-watchlist/",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\raw-watchlist",
+              "relative_path": "raw-watchlist/",
+              "exists": false
+            }
+          }
+        ],
+        "automation_schedule": {
+          "by_status": {
+            "missed_schedule": 2,
+            "precondition_failed": 2
+          },
+          "items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missed_count": 2,
+          "failed_count": 2,
+          "incomplete_count": 0
+        },
+        "candidates": [],
+        "candidate_source_context": {},
+        "four_layer_tracking": {
+          "status": "missing",
+          "period": "review",
+          "records": [],
+          "summary": {},
+          "tracking_coverage": {}
+        },
+        "four_layer_tracking_by_period": {
+          "close": {
+            "status": "missing",
+            "period": "close",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "morning": {
+            "status": "missing",
+            "period": "morning",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "noon": {
+            "status": "missing",
+            "period": "noon",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "review": {
+            "status": "missing",
+            "period": "review",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          }
+        },
+        "overnight_report_brief": {
+          "status": "missing",
+          "covered_count": 0,
+          "failed_count": 0,
+          "query_symbol_count": 0,
+          "source_groups": [],
+          "source_run_date": "2026-10-16",
+          "records": [],
+          "final_ranking": {
+            "items": [],
+            "summary": ""
+          },
+          "file": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\overnight-report-brief.close.json",
+            "relative_path": "overnight-report-brief.close.json",
+            "exists": false
+          }
+        },
+        "paper_trade": {
+          "status": "missing",
+          "ledger_status": "missing",
+          "summary_status": "missing",
+          "artifact_scope": "canonical",
+          "date": "2026-10-16",
+          "source_close_date": "",
+          "ledger_matches_selected_close": true,
+          "summary": {},
+          "formal_targets": [],
+          "records": [],
+          "formal_records": [],
+          "records_count": 0,
+          "files": {
+            "ledger": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            },
+            "summary": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          }
+        },
+        "rule_upgrade_proposals": {
+          "status": "missing",
+          "summary": {
+            "proposal_count": 0,
+            "pending_count": 0,
+            "approval_required": false
+          },
+          "proposals": [],
+          "files": {
+            "proposals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\rule-upgrade-proposals.json",
+              "relative_path": "rule-upgrade-proposals.json",
+              "exists": false
+            },
+            "approvals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\rule-upgrade-approvals.json",
+              "relative_path": "rule-upgrade-approvals.json",
+              "exists": false
+            },
+            "learning_validation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\learning-validation.json",
+              "relative_path": "learning-validation.json",
+              "exists": false
+            },
+            "implementation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-16\\rule-upgrade-implementation.json",
+              "relative_path": "rule-upgrade-implementation.json",
+              "exists": false
+            }
+          }
+        },
+        "workflow_chain": {
+          "close": {
+            "label": "收盘报",
+            "nodes": [
+              {
+                "id": "close_schedule_status",
+                "order": 1,
+                "title_cn": "收盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.close.json",
+                  "close-report.json",
+                  "close-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-16T14:50+08:00",
+                  "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+                ]
+              }
+            ]
+          },
+          "morning": {
+            "label": "早报",
+            "nodes": [
+              {
+                "id": "morning_schedule_status",
+                "order": 1,
+                "title_cn": "早报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.morning.json",
+                  "morning-report.json",
+                  "morning-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-16T09:35+08:00",
+                  "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+                ]
+              }
+            ]
+          },
+          "noon": {
+            "label": "午报",
+            "nodes": [
+              {
+                "id": "noon_schedule_status",
+                "order": 1,
+                "title_cn": "午报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.noon.json",
+                  "noon-report.json",
+                  "noon-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "当天早报未成功生成，午报不能补选新票。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-16T11:35+08:00",
+                  "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+                ]
+              }
+            ]
+          },
+          "review": {
+            "label": "复盘报",
+            "nodes": [
+              {
+                "id": "review_schedule_status",
+                "order": 1,
+                "title_cn": "复盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.review.json",
+                  "review-report.json",
+                  "review-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-16T20:00+08:00",
+                  "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+                ]
+              }
+            ]
+          }
+        },
+        "visibility_audit": {},
+        "web_panel_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-10-16",
+          "current_date": "2026-10-16",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-10-16：0/4 四报已生成，错过自动化 2 项，前置失败 2 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 64,
+            "invalid_count": 2,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "missed_schedule": 2,
+            "precondition_failed": 2
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "top_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-10-16",
+          "current_date": "2026-10-16",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-10-16：0/4 四报已生成，错过自动化 2 项，前置失败 2 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 64,
+            "invalid_count": 2,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "missed_schedule": 2,
+            "precondition_failed": 2
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "summary": {
+          "reports_present": 0,
+          "json_invalid": 0,
+          "candidates_visible": 0,
+          "four_layer_visible": 0,
+          "rule_upgrade_pending": 0,
+          "trader_review_status": "missing",
+          "data_sources_ok": 2,
+          "warnings": 0,
+          "automation_missed": 2,
+          "automation_failed": 2,
+          "automation_incomplete": 0,
+          "lineage_nodes": 39,
+          "automation_status_counts": {
+            "missed_schedule": 2,
+            "precondition_failed": 2
+          }
+        },
+        "warnings": []
+      }
+    },
+    "2026-10-09": {
+      "date": "2026-10-09",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "key": "close",
+          "label": "收盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-10-09T14:50+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "key": "morning",
+          "label": "早报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-10-09T09:35+08:00",
+            "due": true,
+            "automation_status": "missed_schedule",
+            "automation_status_label": "自动化错过",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "key": "noon",
+          "label": "午报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-10-09T11:35+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "key": "review",
+          "label": "复盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-10-09T20:00+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      },
+      "panel_state": {
+        "schema_version": "web-panel-state/v1",
+        "generated_at": "2026-10-16T20:00:27+08:00",
+        "currentDate": "2026-10-09",
+        "current_date": "2026-10-09",
+        "run": {
+          "date": "2026-10-09",
+          "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09",
+          "run_id": "20261009-close-145001102989",
+          "period": "close",
+          "status": "failed",
+          "manifest_status": "ok",
+          "lineage_status": "ok"
+        },
+        "reports": [
+          {
+            "key": "close",
+            "label": "收盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "close-report",
+            "date": "2026-10-09",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-report.json",
+              "relative_path": "close-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-report.md",
+              "relative_path": "close-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "14:50",
+              "scheduled_at": "2026-10-09T14:50+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "failed",
+              "manifest_json_status": "ok",
+              "manifest_path": "workflow-manifest.close.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            }
+          },
+          {
+            "key": "morning",
+            "label": "早报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "morning-report",
+            "date": "2026-10-09",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\morning-report.json",
+              "relative_path": "morning-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\morning-report.md",
+              "relative_path": "morning-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "09:35",
+              "scheduled_at": "2026-10-09T09:35+08:00",
+              "due": true,
+              "automation_status": "missed_schedule",
+              "automation_status_label": "自动化错过",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.morning.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            }
+          },
+          {
+            "key": "noon",
+            "label": "午报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "noon-report",
+            "date": "2026-10-09",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\noon-report.json",
+              "relative_path": "noon-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\noon-report.md",
+              "relative_path": "noon-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "11:35",
+              "scheduled_at": "2026-10-09T11:35+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.noon.json",
+              "precondition_gaps_cn": [
+                "当天早报未成功生成，午报不能补选新票。"
+              ],
+              "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            }
+          },
+          {
+            "key": "review",
+            "label": "复盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "review-report",
+            "date": "2026-10-09",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\review-report.json",
+              "relative_path": "review-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\review-report.md",
+              "relative_path": "review-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "20:00",
+              "scheduled_at": "2026-10-09T20:00+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.review.json",
+              "precondition_gaps_cn": [
+                "复盘缺少成功前三报：收盘报、早报、午报"
+              ],
+              "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          }
+        ],
+        "gates": [
+          {
+            "key": "outer",
+            "label": "外围闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "domestic",
+            "label": "国内闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "emotion_trend",
+            "label": "情绪/趋势闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          }
+        ],
+        "data_sources": [
+          {
+            "name": "outer-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\outer-gate.json",
+              "relative_path": "outer-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "domestic-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\domestic-gate.json",
+              "relative_path": "domestic-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "emotion-trend-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\emotion-trend-gate.json",
+              "relative_path": "emotion-trend-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "gates-protocol.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\gates-protocol.json",
+              "relative_path": "gates-protocol.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\raw-watchlist.json",
+              "relative_path": "raw-watchlist.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "filtered-pool.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\filtered-pool.json",
+              "relative_path": "filtered-pool.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "candidate-score.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\candidate-score.json",
+              "relative_path": "candidate-score.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "technical-check.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\technical-check.json",
+              "relative_path": "technical-check.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\four-layer-tracking.close.json",
+              "relative_path": "four-layer-tracking.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\four-layer-tracking.morning.json",
+              "relative_path": "four-layer-tracking.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\four-layer-tracking.noon.json",
+              "relative_path": "four-layer-tracking.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\four-layer-tracking.review.json",
+              "relative_path": "four-layer-tracking.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\strategy-benchmark.close.json",
+              "relative_path": "strategy-benchmark.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\strategy-benchmark.morning.json",
+              "relative_path": "strategy-benchmark.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\strategy-benchmark.noon.json",
+              "relative_path": "strategy-benchmark.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\strategy-benchmark.review.json",
+              "relative_path": "strategy-benchmark.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\news-notice-sentiment.close.json",
+              "relative_path": "news-notice-sentiment.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\news-notice-sentiment.morning.json",
+              "relative_path": "news-notice-sentiment.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\news-notice-sentiment.noon.json",
+              "relative_path": "news-notice-sentiment.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\news-notice-sentiment.review.json",
+              "relative_path": "news-notice-sentiment.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "overnight-report-brief.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\overnight-report-brief.close.json",
+              "relative_path": "overnight-report-brief.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\multi-role-review.close.json",
+              "relative_path": "multi-role-review.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\multi-role-review.morning.json",
+              "relative_path": "multi-role-review.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\multi-role-review.noon.json",
+              "relative_path": "multi-role-review.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\multi-role-review.review.json",
+              "relative_path": "multi-role-review.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\report-quality-audit.close.json",
+              "relative_path": "report-quality-audit.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\report-quality-audit.morning.json",
+              "relative_path": "report-quality-audit.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\report-quality-audit.noon.json",
+              "relative_path": "report-quality-audit.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\report-quality-audit.review.json",
+              "relative_path": "report-quality-audit.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\second-review.longxia.review.json",
+              "relative_path": "second-review.longxia.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\second-review.longxia.review.md",
+              "relative_path": "second-review.longxia.review.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\longxia-second-review-validation.json",
+              "relative_path": "longxia-second-review-validation.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\longxia-second-review-validation.md",
+              "relative_path": "longxia-second-review-validation.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "sector-split.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\sector-split.json",
+              "relative_path": "sector-split.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-inputs.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\execution-inputs.json",
+              "relative_path": "execution-inputs.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-decision.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\execution-decision.json",
+              "relative_path": "execution-decision.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-precheck.prefetch.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\morning-precheck.prefetch.json",
+              "relative_path": "morning-precheck.prefetch.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-risk-precheck.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\morning-risk-precheck.json",
+              "relative_path": "morning-risk-precheck.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\data-acquisition-health.close.json",
+              "relative_path": "data-acquisition-health.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\data-acquisition-health.morning.json",
+              "relative_path": "data-acquisition-health.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\data-acquisition-health.noon.json",
+              "relative_path": "data-acquisition-health.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\data-acquisition-health.review.json",
+              "relative_path": "data-acquisition-health.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "market-data.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\market-data.json",
+              "relative_path": "market-data.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-ledger.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-summary.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-confirmation.1501.json",
+              "relative_path": "close-confirmation.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-watchlist.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-watchlist.1501.json",
+              "relative_path": "close-watchlist.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-snapshot.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-snapshot.1501.json",
+              "relative_path": "close-snapshot.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501-run.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\close-confirmation.1501-run.json",
+              "relative_path": "close-confirmation.1501-run.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "pool-governance.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\pool-governance.json",
+              "relative_path": "pool-governance.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "workflow-manifest.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\workflow-manifest.json",
+              "relative_path": "runs/2026-10-09/workflow-manifest.json",
+              "exists": true,
+              "size": 10097,
+              "modified_at": "2026-10-09T14:54:01+08:00",
+              "sha256": "573f1a5d703d9324bd847a87221065b8944766ae96b59c5b5cfe83a159f3d474"
+            }
+          },
+          {
+            "name": "data-lineage.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\data-lineage.json",
+              "relative_path": "runs/2026-10-09/data-lineage.json",
+              "exists": true,
+              "size": 18279,
+              "modified_at": "2026-10-09T14:54:01+08:00",
+              "sha256": "4915e526bab382012748b648725acc7d8062aa08b1767b6e90477b42ef69fc45"
+            }
+          },
+          {
+            "name": "raw-watchlist/",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\raw-watchlist",
+              "relative_path": "raw-watchlist/",
+              "exists": false
+            }
+          }
+        ],
+        "automation_schedule": {
+          "by_status": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-09T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-09T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missed_count": 1,
+          "failed_count": 3,
+          "incomplete_count": 0
+        },
+        "candidates": [],
+        "candidate_source_context": {},
+        "four_layer_tracking": {
+          "status": "missing",
+          "period": "close",
+          "records": [],
+          "summary": {},
+          "tracking_coverage": {}
+        },
+        "four_layer_tracking_by_period": {
+          "close": {
+            "status": "missing",
+            "period": "close",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "morning": {
+            "status": "missing",
+            "period": "morning",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "noon": {
+            "status": "missing",
+            "period": "noon",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "review": {
+            "status": "missing",
+            "period": "review",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          }
+        },
+        "overnight_report_brief": {
+          "status": "missing",
+          "covered_count": 0,
+          "failed_count": 0,
+          "query_symbol_count": 0,
+          "source_groups": [],
+          "source_run_date": "2026-10-09",
+          "records": [],
+          "final_ranking": {
+            "items": [],
+            "summary": ""
+          },
+          "file": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\overnight-report-brief.close.json",
+            "relative_path": "overnight-report-brief.close.json",
+            "exists": false
+          }
+        },
+        "paper_trade": {
+          "status": "missing",
+          "ledger_status": "missing",
+          "summary_status": "missing",
+          "artifact_scope": "canonical",
+          "date": "2026-10-09",
+          "source_close_date": "",
+          "ledger_matches_selected_close": true,
+          "summary": {},
+          "formal_targets": [],
+          "records": [],
+          "formal_records": [],
+          "records_count": 0,
+          "files": {
+            "ledger": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            },
+            "summary": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          }
+        },
+        "rule_upgrade_proposals": {
+          "status": "missing",
+          "summary": {
+            "proposal_count": 0,
+            "pending_count": 0,
+            "approval_required": false
+          },
+          "proposals": [],
+          "files": {
+            "proposals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\rule-upgrade-proposals.json",
+              "relative_path": "rule-upgrade-proposals.json",
+              "exists": false
+            },
+            "approvals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\rule-upgrade-approvals.json",
+              "relative_path": "rule-upgrade-approvals.json",
+              "exists": false
+            },
+            "learning_validation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\learning-validation.json",
+              "relative_path": "learning-validation.json",
+              "exists": false
+            },
+            "implementation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-09\\rule-upgrade-implementation.json",
+              "relative_path": "rule-upgrade-implementation.json",
+              "exists": false
+            }
+          }
+        },
+        "workflow_chain": {
+          "close": {
+            "label": "收盘报",
+            "nodes": [
+              {
+                "id": "close_schedule_status",
+                "order": 1,
+                "title_cn": "收盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.close.json",
+                  "close-report.json",
+                  "close-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-09T14:50+08:00",
+                  "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+                ]
+              }
+            ]
+          },
+          "morning": {
+            "label": "早报",
+            "nodes": [
+              {
+                "id": "morning_schedule_status",
+                "order": 1,
+                "title_cn": "早报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.morning.json",
+                  "morning-report.json",
+                  "morning-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-09T09:35+08:00",
+                  "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+                ]
+              }
+            ]
+          },
+          "noon": {
+            "label": "午报",
+            "nodes": [
+              {
+                "id": "noon_schedule_status",
+                "order": 1,
+                "title_cn": "午报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.noon.json",
+                  "noon-report.json",
+                  "noon-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "当天早报未成功生成，午报不能补选新票。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-09T11:35+08:00",
+                  "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+                ]
+              }
+            ]
+          },
+          "review": {
+            "label": "复盘报",
+            "nodes": [
+              {
+                "id": "review_schedule_status",
+                "order": 1,
+                "title_cn": "复盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.review.json",
+                  "review-report.json",
+                  "review-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-10-09T20:00+08:00",
+                  "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+                ]
+              }
+            ]
+          }
+        },
+        "visibility_audit": {},
+        "web_panel_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-10-09",
+          "current_date": "2026-10-09",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-10-09：0/4 四报已生成，错过自动化 1 项，前置失败 3 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 63,
+            "invalid_count": 3,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-09T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-09T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "top_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-10-09",
+          "current_date": "2026-10-09",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-10-09：0/4 四报已生成，错过自动化 1 项，前置失败 3 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 63,
+            "invalid_count": 3,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-10-09T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-10-09T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-10-09T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "summary": {
+          "reports_present": 0,
+          "json_invalid": 0,
+          "candidates_visible": 0,
+          "four_layer_visible": 0,
+          "rule_upgrade_pending": 0,
+          "trader_review_status": "missing",
+          "data_sources_ok": 2,
+          "warnings": 0,
+          "automation_missed": 1,
+          "automation_failed": 3,
+          "automation_incomplete": 0,
+          "lineage_nodes": 39,
+          "automation_status_counts": {
+            "missed_schedule": 1,
+            "precondition_failed": 3
+          }
+        },
+        "warnings": []
+      }
+    },
+    "2026-09-16": {
+      "date": "2026-09-16",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "key": "close",
+          "label": "收盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-09-16T14:50+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "failed",
+            "manifest_json_status": "ok",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "key": "morning",
+          "label": "早报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-09-16T09:35+08:00",
+            "due": true,
+            "automation_status": "missed_schedule",
+            "automation_status_label": "自动化错过",
+            "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "key": "noon",
+          "label": "午报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-09-16T11:35+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "key": "review",
+          "label": "复盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-09-16T20:00+08:00",
+            "due": true,
+            "automation_status": "precondition_failed",
+            "automation_status_label": "前置条件失败",
+            "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      },
+      "panel_state": {
+        "schema_version": "web-panel-state/v1",
+        "generated_at": "2026-10-16T20:00:27+08:00",
+        "currentDate": "2026-09-16",
+        "current_date": "2026-09-16",
+        "run": {
+          "date": "2026-09-16",
+          "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16",
+          "run_id": "20260916-close-145001043522",
+          "period": "close",
+          "status": "failed",
+          "manifest_status": "ok",
+          "lineage_status": "ok"
+        },
+        "reports": [
+          {
+            "key": "close",
+            "label": "收盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "close-report",
+            "date": "2026-09-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-report.json",
+              "relative_path": "close-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-report.md",
+              "relative_path": "close-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "14:50",
+              "scheduled_at": "2026-09-16T14:50+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "failed",
+              "manifest_json_status": "ok",
+              "manifest_path": "workflow-manifest.close.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            }
+          },
+          {
+            "key": "morning",
+            "label": "早报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "morning-report",
+            "date": "2026-09-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\morning-report.json",
+              "relative_path": "morning-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\morning-report.md",
+              "relative_path": "morning-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "09:35",
+              "scheduled_at": "2026-09-16T09:35+08:00",
+              "due": true,
+              "automation_status": "missed_schedule",
+              "automation_status_label": "自动化错过",
+              "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.morning.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            }
+          },
+          {
+            "key": "noon",
+            "label": "午报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "noon-report",
+            "date": "2026-09-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\noon-report.json",
+              "relative_path": "noon-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\noon-report.md",
+              "relative_path": "noon-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "11:35",
+              "scheduled_at": "2026-09-16T11:35+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "当天早报未成功生成，午报不能补选新票。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.noon.json",
+              "precondition_gaps_cn": [
+                "当天早报未成功生成，午报不能补选新票。"
+              ],
+              "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            }
+          },
+          {
+            "key": "review",
+            "label": "复盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "review-report",
+            "date": "2026-09-16",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\review-report.json",
+              "relative_path": "review-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\review-report.md",
+              "relative_path": "review-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "20:00",
+              "scheduled_at": "2026-09-16T20:00+08:00",
+              "due": true,
+              "automation_status": "precondition_failed",
+              "automation_status_label": "前置条件失败",
+              "diagnosis_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.review.json",
+              "precondition_gaps_cn": [
+                "复盘缺少成功前三报：收盘报、早报、午报"
+              ],
+              "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          }
+        ],
+        "gates": [
+          {
+            "key": "outer",
+            "label": "外围闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "domestic",
+            "label": "国内闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "emotion_trend",
+            "label": "情绪/趋势闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          }
+        ],
+        "data_sources": [
+          {
+            "name": "outer-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\outer-gate.json",
+              "relative_path": "outer-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "domestic-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\domestic-gate.json",
+              "relative_path": "domestic-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "emotion-trend-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\emotion-trend-gate.json",
+              "relative_path": "emotion-trend-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "gates-protocol.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\gates-protocol.json",
+              "relative_path": "gates-protocol.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\raw-watchlist.json",
+              "relative_path": "raw-watchlist.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "filtered-pool.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\filtered-pool.json",
+              "relative_path": "filtered-pool.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "candidate-score.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\candidate-score.json",
+              "relative_path": "candidate-score.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "technical-check.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\technical-check.json",
+              "relative_path": "technical-check.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\four-layer-tracking.close.json",
+              "relative_path": "four-layer-tracking.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\four-layer-tracking.morning.json",
+              "relative_path": "four-layer-tracking.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\four-layer-tracking.noon.json",
+              "relative_path": "four-layer-tracking.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\four-layer-tracking.review.json",
+              "relative_path": "four-layer-tracking.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\strategy-benchmark.close.json",
+              "relative_path": "strategy-benchmark.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\strategy-benchmark.morning.json",
+              "relative_path": "strategy-benchmark.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\strategy-benchmark.noon.json",
+              "relative_path": "strategy-benchmark.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\strategy-benchmark.review.json",
+              "relative_path": "strategy-benchmark.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\news-notice-sentiment.close.json",
+              "relative_path": "news-notice-sentiment.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\news-notice-sentiment.morning.json",
+              "relative_path": "news-notice-sentiment.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\news-notice-sentiment.noon.json",
+              "relative_path": "news-notice-sentiment.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\news-notice-sentiment.review.json",
+              "relative_path": "news-notice-sentiment.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "overnight-report-brief.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\overnight-report-brief.close.json",
+              "relative_path": "overnight-report-brief.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\multi-role-review.close.json",
+              "relative_path": "multi-role-review.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\multi-role-review.morning.json",
+              "relative_path": "multi-role-review.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\multi-role-review.noon.json",
+              "relative_path": "multi-role-review.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\multi-role-review.review.json",
+              "relative_path": "multi-role-review.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\report-quality-audit.close.json",
+              "relative_path": "report-quality-audit.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\report-quality-audit.morning.json",
+              "relative_path": "report-quality-audit.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\report-quality-audit.noon.json",
+              "relative_path": "report-quality-audit.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\report-quality-audit.review.json",
+              "relative_path": "report-quality-audit.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\second-review.longxia.review.json",
+              "relative_path": "second-review.longxia.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\second-review.longxia.review.md",
+              "relative_path": "second-review.longxia.review.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\longxia-second-review-validation.json",
+              "relative_path": "longxia-second-review-validation.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\longxia-second-review-validation.md",
+              "relative_path": "longxia-second-review-validation.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "sector-split.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\sector-split.json",
+              "relative_path": "sector-split.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-inputs.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\execution-inputs.json",
+              "relative_path": "execution-inputs.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-decision.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\execution-decision.json",
+              "relative_path": "execution-decision.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-precheck.prefetch.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\morning-precheck.prefetch.json",
+              "relative_path": "morning-precheck.prefetch.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-risk-precheck.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\morning-risk-precheck.json",
+              "relative_path": "morning-risk-precheck.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\data-acquisition-health.close.json",
+              "relative_path": "data-acquisition-health.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\data-acquisition-health.morning.json",
+              "relative_path": "data-acquisition-health.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\data-acquisition-health.noon.json",
+              "relative_path": "data-acquisition-health.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\data-acquisition-health.review.json",
+              "relative_path": "data-acquisition-health.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "market-data.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\market-data.json",
+              "relative_path": "market-data.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-ledger.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-summary.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-confirmation.1501.json",
+              "relative_path": "close-confirmation.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-watchlist.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-watchlist.1501.json",
+              "relative_path": "close-watchlist.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-snapshot.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-snapshot.1501.json",
+              "relative_path": "close-snapshot.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501-run.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\close-confirmation.1501-run.json",
+              "relative_path": "close-confirmation.1501-run.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "pool-governance.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\pool-governance.json",
+              "relative_path": "pool-governance.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "workflow-manifest.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\workflow-manifest.json",
+              "relative_path": "runs/2026-09-16/workflow-manifest.json",
+              "exists": true,
+              "size": 10097,
+              "modified_at": "2026-09-16T14:54:01+08:00",
+              "sha256": "a2fea55da2657fac0a09cbf0ee96d447cf60a0e07ddf0ecf96cfb5e47b4357db"
+            }
+          },
+          {
+            "name": "data-lineage.json",
+            "status": "ok",
+            "records": 1,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\data-lineage.json",
+              "relative_path": "runs/2026-09-16/data-lineage.json",
+              "exists": true,
+              "size": 18279,
+              "modified_at": "2026-09-16T14:54:01+08:00",
+              "sha256": "4d1c0299fce0d03695419e4627203ea3c6f612f730446688ee61a77165bae9b4"
+            }
+          },
+          {
+            "name": "raw-watchlist/",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\raw-watchlist",
+              "relative_path": "raw-watchlist/",
+              "exists": false
+            }
+          }
+        ],
+        "automation_schedule": {
+          "by_status": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-09-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-09-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missed_count": 1,
+          "failed_count": 3,
+          "incomplete_count": 0
+        },
+        "candidates": [],
+        "candidate_source_context": {},
+        "four_layer_tracking": {
+          "status": "missing",
+          "period": "close",
+          "records": [],
+          "summary": {},
+          "tracking_coverage": {}
+        },
+        "four_layer_tracking_by_period": {
+          "close": {
+            "status": "missing",
+            "period": "close",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "morning": {
+            "status": "missing",
+            "period": "morning",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "noon": {
+            "status": "missing",
+            "period": "noon",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "review": {
+            "status": "missing",
+            "period": "review",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          }
+        },
+        "overnight_report_brief": {
+          "status": "missing",
+          "covered_count": 0,
+          "failed_count": 0,
+          "query_symbol_count": 0,
+          "source_groups": [],
+          "source_run_date": "2026-09-16",
+          "records": [],
+          "final_ranking": {
+            "items": [],
+            "summary": ""
+          },
+          "file": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\overnight-report-brief.close.json",
+            "relative_path": "overnight-report-brief.close.json",
+            "exists": false
+          }
+        },
+        "paper_trade": {
+          "status": "missing",
+          "ledger_status": "missing",
+          "summary_status": "missing",
+          "artifact_scope": "canonical",
+          "date": "2026-09-16",
+          "source_close_date": "",
+          "ledger_matches_selected_close": true,
+          "summary": {},
+          "formal_targets": [],
+          "records": [],
+          "formal_records": [],
+          "records_count": 0,
+          "files": {
+            "ledger": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            },
+            "summary": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          }
+        },
+        "rule_upgrade_proposals": {
+          "status": "missing",
+          "summary": {
+            "proposal_count": 0,
+            "pending_count": 0,
+            "approval_required": false
+          },
+          "proposals": [],
+          "files": {
+            "proposals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\rule-upgrade-proposals.json",
+              "relative_path": "rule-upgrade-proposals.json",
+              "exists": false
+            },
+            "approvals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\rule-upgrade-approvals.json",
+              "relative_path": "rule-upgrade-approvals.json",
+              "exists": false
+            },
+            "learning_validation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\learning-validation.json",
+              "relative_path": "learning-validation.json",
+              "exists": false
+            },
+            "implementation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-16\\rule-upgrade-implementation.json",
+              "relative_path": "rule-upgrade-implementation.json",
+              "exists": false
+            }
+          }
+        },
+        "workflow_chain": {
+          "close": {
+            "label": "收盘报",
+            "nodes": [
+              {
+                "id": "close_schedule_status",
+                "order": 1,
+                "title_cn": "收盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.close.json",
+                  "close-report.json",
+                  "close-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-16T14:50+08:00",
+                  "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+                ]
+              }
+            ]
+          },
+          "morning": {
+            "label": "早报",
+            "nodes": [
+              {
+                "id": "morning_schedule_status",
+                "order": 1,
+                "title_cn": "早报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.morning.json",
+                  "morning-report.json",
+                  "morning-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-16T09:35+08:00",
+                  "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+                ]
+              }
+            ]
+          },
+          "noon": {
+            "label": "午报",
+            "nodes": [
+              {
+                "id": "noon_schedule_status",
+                "order": 1,
+                "title_cn": "午报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.noon.json",
+                  "noon-report.json",
+                  "noon-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "当天早报未成功生成，午报不能补选新票。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-16T11:35+08:00",
+                  "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+                ]
+              }
+            ]
+          },
+          "review": {
+            "label": "复盘报",
+            "nodes": [
+              {
+                "id": "review_schedule_status",
+                "order": 1,
+                "title_cn": "复盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.review.json",
+                  "review-report.json",
+                  "review-report.md"
+                ],
+                "write_files": [],
+                "status": "failed",
+                "result_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-16T20:00+08:00",
+                  "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+                ]
+              }
+            ]
+          }
+        },
+        "visibility_audit": {},
+        "web_panel_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-16",
+          "current_date": "2026-09-16",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-16：0/4 四报已生成，错过自动化 1 项，前置失败 3 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 63,
+            "invalid_count": 3,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-09-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-09-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "top_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-16",
+          "current_date": "2026-09-16",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-16：0/4 四报已生成，错过自动化 1 项，前置失败 3 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 63,
+            "invalid_count": 3,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "precondition_failed": 3,
+            "missed_schedule": 1
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "precondition_failed",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "missed_schedule",
+              "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+              "scheduled_at": "2026-09-16T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "precondition_failed",
+              "reason_cn": "当天早报未成功生成，午报不能补选新票。",
+              "scheduled_at": "2026-09-16T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "precondition_failed",
+              "reason_cn": "复盘缺少成功前三报：收盘报、早报、午报",
+              "scheduled_at": "2026-09-16T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "summary": {
+          "reports_present": 0,
+          "json_invalid": 0,
+          "candidates_visible": 0,
+          "four_layer_visible": 0,
+          "rule_upgrade_pending": 0,
+          "trader_review_status": "missing",
+          "data_sources_ok": 2,
+          "warnings": 0,
+          "automation_missed": 1,
+          "automation_failed": 3,
+          "automation_incomplete": 0,
+          "lineage_nodes": 39,
+          "automation_status_counts": {
+            "missed_schedule": 1,
+            "precondition_failed": 3
+          }
+        },
+        "warnings": []
+      }
+    },
+    "2026-09-15": {
+      "date": "2026-09-15",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "key": "close",
+          "label": "收盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-09-15T14:50+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "key": "morning",
+          "label": "早报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-09-15T09:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "key": "noon",
+          "label": "午报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-09-15T11:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "key": "review",
+          "label": "复盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-09-15T20:00+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      },
+      "panel_state": {
+        "schema_version": "web-panel-state/v1",
+        "generated_at": "2026-10-16T20:00:27+08:00",
+        "currentDate": "2026-09-15",
+        "current_date": "2026-09-15",
+        "run": {
+          "date": "2026-09-15",
+          "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15",
+          "run_id": "",
+          "period": "",
+          "status": "missing",
+          "manifest_status": "missing",
+          "lineage_status": "missing"
+        },
+        "reports": [
+          {
+            "key": "close",
+            "label": "收盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "close-report",
+            "date": "2026-09-15",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-report.json",
+              "relative_path": "close-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-report.md",
+              "relative_path": "close-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "14:50",
+              "scheduled_at": "2026-09-15T14:50+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.close.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            }
+          },
+          {
+            "key": "morning",
+            "label": "早报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "morning-report",
+            "date": "2026-09-15",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\morning-report.json",
+              "relative_path": "morning-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\morning-report.md",
+              "relative_path": "morning-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "09:35",
+              "scheduled_at": "2026-09-15T09:35+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.morning.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            }
+          },
+          {
+            "key": "noon",
+            "label": "午报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "noon-report",
+            "date": "2026-09-15",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\noon-report.json",
+              "relative_path": "noon-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\noon-report.md",
+              "relative_path": "noon-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "11:35",
+              "scheduled_at": "2026-09-15T11:35+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.noon.json",
+              "precondition_gaps_cn": [
+                "当天早报未成功生成，午报不能补选新票。"
+              ],
+              "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            }
+          },
+          {
+            "key": "review",
+            "label": "复盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "review-report",
+            "date": "2026-09-15",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\review-report.json",
+              "relative_path": "review-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\review-report.md",
+              "relative_path": "review-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "20:00",
+              "scheduled_at": "2026-09-15T20:00+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.review.json",
+              "precondition_gaps_cn": [
+                "复盘缺少成功前三报：收盘报、早报、午报"
+              ],
+              "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          }
+        ],
+        "gates": [
+          {
+            "key": "outer",
+            "label": "外围闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "domestic",
+            "label": "国内闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "emotion_trend",
+            "label": "情绪/趋势闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          }
+        ],
+        "data_sources": [
+          {
+            "name": "outer-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\outer-gate.json",
+              "relative_path": "outer-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "domestic-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\domestic-gate.json",
+              "relative_path": "domestic-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "emotion-trend-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\emotion-trend-gate.json",
+              "relative_path": "emotion-trend-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "gates-protocol.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\gates-protocol.json",
+              "relative_path": "gates-protocol.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\raw-watchlist.json",
+              "relative_path": "raw-watchlist.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "filtered-pool.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\filtered-pool.json",
+              "relative_path": "filtered-pool.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "candidate-score.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\candidate-score.json",
+              "relative_path": "candidate-score.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "technical-check.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\technical-check.json",
+              "relative_path": "technical-check.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\four-layer-tracking.close.json",
+              "relative_path": "four-layer-tracking.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\four-layer-tracking.morning.json",
+              "relative_path": "four-layer-tracking.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\four-layer-tracking.noon.json",
+              "relative_path": "four-layer-tracking.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\four-layer-tracking.review.json",
+              "relative_path": "four-layer-tracking.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\strategy-benchmark.close.json",
+              "relative_path": "strategy-benchmark.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\strategy-benchmark.morning.json",
+              "relative_path": "strategy-benchmark.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\strategy-benchmark.noon.json",
+              "relative_path": "strategy-benchmark.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\strategy-benchmark.review.json",
+              "relative_path": "strategy-benchmark.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\news-notice-sentiment.close.json",
+              "relative_path": "news-notice-sentiment.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\news-notice-sentiment.morning.json",
+              "relative_path": "news-notice-sentiment.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\news-notice-sentiment.noon.json",
+              "relative_path": "news-notice-sentiment.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\news-notice-sentiment.review.json",
+              "relative_path": "news-notice-sentiment.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "overnight-report-brief.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\overnight-report-brief.close.json",
+              "relative_path": "overnight-report-brief.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\multi-role-review.close.json",
+              "relative_path": "multi-role-review.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\multi-role-review.morning.json",
+              "relative_path": "multi-role-review.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\multi-role-review.noon.json",
+              "relative_path": "multi-role-review.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\multi-role-review.review.json",
+              "relative_path": "multi-role-review.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\report-quality-audit.close.json",
+              "relative_path": "report-quality-audit.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\report-quality-audit.morning.json",
+              "relative_path": "report-quality-audit.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\report-quality-audit.noon.json",
+              "relative_path": "report-quality-audit.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\report-quality-audit.review.json",
+              "relative_path": "report-quality-audit.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\second-review.longxia.review.json",
+              "relative_path": "second-review.longxia.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\second-review.longxia.review.md",
+              "relative_path": "second-review.longxia.review.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\longxia-second-review-validation.json",
+              "relative_path": "longxia-second-review-validation.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\longxia-second-review-validation.md",
+              "relative_path": "longxia-second-review-validation.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "sector-split.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\sector-split.json",
+              "relative_path": "sector-split.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-inputs.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\execution-inputs.json",
+              "relative_path": "execution-inputs.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-decision.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\execution-decision.json",
+              "relative_path": "execution-decision.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-precheck.prefetch.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\morning-precheck.prefetch.json",
+              "relative_path": "morning-precheck.prefetch.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-risk-precheck.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\morning-risk-precheck.json",
+              "relative_path": "morning-risk-precheck.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\data-acquisition-health.close.json",
+              "relative_path": "data-acquisition-health.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\data-acquisition-health.morning.json",
+              "relative_path": "data-acquisition-health.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\data-acquisition-health.noon.json",
+              "relative_path": "data-acquisition-health.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\data-acquisition-health.review.json",
+              "relative_path": "data-acquisition-health.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "market-data.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\market-data.json",
+              "relative_path": "market-data.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-ledger.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-summary.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-confirmation.1501.json",
+              "relative_path": "close-confirmation.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-watchlist.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-watchlist.1501.json",
+              "relative_path": "close-watchlist.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-snapshot.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-snapshot.1501.json",
+              "relative_path": "close-snapshot.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501-run.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\close-confirmation.1501-run.json",
+              "relative_path": "close-confirmation.1501-run.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "pool-governance.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\pool-governance.json",
+              "relative_path": "pool-governance.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "workflow-manifest.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\workflow-manifest.json",
+              "relative_path": "workflow-manifest.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-lineage.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\data-lineage.json",
+              "relative_path": "data-lineage.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist/",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\raw-watchlist",
+              "relative_path": "raw-watchlist/",
+              "exists": false
+            }
+          }
+        ],
+        "automation_schedule": {
+          "by_status": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missed_count": 4,
+          "failed_count": 0,
+          "incomplete_count": 0
+        },
+        "candidates": [],
+        "candidate_source_context": {},
+        "four_layer_tracking": {
+          "status": "missing",
+          "period": "",
+          "records": [],
+          "summary": {},
+          "tracking_coverage": {}
+        },
+        "four_layer_tracking_by_period": {
+          "close": {
+            "status": "missing",
+            "period": "close",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "morning": {
+            "status": "missing",
+            "period": "morning",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "noon": {
+            "status": "missing",
+            "period": "noon",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "review": {
+            "status": "missing",
+            "period": "review",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          }
+        },
+        "overnight_report_brief": {
+          "status": "missing",
+          "covered_count": 0,
+          "failed_count": 0,
+          "query_symbol_count": 0,
+          "source_groups": [],
+          "source_run_date": "2026-09-15",
+          "records": [],
+          "final_ranking": {
+            "items": [],
+            "summary": ""
+          },
+          "file": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\overnight-report-brief.close.json",
+            "relative_path": "overnight-report-brief.close.json",
+            "exists": false
+          }
+        },
+        "paper_trade": {
+          "status": "missing",
+          "ledger_status": "missing",
+          "summary_status": "missing",
+          "artifact_scope": "canonical",
+          "date": "2026-09-15",
+          "source_close_date": "",
+          "ledger_matches_selected_close": true,
+          "summary": {},
+          "formal_targets": [],
+          "records": [],
+          "formal_records": [],
+          "records_count": 0,
+          "files": {
+            "ledger": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            },
+            "summary": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          }
+        },
+        "rule_upgrade_proposals": {
+          "status": "missing",
+          "summary": {
+            "proposal_count": 0,
+            "pending_count": 0,
+            "approval_required": false
+          },
+          "proposals": [],
+          "files": {
+            "proposals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\rule-upgrade-proposals.json",
+              "relative_path": "rule-upgrade-proposals.json",
+              "exists": false
+            },
+            "approvals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\rule-upgrade-approvals.json",
+              "relative_path": "rule-upgrade-approvals.json",
+              "exists": false
+            },
+            "learning_validation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\learning-validation.json",
+              "relative_path": "learning-validation.json",
+              "exists": false
+            },
+            "implementation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-15\\rule-upgrade-implementation.json",
+              "relative_path": "rule-upgrade-implementation.json",
+              "exists": false
+            }
+          }
+        },
+        "workflow_chain": {
+          "close": {
+            "label": "收盘报",
+            "nodes": [
+              {
+                "id": "close_schedule_status",
+                "order": 1,
+                "title_cn": "收盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.close.json",
+                  "close-report.json",
+                  "close-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-15T14:50+08:00",
+                  "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+                ]
+              }
+            ]
+          },
+          "morning": {
+            "label": "早报",
+            "nodes": [
+              {
+                "id": "morning_schedule_status",
+                "order": 1,
+                "title_cn": "早报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.morning.json",
+                  "morning-report.json",
+                  "morning-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-15T09:35+08:00",
+                  "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+                ]
+              }
+            ]
+          },
+          "noon": {
+            "label": "午报",
+            "nodes": [
+              {
+                "id": "noon_schedule_status",
+                "order": 1,
+                "title_cn": "午报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.noon.json",
+                  "noon-report.json",
+                  "noon-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-15T11:35+08:00",
+                  "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+                ]
+              }
+            ]
+          },
+          "review": {
+            "label": "复盘报",
+            "nodes": [
+              {
+                "id": "review_schedule_status",
+                "order": 1,
+                "title_cn": "复盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.review.json",
+                  "review-report.json",
+                  "review-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-15T20:00+08:00",
+                  "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+                ]
+              }
+            ]
+          }
+        },
+        "visibility_audit": {},
+        "web_panel_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-15",
+          "current_date": "2026-09-15",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-15：0/4 四报已生成，错过自动化 4 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 68,
+            "invalid_count": 0,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "top_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-15",
+          "current_date": "2026-09-15",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-15：0/4 四报已生成，错过自动化 4 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 68,
+            "invalid_count": 0,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-15T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "summary": {
+          "reports_present": 0,
+          "json_invalid": 0,
+          "candidates_visible": 0,
+          "four_layer_visible": 0,
+          "rule_upgrade_pending": 0,
+          "trader_review_status": "missing",
+          "data_sources_ok": 0,
+          "warnings": 0,
+          "automation_missed": 4,
+          "automation_failed": 0,
+          "automation_incomplete": 0,
+          "lineage_nodes": 0,
+          "automation_status_counts": {
+            "device_offline_or_codex_not_running": 4
+          }
+        },
+        "warnings": []
+      }
+    },
+    "2026-09-14": {
+      "date": "2026-09-14",
+      "status": "empty",
+      "reports_present": 0,
+      "reports_missing": [
+        "close",
+        "morning",
+        "noon",
+        "review"
+      ],
+      "reports": {
+        "close": {
+          "key": "close",
+          "label": "收盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "close-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "14:50",
+            "scheduled_at": "2026-09-14T14:50+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.close.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+          }
+        },
+        "morning": {
+          "key": "morning",
+          "label": "早报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "morning-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "09:35",
+            "scheduled_at": "2026-09-14T09:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.morning.json",
+            "precondition_gaps_cn": [],
+            "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+          }
+        },
+        "noon": {
+          "key": "noon",
+          "label": "午报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "noon-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "11:35",
+            "scheduled_at": "2026-09-14T11:35+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.noon.json",
+            "precondition_gaps_cn": [
+              "当天早报未成功生成，午报不能补选新票。"
+            ],
+            "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+          }
+        },
+        "review": {
+          "key": "review",
+          "label": "复盘报",
+          "exists": false,
+          "status": "missing",
+          "markdown_status": "missing",
+          "text": "",
+          "char_count": 0,
+          "redacted": false,
+          "redaction_count": 0,
+          "mojibake_cleaned": false,
+          "mojibake_cleaned_count": 0,
+          "legacy_sections_removed": 0,
+          "legacy_wording_normalized": false,
+          "legacy_wording_normalized_count": 0,
+          "truncated": false,
+          "json_status": "missing",
+          "file": {
+            "relative_path": "review-report.md",
+            "exists": false
+          },
+          "schedule": {
+            "scheduled_time": "20:00",
+            "scheduled_at": "2026-09-14T20:00+08:00",
+            "due": true,
+            "automation_status": "device_offline_or_codex_not_running",
+            "automation_status_label": "设备离线或 Codex 未运行",
+            "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+            "manifest_status": "missing",
+            "manifest_json_status": "missing",
+            "manifest_path": "workflow-manifest.review.json",
+            "precondition_gaps_cn": [
+              "复盘缺少成功前三报：收盘报、早报、午报"
+            ],
+            "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+          }
+        }
+      },
+      "panel_state": {
+        "schema_version": "web-panel-state/v1",
+        "generated_at": "2026-10-16T20:00:28+08:00",
+        "currentDate": "2026-09-14",
+        "current_date": "2026-09-14",
+        "run": {
+          "date": "2026-09-14",
+          "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14",
+          "run_id": "",
+          "period": "",
+          "status": "missing",
+          "manifest_status": "missing",
+          "lineage_status": "missing"
+        },
+        "reports": [
+          {
+            "key": "close",
+            "label": "收盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "close-report",
+            "date": "2026-09-14",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-report.json",
+              "relative_path": "close-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-report.md",
+              "relative_path": "close-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "14:50",
+              "scheduled_at": "2026-09-14T14:50+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.close.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            }
+          },
+          {
+            "key": "morning",
+            "label": "早报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "morning-report",
+            "date": "2026-09-14",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\morning-report.json",
+              "relative_path": "morning-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\morning-report.md",
+              "relative_path": "morning-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "09:35",
+              "scheduled_at": "2026-09-14T09:35+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.morning.json",
+              "precondition_gaps_cn": [],
+              "recovery_boundary_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            }
+          },
+          {
+            "key": "noon",
+            "label": "午报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "noon-report",
+            "date": "2026-09-14",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\noon-report.json",
+              "relative_path": "noon-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\noon-report.md",
+              "relative_path": "noon-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "11:35",
+              "scheduled_at": "2026-09-14T11:35+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.noon.json",
+              "precondition_gaps_cn": [
+                "当天早报未成功生成，午报不能补选新票。"
+              ],
+              "recovery_boundary_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            }
+          },
+          {
+            "key": "review",
+            "label": "复盘报",
+            "json_status": "missing",
+            "markdown_status": "missing",
+            "report_type": "review-report",
+            "date": "2026-09-14",
+            "generated_at": "",
+            "recommendation_mode": "",
+            "candidate_count": 0,
+            "candidate_universe_count": 0,
+            "scan_pool_count": 0,
+            "handoff_count": 0,
+            "buy_top3_count": 0,
+            "json_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\review-report.json",
+              "relative_path": "review-report.json",
+              "exists": false
+            },
+            "markdown_file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\review-report.md",
+              "relative_path": "review-report.md",
+              "exists": false
+            },
+            "markdown": {
+              "exists": false,
+              "status": "missing",
+              "headings": [],
+              "full_text": "",
+              "excerpt": "",
+              "focus_text": "",
+              "char_count": 0
+            },
+            "schedule": {
+              "scheduled_time": "20:00",
+              "scheduled_at": "2026-09-14T20:00+08:00",
+              "due": true,
+              "automation_status": "device_offline_or_codex_not_running",
+              "automation_status_label": "设备离线或 Codex 未运行",
+              "diagnosis_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "manifest_status": "missing",
+              "manifest_json_status": "missing",
+              "manifest_path": "workflow-manifest.review.json",
+              "precondition_gaps_cn": [
+                "复盘缺少成功前三报：收盘报、早报、午报"
+              ],
+              "recovery_boundary_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          }
+        ],
+        "gates": [
+          {
+            "key": "outer",
+            "label": "外围闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "domestic",
+            "label": "国内闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          },
+          {
+            "key": "emotion_trend",
+            "label": "情绪/趋势闸门",
+            "status": "missing",
+            "score": "",
+            "evidence_count": 0,
+            "missing_count": 0,
+            "limitations_count": 0,
+            "top_evidence": [],
+            "reason": ""
+          }
+        ],
+        "data_sources": [
+          {
+            "name": "outer-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\outer-gate.json",
+              "relative_path": "outer-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "domestic-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\domestic-gate.json",
+              "relative_path": "domestic-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "emotion-trend-gate.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\emotion-trend-gate.json",
+              "relative_path": "emotion-trend-gate.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "gates-protocol.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\gates-protocol.json",
+              "relative_path": "gates-protocol.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\raw-watchlist.json",
+              "relative_path": "raw-watchlist.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "filtered-pool.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\filtered-pool.json",
+              "relative_path": "filtered-pool.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "candidate-score.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\candidate-score.json",
+              "relative_path": "candidate-score.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "technical-check.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\technical-check.json",
+              "relative_path": "technical-check.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\four-layer-tracking.close.json",
+              "relative_path": "four-layer-tracking.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\four-layer-tracking.morning.json",
+              "relative_path": "four-layer-tracking.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\four-layer-tracking.noon.json",
+              "relative_path": "four-layer-tracking.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "four-layer-tracking.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\four-layer-tracking.review.json",
+              "relative_path": "four-layer-tracking.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\strategy-benchmark.close.json",
+              "relative_path": "strategy-benchmark.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\strategy-benchmark.morning.json",
+              "relative_path": "strategy-benchmark.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\strategy-benchmark.noon.json",
+              "relative_path": "strategy-benchmark.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "strategy-benchmark.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\strategy-benchmark.review.json",
+              "relative_path": "strategy-benchmark.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\news-notice-sentiment.close.json",
+              "relative_path": "news-notice-sentiment.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\news-notice-sentiment.morning.json",
+              "relative_path": "news-notice-sentiment.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\news-notice-sentiment.noon.json",
+              "relative_path": "news-notice-sentiment.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "news-notice-sentiment.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\news-notice-sentiment.review.json",
+              "relative_path": "news-notice-sentiment.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "overnight-report-brief.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\overnight-report-brief.close.json",
+              "relative_path": "overnight-report-brief.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\multi-role-review.close.json",
+              "relative_path": "multi-role-review.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\multi-role-review.morning.json",
+              "relative_path": "multi-role-review.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\multi-role-review.noon.json",
+              "relative_path": "multi-role-review.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "multi-role-review.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\multi-role-review.review.json",
+              "relative_path": "multi-role-review.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\report-quality-audit.close.json",
+              "relative_path": "report-quality-audit.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\report-quality-audit.morning.json",
+              "relative_path": "report-quality-audit.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\report-quality-audit.noon.json",
+              "relative_path": "report-quality-audit.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "report-quality-audit.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\report-quality-audit.review.json",
+              "relative_path": "report-quality-audit.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\second-review.longxia.review.json",
+              "relative_path": "second-review.longxia.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "second-review.longxia.review.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\second-review.longxia.review.md",
+              "relative_path": "second-review.longxia.review.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\longxia-second-review-validation.json",
+              "relative_path": "longxia-second-review-validation.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "longxia-second-review-validation.md",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\longxia-second-review-validation.md",
+              "relative_path": "longxia-second-review-validation.md",
+              "exists": false
+            }
+          },
+          {
+            "name": "sector-split.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\sector-split.json",
+              "relative_path": "sector-split.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-inputs.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\execution-inputs.json",
+              "relative_path": "execution-inputs.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "execution-decision.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\execution-decision.json",
+              "relative_path": "execution-decision.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-precheck.prefetch.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\morning-precheck.prefetch.json",
+              "relative_path": "morning-precheck.prefetch.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "morning-risk-precheck.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\morning-risk-precheck.json",
+              "relative_path": "morning-risk-precheck.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.close.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\data-acquisition-health.close.json",
+              "relative_path": "data-acquisition-health.close.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.morning.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\data-acquisition-health.morning.json",
+              "relative_path": "data-acquisition-health.morning.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.noon.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\data-acquisition-health.noon.json",
+              "relative_path": "data-acquisition-health.noon.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-acquisition-health.review.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\data-acquisition-health.review.json",
+              "relative_path": "data-acquisition-health.review.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "market-data.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\market-data.json",
+              "relative_path": "market-data.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-ledger.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "paper-trade-summary.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-confirmation.1501.json",
+              "relative_path": "close-confirmation.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-watchlist.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-watchlist.1501.json",
+              "relative_path": "close-watchlist.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-snapshot.1501.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-snapshot.1501.json",
+              "relative_path": "close-snapshot.1501.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "close-confirmation.1501-run.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\close-confirmation.1501-run.json",
+              "relative_path": "close-confirmation.1501-run.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "pool-governance.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\pool-governance.json",
+              "relative_path": "pool-governance.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "workflow-manifest.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\workflow-manifest.json",
+              "relative_path": "workflow-manifest.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "data-lineage.json",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\data-lineage.json",
+              "relative_path": "data-lineage.json",
+              "exists": false
+            }
+          },
+          {
+            "name": "raw-watchlist/",
+            "status": "missing",
+            "records": 0,
+            "file": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\raw-watchlist",
+              "relative_path": "raw-watchlist/",
+              "exists": false
+            }
+          }
+        ],
+        "automation_schedule": {
+          "by_status": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missed_count": 4,
+          "failed_count": 0,
+          "incomplete_count": 0
+        },
+        "candidates": [],
+        "candidate_source_context": {},
+        "four_layer_tracking": {
+          "status": "missing",
+          "period": "",
+          "records": [],
+          "summary": {},
+          "tracking_coverage": {}
+        },
+        "four_layer_tracking_by_period": {
+          "close": {
+            "status": "missing",
+            "period": "close",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "morning": {
+            "status": "missing",
+            "period": "morning",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "noon": {
+            "status": "missing",
+            "period": "noon",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          },
+          "review": {
+            "status": "missing",
+            "period": "review",
+            "records": [],
+            "summary": {},
+            "tracking_coverage": {}
+          }
+        },
+        "overnight_report_brief": {
+          "status": "missing",
+          "covered_count": 0,
+          "failed_count": 0,
+          "query_symbol_count": 0,
+          "source_groups": [],
+          "source_run_date": "2026-09-14",
+          "records": [],
+          "final_ranking": {
+            "items": [],
+            "summary": ""
+          },
+          "file": {
+            "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\overnight-report-brief.close.json",
+            "relative_path": "overnight-report-brief.close.json",
+            "exists": false
+          }
+        },
+        "paper_trade": {
+          "status": "missing",
+          "ledger_status": "missing",
+          "summary_status": "missing",
+          "artifact_scope": "canonical",
+          "date": "2026-09-14",
+          "source_close_date": "",
+          "ledger_matches_selected_close": true,
+          "summary": {},
+          "formal_targets": [],
+          "records": [],
+          "formal_records": [],
+          "records_count": 0,
+          "files": {
+            "ledger": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\paper-trade-ledger.json",
+              "relative_path": "paper-trade-ledger.json",
+              "exists": false
+            },
+            "summary": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\paper-trade-summary.json",
+              "relative_path": "paper-trade-summary.json",
+              "exists": false
+            }
+          }
+        },
+        "rule_upgrade_proposals": {
+          "status": "missing",
+          "summary": {
+            "proposal_count": 0,
+            "pending_count": 0,
+            "approval_required": false
+          },
+          "proposals": [],
+          "files": {
+            "proposals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\rule-upgrade-proposals.json",
+              "relative_path": "rule-upgrade-proposals.json",
+              "exists": false
+            },
+            "approvals": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\rule-upgrade-approvals.json",
+              "relative_path": "rule-upgrade-approvals.json",
+              "exists": false
+            },
+            "learning_validation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\learning-validation.json",
+              "relative_path": "learning-validation.json",
+              "exists": false
+            },
+            "implementation": {
+              "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-09-14\\rule-upgrade-implementation.json",
+              "relative_path": "rule-upgrade-implementation.json",
+              "exists": false
+            }
+          }
+        },
+        "workflow_chain": {
+          "close": {
+            "label": "收盘报",
+            "nodes": [
+              {
+                "id": "close_schedule_status",
+                "order": 1,
+                "title_cn": "收盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.close.json",
+                  "close-report.json",
+                  "close-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-14T14:50+08:00",
+                  "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+                ]
+              }
+            ]
+          },
+          "morning": {
+            "label": "早报",
+            "nodes": [
+              {
+                "id": "morning_schedule_status",
+                "order": 1,
+                "title_cn": "早报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.morning.json",
+                  "morning-report.json",
+                  "morning-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-14T09:35+08:00",
+                  "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+                ]
+              }
+            ]
+          },
+          "noon": {
+            "label": "午报",
+            "nodes": [
+              {
+                "id": "noon_schedule_status",
+                "order": 1,
+                "title_cn": "午报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.noon.json",
+                  "noon-report.json",
+                  "noon-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-14T11:35+08:00",
+                  "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+                ]
+              }
+            ]
+          },
+          "review": {
+            "label": "复盘报",
+            "nodes": [
+              {
+                "id": "review_schedule_status",
+                "order": 1,
+                "title_cn": "复盘报自动化状态",
+                "plain_goal_cn": "区分自动化错过、流程失败和数据源失败，避免把没运行误判成行情没取到。",
+                "data_used_cn": [
+                  "workflow-manifest",
+                  "正式报告 JSON",
+                  "正式报告 Markdown",
+                  "当前时间"
+                ],
+                "source_method_cn": "由 Web 导出层读取运行记录和正式报告文件状态；只做展示和审计，不补跑、不选股。",
+                "read_files": [
+                  "workflow-manifest.review.json",
+                  "review-report.json",
+                  "review-report.md"
+                ],
+                "write_files": [],
+                "status": "missed",
+                "result_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+                "missing_or_risk_cn": [
+                  "计划时间：2026-09-14T20:00+08:00",
+                  "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+                ]
+              }
+            ]
+          }
+        },
+        "visibility_audit": {},
+        "web_panel_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-14",
+          "current_date": "2026-09-14",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-14：0/4 四报已生成，错过自动化 4 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 68,
+            "invalid_count": 0,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "top_status_summary": {
+          "schema_version": "web-panel-status-summary/v1",
+          "currentDate": "2026-09-14",
+          "current_date": "2026-09-14",
+          "status": "empty",
+          "headline_cn": "当前日期 2026-09-14：0/4 四报已生成，错过自动化 4 项",
+          "report_ready_count": 0,
+          "report_total_count": 4,
+          "status_detail_counts": {
+            "missing_count": 68,
+            "invalid_count": 0,
+            "incomplete_count": 0,
+            "headwind_count": 0,
+            "stale_count": 0,
+            "empty_count": 0
+          },
+          "schedule_counts": {
+            "device_offline_or_codex_not_running": 4
+          },
+          "schedule_items": [
+            {
+              "period": "close",
+              "label": "收盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T14:50+08:00",
+              "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
+            },
+            {
+              "period": "morning",
+              "label": "早报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T09:35+08:00",
+              "recovery_policy_cn": "早报只允许在盘前/早盘窗口用当时新导出的行情快照补跑；进入午后或盘后后，不得伪造 09:35 早报，只能记录错过原因并让午报/复盘按缺口处理。"
+            },
+            {
+              "period": "noon",
+              "label": "午报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T11:35+08:00",
+              "recovery_policy_cn": "午报只允许在午盘到收盘前按早报 handoff 对象补跑；收盘后不得伪造或补造 11:35 午报，收盘报只能全池重扫并如实记录午报缺口。"
+            },
+            {
+              "period": "review",
+              "label": "复盘报",
+              "status": "device_offline_or_codex_not_running",
+              "reason_cn": "计划时间已过，但运行目录没有可用产物，疑似电脑离线、Codex 未运行或自动化没有被触发。",
+              "scheduled_at": "2026-09-14T20:00+08:00",
+              "recovery_policy_cn": "复盘报可以盘后补跑，但只能回放已存在且成功的收盘/早报/午报；前三报缺失或失败时不得合成原始结论。"
+            }
+          ],
+          "missing_reports": [
+            "close",
+            "morning",
+            "noon",
+            "review"
+          ],
+          "user_visible_note_cn": "顶部状态条只统计当前应当已经落盘的异常项；复盘未到时间、链路说明性节点和环境偏谨慎不再算作缺失或扫描不完整。"
+        },
+        "summary": {
+          "reports_present": 0,
+          "json_invalid": 0,
+          "candidates_visible": 0,
+          "four_layer_visible": 0,
+          "rule_upgrade_pending": 0,
+          "trader_review_status": "missing",
+          "data_sources_ok": 0,
+          "warnings": 0,
+          "automation_missed": 4,
+          "automation_failed": 0,
+          "automation_incomplete": 0,
+          "lineage_nodes": 0,
+          "automation_status_counts": {
+            "device_offline_or_codex_not_running": 4
+          }
+        },
+        "warnings": []
+      }
+    },
     "2026-09-10": {
       "date": "2026-09-10",
       "status": "empty",
@@ -185,7 +6975,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:29+08:00",
+        "generated_at": "2026-10-16T20:00:28+08:00",
         "currentDate": "2026-09-10",
         "current_date": "2026-09-10",
         "run": {
@@ -1547,7 +8337,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:29+08:00",
+        "generated_at": "2026-10-16T20:00:28+08:00",
         "currentDate": "2026-09-09",
         "current_date": "2026-09-09",
         "run": {
@@ -2909,7 +9699,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:29+08:00",
+        "generated_at": "2026-10-16T20:00:28+08:00",
         "currentDate": "2026-09-07",
         "current_date": "2026-09-07",
         "run": {
@@ -4261,7 +11051,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:29+08:00",
+        "generated_at": "2026-10-16T20:00:28+08:00",
         "currentDate": "2026-07-31",
         "current_date": "2026-07-31",
         "run": {
@@ -5646,7 +12436,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:30+08:00",
+        "generated_at": "2026-10-16T20:00:29+08:00",
         "currentDate": "2026-07-30",
         "current_date": "2026-07-30",
         "run": {
@@ -6998,7 +13788,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:30+08:00",
+        "generated_at": "2026-10-16T20:00:29+08:00",
         "currentDate": "2026-07-21",
         "current_date": "2026-07-21",
         "run": {
@@ -8350,7 +15140,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:30+08:00",
+        "generated_at": "2026-10-16T20:00:29+08:00",
         "currentDate": "2026-07-15",
         "current_date": "2026-07-15",
         "run": {
@@ -9702,7 +16492,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:30+08:00",
+        "generated_at": "2026-10-16T20:00:29+08:00",
         "currentDate": "2026-07-13",
         "current_date": "2026-07-13",
         "run": {
@@ -11057,7 +17847,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:32+08:00",
+        "generated_at": "2026-10-16T20:00:31+08:00",
         "currentDate": "2026-07-10",
         "current_date": "2026-07-10",
         "run": {
@@ -47213,9 +54003,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:00:32+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:00:32+08:00",
-          "web_visible_at": "2026-09-10T20:00:32+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:00:31+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:00:31+08:00",
+          "web_visible_at": "2026-10-16T20:00:31+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -47247,8 +54037,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -47544,7 +54334,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:43+08:00",
+        "generated_at": "2026-10-16T20:00:43+08:00",
         "currentDate": "2026-07-09",
         "current_date": "2026-07-09",
         "run": {
@@ -81702,9 +88492,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:00:43+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:00:43+08:00",
-          "web_visible_at": "2026-09-10T20:00:43+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:00:43+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:00:43+08:00",
+          "web_visible_at": "2026-10-16T20:00:43+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -81736,8 +88526,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -82033,7 +88823,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:00:56+08:00",
+        "generated_at": "2026-10-16T20:00:54+08:00",
         "currentDate": "2026-07-08",
         "current_date": "2026-07-08",
         "run": {
@@ -116379,9 +123169,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:00:56+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:00:56+08:00",
-          "web_visible_at": "2026-09-10T20:00:56+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:00:54+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:00:54+08:00",
+          "web_visible_at": "2026-10-16T20:00:54+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -116413,8 +123203,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -116710,7 +123500,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:01:07+08:00",
+        "generated_at": "2026-10-16T20:01:06+08:00",
         "currentDate": "2026-07-07",
         "current_date": "2026-07-07",
         "run": {
@@ -152640,9 +159430,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:01:07+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:01:07+08:00",
-          "web_visible_at": "2026-09-10T20:01:07+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:01:06+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:01:06+08:00",
+          "web_visible_at": "2026-10-16T20:01:06+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -152674,8 +159464,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -152971,7 +159761,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:01:19+08:00",
+        "generated_at": "2026-10-16T20:01:18+08:00",
         "currentDate": "2026-07-06",
         "current_date": "2026-07-06",
         "run": {
@@ -191609,9 +198399,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:01:19+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:01:19+08:00",
-          "web_visible_at": "2026-09-10T20:01:19+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:01:18+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:01:18+08:00",
+          "web_visible_at": "2026-10-16T20:01:18+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -191643,8 +198433,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -191940,7 +198730,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:01:31+08:00",
+        "generated_at": "2026-10-16T20:01:30+08:00",
         "currentDate": "2026-07-03",
         "current_date": "2026-07-03",
         "run": {
@@ -229102,9 +235892,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:01:31+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:01:31+08:00",
-          "web_visible_at": "2026-09-10T20:01:31+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:01:30+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:01:30+08:00",
+          "web_visible_at": "2026-10-16T20:01:30+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -229136,8 +235926,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -229433,7 +236223,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:01:44+08:00",
+        "generated_at": "2026-10-16T20:01:43+08:00",
         "currentDate": "2026-07-02",
         "current_date": "2026-07-02",
         "run": {
@@ -261459,9 +268249,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:01:44+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:01:44+08:00",
-          "web_visible_at": "2026-09-10T20:01:44+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:01:43+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:01:43+08:00",
+          "web_visible_at": "2026-10-16T20:01:43+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -261493,8 +268283,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -261790,7 +268580,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:01:56+08:00",
+        "generated_at": "2026-10-16T20:01:56+08:00",
         "currentDate": "2026-07-01",
         "current_date": "2026-07-01",
         "run": {
@@ -295690,9 +302480,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:01:56+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:01:56+08:00",
-          "web_visible_at": "2026-09-10T20:01:56+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:01:56+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:01:56+08:00",
+          "web_visible_at": "2026-10-16T20:01:56+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -295724,8 +302514,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -296021,7 +302811,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:02:08+08:00",
+        "generated_at": "2026-10-16T20:02:08+08:00",
         "currentDate": "2026-06-30",
         "current_date": "2026-06-30",
         "run": {
@@ -331413,9 +338203,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:02:08+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:02:08+08:00",
-          "web_visible_at": "2026-09-10T20:02:08+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:02:08+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:02:08+08:00",
+          "web_visible_at": "2026-10-16T20:02:08+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -331447,8 +338237,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -331744,7 +338534,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:02:21+08:00",
+        "generated_at": "2026-10-16T20:02:21+08:00",
         "currentDate": "2026-06-29",
         "current_date": "2026-06-29",
         "run": {
@@ -365841,9 +372631,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:02:21+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:02:21+08:00",
-          "web_visible_at": "2026-09-10T20:02:21+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:02:21+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:02:21+08:00",
+          "web_visible_at": "2026-10-16T20:02:21+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -365875,8 +372665,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -366172,7 +372962,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:02:33+08:00",
+        "generated_at": "2026-10-16T20:02:33+08:00",
         "currentDate": "2026-06-26",
         "current_date": "2026-06-26",
         "run": {
@@ -400383,9 +407173,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:02:33+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:02:33+08:00",
-          "web_visible_at": "2026-09-10T20:02:33+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:02:33+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:02:33+08:00",
+          "web_visible_at": "2026-10-16T20:02:33+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -400417,8 +407207,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -400714,7 +407504,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:02:46+08:00",
+        "generated_at": "2026-10-16T20:02:45+08:00",
         "currentDate": "2026-06-25",
         "current_date": "2026-06-25",
         "run": {
@@ -439429,9 +446219,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:02:46+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:02:46+08:00",
-          "web_visible_at": "2026-09-10T20:02:46+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:02:45+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:02:45+08:00",
+          "web_visible_at": "2026-10-16T20:02:45+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -439463,8 +446253,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -439760,7 +446550,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:02:58+08:00",
+        "generated_at": "2026-10-16T20:02:57+08:00",
         "currentDate": "2026-06-24",
         "current_date": "2026-06-24",
         "run": {
@@ -478843,9 +485633,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:02:58+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:02:58+08:00",
-          "web_visible_at": "2026-09-10T20:02:58+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:02:57+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:02:57+08:00",
+          "web_visible_at": "2026-10-16T20:02:57+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -478877,8 +485667,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -479174,7 +485964,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:10+08:00",
+        "generated_at": "2026-10-16T20:03:09+08:00",
         "currentDate": "2026-06-23",
         "current_date": "2026-06-23",
         "run": {
@@ -516604,9 +523394,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:10+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:10+08:00",
-          "web_visible_at": "2026-09-10T20:03:10+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:09+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:09+08:00",
+          "web_visible_at": "2026-10-16T20:03:09+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -516638,8 +523428,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -516935,7 +523725,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:22+08:00",
+        "generated_at": "2026-10-16T20:03:20+08:00",
         "currentDate": "2026-06-22",
         "current_date": "2026-06-22",
         "run": {
@@ -550812,9 +557602,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:22+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:22+08:00",
-          "web_visible_at": "2026-09-10T20:03:22+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:20+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:20+08:00",
+          "web_visible_at": "2026-10-16T20:03:20+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -550846,8 +557636,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -551140,7 +557930,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:32+08:00",
+        "generated_at": "2026-10-16T20:03:29+08:00",
         "currentDate": "2026-06-19",
         "current_date": "2026-06-19",
         "run": {
@@ -552495,7 +559285,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:33+08:00",
+        "generated_at": "2026-10-16T20:03:31+08:00",
         "currentDate": "2026-06-18",
         "current_date": "2026-06-18",
         "run": {
@@ -585667,9 +592457,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:33+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:33+08:00",
-          "web_visible_at": "2026-09-10T20:03:33+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:31+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:31+08:00",
+          "web_visible_at": "2026-10-16T20:03:31+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -585701,8 +592491,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -585998,7 +592788,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:42+08:00",
+        "generated_at": "2026-10-16T20:03:39+08:00",
         "currentDate": "2026-06-17",
         "current_date": "2026-06-17",
         "run": {
@@ -621056,9 +627846,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:42+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:42+08:00",
-          "web_visible_at": "2026-09-10T20:03:42+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:39+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:39+08:00",
+          "web_visible_at": "2026-10-16T20:03:39+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -621090,8 +627880,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -621387,7 +628177,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:51+08:00",
+        "generated_at": "2026-10-16T20:03:48+08:00",
         "currentDate": "2026-06-16",
         "current_date": "2026-06-16",
         "run": {
@@ -660073,9 +666863,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:51+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:51+08:00",
-          "web_visible_at": "2026-09-10T20:03:51+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:48+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:48+08:00",
+          "web_visible_at": "2026-10-16T20:03:48+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -660107,8 +666897,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -660404,7 +667194,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:03:59+08:00",
+        "generated_at": "2026-10-16T20:03:56+08:00",
         "currentDate": "2026-06-15",
         "current_date": "2026-06-15",
         "run": {
@@ -696420,9 +703210,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:03:59+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:03:59+08:00",
-          "web_visible_at": "2026-09-10T20:03:59+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:03:56+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:03:56+08:00",
+          "web_visible_at": "2026-10-16T20:03:56+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -696454,8 +703244,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -696751,7 +703541,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:08+08:00",
+        "generated_at": "2026-10-16T20:04:04+08:00",
         "currentDate": "2026-06-12",
         "current_date": "2026-06-12",
         "run": {
@@ -729303,9 +736093,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:08+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:08+08:00",
-          "web_visible_at": "2026-09-10T20:04:08+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:04+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:04+08:00",
+          "web_visible_at": "2026-10-16T20:04:04+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -729337,8 +736127,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -729634,7 +736424,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:16+08:00",
+        "generated_at": "2026-10-16T20:04:12+08:00",
         "currentDate": "2026-06-11",
         "current_date": "2026-06-11",
         "run": {
@@ -764664,9 +771454,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:16+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:16+08:00",
-          "web_visible_at": "2026-09-10T20:04:16+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:12+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:12+08:00",
+          "web_visible_at": "2026-10-16T20:04:12+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -764698,8 +771488,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -764995,7 +771785,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:24+08:00",
+        "generated_at": "2026-10-16T20:04:20+08:00",
         "currentDate": "2026-06-10",
         "current_date": "2026-06-10",
         "run": {
@@ -798097,9 +804887,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:24+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:24+08:00",
-          "web_visible_at": "2026-09-10T20:04:24+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:20+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:20+08:00",
+          "web_visible_at": "2026-10-16T20:04:20+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -798131,8 +804921,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -798428,7 +805218,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:32+08:00",
+        "generated_at": "2026-10-16T20:04:28+08:00",
         "currentDate": "2026-06-09",
         "current_date": "2026-06-09",
         "run": {
@@ -828426,9 +835216,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:32+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:32+08:00",
-          "web_visible_at": "2026-09-10T20:04:32+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:28+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:28+08:00",
+          "web_visible_at": "2026-10-16T20:04:28+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -828460,8 +835250,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -828757,7 +835547,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:41+08:00",
+        "generated_at": "2026-10-16T20:04:37+08:00",
         "currentDate": "2026-06-08",
         "current_date": "2026-06-08",
         "run": {
@@ -859787,9 +866577,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:41+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:41+08:00",
-          "web_visible_at": "2026-09-10T20:04:41+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:37+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:37+08:00",
+          "web_visible_at": "2026-10-16T20:04:37+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -859821,8 +866611,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -860118,7 +866908,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:49+08:00",
+        "generated_at": "2026-10-16T20:04:45+08:00",
         "currentDate": "2026-06-05",
         "current_date": "2026-06-05",
         "run": {
@@ -891635,9 +898425,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:49+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:49+08:00",
-          "web_visible_at": "2026-09-10T20:04:49+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:45+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:45+08:00",
+          "web_visible_at": "2026-10-16T20:04:45+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -891669,8 +898459,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -891966,7 +898756,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:04:58+08:00",
+        "generated_at": "2026-10-16T20:04:53+08:00",
         "currentDate": "2026-06-04",
         "current_date": "2026-06-04",
         "run": {
@@ -920269,9 +927059,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:04:58+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:04:58+08:00",
-          "web_visible_at": "2026-09-10T20:04:58+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:04:53+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:04:53+08:00",
+          "web_visible_at": "2026-10-16T20:04:53+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -920303,8 +927093,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -920600,7 +927390,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:06+08:00",
+        "generated_at": "2026-10-16T20:05:01+08:00",
         "currentDate": "2026-06-03",
         "current_date": "2026-06-03",
         "run": {
@@ -947825,9 +954615,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:06+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:06+08:00",
-          "web_visible_at": "2026-09-10T20:05:06+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:01+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:01+08:00",
+          "web_visible_at": "2026-10-16T20:05:01+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -947859,8 +954649,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -948156,7 +954946,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:14+08:00",
+        "generated_at": "2026-10-16T20:05:09+08:00",
         "currentDate": "2026-06-02",
         "current_date": "2026-06-02",
         "run": {
@@ -976163,9 +982953,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:14+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:14+08:00",
-          "web_visible_at": "2026-09-10T20:05:14+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:09+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:09+08:00",
+          "web_visible_at": "2026-10-16T20:05:09+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -976197,8 +982987,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -976494,7 +983284,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:23+08:00",
+        "generated_at": "2026-10-16T20:05:18+08:00",
         "currentDate": "2026-06-01",
         "current_date": "2026-06-01",
         "run": {
@@ -1001896,9 +1008686,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:23+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:23+08:00",
-          "web_visible_at": "2026-09-10T20:05:23+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:18+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:18+08:00",
+          "web_visible_at": "2026-10-16T20:05:18+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1001930,8 +1008720,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1002227,7 +1009017,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:32+08:00",
+        "generated_at": "2026-10-16T20:05:26+08:00",
         "currentDate": "2026-05-29",
         "current_date": "2026-05-29",
         "run": {
@@ -1023555,9 +1030345,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:32+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:32+08:00",
-          "web_visible_at": "2026-09-10T20:05:32+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:26+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:26+08:00",
+          "web_visible_at": "2026-10-16T20:05:26+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1023589,8 +1030379,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1023886,7 +1030676,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:39+08:00",
+        "generated_at": "2026-10-16T20:05:33+08:00",
         "currentDate": "2026-05-28",
         "current_date": "2026-05-28",
         "run": {
@@ -1043997,9 +1050787,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:39+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:39+08:00",
-          "web_visible_at": "2026-09-10T20:05:39+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:33+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:33+08:00",
+          "web_visible_at": "2026-10-16T20:05:33+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1044031,8 +1050821,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1044328,7 +1051118,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:46+08:00",
+        "generated_at": "2026-10-16T20:05:40+08:00",
         "currentDate": "2026-05-27",
         "current_date": "2026-05-27",
         "run": {
@@ -1065830,9 +1072620,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:46+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:46+08:00",
-          "web_visible_at": "2026-09-10T20:05:46+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:40+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:40+08:00",
+          "web_visible_at": "2026-10-16T20:05:40+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1065864,8 +1072654,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1066161,7 +1072951,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:05:53+08:00",
+        "generated_at": "2026-10-16T20:05:47+08:00",
         "currentDate": "2026-05-26",
         "current_date": "2026-05-26",
         "run": {
@@ -1089189,9 +1095979,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:05:53+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:05:53+08:00",
-          "web_visible_at": "2026-09-10T20:05:53+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:47+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:47+08:00",
+          "web_visible_at": "2026-10-16T20:05:47+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1089223,8 +1096013,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1089520,7 +1096310,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:00+08:00",
+        "generated_at": "2026-10-16T20:05:54+08:00",
         "currentDate": "2026-05-25",
         "current_date": "2026-05-25",
         "run": {
@@ -1109468,9 +1116258,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             }
           },
           "selection_logic_unchanged": true,
-          "web_panel_state_exported_at": "2026-09-10T20:06:00+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:00+08:00",
-          "web_visible_at": "2026-09-10T20:06:00+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:05:54+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:05:54+08:00",
+          "web_visible_at": "2026-10-16T20:05:54+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1109502,8 +1116292,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           }
         },
         "web_panel_status_summary": {
@@ -1109798,7 +1116588,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:06+08:00",
+        "generated_at": "2026-10-16T20:06:00+08:00",
         "currentDate": "2026-05-22",
         "current_date": "2026-05-22",
         "run": {
@@ -1120348,9 +1127138,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
           "preheat_reference_time": "2026-05-22T14:35:00+08:00",
           "selection_locked_at": "2026-05-22T14:50:00+08:00",
           "selection_locked_at_meaning": "14:50 selection benchmark, not artifact write time",
-          "web_panel_state_exported_at": "2026-09-10T20:06:06+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:06+08:00",
-          "web_visible_at": "2026-09-10T20:06:06+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:06:00+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:06:00+08:00",
+          "web_visible_at": "2026-10-16T20:06:00+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1120382,8 +1127172,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           },
           "selection_logic_unchanged": true
         },
@@ -1120694,7 +1127484,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:10+08:00",
+        "generated_at": "2026-10-16T20:06:04+08:00",
         "currentDate": "2026-05-21",
         "current_date": "2026-05-21",
         "run": {
@@ -1140760,9 +1147550,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
           "preheat_reference_time": "2026-05-21T14:35:00+08:00",
           "selection_locked_at": "2026-05-21T14:50:00+08:00",
           "selection_locked_at_meaning": "14:50 selection benchmark, not artifact write time",
-          "web_panel_state_exported_at": "2026-09-10T20:06:10+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:10+08:00",
-          "web_visible_at": "2026-09-10T20:06:10+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:06:04+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:06:04+08:00",
+          "web_visible_at": "2026-10-16T20:06:04+08:00",
           "source_tail_lock_manifest_status": "ok",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1140794,8 +1147584,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           },
           "selection_logic_unchanged": true
         },
@@ -1141092,7 +1147882,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:17+08:00",
+        "generated_at": "2026-10-16T20:06:11+08:00",
         "currentDate": "2026-05-20",
         "current_date": "2026-05-20",
         "run": {
@@ -1164270,9 +1171060,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
           "preheat_reference_time": "2026-05-20T14:35:00+08:00",
           "selection_locked_at": "2026-05-20T14:50:00+08:00",
           "selection_locked_at_meaning": "14:50 selection benchmark, not artifact write time",
-          "web_panel_state_exported_at": "2026-09-10T20:06:17+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:17+08:00",
-          "web_visible_at": "2026-09-10T20:06:17+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:06:11+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:06:11+08:00",
+          "web_visible_at": "2026-10-16T20:06:11+08:00",
           "source_tail_lock_manifest_status": "missing",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1164301,8 +1171091,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           },
           "selection_logic_unchanged": true
         },
@@ -1164599,7 +1171389,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:27+08:00",
+        "generated_at": "2026-10-16T20:06:21+08:00",
         "currentDate": "2026-05-19",
         "current_date": "2026-05-19",
         "run": {
@@ -1185633,9 +1192423,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
           "preheat_reference_time": "2026-05-19T14:35:00+08:00",
           "selection_locked_at": "2026-05-19T14:50:00+08:00",
           "selection_locked_at_meaning": "14:50 selection benchmark, not artifact write time",
-          "web_panel_state_exported_at": "2026-09-10T20:06:27+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:27+08:00",
-          "web_visible_at": "2026-09-10T20:06:27+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:06:21+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:06:21+08:00",
+          "web_visible_at": "2026-10-16T20:06:21+08:00",
           "source_tail_lock_manifest_status": "missing",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1185664,8 +1192454,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           },
           "selection_logic_unchanged": true
         },
@@ -1185962,7 +1192752,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:33+08:00",
+        "generated_at": "2026-10-16T20:06:27+08:00",
         "currentDate": "2026-05-18",
         "current_date": "2026-05-18",
         "run": {
@@ -1206655,9 +1213445,9 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
           "preheat_reference_time": "2026-05-18T14:35:00+08:00",
           "selection_locked_at": "2026-05-18T14:50:00+08:00",
           "selection_locked_at_meaning": "14:50 selection benchmark, not artifact write time",
-          "web_panel_state_exported_at": "2026-09-10T20:06:33+08:00",
-          "web_current_state_exported_at": "2026-09-10T20:06:33+08:00",
-          "web_visible_at": "2026-09-10T20:06:33+08:00",
+          "web_panel_state_exported_at": "2026-10-16T20:06:27+08:00",
+          "web_current_state_exported_at": "2026-10-16T20:06:27+08:00",
+          "web_visible_at": "2026-10-16T20:06:27+08:00",
           "source_tail_lock_manifest_status": "missing",
           "source_close_tail_decision_status": "ok",
           "tail_lock_manifest_file": {
@@ -1206686,8 +1213476,8 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
             "relative_path": "web-panel/data/current-state.js",
             "exists": true,
             "size": 25696,
-            "modified_at": "2026-09-10T20:00:28+08:00",
-            "sha256": "007b0ec3bba726c71a219d61728afc239d8807bd1d459cb379e505dd070425e2"
+            "modified_at": "2026-10-16T20:00:27+08:00",
+            "sha256": "54f0f9ddc247cbacf1a2126829822baf976e9b82fd775a11fffd3b675c03d0da"
           },
           "selection_logic_unchanged": true
         },
@@ -1206984,7 +1213774,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:40+08:00",
+        "generated_at": "2026-10-16T20:06:33+08:00",
         "currentDate": "2026-05-15",
         "current_date": "2026-05-15",
         "run": {
@@ -1226135,7 +1232925,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:47+08:00",
+        "generated_at": "2026-10-16T20:06:42+08:00",
         "currentDate": "2026-05-14",
         "current_date": "2026-05-14",
         "run": {
@@ -1232803,7 +1239593,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:51+08:00",
+        "generated_at": "2026-10-16T20:06:45+08:00",
         "currentDate": "2026-05-13",
         "current_date": "2026-05-13",
         "run": {
@@ -1245570,7 +1252360,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:06:59+08:00",
+        "generated_at": "2026-10-16T20:06:53+08:00",
         "currentDate": "2026-05-12",
         "current_date": "2026-05-12",
         "run": {
@@ -1257578,7 +1264368,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:06+08:00",
+        "generated_at": "2026-10-16T20:07:01+08:00",
         "currentDate": "2026-05-11",
         "current_date": "2026-05-11",
         "run": {
@@ -1269316,7 +1276106,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:13+08:00",
+        "generated_at": "2026-10-16T20:07:08+08:00",
         "currentDate": "2026-05-08",
         "current_date": "2026-05-08",
         "run": {
@@ -1278172,7 +1284962,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:19+08:00",
+        "generated_at": "2026-10-16T20:07:13+08:00",
         "currentDate": "2026-05-07",
         "current_date": "2026-05-07",
         "run": {
@@ -1288313,7 +1295103,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:26+08:00",
+        "generated_at": "2026-10-16T20:07:20+08:00",
         "currentDate": "2026-05-06",
         "current_date": "2026-05-06",
         "run": {
@@ -1294583,7 +1301373,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:31+08:00",
+        "generated_at": "2026-10-16T20:07:25+08:00",
         "currentDate": "2026-04-30",
         "current_date": "2026-04-30",
         "run": {
@@ -1301446,7 +1308236,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:33+08:00",
+        "generated_at": "2026-10-16T20:07:28+08:00",
         "currentDate": "2026-04-29",
         "current_date": "2026-04-29",
         "run": {
@@ -1308108,7 +1314898,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:36+08:00",
+        "generated_at": "2026-10-16T20:07:31+08:00",
         "currentDate": "2026-04-28",
         "current_date": "2026-04-28",
         "run": {
@@ -1311253,7 +1318043,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:37+08:00",
+        "generated_at": "2026-10-16T20:07:31+08:00",
         "currentDate": "2026-04-27",
         "current_date": "2026-04-27",
         "run": {
@@ -1315975,7 +1322765,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:37+08:00",
+        "generated_at": "2026-10-16T20:07:32+08:00",
         "currentDate": "2026-04-26",
         "current_date": "2026-04-26",
         "run": {
@@ -1317504,7 +1324294,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:37+08:00",
+        "generated_at": "2026-10-16T20:07:32+08:00",
         "currentDate": "2026-04-25",
         "current_date": "2026-04-25",
         "run": {
@@ -1322870,7 +1329660,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:37+08:00",
+        "generated_at": "2026-10-16T20:07:32+08:00",
         "currentDate": "2026-04-24",
         "current_date": "2026-04-24",
         "run": {
@@ -1324423,7 +1331213,7 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
       },
       "panel_state": {
         "schema_version": "web-panel-state/v1",
-        "generated_at": "2026-09-10T20:07:37+08:00",
+        "generated_at": "2026-10-16T20:07:32+08:00",
         "currentDate": "2026-04-23",
         "current_date": "2026-04-23",
         "run": {
@@ -1325647,10 +1332437,10 @@ window.THREE_PERIOD_PANEL_HISTORY_DETAIL = {
     }
   },
   "summary": {
-    "dates": 64,
+    "dates": 69,
     "complete_dates": 43,
     "partial_dates": 10,
-    "empty_dates": 11,
+    "empty_dates": 16,
     "excluded_dirs": 4,
     "warnings": 0
   },
