@@ -1,6 +1,6 @@
 window.THREE_PERIOD_PANEL_STATE = {
   "schema_version": "web-panel-state/v1",
-  "generated_at": "2026-10-28T11:35:09+08:00",
+  "generated_at": "2026-10-28T14:54:02+08:00",
   "currentDate": "2026-10-28",
   "current_date": "2026-10-28",
   "panel_payload_mode": "lite",
@@ -11,8 +11,8 @@ window.THREE_PERIOD_PANEL_STATE = {
   "run": {
     "date": "2026-10-28",
     "path": "C:\\Users\\1\\.openclaw-tdxclaw\\.openclaw\\workspace-tdxclaw\\tdx-ag-three-period-split\\runs\\2026-10-28",
-    "run_id": "20261028-noon-113502121027",
-    "period": "noon",
+    "run_id": "20261028-close-145001879973",
+    "period": "close",
     "status": "failed",
     "manifest_status": "ok",
     "lineage_status": "ok"
@@ -54,12 +54,12 @@ window.THREE_PERIOD_PANEL_STATE = {
       "schedule": {
         "scheduled_time": "14:50",
         "scheduled_at": "2026-10-28T14:50+08:00",
-        "due": false,
-        "automation_status": "not_due",
-        "automation_status_label": "未到计划时间",
-        "diagnosis_cn": "未到计划时间",
-        "manifest_status": "missing",
-        "manifest_json_status": "missing",
+        "due": true,
+        "automation_status": "precondition_failed",
+        "automation_status_label": "前置条件失败",
+        "diagnosis_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
+        "manifest_status": "failed",
+        "manifest_json_status": "ok",
         "manifest_path": "workflow-manifest.close.json",
         "precondition_gaps_cn": [],
         "recovery_boundary_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
@@ -215,42 +215,57 @@ window.THREE_PERIOD_PANEL_STATE = {
     {
       "key": "outer",
       "label": "外围闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "tailwind",
+      "score": 5,
+      "evidence_count": 16,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "富时中国A50: +0.82%, 2026-10-28 14:35:07, sina_hq, a50_cfd",
+        "道琼斯: +0.03%, 2026-10-28 04:48:44, sina_hq, index_realtime",
+        "纳斯达克综合: +1.18%, 2026-10-28 05:30:00, sina_hq, index_realtime",
+        "标普500: +0.60%, 2026-10-28 04:48:24, sina_hq, index_realtime"
+      ],
+      "reason": "美股三大指数平均 +0.60%；纳斯达克偏强 +1.18%；A50 偏强 +0.82%；美股三大指数归因偏顺风: 美股风险偏好改善；VIX归因偏逆风: 波动率上行，避险升温；美元兑离岸人民币归因偏顺风: 人民币压力缓和；黄金归因偏顺风: 美元走弱/宽松预期主导黄金定价；白银归因偏顺风: 工业需求/风险偏好主导白银定价；布伦特原油归因偏逆风: 地缘冲突/供应中断或通胀压力推升风险"
     },
     {
       "key": "domestic",
       "label": "国内闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "flat",
+      "score": 0,
+      "evidence_count": 5,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "policy_signal: 9月香港私人住宅楼价指数按月升0.19% 高力：维持全年楼价升8%至10%预测",
+        "industry_news_signal: 异动快报：天润工业（002283）10月28日11点24分触及涨停板",
+        "industry_news_signal: 异动快报：沪光股份（605333）10月28日11点24分触及涨停板",
+        "regulatory_signal: 【券商聚焦】中泰国际：料港股大市持平，恒指23200点遇阻"
+      ],
+      "reason": "国内侧证据不足以强判顺风，按平局处理"
     },
     {
       "key": "emotion_trend",
       "label": "情绪/趋势闸门",
-      "status": "missing",
-      "score": "",
-      "evidence_count": 0,
+      "status": "tailwind",
+      "score": 10,
+      "evidence_count": 10,
       "missing_count": 0,
       "limitations_count": 0,
-      "top_evidence": [],
-      "reason": ""
+      "top_evidence": [
+        "指数趋势偏顺风（涨跌幅 1.86%）。",
+        "盘中趋势偏横盘（15分钟涨跌幅 -0.40%）。",
+        "成交额信号偏顺风，质量需复核。",
+        "涨停约 69 只，跌停约 7 只。"
+      ],
+      "reason": "指数趋势偏顺风（涨跌幅 1.86%）；盘中趋势偏横盘（15分钟涨跌幅 -0.40%）；成交额信号偏顺风，质量需复核；涨停约 69 只，跌停约 7 只；连板结构偏顺风，最高约 5 连板。"
     }
   ],
   "candidates": [],
   "candidate_source_context": {},
   "four_layer_tracking": {
     "status": "missing",
-    "period": "noon",
+    "period": "close",
     "records": [],
     "summary": {},
     "tracking_coverage": {}
@@ -450,16 +465,16 @@ window.THREE_PERIOD_PANEL_STATE = {
   },
   "automation_schedule": {
     "by_status": {
-      "not_due": 2,
+      "precondition_failed": 2,
       "missed_schedule": 1,
-      "precondition_failed": 1
+      "not_due": 1
     },
     "items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-10-28T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -489,7 +504,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     ],
     "missed_count": 1,
-    "failed_count": 1,
+    "failed_count": 2,
     "incomplete_count": 0
   },
   "web_panel_status_summary": {
@@ -497,28 +512,28 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-10-28",
     "current_date": "2026-10-28",
     "status": "empty",
-    "headline_cn": "当前日期 2026-10-28：0/4 四报已生成，错过自动化 1 项，前置失败 1 项",
+    "headline_cn": "当前日期 2026-10-28：0/4 四报已生成，错过自动化 1 项，前置失败 2 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 32,
-      "invalid_count": 1,
+      "missing_count": 44,
+      "invalid_count": 2,
       "incomplete_count": 0,
       "headwind_count": 0,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 2,
+      "precondition_failed": 2,
       "missed_schedule": 1,
-      "precondition_failed": 1
+      "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-10-28T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -548,6 +563,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     ],
     "missing_reports": [
+      "close",
       "morning",
       "noon"
     ],
@@ -558,28 +574,28 @@ window.THREE_PERIOD_PANEL_STATE = {
     "currentDate": "2026-10-28",
     "current_date": "2026-10-28",
     "status": "empty",
-    "headline_cn": "当前日期 2026-10-28：0/4 四报已生成，错过自动化 1 项，前置失败 1 项",
+    "headline_cn": "当前日期 2026-10-28：0/4 四报已生成，错过自动化 1 项，前置失败 2 项",
     "report_ready_count": 0,
     "report_total_count": 4,
     "status_detail_counts": {
-      "missing_count": 32,
-      "invalid_count": 1,
+      "missing_count": 44,
+      "invalid_count": 2,
       "incomplete_count": 0,
       "headwind_count": 0,
       "stale_count": 0,
       "empty_count": 0
     },
     "schedule_counts": {
-      "not_due": 2,
+      "precondition_failed": 2,
       "missed_schedule": 1,
-      "precondition_failed": 1
+      "not_due": 1
     },
     "schedule_items": [
       {
         "period": "close",
         "label": "收盘报",
-        "status": "not_due",
-        "reason_cn": "未到计划时间",
+        "status": "precondition_failed",
+        "reason_cn": "计划时间已过，但正式报告或对应运行记录未落盘。",
         "scheduled_at": "2026-10-28T14:50+08:00",
         "recovery_policy_cn": "收盘报 14:50 必须有真实尾盘锁定快照；15:01 后若没有锁定快照，不得把后导出的自选股伪装成 14:50 决策。"
       },
@@ -609,6 +625,7 @@ window.THREE_PERIOD_PANEL_STATE = {
       }
     ],
     "missing_reports": [
+      "close",
       "morning",
       "noon"
     ],
@@ -622,16 +639,16 @@ window.THREE_PERIOD_PANEL_STATE = {
     "four_layer_visible": 0,
     "rule_upgrade_pending": 0,
     "trader_review_status": "missing",
-    "data_sources_ok": 2,
+    "data_sources_ok": 6,
     "warnings": 0,
     "automation_missed": 1,
-    "automation_failed": 1,
+    "automation_failed": 2,
     "automation_incomplete": 0,
-    "lineage_nodes": 36,
+    "lineage_nodes": 39,
     "automation_status_counts": {
       "missed_schedule": 1,
-      "not_due": 2,
-      "precondition_failed": 1
+      "not_due": 1,
+      "precondition_failed": 2
     },
     "panel_payload_mode": "lite"
   },
